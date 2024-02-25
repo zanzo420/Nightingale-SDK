@@ -23,7 +23,7 @@ public:
 	TArray<class FName>                          CompletedPhases;                                   // 0xD0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         EnablePhases;                                      // 0xE0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                         EnablePhaseDebug;                                  // 0xE1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DED[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_99D9[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class UClass*>                          CurrentAddedPhaseActionsSet;                       // 0xE8(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TSet<class UClass*>                          CurrentRemovedPhaseActionsSet;                     // 0x138(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)
 

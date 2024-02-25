@@ -50,7 +50,7 @@ public:
 struct FPersistenceObjectWrapper
 {
 public:
-	uint8                                        Pad_35CA[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3113[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x28 - 0x8)
@@ -74,7 +74,7 @@ public:
 struct FPersistentActorData : public FPersistentObjectData
 {
 public:
-	uint8                                        Pad_35CB[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3114[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            Transform;                                         // 0x30(0x60)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FPersistentComponentData>      ComponentData;                                     // 0x90(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -115,7 +115,7 @@ public:
 struct FPropertyObjectConnection
 {
 public:
-	uint8                                        Pad_35CC[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3116[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xD0 (0xD0 - 0x0)
@@ -127,7 +127,7 @@ public:
 	TMap<struct FGuid, TWeakObjectPtr<class UObject>> ObjectGuidConnectionsForRestore;                   // 0x50(0x50)(UObjectWrapper, NativeAccessSpecifierPrivate)
 	TArray<struct FPropertyObjectConnection>     ReferencesToConnectOnRestore;                      // 0xA0(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<TWeakObjectPtr<class UObject>>        RestoredObjects;                                   // 0xB0(0x10)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_35CD[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3117[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1A0 (0x1A8 - 0x8)

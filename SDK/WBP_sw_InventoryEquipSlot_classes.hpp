@@ -34,7 +34,7 @@ public:
 	struct FInventoryEntry                       ItemEntry;                                         // 0x3D0(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  Slot_Name;                                         // 0x6C0(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         CanEdit;                                           // 0x6D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6CDB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_849D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnDragStarted;                                     // 0x6E0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            DragCancelled;                                     // 0x6F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnRightClickContextMenu;                           // 0x700(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)

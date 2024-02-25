@@ -94,13 +94,13 @@ public:
 	class UWBP_DB_Temperature_C*                 WBP_DB_Temperature;                                // 0x720(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_UIK_MenuTabs_C*                   WBP_UIK_MenuTabs_184;                              // 0x728(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ATwoD_EnviroScreenShot_C*              CameraActor;                                       // 0x730(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9525[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_709B[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            CameraPosition;                                    // 0x740(0x60)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        SliderMax_RealmProfile;                            // 0x7A0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9526[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_709D[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            CameraDefaultPosition;                             // 0x7B0(0x60)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        SliderMax_ColorScheme;                             // 0x810(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9527[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_709E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_GenericTooltip_C*                 Tooltip;                                           // 0x818(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class ABP_TimeOfDayManager_C*                TimeOfDayManager;                                  // 0x820(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWBP_DB_sw_ViewModeButton_C*>   As_WBP_DB_Sw_View_Mode_Button;                     // 0x828(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)

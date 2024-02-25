@@ -38,7 +38,7 @@ public:
 class UChallengeDataAsset : public UDataAsset
 {
 public:
-	uint8                                        Pad_3AFE[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_37D7[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  Title;                                             // 0x40(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	class FText                                  Description;                                       // 0x58(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UTexture2D>             Icon;                                              // 0x70(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -47,14 +47,14 @@ public:
 	class UConditionBehaviour*                   ActivationCondition;                               // 0xA8(0x8)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URequirement*                          VisibilityRequirement;                             // 0xB0(0x8)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EChallengePlatform                Platform;                                          // 0xB8(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3AFF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_37D8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<enum class EChallengePlatform>          AchievementPlatforms;                              // 0xC0(0x50)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	TArray<class URewardBehaviour*>              Rewards;                                           // 0x110(0x10)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FDateTime                             StartTime;                                         // 0x120(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDateTime                             EndTime;                                           // 0x128(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAutoAddedToHUD;                                   // 0x130(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUntrackableOnHUD;                                 // 0x131(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3B00[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_37D9[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FExperienceStateID                    CompletionExperienceState;                         // 0x134(0x4)(NoDestructor, NonPIEDuplicateTransient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();
@@ -179,9 +179,9 @@ public:
 class UChallengeProgressObject : public UObject
 {
 public:
-	uint8                                        Pad_3B0D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_37F5[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FExperienceStateID                    ChallengeID;                                       // 0x30(0x4)(Net, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3B0E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_37F6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FConditionProgressDataList            ProgressData;                                      // 0x38(0x10)(Net, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -194,11 +194,11 @@ public:
 class UChallengeSystem : public UActorComponent
 {
 public:
-	uint8                                        Pad_3B16[0xB8];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3805[0xB8];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBasicAwaiter*                         Awaiter;                                           // 0x158(0x8)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3B17[0x18];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3806[0x18];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UChallengeDataAsset*>           PendingAdds;                                       // 0x178(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3B18[0x50];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3807[0x50];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FInProgressChallenge>          Challenges;                                        // 0x1D8(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<class UChallengeProgressObject*>      WatchedChallenges;                                 // 0x1E8(0x10)(Net, ZeroConstructor, RepNotify, NativeAccessSpecifierPrivate)
 	TArray<class UChallengeProgressObject*>      ChallengesToDisplayInPage;                         // 0x1F8(0x10)(Net, ZeroConstructor, RepNotify, NativeAccessSpecifierPrivate)
@@ -206,7 +206,7 @@ public:
 	FMulticastInlineDelegateProperty_            OnChallengesToDisplayInPageChanged;                // 0x218(0x10)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPrivate)
 	FMulticastInlineDelegateProperty_            OnChallengeCompleted;                              // 0x228(0x10)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPrivate)
 	FMulticastInlineDelegateProperty_            OnRewardsGranted;                                  // 0x238(0x10)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3B1B[0x58];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3808[0x58];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UChallengeSystem* GetDefaultObj();

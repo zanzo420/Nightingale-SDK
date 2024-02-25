@@ -116,7 +116,7 @@ struct FInterchangeUserDefinedAttributeInfo
 {
 public:
 	class FString                                Name;                                              // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4AC5[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4BA7[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

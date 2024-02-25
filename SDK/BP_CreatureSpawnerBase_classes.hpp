@@ -22,7 +22,7 @@ public:
 	int32                                        MinCreatures;                                      // 0xF00(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        MaxCreatures;                                      // 0xF04(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         bAutospawn;                                        // 0xF08(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_7BA2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_793C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       InitialSpawnDelay;                                 // 0xF10(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TArray<class ABP_CreatureBase_C*>            Creatures;                                         // 0xF18(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	class ABP_CreatureBase_C*                    Leader;                                            // 0xF28(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -30,27 +30,27 @@ public:
 	TArray<class ATargetPoint*>                  CompletedWaypoints;                                // 0xF40(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	struct FGuid                                 SpawnerID;                                         // 0xF50(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CurrentSpawnGroup;                                 // 0xF60(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BA3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_793D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnCreatureDestroyed;                               // 0xF68(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FTimerHandle                          SpawnCreatureTimer;                                // 0xF78(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          SpawnSquadTimer;                                   // 0xF80(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TMap<class UClass*, struct FS_CreatureWeaponOverride> WeaponOverrides;                                   // 0xF88(0x50)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         bUsesReserveCreatures;                             // 0xFD8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_7BA4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_793E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class ATargetPoint*>                  Waypoints;                                         // 0xFE0(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	int32                                        Priority;                                          // 0xFF0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BA5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_793F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          RecursiveKillAllEnemies;                           // 0xFF8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            OnLeaderSet;                                       // 0x1000(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FVector                               POILocation;                                       // 0x1010(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       LastSpawnTime;                                     // 0x1028(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         PlayEntrance;                                      // 0x1030(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         SpawnHidden;                                       // 0x1031(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BA6[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7940[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          SquadLifetimeTimer;                                // 0x1038(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       MaxSquadLifetime;                                  // 0x1040(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         PlayExit;                                          // 0x1048(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_7BA7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7941[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnSquadRetired;                                    // 0x1050(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FDataTableRowHandle                   BPSpawnerData;                                     // 0x1060(0x10)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	double                                       InCombatTimeout;                                   // 0x1070(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -58,10 +58,10 @@ public:
 	struct FGameplayTag                          SpawnTags;                                         // 0x1088(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               TargetLocationHack;                                // 0x1090(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        DesiredNumberOfAbstractNodesToSpawnOn;             // 0x10A8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BA8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7942[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UClass*>                        RecoveryClasses;                                   // 0x10B0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        TopNSpawnPointsToSelectFrom;                       // 0x10C0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BAA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7943[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnNoRemainingCreatures;                            // 0x10C8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<class AActor*>                        RecentAttackers;                                   // 0x10D8(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	TArray<struct FGameplayTag>                  AddedTagsGameplayTags;                             // 0x10E8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -75,10 +75,10 @@ public:
 	FMulticastInlineDelegateProperty_            OnCreaturePossessed;                               // 0x1150(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMap<class UClass*, int32>                   RequiredCreatureClasses;                           // 0x1160(0x50)(Edit, BlueprintVisible, ExposeOnSpawn)
 	int32                                        Charges_0;                                         // 0x11B0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BAD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7944[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<int32>                                RequiredCreatureIndexes;                           // 0x11B8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         Retired;                                           // 0x11C8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BAE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7945[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       FailedRespawnDuration;                             // 0x11D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        FailedRespawns;                                    // 0x11D8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        MaxFailedRespawns;                                 // 0x11DC(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -90,34 +90,34 @@ public:
 	struct FVector                               InitialSpawnerLocation;                            // 0x1230(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          SwitchServerTimerHandle;                           // 0x1248(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        NumberOfAI;                                        // 0x1250(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BB4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7946[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FVector>                       WanderEQSLocations;                                // 0x1258(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FGuid>                         WanderEQSIDs;                                      // 0x1268(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         DebugMode;                                         // 0x1278(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_7BB5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7947[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FS_SpawnerCreatureGrant>       CreatureGrants;                                    // 0x1280(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UEnvQuery*                             SpawningEQSQuery;                                  // 0x1290(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UEnvQueryInstanceBlueprintWrapper*     SpawnQuery;                                        // 0x1298(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FTransform>                    PossibleSpawnLocations;                            // 0x12A0(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ExposeOnSpawn)
 	int32                                        SpawnIndex;                                        // 0x12B0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ShuffleSpawnQueryResults;                          // 0x12B4(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BB8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7948[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CreatureName;                                      // 0x12B8(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TSoftObjectPtr<class UTexture2D>             CreatureIcon;                                      // 0x12D0(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TMap<class FName, double>                    CustomValueMap;                                    // 0x12F8(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         SuppressWarningFailedToSpawn;                      // 0x1348(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BBB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7949[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AActor*>                        CustomContextActors;                               // 0x1350(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, ExposeOnSpawn)
 	class UEnvQueryInstanceBlueprintWrapper*     Query_Instance;                                    // 0x1360(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         AllowSplitsAndMerges;                              // 0x1368(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BBD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_794A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       SplitThreshold;                                    // 0x1370(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       MergeThreshold;                                    // 0x1378(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       MaxRad;                                            // 0x1380(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            OnCreatureDamaged;                                 // 0x1388(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class AEncounterBase*                        Encounter_Reference;                               // 0x1398(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        FarCreatureAudioPriority;                          // 0x13A0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BC2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_794B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       FarCreatureAudioMinRange;                          // 0x13A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       FarCreatureAudioMaxRange;                          // 0x13B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNWXSquadComponent*                    SquadComponent;                                    // 0x13B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -125,10 +125,10 @@ public:
 	struct FVector                               LeashLocation;                                     // 0x13D8(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       LeashDistance;                                     // 0x13F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFaction                          CreatureFaction;                                   // 0x13F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_7BC5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_794C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_BPSpawnerData                      BPSpawnerDataOverride;                             // 0x1400(0x1F0)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        MaxCreatureOverride;                               // 0x15F0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_7BC6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_794D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               OverrideLeashLocation;                             // 0x15F8(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       OverrideLeashDistance;                             // 0x1610(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

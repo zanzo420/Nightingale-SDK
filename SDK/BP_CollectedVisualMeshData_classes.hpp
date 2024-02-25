@@ -16,7 +16,7 @@ class UBP_CollectedVisualMeshData_C : public UObjectWithWorld
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x28(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	enum class E_EquipSlotType                   EquipmentSlotType;                                 // 0x30(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5635[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7B91[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    ItemReference;                                     // 0x40(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FItemData_RegionHiding                SkinHidingOverrides;                               // 0xC0(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTag                          EquipmentSlotTag;                                  // 0xE8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -25,20 +25,20 @@ public:
 	struct FCharacterCustomization_UnloadedMeshData UnloadedMeshData;                                  // 0x200(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FCharacterCustomization_LoadedMeshData LoadedMeshData;                                    // 0x250(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                         bIsLoaded;                                         // 0x260(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5636[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7B92[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_CharacterCustomization_Component_C* OwningCustomizationComp;                           // 0x268(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UBP_AsyncAssetLoader_C*                AsyncLoader;                                       // 0x270(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            DataChanged;                                       // 0x278(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         bHasVisualMeshData;                                // 0x288(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bHasEquippableData;                                // 0x289(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bHasValidData;                                     // 0x28A(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5637[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7B93[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<enum class EMetalRegions, double>       MetalOverrides;                                    // 0x290(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<enum class ECostumeRegions, struct FResourceCustomizationData> MaterialOverridesUnloaded;                         // 0x2E0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded> MaterialOverridesLoaded;                           // 0x330(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	enum class EHatType                          HatType;                                           // 0x380(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bHasHatType;                                       // 0x381(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5638[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7B98[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<enum class EGemRegions, double>         GemOverrides;                                      // 0x388(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        RandomSeed;                                        // 0x3D8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bHasRegionHiding;                                  // 0x3DC(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

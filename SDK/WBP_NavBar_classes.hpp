@@ -23,7 +23,7 @@ public:
 	TArray<class FText>                          ButtonArray;                                       // 0x370(0x10)(Edit, BlueprintVisible, ExposeOnSpawn)
 	FMulticastInlineDelegateProperty_            NavBar_ButtonClicked;                              // 0x380(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         UseExitButton_;                                    // 0x390(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_70C8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_73FC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            CloseClicked;                                      // 0x398(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FText                                  DefaultExitKeyPrompt;                              // 0x3A8(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class FText                                  DefaultExitKeyTextLabel;                           // 0x3C0(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)

@@ -18,14 +18,14 @@ public:
 	struct FDynamicTypedStructs                  StepDefaultData;                                   // 0x578(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                       RecipeLength;                                      // 0x588(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          ActiveTimer;                                       // 0x590(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9571[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5D4B[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              RecipeHandle;                                      // 0x5A0(0x70)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FS_Crafting_Step_RefinementTimer      CurrentRefinementTimer;                            // 0x610(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagQuery                     TAGQUERY_CRAFTING_EFFICIENCY;                      // 0x618(0x48)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	class URealmTimerComponent*                  RealmTimer;                                        // 0x660(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                       RecipeStartTime;                                   // 0x668(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	int32                                        CurrentQuantity;                                   // 0x670(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9575[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5D4D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStructureFireComponent*               FireComponent;                                     // 0x678(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

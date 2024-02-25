@@ -27,7 +27,7 @@ public:
 	struct FGameplayTagContainer                 Realm_38_A7AE83B546BB8EEF02E12C91F088924A;         // 0x48(0x20)(Edit, BlueprintVisible)
 	bool                                         Swimming_33_6B454F984D10DA6C7DD6D28E9E2EE4B8;      // 0x68(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Wading_36_BDE2F8E9493309352C8350B5AEABC9F7;        // 0x69(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3793[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3D4D[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       StatusEffectDuration_42_16F52A7542ED4120A5F60FA086DF6EDB; // 0x70(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 

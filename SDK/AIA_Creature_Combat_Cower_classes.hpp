@@ -14,7 +14,7 @@ namespace SDK
 class UAIA_Creature_Combat_Cower_C : public UAIA_Creature_Combat_C
 {
 public:
-	uint8                                        Pad_7DFC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5189[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       ProximityThreshold;                                // 0x170(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

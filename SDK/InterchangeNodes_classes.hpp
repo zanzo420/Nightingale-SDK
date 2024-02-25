@@ -14,7 +14,7 @@ namespace SDK
 class UInterchangeAnimationTrackSetNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4ACB[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AB0[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeAnimationTrackSetNode* GetDefaultObj();
@@ -33,7 +33,7 @@ public:
 class UInterchangeAnimationTrackBaseNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4ACE[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4ABC[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeAnimationTrackBaseNode* GetDefaultObj();
@@ -47,7 +47,7 @@ public:
 class UInterchangeAnimationTrackSetInstanceNode : public UInterchangeAnimationTrackBaseNode
 {
 public:
-	uint8                                        Pad_4AD7[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AD8[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeAnimationTrackSetInstanceNode* GetDefaultObj();
@@ -67,7 +67,7 @@ public:
 class UInterchangeAnimationTrackNode : public UInterchangeAnimationTrackBaseNode
 {
 public:
-	uint8                                        Pad_4AE0[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AF0[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeAnimationTrackNode* GetDefaultObj();
@@ -87,7 +87,7 @@ public:
 class UInterchangeTransformAnimationTrackNode : public UInterchangeAnimationTrackNode
 {
 public:
-	uint8                                        Pad_4AE3[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AF9[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeTransformAnimationTrackNode* GetDefaultObj();
@@ -101,7 +101,7 @@ public:
 class UInterchangeSkeletalAnimationTrackNode : public UInterchangeAnimationTrackBaseNode
 {
 public:
-	uint8                                        Pad_4AEE[0x220];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B2A[0x220];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeSkeletalAnimationTrackNode* GetDefaultObj();
@@ -125,7 +125,7 @@ public:
 class UInterchangePhysicalCameraNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4AF5[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B3C[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangePhysicalCameraNode* GetDefaultObj();
@@ -145,7 +145,7 @@ public:
 class UInterchangeStandardCameraNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4B00[0x60];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B4E[0x60];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeStandardCameraNode* GetDefaultObj();
@@ -169,7 +169,7 @@ public:
 class UInterchangeBaseLightNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4B07[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B5D[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeBaseLightNode* GetDefaultObj();
@@ -189,7 +189,7 @@ public:
 class UInterchangeLightNode : public UInterchangeBaseLightNode
 {
 public:
-	uint8                                        Pad_4B0C[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B64[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeLightNode* GetDefaultObj();
@@ -207,7 +207,7 @@ public:
 class UInterchangePointLightNode : public UInterchangeLightNode
 {
 public:
-	uint8                                        Pad_4B0F[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B6C[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangePointLightNode* GetDefaultObj();
@@ -223,7 +223,7 @@ public:
 class UInterchangeSpotLightNode : public UInterchangePointLightNode
 {
 public:
-	uint8                                        Pad_4B14[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B74[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeSpotLightNode* GetDefaultObj();
@@ -239,7 +239,7 @@ public:
 class UInterchangeRectLightNode : public UInterchangeLightNode
 {
 public:
-	uint8                                        Pad_4B19[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B7E[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeRectLightNode* GetDefaultObj();
@@ -266,7 +266,7 @@ public:
 class UInterchangeTextureNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4B1A[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B83[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeTextureNode* GetDefaultObj();
@@ -329,7 +329,7 @@ public:
 class UInterchangeVariantSetNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4B22[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B94[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeVariantSetNode* GetDefaultObj();
@@ -350,7 +350,7 @@ public:
 class UInterchangeSceneVariantSetsNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4B26[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B9B[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeSceneVariantSetsNode* GetDefaultObj();
@@ -378,7 +378,7 @@ public:
 class UInterchangeMaterialInstanceNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4B31[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4BAC[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeMaterialInstanceNode* GetDefaultObj();
@@ -400,7 +400,7 @@ public:
 class UInterchangeMeshNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4B49[0x188];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4BC4[0x188];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeMeshNode* GetDefaultObj();
@@ -456,7 +456,7 @@ public:
 class UInterchangeSceneNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4B67[0x2C0];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4BE2[0x2C0];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeSceneNode* GetDefaultObj();
@@ -516,7 +516,7 @@ public:
 class UInterchangeShaderNode : public UInterchangeBaseNode
 {
 public:
-	uint8                                        Pad_4B70[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4BEB[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeShaderNode* GetDefaultObj();
@@ -530,7 +530,7 @@ public:
 class UInterchangeFunctionCallShaderNode : public UInterchangeShaderNode
 {
 public:
-	uint8                                        Pad_4B73[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4BEE[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeFunctionCallShaderNode* GetDefaultObj();
@@ -544,7 +544,7 @@ public:
 class UInterchangeShaderGraphNode : public UInterchangeShaderNode
 {
 public:
-	uint8                                        Pad_4B76[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4BF1[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeShaderGraphNode* GetDefaultObj();
@@ -566,7 +566,7 @@ public:
 class UInterchangeTexture2DNode : public UInterchangeTextureNode
 {
 public:
-	uint8                                        Pad_4B77[0x98];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4BF2[0x98];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeTexture2DNode* GetDefaultObj();

@@ -25,7 +25,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>             Marker_Icon_17_E68FA79D4712440768BB128A56641BED;   // 0x48(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>             EncounterBanner_18_89EFDAB340CA792E72DAE78B41D4C726; // 0x70(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TArray<struct FS_UI_ImageAndText>            AdvancedDescriptionOptional_60_65A979AE4AE13EC622419EA8B719DF3C; // 0x98(0x10)(Edit, BlueprintVisible, ContainsInstancedReference)
-	uint8                                        Pad_6DE0[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6CE9[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_UI_ImageAndText                    SuccessTextImageoverridesdefault_57_BB6F66DE4EAD66BB06F9DF8EE2413C6B; // 0xB0(0xA0)(Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
 	struct FS_UI_ImageAndText                    FailureTextImageoverridesdefault_59_3BF503A64645A2879222289F40930A0E; // 0x150(0xA0)(Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
 	struct FLinearColor                          Widget_Tint1_72_0FB71C5549C5F53B9C13E091A307D3D5;  // 0x1F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

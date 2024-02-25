@@ -24,14 +24,14 @@ public:
 	struct FVector                               EscortSource;                                      // 0x1680(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDialogue*                             AmbientDialog;                                     // 0x1698(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         PlayerEmployees;                                   // 0x16A0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_7EC1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6BE8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       StructureRadius;                                   // 0x16A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 AllStructureDesireTags;                            // 0x16B0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TSet<class UObject*>                         RegisteredStructures;                              // 0x16D0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTagContainer                 ActiveStructureDesireTags;                         // 0x1720(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	FMulticastInlineDelegateProperty_            StructureDesireTagsChanged;                        // 0x1740(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         DestroyWhenAllCreaturesDestroyed;                  // 0x1750(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7EC2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6BE9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FDataTableRowHandle>           NPCDataHandles;                                    // 0x1758(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTag                          RequiredNPCTag;                                    // 0x1768(0x8)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TArray<class AActor*>                        AllCaches;                                         // 0x1770(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)

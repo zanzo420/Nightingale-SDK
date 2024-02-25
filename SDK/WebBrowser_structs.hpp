@@ -19,7 +19,7 @@ namespace SDK
 struct FWebJSCallbackBase
 {
 public:
-	uint8                                        Pad_4F9A[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4F0D[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x20 - 0x20)

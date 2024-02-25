@@ -37,7 +37,7 @@ struct UStreamlineLibrary_GetStreamlineFeatureInformation_Params
 {
 public:
 	enum class EUStreamlineFeature               Feature;                                           // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4037[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3D5A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStreamlineFeatureRequirements        ReturnValue;                                       // 0x4(0x34)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 

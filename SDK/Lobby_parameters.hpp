@@ -89,7 +89,7 @@ struct ALobbyBeaconClient_ClientLoginComplete_Params
 public:
 	struct FUniqueNetIdRepl                      InUniqueID;                                        // 0x0(0x30)(ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bWasSuccessful;                                    // 0x30(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4193[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3F1D[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

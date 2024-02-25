@@ -20,11 +20,11 @@ public:
 	TArray<struct FVector>                       MiasmaCloudLocations;                              // 0x1630(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        MaxMiasmaCount;                                    // 0x1640(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         DestroyWhenAllCreaturesDestroyed_0;                // 0x1644(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7D5D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9F20[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UEnvQuery*                             Bound_Miasma_EQS;                                  // 0x1648(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	enum class EEnvQueryRunMode                  Run_Mode;                                          // 0x1650(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         bSkipTwoStepSpawning;                              // 0x1651(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_7D5E[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9F21[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Max_Miasma_Count_Copy;                             // 0x1654(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class ABP_BoundMiasmaCloudFX_C*>      Miasma_Clouds;                                     // 0x1658(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 

@@ -25,7 +25,7 @@ public:
 	float                                        AnalogCursorSize;                                  // 0xDC(0x4)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bUseEngineAnalogCursor;                            // 0xE0(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bAnalogCursorNoAcceleration;                       // 0xE1(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_340D[0x16];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2D46[0x16];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGamepadCursorSettings* GetDefaultObj();

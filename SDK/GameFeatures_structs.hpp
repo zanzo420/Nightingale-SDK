@@ -33,7 +33,7 @@ public:
 	TSoftClassPtr<class UActorComponent>         ComponentClass;                                    // 0x28(0x28)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bClientComponent : 1;                              // Mask: 0x1, PropSize: 0x10x50(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bServerComponent : 1;                              // Mask: 0x2, PropSize: 0x10x50(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_47C3[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4702[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x60 (0x60 - 0x0)
@@ -46,7 +46,7 @@ public:
 	uint8                                        bClientSource : 1;                                 // Mask: 0x1, PropSize: 0x10xC(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bServerSource : 1;                                 // Mask: 0x2, PropSize: 0x10xC(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitPad_22F : 6;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_47C4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4704[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UDataTable>             DataTableToAdd;                                    // 0x10(0x28)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UCurveTable>            CurveTableToAdd;                                   // 0x38(0x28)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -56,9 +56,9 @@ public:
 struct FGameFeaturePluginStateMachineProperties
 {
 public:
-	uint8                                        Pad_47C5[0x88];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4705[0x88];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UGameFeatureData*                      GameFeatureData;                                   // 0x88(0x8)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_47C6[0x38];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4706[0x38];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -66,7 +66,7 @@ public:
 struct FGameFeaturePluginIdentifier
 {
 public:
-	uint8                                        Pad_47C7[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4707[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -74,7 +74,7 @@ public:
 struct FInstallBundlePluginProtocolMetaData
 {
 public:
-	uint8                                        Pad_47C8[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4708[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

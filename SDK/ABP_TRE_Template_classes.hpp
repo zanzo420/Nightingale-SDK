@@ -16,7 +16,7 @@ class UABP_TRE_Template_C : public UNWXAIAnimInstance
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x6F0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimBlueprintGeneratedMutableData    __AnimBlueprintMutables;                           // 0x6F8(0x15)(HasGetValueTypeHash)
-	uint8                                        Pad_3503[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9E50[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x710(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x718(0x8)(None)
 	struct FAnimNode_LinkedInputPose             AnimGraphNode_LinkedInputPose_7;                   // 0x720(0xB8)(None)
@@ -79,16 +79,16 @@ public:
 	struct FAnimNode_Slot                        AnimGraphNode_Slot_1;                              // 0x1A00(0x48)(None)
 	struct FAnimNode_Slot                        AnimGraphNode_Slot;                                // 0x1A48(0x48)(None)
 	bool                                         __CustomProperty_IsMinHealth__4F531FC34FDC6925162AB0B69A84BD19; // 0x1A90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3504[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9E51[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              __CustomProperty_Rotation_4F531FC34FDC6925162AB0B69A84BD19; // 0x1A98(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	double                                       __CustomProperty_InDynamicsAlpha_60B0BA924C3838E8E368BD91208F713F; // 0x1AB0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         __CustomProperty_PowerIK_Switch_7115525A471675AF0E98EA8A0C437292; // 0x1AB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3505[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9E52[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCapsuleComponent*                     Capsule_Component;                                 // 0x1AC0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              Pelvis_Rotation;                                   // 0x1AC8(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         IsUnderground;                                     // 0x1AE0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         PowerIKSwitch;                                     // 0x1AE1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3506[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9E54[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSequenceCache                    UndergroundAnimCache;                              // 0x1AE8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class FName                                  UndergroundAnimName;                               // 0x1AF8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bUseUndergroundState;                              // 0x1B00(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

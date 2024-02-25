@@ -14,7 +14,7 @@ namespace SDK
 class UABP_TRE_Eoten_Overrides_C : public UAnimInstance
 {
 public:
-	uint8                                        Pad_7606[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_711E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x350(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x358(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x360(0x8)(None)
@@ -43,7 +43,7 @@ public:
 	struct FAnimNode_Root                        AnimGraphNode_Root;                                // 0xF70(0x20)(None)
 	bool                                         PowerIK_Switch;                                    // 0xF90(0x1)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsMinHealth_;                                      // 0xF91(0x1)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7607[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7120[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              Rotation;                                          // 0xF98(0x18)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	static class UClass* StaticClass();

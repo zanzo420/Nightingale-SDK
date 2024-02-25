@@ -42,10 +42,10 @@ public:
 	class UVerticalBox*                          VerticalBox_PlayerStat;                            // 0x410(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FNWXPartyMember                       PartyMember;                                       // 0x418(0x50)(Edit, BlueprintVisible, ExposeOnSpawn)
 	int32                                        PartyIndex;                                        // 0x468(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_7717[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5161[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_Popup_General_C*                  ConfirmationPopup;                                 // 0x470(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                        LoadOutScore;                                      // 0x478(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7718[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5162[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_SubContextMenu_C*                 SubContextMenu;                                    // 0x480(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Popup_Dropdown_C*                 ReportDropdown;                                    // 0x488(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Popup_General_C*                  ReportConfirmationPopup;                           // 0x490(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)

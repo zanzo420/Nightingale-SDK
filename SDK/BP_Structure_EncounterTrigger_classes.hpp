@@ -18,11 +18,11 @@ public:
 	class UStaticMeshComponent*                  VFXAnchor;                                         // 0xA40(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	enum class E_StructureEncounterTriggerState  StructureState;                                    // 0xA48(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	bool                                         PieceActive;                                       // 0xA49(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_9221[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_69F8[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPlayerInteracted;                                // 0xA50(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UScopedAkComponent*                    CachedEncounterScopedAk;                           // 0xA60(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         DamageTriggersInteraction;                         // 0xA68(0x1)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_9222[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_69F9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FName, class UNiagaraComponent*>  ActiveEffect;                                      // 0xA70(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TMap<struct FGameplayTag, struct FS_EncounterPresentation> AffinityMap;                                       // 0xAC0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTag                          PaletteAndFaction;                                 // 0xB10(0x8)(Edit, BlueprintVisible, Net, SaveGame, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)

@@ -24,7 +24,7 @@ public:
 	TMap<class AActor*, class UWBP_sw_CompassMarker_C*> ActorChildWidgetMap;                               // 0x3D8(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, ContainsInstancedReference)
 	TMap<struct FGuid, class UWBP_sw_CompassMarker_C*> MapPinWidgets;                                     // 0x428(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	enum class E_hud_DetailMode                  DetailMode;                                        // 0x478(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_40B4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_79CE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FString, class UWBP_sw_CompassMarker_C*> PartyMemberWidgets;                                // 0x480(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 	static class UClass* StaticClass();

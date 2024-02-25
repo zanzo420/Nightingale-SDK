@@ -16,7 +16,7 @@ class UBP_ConditionBehaviour_Quest_Completed_C : public UBP_ConditionBehaviour_C
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x80(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	TScriptInterface<class IQuestTrackerInterface> QuestTracker;                                      // 0x88(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_A2A8[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6C8A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuestAssetReference                  QuestToComplete;                                   // 0xA0(0x70)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 	static class UClass* StaticClass();

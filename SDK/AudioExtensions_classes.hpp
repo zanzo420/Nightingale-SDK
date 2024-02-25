@@ -83,7 +83,7 @@ class UAudioCodecEncoderSettings : public UObject
 {
 public:
 	int32                                        Version;                                           // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_92[0x4];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1C[0x4];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAudioCodecEncoderSettings* GetDefaultObj();
@@ -117,7 +117,7 @@ public:
 class USoundModulatorBase : public UObject
 {
 public:
-	uint8                                        Pad_93[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1D[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USoundModulatorBase* GetDefaultObj();

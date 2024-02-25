@@ -18,7 +18,7 @@ public:
 	struct FGuid                                 TraceGuid;                                         // 0xA0(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStatusEffectDataAsset*                StatusEffect;                                      // 0xB0(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                        StatusLevel;                                       // 0xB8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3081[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_74EF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       StatusDuration;                                    // 0xC0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSet<class UObject*>                         LHitObjectsTemp;                                   // 0xC8(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FStatusEffectDOT                      StatusEffectDOT;                                   // 0x118(0x18)(Edit, BlueprintVisible, NoDestructor)

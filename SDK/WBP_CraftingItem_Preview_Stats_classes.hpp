@@ -40,13 +40,13 @@ public:
 	class UWBP_Common_Button_Base_C*             WBP_Common_Button_Base;                            // 0x400(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                       WidgetSwitcher_AttributeBox;                       // 0x408(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                       WidgetSwitcher_CraftingPreview;                    // 0x410(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	uint8                                        Pad_8494[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8036[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       InventoryItemEntry;                                // 0x420(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        DesiredQuantity;                                   // 0x710(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8495[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8037[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              RecipeId;                                          // 0x720(0x70)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UNWXMenuDataEntry*                     ComparisonEntry;                                   // 0x790(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8496[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8038[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       PreviousInventoryItemEntry;                        // 0x7A0(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<struct FGameplayAttribute, float>       PreviousAttribute_Values;                          // 0xA90(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FLinearColor                          SelectedColor;                                     // 0xAE0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -54,7 +54,7 @@ public:
 	struct FGameplayAttribute                    LCurrentAttribute;                                 // 0xB00(0x38)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TMap<struct FGameplayAttribute, float>       AttributeModifierMultipliers;                      // 0xB38(0x50)(Edit, BlueprintVisible)
 	TMap<struct FGameplayAttribute, double>      LOutAttributes;                                    // 0xB88(0x50)(Edit, BlueprintVisible)
-	uint8                                        Pad_8497[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8039[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       FilterInventoryItemEntry;                          // 0xBE0(0x2F0)(Edit, BlueprintVisible, ExposeOnSpawn)
 	TMap<struct FGameplayAttribute, double>      LFilterAttributes;                                 // 0xED0(0x50)(Edit, BlueprintVisible)
 	class AActor*                                Interaction_Actor;                                 // 0xF20(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

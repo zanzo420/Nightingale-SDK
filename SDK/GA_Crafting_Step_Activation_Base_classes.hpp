@@ -14,12 +14,12 @@ namespace SDK
 class UGA_Crafting_Step_Activation_Base_C : public UGA_Crafting_Step_Base_C
 {
 public:
-	uint8                                        Pad_7C33[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_923E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x478(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FDynamicTypedStructs                  GeneratedStepData;                                 // 0x480(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bCancelled;                                        // 0x490(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bAsyncActivation;                                  // 0x491(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7C34[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_923F[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          InitializationTimeout;                             // 0x498(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEventData                    InitializedEventData;                              // 0x4A0(0xD0)(Edit, BlueprintVisible, DisableEditOnInstance)
 

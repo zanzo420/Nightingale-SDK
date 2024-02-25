@@ -28,7 +28,7 @@ class UMoviePipelineBurnInSetting : public UMoviePipelineRenderPass
 public:
 	struct FSoftClassPath                        BurnInClass;                                       // 0x48(0x20)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCompositeOntoFinalImage;                          // 0x68(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_461F[0x2F];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_44BC[0x2F];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTextureRenderTarget2D*                RenderTarget;                                      // 0x98(0x8)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UMoviePipelineBurnInWidget*>    BurnInWidgetInstances;                             // 0xA0(0x10)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
 
@@ -47,7 +47,7 @@ public:
 	TArray<class FString>                        StartConsoleCommands;                              // 0xA8(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class FString>                        EndConsoleCommands;                                // 0xB8(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FMoviePipelineConsoleVariableEntry> CVars;                                             // 0xC8(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4624[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_44C1[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMoviePipelineConsoleVariableSetting* GetDefaultObj();
@@ -65,7 +65,7 @@ class UMoviePipelineWidgetRenderer : public UMoviePipelineRenderPass
 {
 public:
 	bool                                         bCompositeOntoFinalImage;                          // 0x48(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4625[0x17];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_44C2[0x17];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTextureRenderTarget2D*                RenderTarget;                                      // 0x60(0x8)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();

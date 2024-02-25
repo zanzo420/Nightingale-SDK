@@ -17,14 +17,14 @@ public:
 	class FString                                UniquePlayerId;                                    // 0x4C8(0x10)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkRtpc*                               SpeedModifierRtpc;                                 // 0x4D8(0x8)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsPlayerSpeaking;                                  // 0x4E0(0x1)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_427B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3FBC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<uint32, float>                          AuxSendGains;                                      // 0x4E8(0x50)(Transient, NativeAccessSpecifierPrivate)
 	class UAkRtpc*                               CachedInteriorDistanceRtpc;                        // 0x538(0x8)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        MaxPlayingAttenuationRadius;                       // 0x540(0x4)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        CachedSpeedModifier;                               // 0x544(0x4)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                        SampleRate;                                        // 0x548(0x4)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                        ChannelCount;                                      // 0x54C(0x4)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_427C[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3FBE[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UVoipInputAkComponent* GetDefaultObj();
@@ -36,7 +36,7 @@ public:
 class UVoipWrapperSubsystem : public UWorldSubsystem
 {
 public:
-	uint8                                        Pad_427E[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3FC4[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ConfigAppID;                                       // 0x40(0x10)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FString                                ConfigAppKey;                                      // 0x50(0x10)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FString                                ConfigServerInfo;                                  // 0x60(0x10)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -45,7 +45,7 @@ public:
 	class FString                                LocalUserLoopbackEventPath;                        // 0x90(0x10)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FString                                PlaySpeedRtpcPath;                                 // 0xA0(0x10)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         EnableInPIE;                                       // 0xB0(0x1)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_427F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3FC5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAkAudioEvent*                         PartyInputReceiveEvent;                            // 0xB8(0x8)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UAkAudioEvent*                         PublicInputReceiveEvent;                           // 0xC0(0x8)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UAkAudioEvent*                         LocalUserLoopbackEvent;                            // 0xC8(0x8)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -59,9 +59,9 @@ public:
 	TArray<struct FVoipRoomMemberInfo>           RoomMembersInfo;                                   // 0x128(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
 	TArray<class UVoipInputAkComponent*>         ActiveInputs;                                      // 0x138(0x10)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
 	class UVoipInputAkComponent*                 LocalUserInput;                                    // 0x148(0x8)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4280[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3FC7[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FString, class FString>           PlayerUniqueIdToNameMap;                           // 0x160(0x50)(Transient, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4281[0x170];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3FC8[0x170];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UVoipWrapperSubsystem* GetDefaultObj();

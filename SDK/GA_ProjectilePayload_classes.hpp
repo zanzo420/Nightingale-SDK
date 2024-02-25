@@ -16,7 +16,7 @@ class UGA_ProjectilePayload_C : public UBP_NWXGameplayAbility_C
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x420(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FS_ProjectileSourceData               SourceData;                                        // 0x428(0x131)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash)
-	uint8                                        Pad_9BAE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9895[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class AActor*, struct FS_HitData>       RadiusHitActors;                                   // 0x560(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	TMap<class AActor*, struct FHitResult>       RadiusHitResults;                                  // 0x5B0(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, ContainsInstancedReference)
 	struct FVector                               ImpactDirection;                                   // 0x600(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -31,29 +31,29 @@ public:
 	struct FVector                               ImpactPoint;                                       // 0x660(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                    ImpactDecal;                                       // 0x678(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         ImpactDecalScalesToRadius;                         // 0x680(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9BAF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9896[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_ProjectileBase_C*                  OwningProjectile;                                  // 0x688(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         Async;                                             // 0x690(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9BB0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9897[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class UClass*>                          ValidHitActorClasses;                              // 0x698(0x50)(Edit, BlueprintVisible)
 	TArray<struct FGameplayTag>                  EffectTags;                                        // 0x6E8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FTagValueContainer                    TagValueContainer;                                 // 0x6F8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FActiveGameplayEffectHandle>   ActivePayloadGEHandle;                             // 0x708(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         StopOnPayload;                                     // 0x718(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         HideOnPayload;                                     // 0x719(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9BB1[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9898[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Normal;                                            // 0x720(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CheckObstruction;                                  // 0x738(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9BB2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9899[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AActor*>                        ObstructionCheckIgnoreActors;                      // 0x740(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	double                                       TEMPPassthroughDamage;                             // 0x750(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsPassthroughAbility;                              // 0x758(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9BB3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_989A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                PhysicalImpactEffect;                              // 0x760(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UStatusEffectDataAsset*                StatusEffect;                                      // 0x768(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       StatusDuration;                                    // 0x770(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                        StatusLevel;                                       // 0x778(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9BB4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_989B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPrimitiveComponent*                   Hit_Component;                                     // 0x780(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FName                                  HitBoneName;                                       // 0x788(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  BoneName;                                          // 0x790(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

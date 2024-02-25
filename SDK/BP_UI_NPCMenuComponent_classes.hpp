@@ -20,7 +20,7 @@ public:
 	TArray<struct FDataTableRowHandle>           ExclusiveCraftingContent;                          // 0xC8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FDataTableRowHandle>           VC_Store_Content;                                  // 0xD8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         Buyer;                                             // 0xE8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8871[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_85A9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FDataTableRowHandle>           StoreItemsToBuy;                                   // 0xF0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();

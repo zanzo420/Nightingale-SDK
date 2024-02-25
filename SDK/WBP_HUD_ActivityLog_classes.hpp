@@ -23,7 +23,7 @@ public:
 	struct FSlateColor                           DefaultColor;                                      // 0x380(0x14)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                           NegativeColor;                                     // 0x394(0x14)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                           SpecialColor;                                      // 0x3A8(0x14)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                        Pad_69D5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6153[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class URealmCardsProcessor*                  RealmCardsProcessor;                               // 0x3C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class URedemptionComponent*                  RedemptionComponent;                               // 0x3C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 

@@ -73,7 +73,7 @@ public:
 	bool                                         bReferenceSkinnedMesh;                             // 0x18(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bReferenceMorphTarget;                             // 0x19(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bHasMorphTargets;                                  // 0x1A(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4C79[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4C44[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<int32, struct FInterchangeLodSceneNodeContainer> SceneNodePerLodIndex;                              // 0x20(0x50)(Edit, NativeAccessSpecifierPublic)
 	TArray<class FString>                        ReferencingMeshGeometryUids;                       // 0x70(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };

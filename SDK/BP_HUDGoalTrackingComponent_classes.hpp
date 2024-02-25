@@ -18,10 +18,10 @@ public:
 	TMap<class FName, struct FS_UI_HUD_GoalTrackGroup> QuestTracks;                                       // 0x100(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<struct FS_UI_HUD_GoalTrackGroup>      StructureTracks;                                   // 0x150(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, RepNotify, ContainsInstancedReference)
 	int32                                        MaxStructureTrackCount;                            // 0x160(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_76FC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8656[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FS_UI_HUD_GoalTrackGroup>      RecipeTracks;                                      // 0x168(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, RepNotify, ContainsInstancedReference)
 	int32                                        MaxRecipeTrackCount;                               // 0x178(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_76FD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8657[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            QuestTracksUpdated;                                // 0x180(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            StructureTracksUpdated;                            // 0x190(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            RecipeTracksUpdated;                               // 0x1A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)

@@ -38,7 +38,7 @@ public:
 	int32                                        SecondaryCelestialColors_16_490E1F3749E51448B649F1BBBEBFCDDE; // 0x40(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Ring_Toggle_27_8014343845E650A562081696E3A00AAC;   // 0x44(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Ring_Type_29_060E701549CC32E87828DD9246B3CCF5;     // 0x48(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5F18[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5A47[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FRealmPlacementRequirement>    RealmPlacementRequirements_22_752EDDC24CE0BA1D6528A9A52B057220; // 0x50(0x10)(Edit, BlueprintVisible)
 };
 

@@ -14,7 +14,7 @@ namespace SDK
 class UNetConnectionEOS : public UIpConnection
 {
 public:
-	uint8                                        Pad_3518[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2F9A[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UNetConnectionEOS* GetDefaultObj();
@@ -28,7 +28,7 @@ class UNetDriverEOSBase : public UIpNetDriver
 public:
 	bool                                         bIsPassthrough;                                    // 0x870(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsUsingP2PSockets;                                // 0x871(0x1)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3519[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2F9B[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UNetDriverEOSBase* GetDefaultObj();

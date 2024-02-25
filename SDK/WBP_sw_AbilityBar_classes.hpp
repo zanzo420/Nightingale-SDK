@@ -31,7 +31,7 @@ public:
 	class ABP_EquippableItemBase_C*              Item;                                              // 0x3B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TMap<enum class EInputActionTypes, class UWBP_sw_abilityBar_Entry_C*> Slots;                                             // 0x3C0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	bool                                         bIsMainhand;                                       // 0x410(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_4112[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8E36[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<enum class EInputActionTypes>         Keys;                                              // 0x418(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();

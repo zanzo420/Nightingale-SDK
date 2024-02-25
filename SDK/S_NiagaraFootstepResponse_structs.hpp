@@ -22,9 +22,9 @@ public:
 	TSoftObjectPtr<class UNiagaraSystem>         FootstepEffect_66_063BEC014FDA120EA8959B8C2B0C86A6; // 0x0(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TSoftObjectPtr<class UNiagaraSystem>         FootprintEffect_70_6755F0EF4ECDA71A114A8484A917BC24; // 0x28(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                         StickToSource_67_C4447D534FE2184ED06AF184EEFA6ED5; // 0x50(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_60C8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5F35[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          VFX_ColorOverride_36_16E96BED41587484DDE4BFA4E775F16A; // 0x54(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_60C9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5F36[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       VFX_Scale_17_02CABA9541B733CC1B78018CC507CC06;     // 0x68(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_DebrisSpawnChance_19_0E3BBCC44A2D8F69A6E471820737CA34; // 0x70(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_DustSpawnChance_21_647BE2A4415AEA61559130AADA576573; // 0x78(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

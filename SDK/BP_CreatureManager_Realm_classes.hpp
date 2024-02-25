@@ -22,7 +22,7 @@ public:
 	double                                       CritterCooldown;                                   // 0x938(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSet<class ABP_CreatureSpawner_Wildlife_Critter_C*> CritterSpawners;                                   // 0x940(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	int32                                        MaxCritterSpawners;                                // 0x990(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7F2F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9EF3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FNavAgentProperties                   CritterNavProperties;                              // 0x998(0x38)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UDataTable*                            LSTCritterSpawners;                                // 0x9D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FDataTableRowHandle>           CritterSpawnerData;                                // 0x9D8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)

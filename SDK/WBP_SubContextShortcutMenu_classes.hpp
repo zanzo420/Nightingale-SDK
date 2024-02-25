@@ -32,7 +32,7 @@ public:
 	class UWidgetSwitcher*                       WidgetSwitcher_212;                                // 0x530(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<struct FDataTableRowHandle>           ShortcutContextEntryArray;                         // 0x538(0x10)(Edit, BlueprintVisible, ExposeOnSpawn)
 	FMulticastInlineDelegateProperty_            ContextMenuEntrySelected;                          // 0x548(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	uint8                                        Pad_5ACE[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_83F5[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       SelectedItemEntry;                                 // 0x560(0x2F0)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 	static class UClass* StaticClass();

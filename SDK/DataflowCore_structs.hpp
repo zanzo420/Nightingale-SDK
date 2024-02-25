@@ -19,7 +19,7 @@ namespace SDK
 struct FDataflowConnection
 {
 public:
-	uint8                                        Pad_2CB2[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_27F9[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x48 - 0x40)
@@ -27,7 +27,7 @@ public:
 struct FDataflowInput : public FDataflowConnection
 {
 public:
-	uint8                                        Pad_2CB3[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_27FA[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x68 - 0x40)
@@ -35,7 +35,7 @@ public:
 struct FDataflowOutput : public FDataflowConnection
 {
 public:
-	uint8                                        Pad_2CB4[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_27FC[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xE8 (0xE8 - 0x0)
@@ -43,9 +43,9 @@ public:
 struct FDataflowNode
 {
 public:
-	uint8                                        Pad_2CB5[0xC8];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_27FD[0xC8];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bActive;                                           // 0xC8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CB6[0x1F];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_27FE[0x1F];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x108 - 0xE8)
@@ -56,7 +56,7 @@ public:
 	class FName                                  Key;                                               // 0xE8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Default;                                           // 0xF0(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsOverriden;                                       // 0x100(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CB8[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_27FF[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -64,7 +64,7 @@ public:
 struct FDataflowSelection
 {
 public:
-	uint8                                        Pad_2CB9[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2800[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x20 - 0x20)

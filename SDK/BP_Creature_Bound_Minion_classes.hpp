@@ -14,7 +14,7 @@ namespace SDK
 class ABP_Creature_Bound_Minion_C : public ABP_Creature_Bound_C
 {
 public:
-	uint8                                        Pad_8049[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7E4F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1638(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UBP_AudioFocusMixingComponent_C*       BP_AudioFocusMixingComponent;                      // 0x1640(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                     WP_Indicator;                                      // 0x1648(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)

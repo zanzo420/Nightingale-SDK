@@ -26,19 +26,19 @@ public:
 	double                                       MontageSelectionLeeway;                            // 0x478(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       RunningMontageSelectionLeeway;                     // 0x480(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class Enum_RootMotionMatchMode          MontageSelectionMode;                              // 0x488(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8067[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_73AD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                GrantAbilitiesGE;                                  // 0x490(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FActiveGameplayEffectHandle           GrantAbilitiesGEHandle;                            // 0x498(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       MontageDelay;                                      // 0x4A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         MontageDelayRandomize;                             // 0x4A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ManualCreatureAbilityActivate;                     // 0x4A9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8068[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_73AE[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                IncentiveGameplayEffectClass;                      // 0x4B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FS_CreatureAbilityZoneDefinition> ZoneDefinition;                                    // 0x4B8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTagContainer                 Event_Tags;                                        // 0x4C8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UEnvQuery*                             EQSForMontage;                                     // 0x4E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	enum class EEnvQueryRunMode                  EQSRunMode;                                        // 0x4F0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8069[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_73AF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               EQSLocation;                                       // 0x4F8(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

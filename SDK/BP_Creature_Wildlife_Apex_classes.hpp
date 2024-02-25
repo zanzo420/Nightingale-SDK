@@ -14,12 +14,12 @@ namespace SDK
 class ABP_Creature_Wildlife_Apex_C : public ABP_Creature_Wildlife_C
 {
 public:
-	uint8                                        Pad_9BB6[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F93[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_HarvestComponent_C*                BP_HarvestComponent;                               // 0x15E8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBP_ApexComponent_C*                   BP_ApexComponent;                                  // 0x15F0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               ApexHarvestNodeInstanceLocation;                   // 0x15F8(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        ApexHarvestNodeInstance;                           // 0x1610(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9BB7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F9C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_ResourceNode_IIM_C*                ApexHarvestNode;                                   // 0x1618(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

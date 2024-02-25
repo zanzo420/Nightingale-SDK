@@ -27,9 +27,9 @@ public:
 	TArray<enum class EBiomeID>                  Biomes;                                            // 0x60(0x10)(Parm, OutParm)
 	bool                                         ShowNameplate;                                     // 0x70(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValidRowHandle_IsValid;                 // 0x71(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5ED0[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6789[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_CreatureUIData                     CallFunc_GetDataTableRowFromName_OutRow;           // 0x78(0x59)(HasGetValueTypeHash)
-	uint8                                        Pad_5ED1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_678A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0xD8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 

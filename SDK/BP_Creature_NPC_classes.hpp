@@ -28,7 +28,7 @@ public:
 	double                                       EndAmbientDialogueRadius;                          // 0x1628(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class FText                                  FactionName;                                       // 0x1630(0x18)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
 	bool                                         PlayerEmployee;                                    // 0x1648(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6370[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_77EF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   EmployeeManagement;                                // 0x1650(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            OnOwnerSet;                                        // 0x1660(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class AEncounterBase*                        Associated_Encounter;                              // 0x1670(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -41,7 +41,7 @@ public:
 	double                                       LastAmbientDialogTime;                             // 0x16A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_NPC_Moods                       NewMood;                                           // 0x16B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_NPC_Moods                       OldMood;                                           // 0x16B1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6371[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_77F0[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAkStateValue*                         Music_State;                                       // 0x16B8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FDataTableRowHandle                   NPCData;                                           // 0x16C0(0x10)(Edit, BlueprintVisible, SaveGame, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FVector                               HomeLocation;                                      // 0x16D0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,7 +50,7 @@ public:
 	TMap<class AActor*, struct FActiveGameplayEffectHandle> DialogueProtectionEffects;                         // 0x1708(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	struct FDataTableRowHandle                   CurrentEncounterMenu;                              // 0x1758(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
 	struct FS_NPCIndicatorSignProperties         NPC_Indicator_Sign;                                // 0x1768(0x2)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6373[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_77F2[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStringTableEntryHandle               NPCNameHandle;                                     // 0x1770(0x18)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
 
 	static class UClass* StaticClass();

@@ -25,7 +25,7 @@ public:
 class UInterchangeAnimationTrackSetFactory : public UInterchangeFactoryBase
 {
 public:
-	uint8                                        Pad_4B93[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AA4[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeAnimationTrackSetFactory* GetDefaultObj();
@@ -92,7 +92,7 @@ public:
 class UInterchangeSceneVariantSetsFactory : public UInterchangeFactoryBase
 {
 public:
-	uint8                                        Pad_4B94[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AAC[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeSceneVariantSetsFactory* GetDefaultObj();
@@ -154,7 +154,7 @@ public:
 	struct FExpressionInput                      C;                                                 // 0x128(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      D;                                                 // 0x150(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                        ConstCoordinate;                                   // 0x178(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4B95[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AB2[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXRamp4* GetDefaultObj();
@@ -177,7 +177,7 @@ public:
 class UInterchangeFbxTranslator : public UInterchangeTranslatorBase
 {
 public:
-	uint8                                        Pad_4B96[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AB6[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeFbxTranslator* GetDefaultObj();
@@ -189,7 +189,7 @@ public:
 class UInterchangeGLTFTranslator : public UInterchangeTranslatorBase
 {
 public:
-	uint8                                        Pad_4B97[0x240];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4ABA[0x240];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeGLTFTranslator* GetDefaultObj();
@@ -201,7 +201,7 @@ public:
 class UInterchangeMaterialXTranslator : public UInterchangeTranslatorBase
 {
 public:
-	uint8                                        Pad_4B98[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4ABD[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeMaterialXTranslator* GetDefaultObj();
@@ -246,7 +246,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4B99[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AC0[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXBurn* GetDefaultObj();
@@ -262,7 +262,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4B9A[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AC1[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXDifference* GetDefaultObj();
@@ -278,7 +278,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4B9B[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AC2[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXDisjointOver* GetDefaultObj();
@@ -294,7 +294,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4B9C[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AC4[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXDodge* GetDefaultObj();
@@ -309,18 +309,18 @@ public:
 	struct FExpressionInput                      Position;                                          // 0xB0(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      Amplitude;                                         // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAmplitude;                                    // 0x100(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4B9D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4AC8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FExpressionInput                      Octaves;                                           // 0x108(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	int32                                        ConstOctaves;                                      // 0x130(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4B9E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4AC9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FExpressionInput                      Lacunarity;                                        // 0x138(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstLacunarity;                                   // 0x160(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4B9F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4ACA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FExpressionInput                      Diminish;                                          // 0x168(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstDiminish;                                     // 0x190(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Scale;                                             // 0x194(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bTurbulence;                                       // 0x198(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BA0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4ACB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Levels;                                            // 0x19C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        OutputMin;                                         // 0x1A0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        OutputMax;                                         // 0x1A4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -339,7 +339,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BA1[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4ACD[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXIn* GetDefaultObj();
@@ -354,7 +354,7 @@ public:
 	struct FExpressionInput                      Input;                                             // 0xB0(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FLinearColor                          LuminanceFactors;                                  // 0xD8(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMaterialXLuminanceMode           LuminanceMode;                                     // 0xE8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BA2[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AD0[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXLuminance* GetDefaultObj();
@@ -370,7 +370,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BA3[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AD2[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXMask* GetDefaultObj();
@@ -386,7 +386,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BA4[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AD5[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXMatte* GetDefaultObj();
@@ -402,7 +402,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BA5[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AD9[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXMinus* GetDefaultObj();
@@ -418,7 +418,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BA6[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4ADB[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXOut* GetDefaultObj();
@@ -434,7 +434,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BA7[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4ADD[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXOver* GetDefaultObj();
@@ -450,7 +450,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BA8[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4ADF[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXOverlay* GetDefaultObj();
@@ -469,7 +469,7 @@ public:
 	struct FExpressionInput                      RotationAngle;                                     // 0x150(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstRotationAngle;                                // 0x178(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        ConstCoordinate;                                   // 0x17C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BA9[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AE3[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXPlace2D* GetDefaultObj();
@@ -485,7 +485,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BAA[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AE6[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXPlus* GetDefaultObj();
@@ -513,7 +513,7 @@ public:
 	struct FExpressionInput                      A;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      B;                                                 // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                        ConstCoordinate;                                   // 0x128(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BAB[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AE9[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXRampLeftRight* GetDefaultObj();
@@ -529,7 +529,7 @@ public:
 	struct FExpressionInput                      A;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      B;                                                 // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                        ConstCoordinate;                                   // 0x128(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BAC[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AEB[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXRampTopBottom* GetDefaultObj();
@@ -564,7 +564,7 @@ public:
 	struct FExpressionInput                      Input;                                             // 0xB0(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      RotationAngle;                                     // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstRotationAngle;                                // 0x100(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BAD[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AF1[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXRotate2D* GetDefaultObj();
@@ -580,7 +580,7 @@ public:
 	struct FExpressionInput                      B;                                                 // 0xD8(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      ALPHA;                                             // 0x100(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstAlpha;                                        // 0x128(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BAE[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AF2[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXScreen* GetDefaultObj();
@@ -598,7 +598,7 @@ public:
 	struct FExpressionInput                      Center;                                            // 0x128(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstCenter;                                       // 0x150(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        ConstCoordinate;                                   // 0x154(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BAF[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AF6[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXSplitLeftRight* GetDefaultObj();
@@ -616,7 +616,7 @@ public:
 	struct FExpressionInput                      Center;                                            // 0x128(0x28)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ConstCenter;                                       // 0x150(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        ConstCoordinate;                                   // 0x154(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BB0[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AFA[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXSplitTopBottom* GetDefaultObj();
@@ -645,7 +645,7 @@ public:
 	float                                        FilterSize;                                        // 0x244(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        FilterOffset;                                      // 0x248(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMaterialXTextureSampleBlurFilter Filter;                                            // 0x24C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4BB1[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AFF[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMaterialExpressionMaterialXTextureSampleParameterBlur* GetDefaultObj();
@@ -669,7 +669,7 @@ public:
 class UInterchangeMaterialFactory : public UInterchangeFactoryBase
 {
 public:
-	uint8                                        Pad_4BB2[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B04[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeMaterialFactory* GetDefaultObj();
@@ -681,7 +681,7 @@ public:
 class UInterchangeMaterialFunctionFactory : public UInterchangeFactoryBase
 {
 public:
-	uint8                                        Pad_4BB3[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B07[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeMaterialFunctionFactory* GetDefaultObj();
@@ -693,7 +693,7 @@ public:
 class UInterchangeOBJTranslator : public UInterchangeTranslatorBase
 {
 public:
-	uint8                                        Pad_4BB4[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B09[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeOBJTranslator* GetDefaultObj();
@@ -716,7 +716,7 @@ public:
 class UInterchangeSkeletalMeshFactory : public UInterchangeFactoryBase
 {
 public:
-	uint8                                        Pad_4BB5[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B0C[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeSkeletalMeshFactory* GetDefaultObj();
@@ -739,7 +739,7 @@ public:
 class UInterchangeStaticMeshFactory : public UInterchangeFactoryBase
 {
 public:
-	uint8                                        Pad_4BB6[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B0E[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeStaticMeshFactory* GetDefaultObj();
@@ -795,7 +795,7 @@ public:
 class UInterchangeDDSTranslator : public UInterchangeTranslatorBase
 {
 public:
-	uint8                                        Pad_4BB7[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B1A[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeDDSTranslator* GetDefaultObj();
@@ -807,7 +807,7 @@ public:
 class UInterchangeIESTranslator : public UInterchangeTranslatorBase
 {
 public:
-	uint8                                        Pad_4BB8[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B1B[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeIESTranslator* GetDefaultObj();
@@ -819,7 +819,7 @@ public:
 class UInterchangeImageWrapperTranslator : public UInterchangeTranslatorBase
 {
 public:
-	uint8                                        Pad_4BB9[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B1D[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeImageWrapperTranslator* GetDefaultObj();
@@ -831,7 +831,7 @@ public:
 class UInterchangeJPGTranslator : public UInterchangeTranslatorBase
 {
 public:
-	uint8                                        Pad_4BBA[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B20[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeJPGTranslator* GetDefaultObj();
@@ -843,7 +843,7 @@ public:
 class UInterchangePCXTranslator : public UInterchangeTranslatorBase
 {
 public:
-	uint8                                        Pad_4BBB[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B22[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangePCXTranslator* GetDefaultObj();
@@ -855,7 +855,7 @@ public:
 class UInterchangePSDTranslator : public UInterchangeTranslatorBase
 {
 public:
-	uint8                                        Pad_4BBC[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B25[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangePSDTranslator* GetDefaultObj();
@@ -867,7 +867,7 @@ public:
 class UInterchangeTextureFactory : public UInterchangeFactoryBase
 {
 public:
-	uint8                                        Pad_4BBD[0x90];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B26[0x90];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeTextureFactory* GetDefaultObj();

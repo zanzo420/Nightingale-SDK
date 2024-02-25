@@ -14,10 +14,10 @@ namespace SDK
 class UAudioCurveSourceComponent : public UAudioComponent
 {
 public:
-	uint8                                        Pad_48D3[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_47F0[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CurveSourceBindingName;                            // 0xC88(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        CurveSyncOffset;                                   // 0xC90(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_48D4[0x2C];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_47F1[0x2C];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAudioCurveSourceComponent* GetDefaultObj();

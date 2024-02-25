@@ -148,10 +148,10 @@ struct FOptimusDataDomain
 {
 public:
 	enum class EOptimusDataDomainType            Type;                                              // 0x0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_45D3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4471[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          DimensionNames;                                    // 0x8(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                        Multiplier;                                        // 0x18(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_45D4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4472[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Expression;                                        // 0x20(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FName>                          LevelNames;                                        // 0x30(0x10)(ZeroConstructor, Deprecated, NativeAccessSpecifierPrivate)
 };
@@ -188,7 +188,7 @@ public:
 struct FOptimusAction
 {
 public:
-	uint8                                        Pad_45D5[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4473[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x28 - 0x18)
@@ -196,7 +196,7 @@ public:
 struct FOptimusCompoundAction : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45D6[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4474[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x30 - 0x18)
@@ -204,7 +204,7 @@ public:
 struct FOptimusComponentBindingAction_AddBinding : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45D7[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4475[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x48 - 0x18)
@@ -212,7 +212,7 @@ public:
 struct FOptimusComponentBindingAction_RemoveBinding : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45D8[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4476[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x28 - 0x18)
@@ -220,7 +220,7 @@ public:
 struct FOptimusComponentBindingAction_RenameBinding : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45D9[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4477[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x40 - 0x18)
@@ -228,7 +228,7 @@ public:
 struct FOptimusComponentBindingAction_SetComponentSource : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45DA[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4478[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x58 - 0x18)
@@ -236,7 +236,7 @@ public:
 struct FOptimusNodeAction_RenameNode : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45DB[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4479[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x48 - 0x18)
@@ -244,7 +244,7 @@ public:
 struct FOptimusNodeAction_MoveNode : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45DC[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_447A[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x48 - 0x18)
@@ -252,7 +252,7 @@ public:
 struct FOptimusNodeAction_SetPinValue : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45DD[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_447B[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x38 - 0x18)
@@ -260,7 +260,7 @@ public:
 struct FOptimusNodeAction_SetPinName : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45DE[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_447C[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x38 - 0x18)
@@ -268,7 +268,7 @@ public:
 struct FOptimusNodeAction_SetPinType : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45DF[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_447D[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x90 (0xA8 - 0x18)
@@ -276,7 +276,7 @@ public:
 struct FOptimusNodeAction_SetPinDataDomain : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45E0[0x90];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_447E[0x90];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xA0 (0xB8 - 0x18)
@@ -284,7 +284,7 @@ public:
 struct FOptimusNodeAction_AddRemovePin : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45E1[0xA0];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_447F[0xA0];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0xB8 - 0xB8)
@@ -313,7 +313,7 @@ public:
 struct FOptimusNodeAction_MovePin : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45E2[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4480[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x78 (0x90 - 0x18)
@@ -321,7 +321,7 @@ public:
 struct FOptimusNodeGraphAction_AddGraph : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45E3[0x78];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4481[0x78];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x58 - 0x18)
@@ -329,7 +329,7 @@ public:
 struct FOptimusNodeGraphAction_RemoveGraph : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45E4[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4482[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x38 - 0x18)
@@ -337,7 +337,7 @@ public:
 struct FOptimusNodeGraphAction_RenameGraph : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45E5[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4483[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x88 (0xA0 - 0x18)
@@ -345,7 +345,7 @@ public:
 struct FOptimusNodeGraphAction_AddNode : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45E6[0x88];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4484[0x88];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x88 (0xA0 - 0x18)
@@ -353,7 +353,7 @@ public:
 struct FOptimusNodeGraphAction_DuplicateNode : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45E7[0x88];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4485[0x88];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x48 (0x60 - 0x18)
@@ -361,7 +361,7 @@ public:
 struct FOptimusNodeGraphAction_RemoveNode : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45E8[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4486[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x40 - 0x18)
@@ -369,7 +369,7 @@ public:
 struct FOptimusNodeGraphAction_AddRemoveLink : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45E9[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4487[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x40 - 0x40)
@@ -391,7 +391,7 @@ public:
 struct FOptimusNodeGraphAction_ConnectAdderPin : public FOptimusNodeGraphAction_AddRemoveLink
 {
 public:
-	uint8                                        Pad_45EA[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4488[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x98 (0xB0 - 0x18)
@@ -399,7 +399,7 @@ public:
 struct FOptimusNodeGraphAction_PackageKernelFunction : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45EB[0x98];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4489[0x98];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x48 (0x60 - 0x18)
@@ -407,7 +407,7 @@ public:
 struct FOptimusNodeGraphAction_UnpackageKernelFunction : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45EC[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_448A[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x58 (0x70 - 0x18)
@@ -415,7 +415,7 @@ public:
 struct FOptimusResourceAction_AddResource : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45ED[0x58];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_448B[0x58];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x48 - 0x18)
@@ -423,7 +423,7 @@ public:
 struct FOptimusResourceAction_RemoveResource : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45EE[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_448C[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x28 - 0x18)
@@ -431,7 +431,7 @@ public:
 struct FOptimusResourceAction_RenameResource : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45EF[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_448D[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x40 - 0x18)
@@ -439,7 +439,7 @@ public:
 struct FOptimusResourceAction_SetDataType : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45F0[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_448E[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x88 (0xA0 - 0x18)
@@ -447,7 +447,7 @@ public:
 struct FOptimusResourceAction_SetDataDomain : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45F1[0x88];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_448F[0x88];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x30 - 0x18)
@@ -455,7 +455,7 @@ public:
 struct FOptimusVariableAction_AddVariable : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45F2[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4490[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x58 - 0x18)
@@ -463,7 +463,7 @@ public:
 struct FOptimusVariableAction_RemoveVariable : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45F3[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4491[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x28 - 0x18)
@@ -471,7 +471,7 @@ public:
 struct FOptimusVariableAction_RenameVariable : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45F4[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4492[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x40 - 0x18)
@@ -479,7 +479,7 @@ public:
 struct FOptimusVariableAction_SetDataType : public FOptimusAction
 {
 public:
-	uint8                                        Pad_45F5[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4493[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x48 (0x48 - 0x0)
@@ -509,7 +509,7 @@ struct FOptimusDebugDrawParameters
 {
 public:
 	bool                                         bForceEnable;                                      // 0x0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_45F6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4494[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        MaxLineCount;                                      // 0x4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxTriangleCount;                                  // 0x8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxCharacterCount;                                 // 0xC(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -525,7 +525,7 @@ public:
 	struct FShaderValueTypeHandle                ValueType;                                         // 0x10(0x8)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint8>                                Value;                                             // 0x18(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                        Offset;                                            // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_45F7[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4495[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -569,11 +569,11 @@ public:
 	class FName                                  TypeCategory;                                      // 0x2C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TWeakObjectPtr<class UObject>                TypeObject;                                        // 0x34(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bHasCustomPinColor;                                // 0x3C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_45F8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4496[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CustomPinColor;                                    // 0x40(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EOptimusDataTypeUsageFlags        UsageFlags;                                        // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EOptimusDataTypeFlags             TypeFlags;                                         // 0x51(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_45F9[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4497[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -583,7 +583,7 @@ struct FOptimusComputeGraphInfo
 public:
 	enum class EOptimusNodeGraphType             GraphType;                                         // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  GraphName;                                         // 0x4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_45FA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4498[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UOptimusComputeGraph*                  ComputeGraph;                                      // 0x10(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -594,7 +594,7 @@ struct FOptimusDeformerInstanceExecInfo
 public:
 	class FName                                  GraphName;                                         // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EOptimusNodeGraphType             GraphType;                                         // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_45FB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4499[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UComputeGraph*                         ComputeGraph;                                      // 0x10(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FComputeGraphInstance                 ComputeGraphInstance;                              // 0x18(0x18)(NativeAccessSpecifierPublic)
 };

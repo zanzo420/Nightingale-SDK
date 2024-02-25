@@ -14,7 +14,7 @@ namespace SDK
 class UBP_RewardBehaviour_Technique_C : public UBP_RewardBehaviour_Technique_Base_C
 {
 public:
-	uint8                                        Pad_6CA8[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6B55[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSkillDataReference                   SkillReference;                                    // 0x40(0xE0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

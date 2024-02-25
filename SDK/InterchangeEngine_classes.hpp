@@ -56,7 +56,7 @@ public:
 	struct FInterchangeImportSettings            SceneImportSettings;                               // 0x160(0x88)(Edit, Config, NativeAccessSpecifierPublic)
 	TSoftClassPtr<class UInterchangeFilePickerBase> FilePickerClass;                                   // 0x1E8(0x28)(Edit, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bStaticMeshUseSmoothEdgesIfSmoothingInformationIsMissing; // 0x210(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4B81[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4ABE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftClassPtr<class UInterchangePipelineBase> GenericPipelineClass;                              // 0x218(0x28)(Edit, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -94,7 +94,7 @@ public:
 class UInterchangeSceneImportAsset : public UObject
 {
 public:
-	uint8                                        Pad_4B82[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AC6[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeSceneImportAsset* GetDefaultObj();
@@ -112,7 +112,7 @@ public:
 	TArray<class UObject*>                       Pipelines;                                         // 0x60(0x10)(ZeroConstructor, Deprecated, UObjectWrapper, NativeAccessSpecifierPrivate)
 	class UInterchangeBaseNodeContainer*         TransientNodeContainer;                            // 0x70(0x8)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UObject*>                       TransientPipelines;                                // 0x78(0x10)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4B83[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4AE2[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeAssetImportData* GetDefaultObj();
@@ -149,11 +149,11 @@ public:
 class UInterchangeManager : public UObject
 {
 public:
-	uint8                                        Pad_4B88[0xB0];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4B05[0xB0];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<TSubclassOf<class UObject>>             RegisteredTranslatorsClass;                        // 0xD8(0x50)(UObjectWrapper, NativeAccessSpecifierPrivate)
 	TMap<TSubclassOf<class UObject>, TSubclassOf<class UObject>> RegisteredFactoryClasses;                          // 0x128(0x50)(UObjectWrapper, NativeAccessSpecifierPrivate)
 	TMap<TSubclassOf<class UObject>, class UInterchangeWriterBase*> RegisteredWriters;                                 // 0x178(0x50)(UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4B89[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4B06[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeManager* GetDefaultObj();

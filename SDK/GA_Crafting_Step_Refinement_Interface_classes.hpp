@@ -14,14 +14,14 @@ namespace SDK
 class UGA_Crafting_Step_Refinement_Interface_C : public UGA_Crafting_Step_Base_C
 {
 public:
-	uint8                                        Pad_60E6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9271[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x478(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FCraftingRecipeReference              RecipeId;                                          // 0x480(0x70)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FS_Crafting_Step_RefinementTimer      CurrentStepData;                                   // 0x4F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDynamicTypedStructs                  DataForInterface;                                  // 0x4F8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                        Pad_60E7[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9272[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CurrentCraftInProgress;                            // 0x510(0xD8)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	uint8                                        Pad_60E8[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_9273[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGA_Crafting_Step_Refinement_Interface_C* GetDefaultObj();

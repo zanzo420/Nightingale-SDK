@@ -22,7 +22,7 @@ public:
 	FMulticastInlineDelegateProperty_            OnEntryDragged;                                    // 0x708(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<class UClass*>                        ItemFilters;                                       // 0x718(0x10)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         AllowDragging;                                     // 0x728(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5F67[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_838B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       LastSelectedEntry;                                 // 0x730(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();

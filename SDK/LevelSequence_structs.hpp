@@ -28,7 +28,7 @@ public:
 struct FLevelSequenceLegacyObjectReference
 {
 public:
-	uint8                                        Pad_2FFC[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2B3B[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x50 (0x50 - 0x0)
@@ -36,7 +36,7 @@ public:
 struct FLevelSequenceObjectReferenceMap
 {
 public:
-	uint8                                        Pad_2FFD[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2B3C[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -44,7 +44,7 @@ public:
 struct FBoundActorProxy
 {
 public:
-	uint8                                        Pad_2FFE[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2B3D[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x38 (0x38 - 0x0)
@@ -117,7 +117,7 @@ public:
 	TSoftObjectPtr<class UCameraComponent>       CameraComponent;                                   // 0x70(0x28)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, EditConst, InstancedReference, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULevelSequence*                        ActiveShot;                                        // 0x98(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMovieSceneSequenceID                 ShotID;                                            // 0xA0(0x4)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3000[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2B47[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                MasterName;                                        // 0xA8(0x10)(ZeroConstructor, Deprecated, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FQualifiedFrameTime                   MasterTime;                                        // 0xB8(0x10)(Deprecated, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };

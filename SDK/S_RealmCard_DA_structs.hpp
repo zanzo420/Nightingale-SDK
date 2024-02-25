@@ -20,7 +20,7 @@ struct FS_RealmCard_DA
 {
 public:
 	class FText                                  Name_2_064CBF9C450FDC6C331D2E910A0ED689;           // 0x0(0x18)(Edit, BlueprintVisible)
-	uint8                                        Pad_5AD3[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4517[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    DataAssetReference_7_182BE2CB408DCB1AAC52ACA61AD7BE01; // 0x20(0x80)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
 

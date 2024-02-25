@@ -26,12 +26,12 @@ public:
 	FMulticastInlineDelegateProperty_            SelectedLoadoutChanged;                            // 0x1A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FPlayerLoadoutDataReference           DefaultInitialLoadout;                             // 0x1B0(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
 	enum class ERealmDifficulty                  SelectedDifficulty;                                // 0x1D8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_540A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_91EB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FEyeAppearance                        LeftEyeOverrides;                                  // 0x1E0(0x78)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, NoDestructor)
 	struct FEyeAppearance                        RightEyeOverrides;                                 // 0x258(0x78)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, NoDestructor)
 	FMulticastInlineDelegateProperty_            EyeChanged;                                        // 0x2D0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FTeethAppearance                      TeethOverride;                                     // 0x2E0(0xC)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, NoDestructor)
-	uint8                                        Pad_540B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_91ED[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            TeethChanged;                                      // 0x2F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FDataTableRowHandle                   FallbackArchetype;                                 // 0x300(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FAppearanceMorphTarget>        BodyMorphTargets;                                  // 0x310(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
@@ -46,7 +46,7 @@ public:
 	struct FEyeLashAppearance                    RightEyeLashOverrides;                             // 0x3E0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, SaveGame, NoDestructor)
 	FMulticastInlineDelegateProperty_            EyeLashChanged;                                    // 0x430(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	enum class EPlayerBackground                 PlayerBackground;                                  // 0x440(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_540C[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_91EE[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FHairDataReference                    HairDataOverride;                                  // 0x450(0x70)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, HasGetValueTypeHash)
 	struct FHairDataReference                    FacialHairDataOverride;                            // 0x4C0(0x70)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, HasGetValueTypeHash)
 	struct FHairDataReference                    EyeBrowHairDataOverride;                           // 0x530(0x70)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, HasGetValueTypeHash)
@@ -63,7 +63,7 @@ public:
 	FMulticastInlineDelegateProperty_            MakeupDataChanged;                                 // 0x7B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            FamilyTreeChanged;                                 // 0x7C0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FFoundationAppearance                 FoundationOverride;                                // 0x7D0(0xC)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, NoDestructor)
-	uint8                                        Pad_540D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_91EF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       EyeScaleOverride;                                  // 0x7E0(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            EyeScaledChanged;                                  // 0x7E8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	double                                       MottlingOverride;                                  // 0x7F8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

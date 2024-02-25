@@ -23,26 +23,26 @@ public:
 	int32                                        BaseHireCost;                                      // 0xD8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class Enum_ActionStationType            CurrentActionStationType;                          // 0xDC(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Female_;                                           // 0xDD(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_75FD[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4F80[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  BTreeKey_ActionStation;                            // 0xE0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<class FString, int32>                   PlayerIDFriendshipScoreMap;                        // 0xE8(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                       BestFriendCostMultiplier;                          // 0x138(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class Enum_HiringStatus                 HiringStatus;                                      // 0x140(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_75FE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4F81[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  UIName;                                            // 0x148(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  UIDescription;                                     // 0x160(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UTexture2D*                            UIIcon;                                            // 0x178(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	enum class Enum_FriendshipLevel              UIFriendshipLevel;                                 // 0x180(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_75FF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4F82[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        UIFriendshipScore;                                 // 0x184(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                BestFriendID;                                      // 0x188(0x10)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, RepNotify, HasGetValueTypeHash)
 	class AActor*                                OrderTarget;                                       // 0x198(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         UIIsBestFriend;                                    // 0x1A0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7600[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4F83[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  UIName_CharacterName;                              // 0x1A8(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class FText                                  UIName_CharacterRole;                              // 0x1C0(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         IsSpeaking;                                        // 0x1D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7602[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4F84[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    CurrencyReference;                                 // 0x1E0(0x80)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

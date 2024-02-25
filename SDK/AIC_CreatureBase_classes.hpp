@@ -20,7 +20,7 @@ public:
 	class UAIActionComponent*                    AIAction;                                          // 0x4D0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                         DisabledAIOverride;                                // 0x4D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bPathingBlocked;                                   // 0x4D9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7C91[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_633B[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                LastValidTarget;                                   // 0x4E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            CreatureSetTarget;                                 // 0x4E8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMap<class AActor*, double>                  ThreatMap;                                         // 0x4F8(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
