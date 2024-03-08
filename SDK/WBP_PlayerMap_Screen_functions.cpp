@@ -853,6 +853,24 @@ void UWBP_PlayerMap_Screen_C::ExecuteUbergraph_WBP_PlayerMap_Screen(int32 EntryP
 }
 
 
+// Function WBP_PlayerMap_Screen.WBP_PlayerMap_Screen_C.OnPlayerLocalRespiteTravelInitiated__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UWBP_PlayerMap_Screen_C::OnPlayerLocalRespiteTravelInitiated__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_PlayerMap_Screen_C", "OnPlayerLocalRespiteTravelInitiated__DelegateSignature");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function WBP_PlayerMap_Screen.WBP_PlayerMap_Screen_C.ConfirmationPopup__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:

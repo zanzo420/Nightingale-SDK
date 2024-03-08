@@ -21,10 +21,10 @@ public:
 	TSet<class ABP_CreatureSpawnerBase_C*>       Spawners;                                          // 0x590(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	TSet<class UObject*>                         Homes;                                             // 0x5E0(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	bool                                         bAIEnabled;                                        // 0x630(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7C36[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_801D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class ABP_Creature_NPC_C*>              NPCs;                                              // 0x638(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	int32                                        MaxCreatures;                                      // 0x688(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7C37[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_801E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class ABP_CreatureSpawnerBase_C*, int32> SpawnerReserveAllocations;                         // 0x690(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	FMulticastInlineDelegateProperty_            AIEnabledChanged;                                  // 0x6E0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	double                                       InitialSpawnReadyDelayEditor;                      // 0x6F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -32,16 +32,16 @@ public:
 	class ABP_AI_StatTracker_C*                  AIStatTracker;                                     // 0x700(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                        POIs_0;                                            // 0x708(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	bool                                         bHasSpawnedInitialSpawners;                        // 0x718(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7C38[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_801F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_SimulationStateManager_C*          SimStateManager;                                   // 0x720(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	TMap<enum class ECreatureType, int32>        ReservedCreaturesByType;                           // 0x728(0x50)(Edit, BlueprintVisible)
 	bool                                         POIsInitialized;                                   // 0x778(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7C39[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8020[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       WildlifeRespawnThreshold;                          // 0x780(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       TrySpawnWildLifeFrequency;                         // 0x788(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       WildlifeFillbudgetLimit;                           // 0x790(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsFillingBudget;                                   // 0x798(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7C3A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8021[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          TrySpawnWildlifeHandle;                            // 0x7A0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class ABP_CreatureSpawnerBase_C*>     AudioSpawnersApex;                                 // 0x7A8(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	struct FVector2D                             FarAudioDelayApex;                                 // 0x7B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

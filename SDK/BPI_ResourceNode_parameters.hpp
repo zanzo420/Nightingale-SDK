@@ -29,7 +29,7 @@ struct IBPI_ResourceNode_C_GetGrantedResource_Params
 public:
 	int32                                        InstanceID;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x4(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_643D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_60B0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemData                             ResourceData;                                      // 0x8(0xD8)(Parm, OutParm, ContainsInstancedReference)
 };
 

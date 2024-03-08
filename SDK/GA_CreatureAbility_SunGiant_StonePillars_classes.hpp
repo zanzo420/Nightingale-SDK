@@ -16,7 +16,7 @@ class UGA_CreatureAbility_SunGiant_StonePillars_C : public UGA_CreatureAbility_M
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x5F0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	TArray<class AActor*>                        ProjectileTarget;                                  // 0x5F8(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	uint8                                        Pad_9AA7[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9C5F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            Transform;                                         // 0x610(0x60)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_Creature_Wildlife_SunGiant_C*      SunGiant;                                          // 0x670(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                        ActorsToIgnore;                                    // 0x678(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)

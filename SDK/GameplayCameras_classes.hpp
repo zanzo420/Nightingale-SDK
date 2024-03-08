@@ -25,15 +25,15 @@ public:
 	float                                        AnimBlendInTime;                                   // 0x140(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        AnimBlendOutTime;                                  // 0x144(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        RandomAnimSegmentDuration;                         // 0x148(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_47CC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4517[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCameraAnimationSequence*              AnimSequence;                                      // 0x150(0x8)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bRandomAnimSegment : 1;                            // Mask: 0x1, PropSize: 0x10x158(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_232 : 7;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_47CD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_231 : 7;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_4518[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        OscillatorTimeRemaining;                           // 0x15C(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_47CE[0x70];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4519[0x70];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class USequenceCameraShakePattern*           SequenceShakePattern;                              // 0x1D0(0x8)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_47CF[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_451A[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULegacyCameraShake* GetDefaultObj();
@@ -76,7 +76,7 @@ class UCameraAnimationCameraModifier : public UCameraModifier
 public:
 	TArray<struct FActiveCameraAnimationInfo>    ActiveAnimations;                                  // 0x48(0x10)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	uint16                                       NextInstanceSerialNumber;                          // 0x58(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_47D7[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4521[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UCameraAnimationCameraModifier* GetDefaultObj();
@@ -122,7 +122,7 @@ public:
 class UDefaultCameraShakeBase : public UCameraShakeBase
 {
 public:
-	uint8                                        Pad_47D8[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4522[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UDefaultCameraShakeBase* GetDefaultObj();
@@ -153,7 +153,7 @@ public:
 	float                                        Duration;                                          // 0x28(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        BlendInTime;                                       // 0x2C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        BlendOutTime;                                      // 0x30(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_47DE[0x24];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4528[0x24];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USimpleCameraShakePattern* GetDefaultObj();
@@ -176,7 +176,7 @@ public:
 	struct FPerlinNoiseShaker                    Yaw;                                               // 0x88(0x8)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPerlinNoiseShaker                    Roll;                                              // 0x90(0x8)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPerlinNoiseShaker                    FOV;                                               // 0x98(0x8)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_47DF[0x38];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4529[0x38];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPerlinNoiseCameraShakePattern* GetDefaultObj();
@@ -188,7 +188,7 @@ public:
 class UTestCameraShake : public UCameraShakeBase
 {
 public:
-	uint8                                        Pad_47E0[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_452A[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UTestCameraShake* GetDefaultObj();
@@ -224,7 +224,7 @@ public:
 	struct FWaveOscillator                       Yaw;                                               // 0x98(0xC)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FWaveOscillator                       Roll;                                              // 0xA4(0xC)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FWaveOscillator                       FOV;                                               // 0xB0(0xC)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_47E1[0x3C];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_452B[0x3C];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UWaveOscillatorCameraShakePattern* GetDefaultObj();

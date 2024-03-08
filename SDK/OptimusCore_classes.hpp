@@ -273,7 +273,7 @@ class UOptimusAnimAttributeDataProvider : public UComputeDataProvider
 {
 public:
 	class USkeletalMeshComponent*                SkeletalMesh;                                      // 0x28(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4433[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2564[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusAnimAttributeDataProvider* GetDefaultObj();
@@ -320,7 +320,7 @@ class UOptimusConnectivityDataProvider : public UComputeDataProvider
 {
 public:
 	class USkinnedMeshComponent*                 SkinnedMesh;                                       // 0x28(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4434[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2566[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusConnectivityDataProvider* GetDefaultObj();
@@ -345,7 +345,7 @@ public:
 class UOptimusCustomComputeKernelDataProvider : public UComputeDataProvider
 {
 public:
-	uint8                                        Pad_4435[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2567[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusCustomComputeKernelDataProvider* GetDefaultObj();
@@ -358,7 +358,7 @@ class UOptimusDebugDrawDataInterface : public UOptimusComputeDataInterface
 {
 public:
 	struct FOptimusDebugDrawParameters           DebugDrawParameters;                               // 0x28(0x14)(Edit, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4436[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2568[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusDebugDrawDataInterface* GetDefaultObj();
@@ -372,7 +372,7 @@ class UOptimusDebugDrawDataProvider : public UComputeDataProvider
 public:
 	class UPrimitiveComponent*                   PrimitiveComponent;                                // 0x28(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOptimusDebugDrawParameters           DebugDrawParameters;                               // 0x30(0x14)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4437[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2569[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusDebugDrawDataProvider* GetDefaultObj();
@@ -409,7 +409,7 @@ class UOptimusGraphDataInterface : public UComputeDataInterface
 public:
 	TArray<struct FOptimusGraphVariableDescription> Variables;                                         // 0x28(0x10)(BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPrivate)
 	int32                                        ParameterBufferSize;                               // 0x38(0x4)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4438[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_256A[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusGraphDataInterface* GetDefaultObj();
@@ -424,7 +424,7 @@ public:
 	class UMeshComponent*                        MeshComponent;                                     // 0x28(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UOptimusDeformerInstance*              DeformerInstance;                                  // 0x30(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FOptimusGraphVariableDescription> Variables;                                         // 0x38(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4439[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_256B[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusGraphDataProvider* GetDefaultObj();
@@ -448,7 +448,7 @@ class UOptimusHalfEdgeDataProvider : public UComputeDataProvider
 {
 public:
 	class USkinnedMeshComponent*                 SkinnedMesh;                                       // 0x28(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_443A[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_256C[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusHalfEdgeDataProvider* GetDefaultObj();
@@ -547,7 +547,7 @@ public:
 class UOptimusPersistentBufferDataProvider : public UOptimusRawBufferDataProvider
 {
 public:
-	uint8                                        Pad_443B[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_256D[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusPersistentBufferDataProvider* GetDefaultObj();
@@ -628,9 +628,9 @@ public:
 class UOptimusSkinnedMeshExecDataInterface : public UOptimusComputeDataInterface
 {
 public:
-	uint8                                        Pad_443C[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2572[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class EOptimusSkinnedMeshExecDomain     Domain;                                            // 0x30(0x1)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_443D[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2573[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusSkinnedMeshExecDataInterface* GetDefaultObj();
@@ -644,7 +644,7 @@ class UOptimusSkinnedMeshExecDataProvider : public UComputeDataProvider
 public:
 	class USkinnedMeshComponent*                 SkinnedMesh;                                       // 0x28(0x8)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EOptimusSkinnedMeshExecDomain     Domain;                                            // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_443E[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2576[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusSkinnedMeshExecDataProvider* GetDefaultObj();
@@ -668,7 +668,7 @@ class UOptimusSkinnedMeshWriteDataProvider : public UComputeDataProvider
 {
 public:
 	class USkinnedMeshComponent*                 SkinnedMesh;                                       // 0x28(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_443F[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_257B[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusSkinnedMeshWriteDataProvider* GetDefaultObj();
@@ -680,13 +680,13 @@ public:
 class UOptimusNode : public UObject
 {
 public:
-	uint8                                        Pad_4441[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_257F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  DisplayName;                                       // 0x30(0x18)(NonTransactional, NativeAccessSpecifierPrivate)
 	struct FVector2D                             GraphPosition;                                     // 0x48(0x10)(ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UOptimusNodePin*>               Pins;                                              // 0x58(0x10)(ZeroConstructor, NonTransactional, UObjectWrapper, NativeAccessSpecifierPrivate)
 	TSet<class FName>                            ExpandedPins;                                      // 0x68(0x50)(NonTransactional, NativeAccessSpecifierPrivate)
 	enum class EOptimusDiagnosticLevel           DiagnosticLevel;                                   // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4442[0x57];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2581[0x57];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusNode* GetDefaultObj();
@@ -703,7 +703,7 @@ public:
 class UOptimusNode_DataInterface : public UOptimusNode
 {
 public:
-	uint8                                        Pad_4443[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2582[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSubclassOf<class UObject>                   DataInterfaceClass;                                // 0x118(0x8)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UOptimusComputeDataInterface*          DataInterfaceData;                                 // 0x120(0x8)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
@@ -728,7 +728,7 @@ public:
 class UOptimusNode_ComponentSource : public UOptimusNode
 {
 public:
-	uint8                                        Pad_4444[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2584[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UOptimusComponentSourceBinding*        Binding;                                           // 0x118(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();
@@ -741,7 +741,7 @@ public:
 class UOptimusNode_ComputeKernelBase : public UOptimusNode
 {
 public:
-	uint8                                        Pad_4445[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2585[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusNode_ComputeKernelBase* GetDefaultObj();
@@ -757,7 +757,7 @@ public:
 	class FName                                  KernelName;                                        // 0x208(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOptimusExecutionDomain               ExecutionDomain;                                   // 0x210(0x8)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FIntVector                            GroupSize;                                         // 0x218(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4446[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2586[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FOptimusParameterBinding>      InputBindings;                                     // 0x228(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FOptimusParameterBinding>      OutputBindings;                                    // 0x238(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	class FString                                ShaderSource;                                      // 0x248(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -795,7 +795,7 @@ public:
 class UOptimusNode_ConstantValue : public UOptimusNode
 {
 public:
-	uint8                                        Pad_4447[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2587[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusNode_ConstantValue* GetDefaultObj();
@@ -807,12 +807,12 @@ public:
 class UOptimusNode_CustomComputeKernel : public UOptimusNode_ComputeKernelBase
 {
 public:
-	uint8                                        Pad_4448[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2588[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  Category;                                          // 0x138(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOptimusValidatedName                 KernelName;                                        // 0x140(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FOptimusExecutionDomain               ExecutionDomain;                                   // 0x148(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FIntVector                            GroupSize;                                         // 0x150(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4449[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2589[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FOptimus_ShaderBinding>        Parameters;                                        // 0x160(0x10)(ZeroConstructor, Deprecated, NativeAccessSpecifierPublic)
 	TArray<struct FOptimusParameterBinding>      InputBindings;                                     // 0x170(0x10)(ZeroConstructor, Deprecated, NativeAccessSpecifierPublic)
 	TArray<struct FOptimusParameterBinding>      OutputBindings;                                    // 0x180(0x10)(ZeroConstructor, Deprecated, NativeAccessSpecifierPublic)
@@ -832,7 +832,7 @@ public:
 class UOptimusNode_FunctionReference : public UOptimusNode
 {
 public:
-	uint8                                        Pad_444A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_258A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UOptimusFunctionNodeGraph*             FunctionGraph;                                     // 0x118(0x8)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 	static class UClass* StaticClass();
@@ -845,10 +845,10 @@ public:
 class UOptimusNode_ResourceAccessorBase : public UOptimusNode
 {
 public:
-	uint8                                        Pad_444B[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_258B[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TWeakObjectPtr<class UOptimusResourceDescription> ResourceDesc;                                      // 0x120(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class EOptimusBufferWriteType           WriteType;                                         // 0x128(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_444C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_258C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FOptimusNode_ResourceAccessorBase_DuplicationInfo DuplicationInfo;                                   // 0x130(0x58)(DuplicateTransient, Protected, NativeAccessSpecifierProtected)
 
 	static class UClass* StaticClass();
@@ -872,7 +872,7 @@ public:
 class UOptimusNode_GetVariable : public UOptimusNode
 {
 public:
-	uint8                                        Pad_444D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_258D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TWeakObjectPtr<class UOptimusVariableDescription> VariableDesc;                                      // 0x118(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FOptimusNode_GetVariable_DuplicationInfo DuplicationInfo;                                   // 0x120(0x28)(DuplicateTransient, NativeAccessSpecifierPrivate)
 
@@ -886,10 +886,10 @@ public:
 class UOptimusNode_GraphTerminal : public UOptimusNode
 {
 public:
-	uint8                                        Pad_444E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_258E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class EOptimusTerminalType              TerminalType;                                      // 0x118(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TWeakObjectPtr<class UOptimusNodeSubGraph>   OwningGraph;                                       // 0x11C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_444F[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_258F[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusNode_GraphTerminal* GetDefaultObj();
@@ -923,7 +923,7 @@ public:
 class UOptimusNode_SubGraphReference : public UOptimusNode
 {
 public:
-	uint8                                        Pad_4450[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2591[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UOptimusNodeSubGraph*                  SubGraph;                                          // 0x118(0x8)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 	static class UClass* StaticClass();
@@ -937,7 +937,7 @@ class UOptimusActionStack : public UObject
 {
 public:
 	int32                                        TransactedActionIndex;                             // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4451[0xB4];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2593[0xB4];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusActionStack* GetDefaultObj();
@@ -953,7 +953,7 @@ public:
 	TSubclassOf<class UOptimusComponentSource>   ComponentType;                                     // 0x30(0x8)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FName>                          ComponentTags;                                     // 0x38(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                         bIsPrimaryBinding;                                 // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_4452[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2594[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusComponentSourceBinding* GetDefaultObj();
@@ -1013,17 +1013,17 @@ public:
 class UOptimusDeformer : public UMeshDeformer
 {
 public:
-	uint8                                        Pad_4453[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2597[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class USkeletalMesh*                         Mesh;                                              // 0x48(0x8)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FOptimusComputeGraphInfo>      ComputeGraphs;                                     // 0x50(0x10)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	class UOptimusActionStack*                   ActionStack;                                       // 0x60(0x8)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EOptimusDeformerStatus            Status;                                            // 0x68(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4454[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2598[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UOptimusNodeGraph*>             Graphs;                                            // 0x70(0x10)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
 	class UOptimusComponentSourceBindingContainer* Bindings;                                          // 0x80(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UOptimusVariableContainer*             Variables;                                         // 0x88(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UOptimusResourceContainer*             Resources;                                         // 0x90(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4455[0x90];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2599[0x90];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusDeformer* GetDefaultObj();
@@ -1055,7 +1055,7 @@ public:
 	TWeakObjectPtr<class UOptimusDeformerInstanceSettings> InstanceSettings;                                  // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FOptimusDeformerInstanceExecInfo> ComputeGraphExecInfos;                             // 0x38(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	class UOptimusVariableContainer*             Variables;                                         // 0x48(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_445F[0x90];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_25A4[0x90];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusDeformerInstance* GetDefaultObj();
@@ -1075,13 +1075,13 @@ public:
 class UOptimusNodeGraph : public UObject
 {
 public:
-	uint8                                        Pad_446C[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25B9[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class EOptimusNodeGraphType             GraphType;                                         // 0x30(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_446D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25BA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UOptimusNode*>                  Nodes;                                             // 0x38(0x10)(ZeroConstructor, NonTransactional, UObjectWrapper, NativeAccessSpecifierPrivate)
 	TArray<class UOptimusNodeLink*>              Links;                                             // 0x48(0x10)(ZeroConstructor, NonTransactional, UObjectWrapper, NativeAccessSpecifierPrivate)
 	TArray<class UOptimusNodeGraph*>             Subgraphs;                                         // 0x58(0x10)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_446E[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_25BB[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UOptimusNodeGraph* GetDefaultObj();
@@ -1167,7 +1167,7 @@ public:
 	bool                                         bIsGroupingPin;                                    // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EOptimusNodePinDirection          Direction;                                         // 0x29(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EOptimusNodePinStorageType        StorageType;                                       // 0x2A(0x1)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_446F[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25BF[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FOptimusDataDomain                    DataDomain;                                        // 0x30(0x40)(NativeAccessSpecifierPrivate)
 	struct FOptimusDataTypeRef                   DataType;                                          // 0x70(0x10)(NoDestructor, NativeAccessSpecifierPrivate)
 	TArray<class UOptimusNodePin*>               SubPins;                                           // 0x80(0x10)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
@@ -1198,7 +1198,7 @@ public:
 class UOptimusSource : public UComputeSource
 {
 public:
-	uint8                                        Pad_4470[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25C0[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                SourceText;                                        // 0x40(0x10)(Edit, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 	static class UClass* StaticClass();

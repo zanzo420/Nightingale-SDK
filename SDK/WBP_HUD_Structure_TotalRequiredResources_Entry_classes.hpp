@@ -26,7 +26,7 @@ public:
 	class UWBP_NWX_ProgressBar_C*                WBP_NWX_ProgressBar;                               // 0x388(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FStructureResourceRequirements        ResourceRequirements;                              // 0x390(0x48)(Edit, BlueprintVisible, ContainsInstancedReference, ExposeOnSpawn)
 	int32                                        SizeOverride;                                      // 0x3D8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_6E69[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_708A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               StructureRef;                                      // 0x3E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

@@ -677,29 +677,6 @@ void UAuthServiceLibrary::OnFetchSteamAuthBP__DelegateSignature(TArray<uint8>& A
 }
 
 
-// DelegateFunction NWXOnlineServices.AuthServiceLibrary.OnFetchEOSAuthBP__DelegateSignature
-// (Public, Delegate, HasOutParams)
-// Parameters:
-// class FString                      IdToken                                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FOnlineServiceStatus        Status                                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UAuthServiceLibrary::OnFetchEOSAuthBP__DelegateSignature(const class FString& IdToken, struct FOnlineServiceStatus& Status)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("AuthServiceLibrary", "OnFetchEOSAuthBP__DelegateSignature");
-
-	Params::UAuthServiceLibrary_OnFetchEOSAuthBP__DelegateSignature_Params Parms{};
-
-	Parms.IdToken = IdToken;
-	Parms.Status = Status;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function NWXOnlineServices.AuthServiceLibrary.ListDeployments
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -921,35 +898,6 @@ void UAuthServiceLibrary::FetchSteamAuthBP(FDelegateProperty_& OnComplete)
 
 	Params::UAuthServiceLibrary_FetchSteamAuthBP_Params Parms{};
 
-	Parms.OnComplete = OnComplete;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function NWXOnlineServices.AuthServiceLibrary.FetchEosAuthBP
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UObject*                     WorldContextObject                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// FDelegateProperty_                 OnComplete                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAuthServiceLibrary::FetchEosAuthBP(class UObject* WorldContextObject, FDelegateProperty_& OnComplete)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("AuthServiceLibrary", "FetchEosAuthBP");
-
-	Params::UAuthServiceLibrary_FetchEosAuthBP_Params Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
 	Parms.OnComplete = OnComplete;
 
 	auto Flgs = Func->FunctionFlags;

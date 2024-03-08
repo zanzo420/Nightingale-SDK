@@ -107,12 +107,13 @@ void UBP_ChallengeConditionPresentationBuilder_C::MakeTaskConditionPresentationD
 // int32                              CurrentValue                                                     (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_MakeTaskConditionPresentationData_bWasCreated           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FQuestTaskConditionPresentationDataCallFunc_MakeTaskConditionPresentationData_ConditionPresentationData(None)
-// struct FQuestTaskPresentationData  CallFunc_MakeCompoundTaskPresentationData_OutPresentationData    (None)
-// bool                               CallFunc_MakeCompoundTaskPresentationData_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FQuestTaskConditionPresentationData>K2Node_MakeArray_Array                                           (ReferenceParm)
 // struct FQuestTaskPresentationData  K2Node_MakeStruct_QuestTaskPresentationData                      (None)
+// bool                               CallFunc_Array_IsNotEmpty_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FQuestTaskPresentationData  CallFunc_MakeCompoundTaskPresentationData_OutPresentationData    (None)
+// bool                               CallFunc_MakeCompoundTaskPresentationData_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool UBP_ChallengeConditionPresentationBuilder_C::MakeTaskPresentationData(struct FTask& Task, struct FConditionProgressDataList& TaskProgressList, struct FQuestTaskPresentationData* OutPresentationData, int32 CurrentValue, bool CallFunc_MakeTaskConditionPresentationData_bWasCreated, const struct FQuestTaskConditionPresentationData& CallFunc_MakeTaskConditionPresentationData_ConditionPresentationData, const struct FQuestTaskPresentationData& CallFunc_MakeCompoundTaskPresentationData_OutPresentationData, bool CallFunc_MakeCompoundTaskPresentationData_ReturnValue, TArray<struct FQuestTaskConditionPresentationData>& K2Node_MakeArray_Array, const struct FQuestTaskPresentationData& K2Node_MakeStruct_QuestTaskPresentationData)
+bool UBP_ChallengeConditionPresentationBuilder_C::MakeTaskPresentationData(struct FTask& Task, struct FConditionProgressDataList& TaskProgressList, struct FQuestTaskPresentationData* OutPresentationData, int32 CurrentValue, bool CallFunc_MakeTaskConditionPresentationData_bWasCreated, const struct FQuestTaskConditionPresentationData& CallFunc_MakeTaskConditionPresentationData_ConditionPresentationData, TArray<struct FQuestTaskConditionPresentationData>& K2Node_MakeArray_Array, const struct FQuestTaskPresentationData& K2Node_MakeStruct_QuestTaskPresentationData, bool CallFunc_Array_IsNotEmpty_ReturnValue, const struct FQuestTaskPresentationData& CallFunc_MakeCompoundTaskPresentationData_OutPresentationData, bool CallFunc_MakeCompoundTaskPresentationData_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -126,10 +127,11 @@ bool UBP_ChallengeConditionPresentationBuilder_C::MakeTaskPresentationData(struc
 	Parms.CurrentValue = CurrentValue;
 	Parms.CallFunc_MakeTaskConditionPresentationData_bWasCreated = CallFunc_MakeTaskConditionPresentationData_bWasCreated;
 	Parms.CallFunc_MakeTaskConditionPresentationData_ConditionPresentationData = CallFunc_MakeTaskConditionPresentationData_ConditionPresentationData;
-	Parms.CallFunc_MakeCompoundTaskPresentationData_OutPresentationData = CallFunc_MakeCompoundTaskPresentationData_OutPresentationData;
-	Parms.CallFunc_MakeCompoundTaskPresentationData_ReturnValue = CallFunc_MakeCompoundTaskPresentationData_ReturnValue;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.K2Node_MakeStruct_QuestTaskPresentationData = K2Node_MakeStruct_QuestTaskPresentationData;
+	Parms.CallFunc_Array_IsNotEmpty_ReturnValue = CallFunc_Array_IsNotEmpty_ReturnValue;
+	Parms.CallFunc_MakeCompoundTaskPresentationData_OutPresentationData = CallFunc_MakeCompoundTaskPresentationData_OutPresentationData;
+	Parms.CallFunc_MakeCompoundTaskPresentationData_ReturnValue = CallFunc_MakeCompoundTaskPresentationData_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

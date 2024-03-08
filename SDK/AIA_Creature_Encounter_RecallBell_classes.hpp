@@ -14,7 +14,7 @@ namespace SDK
 class UAIA_Creature_Encounter_RecallBell_C : public UAIA_Creature_Ambient_C
 {
 public:
-	class FString                                OwnerId;                                           // 0xB8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                OwnerID;                                           // 0xB8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	class ABP_Creature_NPC_C*                    BPNPC;                                             // 0xC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

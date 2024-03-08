@@ -36,7 +36,7 @@ public:
 	struct FGameplayTag                          TaxonomyTag;                                       // 0x2F8(0x8)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
 	struct FItemData                             CallFunc_TryGetItemData_ItemData;                  // 0x300(0xD8)(ContainsInstancedReference)
 	enum class EGetResult                        CallFunc_TryGetItemData_Branches;                  // 0x3D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FCF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4267[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          CallFunc_GetItemTypeTag_ReturnValue;               // 0x3DC(0x8)(NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x3E4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

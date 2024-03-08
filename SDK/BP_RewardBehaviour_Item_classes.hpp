@@ -15,7 +15,7 @@ class UBP_RewardBehaviour_Item_C : public UBP_RewardBehaviour_Base_C
 {
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x30(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	uint8                                        Pad_9D1E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9D45[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDefinition                       ItemDefinition;                                    // 0x40(0xA0)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 	static class UClass* StaticClass();

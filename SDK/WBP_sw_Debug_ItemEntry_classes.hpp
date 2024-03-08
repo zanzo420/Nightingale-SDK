@@ -26,23 +26,23 @@ public:
 	class UBorder*                               PopupBorder;                                       // 0x398(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         AllowGranting_cheaterstore_;                       // 0x3A0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         GrantByStack;                                      // 0x3A1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_88DE[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E58[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            ItemGranted;                                       // 0x3A8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	uint8                                        Pad_88DF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E59[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    Item_ID;                                           // 0x3C0(0x80)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FGuid                                 Instance_ID;                                       // 0x440(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            ItemClicked;                                       // 0x450(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                        AmountToGrant_CheaterStore_;                       // 0x460(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_88E0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E5A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  ItemName;                                          // 0x468(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	struct FInventoryEntry                       InventoryItemEntry;                                // 0x480(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTagContainer                 TestTags;                                          // 0x770(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         IsTestItem;                                        // 0x790(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_88E1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E5B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNWXUserWidget*                        OwningScreen;                                      // 0x798(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<class UCharacteristicDataAsset*>      SelectedCharacteristics;                           // 0x7A0(0x10)(Edit, BlueprintVisible, ExposeOnSpawn)
 	enum class EItemQuality                      SelectedQuality;                                   // 0x7B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_88E2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E5C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGameplayTag>                  Gameplay_Tags;                                     // 0x7B8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();

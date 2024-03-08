@@ -17,14 +17,14 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x178(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FTimerHandle                          RebuildCheckHandle;                                // 0x180(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         bInitialized;                                      // 0x188(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72F9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_69DF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnInitialized;                                     // 0x190(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();
 	static class UBP_LoadoutComponent_C* GetDefaultObj();
 
-	void UnEquipItem(enum class ELoadoutSlotType SlotType, class ABP_EquippableItemBase_C* Item, class AActor* CallFunc_GetOwner_ReturnValue, const struct FLoadoutSlot& CallFunc_GetSlotByType_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, class ABP_EquippableItemBase_C* K2Node_DynamicCast_AsBP_Equippable_Item_Base, bool K2Node_DynamicCast_bSuccess, class AActor* CallFunc_GetAttachParentActor_ReturnValue, bool CallFunc_UndoLoadout_Success, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1);
-	bool EquipItem(enum class ELoadoutSlotType SlotType, class ABP_EquippableItemBase_C* Item, class AActor* CallFunc_GetOwner_ReturnValue, const struct FLoadoutSlot& CallFunc_GetSlotByType_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, class ABP_EquippableItemBase_C* K2Node_DynamicCast_AsBP_Equippable_Item_Base, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue);
+	void UnequipItem(enum class ELoadoutSlotType SlotType, class AEquippableItem* Item, const struct FLoadoutSlot& CallFunc_GetSlotByType_ReturnValue, bool CallFunc_IsValid_ReturnValue);
+	bool EquipItem(enum class ELoadoutSlotType SlotType, class AEquippableItem* Item, class AActor* CallFunc_GetOwner_ReturnValue, const struct FLoadoutSlot& CallFunc_GetSlotByType_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_IsValid_ReturnValue);
 	void GetLoadoutSlots(TArray<struct FLoadoutSlot>* LoadoutSlots);
 	void IsInitialized(bool* bInitialized);
 	void CheckRebuildPolling(bool CallFunc_AttemptRebuild_Succeeded);

@@ -9,12 +9,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0x398 - 0x390)
+// 0x8 (0x3E8 - 0x3E0)
 // BlueprintGeneratedClass BP_InventoryComponent.BP_InventoryComponent_C
 class UBP_InventoryComponent_C : public UInventoryComponentBase
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x390(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x3E0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
 	static class UClass* StaticClass();
 	static class UBP_InventoryComponent_C* GetDefaultObj();

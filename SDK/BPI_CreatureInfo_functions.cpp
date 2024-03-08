@@ -40,6 +40,29 @@ class IBPI_CreatureInfo_C* IBPI_CreatureInfo_C::GetDefaultObj()
 }
 
 
+// Function BPI_CreatureInfo.BPI_CreatureInfo_C.GetCreatureName
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                        CreatureName                                                     (Parm, OutParm)
+
+void IBPI_CreatureInfo_C::GetCreatureName(class FText* CreatureName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BPI_CreatureInfo_C", "GetCreatureName");
+
+	Params::IBPI_CreatureInfo_C_GetCreatureName_Params Parms{};
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CreatureName != nullptr)
+		*CreatureName = Parms.CreatureName;
+
+}
+
+
 // Function BPI_CreatureInfo.BPI_CreatureInfo_C.RemoveFromEnemies
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

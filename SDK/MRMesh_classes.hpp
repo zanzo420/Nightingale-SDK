@@ -19,14 +19,14 @@ public:
 	bool                                         RequestNormals;                                    // 0x2B9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         RequestVertexConfidence;                           // 0x2BA(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMeshTrackerVertexColorMode       VertexColorMode;                                   // 0x2BB(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F48[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E35[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FColor>                        BlockVertexColors;                                 // 0x2C0(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FLinearColor                          VertexColorFromConfidenceZero;                     // 0x2D0(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                          VertexColorFromConfidenceOne;                      // 0x2E0(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        UpdateInterval;                                    // 0x2F0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F4A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E36[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMRMeshComponent*                      MRMesh;                                            // 0x2F8(0x8)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F4B[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2E38[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMockDataMeshTrackerComponent* GetDefaultObj();
@@ -41,10 +41,10 @@ public:
 class UMRMeshBodyHolder : public UObject
 {
 public:
-	uint8                                        Pad_2F4D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E39[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBodySetup*                            BodySetup;                                         // 0x30(0x8)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBodyInstance                         BodyInstance;                                      // 0x38(0x190)(Transient, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F4E[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2E3A[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMRMeshBodyHolder* GetDefaultObj();
@@ -56,16 +56,16 @@ public:
 class UMRMeshComponent : public UPrimitiveComponent
 {
 public:
-	uint8                                        Pad_2F56[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E44[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInterface*                    Material;                                          // 0x580(0x8)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMaterialInterface*                    WireframeMaterial;                                 // 0x588(0x8)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bCreateMeshProxySections;                          // 0x590(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bUpdateNavMeshOnMeshUpdate;                        // 0x591(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2F5A[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E45[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bNeverCreateCollisionMesh;                         // 0x593(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2F5B[0x44];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E47[0x44];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UMRMeshBodyHolder*>             BodyHolders;                                       // 0x5D8(0x10)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2F5C[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2E48[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMRMeshComponent* GetDefaultObj();

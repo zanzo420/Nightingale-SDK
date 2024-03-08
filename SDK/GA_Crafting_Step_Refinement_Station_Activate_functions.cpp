@@ -175,6 +175,7 @@ void UGA_Crafting_Step_Refinement_Station_Activate_C::Advance(const struct FGame
 // bool                               CallFunc_LessEqual_DoubleDouble_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetCraftForID_Success                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FS_Crafting_CraftInProgress CallFunc_GetCraftForID_CraftInProgressData                       (HasGetValueTypeHash)
+// bool                               CallFunc_NotEqual_ByteByte_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FS_Crafting_Step_RefinementTimerCallFunc_GetStructByType_OutStruct                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetStructByType_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Subtract_DoubleDouble_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -182,7 +183,7 @@ void UGA_Crafting_Step_Refinement_Station_Activate_C::Advance(const struct FGame
 // double                             CallFunc_Subtract_DoubleDouble_ReturnValue_1                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Subtract_DoubleDouble_B_ImplicitCast                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Crafting_Step_Refinement_Station_Activate_C::UpdateTimer(double TimeRemaining, bool CallFunc_IsValid_ReturnValue, double CallFunc_GetRealTimeElapsedSeconds_ReturnValue, double CallFunc_FMin_ReturnValue, bool CallFunc_LessEqual_DoubleDouble_ReturnValue, bool CallFunc_GetCraftForID_Success, const struct FS_Crafting_CraftInProgress& CallFunc_GetCraftForID_CraftInProgressData, const struct FS_Crafting_Step_RefinementTimer& CallFunc_GetStructByType_OutStruct, bool CallFunc_GetStructByType_ReturnValue, double CallFunc_Subtract_DoubleDouble_ReturnValue, double CallFunc_FMax_ReturnValue, double CallFunc_Subtract_DoubleDouble_ReturnValue_1, double CallFunc_Subtract_DoubleDouble_B_ImplicitCast)
+void UGA_Crafting_Step_Refinement_Station_Activate_C::UpdateTimer(double TimeRemaining, bool CallFunc_IsValid_ReturnValue, double CallFunc_GetRealTimeElapsedSeconds_ReturnValue, double CallFunc_FMin_ReturnValue, bool CallFunc_LessEqual_DoubleDouble_ReturnValue, bool CallFunc_GetCraftForID_Success, const struct FS_Crafting_CraftInProgress& CallFunc_GetCraftForID_CraftInProgressData, bool CallFunc_NotEqual_ByteByte_ReturnValue, const struct FS_Crafting_Step_RefinementTimer& CallFunc_GetStructByType_OutStruct, bool CallFunc_GetStructByType_ReturnValue, double CallFunc_Subtract_DoubleDouble_ReturnValue, double CallFunc_FMax_ReturnValue, double CallFunc_Subtract_DoubleDouble_ReturnValue_1, double CallFunc_Subtract_DoubleDouble_B_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -198,6 +199,7 @@ void UGA_Crafting_Step_Refinement_Station_Activate_C::UpdateTimer(double TimeRem
 	Parms.CallFunc_LessEqual_DoubleDouble_ReturnValue = CallFunc_LessEqual_DoubleDouble_ReturnValue;
 	Parms.CallFunc_GetCraftForID_Success = CallFunc_GetCraftForID_Success;
 	Parms.CallFunc_GetCraftForID_CraftInProgressData = CallFunc_GetCraftForID_CraftInProgressData;
+	Parms.CallFunc_NotEqual_ByteByte_ReturnValue = CallFunc_NotEqual_ByteByte_ReturnValue;
 	Parms.CallFunc_GetStructByType_OutStruct = CallFunc_GetStructByType_OutStruct;
 	Parms.CallFunc_GetStructByType_ReturnValue = CallFunc_GetStructByType_ReturnValue;
 	Parms.CallFunc_Subtract_DoubleDouble_ReturnValue = CallFunc_Subtract_DoubleDouble_ReturnValue;
@@ -385,12 +387,13 @@ void UGA_Crafting_Step_Refinement_Station_Activate_C::HandleDebug(bool* FireTime
 // Parameters:
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_MathExpression_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class INWXFuelableObserverInterface>CallFunc_UnbindDelegate_OnFuelActivelyConsumedChanged_self_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_MathExpression_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_K2_IsValidTimerHandle_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Crafting_Step_Refinement_Station_Activate_C::OnAbilityEnd(bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool K2Node_MathExpression_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_K2_IsValidTimerHandle_ReturnValue)
+void UGA_Crafting_Step_Refinement_Station_Activate_C::OnAbilityEnd(bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, TScriptInterface<class INWXFuelableObserverInterface> CallFunc_UnbindDelegate_OnFuelActivelyConsumedChanged_self_CastInput, bool K2Node_MathExpression_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_K2_IsValidTimerHandle_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -401,8 +404,9 @@ void UGA_Crafting_Step_Refinement_Station_Activate_C::OnAbilityEnd(bool CallFunc
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
-	Parms.K2Node_MathExpression_ReturnValue = K2Node_MathExpression_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_UnbindDelegate_OnFuelActivelyConsumedChanged_self_CastInput = CallFunc_UnbindDelegate_OnFuelActivelyConsumedChanged_self_CastInput;
+	Parms.K2Node_MathExpression_ReturnValue = K2Node_MathExpression_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
 	Parms.CallFunc_K2_IsValidTimerHandle_ReturnValue = CallFunc_K2_IsValidTimerHandle_ReturnValue;
 
@@ -493,25 +497,26 @@ void UGA_Crafting_Step_Refinement_Station_Activate_C::GenerateStepData(bool* Suc
 // struct FS_Crafting_Step_Definition StepData                                                         (Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
 // struct FS_Crafting_CraftInProgress CraftInProgressData                                              (Edit, BlueprintVisible, HasGetValueTypeHash)
 // bool                               InitializeSuccess                                                (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_MathExpression_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_MathExpression_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_GetStepRefinementTimerLength_Return_Value               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_GetStepRefinementTimerLength_Delta                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UStructureFireComponent*     CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UStructureFuelComponent*     CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class INWXFuelableObserverInterface>CallFunc_BindDelegate_OnFuelActivelyConsumedChanged_self_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_InitializeAbilityFromEvent_Success                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetCraftForID_Success                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FS_Crafting_CraftInProgress CallFunc_GetCraftForID_CraftInProgressData                       (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_NameToText_ReturnValue                             (None)
 // struct FS_Crafting_Step_Definition CallFunc_GetDataTableRowFromName_OutRow                          (ContainsInstancedReference, HasGetValueTypeHash)
 // bool                               CallFunc_GetDataTableRowFromName_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_NameToText_ReturnValue                             (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue                                      (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 
-void UGA_Crafting_Step_Refinement_Station_Activate_C::InitializeAbilityFromEvent(const struct FGameplayEventData& EventData, bool* Success, const struct FS_Crafting_Step_Definition& StepData, const struct FS_Crafting_CraftInProgress& CraftInProgressData, bool InitializeSuccess, bool K2Node_MathExpression_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, double CallFunc_GetStepRefinementTimerLength_Return_Value, double CallFunc_GetStepRefinementTimerLength_Delta, class UStructureFireComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool CallFunc_InitializeAbilityFromEvent_Success, bool CallFunc_GetCraftForID_Success, const struct FS_Crafting_CraftInProgress& CallFunc_GetCraftForID_CraftInProgressData, const struct FS_Crafting_Step_Definition& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, class FText CallFunc_Conv_NameToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue)
+void UGA_Crafting_Step_Refinement_Station_Activate_C::InitializeAbilityFromEvent(const struct FGameplayEventData& EventData, bool* Success, const struct FS_Crafting_Step_Definition& StepData, const struct FS_Crafting_CraftInProgress& CraftInProgressData, bool InitializeSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool K2Node_MathExpression_ReturnValue, double CallFunc_GetStepRefinementTimerLength_Return_Value, double CallFunc_GetStepRefinementTimerLength_Delta, class UStructureFuelComponent* CallFunc_GetComponentByClass_ReturnValue, TScriptInterface<class INWXFuelableObserverInterface> CallFunc_BindDelegate_OnFuelActivelyConsumedChanged_self_CastInput, bool CallFunc_IsValid_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool CallFunc_InitializeAbilityFromEvent_Success, bool CallFunc_GetCraftForID_Success, const struct FS_Crafting_CraftInProgress& CallFunc_GetCraftForID_CraftInProgressData, class FText CallFunc_Conv_NameToText_ReturnValue, const struct FS_Crafting_Step_Definition& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -524,19 +529,20 @@ void UGA_Crafting_Step_Refinement_Station_Activate_C::InitializeAbilityFromEvent
 	Parms.StepData = StepData;
 	Parms.CraftInProgressData = CraftInProgressData;
 	Parms.InitializeSuccess = InitializeSuccess;
-	Parms.K2Node_MathExpression_ReturnValue = K2Node_MathExpression_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.K2Node_MathExpression_ReturnValue = K2Node_MathExpression_ReturnValue;
 	Parms.CallFunc_GetStepRefinementTimerLength_Return_Value = CallFunc_GetStepRefinementTimerLength_Return_Value;
 	Parms.CallFunc_GetStepRefinementTimerLength_Delta = CallFunc_GetStepRefinementTimerLength_Delta;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
+	Parms.CallFunc_BindDelegate_OnFuelActivelyConsumedChanged_self_CastInput = CallFunc_BindDelegate_OnFuelActivelyConsumedChanged_self_CastInput;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_K2_SetTimer_ReturnValue = CallFunc_K2_SetTimer_ReturnValue;
 	Parms.CallFunc_InitializeAbilityFromEvent_Success = CallFunc_InitializeAbilityFromEvent_Success;
 	Parms.CallFunc_GetCraftForID_Success = CallFunc_GetCraftForID_Success;
 	Parms.CallFunc_GetCraftForID_CraftInProgressData = CallFunc_GetCraftForID_CraftInProgressData;
+	Parms.CallFunc_Conv_NameToText_ReturnValue = CallFunc_Conv_NameToText_ReturnValue;
 	Parms.CallFunc_GetDataTableRowFromName_OutRow = CallFunc_GetDataTableRowFromName_OutRow;
 	Parms.CallFunc_GetDataTableRowFromName_ReturnValue = CallFunc_GetDataTableRowFromName_ReturnValue;
-	Parms.CallFunc_Conv_NameToText_ReturnValue = CallFunc_Conv_NameToText_ReturnValue;
 	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
@@ -560,6 +566,24 @@ void UGA_Crafting_Step_Refinement_Station_Activate_C::TimerComplete()
 
 	if (!Func)
 		Func = Class->GetFunction("GA_Crafting_Step_Refinement_Station_Activate_C", "TimerComplete");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function GA_Crafting_Step_Refinement_Station_Activate.GA_Crafting_Step_Refinement_Station_Activate_C.AdvanceNextFrame
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UGA_Crafting_Step_Refinement_Station_Activate_C::AdvanceNextFrame()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("GA_Crafting_Step_Refinement_Station_Activate_C", "AdvanceNextFrame");
 
 
 

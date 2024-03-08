@@ -18,7 +18,7 @@ public:
 	struct FGameplayTag                          FallbackCreatureTag;                               // 0x40(0x8)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	enum class EFootType                         FootType;                                          // 0x48(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         OverrideVelocity;                                  // 0x49(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58BB[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6208[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       OverrideVelocityAmount;                            // 0x50(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

@@ -26,7 +26,7 @@ public:
 	class ANWXAISpawner*                         CallFunc_GetSpawner_Spawner;                       // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_CreatureSpawnerBase_C*             K2Node_DynamicCast_AsBP_Creature_Spawner_Base;     // 0x38(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6100[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7B0D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Conv_ObjectToString_ReturnValue;          // 0x48(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FMetricsEventAttr                     K2Node_MakeStruct_MetricsEventAttr;                // 0x58(0x20)(None)
 	class FString                                CallFunc_Conv_IntToString_ReturnValue;             // 0x78(0x10)(ZeroConstructor, HasGetValueTypeHash)
@@ -37,7 +37,7 @@ public:
 	struct FMetricsEventAttr                     K2Node_MakeStruct_MetricsEventAttr_3;              // 0xE0(0x20)(None)
 	class FString                                CallFunc_GetCurrentLevelName_ReturnValue;          // 0x100(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x110(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6102[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7B0E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Conv_ObjectToString_ReturnValue_1;        // 0x118(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FMetricsEventAttr                     K2Node_MakeStruct_MetricsEventAttr_4;              // 0x128(0x20)(None)
 	struct FVector                               CallFunc_K2_GetActorLocation_ReturnValue;          // 0x148(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

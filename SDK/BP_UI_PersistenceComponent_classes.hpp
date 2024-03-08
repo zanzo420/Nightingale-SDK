@@ -16,10 +16,10 @@ class UBP_UI_PersistenceComponent_C : public UPersistentDataComponent
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xF8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FS_DebugMenuSettings                  DebugMenuPreferences;                              // 0x100(0x1D)(Edit, BlueprintVisible, Net, ZeroConstructor, HasGetValueTypeHash)
-	uint8                                        Pad_6552[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89B0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_UI_Preferences_Guidebook           GuideBookPreferences;                              // 0x120(0x90)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, HasGetValueTypeHash)
 	bool                                         Realm_Inventory_Management_Enabled;                // 0x1B0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6553[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89B1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       MenuCamera_FoV;                                    // 0x1B8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       MenuCamera_BoomArmLength;                          // 0x1C0(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               MenuCamera_Pedestal;                               // 0x1C8(0x18)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -31,11 +31,11 @@ public:
 	bool                                         IsGamespaceUIEnabled;                              // 0x218(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsNotificationsEnabled;                            // 0x219(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsHUD_UI_Visible;                                  // 0x21A(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6554[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89B2[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            ToggleHUDNotifications;                            // 0x220(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnGamespaceUIToggled;                              // 0x230(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         OverrideEnabledForGamespaceUI;                     // 0x240(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6555[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89B3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       LastUsedMapUI_Zoom;                                // 0x248(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         AmmoPinned;                                        // 0x250(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	enum class EEntrySortOrder                   InvSortOrder;                                      // 0x251(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,21 +47,21 @@ public:
 	bool                                         DB_Env_GroupVisibilty_Brightness;                  // 0x257(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         DB_Env_GroupVisibilty_CelestialControls;           // 0x258(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         DB_Env_GroupVisibilty_Extras;                      // 0x259(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6556[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89B4[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            Debug_ShowEncounterTracks;                         // 0x260(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FText                                  Feedback_Cached_Title;                             // 0x270(0x18)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
 	class FText                                  Feedback_Cached_Description;                       // 0x288(0x18)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
 	int32                                        Feedback_Screen_Dropdown_1;                        // 0x2A0(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Feedback_Screen_Dropdown_2;                        // 0x2A4(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Debug_HideWaterMark;                               // 0x2A8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6557[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89B5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            ToggleHUDWaterMark;                                // 0x2B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         Debug_HideInteractionHighlighting;                 // 0x2C0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6558[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89B6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            DB_ToggleInteractHighlightVisibility;              // 0x2C8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         GoalTracker_ShowPanel;                             // 0x2D8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	bool                                         GoalTracker_SortbyGroup;                           // 0x2D9(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6559[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89B8[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       GoalTracker_BG_Opacity;                            // 0x2E0(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	double                                       GoalTracker_TextScale;                             // 0x2E8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            GoalTrackerSettingsUpdated;                        // 0x2F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -73,7 +73,7 @@ public:
 	double                                       HighestHopeMaxReached;                             // 0x320(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            HighestMaxHopeUpdated;                             // 0x328(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         PocketWatch_ShowMap;                               // 0x338(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_655B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89BB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Inventory_Preference_ActiveGrid;                   // 0x33C(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         UnlockedTravelToSanctuary;                         // 0x340(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 

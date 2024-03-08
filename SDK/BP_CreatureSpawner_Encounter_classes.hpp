@@ -9,19 +9,19 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x39 (0x1651 - 0x1618)
+// 0x39 (0x1681 - 0x1648)
 // BlueprintGeneratedClass BP_CreatureSpawner_Encounter.BP_CreatureSpawner_Encounter_C
 class ABP_CreatureSpawner_Encounter_C : public ABP_CreatureSpawnerBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1618(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	double                                       TimeoutDuration;                                   // 0x1620(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        MaxEncounterSpawnerCreatures;                      // 0x1628(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7BC4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class UClass*>                        EncounterCreatureClasses;                          // 0x1630(0x10)(Edit, BlueprintVisible)
-	class UClass*                                DefaultCreatureClass;                              // 0x1640(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	double                                       LifeTime;                                          // 0x1648(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         AutoSpawn;                                         // 0x1650(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1648(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	double                                       TimeoutDuration;                                   // 0x1650(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        MaxEncounterSpawnerCreatures;                      // 0x1658(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_7F44[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class UClass*>                        EncounterCreatureClasses;                          // 0x1660(0x10)(Edit, BlueprintVisible)
+	class UClass*                                DefaultCreatureClass;                              // 0x1670(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	double                                       LifeTime;                                          // 0x1678(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         AutoSpawn;                                         // 0x1680(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_CreatureSpawner_Encounter_C* GetDefaultObj();

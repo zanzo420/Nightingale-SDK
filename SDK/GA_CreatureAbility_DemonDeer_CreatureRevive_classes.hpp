@@ -20,7 +20,7 @@ public:
 	TArray<int32>                                ConsideredInstances;                               // 0x528(0x10)(Edit, BlueprintVisible)
 	TArray<class ABP_CreatureBase_C*>            Targets;                                           // 0x538(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	TArray<class UClass*>                        TargetClass;                                       // 0x548(0x10)(Edit, BlueprintVisible)
-	uint8                                        Pad_9DD0[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9DAB[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            TargetTransform;                                   // 0x560(0x60)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       ReviveDistance;                                    // 0x5C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<class UClass*, struct FTransform>       ClassTransform;                                    // 0x5C8(0x50)(Edit, BlueprintVisible)

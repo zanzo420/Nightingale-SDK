@@ -16,7 +16,7 @@ class UNWXLoadingScreenBase : public UUserWidget
 public:
 	class FString                                SourceMap;                                         // 0x2C0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FString                                DestinationMap;                                    // 0x2D0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2F81[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2E9B[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UNWXLoadingScreenBase* GetDefaultObj();

@@ -27,7 +27,7 @@ public:
 	int32                                        ClaimedQuantity_65_332BF8BE4D2CE5FE769289A0BF606F06; // 0x98(0x4)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CurrentStepIndex_56_634536B34E9F5249B67F418EE5E337A2; // 0x9C(0x4)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Crafting_Fabrication_Status     Status_48_EA68407E4F8E9F562AD80F96F3133D09;        // 0xA0(0x1)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_511B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_50A8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FInventoryEntry>               InputMaterials_49_67DEBAAF4AE8C357EFAB4AAFCA207908; // 0xA8(0x10)(Edit, BlueprintVisible, SaveGame)
 	struct FDynamicTypedStructs                  StepData_59_2B0B29B645775278CF03D684385E64D7;      // 0xB8(0x10)(Edit, BlueprintVisible)
 	double                                       RecipeStartTime_73_6C553F60467717DC56AC08AC414DE0A2; // 0xC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

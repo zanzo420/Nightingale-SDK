@@ -14,10 +14,10 @@ namespace SDK
 class UABP_HMU_CharacterCustomization_Override_C : public UAnimInstance
 {
 public:
-	uint8                                        Pad_70C3[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_66BB[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x350(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimBlueprintGeneratedMutableData    __AnimBlueprintMutables;                           // 0x358(0x2)(HasGetValueTypeHash)
-	uint8                                        Pad_70C4[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_66BC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x360(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x368(0x8)(None)
 	struct FAnimNode_Root                        AnimGraphNode_Root_2;                              // 0x370(0x20)(None)
@@ -36,7 +36,7 @@ public:
 	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x978(0x20)(None)
 	struct FAnimNode_Root                        AnimGraphNode_Root;                                // 0x998(0x20)(None)
 	enum class EBodyType                         InBodyType;                                        // 0x9B8(0x1)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_70C5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_66BD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Offset;                                            // 0x9C0(0x18)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

@@ -14,7 +14,7 @@ namespace SDK
 class UPrivilegeManager : public UGameInstanceSubsystem
 {
 public:
-	uint8                                        Pad_37D0[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_33A3[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPrivilegeManager* GetDefaultObj();

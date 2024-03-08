@@ -16,17 +16,17 @@ class ABP_AoePayload_Dispellable_BrambleSpell_C : public ABP_AoePayload_Dispella
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x708(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	int32                                        LBrambleInt;                                       // 0x710(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_9AE5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CC1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Telltime;                                          // 0x718(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_CreatureCreatedObstacle_Bramble_C* WallObject;                                        // 0x720(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilitySpecDef               BrambleAbility;                                    // 0x728(0x98)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FTimerHandle                          TellHandle;                                        // 0x7C0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        TellInt;                                           // 0x7C8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9AE6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CC2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Damage;                                            // 0x7D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FVector                               PresentationLocation;                              // 0x7D8(0x18)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        BrambleCount;                                      // 0x7F0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_9AE7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CC3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       BrambleSpacing;                                    // 0x7F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class ABP_CreatureCreatedObstacle_BramblePlayer_C*> WallObjects;                                       // 0x800(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 

@@ -41,12 +41,11 @@ class UWBP_PlayerDeathChestMapPin_C* UWBP_PlayerDeathChestMapPin_C::GetDefaultOb
 
 
 // Function WBP_PlayerDeathChestMapPin.WBP_PlayerDeathChestMapPin_C.GetTooltipBodyText
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class FText                        OutputText                                                       (Parm, OutParm)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 
-void UWBP_PlayerDeathChestMapPin_C::GetTooltipBodyText(class FText* OutputText, class FText CallFunc_Conv_StringToText_ReturnValue)
+void UWBP_PlayerDeathChestMapPin_C::GetTooltipBodyText(class FText* OutputText)
 {
 	static class UFunction* Func = nullptr;
 
@@ -55,7 +54,6 @@ void UWBP_PlayerDeathChestMapPin_C::GetTooltipBodyText(class FText* OutputText, 
 
 	Params::UWBP_PlayerDeathChestMapPin_C_GetTooltipBodyText_Params Parms{};
 
-	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

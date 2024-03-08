@@ -24,7 +24,7 @@ public:
 	TArray<struct FS_CC_SubPanel>                SubGroups_21_933595244C9D4E56AE060394CF64171F;     // 0x30(0x10)(Edit, BlueprintVisible)
 	enum class E_UI_CC_AppearanceInputTypes      InputBehaviour_28_7B9834624E7BA55CD43D2298F27682E2; // 0x40(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Enabled__23_EE55D47F4E789D3EA788F6A4934294F6;      // 0x41(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6EA2[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6414[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             PanelStyleImage_31_C69FFCC849144A064AE655AA54997B35; // 0x48(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
 

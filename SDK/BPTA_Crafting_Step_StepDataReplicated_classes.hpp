@@ -22,7 +22,7 @@ public:
 	struct FTimerHandle                          DataReplicatedHandle;                              // 0x428(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class FString                                CrafterID;                                         // 0x430(0x10)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FS_Crafting_CraftInProgress           CurrentCraftInProgress;                            // 0x440(0xD8)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	uint8                                        Pad_5A9B[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_946A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDynamicTypedStructs                  BlankStructs;                                      // 0x520(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	double                                       TIMEOUT_LENGTH;                                    // 0x530(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

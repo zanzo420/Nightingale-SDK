@@ -16,7 +16,7 @@ class UOverlay_AnimB_Base_C : public UObject
 public:
 	enum class EAlertnessLevelType               AlertnessType__Required_;                          // 0x28(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFootStanceType                   BaseStanceType__Required_;                         // 0x29(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E6[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_61BA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAnimSequence*                         Transition_ToRelaxed;                              // 0x30(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequence*                         Transition_ToAlert;                                // 0x38(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequence*                         Transition_ToReady;                                // 0x40(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

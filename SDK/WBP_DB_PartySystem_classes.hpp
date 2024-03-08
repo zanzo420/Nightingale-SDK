@@ -35,7 +35,7 @@ public:
 	TArray<class FString>                        Groups;                                            // 0x548(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class ANWXPlayerState*>               Array_PartyMembers;                                // 0x558(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	int32                                        ColumnCount;                                       // 0x568(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_55A0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4F9B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_PartyComponent_C*                  PartyComponent;                                    // 0x570(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

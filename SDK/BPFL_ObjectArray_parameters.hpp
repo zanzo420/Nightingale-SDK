@@ -35,15 +35,15 @@ public:
 	class UObject*                               ItemToFind;                                        // 0x10(0x8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               __WorldContext;                                    // 0x18(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x20(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_56BC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_571C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_ObjectArray                        UpdatedObjectArray;                                // 0x28(0x10)(Parm, OutParm, HasGetValueTypeHash)
 	TArray<int32>                                StartingIDArray;                                   // 0x38(0x10)(Edit, BlueprintVisible)
 	TScriptInterface<class IStructureCompositePieceInterface> K2Node_DynamicCast_AsStructure_Composite_Piece_Interface; // 0x48(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_56BD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_571D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCompositePieceGameplay               CallFunc_GetCompositePieceGameplay_GameplayData;   // 0x60(0x140)(None)
 	bool                                         CallFunc_Array_RemoveItem_ReturnValue;             // 0x1A0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_56BE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_571E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_ObjectArray                        K2Node_MakeStruct_S_ObjectArray;                   // 0x1A8(0x10)(HasGetValueTypeHash)
 };
 
@@ -56,15 +56,15 @@ public:
 	class UObject*                               ItemToFind;                                        // 0x10(0x8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               __WorldContext;                                    // 0x18(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        AddIndex;                                          // 0x20(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_56C2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_571F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_ObjectArray                        UpdatedArray;                                      // 0x28(0x10)(Parm, OutParm, HasGetValueTypeHash)
 	TArray<int32>                                StartingIDArray;                                   // 0x38(0x10)(Edit, BlueprintVisible)
 	TScriptInterface<class IStructureCompositePieceInterface> K2Node_DynamicCast_AsStructure_Composite_Piece_Interface; // 0x48(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_56C3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5720[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCompositePieceGameplay               CallFunc_GetCompositePieceGameplay_GameplayData;   // 0x60(0x140)(None)
 	int32                                        CallFunc_Array_Add_ReturnValue;                    // 0x1A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_56C4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5721[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_ObjectArray                        K2Node_MakeStruct_S_ObjectArray;                   // 0x1A8(0x10)(HasGetValueTypeHash)
 };
 
@@ -77,10 +77,10 @@ public:
 	class UObject*                               ItemToFind;                                        // 0x10(0x8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               __WorldContext;                                    // 0x18(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         ReturnValue;                                       // 0x20(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_56C7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5724[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IStructureCompositePieceInterface> K2Node_DynamicCast_AsStructure_Composite_Piece_Interface; // 0x28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_56C8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5725[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCompositePieceGameplay               CallFunc_GetCompositePieceGameplay_GameplayData;   // 0x40(0x140)(None)
 	bool                                         CallFunc_Array_Contains_ReturnValue;               // 0x180(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

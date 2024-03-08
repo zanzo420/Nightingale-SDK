@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x128 (0x5E0 - 0x4B8)
+// 0x120 (0x5D8 - 0x4B8)
 // WidgetBlueprintGeneratedClass WBP_Popup_Timer.WBP_Popup_Timer_C
 class UWBP_Popup_Timer_C : public UNWXCommonWindowWidget
 {
@@ -24,20 +24,19 @@ public:
 	class UTextBlock*                            Time;                                              // 0x4F0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                            Txt_body;                                          // 0x4F8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                            TXT_Title;                                         // 0x500(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Component_SoftEdge_Divider_C*     WBP_Component_SoftEdge_Divider_1;                  // 0x508(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                        ButtonCount;                                       // 0x510(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_6E6C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  Button1_Label;                                     // 0x518(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	FMulticastInlineDelegateProperty_            Button1_Clicked;                                   // 0x530(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_            Button2_Clicked;                                   // 0x540(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_            Button3_Clicked;                                   // 0x550(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class FText                                  Button2_Label;                                     // 0x560(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                  Button3_Label;                                     // 0x578(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                  TitleText;                                         // 0x590(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                  BodyText;                                          // 0x5A8(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	FMulticastInlineDelegateProperty_            OnTimerEnd;                                        // 0x5C0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FTimerHandle                          TimerHandle;                                       // 0x5D0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	double                                       TotalTime;                                         // 0x5D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	int32                                        ButtonCount;                                       // 0x508(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                        Pad_6BA4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Button1_Label;                                     // 0x510(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	FMulticastInlineDelegateProperty_            Button1_Clicked;                                   // 0x528(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            Button2_Clicked;                                   // 0x538(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            Button3_Clicked;                                   // 0x548(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class FText                                  Button2_Label;                                     // 0x558(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                  Button3_Label;                                     // 0x570(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                  TitleText;                                         // 0x588(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                  BodyText;                                          // 0x5A0(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	FMulticastInlineDelegateProperty_            OnTimerEnd;                                        // 0x5B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FTimerHandle                          TimerHandle;                                       // 0x5C8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	double                                       TotalTime;                                         // 0x5D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_Popup_Timer_C* GetDefaultObj();

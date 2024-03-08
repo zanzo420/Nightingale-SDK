@@ -39,13 +39,13 @@ public:
 	TMap<struct FGuid, class UObject*>           Waypoint_Widget_Reference;                         // 0x410(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<struct FGuid, class UWBP_PlayerMapPin_C*> MapPinWidgets;                                     // 0x460(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	bool                                         RmbDown_AddWaypoint;                               // 0x4B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_65C2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7124[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             PartyMemberMarkerSize;                             // 0x4B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWBP_MapUI_PlayerMarker_C*>     PartyMemberMarkers;                                // 0x4C8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	double                                       CurrentZoom;                                       // 0x4D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              LastRotation;                                      // 0x4E0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         IsMinimap;                                         // 0x4F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_65C3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7125[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             ManualMarkerLocation;                              // 0x500(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWBP_MapMarkerTray_C*                  MapMarkerTray;                                     // 0x510(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                            Texture_HeightMap;                                 // 0x518(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

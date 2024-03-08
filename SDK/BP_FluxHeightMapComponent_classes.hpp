@@ -17,13 +17,13 @@ public:
 	TSoftObjectPtr<class UMaterialInterface>     HeightmapMaterial;                                 // 0xA0(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TSoftObjectPtr<class UStaticMesh>            DebugMesh;                                         // 0xC8(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	struct FBS_FluxHeightmapDomain               DomainTexture;                                     // 0xF0(0xA)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5852[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4819[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FBS_FluxCaptureVisibility             SceneVisibility;                                   // 0x100(0x34)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	uint8                                        Pad_5853[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_481A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       AreaWorldPixelSize;                                // 0x138(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       AreaWorldHeight;                                   // 0x140(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CaptureLimitTileSize;                              // 0x148(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5854[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_481B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTextureRenderTarget2D*                GroundHeightMap;                                   // 0x150(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              HeightmapPreviewInstance;                          // 0x158(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              HeightmapUpdateInstance;                           // 0x160(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

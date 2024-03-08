@@ -45,7 +45,7 @@ public:
 	class FString                                URL;                                               // 0x5D0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<class UWBP_button_base_C*>            EmojiButtons;                                      // 0x5E0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	int32                                        ActiveEmoji;                                       // 0x5F0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5A32[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5198[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  BodyText_LastEditedCached;                         // 0x5F8(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  Title_Text_LastEditedCached;                       // 0x610(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        DropDown1SelectedIndex;                            // 0x628(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -19,7 +19,7 @@ public:
 	TArray<class UNiagaraComponent*>             GlintSystemPool;                                   // 0xF8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TSoftObjectPtr<class UNiagaraSystem>         GlintSystemTemplate;                               // 0x108(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	int32                                        GlintPoolSize;                                     // 0x130(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_95F3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_98C8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<int32>                                  SeenGlintIIMs;                                     // 0x138(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                       GlintSearchRadius;                                 // 0x188(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

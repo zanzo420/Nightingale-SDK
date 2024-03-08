@@ -20,7 +20,7 @@ public:
 	class UEncounterPOIPersistedObject*          Encounter_Persisted_Object;                        // 0x460(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        NumRestoredPuzzlePieces;                           // 0x468(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bRestoreFromPersistence;                           // 0x46C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9FA4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A56E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Advertisement_Length;                              // 0x470(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class ATargetPoint*>                  Puzzle_Piece_Targets;                              // 0x478(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	struct FTimerHandle                          AdvertiseTimerHandle;                              // 0x488(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -33,7 +33,7 @@ public:
 	class ABP_Structure_EncounterTrigger_PuzzleMemoryCentre_C* Puzzle_Centre;                                     // 0x4F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          PuzzleCompleteTimerHandle;                         // 0x500(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                        PuzzleCompleteDuration;                            // 0x508(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9FA6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A56F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureAssetReference              HECU_SDA;                                          // 0x510(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FStructureAssetReference              PuzzlePieces_SDA;                                  // 0x590(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 

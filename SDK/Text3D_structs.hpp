@@ -70,10 +70,10 @@ public:
 	float                                        Extrude;                                           // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Bevel;                                             // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EText3DBevelType                  BevelType;                                         // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43E5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2F6D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        BevelSegments;                                     // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bOutline;                                          // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43E6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2F6E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        OutlineExpand;                                     // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -83,7 +83,7 @@ struct FCachedFontMeshes
 {
 public:
 	TMap<uint32, class UStaticMesh*>             Glyphs;                                            // 0x0(0x50)(UObjectWrapper, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43E8[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2F6F[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xE8 (0xE8 - 0x0)
@@ -93,7 +93,7 @@ struct FCachedFontData
 public:
 	class UFont*                                 Font;                                              // 0x0(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<uint32, struct FCachedFontMeshes>       Meshes;                                            // 0x8(0x50)(NativeAccessSpecifierPublic)
-	uint8                                        Pad_43EA[0x90];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2F71[0x90];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

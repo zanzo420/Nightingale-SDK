@@ -26,7 +26,7 @@ public:
 class UDataflowComponent : public UPrimitiveComponent
 {
 public:
-	uint8                                        Pad_49AC[0x148];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4641[0x148];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UDataflowComponent* GetDefaultObj();

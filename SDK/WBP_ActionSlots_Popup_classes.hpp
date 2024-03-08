@@ -27,7 +27,7 @@ public:
 	class UWBP_ActionSlots_Item_C*               WBP_ActionSlots_Slot_2;                            // 0x508(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_StoragePanel_C*                   WBP_StoragePanel;                                  // 0x510(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            OnApplyToItem;                                     // 0x518(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	uint8                                        Pad_87A4[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8A01[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       ApplyingItem;                                      // 0x530(0x2F0)(Edit, BlueprintVisible, ExposeOnSpawn)
 	struct FInventoryEntry                       PreviewResultItem;                                 // 0x820(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UNWXMenuDataEntry*                     MenuItemDataEntry;                                 // 0xB10(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -40,13 +40,13 @@ public:
 	struct FInventoryEntry                       SelectedItem;                                      // 0xBC0(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bReopenOnClosed;                                   // 0xEB0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bIsMenuOpened;                                     // 0xEB1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_87A5[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8A06[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Playback_Speed;                                    // 0xEB4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_87A6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8A08[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              SpellRecipe;                                       // 0xEC0(0x70)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FCraftingRecipeReference              PerkRecipe;                                        // 0xF30(0x70)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	enum class EActionType                       ActionType;                                        // 0xFA0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_87A7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8A0B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UItemDataAsset>         PerkDataAsset;                                     // 0xFA8(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TSoftObjectPtr<class UItemDataAsset>         SpellDataAsset;                                    // 0xFD0(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                         bSlotsFocused;                                     // 0xFF8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

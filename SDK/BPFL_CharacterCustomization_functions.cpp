@@ -599,19 +599,33 @@ void UBPFL_CharacterCustomization_C::Cc_AdjustDynamicMaterialRegion_Weapon(class
 // TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded>MaterialOverrides                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 // TMap<enum class EMetalRegions, double>MetalOverrides                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 // int32                              RandomSeed                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              TierValue                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // double                             MarkingsIndex                                                    (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              RegionIndex                                                      (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    MI                                                               (Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                    Temp_object_Variable                                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                    Temp_object_Variable_1                                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                    Temp_object_Variable_2                                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                    Temp_object_Variable_3                                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                    Temp_object_Variable_4                                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                    Temp_object_Variable_5                                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Clamp_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Clamp_ReturnValue_1                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Map_IsNotEmpty_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                    K2Node_Select_Default                                            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Variable_1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Conv_IntToDouble_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                    K2Node_Select_Default_1                                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Divide_DoubleDouble_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<enum class ECostumeRegions> CallFunc_Map_Keys_Keys                                           (ReferenceParm)
-// enum class ECostumeRegions         CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ECostumeRegions         CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FResourceCustomizationData_LoadedCallFunc_Map_Find_Value                                          (NoDestructor)
 // bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -625,7 +639,7 @@ void UBPFL_CharacterCustomization_C::Cc_AdjustDynamicMaterialRegion_Weapon(class
 // double                             CallFunc_Map_Find_Value_1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Map_Find_ReturnValue_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBPFL_CharacterCustomization_C::Cc_CustomizeMaterial_Regions(class UMaterialInstanceDynamic* Mat, TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded> MaterialOverrides, TMap<enum class EMetalRegions, double> MetalOverrides, int32 RandomSeed, class UObject* __WorldContext, double MarkingsIndex, int32 RegionIndex, class UMaterialInstanceDynamic* MI, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable_1, double CallFunc_Conv_IntToDouble_ReturnValue, double CallFunc_Divide_DoubleDouble_ReturnValue, TArray<enum class ECostumeRegions>& CallFunc_Map_Keys_Keys, enum class ECostumeRegions CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue, const struct FResourceCustomizationData_Loaded& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, TArray<enum class EMetalRegions>& CallFunc_Map_Keys_Keys_1, int32 CallFunc_Array_Length_ReturnValue_1, enum class EMetalRegions CallFunc_Array_Get_Item_1, bool CallFunc_Less_IntInt_ReturnValue_1, double CallFunc_Map_Find_Value_1, bool CallFunc_Map_Find_ReturnValue_1)
+void UBPFL_CharacterCustomization_C::Cc_CustomizeMaterial_Regions(class UMaterialInstanceDynamic* Mat, TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded> MaterialOverrides, TMap<enum class EMetalRegions, double> MetalOverrides, int32 RandomSeed, int32 TierValue, class UObject* __WorldContext, double MarkingsIndex, int32 RegionIndex, class UMaterialInstanceDynamic* MI, int32 Temp_int_Variable, class UTexture* Temp_object_Variable, class UTexture* Temp_object_Variable_1, class UTexture* Temp_object_Variable_2, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable_1, class UTexture* Temp_object_Variable_3, class UTexture* Temp_object_Variable_4, class UTexture* Temp_object_Variable_5, int32 CallFunc_Clamp_ReturnValue, int32 CallFunc_Clamp_ReturnValue_1, bool CallFunc_Map_IsNotEmpty_ReturnValue, class UTexture* K2Node_Select_Default, int32 Temp_int_Variable_1, double CallFunc_Conv_IntToDouble_ReturnValue, class UTexture* K2Node_Select_Default_1, double CallFunc_Divide_DoubleDouble_ReturnValue, TArray<enum class ECostumeRegions>& CallFunc_Map_Keys_Keys, bool CallFunc_IsValid_ReturnValue, enum class ECostumeRegions CallFunc_Array_Get_Item, const struct FResourceCustomizationData_Loaded& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, TArray<enum class EMetalRegions>& CallFunc_Map_Keys_Keys_1, int32 CallFunc_Array_Length_ReturnValue_1, enum class EMetalRegions CallFunc_Array_Get_Item_1, bool CallFunc_Less_IntInt_ReturnValue_1, double CallFunc_Map_Find_Value_1, bool CallFunc_Map_Find_ReturnValue_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -638,19 +652,33 @@ void UBPFL_CharacterCustomization_C::Cc_CustomizeMaterial_Regions(class UMateria
 	Parms.MaterialOverrides = MaterialOverrides;
 	Parms.MetalOverrides = MetalOverrides;
 	Parms.RandomSeed = RandomSeed;
+	Parms.TierValue = TierValue;
 	Parms.__WorldContext = __WorldContext;
 	Parms.MarkingsIndex = MarkingsIndex;
 	Parms.RegionIndex = RegionIndex;
 	Parms.MI = MI;
+	Parms.Temp_int_Variable = Temp_int_Variable;
+	Parms.Temp_object_Variable = Temp_object_Variable;
+	Parms.Temp_object_Variable_1 = Temp_object_Variable_1;
+	Parms.Temp_object_Variable_2 = Temp_object_Variable_2;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.Temp_int_Array_Index_Variable_1 = Temp_int_Array_Index_Variable_1;
+	Parms.Temp_object_Variable_3 = Temp_object_Variable_3;
+	Parms.Temp_object_Variable_4 = Temp_object_Variable_4;
+	Parms.Temp_object_Variable_5 = Temp_object_Variable_5;
+	Parms.CallFunc_Clamp_ReturnValue = CallFunc_Clamp_ReturnValue;
+	Parms.CallFunc_Clamp_ReturnValue_1 = CallFunc_Clamp_ReturnValue_1;
+	Parms.CallFunc_Map_IsNotEmpty_ReturnValue = CallFunc_Map_IsNotEmpty_ReturnValue;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.Temp_int_Variable_1 = Temp_int_Variable_1;
 	Parms.CallFunc_Conv_IntToDouble_ReturnValue = CallFunc_Conv_IntToDouble_ReturnValue;
+	Parms.K2Node_Select_Default_1 = K2Node_Select_Default_1;
 	Parms.CallFunc_Divide_DoubleDouble_ReturnValue = CallFunc_Divide_DoubleDouble_ReturnValue;
 	Parms.CallFunc_Map_Keys_Keys = CallFunc_Map_Keys_Keys;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_Map_Find_Value = CallFunc_Map_Find_Value;
 	Parms.CallFunc_Map_Find_ReturnValue = CallFunc_Map_Find_ReturnValue;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;

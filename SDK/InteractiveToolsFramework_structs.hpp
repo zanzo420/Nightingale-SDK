@@ -241,7 +241,7 @@ public:
 	struct FLinearColor                          Value;                                             // 0x0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bHasValue;                                         // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bOverridesChildState;                              // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4996[0x2];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_460B[0x2];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xC (0xC - 0x0)
@@ -251,7 +251,7 @@ struct FGizmoElementMaterialAttribute
 public:
 	TWeakObjectPtr<class UMaterialInterface>     Value;                                             // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bOverridesChildState;                              // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4997[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_460C[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x60 (0x60 - 0x0)
@@ -291,7 +291,7 @@ public:
 struct FBrushStampData
 {
 public:
-	uint8                                        Pad_4998[0x128];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_460D[0x128];                                   // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -300,7 +300,7 @@ struct FBehaviorInfo
 {
 public:
 	class UInputBehavior*                        Behavior;                                          // 0x0(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4999[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_460E[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -309,13 +309,13 @@ struct FInputRayHit
 {
 public:
 	bool                                         bHit;                                              // 0x0(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_499A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_460F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       HitDepth;                                          // 0x8(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               HitNormal;                                         // 0x10(0x18)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bHasHitNormal;                                     // 0x28(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_499B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4610[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        HitIdentifier;                                     // 0x2C(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_499C[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4611[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TWeakObjectPtr<class UObject>                HitObject;                                         // 0x38(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -326,7 +326,7 @@ struct FInputDeviceRay
 public:
 	struct FRay                                  WorldRay;                                          // 0x0(0x30)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bHas2D;                                            // 0x30(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_499D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4612[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             ScreenPosition;                                    // 0x38(0x10)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -336,7 +336,7 @@ struct FActiveGizmo
 {
 public:
 	class UInteractiveGizmo*                     Gizmo;                                             // 0x0(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_499E[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4613[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

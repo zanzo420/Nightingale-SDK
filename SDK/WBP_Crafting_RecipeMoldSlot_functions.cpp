@@ -40,6 +40,28 @@ class UWBP_Crafting_RecipeMoldSlot_C* UWBP_Crafting_RecipeMoldSlot_C::GetDefault
 }
 
 
+// Function WBP_Crafting_RecipeMoldSlot.WBP_Crafting_RecipeMoldSlot_C.BP_GetDesiredFocusTarget
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_Crafting_RecipeMoldSlot_C::BP_GetDesiredFocusTarget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_Crafting_RecipeMoldSlot_C", "BP_GetDesiredFocusTarget");
+
+	Params::UWBP_Crafting_RecipeMoldSlot_C_BP_GetDesiredFocusTarget_Params Parms{};
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function WBP_Crafting_RecipeMoldSlot.WBP_Crafting_RecipeMoldSlot_C.HidePointyHand
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -85,8 +107,10 @@ void UWBP_Crafting_RecipeMoldSlot_C::ShowPointyHand(bool CallFunc_GetIsEnabled_R
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               IsSatisfied                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Crafting_RecipeMoldSlot_C::UpdateConstraintSatisfiedWidget(bool IsSatisfied)
+void UWBP_Crafting_RecipeMoldSlot_C::UpdateConstraintSatisfiedWidget(bool IsSatisfied, bool CallFunc_IsValid_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -96,6 +120,8 @@ void UWBP_Crafting_RecipeMoldSlot_C::UpdateConstraintSatisfiedWidget(bool IsSati
 	Params::UWBP_Crafting_RecipeMoldSlot_C_UpdateConstraintSatisfiedWidget_Params Parms{};
 
 	Parms.IsSatisfied = IsSatisfied;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -276,7 +302,7 @@ void UWBP_Crafting_RecipeMoldSlot_C::GetReverseOpenCloseStartTime(double* StartT
 
 
 // Function WBP_Crafting_RecipeMoldSlot.WBP_Crafting_RecipeMoldSlot_C.GetDefaultFocusWidget
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
@@ -859,6 +885,27 @@ void UWBP_Crafting_RecipeMoldSlot_C::BndEvt__WBP_Crafting_RecipeMoldSlot_WBP_Com
 }
 
 
+// Function WBP_Crafting_RecipeMoldSlot.WBP_Crafting_RecipeMoldSlot_C.OnInputMethodChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// enum class ECommonInputType        CurrentInputType                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Crafting_RecipeMoldSlot_C::OnInputMethodChanged(enum class ECommonInputType CurrentInputType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_Crafting_RecipeMoldSlot_C", "OnInputMethodChanged");
+
+	Params::UWBP_Crafting_RecipeMoldSlot_C_OnInputMethodChanged_Params Parms{};
+
+	Parms.CurrentInputType = CurrentInputType;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_Crafting_RecipeMoldSlot.WBP_Crafting_RecipeMoldSlot_C.ExecuteUbergraph_WBP_Crafting_RecipeMoldSlot
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -870,8 +917,14 @@ void UWBP_Crafting_RecipeMoldSlot_C::BndEvt__WBP_Crafting_RecipeMoldSlot_WBP_Com
 // class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_SelectedLeftEventTag_ReturnValue                        (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_HoverStartEventTag_ReturnValue                          (NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsUsingGamepad_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsUsingGamepad_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsUsingGamepad_ReturnValue_2                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ECommonInputType        K2Node_Event_CurrentInputType                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAnyUserFocus_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Crafting_RecipeMoldSlot_C::ExecuteUbergraph_WBP_Crafting_RecipeMoldSlot(int32 EntryPoint, const struct FFocusEvent& K2Node_Event_InFocusEvent_1, const struct FFocusEvent& K2Node_Event_InFocusEvent, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_2, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, const struct FGameplayTag& CallFunc_SelectedLeftEventTag_ReturnValue, const struct FGameplayTag& CallFunc_HoverStartEventTag_ReturnValue)
+void UWBP_Crafting_RecipeMoldSlot_C::ExecuteUbergraph_WBP_Crafting_RecipeMoldSlot(int32 EntryPoint, const struct FFocusEvent& K2Node_Event_InFocusEvent_1, const struct FFocusEvent& K2Node_Event_InFocusEvent, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_2, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, const struct FGameplayTag& CallFunc_SelectedLeftEventTag_ReturnValue, const struct FGameplayTag& CallFunc_HoverStartEventTag_ReturnValue, bool CallFunc_IsUsingGamepad_ReturnValue, bool CallFunc_IsUsingGamepad_ReturnValue_1, bool CallFunc_IsUsingGamepad_ReturnValue_2, enum class ECommonInputType K2Node_Event_CurrentInputType, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_HasAnyUserFocus_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -888,6 +941,12 @@ void UWBP_Crafting_RecipeMoldSlot_C::ExecuteUbergraph_WBP_Crafting_RecipeMoldSlo
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
 	Parms.CallFunc_SelectedLeftEventTag_ReturnValue = CallFunc_SelectedLeftEventTag_ReturnValue;
 	Parms.CallFunc_HoverStartEventTag_ReturnValue = CallFunc_HoverStartEventTag_ReturnValue;
+	Parms.CallFunc_IsUsingGamepad_ReturnValue = CallFunc_IsUsingGamepad_ReturnValue;
+	Parms.CallFunc_IsUsingGamepad_ReturnValue_1 = CallFunc_IsUsingGamepad_ReturnValue_1;
+	Parms.CallFunc_IsUsingGamepad_ReturnValue_2 = CallFunc_IsUsingGamepad_ReturnValue_2;
+	Parms.K2Node_Event_CurrentInputType = K2Node_Event_CurrentInputType;
+	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
+	Parms.CallFunc_HasAnyUserFocus_ReturnValue = CallFunc_HasAnyUserFocus_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

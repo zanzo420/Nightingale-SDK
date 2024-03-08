@@ -69,13 +69,12 @@ class UWidget* UWBP_NarrativeNpcMapPin_C::GetTooltipWidget(class UWBP_Tooltip_Ma
 
 
 // Function WBP_NarrativeNpcMapPin.WBP_NarrativeNpcMapPin_C.GetTooltipTitleText
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class FText                        OutputText                                                       (Parm, OutParm)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NarrativeNpcMapPin_C::GetTooltipTitleText(class FText* OutputText, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue)
+void UWBP_NarrativeNpcMapPin_C::GetTooltipTitleText(class FText* OutputText, bool CallFunc_TextIsEmpty_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -84,7 +83,6 @@ void UWBP_NarrativeNpcMapPin_C::GetTooltipTitleText(class FText* OutputText, cla
 
 	Params::UWBP_NarrativeNpcMapPin_C_GetTooltipTitleText_Params Parms{};
 
-	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
 	Parms.CallFunc_TextIsEmpty_ReturnValue = CallFunc_TextIsEmpty_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);

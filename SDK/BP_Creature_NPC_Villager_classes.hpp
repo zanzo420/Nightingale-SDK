@@ -9,19 +9,18 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xD0 (0x1950 - 0x1880)
+// 0xC8 (0x1980 - 0x18B8)
 // BlueprintGeneratedClass BP_Creature_NPC_Villager.BP_Creature_NPC_Villager_C
 class ABP_Creature_NPC_Villager_C : public ABP_Creature_NPC_Human_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1880(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCompanionMapPinComponent*             CompanionMapPin;                                   // 0x1888(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAICompanionComponent*                 AICompanion;                                       // 0x1890(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               FacingTargetLocation;                              // 0x1898(0x18)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                   EmployeeManagementMenuHandle;                      // 0x18B0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FContainerCapacityData                NPCInventoryData;                                  // 0x18C0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                        Pad_799F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FStructureAssetReference              Death_Chest;                                       // 0x18D0(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x18B8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCompanionMapPinComponent*             CompanionMapPin;                                   // 0x18C0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAICompanionComponent*                 AICompanion;                                       // 0x18C8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               FacingTargetLocation;                              // 0x18D0(0x18)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                   EmployeeManagementMenuHandle;                      // 0x18E8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FContainerCapacityData                NPCInventoryData;                                  // 0x18F8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FStructureAssetReference              Death_Chest;                                       // 0x1900(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_Creature_NPC_Villager_C* GetDefaultObj();

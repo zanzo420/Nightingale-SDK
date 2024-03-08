@@ -30,7 +30,7 @@ public:
 	double                                       VFXIndexOfRefraction_25_376AD2E744C42BAED267C38D53B6B095; // 0x80(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UNiagaraSystem>         MagicEffect_28_ADD37699414FD74BA144BD98BFB95D92;   // 0x88(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                         VFX_Gameplay_62_25147FC8489843F508C81EBBAF318F60;  // 0xB0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5EA7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_252A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       VFX_AshSpawnChance_63_178AE8034257742673C4638A32B1C403; // 0xB8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_DripsSpawnChance_64_481FDE0B4553892DD1A58DB1616462CF; // 0xC0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_ElectricalSparksSpawnChance_65_C3C4F9914317DE81239428AAF687A7A7; // 0xC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

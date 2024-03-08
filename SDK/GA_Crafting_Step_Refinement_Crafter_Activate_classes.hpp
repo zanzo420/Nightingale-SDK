@@ -14,7 +14,7 @@ namespace SDK
 class UGA_Crafting_Step_Refinement_Crafter_Activate_C : public UGA_Crafting_Step_Base_C
 {
 public:
-	uint8                                        Pad_502F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_948D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x478(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                         IsPlayer;                                          // 0x480(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

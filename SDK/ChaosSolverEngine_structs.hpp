@@ -49,7 +49,7 @@ public:
 struct FBreakEventCallbackWrapper
 {
 public:
-	uint8                                        Pad_2CA9[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2CF7[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -57,7 +57,7 @@ public:
 struct FRemovalEventCallbackWrapper
 {
 public:
-	uint8                                        Pad_2CAA[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2CF8[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -65,7 +65,7 @@ public:
 struct FCrumblingEventCallbackWrapper
 {
 public:
-	uint8                                        Pad_2CAB[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2CF9[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x58 (0x58 - 0x0)
@@ -73,7 +73,7 @@ public:
 struct FChaosHandlerSet
 {
 public:
-	uint8                                        Pad_2CAC[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2CFA[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class UObject*>                         ChaosHandlers;                                     // 0x8(0x50)(UObjectWrapper, NativeAccessSpecifierPublic)
 };
 

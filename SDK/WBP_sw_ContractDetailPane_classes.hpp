@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x258 (0x5A0 - 0x348)
+// 0x270 (0x5B8 - 0x348)
 // WidgetBlueprintGeneratedClass WBP_sw_ContractDetailPane.WBP_sw_ContractDetailPane_C
 class UWBP_sw_ContractDetailPane_C : public UNWXCommonUserWidget
 {
@@ -39,16 +39,16 @@ public:
 	class UVerticalBox*                          VB_Details_Rewards;                                // 0x3F8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                          Vb_TaskBox;                                        // 0x400(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	enum class E_Contract_StateType              ContractState;                                     // 0x408(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_6CB0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_858E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FOngoingTaskProgress                  TaskProgress;                                      // 0x410(0xB0)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         IsJournal;                                         // 0x4C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_6CB1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_858F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            QuestAccepted;                                     // 0x4C8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         IsExchange;                                        // 0x4D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFaction                          Faction;                                           // 0x4D9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsShop;                                            // 0x4DA(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_6CB3[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FShopOfferPresentation                ShopOffer;                                         // 0x4E0(0xC0)(Edit, BlueprintVisible, ExposeOnSpawn)
+	uint8                                        Pad_8590[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FShopOfferPresentation                ShopOffer;                                         // 0x4E0(0xD8)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 	static class UClass* StaticClass();
 	static class UWBP_sw_ContractDetailPane_C* GetDefaultObj();

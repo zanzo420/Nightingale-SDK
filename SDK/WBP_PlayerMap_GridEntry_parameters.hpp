@@ -69,7 +69,7 @@ public:
 	class FText                                  Temp_text_Variable_24;                             // 0x248(0x18)(None)
 	class FText                                  Temp_text_Variable_25;                             // 0x260(0x18)(None)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x278(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6A1D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_699E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x27C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  CallFunc_Conv_IntToText_ReturnValue;               // 0x280(0x18)(None)
 	class FText                                  K2Node_Select_Default;                             // 0x298(0x18)(None)

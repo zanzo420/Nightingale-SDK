@@ -24,10 +24,10 @@ public:
 	struct FOngoingTaskProgress                  TaskProgress;                                      // 0x390(0xB0)(Edit, BlueprintVisible, ExposeOnSpawn)
 	enum class E_Contract_StateType              ContractState;                                     // 0x440(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         IsSelected;                                        // 0x441(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_51EC[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_30C8[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateColor                           SelectedColor;                                     // 0x444(0x14)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                           UnselectedColor;                                   // 0x458(0x14)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                        Pad_51EE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_30C9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            GuideBookQuestTrackingChanged;                     // 0x470(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            GuideBookQuestUnselected;                          // 0x480(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 

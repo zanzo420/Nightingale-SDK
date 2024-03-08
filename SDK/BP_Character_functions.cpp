@@ -804,12 +804,15 @@ void ABP_Character_C::GetInteractIcon(const struct FInteractionData& Interaction
 
 
 // Function BP_Character.BP_Character_C.GetInteractText
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FInteractionData            InteractionData                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 // class FString                      InteractText                                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 
-void ABP_Character_C::GetInteractText(const struct FInteractionData& InteractionData, class FString* InteractText)
+void ABP_Character_C::GetInteractText(const struct FInteractionData& InteractionData, class FString* InteractText, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -819,6 +822,9 @@ void ABP_Character_C::GetInteractText(const struct FInteractionData& Interaction
 	Params::ABP_Character_C_GetInteractText_Params Parms{};
 
 	Parms.InteractionData = InteractionData;
+	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
+	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
+	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

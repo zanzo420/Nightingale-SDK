@@ -131,7 +131,7 @@ struct FMediaSourceCacheSettings
 {
 public:
 	bool                                         bOverride;                                         // 0x0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17E0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_14CD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        TimeToLookAhead;                                   // 0x4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 

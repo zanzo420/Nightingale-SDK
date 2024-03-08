@@ -14,7 +14,7 @@ namespace SDK
 class UConditionInventoryEntryUpdate : public UConditionBehaviour
 {
 public:
-	uint8                                        Pad_35B6[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_30CE[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UConditionInventoryEntryUpdate* GetDefaultObj();

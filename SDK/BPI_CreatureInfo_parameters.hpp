@@ -13,6 +13,14 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
+// 0x18 (0x18 - 0x0)
+// Function BPI_CreatureInfo.BPI_CreatureInfo_C.GetCreatureName
+struct IBPI_CreatureInfo_C_GetCreatureName_Params
+{
+public:
+	class FText                                  CreatureName;                                      // 0x0(0x18)(Parm, OutParm)
+};
+
 // 0x9 (0x9 - 0x0)
 // Function BPI_CreatureInfo.BPI_CreatureInfo_C.RemoveFromEnemies
 struct IBPI_CreatureInfo_C_RemoveFromEnemies_Params

@@ -40,6 +40,30 @@ class ABP_Creature_Wildlife_Eoten_Apex_C* ABP_Creature_Wildlife_Eoten_Apex_C::Ge
 }
 
 
+// Function BP_Creature_Wildlife_Eoten_Apex.BP_Creature_Wildlife_Eoten_Apex_C.BossInCombatShouldUseRangeCheck
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ABP_Creature_Wildlife_Eoten_Apex_C::BossInCombatShouldUseRangeCheck(bool CallFunc_Not_PreBool_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_Creature_Wildlife_Eoten_Apex_C", "BossInCombatShouldUseRangeCheck");
+
+	Params::ABP_Creature_Wildlife_Eoten_Apex_C_BossInCombatShouldUseRangeCheck_Params Parms{};
+
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function BP_Creature_Wildlife_Eoten_Apex.BP_Creature_Wildlife_Eoten_Apex_C.AtMaxSummons
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:

@@ -43,10 +43,11 @@ class UGA_Glide_C* UGA_Glide_C::GetDefaultObj()
 // Function GA_Glide.GA_Glide_C.OnGlidingStopped
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TScriptInterface<class IGlidingInterface>CallFunc_StopGliding_self_CastInput                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IGlidingInterface>CallFunc_UnbindDelegate_OnGlideStopped_self_CastInput            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Glide_C::OnGlidingStopped(TScriptInterface<class IGlidingInterface> CallFunc_StopGliding_self_CastInput, bool CallFunc_IsValid_ReturnValue)
+void UGA_Glide_C::OnGlidingStopped(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, TScriptInterface<class IGlidingInterface> CallFunc_UnbindDelegate_OnGlideStopped_self_CastInput, bool CallFunc_IsValid_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -55,7 +56,8 @@ void UGA_Glide_C::OnGlidingStopped(TScriptInterface<class IGlidingInterface> Cal
 
 	Params::UGA_Glide_C_OnGlidingStopped_Params Parms{};
 
-	Parms.CallFunc_StopGliding_self_CastInput = CallFunc_StopGliding_self_CastInput;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_UnbindDelegate_OnGlideStopped_self_CastInput = CallFunc_UnbindDelegate_OnGlideStopped_self_CastInput;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -233,7 +235,6 @@ void UGA_Glide_C::K2_OnEndAbility(bool bWasCancelled)
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TScriptInterface<class IGlidingInterface>CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayEventData          K2Node_Event_EventData                                           (ConstParm)
 // TScriptInterface<class IGlidingInterface>CallFunc_IsGliding_self_CastInput                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsGliding_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -248,15 +249,15 @@ void UGA_Glide_C::K2_OnEndAbility(bool bWasCancelled)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetFloatAttribute_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TScriptInterface<class IGlidingInterface>CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_1       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IGlidingInterface>CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Multiply_DoubleDouble_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_K2_CommitAbility_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TScriptInterface<class IGlidingInterface>CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_2       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IGlidingInterface>CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_1       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class IGlidingInterface>K2Node_DynamicCast_AsGliding_Interface_1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class IGlidingInterface>K2Node_DynamicCast_AsGliding_Interface_2                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_2                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Multiply_DoubleDouble_ReturnValue_1                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_K2_CommitAbility_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_1         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetFloatAttribute_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_NVFX_Spawn_System_Attached_SpawnSuccessful              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -265,15 +266,19 @@ void UGA_Glide_C::K2_OnEndAbility(bool bWasCancelled)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FInstanceData_Traits        CallFunc_TryGetItemTraits_Traits                                 (None)
 // enum class EGetResult              CallFunc_TryGetItemTraits_Branches                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TScriptInterface<class IGlidingInterface>CallFunc_StopGliding_self_CastInput_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                             CallFunc_GetFallingSpeed_FallingSpeed                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasTag_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_CalculateItemAttributeValue_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<double>                     K2Node_MakeArray_Array                                           (ReferenceParm)
 // TArray<double>                     K2Node_MakeArray_Array_1                                         (ReferenceParm)
 // double                             CallFunc_StandardBonusFormula_Total                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_StandardBonusFormula_Total_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_GetFallingSpeed_FallingSpeed                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasTag_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IGlidingInterface>CallFunc_StopGliding_self_CastInput_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IGlidingInterface>CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_2       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IGlidingInterface>CallFunc_UnbindDelegate_OnGlideStopped_self_CastInput            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             K2Node_MakeArray__0__ImplicitCast                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_SetGlidingForwardSpeedMultiplier_Multiplier_ImplicitCast(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_SetGlidingForwardSpeedMultiplier_Multiplier_ImplicitCast_1(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -283,7 +288,7 @@ void UGA_Glide_C::K2_OnEndAbility(bool bWasCancelled)
 // double                             K2Node_MakeArray__1__ImplicitCast                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             K2Node_MakeArray__1__ImplicitCast_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Glide_C::ExecuteUbergraph_GA_Glide(int32 EntryPoint, TScriptInterface<class IGlidingInterface> CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput, const struct FGameplayEventData& K2Node_Event_EventData, TScriptInterface<class IGlidingInterface> CallFunc_IsGliding_self_CastInput, bool CallFunc_IsGliding_ReturnValue, TScriptInterface<class IGlidingInterface> CallFunc_StopGliding_self_CastInput, TScriptInterface<class IGlidingInterface> CallFunc_StartGliding_self_CastInput, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput, bool CallFunc_HasMatchingGameplayTag_ReturnValue, bool K2Node_Event_bWasCancelled, const struct FGameplayAttribute& Temp_struct_Variable, bool CallFunc_IsValid_ReturnValue, TScriptInterface<class IGlidingInterface> K2Node_DynamicCast_AsGliding_Interface, bool K2Node_DynamicCast_bSuccess, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttribute_ReturnValue, TScriptInterface<class IGlidingInterface> CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_1, double CallFunc_Multiply_DoubleDouble_ReturnValue, bool CallFunc_K2_CommitAbility_ReturnValue, TScriptInterface<class IGlidingInterface> CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_2, TScriptInterface<class IGlidingInterface> K2Node_DynamicCast_AsGliding_Interface_1, bool K2Node_DynamicCast_bSuccess_1, TScriptInterface<class IGlidingInterface> K2Node_DynamicCast_AsGliding_Interface_2, bool K2Node_DynamicCast_bSuccess_2, double CallFunc_Multiply_DoubleDouble_ReturnValue_1, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_1, float CallFunc_GetFloatAttribute_ReturnValue_1, bool CallFunc_NVFX_Spawn_System_Attached_SpawnSuccessful, class UNiagaraComponent* CallFunc_NVFX_Spawn_System_Attached_NiagaraSystemSpawned, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FInstanceData_Traits& CallFunc_TryGetItemTraits_Traits, enum class EGetResult CallFunc_TryGetItemTraits_Branches, TScriptInterface<class IGlidingInterface> CallFunc_StopGliding_self_CastInput_1, bool K2Node_SwitchEnum_CmpSuccess, double CallFunc_GetFallingSpeed_FallingSpeed, bool CallFunc_HasTag_ReturnValue, float CallFunc_CalculateItemAttributeValue_ReturnValue, TArray<double>& K2Node_MakeArray_Array, TArray<double>& K2Node_MakeArray_Array_1, double CallFunc_StandardBonusFormula_Total, double CallFunc_StandardBonusFormula_Total_1, double K2Node_MakeArray__0__ImplicitCast, float CallFunc_SetGlidingForwardSpeedMultiplier_Multiplier_ImplicitCast, float CallFunc_SetGlidingForwardSpeedMultiplier_Multiplier_ImplicitCast_1, float CallFunc_SetGlidingGravityMultiplier_Multiplier_ImplicitCast, float CallFunc_SetGlidingGravityMultiplier_Multiplier_ImplicitCast_1, double K2Node_MakeArray__0__ImplicitCast_1, double K2Node_MakeArray__1__ImplicitCast, double K2Node_MakeArray__1__ImplicitCast_1)
+void UGA_Glide_C::ExecuteUbergraph_GA_Glide(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData, TScriptInterface<class IGlidingInterface> CallFunc_IsGliding_self_CastInput, bool CallFunc_IsGliding_ReturnValue, TScriptInterface<class IGlidingInterface> CallFunc_StopGliding_self_CastInput, TScriptInterface<class IGlidingInterface> CallFunc_StartGliding_self_CastInput, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput, bool CallFunc_HasMatchingGameplayTag_ReturnValue, bool K2Node_Event_bWasCancelled, const struct FGameplayAttribute& Temp_struct_Variable, bool CallFunc_IsValid_ReturnValue, TScriptInterface<class IGlidingInterface> K2Node_DynamicCast_AsGliding_Interface, bool K2Node_DynamicCast_bSuccess, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttribute_ReturnValue, TScriptInterface<class IGlidingInterface> CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput, double CallFunc_Multiply_DoubleDouble_ReturnValue, TScriptInterface<class IGlidingInterface> CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_1, TScriptInterface<class IGlidingInterface> K2Node_DynamicCast_AsGliding_Interface_1, bool K2Node_DynamicCast_bSuccess_1, TScriptInterface<class IGlidingInterface> K2Node_DynamicCast_AsGliding_Interface_2, bool K2Node_DynamicCast_bSuccess_2, double CallFunc_Multiply_DoubleDouble_ReturnValue_1, bool CallFunc_K2_CommitAbility_ReturnValue, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_1, float CallFunc_GetFloatAttribute_ReturnValue_1, bool CallFunc_NVFX_Spawn_System_Attached_SpawnSuccessful, class UNiagaraComponent* CallFunc_NVFX_Spawn_System_Attached_NiagaraSystemSpawned, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FInstanceData_Traits& CallFunc_TryGetItemTraits_Traits, enum class EGetResult CallFunc_TryGetItemTraits_Branches, float CallFunc_CalculateItemAttributeValue_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, TArray<double>& K2Node_MakeArray_Array, TArray<double>& K2Node_MakeArray_Array_1, double CallFunc_StandardBonusFormula_Total, double CallFunc_StandardBonusFormula_Total_1, double CallFunc_GetFallingSpeed_FallingSpeed, bool CallFunc_HasTag_ReturnValue, TScriptInterface<class IGlidingInterface> CallFunc_StopGliding_self_CastInput_1, TScriptInterface<class IGlidingInterface> CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, TScriptInterface<class IGlidingInterface> CallFunc_UnbindDelegate_OnGlideStopped_self_CastInput, bool CallFunc_IsValid_ReturnValue_1, double K2Node_MakeArray__0__ImplicitCast, float CallFunc_SetGlidingForwardSpeedMultiplier_Multiplier_ImplicitCast, float CallFunc_SetGlidingForwardSpeedMultiplier_Multiplier_ImplicitCast_1, float CallFunc_SetGlidingGravityMultiplier_Multiplier_ImplicitCast, float CallFunc_SetGlidingGravityMultiplier_Multiplier_ImplicitCast_1, double K2Node_MakeArray__0__ImplicitCast_1, double K2Node_MakeArray__1__ImplicitCast, double K2Node_MakeArray__1__ImplicitCast_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -293,7 +298,6 @@ void UGA_Glide_C::ExecuteUbergraph_GA_Glide(int32 EntryPoint, TScriptInterface<c
 	Params::UGA_Glide_C_ExecuteUbergraph_GA_Glide_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput = CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
 	Parms.CallFunc_IsGliding_self_CastInput = CallFunc_IsGliding_self_CastInput;
 	Parms.CallFunc_IsGliding_ReturnValue = CallFunc_IsGliding_ReturnValue;
@@ -308,15 +312,15 @@ void UGA_Glide_C::ExecuteUbergraph_GA_Glide(int32 EntryPoint, TScriptInterface<c
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute = CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute;
 	Parms.CallFunc_GetFloatAttribute_ReturnValue = CallFunc_GetFloatAttribute_ReturnValue;
-	Parms.CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_1 = CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_1;
+	Parms.CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput = CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput;
 	Parms.CallFunc_Multiply_DoubleDouble_ReturnValue = CallFunc_Multiply_DoubleDouble_ReturnValue;
-	Parms.CallFunc_K2_CommitAbility_ReturnValue = CallFunc_K2_CommitAbility_ReturnValue;
-	Parms.CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_2 = CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_2;
+	Parms.CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_1 = CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_1;
 	Parms.K2Node_DynamicCast_AsGliding_Interface_1 = K2Node_DynamicCast_AsGliding_Interface_1;
 	Parms.K2Node_DynamicCast_bSuccess_1 = K2Node_DynamicCast_bSuccess_1;
 	Parms.K2Node_DynamicCast_AsGliding_Interface_2 = K2Node_DynamicCast_AsGliding_Interface_2;
 	Parms.K2Node_DynamicCast_bSuccess_2 = K2Node_DynamicCast_bSuccess_2;
 	Parms.CallFunc_Multiply_DoubleDouble_ReturnValue_1 = CallFunc_Multiply_DoubleDouble_ReturnValue_1;
+	Parms.CallFunc_K2_CommitAbility_ReturnValue = CallFunc_K2_CommitAbility_ReturnValue;
 	Parms.CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_1 = CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_1;
 	Parms.CallFunc_GetFloatAttribute_ReturnValue_1 = CallFunc_GetFloatAttribute_ReturnValue_1;
 	Parms.CallFunc_NVFX_Spawn_System_Attached_SpawnSuccessful = CallFunc_NVFX_Spawn_System_Attached_SpawnSuccessful;
@@ -325,15 +329,19 @@ void UGA_Glide_C::ExecuteUbergraph_GA_Glide(int32 EntryPoint, TScriptInterface<c
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
 	Parms.CallFunc_TryGetItemTraits_Traits = CallFunc_TryGetItemTraits_Traits;
 	Parms.CallFunc_TryGetItemTraits_Branches = CallFunc_TryGetItemTraits_Branches;
-	Parms.CallFunc_StopGliding_self_CastInput_1 = CallFunc_StopGliding_self_CastInput_1;
-	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
-	Parms.CallFunc_GetFallingSpeed_FallingSpeed = CallFunc_GetFallingSpeed_FallingSpeed;
-	Parms.CallFunc_HasTag_ReturnValue = CallFunc_HasTag_ReturnValue;
 	Parms.CallFunc_CalculateItemAttributeValue_ReturnValue = CallFunc_CalculateItemAttributeValue_ReturnValue;
+	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.K2Node_MakeArray_Array_1 = K2Node_MakeArray_Array_1;
 	Parms.CallFunc_StandardBonusFormula_Total = CallFunc_StandardBonusFormula_Total;
 	Parms.CallFunc_StandardBonusFormula_Total_1 = CallFunc_StandardBonusFormula_Total_1;
+	Parms.CallFunc_GetFallingSpeed_FallingSpeed = CallFunc_GetFallingSpeed_FallingSpeed;
+	Parms.CallFunc_HasTag_ReturnValue = CallFunc_HasTag_ReturnValue;
+	Parms.CallFunc_StopGliding_self_CastInput_1 = CallFunc_StopGliding_self_CastInput_1;
+	Parms.CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_2 = CallFunc_SetGlidingForwardSpeedMultiplier_self_CastInput_2;
+	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
+	Parms.CallFunc_UnbindDelegate_OnGlideStopped_self_CastInput = CallFunc_UnbindDelegate_OnGlideStopped_self_CastInput;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 	Parms.K2Node_MakeArray__0__ImplicitCast = K2Node_MakeArray__0__ImplicitCast;
 	Parms.CallFunc_SetGlidingForwardSpeedMultiplier_Multiplier_ImplicitCast = CallFunc_SetGlidingForwardSpeedMultiplier_Multiplier_ImplicitCast;
 	Parms.CallFunc_SetGlidingForwardSpeedMultiplier_Multiplier_ImplicitCast_1 = CallFunc_SetGlidingForwardSpeedMultiplier_Multiplier_ImplicitCast_1;

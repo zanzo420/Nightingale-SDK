@@ -33,7 +33,7 @@ public:
 	class FName                                  Name;                                              // 0x14(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        ReachedAt;                                         // 0x1C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bReached;                                          // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3D42[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3CE1[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x58 (0x160 - 0x108)
@@ -42,7 +42,7 @@ struct FReplicatedTimerCheckpointDataArray : public FFastArraySerializer
 {
 public:
 	TArray<struct FReplicatedTimerCheckpointData> Items;                                             // 0x108(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3D43[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3CE2[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -61,11 +61,11 @@ struct FReplicatedTimerData : public FFastArraySerializerItem
 public:
 	class FName                                  Name;                                              // 0xC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EReplicatedTimerState             State;                                             // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3D44[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3CE3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        StartedAt;                                         // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3D45[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3CE4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimespan                             InitialTimespan;                                   // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3D46[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3CE5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        TotalPausedSeconds;                                // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FTimespan                             AddedTimespan;                                     // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FReplicatedTimerEvaluationRates       EvaluationRates;                                   // 0x38(0x8)(NoDestructor, NativeAccessSpecifierPrivate)
@@ -77,7 +77,7 @@ struct FReplicatedTimerDataArray : public FFastArraySerializer
 {
 public:
 	TArray<struct FReplicatedTimerData>          Items;                                             // 0x108(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3D47[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3CE6[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -85,7 +85,7 @@ public:
 struct FBlueprintDelegateHandle
 {
 public:
-	uint8                                        Pad_3D48[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3CE7[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

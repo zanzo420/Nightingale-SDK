@@ -17,7 +17,7 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xF8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	TArray<struct FFoodSlot>                     FoodSlots;                                         // 0x100(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, RepNotify)
 	int32                                        MaxFoodSlots;                                      // 0x110(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8E1B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8E76[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       HungerDivisor;                                     // 0x118(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          FoodSlotProcessTimerHandle;                        // 0x120(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TMap<int32, struct FActiveGameplayEffectHandle> ActiveGameplayEffectMap;                           // 0x128(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)

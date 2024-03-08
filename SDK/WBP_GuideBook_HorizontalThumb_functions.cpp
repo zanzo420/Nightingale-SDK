@@ -910,29 +910,6 @@ void UWBP_GuideBook_HorizontalThumb_C::ThumbDoubleClick__DelegateSignature(class
 
 }
 
-
-// Function WBP_GuideBook_HorizontalThumb.WBP_GuideBook_HorizontalThumb_C.ThumbHovered__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               IsHovered                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UNWXMenuDataEntry*           MenuDataEntry                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GuideBook_HorizontalThumb_C::ThumbHovered__DelegateSignature(bool IsHovered, class UNWXMenuDataEntry* MenuDataEntry)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_GuideBook_HorizontalThumb_C", "ThumbHovered__DelegateSignature");
-
-	Params::UWBP_GuideBook_HorizontalThumb_C_ThumbHovered__DelegateSignature_Params Parms{};
-
-	Parms.IsHovered = IsHovered;
-	Parms.MenuDataEntry = MenuDataEntry;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
 }
 
 

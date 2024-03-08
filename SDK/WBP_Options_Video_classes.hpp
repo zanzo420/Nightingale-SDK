@@ -56,7 +56,7 @@ public:
 	TArray<int32>                                ResolutionY;                                       // 0x650(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FIntPoint                             Screen_Resolution;                                 // 0x660(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EWindowMode                       CachedWindowMode;                                  // 0x668(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_86E5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_55EB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_Popup_Timer_C*                    PopUpTimer;                                        // 0x670(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWidget*>                       NavigationWidgets;                                 // 0x678(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 

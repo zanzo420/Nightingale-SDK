@@ -189,6 +189,24 @@ void UWBP_ShopScreen_C::CustomEvent(class UCommonButtonBase* Button)
 }
 
 
+// Function WBP_ShopScreen.WBP_ShopScreen_C.BP_OnDeactivated
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UWBP_ShopScreen_C::BP_OnDeactivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_ShopScreen_C", "BP_OnDeactivated");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function WBP_ShopScreen.WBP_ShopScreen_C.ExecuteUbergraph_WBP_ShopScreen
 // (Final, UbergraphFunction)
 // Parameters:
@@ -196,8 +214,12 @@ void UWBP_ShopScreen_C::CustomEvent(class UCommonButtonBase* Button)
 // class UGlobalAudioSubsystem*       CallFunc_GetEngineSubsystem_ReturnValue                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UCommonButtonBase*           K2Node_CustomEvent_Button                                        (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UNWXShopOfferListPanelWidget*CallFunc_GetShopOfferList_ReturnValue                            (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_ShopOfferListPanel_C*   K2Node_DynamicCast_AsWBP_Shop_Offer_List_Panel                   (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     CallFunc_GetFirstScrollChild_Output                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ShopScreen_C::ExecuteUbergraph_WBP_ShopScreen(int32 EntryPoint, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UCommonButtonBase* K2Node_CustomEvent_Button)
+void UWBP_ShopScreen_C::ExecuteUbergraph_WBP_ShopScreen(int32 EntryPoint, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UCommonButtonBase* K2Node_CustomEvent_Button, class UNWXShopOfferListPanelWidget* CallFunc_GetShopOfferList_ReturnValue, class UWBP_ShopOfferListPanel_C* K2Node_DynamicCast_AsWBP_Shop_Offer_List_Panel, bool K2Node_DynamicCast_bSuccess, class UWidget* CallFunc_GetFirstScrollChild_Output)
 {
 	static class UFunction* Func = nullptr;
 
@@ -210,6 +232,10 @@ void UWBP_ShopScreen_C::ExecuteUbergraph_WBP_ShopScreen(int32 EntryPoint, class 
 	Parms.CallFunc_GetEngineSubsystem_ReturnValue = CallFunc_GetEngineSubsystem_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CustomEvent_Button = K2Node_CustomEvent_Button;
+	Parms.CallFunc_GetShopOfferList_ReturnValue = CallFunc_GetShopOfferList_ReturnValue;
+	Parms.K2Node_DynamicCast_AsWBP_Shop_Offer_List_Panel = K2Node_DynamicCast_AsWBP_Shop_Offer_List_Panel;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_GetFirstScrollChild_Output = CallFunc_GetFirstScrollChild_Output;
 
 	UObject::ProcessEvent(Func, &Parms);
 

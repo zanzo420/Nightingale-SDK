@@ -38,7 +38,7 @@ class UComputeKernelSource : public UObject
 public:
 	class FString                                EntryPoint;                                        // 0x28(0x10)(Edit, ZeroConstructor, EditConst, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FIntVector                            GroupSize;                                         // 0x38(0xC)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4426[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_421E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FComputeKernelPermutationSet          PermutationSet;                                    // 0x48(0x10)(Edit, EditConst, NativeAccessSpecifierPublic)
 	struct FComputeKernelDefinitionSet           DefinitionsSet;                                    // 0x58(0x10)(Edit, EditConst, NativeAccessSpecifierPublic)
 	TArray<class UComputeSource*>                AdditionalSources;                                 // 0x68(0x10)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
@@ -72,7 +72,7 @@ public:
 	TArray<struct FComputeGraphEdge>             GraphEdges;                                        // 0x48(0x10)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	TArray<TSubclassOf<class UObject>>           Bindings;                                          // 0x58(0x10)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TArray<int32>                                DataInterfaceToBinding;                            // 0x68(0x10)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_4427[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_421F[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UComputeGraph* GetDefaultObj();
@@ -102,7 +102,7 @@ class UComputeKernel : public UObject
 public:
 	class UComputeKernelSource*                  KernelSource;                                      // 0x28(0x8)(Edit, ZeroConstructor, NoDestructor, AssetRegistrySearchable, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        KernelFlags;                                       // 0x30(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4429[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4221[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UComputeKernel* GetDefaultObj();

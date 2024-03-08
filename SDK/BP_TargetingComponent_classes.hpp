@@ -18,7 +18,7 @@ public:
 	class ABP_PlayerController_C*                OwningController;                                  // 0xA8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FS_TargetingInfo>              PossibleTargets;                                   // 0xB0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FS_TargetingInfo                      ChosenTarget;                                      // 0xC0(0x54)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_675A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_999B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        ViewportWidth;                                     // 0x118(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        ViewportHeight;                                    // 0x11C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBP_RangedWeaponAimAssist_C*           AimAssistComponent;                                // 0x120(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)

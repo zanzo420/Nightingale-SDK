@@ -20,7 +20,7 @@ struct FS_Ring_Color
 {
 public:
 	int32                                        RingColor_2_5682A6614D57319E3A0A61ADD6AEFE8F;      // 0x0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_16AF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24CA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FRealmPlacementRequirement>    Realm_Placement_Requirement_6_F332A9C045FE3F91EE41F7826C8A28D6; // 0x8(0x10)(Edit, BlueprintVisible)
 };
 

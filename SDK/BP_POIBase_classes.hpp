@@ -31,7 +31,7 @@ public:
 	bool                                         Show_Debug_Arrows;                                 // 0x3D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Apply_Random_Replacement;                          // 0x3D9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Apply_Random_Rotations;                            // 0x3DA(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_51AE[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7FCC[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AActor*>                        Context_Actors;                                    // 0x3E0(0x10)(Edit, BlueprintVisible, Net, DisableEditOnTemplate, ExposeOnSpawn)
 	TMap<class AActor*, class UClass*>           Replacement_Actors;                                // 0x3F0(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	TArray<struct FS_POICachedOffset>            CachedActors;                                      // 0x440(0x10)(Edit, BlueprintVisible, ExposeOnSpawn)
@@ -41,7 +41,7 @@ public:
 	TArray<class ATargetPoint*>                  Spawn_Points_Hostile;                              // 0x478(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate)
 	TArray<class ATargetPoint*>                  Spawn_Points_Friendly;                             // 0x488(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	bool                                         TagsSet;                                           // 0x498(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_51AF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7FCE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<struct FGameplayTag, int32>             FootprintRadiusToDiscoverableRadius;               // 0x4A0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UInteractiveInstancedMeshProxyComponent*> ResourcesToProcess;                                // 0x4F0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	class AInteractiveInstancedMeshManagerIndex* IIMManager_Index;                                  // 0x500(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

@@ -9,23 +9,23 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x61 (0x1631 - 0x15D0)
+// 0x61 (0x1669 - 0x1608)
 // BlueprintGeneratedClass BP_Creature_Bound.BP_Creature_Bound_C
 class ABP_Creature_Bound_C : public ABP_CreatureBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x15D0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                         HasAuraEffect;                                     // 0x15D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7E4B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class USkeletalMeshComponent*>        AllSkeletalMeshes;                                 // 0x15E0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	bool                                         SupportMeshesVisible;                              // 0x15F0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7E4C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UClass*                                AICBound;                                          // 0x15F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     DissolveCrustEffect_0;                             // 0x1600(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                          DistanceCheckTimer;                                // 0x1608(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               BoundOriginalLocation;                             // 0x1610(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     PuppetCrustEffect;                                 // 0x1628(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                         DropReward;                                        // 0x1630(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1608(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                         HasAuraEffect;                                     // 0x1610(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_70C2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class USkeletalMeshComponent*>        AllSkeletalMeshes;                                 // 0x1618(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	bool                                         SupportMeshesVisible;                              // 0x1628(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_70C3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UClass*                                AICBound;                                          // 0x1630(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     DissolveCrustEffect_0;                             // 0x1638(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                          DistanceCheckTimer;                                // 0x1640(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               BoundOriginalLocation;                             // 0x1648(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     PuppetCrustEffect;                                 // 0x1660(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                         DropReward;                                        // 0x1668(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_Creature_Bound_C* GetDefaultObj();

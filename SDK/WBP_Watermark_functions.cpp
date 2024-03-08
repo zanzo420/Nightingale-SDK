@@ -181,37 +181,6 @@ void UWBP_Watermark_C::UpdatePresentation_CustomText(bool Temp_bool_Variable, en
 }
 
 
-// Function WBP_Watermark.WBP_Watermark_C.UpdatePresentation_Banner
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FNWXWatermarkSettingsData   CallFunc_GetWatermarkSettingsData_ReturnValue                    (ConstParm)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
-// enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Watermark_C::UpdatePresentation_Banner(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FNWXWatermarkSettingsData& CallFunc_GetWatermarkSettingsData_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_Watermark_C", "UpdatePresentation_Banner");
-
-	Params::UWBP_Watermark_C_UpdatePresentation_Banner_Params Parms{};
-
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_byte_Variable = Temp_byte_Variable;
-	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
-	Parms.CallFunc_GetWatermarkSettingsData_ReturnValue = CallFunc_GetWatermarkSettingsData_ReturnValue;
-	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
-	Parms.K2Node_Select_Default = K2Node_Select_Default;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function WBP_Watermark.WBP_Watermark_C.UpdateWatermarkPosition
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:

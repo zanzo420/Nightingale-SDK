@@ -131,7 +131,6 @@ void UGA_QuickConsume_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& 
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FAkExternalSourceInfo>Temp_struct_Variable                                             (ConstParm, ReferenceParm)
 // struct FGameplayEventData          K2Node_Event_EventData                                           (ConstParm)
 // bool                               CallFunc_GetEntryToConsume_bSuccess                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FInventoryEntry             CallFunc_GetEntryToConsume_InventoryEntry                        (None)
@@ -143,19 +142,19 @@ void UGA_QuickConsume_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& 
 // class ANWXPlayerCharacter*         K2Node_DynamicCast_AsNWXPlayer_Character                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UBP_InventoryComponent_C*    CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FInventoryEntry             CallFunc_GetItem_Entry                                           (None)
 // bool                               CallFunc_GetItem_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FInstanceData_Traits        CallFunc_TryGetItemTraits_Traits                                 (None)
 // enum class EGetResult              CallFunc_TryGetItemTraits_Branches                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_K2_HasAuthority_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_HasTag_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ACharacter*                  CallFunc_GetActivatingCharacter_Character_1                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 Temp_delegate_Variable                                           (ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_PostEvent_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNWXCharacterAudioComponent* CallFunc_GetComponentByClass_ReturnValue_1                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UGA_QuickConsume_C::ExecuteUbergraph_GA_QuickConsume(int32 EntryPoint, TArray<struct FAkExternalSourceInfo>& Temp_struct_Variable, const struct FGameplayEventData& K2Node_Event_EventData, bool CallFunc_GetEntryToConsume_bSuccess, const struct FInventoryEntry& CallFunc_GetEntryToConsume_InventoryEntry, bool CallFunc_K2_CommitAbility_ReturnValue, TScriptInterface<class IItemContainer> CallFunc_GetBackpack_Container, bool CallFunc_GetBackpack_ReturnValue, class ACharacter* CallFunc_GetActivatingCharacter_Character, class AController* CallFunc_GetActivatingController_ReturnValue, class ANWXPlayerCharacter* K2Node_DynamicCast_AsNWXPlayer_Character, bool K2Node_DynamicCast_bSuccess, class UBP_InventoryComponent_C* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FInventoryEntry& CallFunc_GetItem_Entry, bool CallFunc_GetItem_ReturnValue, const struct FInstanceData_Traits& CallFunc_TryGetItemTraits_Traits, enum class EGetResult CallFunc_TryGetItemTraits_Branches, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_K2_HasAuthority_ReturnValue, bool CallFunc_HasTag_ReturnValue, class ACharacter* CallFunc_GetActivatingCharacter_Character_1, FDelegateProperty_ Temp_delegate_Variable, int32 CallFunc_PostEvent_ReturnValue)
+void UGA_QuickConsume_C::ExecuteUbergraph_GA_QuickConsume(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData, bool CallFunc_GetEntryToConsume_bSuccess, const struct FInventoryEntry& CallFunc_GetEntryToConsume_InventoryEntry, bool CallFunc_K2_CommitAbility_ReturnValue, TScriptInterface<class IItemContainer> CallFunc_GetBackpack_Container, bool CallFunc_GetBackpack_ReturnValue, class ACharacter* CallFunc_GetActivatingCharacter_Character, class AController* CallFunc_GetActivatingController_ReturnValue, class ANWXPlayerCharacter* K2Node_DynamicCast_AsNWXPlayer_Character, bool K2Node_DynamicCast_bSuccess, class UBP_InventoryComponent_C* CallFunc_GetComponentByClass_ReturnValue, const struct FInventoryEntry& CallFunc_GetItem_Entry, bool CallFunc_GetItem_ReturnValue, const struct FInstanceData_Traits& CallFunc_TryGetItemTraits_Traits, enum class EGetResult CallFunc_TryGetItemTraits_Branches, bool CallFunc_K2_HasAuthority_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_HasTag_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, class UNWXCharacterAudioComponent* CallFunc_GetComponentByClass_ReturnValue_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -165,7 +164,6 @@ void UGA_QuickConsume_C::ExecuteUbergraph_GA_QuickConsume(int32 EntryPoint, TArr
 	Params::UGA_QuickConsume_C_ExecuteUbergraph_GA_QuickConsume_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
 	Parms.CallFunc_GetEntryToConsume_bSuccess = CallFunc_GetEntryToConsume_bSuccess;
 	Parms.CallFunc_GetEntryToConsume_InventoryEntry = CallFunc_GetEntryToConsume_InventoryEntry;
@@ -177,17 +175,17 @@ void UGA_QuickConsume_C::ExecuteUbergraph_GA_QuickConsume(int32 EntryPoint, TArr
 	Parms.K2Node_DynamicCast_AsNWXPlayer_Character = K2Node_DynamicCast_AsNWXPlayer_Character;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_GetItem_Entry = CallFunc_GetItem_Entry;
 	Parms.CallFunc_GetItem_ReturnValue = CallFunc_GetItem_ReturnValue;
 	Parms.CallFunc_TryGetItemTraits_Traits = CallFunc_TryGetItemTraits_Traits;
 	Parms.CallFunc_TryGetItemTraits_Branches = CallFunc_TryGetItemTraits_Branches;
-	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 	Parms.CallFunc_K2_HasAuthority_ReturnValue = CallFunc_K2_HasAuthority_ReturnValue;
+	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 	Parms.CallFunc_HasTag_ReturnValue = CallFunc_HasTag_ReturnValue;
-	Parms.CallFunc_GetActivatingCharacter_Character_1 = CallFunc_GetActivatingCharacter_Character_1;
-	Parms.Temp_delegate_Variable = Temp_delegate_Variable;
-	Parms.CallFunc_PostEvent_ReturnValue = CallFunc_PostEvent_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
+	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
+	Parms.CallFunc_GetComponentByClass_ReturnValue_1 = CallFunc_GetComponentByClass_ReturnValue_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 

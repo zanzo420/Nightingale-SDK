@@ -18,6 +18,7 @@ public:
 	static class UClass* StaticClass();
 	static class IBPI_CreatureInfo_C* GetDefaultObj();
 
+	void GetCreatureName(class FText* CreatureName);
 	void RemoveFromEnemies(const struct FGameplayTag& EnemyTag, bool* bSuccess);
 	void AddToEnemies(const struct FGameplayTag& EnemyTag, bool* bSuccess);
 	void RemoveFromFriends(const struct FGameplayTag& FriendTag, bool* bSuccess);

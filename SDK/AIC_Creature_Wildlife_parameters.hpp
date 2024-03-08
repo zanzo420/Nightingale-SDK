@@ -28,7 +28,7 @@ struct AAIC_Creature_Wildlife_C_ExecuteUbergraph_AIC_Creature_Wildlife_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_46CC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5054[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                K2Node_Event_Actor;                                // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAIStimulus                           K2Node_Event_Stimulus;                             // 0x10(0x58)(NoDestructor)
 };

@@ -55,15 +55,15 @@ public:
 	class UDirectionalLightComponent*            DirectionalLight_Celestial;                        // 0x4A0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        Timeline_0_Lumen_FinalGather_Alpha_E6814DD5418384038A371FB5A58C2B28; // 0x4A8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                Timeline_0__Direction_E6814DD5418384038A371FB5A58C2B28; // 0x4AC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7289[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_867C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    Timeline_0;                                        // 0x4B0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                        Timeline_Lumen_FinalGather_Alpha_90CE0B1C49555A0C1C8AE989B1E62379; // 0x4B8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                Timeline__Direction_90CE0B1C49555A0C1C8AE989B1E62379; // 0x4BC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_728A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_867D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    Timeline;                                          // 0x4C0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                       GameWorldTimeScale;                                // 0x4C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         bShouldTick;                                       // 0x4D0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_728B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_867E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCurveFloat*                           TimeAdjustmentCurve;                               // 0x4D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	double                                       ActualTime;                                        // 0x4E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       AdjustedTime;                                      // 0x4E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -79,31 +79,31 @@ public:
 	TArray<struct FLinearColor>                  Color_Saturation_Full;                             // 0x560(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FTimerHandle                          AudioTimerHandle;                                  // 0x570(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         AudioInitialized;                                  // 0x578(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_728C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_867F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          DebugPrintTimer;                                   // 0x580(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         OverwriteTimeScale;                                // 0x588(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_728D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8680[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       OverwrittenTimeScale;                              // 0x590(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         DebuggingTimeOfDay;                                // 0x598(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_728E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8681[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Season;                                            // 0x5A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AWindDirectionalSource*                Wind_Directional_Source;                           // 0x5A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           Sun_Intensity_Curve;                               // 0x5B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           VFX_Brightness;                                    // 0x5B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         Volume_Fog_Override;                               // 0x5C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Manual_Wind_Control;                               // 0x5C1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_728F[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8682[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AWindDirectionalSource*                Wind_Directional_Source_Testing;                   // 0x5C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	double                                       Wind_Speed;                                        // 0x5D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Wind_Strength;                                     // 0x5D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               Wind_Direction;                                    // 0x5E0(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Cloud_Break_Up;                                    // 0x5F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Volume_Fog_Scale;                                  // 0x600(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7290[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8683[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Volume_Fog_Alpha_Scale;                            // 0x608(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       Volume_Fog_Emissive_Scale;                         // 0x610(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                         Atmosphere_Minus_Dev_Override;                     // 0x618(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7291[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8684[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Atmosphere_Minus_Density;                          // 0x61C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Atmosphere_Minus_Haze;                             // 0x620(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Atmosphere_Minus_View_Distance;                    // 0x624(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -112,21 +112,21 @@ public:
 	TArray<class UCurveFloat*>                   TimeAdjustmentCurve_Array;                         // 0x630(0x10)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         Visual_Environment_Preset_Override;                // 0x640(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	enum class EAtmosphere_Master                Visual_Environment_Preset_;                        // 0x641(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_7292[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8685[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Visual_Environment_Preset;                         // 0x644(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           StreetLight_Intensity;                             // 0x648(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        Color_Row_Random;                                  // 0x650(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7293[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8686[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Season_Random;                                     // 0x658(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsNight;                                           // 0x660(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7294[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8687[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            NightDayStateChanged;                              // 0x668(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<class ABP_VolumetricPointLight_Lighting_01_C*> WeatherPointGrid;                                  // 0x678(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	bool                                         Shadow_Override;                                   // 0x688(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7295[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8688[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Shadow_Cascades_Sun;                               // 0x68C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Shadow_Cascades_Celestial;                         // 0x690(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7296[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8689[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Dynamic_Shadow_Distance_;                          // 0x698(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Distribution_Exponent;                             // 0x6A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Transition_Fraction;                               // 0x6A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -136,47 +136,47 @@ public:
 	int32                                        Night_Brightness;                                  // 0x6C4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Exposure_Debug_Override;                           // 0x6C8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	enum class E_Color_Category                  Color_Category;                                    // 0x6C9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7297[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_868A[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Color;                                             // 0x6CC(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Color_Saturation;                                  // 0x6D0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_LUT_Category                    LUT_Category;                                      // 0x6D4(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7298[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_868B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        LUT_WIP;                                           // 0x6D8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        LUT_Saturation;                                    // 0x6DC(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Cloud_Category                  Cloud_Category;                                    // 0x6E0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7299[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_868C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Cloud_CHANGE_TO_MANUAL;                            // 0x6E4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UDataTable*>                    Color_Data_Tables;                                 // 0x6E8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         Manual_Function_Override;                          // 0x6F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                         Manual_Fog_Only_Override;                          // 0x6F9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_729A[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_868D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Fog_Minus_Density;                                 // 0x6FC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Fog_Minus_Opacity;                                 // 0x700(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Fog_Minus_Falloff;                                 // 0x704(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Rain_Category                   Rain_Type;                                         // 0x708(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Sun_Color_Override;                                // 0x709(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_729B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_868E[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Sun_Color_;                                        // 0x70C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Sun_Color_Saturation_;                             // 0x710(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Manual_Fog_Color_Override;                         // 0x714(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Rayleigh_Color_Override_;                          // 0x715(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_729C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_868F[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Rayleigh_Color_;                                   // 0x718(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Rayleigh_Color_Saturation_;                        // 0x71C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Sky_Luminance_Override_;                           // 0x720(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_729D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8690[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Sky_Luminence_Color;                               // 0x724(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Sky_Luminence_Color_Saturation;                    // 0x728(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Fog_Color_Override;                                // 0x72C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_729E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8691[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Fog_Color;                                         // 0x730(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Fog_Color_Saturation;                              // 0x734(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Mie_Color_Override;                                // 0x738(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_729F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8692[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Mie_Color_;                                        // 0x73C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Mie_Color_Saturation;                              // 0x740(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Main_Celestial_Color_Override;                     // 0x744(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72A0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8693[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Realm_Minus_Main_Celestial_Color;                  // 0x748(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Main_Celestial_Color_Saturation;       // 0x74C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Fog_Minus_Volumetric;                              // 0x750(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -189,7 +189,7 @@ public:
 	int32                                        Fog_Minus_Height_Minus_Night;                      // 0x76C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                        Fog_Minus_Height_Fog_Cont_Minus_Night;             // 0x770(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         Fog_Change_w_Weather_Disable;                      // 0x774(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                        Pad_72A1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8694[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Exposure_Day;                                      // 0x778(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Exposure_Night;                                    // 0x77C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Exposure_Dawn_Dusk;                                // 0x780(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -197,7 +197,7 @@ public:
 	int32                                        HDR_Display_Output_Device;                         // 0x788(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        HDR_Display_Color_Gamut;                           // 0x78C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         HDR_Exposure_Override;                             // 0x790(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                        Pad_72A2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8695[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       HDR_Exposure_Compensation;                         // 0x798(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	class UCurveFloat*                           HDR_Exposure_Compensation_Curve;                   // 0x7A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	class UTexture*                              HDR_Exposure_Metering_Mask;                        // 0x7A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
@@ -238,7 +238,7 @@ public:
 	int32                                        Realm_Minus_Ring_Type;                             // 0x864(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Aurora;                                // 0x868(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         ColorCorrectionOverride;                           // 0x86C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72A3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8696[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Realm_Minus_Fantastic_Resource_Type;               // 0x870(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Rain;                                  // 0x874(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_MPC_BIome;                             // 0x878(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -249,13 +249,13 @@ public:
 	bool                                         Master_Override;                                   // 0x88C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EColor_Master_Table               Color_Master;                                      // 0x88D(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	enum class EAtmosphere_Master                Atmosphere_Master;                                 // 0x88E(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_72A4[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8697[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Realm_Minus_Atmosphere_Master_Select;              // 0x890(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Color_Minus_Category;                  // 0x894(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Color;                                 // 0x898(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Color_Saturation;                      // 0x89C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         Fog_Dev_Override;                                  // 0x8A0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72A5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8698[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Realm_Minus_Fog_Minus_Density;                     // 0x8A4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Fog_Minus_Opacity;                     // 0x8A8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Fog_Minus_Falloff;                     // 0x8AC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
@@ -267,7 +267,7 @@ public:
 	int32                                        Realm_Minus_Fog_Minus_Volumetric_Minus_Night;      // 0x8C4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Fog_Minus_Height_Minus_Night;          // 0x8C8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         Cloud_Aurora_Manual_Select;                        // 0x8CC(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72A6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8699[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Realm_MinusMain_Celestial_Color_1;                 // 0x8D0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_MinusMain_Celestial_Color_2;                 // 0x8D4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_MinusMain_Celestial_Color_3;                 // 0x8D8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -281,7 +281,7 @@ public:
 	int32                                        Realm_Minus_Main_Moon_Clouds;                      // 0x8F8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Nebula_Brightness;                     // 0x8FC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         Manual_Secondary_moon_Color;                       // 0x900(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                        Pad_72A7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_869A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Realm_Minus_Moon_A_Type;                           // 0x904(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Moon_A_Color_Row;                      // 0x908(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Moon_A_Saturation;                     // 0x90C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
@@ -302,7 +302,7 @@ public:
 	int32                                        Realm_Minus_Moon_D_Saturation;                     // 0x948(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Moon_D_Atmosphere_Color;               // 0x94C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Cloud_Index_D;                         // 0x950(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_72A8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_869B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Puddles;                                           // 0x958(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            AtmosphereTable;                                   // 0x960(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            AuroraTable;                                       // 0x968(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -326,7 +326,7 @@ public:
 	double                                       Manual_Season;                                     // 0x9F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            ColorSaturationTable;                              // 0xA00(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         Manual_Minus_Angle_X;                              // 0xA08(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_72A9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_869C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Angle_X;                                           // 0xA10(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	double                                       White_Clip;                                        // 0xA18(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       Temperature;                                       // 0xA20(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
@@ -347,7 +347,7 @@ public:
 	class UDataTable*                            FogVolumetricNightTable;                           // 0xA98(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            FogHeightNightTable;                               // 0xAA0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        Eye_Adaptation_Override;                           // 0xAA8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_72AA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_869D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector4                              HDR_Global_Minus_Saturation;                       // 0xAB0(0x20)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	struct FVector4                              HDR_Global_Minus_Contrast;                         // 0xAD0(0x20)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	struct FVector4                              HDR_Global_Minus_Gamma;                            // 0xAF0(0x20)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
@@ -355,13 +355,13 @@ public:
 	struct FVector4                              HDR_Global_Minus_Offset;                           // 0xB30(0x20)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                        Shadow_Cascades_Primary;                           // 0xB50(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         Rapid_Color_Adjust_Manual_Override;                // 0xB54(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72AB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_869E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Adjust_Amount_Global;                              // 0xB58(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       Lightness_Global;                                  // 0xB60(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                         Rapid_Color_Adjust_VEP_Override;                   // 0xB68(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72AC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_869F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          Sand_Color;                                        // 0xB6C(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72AD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Sand_Saturation;                                   // 0xB80(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       Sand_Brightness;                                   // 0xB88(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       Sand_Blend;                                        // 0xB90(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -382,7 +382,7 @@ public:
 	int32                                        Realm_Minus_Fog_Minus_Cave_Override;               // 0xC24(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Manual_Minus_Time_Dilation_Override;               // 0xC28(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	enum class ETime_Dilation                    Time_Dilation;                                     // 0xC29(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_72AE[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A1[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            TimeDilation;                                      // 0xC30(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            CelestialIntensity;                                // 0xC38(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            FogHeightContNight_Table;                          // 0xC40(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -414,7 +414,7 @@ public:
 	double                                       Water_Blend;                                       // 0xDB8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        ScreenSpaceReflection;                             // 0xDC0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         MPC_Manual_Override;                               // 0xDC4(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                        Pad_72AF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       SideProjection_UVScale;                            // 0xDC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       MacroColor_UVScale;                                // 0xDD0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       VistaMacroColor_UVScale;                           // 0xDD8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
@@ -425,25 +425,25 @@ public:
 	class UDataTable*                            NebulaColor3Table;                                 // 0xE00(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            RingTypeTable;                                     // 0xE08(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         Ring_Override_Manual;                              // 0xE10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72B0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Ring_Scale;                                        // 0xE18(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	double                                       Ring_Offset;                                       // 0xE20(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Ring_Color;                            // 0xE28(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Ring_Color_2;                                      // 0xE2C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Ring_Color_3;                                      // 0xE30(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_72B1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            FaeMagicTable;                                     // 0xE38(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            ExposureNightTable;                                // 0xE40(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<double>                               FaeMagicBrightness;                                // 0xE48(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<double>                               FaeMagicBrightness_Low;                            // 0xE58(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UDataTable*                            FaeMagicAltTable;                                  // 0xE68(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Time_Dilation;                         // 0xE70(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_72B2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Angle_Y;                                           // 0xE78(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                        Realm_Profile;                                     // 0xE80(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                        Debug_Minus_HWRT;                                  // 0xE84(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        Realm_Minus_SecondaryMoonOverride;                 // 0xE88(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                        Pad_72B3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            GlowingResourcesTable;                             // 0xE90(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            SecondaryMoonColorTable;                           // 0xE98(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            SecondaryMoonToggleTable;                          // 0xEA0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -453,7 +453,7 @@ public:
 	class UCurveFloat*                           Tempreture_Curve;                                  // 0xEC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        Fog_Emissive_Scale_Int;                            // 0xED0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                         Manual_Celestial_Override;                         // 0xED4(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                        Pad_72B4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<double>                               Temperature_Array;                                 // 0xED8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        Realm_Minus_Temperature_Minus_Day;                 // 0xEE8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Temperature_Minus_Night;               // 0xEEC(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -465,19 +465,19 @@ public:
 	struct FLinearColor                          SealLevelGradient_Mid_Color;                       // 0xF20(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	struct FLinearColor                          SealLevelGradient_Low_Color;                       // 0xF30(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Vault_Override;                        // 0xF40(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72B5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            VaultOverride;                                     // 0xF48(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         Cascade_Scalabilty_Override;                       // 0xF50(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72B6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            ExposureDayTable;                                  // 0xF58(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsTimeActive;                                      // 0xF60(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         AllowUpdateTimeWithoutTimer;                       // 0xF61(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72B7[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86AA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       ClientUpdateSteppingInterval;                      // 0xF68(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Scalability;                                       // 0xF70(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         Volume_Cloud_Manual_Override;                      // 0xF74(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EVolRT_Mode                       Volumetric_Cloud_Rendering_Mode;                   // 0xF75(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72B8[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86AB[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Cloud_Coverage;                                    // 0xF78(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Bottom_Altitude;                                   // 0xF80(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Layer_Height_Scale;                                // 0xF88(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -504,7 +504,7 @@ public:
 	double                                       TwoD_Overcast_Turbulence;                          // 0x1030(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Macro_Variation;                                   // 0x1038(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ENoiseType                        Volumetric_Cloud_Noise_Type;                       // 0x1040(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72B9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86AC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Base_Clouds_Mip_Level;                             // 0x1048(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       Multiscattering_Intensity;                         // 0x1050(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       Multiscattering_Occlusion_Factor;                  // 0x1058(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
@@ -522,7 +522,7 @@ public:
 	struct FLinearColor                          Inside_Cloud_Fog_Color;                            // 0x10C0(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       Close_Fade_Distance;                               // 0x10D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                         Two_Layers;                                        // 0x10D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72BA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86AD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Layer_2_Coverage_Scale;                            // 0x10E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Layer_2_Extinction_Scale;                          // 0x10E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             Layer_2_Cloud_Scale;                               // 0x10F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -531,11 +531,11 @@ public:
 	double                                       Scale_Ambient_Sky_Atmosphere_Contribution;         // 0x1110(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       High_Frequency_Mip_Increase_by_Distance;           // 0x1118(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                         Change_to_Simplified_Material_when_Overcast;       // 0x1120(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                        Pad_72BB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86AE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Simplified_Material_Cloud_Coverage_Threshold;      // 0x1128(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       Simplified_Material_Fade_Length;                   // 0x1130(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                        Current_Volumetric_Clouds_MID;                     // 0x1138(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72BC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86AF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Clouds_Position;                                   // 0x1140(0x18)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Standard_Base_Clouds_Size;                         // 0x1158(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Base_Cloud_Height;                                 // 0x1160(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -556,7 +556,7 @@ public:
 	class UMaterialInstanceDynamic*              Cloud_Fog_Post_Process_MID;                        // 0x1248(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              Inside_Clouds_Fog_MID;                             // 0x1250(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         Runtime;                                           // 0x1258(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72BD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Cache_Period;                                      // 0x1260(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          Cache_Timer;                                       // 0x1268(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       Time_of_Last_Cache;                                // 0x1270(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -568,7 +568,7 @@ public:
 	TArray<double>                               Cached_Floats_New;                                 // 0x12C0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<double>                               Cached_Floats_Old;                                 // 0x12D0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        Size;                                              // 0x12E0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72BE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FLinearColor>                  Cached_Colors_Old;                                 // 0x12E8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FLinearColor>                  Cached_Colors_New;                                 // 0x12F8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<bool>                                 Cached_Value_Changing;                             // 0x1308(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -589,21 +589,21 @@ public:
 	struct FLinearColor                          Cloud_Phase_Color;                                 // 0x13A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Randomize_Cloud_Formation_on_Run;                  // 0x13B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Clouds_Move_with_Time_of_Day;                      // 0x13B1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72BF[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B2[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Time_of_Day_Movement_Multiplier;                   // 0x13B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Last_Clouds_Time_of_Day_Factor;                    // 0x13C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               Starting_Cloud_Texture_Velocity;                   // 0x13C8(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Index;                                             // 0x13E0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Filling_Starting_Cache;                            // 0x13E4(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72C0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UMaterialInstanceDynamic*>      All_MIDs;                                          // 0x13E8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         Use_Cloud_Shadows;                                 // 0x13F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72C1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstanceDynamic*              Sun_Cloud_Shadows_MID;                             // 0x1400(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              Moon_Cloud_Shadows_MID;                            // 0x1408(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         Enable_Fog_Inside_Clouds;                          // 0x1410(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Use_Volumetric_Fog;                                // 0x1411(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72C2[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B5[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Humidity_Dynamic;                                  // 0x1418(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           Cloud_Aurora_Lerp;                                 // 0x1420(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           Volume_Cloud_Vis;                                  // 0x1428(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -614,7 +614,7 @@ public:
 	class UCurveFloat*                           Cloud_Brightness_Lerp;                             // 0x1460(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       Wind_TEST;                                         // 0x1468(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Manual_Skylight_Override;                          // 0x1470(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72C3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Manual_Skylight;                                   // 0x1478(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            RapidColorBiome;                                   // 0x1480(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       Fae_Magic_Bright;                                  // 0x1488(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -622,7 +622,7 @@ public:
 	class UCurveFloat*                           Fae_Magic_Brightness_Lerp;                         // 0x1498(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                            Temperature_Curves;                                // 0x14A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Temperature_Minus_Curve;               // 0x14A8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72C4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCurveFloat*                           Update_Stepping_Lerp;                              // 0x14B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          ClientUpdateTimer;                                 // 0x14B8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       LastClientUpdateTimer;                             // 0x14C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -630,11 +630,11 @@ public:
 	int32                                        Lumen_Switch;                                      // 0x14D0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                        BW_Switch;                                         // 0x14D4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                        GlobalIllumination;                                // 0x14D8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                        Pad_72C5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Sun_Direction;                                     // 0x14E0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       High_Material_Quality_Sample_Count_Scale;          // 0x14F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                        DesertVaultSwitch;                                 // 0x1500(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                        Pad_72C6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       View_Sample_Scale_Low;                             // 0x1508(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Cave_Transition_Delta;                             // 0x1510(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Cave_Transition_Alpha;                             // 0x1518(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -643,10 +643,10 @@ public:
 	struct FTimerHandle                          Cave_Transition_Timer;                             // 0x1530(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         NewVar;                                            // 0x1538(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         VolumetricCloudsValuesCached;                      // 0x1539(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72C7[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86BA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Volumetric_Clouds                  VolumetricCloudParameters;                         // 0x1540(0x100)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                         Aurora_on_Off;                                     // 0x1640(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72C8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86BB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<int32>                                Cloud_Scalabilty_Array;                            // 0x1648(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                       Humidity_InRange_A;                                // 0x1658(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Humidity_InRange_B;                                // 0x1660(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -665,6 +665,7 @@ public:
 	static class UClass* StaticClass();
 	static class ABP_TimeOfDayManager_C* GetDefaultObj();
 
+	void ApplyGameRuleChanges(class UGameRule_ApplyEnvironmentEffect* ApplyEffects);
 	void ApplyTimeModifiers(int32 TimeDilationCurve, bool CallFunc_ApplyScalarModifier_Modified);
 	double Volume_Cloud_Humidity_(double Primary_Cloud, double Storm_Cloud, double CallFunc_FClamp_ReturnValue, double CallFunc_MapRangeUnclamped_ReturnValue);
 	void RestoreEnvironmentSnapshot(struct FEnvironmentSnapshot& Snapshot);
@@ -677,7 +678,7 @@ public:
 	void Apply_Celestial_Modifiers(int32 Type, int32 Aurora, class UCelestialMultiMoonData* MultiMoon, class UCelestialRingsData* Rings, class UCelestialFaeSkyData* FaeSky, bool CallFunc_ApplyScalarModifier_Modified, bool CallFunc_ApplyScalarModifier_Modified_1, bool CallFunc_ApplyScalarModifier_Modified_2, bool CallFunc_ApplyScalarModifier_Modified_3, bool CallFunc_ApplyScalarModifier_Modified_4, bool CallFunc_ApplyScalarModifier_Modified_5, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_ApplyScalarModifier_Modified_6, bool CallFunc_ApplyScalarModifier_Modified_7);
 	void ApplyBiomeModifiers(class UBiomeColorData* BiomeColor, bool CallFunc_IsValid_ReturnValue, bool CallFunc_ApplyScalarModifier_Modified, bool CallFunc_ApplyScalarModifier_Modified_1);
 	void ApplyAtmosphereModifiers(class UAtmosphereColorTempData* ColorTemperature, class UAtmosphereIntensityData* Intensity, bool CallFunc_ApplyScalarModifier_Modified, bool CallFunc_ApplyScalarModifier_Modified_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_ApplyScalarModifier_Modified_2, bool CallFunc_ApplyScalarModifier_Modified_3, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_ApplyScalarModifier_Modified_4, bool CallFunc_ApplyScalarModifier_Modified_5);
-	void OnGameRuleEvent(class UGameRule* GameRule, enum class EGameRuleEvent GameRuleEvent, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UGameRule_ApplyEnvironmentEffect* K2Node_DynamicCast_AsGame_Rule_Apply_Environment_Effect, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsServer_ReturnValue);
+	void OnGameRuleEvent(class UGameRule* GameRule, enum class EGameRuleEvent GameRuleEvent, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UGameRule_ApplyEnvironmentEffect* K2Node_DynamicCast_AsGame_Rule_Apply_Environment_Effect, bool K2Node_DynamicCast_bSuccess, class UGameRule_EnvironmentEffect* K2Node_DynamicCast_AsGame_Rule_Environment_Effect, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsServer_ReturnValue);
 	void GetNormalizedVisualTime(double* VisualTime);
 	void Lumen_Scalabilty_Function(bool K2Node_SwitchInteger_CmpSuccess, bool K2Node_SwitchInteger_CmpSuccess_1, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, int32 CallFunc_GetOverallScalabilityLevel_ReturnValue, bool K2Node_SwitchInteger_CmpSuccess_2);
 	void UpdateStaticVolumetricValues(double TimeAsHours, TArray<class FName>& CallFunc_GetDataTableRowNames_OutRowNames, class FName CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue, const struct FS_Volumetric_Clouds& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, TArray<class FName>& CallFunc_GetDataTableRowNames_OutRowNames_1, class FName CallFunc_Array_Get_Item_1, bool CallFunc_Not_PreBool_ReturnValue, const struct FS_Aurora& CallFunc_GetDataTableRowFromName_OutRow_1, bool CallFunc_GetDataTableRowFromName_ReturnValue_1, int32 CallFunc_Conv_ByteToInt_ReturnValue, class UMaterialInstance* CallFunc_Array_Get_Item_2, TArray<class FName>& CallFunc_GetDataTableRowNames_OutRowNames_2, double CallFunc_Conv_ByteToDouble_ReturnValue, int32 CallFunc_FTrunc_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, class FName CallFunc_Array_Get_Item_3, const struct FS_VE_Preset_Master& CallFunc_GetDataTableRowFromName_OutRow_2, bool CallFunc_GetDataTableRowFromName_ReturnValue_2);
@@ -864,8 +865,8 @@ public:
 	void RealmSecondaryMoonColor(int32 Number);
 	void RealmColorMaster(int32 Number);
 	void RealmColorSelect(int32 Number);
-	void ManualCloudControl(int32 OFF);
-	void CascadeScalabilityOverride(int32 OFF);
+	void ManualCloudControl(int32 Off);
+	void CascadeScalabilityOverride(int32 Off);
 	void RealmFogVolumeLevel(int32 Number);
 	void CloudPhase(double Phase);
 	void CloudSpeed(double Speed);

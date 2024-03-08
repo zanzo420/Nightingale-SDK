@@ -9,57 +9,58 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x141 (0x1D11 - 0x1BD0)
+// 0x141 (0x1D41 - 0x1C00)
 // BlueprintGeneratedClass BP_Creature_Wildlife_Eoten_Apex.BP_Creature_Wildlife_Eoten_Apex_C
 class ABP_Creature_Wildlife_Eoten_Apex_C : public ABP_Creature_Wildlife_Eoten_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1BD0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                     NS_ElderEoten_Glow;                                // 0x1BD8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     Glint_0;                                           // 0x1BE0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     WP_Indicator3_0;                                   // 0x1BE8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     WP_Indicator2_0;                                   // 0x1BF0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     WP_Indicator1_0;                                   // 0x1BF8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     WP_Indicator_0;                                    // 0x1C00(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Heart_0;                                           // 0x1C08(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Hand_Left_0;                                    // 0x1C10(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Hand_Right_0;                                   // 0x1C18(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Foot_RearRight_0;                               // 0x1C20(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Foot_RearLeft_0;                                // 0x1C28(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Foot_Right_0;                                   // 0x1C30(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Foot_Left_0;                                    // 0x1C38(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Head_0;                                         // 0x1C40(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Body_0;                                         // 0x1C48(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_HarvestComponent_C*                BP_HarvestComponent1;                              // 0x1C50(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                  TreeMesh_0;                                        // 0x1C58(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UInWorldItemContainerComponent*        InWorldItemContainer_0;                            // 0x1C60(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_LoadoutComponent_C*                BP_LoadoutComponent1;                              // 0x1C68(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	int32                                        ApexHarvestNodeInstance_0;                         // 0x1C70(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9DF7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FVector                               ApexHarvestNodeInstanceLocation_0;                 // 0x1C78(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABP_ResourceNode_IIM_C*                ApexHarvestNode_0;                                 // 0x1C90(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class ABP_ResourceNode_IIM_C*                LCached_Resource_Node_0;                           // 0x1C98(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	bool                                         LFound_Instance_0;                                 // 0x1CA0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9DF8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<int32>                                LConsidered_Instances_0;                           // 0x1CA8(0x10)(Edit, BlueprintVisible)
-	struct FVector                               LCached_Instance_Location_0;                       // 0x1CB8(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        LCachedInstance_0;                                 // 0x1CD0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         LFoundInstanceTreeMesh_0;                          // 0x1CD4(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9DF9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UNiagaraComponent*                     WP_Indicator_1_0;                                  // 0x1CD8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                         BrambleFirstInstance_0;                            // 0x1CE0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         Glow_0;                                            // 0x1CE1(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9DFA[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        GlowCount_0;                                       // 0x1CE4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                          GlintTimerHandle_0;                                // 0x1CE8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<class ABP_CreatureBase_C*>            Summons;                                           // 0x1CF0(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	struct FTimerHandle                          WispTimerHandle;                                   // 0x1D00(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class ABP_CreatureSpawnerBase_C*             WispSpawns;                                        // 0x1D08(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                         TurnOnGlow;                                        // 0x1D10(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1C00(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                     NS_ElderEoten_Glow;                                // 0x1C08(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     Glint_0;                                           // 0x1C10(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     WP_Indicator3_0;                                   // 0x1C18(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     WP_Indicator2_0;                                   // 0x1C20(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     WP_Indicator1_0;                                   // 0x1C28(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     WP_Indicator_0;                                    // 0x1C30(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Heart_0;                                           // 0x1C38(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Hand_Left_0;                                    // 0x1C40(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Hand_Right_0;                                   // 0x1C48(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Foot_RearRight_0;                               // 0x1C50(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Foot_RearLeft_0;                                // 0x1C58(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Foot_Right_0;                                   // 0x1C60(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Foot_Left_0;                                    // 0x1C68(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Head_0;                                         // 0x1C70(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Body_0;                                         // 0x1C78(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_HarvestComponent_C*                BP_HarvestComponent1;                              // 0x1C80(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                  TreeMesh_0;                                        // 0x1C88(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UInWorldItemContainerComponent*        InWorldItemContainer_0;                            // 0x1C90(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_LoadoutComponent_C*                BP_LoadoutComponent1;                              // 0x1C98(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	int32                                        ApexHarvestNodeInstance_0;                         // 0x1CA0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_9E80[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector                               ApexHarvestNodeInstanceLocation_0;                 // 0x1CA8(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_ResourceNode_IIM_C*                ApexHarvestNode_0;                                 // 0x1CC0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class ABP_ResourceNode_IIM_C*                LCached_Resource_Node_0;                           // 0x1CC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	bool                                         LFound_Instance_0;                                 // 0x1CD0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_9E82[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<int32>                                LConsidered_Instances_0;                           // 0x1CD8(0x10)(Edit, BlueprintVisible)
+	struct FVector                               LCached_Instance_Location_0;                       // 0x1CE8(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        LCachedInstance_0;                                 // 0x1D00(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         LFoundInstanceTreeMesh_0;                          // 0x1D04(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_9E85[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UNiagaraComponent*                     WP_Indicator_1_0;                                  // 0x1D08(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                         BrambleFirstInstance_0;                            // 0x1D10(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Glow_0;                                            // 0x1D11(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_9E87[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        GlowCount_0;                                       // 0x1D14(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                          GlintTimerHandle_0;                                // 0x1D18(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<class ABP_CreatureBase_C*>            Summons;                                           // 0x1D20(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FTimerHandle                          WispTimerHandle;                                   // 0x1D30(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class ABP_CreatureSpawnerBase_C*             WispSpawns;                                        // 0x1D38(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                         TurnOnGlow;                                        // 0x1D40(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_Creature_Wildlife_Eoten_Apex_C* GetDefaultObj();
 
+	bool BossInCombatShouldUseRangeCheck(bool CallFunc_Not_PreBool_ReturnValue);
 	void AtMaxSummons(const struct FGameplayTag& Temp_struct_Variable, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue);
 	void OnRep_TurnOnGlow();
 	void Creature_OnDamageReceived(double Damage, class AActor* Target, class AActor* Source, const struct FGameplayTagContainer& EffectTags, const struct FHitResult& HitResult, const struct FTagValueContainer& TagValueContainer);

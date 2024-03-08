@@ -29,7 +29,7 @@ struct UWBP_ErrorNotification_C_ExecuteUbergraph_WBP_ErrorNotification_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_43EF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E93[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_CustomEvent_DisplayTime;                    // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  K2Node_CustomEvent_TypeText;                       // 0x10(0x18)(None)
 	class FText                                  K2Node_CustomEvent_HeadlineText;                   // 0x28(0x18)(None)

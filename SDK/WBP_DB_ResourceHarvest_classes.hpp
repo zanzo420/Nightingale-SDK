@@ -21,7 +21,7 @@ public:
 	struct FResourceData                         CurrentResourceData;                               // 0x360(0x80)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  OldResourceText;                                   // 0x3E0(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bInitialized;                                      // 0x3F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3AAD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7DE8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UObjectWrapper_ResourceData*>   Resources;                                         // 0x400(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();

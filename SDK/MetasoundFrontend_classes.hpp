@@ -25,7 +25,7 @@ public:
 class UMetasoundParameterPack : public UObject
 {
 public:
-	uint8                                        Pad_4CFD[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4A9C[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMetasoundParameterPack* GetDefaultObj();
@@ -53,7 +53,7 @@ public:
 class UMetaSoundBuilderDocument : public UObject
 {
 public:
-	uint8                                        Pad_4D04[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4A9E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMetasoundFrontendDocument            Document;                                          // 0x30(0x1C8)(Transient, NativeAccessSpecifierPrivate)
 	TSubclassOf<class UObject>                   MetaSoundUClass;                                   // 0x1F8(0x8)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 

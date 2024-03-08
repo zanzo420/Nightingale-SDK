@@ -15,7 +15,7 @@ class UGA_CreatureAbility_GiantOfferingBestReward_C : public UGA_CreatureAbility
 {
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x510(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	uint8                                        Pad_647D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D18[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSkillDataReference                   SkillReference;                                    // 0x520(0xE0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

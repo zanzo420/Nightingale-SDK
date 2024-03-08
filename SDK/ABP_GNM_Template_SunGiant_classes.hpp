@@ -16,9 +16,9 @@ class UABP_GNM_Template_SunGiant_C : public UABP_GNM_Template_C
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1C40(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                         InCombat;                                          // 0x1C48(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9A16[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CC6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  Combat_Key;                                        // 0x1C4C(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9A17[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CC7[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            Hand_l_Anim_Transform;                             // 0x1C60(0x60)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               Hand_l_hit_loc;                                    // 0x1CC0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  OfferingLoopName;                                  // 0x1CD8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -29,12 +29,12 @@ public:
 	struct FRotator                              EyeLRotation;                                      // 0x1D00(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FRotator                              EyeRRotation;                                      // 0x1D18(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         HeadCanTurn;                                       // 0x1D30(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9A1A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CCB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       GiantEyeHeight;                                    // 0x1D38(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       PlayerHeadHeight;                                  // 0x1D40(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       HeadHeightOffset;                                  // 0x1D48(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        DistanceToPlayer;                                  // 0x1D50(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9A1B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CCE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       HeadLookAngle;                                     // 0x1D58(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

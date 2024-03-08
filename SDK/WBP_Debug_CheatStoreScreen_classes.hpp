@@ -61,12 +61,12 @@ public:
 	class UWidgetSwitcher*                       WidgetSwitcher_0;                                  // 0x628(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                       WidgetSwitcher_1;                                  // 0x630(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                        ItemsFound;                                        // 0x638(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_48F5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9284[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  NewVar_0;                                          // 0x640(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         Enable_cheat;                                      // 0x658(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_48F6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9285[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          Handle;                                            // 0x660(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_48F7[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9286[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    WoodID;                                            // 0x670(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FItemDataReference                    Ore_ID;                                            // 0x6F0(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FItemDataReference                    Ammo_ID_Revolver;                                  // 0x770(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
@@ -82,7 +82,7 @@ public:
 	struct FItemDataReference                    Stones_ID;                                         // 0xC70(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                         ShowHidden_Is_Checked;                             // 0xCF0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ShowTest_Is_Checked;                               // 0xCF1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_48F8[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9287[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UObjectWrapper_ItemDataReference*> Array_AllItems;                                    // 0xCF8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UObjectWrapper_ItemDataReference*> Array_AllItems_HiddenRemoved;                      // 0xD08(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UObjectWrapper_ItemDataReference*> Array_AllItems_TestRemoved;                        // 0xD18(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -92,7 +92,7 @@ public:
 	TArray<struct FGameplayTag>                  SelectedTags;                                      // 0xD58(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FDynamicTypedStructs                  ItemInstancedData;                                 // 0xD68(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FCharacteristicDataReference>  SecondaryCharacteristics;                          // 0xD78(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                        Pad_48F9[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9289[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInstanceData_CharacteristicInfo      CharacteristicData;                                // 0xD90(0xC0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UWBP_button_base_C*>            EssenceButtonArray;                                // 0xE50(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	struct FItemDataReference                    PlantFibre;                                        // 0xE60(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)

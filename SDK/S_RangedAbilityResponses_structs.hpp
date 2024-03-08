@@ -31,13 +31,13 @@ public:
 	double                                       VFX_SmokeSpawnChance_23_D150949945D2DD07298F41A147C7277F; // 0x60(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_SparksSpawnChance_25_3555DFB8459042E64A4AE4A992BAECA9; // 0x68(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ApplyVFXDataForMuzzleFlashEffect_43_182D1C4648CCCB0F936D62A3207527F1; // 0x70(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_548A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3B15[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UNiagaraSystem>         MuzzleFlashEffect_28_D2682E3D44B03F20E84483B351751DFF; // 0x78(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                         ApplyVFXDataForFlightEffect_41_71D447244900D624F110F7B4426D3A1E; // 0xA0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_548B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3B17[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UNiagaraSystem>         FlightEffect_32_CA18DA204C6A438D82F443912E2BC2CA;  // 0xA8(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                         ApplyVFXDataForFizzleEffect_42_7927AA8549DBD7EED2CBEAB3A3B4F4C5; // 0xD0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_548C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3B18[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UNiagaraSystem>         FizzleEffect_34_C949F88949FB39B55C5850A6BC4B54B3;  // 0xD8(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	struct FLinearColor                          VFX_CoolColor_46_98B2E40E43D246A970D87791068581DC; // 0x100(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_FireSpawnChance_50_44FE319D4523F932B7837FB5C08AABD6; // 0x110(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

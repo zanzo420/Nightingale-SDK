@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x1A8 (0x4F0 - 0x348)
+// 0x198 (0x4E0 - 0x348)
 // WidgetBlueprintGeneratedClass WBP_MenuDataEntryThumb.WBP_MenuDataEntryThumb_C
 class UWBP_MenuDataEntryThumb_C : public UNWXCommonUserWidget
 {
@@ -35,22 +35,21 @@ public:
 	class UVerticalBox*                          VB_Traits;                                         // 0x3D8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNWXMenuDataEntry*                     MenuDataEntry;                                     // 0x3E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         CachedIsEntryUnlocked;                             // 0x3E8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_383F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	FMulticastInlineDelegateProperty_            ThumbHovered;                                      // 0x3F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_            ThumbDoubleClick;                                  // 0x400(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TSoftObjectPtr<class UTexture2D>             Tooltip_CardImage;                                 // 0x410(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            ThumbRightClicked;                                 // 0x438(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_            ThumbLeftClicked;                                  // 0x448(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class FText                                  ToolTip_Name;                                      // 0x458(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTag                          ClickedEventTag;                                   // 0x470(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*              DMI_CardSaturation;                                // 0x478(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                         HasNewState_IsObservable;                          // 0x480(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3840[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UWBP_GenericTooltip_C*                 TestTootip;                                        // 0x488(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*              DMI_NewState;                                      // 0x490(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                          RightClickEvent_Tag;                               // 0x498(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TSoftClassPtr<class UNWXMenuDataEntry>       CraftingEntryClass;                                // 0x4A0(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
-	TSoftClassPtr<class UNWXMenuDataEntry>       StructureEntryClass;                               // 0x4C8(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
+	uint8                                        Pad_68A6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	FMulticastInlineDelegateProperty_            ThumbDoubleClick;                                  // 0x3F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TSoftObjectPtr<class UTexture2D>             Tooltip_CardImage;                                 // 0x400(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            ThumbRightClicked;                                 // 0x428(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            ThumbLeftClicked;                                  // 0x438(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class FText                                  ToolTip_Name;                                      // 0x448(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTag                          ClickedEventTag;                                   // 0x460(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*              DMI_CardSaturation;                                // 0x468(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                         HasNewState_IsObservable;                          // 0x470(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_68A7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UWBP_GenericTooltip_C*                 TestTootip;                                        // 0x478(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*              DMI_NewState;                                      // 0x480(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                          RightClickEvent_Tag;                               // 0x488(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TSoftClassPtr<class UNWXMenuDataEntry>       CraftingEntryClass;                                // 0x490(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
+	TSoftClassPtr<class UNWXMenuDataEntry>       StructureEntryClass;                               // 0x4B8(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_MenuDataEntryThumb_C* GetDefaultObj();
@@ -86,11 +85,10 @@ public:
 	void OnListItemObjectSet(class UObject* ListItemObject);
 	void BP_OnEntryReleased();
 	void Construct();
-	void ExecuteUbergraph_WBP_MenuDataEntryThumb(int32 EntryPoint, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent, const struct FFocusEvent& K2Node_Event_InFocusEvent_1, const struct FFocusEvent& K2Node_Event_InFocusEvent, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_GetImage_IsValidReference, TSoftObjectPtr<class UTexture2D> CallFunc_GetImage_EntryImage, bool CallFunc_CanViewDetails_ReturnValue, bool CallFunc_CanViewDetails_ReturnValue_1, class UObject* K2Node_Event_ListItemObject, class UNWXMenuDataEntry* K2Node_DynamicCast_AsNWXMenu_Data_Entry, bool K2Node_DynamicCast_bSuccess, class UNWXMenuDataEntryObservedStateTracker* CallFunc_GetStateTracker_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class ANWXPlayerState* CallFunc_GetOwningPlayerState_ReturnValue, bool K2Node_Event_bIsSelected, bool K2Node_Event_bIsExpanded);
+	void ExecuteUbergraph_WBP_MenuDataEntryThumb(int32 EntryPoint, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent, const struct FFocusEvent& K2Node_Event_InFocusEvent_1, const struct FFocusEvent& K2Node_Event_InFocusEvent, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_GetImage_IsValidReference, TSoftObjectPtr<class UTexture2D> CallFunc_GetImage_EntryImage, class UObject* K2Node_Event_ListItemObject, class UNWXMenuDataEntry* K2Node_DynamicCast_AsNWXMenu_Data_Entry, bool K2Node_DynamicCast_bSuccess, class UNWXMenuDataEntryObservedStateTracker* CallFunc_GetStateTracker_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class ANWXPlayerState* CallFunc_GetOwningPlayerState_ReturnValue, bool K2Node_Event_bIsSelected, bool K2Node_Event_bIsExpanded);
 	void ThumbLeftClicked__DelegateSignature(class UNWXMenuDataEntry* MenuDataEntry);
 	void ThumbRightClicked__DelegateSignature(class UNWXMenuDataEntry* MenuDataEntry);
 	void ThumbDoubleClick__DelegateSignature(class UNWXMenuDataEntry* MenuDataEntry);
-	void ThumbHovered__DelegateSignature(bool IsHovered, class UNWXMenuDataEntry* MenuDataEntry);
 };
 
 }

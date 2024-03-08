@@ -24,7 +24,7 @@ public:
 	TSoftObjectPtr<class UNiagaraSystem>         ShimmerEffect;                                     // 0x718(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
 	double                                       LastTriggerTime;                                   // 0x740(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsPhysicsStopScheduled;                            // 0x748(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_509C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_700B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       PhysicsStopTimeout;                                // 0x750(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UNiagaraSystem>         EssenceEffect;                                     // 0x758(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<class UObject*>                       LastBoundObjectsOnSleep;                           // 0x780(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)

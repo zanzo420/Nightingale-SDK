@@ -14,7 +14,7 @@ namespace SDK
 class UGC_Impact_Shared_Ranged_Buckshot_C : public UGC_Impact_Shared_Ranged_C
 {
 public:
-	uint8                                        Pad_2B96[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5B3C[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    AmmoRef;                                           // 0x80(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

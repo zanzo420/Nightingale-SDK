@@ -26,12 +26,12 @@ public:
 	double                                       EmitterMergeDistance_48_0FE428F946947CF3DDFBCEB7515C2CDC; // 0x20(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseStickyMode_12_E3423FC24E9792D8008664A8DA02F0DD; // 0x28(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseOcclusion_38_333A563C400C887D69D015B118C986BF;  // 0x29(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7FC8[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A485[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       OcclusionGridSpreadDistance_45_310D587B4BF3657EA12DCDB7E7B20D0F; // 0x30(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CheckMaterials_14_76BB8A094F280496FA39DC82153467A1; // 0x38(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseElevationRTPC_36_9A836D854D7D332AFB61F882EC25C02E; // 0x39(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseWindSpeed_50_D1CBA91D472C9378AE16E8B41E90EE4E;  // 0x3A(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7FC9[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A486[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAkAudioEvent*                         WildlifeOSEvent_17_1704912541C59DFFA6E2748649E17190; // 0x40(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                       WildlifeOSMinRadius_20_C3F1E5994276F5D076C3FA82B028A1CB; // 0x48(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       WildlifeOSMaxRadius_22_B9A33ABC49684AD06BA3B2A35D030982; // 0x50(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

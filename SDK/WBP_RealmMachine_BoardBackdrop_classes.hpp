@@ -36,7 +36,7 @@ public:
 	class URealmCardMachineComponent*            RealmCardMachineComponent;                         // 0x3E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPortalControllerComponent*            PortalControllerComponent;                         // 0x3E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	enum class ERealmDifficulty                  PlayerRealmDifficulty;                             // 0x3F0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7F80[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9812[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  DifficultyEasy;                                    // 0x3F8(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  DifficultyMedium;                                  // 0x410(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  DifficultyHard;                                    // 0x428(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -44,13 +44,13 @@ public:
 	TArray<struct FInventoryEntry>               CachedCardsOnBoard;                                // 0x458(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRealmSettings                        RealmSettings;                                     // 0x468(0x40)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         IsValidCardSet;                                    // 0x4A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7F81[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9813[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UWBP_RealmCardHolder_C*>        CardHolders;                                       // 0x4B0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	bool                                         IsReopeningCached;                                 // 0x4C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7F82[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9814[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ADeploymentPortal*                     DeploymentPortal;                                  // 0x4C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsNightmareRealm;                                  // 0x4D0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7F83[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9815[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnRealmSettingsUpdated;                            // 0x4D8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnCardDragged;                                     // 0x4E8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnCardInstantAction;                               // 0x4F8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)

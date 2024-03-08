@@ -28,7 +28,7 @@ struct ABP_Spectator_C_GetUIOverlay_Params
 public:
 	class UWBP_DB_FlyCamOverlay_C*               AsWBP_DB_Fly_Cam_Overlay;                          // 0x0(0x8)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FDA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7043[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGameplayTag>                  CallFunc_GetAllLayerTags_ReturnValue;              // 0x10(0x10)(ReferenceParm)
 	class UNWXCommonWindowWidget*                CallFunc_FindWindowInLayers_ReturnValue;           // 0x20(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_DB_FlyCamOverlay_C*               K2Node_DynamicCast_AsWBP_DB_Fly_Cam_Overlay;       // 0x28(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -126,7 +126,7 @@ public:
 	class AActor*                                ActorToMark;                                       // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                       MarkerPrecision;                                   // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ParticlesVisible;                                  // 0x10(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FE3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7044[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          ParticlesColor;                                    // 0x14(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -147,7 +147,7 @@ public:
 	double                                       DisplayTime;                                       // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_QuestNotificatorInfo               Quest_Notificator_Info;                            // 0x8(0xA0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                         DisplayToolTip;                                    // 0xA8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FE4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7045[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               ToolTipIcon;                                       // 0xB0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                  ToolTipText;                                       // 0xB8(0x18)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                         ToolTipOnly;                                       // 0xD0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -171,7 +171,7 @@ struct ABP_Spectator_C_DisplayCrosshair_Params
 public:
 	enum class E_CrosshairTypes                  Crosshair_Type;                                    // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CrosshairVisibility;                               // 0x1(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FE8[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7046[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          Crosshair_Color;                                   // 0x4(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_HitIndicatorTypes               HitIndicator_Type;                                 // 0x14(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         HitIndicatorVisibility;                            // 0x15(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -269,7 +269,7 @@ struct ABP_Spectator_C_Chat_PM_SendToServer_Params
 {
 public:
 	int32                                        PlayerId;                                          // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FEA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7047[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Message;                                           // 0x8(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
 
@@ -279,7 +279,7 @@ struct ABP_Spectator_C_Chat_PM_ReceiveFromServer_Params
 {
 public:
 	int32                                        PlayerId;                                          // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FEB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7048[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Message;                                           // 0x8(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
 
@@ -373,7 +373,7 @@ struct ABP_Spectator_C_HUD_AddNewBossBar_Params
 public:
 	struct FLinearColor                          Progress_Bar_Tint;                                 // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EProgressBarFillType              Progress_Bar_Direction;                            // 0x10(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FEC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7049[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Bar_Label;                                         // 0x18(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FText                                  Bar_Header;                                        // 0x28(0x18)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                  Bar_Sub_Header;                                    // 0x40(0x18)(BlueprintVisible, BlueprintReadOnly, Parm)
@@ -404,11 +404,11 @@ struct ABP_Spectator_C_HUD_UpdateActionProgressBar_Params
 {
 public:
 	bool                                         Visible;                                           // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FED[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_704A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CurrentProgress;                                   // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  Label;                                             // 0x10(0x18)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                         ShowImage;                                         // 0x28(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FEE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_704B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             Image;                                             // 0x30(0x28)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
 
@@ -479,7 +479,7 @@ struct ABP_Spectator_C_HUD_GeneralNotification_Params
 public:
 	struct FS_UpdaterNotificatorInfo             Content;                                           // 0x0(0xC0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                         Remove_Manually;                                   // 0xC0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FEF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_704C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Time_to_Display;                                   // 0xC8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -489,7 +489,7 @@ struct ABP_Spectator_C_HUD_StatusEffect_TextNotificationUpdate_Params
 {
 public:
 	bool                                         ManuallyRemove_;                                   // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FF0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_704D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       TimeToDisplay;                                     // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_UpdaterNotificatorInfo             Content;                                           // 0x10(0xC0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
@@ -550,7 +550,7 @@ struct ABP_Spectator_C_BuildUX_Feedback_RotationControls_Params
 {
 public:
 	bool                                         CanRotate;                                         // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FF1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_704E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CurrentRotation;                                   // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -560,7 +560,7 @@ struct ABP_Spectator_C_BuildUX_Feedback_HeightControls_Params
 {
 public:
 	bool                                         CanAdjustHeight;                                   // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FF2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_704F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Height_Current;                                    // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Height_Max;                                        // 0x10(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Height_Min;                                        // 0x18(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -591,40 +591,40 @@ struct ABP_Spectator_C_ExecuteUbergraph_BP_Spectator_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FF3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7050[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FKey                                  K2Node_InputKeyEvent_Key;                          // 0x8(0x18)(HasGetValueTypeHash)
 	class AActor*                                K2Node_Event_ActorToMark;                          // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_Event_MarkerPrecision;                      // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_ParticlesVisible;                     // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FF4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7051[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          K2Node_Event_ParticlesColor;                       // 0x34(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_bVisible_1;                           // 0x44(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_PlayFX;                               // 0x45(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FF5[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7052[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_Event_DisplayTime_3;                        // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_QuestNotificatorInfo               K2Node_Event_Quest_Notificator_Info;               // 0x50(0xA0)(HasGetValueTypeHash)
 	bool                                         K2Node_Event_DisplayToolTip;                       // 0xF0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FF6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7053[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               K2Node_Event_ToolTipIcon;                          // 0xF8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                  K2Node_Event_ToolTipText;                          // 0x100(0x18)(None)
 	bool                                         K2Node_Event_ToolTipOnly;                          // 0x118(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FF7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7054[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_Event_DisplayTime_2;                        // 0x120(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_IngameTutorial                     K2Node_Event_Row1_1;                               // 0x128(0x58)(HasGetValueTypeHash)
 	struct FS_IngameTutorial                     K2Node_Event_Row2_1;                               // 0x180(0x58)(HasGetValueTypeHash)
 	struct FLinearColor                          K2Node_Event_BackgroundColor;                      // 0x1D8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_CrosshairTypes                  K2Node_Event_Crosshair_Type;                       // 0x1E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_CrosshairVisibility;                  // 0x1E9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FF8[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7055[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          K2Node_Event_Crosshair_Color;                      // 0x1EC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_HitIndicatorTypes               K2Node_Event_HitIndicator_Type;                    // 0x1FC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_HitIndicatorVisibility;               // 0x1FD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FF9[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7056[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_Event_IndicatorTime;                        // 0x200(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          K2Node_Event_IndicatorColor;                       // 0x208(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_HitType                         K2Node_Event_Hit_Type;                             // 0x218(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_IsRecoil;                             // 0x219(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FFA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7057[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_BigLootNotificationInfo            K2Node_Event_Big_Loot_Notify_Info;                 // 0x220(0xC0)(HasGetValueTypeHash)
 	double                                       K2Node_Event_DisplayTime_1;                        // 0x2E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_IngameTutorial                     K2Node_Event_Row1;                                 // 0x2E8(0x58)(HasGetValueTypeHash)
@@ -633,37 +633,37 @@ public:
 	class FText                                  K2Node_Event_TypeText;                             // 0x3A0(0x18)(None)
 	class FText                                  K2Node_Event_HeadlineText;                         // 0x3B8(0x18)(None)
 	bool                                         K2Node_Event_bVisible;                             // 0x3D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FFB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7058[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                K2Node_Event_ChatMessage;                          // 0x3D8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FS_ChatMessage                        K2Node_Event_ChatMessageS;                         // 0x3E8(0x20)(HasGetValueTypeHash)
 	int32                                        K2Node_Event_ChannelID_1;                          // 0x408(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_Event_ChannelID;                            // 0x40C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_Event_PlayerID_1;                           // 0x410(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FFC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FString                                K2Node_Event_message_4;                            // 0x418(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	uint8                                        Pad_7059[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                K2Node_Event_Message_4;                            // 0x418(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                        K2Node_Event_PlayerID;                             // 0x428(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FFD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FString                                K2Node_Event_message_3;                            // 0x430(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	uint8                                        Pad_705A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                K2Node_Event_Message_3;                            // 0x430(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_Away;                                 // 0x440(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FFE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FString                                K2Node_Event_message_2;                            // 0x448(0x10)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                K2Node_Event_message_1;                            // 0x458(0x10)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                K2Node_Event_message;                              // 0x468(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	uint8                                        Pad_705B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                K2Node_Event_Message_2;                            // 0x448(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                K2Node_Event_Message_1;                            // 0x458(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                K2Node_Event_Message;                              // 0x468(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_Show;                                 // 0x478(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4FFF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_705C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_Event_Time;                                 // 0x480(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_Show_;                                // 0x488(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5000[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_705D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInteractionUIContext                 K2Node_Event_InteractionContext;                   // 0x490(0x78)(ConstParm)
 	bool                                         K2Node_Event_Display_;                             // 0x508(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5001[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_705E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                K2Node_Event_Bar_Label_1;                          // 0x510(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                  K2Node_Event_Sub_Text__Status_Creature_Type_Whatever_; // 0x520(0x18)(None)
 	double                                       K2Node_Event_Health;                               // 0x538(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  K2Node_Event_Bar_Header_1;                         // 0x540(0x18)(None)
 	struct FLinearColor                          K2Node_Event_Progress_Bar_Tint;                    // 0x558(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EProgressBarFillType              K2Node_Event_Progress_Bar_Direction;               // 0x568(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5002[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_705F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                K2Node_Event_Bar_Label;                            // 0x570(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                  K2Node_Event_Bar_Header;                           // 0x580(0x18)(None)
 	class FText                                  K2Node_Event_Bar_Sub_Header;                       // 0x598(0x18)(None)
@@ -673,49 +673,49 @@ public:
 	double                                       K2Node_Event_Damage_Intensity__Amount_;            // 0x5F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          K2Node_Event_Colour;                               // 0x600(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_Visible;                              // 0x610(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5003[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7060[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_Event_CurrentProgress;                      // 0x618(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  K2Node_Event_Label;                                // 0x620(0x18)(None)
 	bool                                         K2Node_Event_ShowImage;                            // 0x638(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5004[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7061[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             K2Node_Event_Image;                                // 0x640(0x28)(HasGetValueTypeHash)
 	enum class E_UI_HUD_Modes                    K2Node_Event_HUD_Mode;                             // 0x668(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5005[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7062[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IEncounterUIDataInterface> K2Node_Event_EncounterData;                        // 0x670(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FNotificationEncounter                K2Node_Event_EncounterMessage;                     // 0x680(0x60)(None)
 	double                                       K2Node_Event_RealmStartTime;                       // 0x6E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_Event_Spread;                               // 0x6E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_IsVisible;                            // 0x6F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_ContextualControlsData             K2Node_Event_ContextualControlsData;               // 0x6F1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5006[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7063[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FNotificationEncounter                K2Node_Event_Message_Content;                      // 0x6F8(0x60)(None)
 	double                                       K2Node_Event_TimeToDisplay_1;                      // 0x758(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FNotificationEncounter                K2Node_Event_MessageContent;                       // 0x760(0x60)(None)
 	bool                                         K2Node_Event_Pin_or_Unpin__Pin_true_will_add_;     // 0x7C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5007[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7064[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_UpdaterNotificatorInfo             K2Node_Event_Content_1;                            // 0x7C8(0xC0)(HasGetValueTypeHash)
 	bool                                         K2Node_Event_Remove_Manually;                      // 0x888(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5008[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7065[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_Event_Time_to_Display;                      // 0x890(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_ManuallyRemove_;                      // 0x898(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5009[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7066[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_Event_TimeToDisplay;                        // 0x8A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_UpdaterNotificatorInfo             K2Node_Event_Content;                              // 0x8A8(0xC0)(HasGetValueTypeHash)
 	struct FVector                               K2Node_Event_Location;                             // 0x968(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EItemQuality                      K2Node_Event_Quality;                              // 0x980(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_500A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7067[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  K2Node_Event_MainText;                             // 0x988(0x18)(None)
 	class FText                                  K2Node_Event_BodyText;                             // 0x9A0(0x18)(None)
 	double                                       K2Node_Event_TimeToStayBlack;                      // 0x9B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_To_Black_true__From_Black__False;     // 0x9C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_500B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7068[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructurePlacementFeedback_Collision K2Node_Event_Feedback_1;                           // 0x9C8(0x18)(ContainsInstancedReference)
 	struct FStructurePlacementFeedback           K2Node_Event_Feedback;                             // 0x9E0(0xB8)(ContainsInstancedReference)
 	bool                                         K2Node_Event_CanRotate;                            // 0xA98(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_500C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7069[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_Event_CurrentRotation;                      // 0xAA0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_CanAdjustHeight;                      // 0xAA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_500D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_706A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_Event_Height_Current;                       // 0xAB0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_Event_Height_Max;                           // 0xAB8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_Event_Height_Min;                           // 0xAC0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -733,19 +733,19 @@ public:
 	float                                        K2Node_Event_DeltaSeconds;                         // 0xC30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetCurrentSpeed_ReturnValue;              // 0xC34(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetCurrentFOV_ReturnValue;                // 0xC38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_500E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_706B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Conv_DoubleToText_ReturnValue;            // 0xC40(0x18)(None)
 	class FText                                  CallFunc_Conv_DoubleToText_ReturnValue_1;          // 0xC58(0x18)(None)
 	bool                                         K2Node_Event_ShowingHUD;                           // 0xC70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_500F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_706C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_DB_FlyCamOverlay_C*               CallFunc_GetUIOverlay_AsWBP_DB_Fly_Cam_Overlay;    // 0xC78(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_DB_FlyCamOverlay_C*               CallFunc_GetUIOverlay_AsWBP_DB_Fly_Cam_Overlay_1;  // 0xC80(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0xC88(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0xC89(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5010[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_706D[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_DB_FlyCamOverlay_C*               CallFunc_GetUIOverlay_AsWBP_DB_Fly_Cam_Overlay_2;  // 0xC90(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_2;                    // 0xC98(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5011[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_706E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_DoubleToText_Value_ImplicitCast;     // 0xCA0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Conv_DoubleToText_Value_ImplicitCast_1;   // 0xCA8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

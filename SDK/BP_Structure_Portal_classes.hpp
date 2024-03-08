@@ -23,7 +23,7 @@ public:
 	class UClass*                                DeploymentPortalActorClass;                        // 0xA58(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class ADeploymentPortal*                     SpawnedPortalActor;                                // 0xA60(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, SaveGame, NoDestructor, HasGetValueTypeHash)
 	bool                                         bIsServerPortalSpawned;                            // 0xA68(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A796[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9413[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                PlayerStartClass;                                  // 0xA70(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class ANWXPlayerStart*                       PlayerStartActor;                                  // 0xA78(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, SaveGame, NoDestructor, HasGetValueTypeHash)
 	class FString                                PortalUniqueID;                                    // 0xA80(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, SaveGame, HasGetValueTypeHash)

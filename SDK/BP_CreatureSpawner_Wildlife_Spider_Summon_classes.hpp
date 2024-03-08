@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x1638 - 0x1638)
+// 0x0 (0x1668 - 0x1668)
 // BlueprintGeneratedClass BP_CreatureSpawner_Wildlife_Spider_Summon.BP_CreatureSpawner_Wildlife_Spider_Summon_C
 class ABP_CreatureSpawner_Wildlife_Spider_Summon_C : public ABP_CreatureSpawner_Wildlife_C
 {

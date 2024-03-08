@@ -24,20 +24,20 @@ public:
 	TArray<struct FVector>                       ProjectionPoints;                                  // 0x2D8(0x10)(Edit, BlueprintVisible)
 	int32                                        Landscapes;                                        // 0x2E8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bUseSamplingVolumes;                               // 0x2EC(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66BB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D24[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<bool>                                 ListenForSample;                                   // 0x2F0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         CameraSettlingDown;                                // 0x300(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66BC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D25[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       ElapsedSampleTime;                                 // 0x308(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bSampleFramerate;                                  // 0x310(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66BD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D26[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       SampleTime;                                        // 0x318(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        SamplesPerCamera;                                  // 0x320(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66BE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D27[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       AverageFrameTime;                                  // 0x328(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FTransform>                    CameraTransforms;                                  // 0x330(0x10)(Edit, BlueprintVisible)
 	int32                                        CurrentCamera;                                     // 0x340(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66BF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D28[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CameraSettleDownTime;                              // 0x348(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CurrentSettleTime;                                 // 0x350(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       GridPointsScale;                                   // 0x358(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -46,38 +46,38 @@ public:
 	double                                       InlandWaterDepth;                                  // 0x380(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CameraRotation;                                    // 0x388(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bIgnoreOcean;                                      // 0x38C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D29[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                PlayerPawn;                                        // 0x390(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         bPlayerStopped;                                    // 0x398(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D2A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               LastPlayerPosition;                                // 0x3A0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                SaveFilePath;                                      // 0x3B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                LoadFileName;                                      // 0x3C8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	struct FDateTime                             StartTime;                                         // 0x3D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         bUseWorldGrid;                                     // 0x3E0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D2B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FStructure_DCS_PeformanceTest> PerformanceTests;                                  // 0x3E8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FString                                TestID;                                            // 0x3F8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                         bFinishedSampling;                                 // 0x408(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D2C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       SamplingGroundOffset;                              // 0x410(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACameraActor*                          PerformanceCamera;                                 // 0x418(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       EstimatedTestTime;                                 // 0x420(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<double>                               SampleTimes;                                       // 0x428(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bSerializeEachFrame;                               // 0x438(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D2D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_TimeOfDayManager_C*                TODManager;                                        // 0x440(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class FString>                        AllFrameSamples;                                   // 0x448(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FString                                TempString;                                        // 0x458(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                         bRemoveExtremes;                                   // 0x468(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D2E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       GridDensityInMeters;                               // 0x470(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bTeleportMode;                                     // 0x478(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D2F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                TestPlatform;                                      // 0x480(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	class FString                                TestResolution;                                    // 0x490(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	int32                                        TestGridDensity;                                   // 0x4A0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D30[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                TestMapName;                                       // 0x4A8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	class FString                                TestSampleTime;                                    // 0x4B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	class FString                                TestSettleDownTime;                                // 0x4C8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
@@ -85,16 +85,16 @@ public:
 	class UBP_DCS_PerformanceTest_C*             CurrentTest;                                       // 0x4E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class FString>                        Volumes;                                           // 0x4F0(0x10)(Edit, BlueprintVisible)
 	bool                                         bGetVolumesFromFile;                               // 0x500(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D31[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       ProjectionGridVerticalOffset;                      // 0x508(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bScreenshotEachFrame;                              // 0x510(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D32[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ScreenShotNameSuffix;                              // 0x518(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<double>                               ToDQueue;                                          // 0x528(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                       TimeOfDaySettleDown;                               // 0x538(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CurrentTimeOfDaySettleDown;                        // 0x540(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CurrentTimeOfDayIndex;                             // 0x548(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66CA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6D33[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PS5_APSSaveDirectory;                              // 0x550(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

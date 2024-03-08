@@ -16,7 +16,7 @@ class UABP_WSP_Template_C : public UNWXAIAnimInstance
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x6F0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimBlueprintGeneratedMutableData    __AnimBlueprintMutables;                           // 0x6F8(0x13)(HasGetValueTypeHash)
-	uint8                                        Pad_716B[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5B6C[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x710(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x718(0x8)(None)
 	struct FAnimNode_Root                        AnimGraphNode_Root_8;                              // 0x720(0x20)(None)
@@ -78,7 +78,7 @@ public:
 	struct FAnimNode_StateResult                 AnimGraphNode_StateResult;                         // 0x1928(0x20)(None)
 	struct FAnimNode_StateMachine                AnimGraphNode_StateMachine;                        // 0x1948(0xC8)(None)
 	bool                                         InCombat_;                                         // 0x1A10(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_716E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5B6D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  Agitated_Key;                                      // 0x1A14(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

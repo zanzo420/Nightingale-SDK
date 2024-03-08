@@ -120,14 +120,24 @@ enum class EGemRegions : uint8
 // STRUCTS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xC (0xC - 0x0)
-// ScriptStruct AppearanceRuntime.FoundationAppearance
-struct FFoundationAppearance
+// 0x28 (0x28 - 0x0)
+// ScriptStruct AppearanceRuntime.EyeLashSettings
+struct FEyeLashSettings
 {
 public:
-	float                                        Opacity;                                           // 0x0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                        Bias;                                              // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                        Roughness;                                         // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                        Length;                                            // 0x0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_3482[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FDataTableRowHandle                   RootColor;                                         // 0x8(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDataTableRowHandle                   TipColor;                                          // 0x18(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x50 (0x50 - 0x0)
+// ScriptStruct AppearanceRuntime.EyeLashAppearance
+struct FEyeLashAppearance
+{
+public:
+	struct FEyeLashSettings                      NaturalLashSettings;                               // 0x0(0x28)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FEyeLashSettings                      FakeLashSettings;                                  // 0x28(0x28)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x80 (0x80 - 0x0)
@@ -144,7 +154,7 @@ struct FBodyAppearance
 {
 public:
 	enum class EBodyType                         BodyType;                                          // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_38AD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3483[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   DefaultSkinColor;                                  // 0x8(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        DefaultRedness;                                    // 0x18(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        DefaultAge;                                        // 0x1C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -183,33 +193,13 @@ public:
 	struct FDataTableRowHandle                   Mask;                                              // 0x0(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDataTableRowHandle                   Color1;                                            // 0x10(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Color1Roughness;                                   // 0x20(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_38B1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3484[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   Color2;                                            // 0x28(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Color2Roughness;                                   // 0x38(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        ColorAlpha;                                        // 0x3C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDataTableRowHandle                   GlitterColor;                                      // 0x40(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        GlitterColorAlpha;                                 // 0x50(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_38B2[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
-};
-
-// 0x28 (0x28 - 0x0)
-// ScriptStruct AppearanceRuntime.EyeLashSettings
-struct FEyeLashSettings
-{
-public:
-	float                                        Length;                                            // 0x0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_38B3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FDataTableRowHandle                   RootColor;                                         // 0x8(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDataTableRowHandle                   TipColor;                                          // 0x18(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x50 (0x50 - 0x0)
-// ScriptStruct AppearanceRuntime.EyeLashAppearance
-struct FEyeLashAppearance
-{
-public:
-	struct FEyeLashSettings                      NaturalLashSettings;                               // 0x0(0x28)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FEyeLashSettings                      FakeLashSettings;                                  // 0x28(0x28)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                        Pad_3485[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x38 (0x38 - 0x0)
@@ -219,6 +209,16 @@ struct FHairAppearance
 public:
 	TSoftObjectPtr<class UHairDataAsset>         HairAsset;                                         // 0x0(0x28)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDataTableRowHandle                   Color;                                             // 0x28(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0xC (0xC - 0x0)
+// ScriptStruct AppearanceRuntime.FoundationAppearance
+struct FFoundationAppearance
+{
+public:
+	float                                        Opacity;                                           // 0x0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                        Bias;                                              // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                        Roughness;                                         // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0xC (0xC - 0x0)
@@ -240,12 +240,12 @@ public:
 	class FText                                  DevDescription;                                    // 0x20(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UTexture2D>             Icon;                                              // 0x38(0x28)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         DebugAppearance;                                   // 0x60(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_38B6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3486[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FBodyAppearance                       DefaultBody;                                       // 0x68(0x138)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FEyeAppearance                        DefaultEye;                                        // 0x1A0(0x78)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                               DefaultEyeOffset;                                  // 0x218(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        DefaultEyeScale;                                   // 0x230(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_38B7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3487[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FEyeLashAppearance                    DefaultEyeLash;                                    // 0x238(0x50)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FHairAppearance                       DefaultHair;                                       // 0x288(0x38)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FHairAppearance                       DefaultFacialHair;                                 // 0x2C0(0x38)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
@@ -257,7 +257,7 @@ public:
 	float                                        DefaultLipGloss;                                   // 0x490(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFoundationAppearance                 DefaultFoundation;                                 // 0x494(0xC)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FTeethAppearance                      DefaultTeeth;                                      // 0x4A0(0xC)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_38B8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3488[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FCharacterAppearance_OutfitData> DefaultOutfitItems;                                // 0x4B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 
@@ -268,7 +268,7 @@ struct FAppearanceAncestorData
 public:
 	struct FDataTableRowHandle                   Archetype;                                         // 0x0(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Contribution;                                      // 0x10(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_38B9[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3489[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xC (0xC - 0x0)
@@ -321,13 +321,13 @@ public:
 	class FText                                  Name;                                              // 0x0(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	class FText                                  Description;                                       // 0x18(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	bool                                         bAvailableInCharacterCreate;                       // 0x30(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_38BA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_348A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             Icon;                                              // 0x38(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class USkeletalMesh>          Mesh;                                              // 0x60(0x28)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftClassPtr<class UAnimInstance>           MeshAnimationClass;                                // 0x88(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<enum class EHatType, struct FTransform> HatOffsetData;                                     // 0xB0(0x50)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	enum class EEyebrowStyle                     EyebrowStyle;                                      // 0x100(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_38BC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_348B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<enum class EEyebrowStyle, struct FEyeBrowStyleOverrides> EyebrowMaskOverrides;                              // 0x108(0x50)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
 
@@ -338,7 +338,7 @@ struct FHairDataReference : public FUniquelyIdentifiableAssetReference
 public:
 	struct FGuid                                 AssetUID;                                          // 0x48(0x10)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EHairAssetType                    HairType;                                          // 0x58(0x1)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_38BE[0x17];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_348C[0x17];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -356,7 +356,7 @@ struct FVoiceSetDataReference : public FUniquelyIdentifiableAssetReference
 {
 public:
 	struct FGuid                                 AssetUID;                                          // 0x48(0x10)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_38BF[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_348D[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

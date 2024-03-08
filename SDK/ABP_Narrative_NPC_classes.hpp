@@ -16,7 +16,7 @@ class UABP_Narrative_NPC_C : public UNWXAINPCAnimInstance
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x710(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimBlueprintGeneratedMutableData    __AnimBlueprintMutables;                           // 0x718(0x5)(HasGetValueTypeHash)
-	uint8                                        Pad_7144[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3ED1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x720(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x728(0x8)(None)
 	struct FAnimNode_Root                        AnimGraphNode_Root_2;                              // 0x730(0x20)(None)
@@ -44,12 +44,12 @@ public:
 	struct FAnimNode_LinkedAnimLayer             AnimGraphNode_LinkedAnimLayer_1;                   // 0xD28(0xC8)(None)
 	struct FAnimNode_LinkedAnimLayer             AnimGraphNode_LinkedAnimLayer;                     // 0xDF0(0xC8)(None)
 	enum class EBodyType                         __CustomProperty_InBodyType_A48B6F27429BE908EBA76783EB4DEB5C; // 0xEB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7145[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3ED4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               __CustomProperty_Offset_22FE629148EB97A7D4CEF38B15834253; // 0xEC0(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FAnimSequenceCache                    DialogueEnterAnimCache;                            // 0xED8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class FName                                  DialogueEnterAnimKey;                              // 0xEE8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bInDialogue;                                       // 0xEF0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7148[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3ED5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSequenceCache                    DialogueAnimCache;                                 // 0xEF8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class FName                                  DialogueAnimKey;                                   // 0xF08(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FAnimSequenceCache                    DialogueExitAnimCache;                             // 0xF10(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
