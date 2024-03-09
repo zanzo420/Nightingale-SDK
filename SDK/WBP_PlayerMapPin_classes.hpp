@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x278 (0x5B8 - 0x340)
+// 0x270 (0x5B0 - 0x340)
 // WidgetBlueprintGeneratedClass WBP_PlayerMapPin.WBP_PlayerMapPin_C
 class UWBP_PlayerMapPin_C : public UNWXUserWidget
 {
@@ -23,18 +23,18 @@ public:
 	class USizeBox*                              SizeBox;                                           // 0x370(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FVector2D                             Map_Pin_Size;                                      // 0x378(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Hovered;                                           // 0x388(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3EC3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8F7E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            MapPinHoverStateChanged;                           // 0x390(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FMapPinData                           Map_Pin_Data;                                      // 0x3A0(0xB0)(Edit, BlueprintVisible, ExposeOnSpawn)
-	bool                                         WaitingForMouseRelease;                            // 0x450(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3EC4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	FMulticastInlineDelegateProperty_            MapPinClicked;                                     // 0x458(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UMaterialInstanceDynamic*              DMI_MapPin;                                        // 0x468(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	double                                       MaxMarkerZoneRadius;                               // 0x470(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       MinMarkerZoneRadius;                               // 0x478(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MapMarkerEditPanel_C*             MarkerEditPanel;                                   // 0x480(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FMapWaypointInfo                      WaypointInfo;                                      // 0x488(0x120)(Edit, BlueprintVisible, DisableEditOnInstance)
-	FMulticastInlineDelegateProperty_            MapPinEditPanelOpened;                             // 0x5A8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FMapPinData                           Map_Pin_Data;                                      // 0x3A0(0xA8)(Edit, BlueprintVisible, ExposeOnSpawn)
+	bool                                         WaitingForMouseRelease;                            // 0x448(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_8F7F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	FMulticastInlineDelegateProperty_            MapPinClicked;                                     // 0x450(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UMaterialInstanceDynamic*              DMI_MapPin;                                        // 0x460(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	double                                       MaxMarkerZoneRadius;                               // 0x468(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       MinMarkerZoneRadius;                               // 0x470(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MapMarkerEditPanel_C*             MarkerEditPanel;                                   // 0x478(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FMapWaypointInfo                      WaypointInfo;                                      // 0x480(0x120)(Edit, BlueprintVisible, DisableEditOnInstance)
+	FMulticastInlineDelegateProperty_            MapPinEditPanelOpened;                             // 0x5A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();
 	static class UWBP_PlayerMapPin_C* GetDefaultObj();

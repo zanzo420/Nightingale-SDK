@@ -14,25 +14,24 @@ namespace SDK
 class AEquippableItem : public AItem
 {
 public:
-	uint8                                        Pad_30EE[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_35EC[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bInvisibleState;                                   // 0x2B0(0x1)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_30F1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_35ED[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AEquippableItem*                       SecondaryItem;                                     // 0x2B8(0x8)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bIsSecondaryItem;                                  // 0x2C0(0x1)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_30F3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_35EE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBasicAwaiter*                         EquippableItemAwaiter;                             // 0x2C8(0x8)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class ALightweightAttachedItem*              LightweightItem;                                   // 0x2D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_30F4[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_35EF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       ItemEntry;                                         // 0x2E0(0x2F0)(BlueprintVisible, Net, RepNotify, ExposeOnSpawn, NativeAccessSpecifierPrivate)
 	class UCurveTable*                           DefaultWearProfile;                                // 0x5D0(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TMap<struct FGameplayTag, class FName>       AttachSocketMap;                                   // 0x5D8(0x50)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
 	bool                                         bIsTwoHanded;                                      // 0x628(0x1)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_30F6[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_35F0[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AEquippableItem* GetDefaultObj();
 
-	void UnequipItem();
 	void SetInvisibleState(bool bNewState);
 	bool RequiresLightweightItem();
 	void OnRep_ItemEntry();
@@ -49,7 +48,6 @@ public:
 	struct FGuid GetInstanceID();
 	struct FGameplayTag GetEquippedTag();
 	class FName GetAttachSocket();
-	void EquipItem();
 	void ClearItemEffectsFromActor(class AActor* Actor);
 	void AddEffects();
 };
@@ -86,10 +84,10 @@ public:
 	class UItemConstraintPresentationDataAsset*  PresentationData;                                  // 0x48(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseItemPresentationData;                          // 0x50(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCanUseItemPresentationData;                       // 0x51(0x1)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3107[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_35FE[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UItemConstraintBehavior*               Behavior;                                          // 0x58(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bOverrideDefaultItemReference;                     // 0x60(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NonPIEDuplicateTransient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3108[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3600[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    DefaultItemReference;                              // 0x70(0x80)(Edit, NonPIEDuplicateTransient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UItemInstanceData*>             DefaultInstancedData;                              // 0xF0(0x10)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NonPIEDuplicateTransient, NativeAccessSpecifierPublic)
 

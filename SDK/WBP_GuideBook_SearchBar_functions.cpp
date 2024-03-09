@@ -40,19 +40,19 @@ class UWBP_GuideBook_SearchBar_C* UWBP_GuideBook_SearchBar_C::GetDefaultObj()
 }
 
 
-// Function WBP_GuideBook_SearchBar.WBP_GuideBook_SearchBar_C.BP_GetDesiredFocusTarget
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function WBP_GuideBook_SearchBar.WBP_GuideBook_SearchBar_C.GetDefaultFocusWidget
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_GuideBook_SearchBar_C::BP_GetDesiredFocusTarget()
+class UWidget* UWBP_GuideBook_SearchBar_C::GetDefaultFocusWidget()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("WBP_GuideBook_SearchBar_C", "BP_GetDesiredFocusTarget");
+		Func = Class->GetFunction("WBP_GuideBook_SearchBar_C", "GetDefaultFocusWidget");
 
-	Params::UWBP_GuideBook_SearchBar_C_BP_GetDesiredFocusTarget_Params Parms{};
+	Params::UWBP_GuideBook_SearchBar_C_GetDefaultFocusWidget_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);

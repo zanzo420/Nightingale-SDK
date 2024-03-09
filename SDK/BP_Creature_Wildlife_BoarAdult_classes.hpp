@@ -14,7 +14,7 @@ namespace SDK
 class ABP_Creature_Wildlife_BoarAdult_C : public ABP_Creature_Wildlife_C
 {
 public:
-	uint8                                        Pad_A75A[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_995E[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNiagaraComponent*                     WP_Indicator1;                                     // 0x15E8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                     WP_Indicator;                                      // 0x15F0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                Heart;                                             // 0x15F8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)

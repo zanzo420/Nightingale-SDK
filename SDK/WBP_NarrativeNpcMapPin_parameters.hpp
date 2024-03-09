@@ -24,13 +24,14 @@ public:
 	class FText                                  CallFunc_GetTooltipTitleText_OutputText;           // 0x130(0x18)(None)
 };
 
-// 0x19 (0x19 - 0x0)
+// 0x31 (0x31 - 0x0)
 // Function WBP_NarrativeNpcMapPin.WBP_NarrativeNpcMapPin_C.GetTooltipTitleText
 struct UWBP_NarrativeNpcMapPin_C_GetTooltipTitleText_Params
 {
 public:
 	class FText                                  OutputText;                                        // 0x0(0x18)(Parm, OutParm)
-	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x18(0x18)(None)
+	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

@@ -23,11 +23,11 @@ public:
 	TSubclassOf<class IInterface>                Temp_class_Variable;                               // 0x20(0x8)(ConstParm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Greater_IntInt_ReturnValue;               // 0x2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7845[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6215[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x34(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable_1;                   // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7846[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6216[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IChallengeDefinition> Temp_interface_Variable;                           // 0x40(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	TSoftObjectPtr<class UConditionBehaviour>    CallFunc_GetCompletionCondition_ReturnValue;       // 0x50(0x28)(ConstParm, UObjectWrapper, HasGetValueTypeHash)
 	class FText                                  CallFunc_GetDescription_ReturnValue;               // 0x78(0x18)(None)
@@ -35,14 +35,14 @@ public:
 	class FText                                  CallFunc_GetTitle_ReturnValue;                     // 0x98(0x18)(None)
 	class UConditionBehaviour*                   K2Node_DynamicCast_AsCondition_Behaviour;          // 0xB0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7847[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6217[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTask                                 K2Node_MakeStruct_Task;                            // 0xC0(0x70)(ContainsInstancedReference)
 	class UBP_ChallengeConditionPresentationBuilder_C* CallFunc_SpawnObject_ReturnValue;                  // 0x130(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FConditionProgressDataList            CallFunc_GetProgressData_OutProgressData;          // 0x138(0x10)(None)
 	class FString                                CallFunc_Concat_StrStr_ReturnValue;                // 0x148(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FConditionPersistentData              CallFunc_Array_Get_Item;                           // 0x158(0x8)(NoDestructor)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x160(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7848[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6218[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Conv_IntToString_ReturnValue;             // 0x168(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Conv_IntToString_ReturnValue_1;           // 0x178(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Concat_StrStr_ReturnValue_1;              // 0x188(0x10)(ZeroConstructor, HasGetValueTypeHash)
@@ -53,22 +53,22 @@ public:
 	int32                                        CallFunc_GetMaxCount_ReturnValue;                  // 0x1D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Conv_IntToString_ReturnValue_2;           // 0x1D8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x1E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7849[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6219[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue_1;                 // 0x1EC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_GetCount_ReturnValue;                     // 0x1F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_784A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_621A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Conv_IntToString_ReturnValue_3;           // 0x1F8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FConditionProgressDataList            CallFunc_GetProgressData_OutProgressData_1;        // 0x208(0x10)(None)
 	class FString                                CallFunc_Concat_StrStr_ReturnValue_4;              // 0x218(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FQuestTaskPresentationData            CallFunc_MakeTaskPresentationData_OutPresentationData; // 0x228(0xB0)(None)
 	bool                                         CallFunc_MakeTaskPresentationData_ReturnValue;     // 0x2D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_784C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_621B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Concat_StrStr_ReturnValue_5;              // 0x2E0(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Concat_StrStr_ReturnValue_6;              // 0x2F0(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FQuestTaskConditionPresentationData   CallFunc_Array_Get_Item_1;                         // 0x300(0x68)(None)
 	int32                                        CallFunc_Array_Length_ReturnValue_1;               // 0x368(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue_1;                // 0x36C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_784D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_621C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Conv_IntToString_ReturnValue_4;           // 0x370(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Conv_IntToString_ReturnValue_5;           // 0x380(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x390(0x50)(HasGetValueTypeHash)
@@ -76,7 +76,7 @@ public:
 	class FString                                CallFunc_Conv_IntToString_ReturnValue_7;           // 0x3F0(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Concat_StrStr_ReturnValue_7;              // 0x400(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FExperienceStateID                    CallFunc_GetID_ReturnValue;                        // 0x410(0x4)(NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_784F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_621D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Concat_StrStr_ReturnValue_8;              // 0x418(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                  CallFunc_Conv_StringToText_ReturnValue_1;          // 0x428(0x18)(None)
 	class FString                                CallFunc_Concat_StrStr_ReturnValue_9;              // 0x440(0x10)(ZeroConstructor, HasGetValueTypeHash)
@@ -89,7 +89,7 @@ public:
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x4E0(0x10)(ReferenceParm)
 	TScriptInterface<class IChallengeSystemObservable> K2Node_DynamicCast_AsChallenge_System_Observable;  // 0x4F0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_1;                     // 0x500(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7850[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_621E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Format_ReturnValue;                       // 0x508(0x18)(None)
 	TScriptInterface<class IChallengeDefinition> CallFunc_GetChallengeDefinition_ReturnValue;       // 0x520(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
@@ -125,10 +125,10 @@ struct UWBP_DB_ChallengeWatchedListEntry_C_ExecuteUbergraph_WBP_DB_ChallengeWatc
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_bIsExpanded;                          // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7851[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_621F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               K2Node_Event_ListItemObject;                       // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_bIsSelected;                          // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7852[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6220[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetDisplayName_ReturnValue;               // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_SelectColor_ReturnValue;                  // 0x28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Concat_StrStr_ReturnValue;                // 0x38(0x10)(ZeroConstructor, HasGetValueTypeHash)

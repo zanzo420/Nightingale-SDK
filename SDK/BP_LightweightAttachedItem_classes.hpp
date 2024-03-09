@@ -19,21 +19,21 @@ public:
 	class UBP_AsyncAssetLoader_C*                AsyncAssetLoader;                                  // 0x2B8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FItemDataReference                    ItemId;                                            // 0x2C0(0x80)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         bEquipped;                                         // 0x340(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5B34[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E47[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_EquippableItemBase_C*              EquippedItem;                                      // 0x348(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            OnAsyncLoadComplete;                               // 0x350(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         IsAsyncDataInitialized;                            // 0x360(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5B35[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E48[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_CharacterCustomization_Component_C* ParentCustomizationComponent;                      // 0x368(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMesh*                         ItemMesh1P;                                        // 0x370(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         bFullBodyVersion;                                  // 0x378(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_5B36[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E49[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  VFXSocket;                                         // 0x37C(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5B37[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E4A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UItemLightComponent*                   CachedLightComponent;                              // 0x388(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FItemData_LightEmitterLights          ItemLightData;                                     // 0x390(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bShouldLightNeverCastShadows;                      // 0x3B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5B38[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E4B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnLightweightLightsSpawned;                        // 0x3B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();

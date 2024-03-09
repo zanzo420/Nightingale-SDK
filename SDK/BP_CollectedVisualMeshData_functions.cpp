@@ -40,29 +40,6 @@ class UBP_CollectedVisualMeshData_C* UBP_CollectedVisualMeshData_C::GetDefaultOb
 }
 
 
-// Function BP_CollectedVisualMeshData.BP_CollectedVisualMeshData_C.GetTierValue
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// int32                              TierValue                                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_CollectedVisualMeshData_C::GetTierValue(int32* TierValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_CollectedVisualMeshData_C", "GetTierValue");
-
-	Params::UBP_CollectedVisualMeshData_C_GetTierValue_Params Parms{};
-
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (TierValue != nullptr)
-		*TierValue = Parms.TierValue;
-
-}
-
-
 // Function BP_CollectedVisualMeshData.BP_CollectedVisualMeshData_C.HasRegionHiding
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -752,13 +729,13 @@ void UBP_CollectedVisualMeshData_C::GetDebugInfo(class FString* DebugInfo, class
 // int32                              CurrentIndex                                                     (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EMetalRegions           Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EMetalRegions           Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EMetalRegions           Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMaterialRegionInstanceData CallFunc_Array_Get_Item                                          (None)
 // enum class EGemRegions             Temp_byte_Variable_2                                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FMaterialRegionInstanceData CallFunc_Array_Get_Item                                          (None)
 // int32                              Temp_int_Array_Index_Variable_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -790,7 +767,7 @@ void UBP_CollectedVisualMeshData_C::GetDebugInfo(class FString* DebugInfo, class
 // double                             CallFunc_Map_Add_Value_ImplicitCast                              (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Map_Add_Value_ImplicitCast_1                            (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CollectedVisualMeshData_C::ApplyInstancedData(const struct FEquippedInstanceData& InstancedData, int32 CurrentIndex, enum class EMetalRegions Temp_byte_Variable, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, enum class EMetalRegions Temp_byte_Variable_1, const struct FMaterialRegionInstanceData& CallFunc_Array_Get_Item, enum class EGemRegions Temp_byte_Variable_2, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Array_Index_Variable_2, int32 Temp_int_Variable, enum class ECostumeRegions Temp_byte_Variable_3, enum class ECostumeRegions Temp_byte_Variable_4, enum class ECostumeRegions Temp_byte_Variable_5, enum class ECostumeRegions Temp_byte_Variable_6, enum class ECostumeRegions Temp_byte_Variable_7, enum class ECostumeRegions Temp_byte_Variable_8, int32 Temp_int_Variable_1, enum class ECostumeRegions K2Node_Select_Default, const struct FDataTableRowHandle& CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, const struct FCharacterAppearance_GemSwatch& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, const struct FDataTableRowHandle& CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_Less_IntInt_ReturnValue_1, const struct FCharacterAppearance_MetalSwatch& CallFunc_GetDataTableRowFromName_OutRow_1, bool CallFunc_GetDataTableRowFromName_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable_2, bool CallFunc_Less_IntInt_ReturnValue_2, int32 CallFunc_Add_IntInt_ReturnValue_2, enum class EMetalRegions K2Node_Select_Default_1, double CallFunc_Map_Add_Value_ImplicitCast, double CallFunc_Map_Add_Value_ImplicitCast_1)
+void UBP_CollectedVisualMeshData_C::ApplyInstancedData(const struct FEquippedInstanceData& InstancedData, int32 CurrentIndex, enum class EMetalRegions Temp_byte_Variable, int32 CallFunc_Array_Length_ReturnValue, enum class EMetalRegions Temp_byte_Variable_1, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, enum class EGemRegions Temp_byte_Variable_2, const struct FMaterialRegionInstanceData& CallFunc_Array_Get_Item, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Array_Index_Variable_2, int32 Temp_int_Variable, enum class ECostumeRegions Temp_byte_Variable_3, enum class ECostumeRegions Temp_byte_Variable_4, enum class ECostumeRegions Temp_byte_Variable_5, enum class ECostumeRegions Temp_byte_Variable_6, enum class ECostumeRegions Temp_byte_Variable_7, enum class ECostumeRegions Temp_byte_Variable_8, int32 Temp_int_Variable_1, enum class ECostumeRegions K2Node_Select_Default, const struct FDataTableRowHandle& CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, const struct FCharacterAppearance_GemSwatch& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, const struct FDataTableRowHandle& CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_Less_IntInt_ReturnValue_1, const struct FCharacterAppearance_MetalSwatch& CallFunc_GetDataTableRowFromName_OutRow_1, bool CallFunc_GetDataTableRowFromName_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable_2, bool CallFunc_Less_IntInt_ReturnValue_2, int32 CallFunc_Add_IntInt_ReturnValue_2, enum class EMetalRegions K2Node_Select_Default_1, double CallFunc_Map_Add_Value_ImplicitCast, double CallFunc_Map_Add_Value_ImplicitCast_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -803,13 +780,13 @@ void UBP_CollectedVisualMeshData_C::ApplyInstancedData(const struct FEquippedIns
 	Parms.CurrentIndex = CurrentIndex;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.Temp_byte_Variable_2 = Temp_byte_Variable_2;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.Temp_int_Array_Index_Variable_1 = Temp_int_Array_Index_Variable_1;
 	Parms.Temp_int_Loop_Counter_Variable_1 = Temp_int_Loop_Counter_Variable_1;
 	Parms.CallFunc_Add_IntInt_ReturnValue_1 = CallFunc_Add_IntInt_ReturnValue_1;

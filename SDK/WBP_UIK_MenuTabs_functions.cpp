@@ -141,15 +141,16 @@ void UWBP_UIK_MenuTabs_C::UnbindFromTabEvents(const TArray<class UWidget*>& LChi
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_NotEqual_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_DynamicCast_AsCommon_Button_Base                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Button_Tab_C*           K2Node_DynamicCast_AsWBP_Button_Tab                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPanelWidget*                K2Node_Select_Default                                            (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // TArray<class UWidget*>             CallFunc_GetAllChildren_ReturnValue                              (ReferenceParm, ContainsInstancedReference)
 
-void UWBP_UIK_MenuTabs_C::UpdateEnabledState(const TArray<class UWidget*>& LChildrenWidgets, bool Temp_bool_Variable, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UWidget* CallFunc_Array_Get_Item, bool CallFunc_NotEqual_IntInt_ReturnValue, class UCommonButtonBase* K2Node_DynamicCast_AsCommon_Button_Base, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class UPanelWidget* K2Node_Select_Default, TArray<class UWidget*>& CallFunc_GetAllChildren_ReturnValue)
+void UWBP_UIK_MenuTabs_C::UpdateEnabledState(const TArray<class UWidget*>& LChildrenWidgets, bool Temp_bool_Variable, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UWidget* CallFunc_Array_Get_Item, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UWBP_Button_Tab_C* K2Node_DynamicCast_AsWBP_Button_Tab, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Not_PreBool_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class UPanelWidget* K2Node_Select_Default, TArray<class UWidget*>& CallFunc_GetAllChildren_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -164,9 +165,10 @@ void UWBP_UIK_MenuTabs_C::UpdateEnabledState(const TArray<class UWidget*>& LChil
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
-	Parms.CallFunc_NotEqual_IntInt_ReturnValue = CallFunc_NotEqual_IntInt_ReturnValue;
-	Parms.K2Node_DynamicCast_AsCommon_Button_Base = K2Node_DynamicCast_AsCommon_Button_Base;
+	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
+	Parms.K2Node_DynamicCast_AsWBP_Button_Tab = K2Node_DynamicCast_AsWBP_Button_Tab;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
@@ -270,9 +272,9 @@ void UWBP_UIK_MenuTabs_C::OnTabSelected(class FText Text, int32 Index)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                              TabIndex                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UWidget*>             NewLocalVar_0                                                    (Edit, BlueprintVisible, ContainsInstancedReference)
+// class FText                        CallFunc_Array_Get_Item                                          (None)
 
-void UWBP_UIK_MenuTabs_C::SelectTab(int32 TabIndex, const TArray<class UWidget*>& NewLocalVar_0)
+void UWBP_UIK_MenuTabs_C::SelectTab(int32 TabIndex, class FText CallFunc_Array_Get_Item)
 {
 	static class UFunction* Func = nullptr;
 
@@ -282,7 +284,7 @@ void UWBP_UIK_MenuTabs_C::SelectTab(int32 TabIndex, const TArray<class UWidget*>
 	Params::UWBP_UIK_MenuTabs_C_SelectTab_Params Parms{};
 
 	Parms.TabIndex = TabIndex;
-	Parms.NewLocalVar_0 = NewLocalVar_0;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -292,30 +294,24 @@ void UWBP_UIK_MenuTabs_C::SelectTab(int32 TabIndex, const TArray<class UWidget*>
 // Function WBP_UIK_MenuTabs.WBP_UIK_MenuTabs_C.RefreshTabBox
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_Common_Button_Base_C*   NewLocalVar                                                      (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Button_Tab_C*           LButtonTab                                                       (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Button_Tab_C*           CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UPanelWidget*                K2Node_Select_Default                                            (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UPanelSlot*                  CallFunc_AddChild_ReturnValue                                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UVerticalBoxSlot*            K2Node_DynamicCast_AsVertical_Box_Slot                           (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UHorizontalBoxSlot*          K2Node_DynamicCast_AsHorizontal_Box_Slot                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPanelWidget*                K2Node_Select_Default_1                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMargin                     K2Node_MakeStruct_Margin_1                                       (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Array_Get_Item                                          (None)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UIK_MenuTabs_C::RefreshTabBox(class UWBP_Common_Button_Base_C* NewLocalVar, class UWBP_Button_Tab_C* LButtonTab, class UWBP_Button_Tab_C* CallFunc_Create_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool Temp_bool_Variable, bool Temp_bool_Variable_1, const struct FMargin& K2Node_MakeStruct_Margin, class UPanelWidget* K2Node_Select_Default, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UVerticalBoxSlot* K2Node_DynamicCast_AsVertical_Box_Slot, bool K2Node_DynamicCast_bSuccess, class UHorizontalBoxSlot* K2Node_DynamicCast_AsHorizontal_Box_Slot, bool K2Node_DynamicCast_bSuccess_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UPanelWidget* K2Node_Select_Default_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin_1, class FText CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
+void UWBP_UIK_MenuTabs_C::RefreshTabBox(class UWBP_Button_Tab_C* LButtonTab, class UWBP_Button_Tab_C* CallFunc_Create_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool Temp_bool_Variable, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Variable_1, class UPanelWidget* K2Node_Select_Default, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UPanelWidget* K2Node_Select_Default_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class FText CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -324,25 +320,19 @@ void UWBP_UIK_MenuTabs_C::RefreshTabBox(class UWBP_Common_Button_Base_C* NewLoca
 
 	Params::UWBP_UIK_MenuTabs_C_RefreshTabBox_Params Parms{};
 
-	Parms.NewLocalVar = NewLocalVar;
 	Parms.LButtonTab = LButtonTab;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
-	Parms.K2Node_MakeStruct_Margin = K2Node_MakeStruct_Margin;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.CallFunc_AddChild_ReturnValue = CallFunc_AddChild_ReturnValue;
-	Parms.K2Node_DynamicCast_AsVertical_Box_Slot = K2Node_DynamicCast_AsVertical_Box_Slot;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.K2Node_DynamicCast_AsHorizontal_Box_Slot = K2Node_DynamicCast_AsHorizontal_Box_Slot;
-	Parms.K2Node_DynamicCast_bSuccess_1 = K2Node_DynamicCast_bSuccess_1;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_Select_Default_1 = K2Node_Select_Default_1;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
-	Parms.K2Node_MakeStruct_Margin_1 = K2Node_MakeStruct_Margin_1;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
@@ -463,68 +453,22 @@ void UWBP_UIK_MenuTabs_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_UIK_MenuTabs.WBP_UIK_MenuTabs_C.BndEvt__WBP_UIK_MenuTabs_CBU_Next_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UIK_MenuTabs_C::BndEvt__WBP_UIK_MenuTabs_CBU_Next_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_UIK_MenuTabs_C", "BndEvt__WBP_UIK_MenuTabs_CBU_Next_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::UWBP_UIK_MenuTabs_C_BndEvt__WBP_UIK_MenuTabs_CBU_Next_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature_Params Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function WBP_UIK_MenuTabs.WBP_UIK_MenuTabs_C.BndEvt__WBP_UIK_MenuTabs_CBU_Previous_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UIK_MenuTabs_C::BndEvt__WBP_UIK_MenuTabs_CBU_Previous_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_UIK_MenuTabs_C", "BndEvt__WBP_UIK_MenuTabs_CBU_Previous_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::UWBP_UIK_MenuTabs_C_BndEvt__WBP_UIK_MenuTabs_CBU_Previous_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature_Params Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function WBP_UIK_MenuTabs.WBP_UIK_MenuTabs_C.ExecuteUbergraph_WBP_UIK_MenuTabs
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FEventReply                 CallFunc_OnInputPrevious_ReturnValue                             (None)
+// bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FEventReply                 CallFunc_OnInputNext_ReturnValue                                 (None)
+// struct FEventReply                 CallFunc_OnInputPrevious_ReturnValue                             (None)
 // struct FEventReply                 CallFunc_OnInputPrevious_ReturnValue_1                           (None)
-// struct FEventReply                 CallFunc_OnInputPrevious_ReturnValue_2                           (None)
 // struct FEventReply                 CallFunc_OnInputNext_ReturnValue_1                               (None)
 // bool                               CallFunc_IsValidInitialActiveIndex_IsValid                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// struct FEventReply                 CallFunc_OnInputNext_ReturnValue_2                               (None)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UIK_MenuTabs_C::ExecuteUbergraph_WBP_UIK_MenuTabs(int32 EntryPoint, const struct FEventReply& CallFunc_OnInputPrevious_ReturnValue, bool Temp_bool_Variable, int32 Temp_int_Variable, int32 Temp_int_Variable_1, int32 K2Node_Select_Default, const struct FEventReply& CallFunc_OnInputNext_ReturnValue, const struct FEventReply& CallFunc_OnInputPrevious_ReturnValue_1, const struct FEventReply& CallFunc_OnInputPrevious_ReturnValue_2, const struct FEventReply& CallFunc_OnInputNext_ReturnValue_1, bool CallFunc_IsValidInitialActiveIndex_IsValid, bool K2Node_Event_IsDesignTime, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_1, const struct FEventReply& CallFunc_OnInputNext_ReturnValue_2, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button)
+void UWBP_UIK_MenuTabs_C::ExecuteUbergraph_WBP_UIK_MenuTabs(int32 EntryPoint, bool K2Node_Event_IsDesignTime, bool Temp_bool_Variable, int32 Temp_int_Variable, int32 Temp_int_Variable_1, int32 K2Node_Select_Default, const struct FEventReply& CallFunc_OnInputNext_ReturnValue, const struct FEventReply& CallFunc_OnInputPrevious_ReturnValue, const struct FEventReply& CallFunc_OnInputPrevious_ReturnValue_1, const struct FEventReply& CallFunc_OnInputNext_ReturnValue_1, bool CallFunc_IsValidInitialActiveIndex_IsValid)
 {
 	static class UFunction* Func = nullptr;
 
@@ -534,20 +478,16 @@ void UWBP_UIK_MenuTabs_C::ExecuteUbergraph_WBP_UIK_MenuTabs(int32 EntryPoint, co
 	Params::UWBP_UIK_MenuTabs_C_ExecuteUbergraph_WBP_UIK_MenuTabs_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_OnInputPrevious_ReturnValue = CallFunc_OnInputPrevious_ReturnValue;
+	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.Temp_int_Variable_1 = Temp_int_Variable_1;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.CallFunc_OnInputNext_ReturnValue = CallFunc_OnInputNext_ReturnValue;
+	Parms.CallFunc_OnInputPrevious_ReturnValue = CallFunc_OnInputPrevious_ReturnValue;
 	Parms.CallFunc_OnInputPrevious_ReturnValue_1 = CallFunc_OnInputPrevious_ReturnValue_1;
-	Parms.CallFunc_OnInputPrevious_ReturnValue_2 = CallFunc_OnInputPrevious_ReturnValue_2;
 	Parms.CallFunc_OnInputNext_ReturnValue_1 = CallFunc_OnInputNext_ReturnValue_1;
 	Parms.CallFunc_IsValidInitialActiveIndex_IsValid = CallFunc_IsValidInitialActiveIndex_IsValid;
-	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
-	Parms.K2Node_ComponentBoundEvent_Button_1 = K2Node_ComponentBoundEvent_Button_1;
-	Parms.CallFunc_OnInputNext_ReturnValue_2 = CallFunc_OnInputNext_ReturnValue_2;
-	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 

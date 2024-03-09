@@ -15,51 +15,51 @@ class UGA_EndCraftItem_C : public UBP_NWXGameplayAbility_C
 {
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x420(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	uint8                                        Pad_9073[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A013[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              RecipeToCraft;                                     // 0x430(0x70)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	int32                                        RecipeQuantity;                                    // 0x4A0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9074[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A014[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_PlayerController_C*                InstigatingController;                             // 0x4A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                 CraftingPawn;                                      // 0x4B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         FabricationResult;                                 // 0x4B8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ItemCrafted;                                       // 0x4B9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9075[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A015[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CraftStationActor;                                 // 0x4C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UBP_CraftingStationComponent_C*        CraftStationComponent;                             // 0x4C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FString                                InstigatorUniqueID;                                // 0x4D0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	enum class EItemQuality                      Quality;                                           // 0x4E0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9076[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A016[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FInventoryEntry>               InputItems;                                        // 0x4E8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UCraftingResultObject*>         OutputResults;                                     // 0x4F8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FInventoryEntry>               GrantedOutputs;                                    // 0x508(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UInventoryComponentBase*               Inventory;                                         // 0x518(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         HasCraftInProgressData;                            // 0x520(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9077[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A017[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          Timeout;                                           // 0x528(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UBP_CraftingComponent_C*               InstigatingCraftingComponent;                      // 0x530(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            LoadOutputCalculation;                             // 0x538(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         CraftingComplete;                                  // 0x548(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9078[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A018[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FCraftingRecipeResult>         CachedOutputsToLoad;                               // 0x550(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<int32>                                IndicesToClear;                                    // 0x560(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         AllQuantitiesCrafted;                              // 0x570(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9079[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A019[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FDataTableRowHandle>           RecipeSteps;                                       // 0x578(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        QuantityToGrant;                                   // 0x588(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                 CraftId;                                           // 0x58C(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_907A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A01A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            UI_HandleCraftingResult;                           // 0x5A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         bHoldGrantForInteraction;                          // 0x5B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bCrafterInvalid;                                   // 0x5B1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bGrantCachedItemsOnly;                             // 0x5B2(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_907B[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A01B[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                EFFECT_CRAFTING_SUCCESS;                           // 0x5B8(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FGuid>                         GrantedInstances;                                  // 0x5C0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        QuantityToIterate;                                 // 0x5D0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        QUANTITY_ITERATION_DEFAULT;                        // 0x5D4(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_907C[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A01C[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CachedCraftInProgress;                             // 0x5E0(0xD8)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	uint8                                        Pad_907D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A01D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bDebugInstantComplete;                             // 0x6C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

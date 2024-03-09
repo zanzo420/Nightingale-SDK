@@ -14,7 +14,7 @@ namespace SDK
 class UConsoleVariablesAsset : public UObject
 {
 public:
-	uint8                                        Pad_4338[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3826[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                VariableCollectionDescription;                     // 0x30(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FConsoleVariablesEditorAssetSaveData> SavedCommands;                                     // 0x40(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 

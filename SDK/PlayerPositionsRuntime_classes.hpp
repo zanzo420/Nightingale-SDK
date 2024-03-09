@@ -14,7 +14,7 @@ namespace SDK
 class UPlayerPositionsComponent : public UActorComponent
 {
 public:
-	uint8                                        Pad_3DE7[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3DC6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FPlayerPosition>               PlayerPositions;                                   // 0xA8(0x10)(Net, ZeroConstructor, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();
@@ -38,7 +38,7 @@ public:
 class UPlayerPositionsSubsystem : public UNWXWorldSubsystem
 {
 public:
-	uint8                                        Pad_3DE8[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3DC7[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPlayerPositionsSubsystem* GetDefaultObj();

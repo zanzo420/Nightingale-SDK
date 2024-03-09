@@ -387,24 +387,6 @@ void UWBP_PartyMemberCard_C::Refresh_Player()
 }
 
 
-// Function WBP_PartyMemberCard.WBP_PartyMemberCard_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UWBP_PartyMemberCard_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_PartyMemberCard_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function WBP_PartyMemberCard.WBP_PartyMemberCard_C.KickPlayer
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -415,6 +397,24 @@ void UWBP_PartyMemberCard_C::KickPlayer()
 
 	if (!Func)
 		Func = Class->GetFunction("WBP_PartyMemberCard_C", "KickPlayer");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function WBP_PartyMemberCard.WBP_PartyMemberCard_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UWBP_PartyMemberCard_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_PartyMemberCard_C", "Construct");
 
 
 
@@ -547,18 +547,21 @@ void UWBP_PartyMemberCard_C::BndEvt__WBP_PartyMemberCard_CBU_ContextMenu_K2Node_
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_FCeil_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
+// class FText                        Temp_text_Variable_4                                             (None)
+// class FText                        CallFunc_Conv_DoubleToText_ReturnValue                           (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FS_CharacterStateEntry      K2Node_CustomEvent_MostRecentState                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               (ConstParm)
-// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_5                                             (ConstParm)
+// class FText                        Temp_text_Variable_6                                             (None)
 // bool                               CallFunc_IsEmpty_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPartyComponentBase*         CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -568,11 +571,13 @@ void UWBP_PartyMemberCard_C::BndEvt__WBP_PartyMemberCard_CBU_ContextMenu_K2Node_
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ABP_PlayerState_C*           K2Node_DynamicCast_AsBP_Player_State                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FS_CharacterStateEntry      CallFunc_Array_Get_Item                                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Array_IsValidIndex_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
+// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
 // class ABP_Character_C*             K2Node_DynamicCast_AsBP_Character                                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // bool                               CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_1         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetFloatAttribute_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_2         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -581,22 +586,20 @@ void UWBP_PartyMemberCard_C::BndEvt__WBP_PartyMemberCard_CBU_ContextMenu_K2Node_
 // int32                              CallFunc_Round_ReturnValue_1                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Conv_IntToDouble_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Conv_IntToDouble_ReturnValue_1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // double                             CallFunc_MapRangeClamped_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ReferenceParm)
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
+// struct FS_CharacterStateEntry      CallFunc_Array_Get_Item                                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Array_IsValidIndex_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ReferenceParm)
 // class UPartyComponentBase*         CallFunc_GetComponentByClass_ReturnValue_1                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
-// class FText                        Temp_text_Variable_2                                             (None)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FText                        Temp_text_Variable_7                                             (None)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_2                                         (ReferenceParm)
@@ -604,34 +607,30 @@ void UWBP_PartyMemberCard_C::BndEvt__WBP_PartyMemberCard_CBU_ContextMenu_K2Node_
 // class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetFilteredPlayerNameByPersistentId_FilteredPlayerName  (ZeroConstructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         (None)
-// class FText                        Temp_text_Variable_3                                             (None)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_3                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FText                        Temp_text_Variable_8                                             (None)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_3                         (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_4                           (HasGetValueTypeHash)
+// class FText                        Temp_text_Variable_9                                             (ConstParm)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_3                                         (ReferenceParm)
-// class FText                        Temp_text_Variable_4                                             (ConstParm)
 // class FText                        CallFunc_Format_ReturnValue_3                                    (None)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPartyComponentBase*         CallFunc_GetComponentByClass_ReturnValue_2                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_GetActiveWidget_ReturnValue                             (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_GetActiveWidget_ReturnValue_1                           (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsFeatureFlagEnabled_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_5                                             (None)
-// class FText                        Temp_text_Variable_6                                             (None)
-// class FText                        Temp_text_Variable_7                                             (None)
-// class FText                        Temp_text_Variable_8                                             (None)
-// class FText                        Temp_text_Variable_9                                             (None)
 // class FText                        Temp_text_Variable_10                                            (None)
 // class FText                        Temp_text_Variable_11                                            (None)
 // enum class E_CharacterGameStatus   Temp_byte_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_12                                            (ConstParm)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_3                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_Select_Default                                            (None)
+// class FText                        Temp_text_Variable_12                                            (ConstParm)
 // class FText                        Temp_text_Variable_13                                            (ConstParm)
 // class FText                        Temp_text_Variable_14                                            (ConstParm)
 // class FText                        Temp_text_Variable_15                                            (ConstParm)
 // class ULocalPlayer*                CallFunc_GetOwningLocalPlayer_ReturnValue                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UWBP_Popup_General_C*        CallFunc_CreateWidgetInstanceFromLayer_ReturnValue               (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class ULocalPlayer*                CallFunc_GetOwningLocalPlayer_ReturnValue_1                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Popup_General_C*        CallFunc_CreateWidgetInstanceFromLayer_ReturnValue               (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Popup_General_C*        CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1             (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class ULocalPlayer*                CallFunc_GetOwningLocalPlayer_ReturnValue_2                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Popup_General_C*        CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_2             (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -643,14 +642,14 @@ void UWBP_PartyMemberCard_C::BndEvt__WBP_PartyMemberCard_CBU_ContextMenu_K2Node_
 // class FString                      CallFunc_GetLocalPlayerPersistentId_PlayerId                     (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_StrStr_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                             CallFunc_FCeil_A_ImplicitCast                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_Conv_DoubleToText_Value_ImplicitCast                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_MapRangeClamped_Value_ImplicitCast                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Round_A_ImplicitCast                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_MapRangeClamped_InRangeB_ImplicitCast                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Round_A_ImplicitCast_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_SetPercent_InPercent_ImplicitCast                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PartyMemberCard_C::ExecuteUbergraph_WBP_PartyMemberCard(int32 EntryPoint, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 CallFunc_FCeil_ReturnValue, bool Temp_bool_Variable, class FText CallFunc_Conv_IntToText_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, const struct FS_CharacterStateEntry& K2Node_CustomEvent_MostRecentState, class FText Temp_text_Variable, class FText Temp_text_Variable_1, bool CallFunc_IsEmpty_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UPartyComponentBase* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsEmpty_ReturnValue_1, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttribute_ReturnValue, bool CallFunc_IsValid_ReturnValue, class ABP_PlayerState_C* K2Node_DynamicCast_AsBP_Player_State, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue_1, const struct FS_CharacterStateEntry& CallFunc_Array_Get_Item, bool CallFunc_Array_IsValidIndex_ReturnValue, class ABP_Character_C* K2Node_DynamicCast_AsBP_Character, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_1, float CallFunc_GetFloatAttribute_ReturnValue_1, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_2, float CallFunc_GetFloatAttribute_ReturnValue_2, int32 CallFunc_Round_ReturnValue, int32 CallFunc_Round_ReturnValue_1, double CallFunc_Conv_IntToDouble_ReturnValue, double CallFunc_Conv_IntToDouble_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, double CallFunc_MapRangeClamped_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class UPartyComponentBase* CallFunc_GetComponentByClass_ReturnValue_1, class FText CallFunc_Format_ReturnValue_1, class FText Temp_text_Variable_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class FText CallFunc_Conv_StringToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, class FText CallFunc_Format_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_GetFilteredPlayerNameByPersistentId_FilteredPlayerName, class FText CallFunc_Conv_StringToText_ReturnValue_2, class FText Temp_text_Variable_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class FText CallFunc_Conv_StringToText_ReturnValue_3, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_3, class FText Temp_text_Variable_4, class FText CallFunc_Format_ReturnValue_3, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_2, class UPartyComponentBase* CallFunc_GetComponentByClass_ReturnValue_2, class UWidget* CallFunc_GetActiveWidget_ReturnValue, class UWidget* CallFunc_GetActiveWidget_ReturnValue_1, bool CallFunc_IsFeatureFlagEnabled_ReturnValue, class FText Temp_text_Variable_5, class FText Temp_text_Variable_6, class FText Temp_text_Variable_7, class FText Temp_text_Variable_8, class FText Temp_text_Variable_9, class FText Temp_text_Variable_10, class FText Temp_text_Variable_11, enum class E_CharacterGameStatus Temp_byte_Variable_4, class FText Temp_text_Variable_12, class FText K2Node_Select_Default, class FText Temp_text_Variable_13, class FText Temp_text_Variable_14, class FText Temp_text_Variable_15, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue, class UWBP_Popup_General_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue_1, class UWBP_Popup_General_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue_2, class UWBP_Popup_General_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_3, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_2, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, const class FString& CallFunc_GetLocalPlayerPersistentId_PlayerId, bool CallFunc_EqualEqual_StrStr_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, double CallFunc_FCeil_A_ImplicitCast, double CallFunc_MapRangeClamped_Value_ImplicitCast, double CallFunc_Round_A_ImplicitCast, double CallFunc_MapRangeClamped_InRangeB_ImplicitCast, double CallFunc_Round_A_ImplicitCast_1, float CallFunc_SetPercent_InPercent_ImplicitCast)
+void UWBP_PartyMemberCard_C::ExecuteUbergraph_WBP_PartyMemberCard(int32 EntryPoint, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, class FText Temp_text_Variable_4, class FText CallFunc_Conv_DoubleToText_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, const struct FS_CharacterStateEntry& K2Node_CustomEvent_MostRecentState, class FText Temp_text_Variable_5, class FText Temp_text_Variable_6, bool CallFunc_IsEmpty_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UPartyComponentBase* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsEmpty_ReturnValue_1, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttribute_ReturnValue, bool CallFunc_IsValid_ReturnValue, class ABP_PlayerState_C* K2Node_DynamicCast_AsBP_Player_State, bool K2Node_DynamicCast_bSuccess, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class ABP_Character_C* K2Node_DynamicCast_AsBP_Character, bool K2Node_DynamicCast_bSuccess_1, class FText CallFunc_Format_ReturnValue, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_1, float CallFunc_GetFloatAttribute_ReturnValue_1, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_2, float CallFunc_GetFloatAttribute_ReturnValue_2, int32 CallFunc_Round_ReturnValue, int32 CallFunc_Round_ReturnValue_1, double CallFunc_Conv_IntToDouble_ReturnValue, double CallFunc_Conv_IntToDouble_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, double CallFunc_MapRangeClamped_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FS_CharacterStateEntry& CallFunc_Array_Get_Item, bool CallFunc_Array_IsValidIndex_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, class UPartyComponentBase* CallFunc_GetComponentByClass_ReturnValue_1, class FText Temp_text_Variable_7, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class FText CallFunc_Conv_StringToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, class FText CallFunc_Format_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_GetFilteredPlayerNameByPersistentId_FilteredPlayerName, class FText CallFunc_Conv_StringToText_ReturnValue_2, class FText Temp_text_Variable_8, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class FText CallFunc_Conv_StringToText_ReturnValue_3, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, class FText Temp_text_Variable_9, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_3, class FText CallFunc_Format_ReturnValue_3, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_2, class UPartyComponentBase* CallFunc_GetComponentByClass_ReturnValue_2, class UWidget* CallFunc_GetActiveWidget_ReturnValue, class UWidget* CallFunc_GetActiveWidget_ReturnValue_1, bool CallFunc_IsFeatureFlagEnabled_ReturnValue, class FText Temp_text_Variable_10, class FText Temp_text_Variable_11, enum class E_CharacterGameStatus Temp_byte_Variable_4, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class FText K2Node_Select_Default, class FText Temp_text_Variable_12, class FText Temp_text_Variable_13, class FText Temp_text_Variable_14, class FText Temp_text_Variable_15, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue_1, class UWBP_Popup_General_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue, class UWBP_Popup_General_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue_2, class UWBP_Popup_General_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_3, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_2, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, const class FString& CallFunc_GetLocalPlayerPersistentId_PlayerId, bool CallFunc_EqualEqual_StrStr_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, double CallFunc_Conv_DoubleToText_Value_ImplicitCast, double CallFunc_MapRangeClamped_Value_ImplicitCast, double CallFunc_Round_A_ImplicitCast, double CallFunc_MapRangeClamped_InRangeB_ImplicitCast, double CallFunc_Round_A_ImplicitCast_1, float CallFunc_SetPercent_InPercent_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -660,18 +659,21 @@ void UWBP_PartyMemberCard_C::ExecuteUbergraph_WBP_PartyMemberCard(int32 EntryPoi
 	Params::UWBP_PartyMemberCard_C_ExecuteUbergraph_WBP_PartyMemberCard_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
-	Parms.CallFunc_FCeil_ReturnValue = CallFunc_FCeil_ReturnValue;
+	Parms.Temp_text_Variable = Temp_text_Variable;
+	Parms.Temp_text_Variable_1 = Temp_text_Variable_1;
+	Parms.Temp_text_Variable_2 = Temp_text_Variable_2;
+	Parms.Temp_text_Variable_3 = Temp_text_Variable_3;
+	Parms.Temp_text_Variable_4 = Temp_text_Variable_4;
+	Parms.CallFunc_Conv_DoubleToText_ReturnValue = CallFunc_Conv_DoubleToText_ReturnValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.CallFunc_Conv_IntToText_ReturnValue = CallFunc_Conv_IntToText_ReturnValue;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
 	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
 	Parms.Temp_byte_Variable_2 = Temp_byte_Variable_2;
 	Parms.Temp_byte_Variable_3 = Temp_byte_Variable_3;
 	Parms.K2Node_CustomEvent_MostRecentState = K2Node_CustomEvent_MostRecentState;
-	Parms.Temp_text_Variable = Temp_text_Variable;
-	Parms.Temp_text_Variable_1 = Temp_text_Variable_1;
+	Parms.Temp_text_Variable_5 = Temp_text_Variable_5;
+	Parms.Temp_text_Variable_6 = Temp_text_Variable_6;
 	Parms.CallFunc_IsEmpty_ReturnValue = CallFunc_IsEmpty_ReturnValue;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
@@ -681,11 +683,13 @@ void UWBP_PartyMemberCard_C::ExecuteUbergraph_WBP_PartyMemberCard(int32 EntryPoi
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.K2Node_DynamicCast_AsBP_Player_State = K2Node_DynamicCast_AsBP_Player_State;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
-	Parms.CallFunc_Array_IsValidIndex_ReturnValue = CallFunc_Array_IsValidIndex_ReturnValue;
+	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
+	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.K2Node_DynamicCast_AsBP_Character = K2Node_DynamicCast_AsBP_Character;
 	Parms.K2Node_DynamicCast_bSuccess_1 = K2Node_DynamicCast_bSuccess_1;
+	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
 	Parms.CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_1 = CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_1;
 	Parms.CallFunc_GetFloatAttribute_ReturnValue_1 = CallFunc_GetFloatAttribute_ReturnValue_1;
 	Parms.CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_2 = CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute_2;
@@ -694,22 +698,20 @@ void UWBP_PartyMemberCard_C::ExecuteUbergraph_WBP_PartyMemberCard(int32 EntryPoi
 	Parms.CallFunc_Round_ReturnValue_1 = CallFunc_Round_ReturnValue_1;
 	Parms.CallFunc_Conv_IntToDouble_ReturnValue = CallFunc_Conv_IntToDouble_ReturnValue;
 	Parms.CallFunc_Conv_IntToDouble_ReturnValue_1 = CallFunc_Conv_IntToDouble_ReturnValue_1;
-	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.K2Node_MakeStruct_FormatArgumentData_1 = K2Node_MakeStruct_FormatArgumentData_1;
+	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
 	Parms.CallFunc_MapRangeClamped_ReturnValue = CallFunc_MapRangeClamped_ReturnValue;
-	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
-	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
+	Parms.K2Node_MakeArray_Array_1 = K2Node_MakeArray_Array_1;
+	Parms.CallFunc_Format_ReturnValue_1 = CallFunc_Format_ReturnValue_1;
 	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
-	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
-	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
-	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Array_IsValidIndex_ReturnValue = CallFunc_Array_IsValidIndex_ReturnValue;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue_1 = CallFunc_GetOwningPlayer_ReturnValue_1;
-	Parms.K2Node_MakeArray_Array_1 = K2Node_MakeArray_Array_1;
 	Parms.CallFunc_GetComponentByClass_ReturnValue_1 = CallFunc_GetComponentByClass_ReturnValue_1;
-	Parms.CallFunc_Format_ReturnValue_1 = CallFunc_Format_ReturnValue_1;
-	Parms.Temp_text_Variable_2 = Temp_text_Variable_2;
-	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
+	Parms.Temp_text_Variable_7 = Temp_text_Variable_7;
+	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_1 = CallFunc_Conv_StringToText_ReturnValue_1;
 	Parms.K2Node_MakeStruct_FormatArgumentData_3 = K2Node_MakeStruct_FormatArgumentData_3;
 	Parms.K2Node_MakeArray_Array_2 = K2Node_MakeArray_Array_2;
@@ -717,34 +719,30 @@ void UWBP_PartyMemberCard_C::ExecuteUbergraph_WBP_PartyMemberCard(int32 EntryPoi
 	Parms.CallFunc_Concat_StrStr_ReturnValue = CallFunc_Concat_StrStr_ReturnValue;
 	Parms.CallFunc_GetFilteredPlayerNameByPersistentId_FilteredPlayerName = CallFunc_GetFilteredPlayerNameByPersistentId_FilteredPlayerName;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_2 = CallFunc_Conv_StringToText_ReturnValue_2;
-	Parms.Temp_text_Variable_3 = Temp_text_Variable_3;
-	Parms.K2Node_CreateDelegate_OutputDelegate_3 = K2Node_CreateDelegate_OutputDelegate_3;
+	Parms.Temp_text_Variable_8 = Temp_text_Variable_8;
+	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_3 = CallFunc_Conv_StringToText_ReturnValue_3;
 	Parms.K2Node_MakeStruct_FormatArgumentData_4 = K2Node_MakeStruct_FormatArgumentData_4;
+	Parms.Temp_text_Variable_9 = Temp_text_Variable_9;
 	Parms.K2Node_MakeArray_Array_3 = K2Node_MakeArray_Array_3;
-	Parms.Temp_text_Variable_4 = Temp_text_Variable_4;
 	Parms.CallFunc_Format_ReturnValue_3 = CallFunc_Format_ReturnValue_3;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue_2 = CallFunc_GetOwningPlayer_ReturnValue_2;
 	Parms.CallFunc_GetComponentByClass_ReturnValue_2 = CallFunc_GetComponentByClass_ReturnValue_2;
 	Parms.CallFunc_GetActiveWidget_ReturnValue = CallFunc_GetActiveWidget_ReturnValue;
 	Parms.CallFunc_GetActiveWidget_ReturnValue_1 = CallFunc_GetActiveWidget_ReturnValue_1;
 	Parms.CallFunc_IsFeatureFlagEnabled_ReturnValue = CallFunc_IsFeatureFlagEnabled_ReturnValue;
-	Parms.Temp_text_Variable_5 = Temp_text_Variable_5;
-	Parms.Temp_text_Variable_6 = Temp_text_Variable_6;
-	Parms.Temp_text_Variable_7 = Temp_text_Variable_7;
-	Parms.Temp_text_Variable_8 = Temp_text_Variable_8;
-	Parms.Temp_text_Variable_9 = Temp_text_Variable_9;
 	Parms.Temp_text_Variable_10 = Temp_text_Variable_10;
 	Parms.Temp_text_Variable_11 = Temp_text_Variable_11;
 	Parms.Temp_byte_Variable_4 = Temp_byte_Variable_4;
-	Parms.Temp_text_Variable_12 = Temp_text_Variable_12;
+	Parms.K2Node_CreateDelegate_OutputDelegate_3 = K2Node_CreateDelegate_OutputDelegate_3;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.Temp_text_Variable_12 = Temp_text_Variable_12;
 	Parms.Temp_text_Variable_13 = Temp_text_Variable_13;
 	Parms.Temp_text_Variable_14 = Temp_text_Variable_14;
 	Parms.Temp_text_Variable_15 = Temp_text_Variable_15;
 	Parms.CallFunc_GetOwningLocalPlayer_ReturnValue = CallFunc_GetOwningLocalPlayer_ReturnValue;
-	Parms.CallFunc_CreateWidgetInstanceFromLayer_ReturnValue = CallFunc_CreateWidgetInstanceFromLayer_ReturnValue;
 	Parms.CallFunc_GetOwningLocalPlayer_ReturnValue_1 = CallFunc_GetOwningLocalPlayer_ReturnValue_1;
+	Parms.CallFunc_CreateWidgetInstanceFromLayer_ReturnValue = CallFunc_CreateWidgetInstanceFromLayer_ReturnValue;
 	Parms.CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1 = CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1;
 	Parms.CallFunc_GetOwningLocalPlayer_ReturnValue_2 = CallFunc_GetOwningLocalPlayer_ReturnValue_2;
 	Parms.CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_2 = CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_2;
@@ -756,7 +754,7 @@ void UWBP_PartyMemberCard_C::ExecuteUbergraph_WBP_PartyMemberCard(int32 EntryPoi
 	Parms.CallFunc_GetLocalPlayerPersistentId_PlayerId = CallFunc_GetLocalPlayerPersistentId_PlayerId;
 	Parms.CallFunc_EqualEqual_StrStr_ReturnValue = CallFunc_EqualEqual_StrStr_ReturnValue;
 	Parms.K2Node_Select_Default_2 = K2Node_Select_Default_2;
-	Parms.CallFunc_FCeil_A_ImplicitCast = CallFunc_FCeil_A_ImplicitCast;
+	Parms.CallFunc_Conv_DoubleToText_Value_ImplicitCast = CallFunc_Conv_DoubleToText_Value_ImplicitCast;
 	Parms.CallFunc_MapRangeClamped_Value_ImplicitCast = CallFunc_MapRangeClamped_Value_ImplicitCast;
 	Parms.CallFunc_Round_A_ImplicitCast = CallFunc_Round_A_ImplicitCast;
 	Parms.CallFunc_MapRangeClamped_InRangeB_ImplicitCast = CallFunc_MapRangeClamped_InRangeB_ImplicitCast;

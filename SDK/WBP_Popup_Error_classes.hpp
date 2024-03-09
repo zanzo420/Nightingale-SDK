@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xA8 (0x560 - 0x4B8)
+// 0xB8 (0x570 - 0x4B8)
 // WidgetBlueprintGeneratedClass WBP_Popup_Error.WBP_Popup_Error_C
 class UWBP_Popup_Error_C : public UNWXCommonWindowWidget
 {
@@ -22,8 +22,10 @@ public:
 	class UTextBlock*                            Txt_body;                                          // 0x4E0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                            Txt_OptionalData;                                  // 0x4E8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                            TXT_Title;                                         // 0x4F0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            Button_Clicked;                                    // 0x4F8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FErrorMessageData                     ErrorMessageData_Cached;                           // 0x508(0x58)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class UWBP_Component_Small_Flourish_Center_C* WBP_Component_Small_Flourish_Center;               // 0x4F8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Component_SoftEdge_Divider_C*     WBP_Component_SoftEdge_Divider;                    // 0x500(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            Button_Clicked;                                    // 0x508(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FErrorMessageData                     ErrorMessageData_Cached;                           // 0x518(0x58)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 	static class UClass* StaticClass();
 	static class UWBP_Popup_Error_C* GetDefaultObj();

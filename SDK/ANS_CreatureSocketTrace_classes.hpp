@@ -15,13 +15,13 @@ class UANS_CreatureSocketTrace_C : public UAnimNotifyState_AISocketTrace
 {
 public:
 	bool                                         UseOverrideData;                                   // 0x70(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8178[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2F76[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_CreatureSocketTraceData            OverrideData;                                      // 0x78(0x70)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                         UseItemMesh;                                       // 0xE8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8179[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2F77[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        SocketTraceIndex;                                  // 0xEC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseOverridePresentationData;                       // 0xF0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_817A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2F78[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 OverridePresentationData;                          // 0xF8(0x20)(Edit, BlueprintVisible)
 	double                                       StatusDuration_0;                                  // 0x118(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsBlockable;                                       // 0x120(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -40,30 +40,6 @@ class AEquippableItem* AEquippableItem::GetDefaultObj()
 }
 
 
-// Function ItemRuntime.EquippableItem.UnequipItem
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void AEquippableItem::UnequipItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("EquippableItem", "UnequipItem");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
 // Function ItemRuntime.EquippableItem.SetInvisibleState
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -492,30 +468,6 @@ class FName AEquippableItem::GetAttachSocket()
 }
 
 
-// Function ItemRuntime.EquippableItem.EquipItem
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void AEquippableItem::EquipItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("EquippableItem", "EquipItem");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
 // Function ItemRuntime.EquippableItem.ClearItemEffectsFromActor
 // (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -544,7 +496,7 @@ void AEquippableItem::ClearItemEffectsFromActor(class AActor* Actor)
 
 
 // Function ItemRuntime.EquippableItem.AddEffects
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void AEquippableItem::AddEffects()

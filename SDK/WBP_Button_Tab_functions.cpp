@@ -40,27 +40,6 @@ class UWBP_Button_Tab_C* UWBP_Button_Tab_C::GetDefaultObj()
 }
 
 
-// Function WBP_Button_Tab.WBP_Button_Tab_C.OnButtonClicked
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Button_Tab_C::OnButtonClicked(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_Button_Tab_C", "OnButtonClicked");
-
-	Params::UWBP_Button_Tab_C_OnButtonClicked_Params Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function WBP_Button_Tab.WBP_Button_Tab_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -79,13 +58,34 @@ void UWBP_Button_Tab_C::Construct()
 }
 
 
+// Function WBP_Button_Tab.WBP_Button_Tab_C.Clicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UWBP_Button_Tab_C::Clicked()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_Button_Tab_C", "Clicked");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function WBP_Button_Tab.WBP_Button_Tab_C.ExecuteUbergraph_WBP_Button_Tab
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
+// class UUserWidget*                 CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValidClass_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Button_Tab_C::ExecuteUbergraph_WBP_Button_Tab(int32 EntryPoint, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
+void UWBP_Button_Tab_C::ExecuteUbergraph_WBP_Button_Tab(int32 EntryPoint, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FSlateColor& K2Node_MakeStruct_SlateColor, class UUserWidget* CallFunc_Create_ReturnValue, bool CallFunc_IsValidClass_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -96,6 +96,9 @@ void UWBP_Button_Tab_C::ExecuteUbergraph_WBP_Button_Tab(int32 EntryPoint, FDeleg
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
+	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
+	Parms.CallFunc_IsValidClass_ReturnValue = CallFunc_IsValidClass_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

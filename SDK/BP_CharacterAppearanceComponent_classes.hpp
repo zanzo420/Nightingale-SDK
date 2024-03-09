@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x760 (0x860 - 0x100)
+// 0x750 (0x850 - 0x100)
 // BlueprintGeneratedClass BP_CharacterAppearanceComponent.BP_CharacterAppearanceComponent_C
 class UBP_CharacterAppearanceComponent_C : public UAppearanceComponent
 {
@@ -26,12 +26,12 @@ public:
 	FMulticastInlineDelegateProperty_            SelectedLoadoutChanged;                            // 0x1A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FPlayerLoadoutDataReference           DefaultInitialLoadout;                             // 0x1B0(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
 	enum class ERealmDifficulty                  SelectedDifficulty;                                // 0x1D8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9297[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_973D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FEyeAppearance                        LeftEyeOverrides;                                  // 0x1E0(0x78)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, NoDestructor)
 	struct FEyeAppearance                        RightEyeOverrides;                                 // 0x258(0x78)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, NoDestructor)
 	FMulticastInlineDelegateProperty_            EyeChanged;                                        // 0x2D0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FTeethAppearance                      TeethOverride;                                     // 0x2E0(0xC)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, NoDestructor)
-	uint8                                        Pad_9298[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_973E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            TeethChanged;                                      // 0x2F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FDataTableRowHandle                   FallbackArchetype;                                 // 0x300(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FAppearanceMorphTarget>        BodyMorphTargets;                                  // 0x310(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
@@ -46,7 +46,7 @@ public:
 	struct FEyeLashAppearance                    RightEyeLashOverrides;                             // 0x3E0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, SaveGame, NoDestructor)
 	FMulticastInlineDelegateProperty_            EyeLashChanged;                                    // 0x430(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	enum class EPlayerBackground                 PlayerBackground;                                  // 0x440(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9299[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9740[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FHairDataReference                    HairDataOverride;                                  // 0x450(0x70)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, HasGetValueTypeHash)
 	struct FHairDataReference                    FacialHairDataOverride;                            // 0x4C0(0x70)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, HasGetValueTypeHash)
 	struct FHairDataReference                    EyeBrowHairDataOverride;                           // 0x530(0x70)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, HasGetValueTypeHash)
@@ -63,7 +63,7 @@ public:
 	FMulticastInlineDelegateProperty_            MakeupDataChanged;                                 // 0x7B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            FamilyTreeChanged;                                 // 0x7C0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FFoundationAppearance                 FoundationOverride;                                // 0x7D0(0xC)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, NoDestructor)
-	uint8                                        Pad_929A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9742[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       EyeScaleOverride;                                  // 0x7E0(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            EyeScaledChanged;                                  // 0x7E8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	double                                       MottlingOverride;                                  // 0x7F8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -73,7 +73,6 @@ public:
 	double                                       LipGlossOverride;                                  // 0x828(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            LipGlossChanged;                                   // 0x830(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            FoundationChanged;                                 // 0x840(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FDataTableRowHandle                   FallbackAppearance;                                // 0x850(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UBP_CharacterAppearanceComponent_C* GetDefaultObj();
@@ -255,10 +254,9 @@ public:
 	void SetCharacterAppearance(const struct FDataTableRowHandle& AppearancePresetRow);
 	void SendAllPropertyEvents();
 	void Server_SetRealmDifficulty(enum class ERealmDifficulty NewDifficulty);
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_CharacterAppearanceComponent(int32 EntryPoint, bool CallFunc_IsEditor_ReturnValue, const struct FDataTableRowHandle& CallFunc_GetSkinColor_OutSkinColor, const struct FDataTableRowHandle& CallFunc_GetHairColor_OutHairColor, enum class ERealmDifficulty K2Node_CustomEvent_NewDifficulty, const struct FEyeAppearance& CallFunc_GetEyeData_OutValue, const struct FEyeAppearance& CallFunc_GetEyeData_OutValue_1, const struct FTeethAppearance& CallFunc_GetTeethData_OutValue, const struct FVector& CallFunc_GetEyeOffset_EyeOffset, double CallFunc_GetAgeValue_OutAgeValue, const struct FEyeLashAppearance& CallFunc_GetEyeLashData_OutValue, const struct FEyeLashAppearance& CallFunc_GetEyeLashData_OutValue_1, const struct FHairDataReference& CallFunc_GetHairData_OutData, const struct FHairDataReference& CallFunc_GetHairData_OutData_1, const struct FHairDataReference& CallFunc_GetHairData_OutData_2, const struct FDataTableRowHandle& CallFunc_GetHairColor_OutHairColor_1, const struct FDataTableRowHandle& CallFunc_GetHairColor_OutHairColor_2, const struct FVoiceSetDataReference& CallFunc_GetVoiceSetData_Data, double CallFunc_GetEyeScale_OutEyeScale, double CallFunc_GetRedness_OutRedness, TArray<struct FAppearanceMorphTarget>& CallFunc_GetBodyMorphTargets_OutCurrentMorphs, bool CallFunc_IsValidRowHandle_IsValid, bool CallFunc_Not_PreBool_ReturnValue);
+	void ExecuteUbergraph_BP_CharacterAppearanceComponent(int32 EntryPoint, TArray<struct FAppearanceMorphTarget>& CallFunc_GetBodyMorphTargets_OutCurrentMorphs, const struct FDataTableRowHandle& CallFunc_GetSkinColor_OutSkinColor, const struct FDataTableRowHandle& CallFunc_GetHairColor_OutHairColor, enum class ERealmDifficulty K2Node_CustomEvent_NewDifficulty, const struct FEyeAppearance& CallFunc_GetEyeData_OutValue, const struct FEyeAppearance& CallFunc_GetEyeData_OutValue_1, const struct FTeethAppearance& CallFunc_GetTeethData_OutValue, const struct FVector& CallFunc_GetEyeOffset_EyeOffset, double CallFunc_GetAgeValue_OutAgeValue, const struct FEyeLashAppearance& CallFunc_GetEyeLashData_OutValue, const struct FEyeLashAppearance& CallFunc_GetEyeLashData_OutValue_1, const struct FHairDataReference& CallFunc_GetHairData_OutData, const struct FHairDataReference& CallFunc_GetHairData_OutData_1, const struct FHairDataReference& CallFunc_GetHairData_OutData_2, const struct FDataTableRowHandle& CallFunc_GetHairColor_OutHairColor_1, const struct FDataTableRowHandle& CallFunc_GetHairColor_OutHairColor_2, const struct FVoiceSetDataReference& CallFunc_GetVoiceSetData_Data, double CallFunc_GetEyeScale_OutEyeScale, double CallFunc_GetRedness_OutRedness);
 	void FoundationChanged__DelegateSignature(const struct FFoundationAppearance& FoundationData);
-	void LipGlossChanged__DelegateSignature(double Lipgloss);
+	void LipGlossChanged__DelegateSignature(double LipGloss);
 	void RednessChanged__DelegateSignature(double Redness);
 	void MottlingChanged__DelegateSignature(double Mottling);
 	void EyeScaledChanged__DelegateSignature(double EyeScale);

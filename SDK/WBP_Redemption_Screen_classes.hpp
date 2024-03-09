@@ -22,7 +22,7 @@ public:
 	class UWBP_Redemption_DetailPanel_C*         WBP_Redemption_DetailPanel;                        // 0x4E0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonActivatableWidgetSwitcher*      WS_HasRedemptions;                                 // 0x4E8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URedemptionComponent*                  RedemptionComponent;                               // 0x4F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5179[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_54C4[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRedemptionEntry                      LastEntrySelected;                                 // 0x500(0x80)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();

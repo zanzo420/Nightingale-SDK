@@ -59,6 +59,7 @@ public:
 	static class UAuthServiceLibrary* GetDefaultObj();
 
 	void OnFetchSteamAuthBP__DelegateSignature(TArray<uint8>& AppTicket, struct FOnlineServiceStatus& Status);
+	void OnFetchEOSAuthBP__DelegateSignature(const class FString& IdToken, struct FOnlineServiceStatus& Status);
 	void ListDeployments(FDelegateProperty_& Complete);
 	bool IsSteamAvailable();
 	bool IsEosAvailable();
@@ -67,6 +68,7 @@ public:
 	class FString GetSteamIdBP();
 	class FString GetNetworkCompatibleChangelist();
 	void FetchSteamAuthBP(FDelegateProperty_& OnComplete);
+	void FetchEosAuthBP(class UObject* WorldContextObject, FDelegateProperty_& OnComplete);
 	void CacheAccountTokens(const class FString& AccountId, const class FString& AccessToken);
 };
 

@@ -45,38 +45,43 @@ class UBPFL_UI_TextFormatting_C* UBPFL_UI_TextFormatting_C::GetDefaultObj()
 // Parameters:
 // struct FCachedActorData            DeathSource                                                      (BlueprintVisible, BlueprintReadOnly, Parm)
 // class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText                        CauseOfDeath                                                     (Parm, OutParm)
-// TScriptInterface<class IBPI_CreatureInfo_C>K2Node_DynamicCast_AsBPI_Creature_Info                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Contains_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetCreatureName_CreatureName                            (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
+// class FString                      CauseOfDeath                                                     (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue                                      (None)
-// bool                               CallFunc_Contains_ReturnValue_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IBPI_CreatureInfo_C>K2Node_DynamicCast_AsBPI_Creature_Info                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
+// struct FS_CreatureInfo             CallFunc_GetCreatureInfo_Info                                    (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue_1                                    (None)
-// bool                               CallFunc_Contains_ReturnValue_2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
+// class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_2                                         (ReferenceParm)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_3                                         (ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue_2                                    (None)
-// class FText                        CallFunc_Format_ReturnValue_3                                    (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
+// bool                               CallFunc_Contains_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Conv_TextToString_ReturnValue_1                         (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_Contains_ReturnValue_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Contains_ReturnValue_2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_3                                         (ReferenceParm)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_4                                         (ReferenceParm)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_5                                         (ReferenceParm)
+// class FText                        CallFunc_Format_ReturnValue_3                                    (None)
 // class FText                        CallFunc_Format_ReturnValue_4                                    (None)
-// class FText                        CallFunc_Format_ReturnValue_5                                    (None)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
+// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_5                                         (ReferenceParm)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_6                                         (ReferenceParm)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_7                                         (ReferenceParm)
+// class FText                        CallFunc_Format_ReturnValue_5                                    (None)
 // class FText                        CallFunc_Format_ReturnValue_6                                    (None)
+// class FString                      CallFunc_Conv_TextToString_ReturnValue_2                         (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Conv_TextToString_ReturnValue_3                         (ZeroConstructor, HasGetValueTypeHash)
+// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_7                                         (ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue_7                                    (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_4                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_8                                         (ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue_8                                    (None)
+// class FString                      CallFunc_Conv_TextToString_ReturnValue_4                         (ZeroConstructor, HasGetValueTypeHash)
 
-void UBPFL_UI_TextFormatting_C::UI_Text_Parse_CauseOfDeath(const struct FCachedActorData& DeathSource, class UObject* __WorldContext, class FText* CauseOfDeath, TScriptInterface<class IBPI_CreatureInfo_C> K2Node_DynamicCast_AsBPI_Creature_Info, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Contains_ReturnValue, class FText CallFunc_GetCreatureName_CreatureName, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool CallFunc_Contains_ReturnValue_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1, bool CallFunc_Contains_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_3, class FText CallFunc_Format_ReturnValue_2, class FText CallFunc_Format_ReturnValue_3, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_4, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_5, class FText CallFunc_Format_ReturnValue_4, class FText CallFunc_Format_ReturnValue_5, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_6, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_7, class FText CallFunc_Format_ReturnValue_6, class FText CallFunc_Format_ReturnValue_7, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_8, class FText CallFunc_Format_ReturnValue_8)
+void UBPFL_UI_TextFormatting_C::UI_Text_Parse_CauseOfDeath(const struct FCachedActorData& DeathSource, class UObject* __WorldContext, class FString* CauseOfDeath, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, TScriptInterface<class IBPI_CreatureInfo_C> K2Node_DynamicCast_AsBPI_Creature_Info, bool K2Node_DynamicCast_bSuccess, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FS_CreatureInfo& CallFunc_GetCreatureInfo_Info, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, const class FString& CallFunc_Conv_TextToString_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, class FText CallFunc_Format_ReturnValue_2, bool CallFunc_Contains_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, bool CallFunc_Contains_ReturnValue_1, bool CallFunc_Contains_ReturnValue_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_4, class FText CallFunc_Format_ReturnValue_3, class FText CallFunc_Format_ReturnValue_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_5, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_6, class FText CallFunc_Format_ReturnValue_5, class FText CallFunc_Format_ReturnValue_6, const class FString& CallFunc_Conv_TextToString_ReturnValue_2, const class FString& CallFunc_Conv_TextToString_ReturnValue_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_7, class FText CallFunc_Format_ReturnValue_7, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_8, class FText CallFunc_Format_ReturnValue_8, const class FString& CallFunc_Conv_TextToString_ReturnValue_4)
 {
 	static class UFunction* Func = nullptr;
 
@@ -87,40 +92,45 @@ void UBPFL_UI_TextFormatting_C::UI_Text_Parse_CauseOfDeath(const struct FCachedA
 
 	Parms.DeathSource = DeathSource;
 	Parms.__WorldContext = __WorldContext;
-	Parms.K2Node_DynamicCast_AsBPI_Creature_Info = K2Node_DynamicCast_AsBPI_Creature_Info;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_Contains_ReturnValue = CallFunc_Contains_ReturnValue;
-	Parms.CallFunc_GetCreatureName_CreatureName = CallFunc_GetCreatureName_CreatureName;
-	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
-	Parms.CallFunc_Contains_ReturnValue_1 = CallFunc_Contains_ReturnValue_1;
+	Parms.K2Node_DynamicCast_AsBPI_Creature_Info = K2Node_DynamicCast_AsBPI_Creature_Info;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
+	Parms.CallFunc_GetCreatureInfo_Info = CallFunc_GetCreatureInfo_Info;
 	Parms.K2Node_MakeArray_Array_1 = K2Node_MakeArray_Array_1;
 	Parms.CallFunc_Format_ReturnValue_1 = CallFunc_Format_ReturnValue_1;
-	Parms.CallFunc_Contains_ReturnValue_2 = CallFunc_Contains_ReturnValue_2;
 	Parms.K2Node_MakeStruct_FormatArgumentData_1 = K2Node_MakeStruct_FormatArgumentData_1;
+	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
 	Parms.K2Node_MakeArray_Array_2 = K2Node_MakeArray_Array_2;
-	Parms.K2Node_MakeArray_Array_3 = K2Node_MakeArray_Array_3;
 	Parms.CallFunc_Format_ReturnValue_2 = CallFunc_Format_ReturnValue_2;
-	Parms.CallFunc_Format_ReturnValue_3 = CallFunc_Format_ReturnValue_3;
-	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
+	Parms.CallFunc_Contains_ReturnValue = CallFunc_Contains_ReturnValue;
+	Parms.CallFunc_Conv_TextToString_ReturnValue_1 = CallFunc_Conv_TextToString_ReturnValue_1;
+	Parms.CallFunc_Contains_ReturnValue_1 = CallFunc_Contains_ReturnValue_1;
+	Parms.CallFunc_Contains_ReturnValue_2 = CallFunc_Contains_ReturnValue_2;
+	Parms.K2Node_MakeArray_Array_3 = K2Node_MakeArray_Array_3;
 	Parms.K2Node_MakeArray_Array_4 = K2Node_MakeArray_Array_4;
-	Parms.K2Node_MakeArray_Array_5 = K2Node_MakeArray_Array_5;
+	Parms.CallFunc_Format_ReturnValue_3 = CallFunc_Format_ReturnValue_3;
 	Parms.CallFunc_Format_ReturnValue_4 = CallFunc_Format_ReturnValue_4;
-	Parms.CallFunc_Format_ReturnValue_5 = CallFunc_Format_ReturnValue_5;
+	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
 	Parms.K2Node_MakeStruct_FormatArgumentData_3 = K2Node_MakeStruct_FormatArgumentData_3;
+	Parms.K2Node_MakeArray_Array_5 = K2Node_MakeArray_Array_5;
 	Parms.K2Node_MakeArray_Array_6 = K2Node_MakeArray_Array_6;
-	Parms.K2Node_MakeArray_Array_7 = K2Node_MakeArray_Array_7;
+	Parms.CallFunc_Format_ReturnValue_5 = CallFunc_Format_ReturnValue_5;
 	Parms.CallFunc_Format_ReturnValue_6 = CallFunc_Format_ReturnValue_6;
+	Parms.CallFunc_Conv_TextToString_ReturnValue_2 = CallFunc_Conv_TextToString_ReturnValue_2;
+	Parms.CallFunc_Conv_TextToString_ReturnValue_3 = CallFunc_Conv_TextToString_ReturnValue_3;
+	Parms.K2Node_MakeArray_Array_7 = K2Node_MakeArray_Array_7;
 	Parms.CallFunc_Format_ReturnValue_7 = CallFunc_Format_ReturnValue_7;
 	Parms.K2Node_MakeStruct_FormatArgumentData_4 = K2Node_MakeStruct_FormatArgumentData_4;
 	Parms.K2Node_MakeArray_Array_8 = K2Node_MakeArray_Array_8;
 	Parms.CallFunc_Format_ReturnValue_8 = CallFunc_Format_ReturnValue_8;
+	Parms.CallFunc_Conv_TextToString_ReturnValue_4 = CallFunc_Conv_TextToString_ReturnValue_4;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (CauseOfDeath != nullptr)
-		*CauseOfDeath = Parms.CauseOfDeath;
+		*CauseOfDeath = std::move(Parms.CauseOfDeath);
 
 }
 

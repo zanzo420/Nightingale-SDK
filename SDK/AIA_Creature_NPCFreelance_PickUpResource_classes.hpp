@@ -14,7 +14,7 @@ namespace SDK
 class UAIA_Creature_NPCFreelance_PickUpResource_C : public UAIA_Creature_NPCFreelance_C
 {
 public:
-	uint8                                        Pad_7ED9[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1B1[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       MaxDistance;                                       // 0xC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

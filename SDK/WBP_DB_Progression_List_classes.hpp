@@ -18,7 +18,7 @@ public:
 	class UListView*                             ListView_Resources;                                // 0x348(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URichTextBlock*                        TierNumber;                                        // 0x350(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                        Tier;                                              // 0x358(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_4233[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7943[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FResourceDistributionList             DistributionList;                                  // 0x360(0x10)(Edit, BlueprintVisible, ContainsInstancedReference, ExposeOnSpawn)
 
 	static class UClass* StaticClass();

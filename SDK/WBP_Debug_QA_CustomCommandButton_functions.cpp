@@ -40,7 +40,7 @@ class UWBP_Debug_QA_CustomCommandButton_C* UWBP_Debug_QA_CustomCommandButton_C::
 }
 
 
-// Function WBP_Debug_QA_CustomCommandButton.WBP_Debug_QA_CustomCommandButton_C.executeCommand
+// Function WBP_Debug_QA_CustomCommandButton.WBP_Debug_QA_CustomCommandButton_C.ExecuteCommand
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ANWXPlayerController*        CallFunc_GetLocalPlayerController_LocalPlayerController          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -50,7 +50,7 @@ void UWBP_Debug_QA_CustomCommandButton_C::ExecuteCommand(class ANWXPlayerControl
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("WBP_Debug_QA_CustomCommandButton_C", "executeCommand");
+		Func = Class->GetFunction("WBP_Debug_QA_CustomCommandButton_C", "ExecuteCommand");
 
 	Params::UWBP_Debug_QA_CustomCommandButton_C_ExecuteCommand_Params Parms{};
 

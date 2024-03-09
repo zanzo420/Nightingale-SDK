@@ -371,7 +371,6 @@ void UGA_Crafting_Step_Activation_Base_C::Timeout()
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_bWasCancelled                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayEventData          K2Node_Event_EventData                                           (ConstParm)
 // bool                               CallFunc_GenerateStepData_Success                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_SetStepData_Success                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -384,11 +383,19 @@ void UGA_Crafting_Step_Activation_Base_C::Timeout()
 // bool                               CallFunc_InitializeAbilityFromEvent_Success                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue_1                       (NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_bWasCancelled                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetCraftForID_Success                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FS_Crafting_CraftInProgress CallFunc_GetCraftForID_CraftInProgressData                       (HasGetValueTypeHash)
 // bool                               CallFunc_NotEqual_ByteByte_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IBPI_SchematicInterfaces_C>K2Node_DynamicCast_AsBPI_Schematic_Interfaces                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UBP_StructureFuelComponent_C*CallFunc_GetFuelComponent_FuelComponent                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDrainingFuel_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Crafting_Step_Activation_Base_C::ExecuteUbergraph_GA_Crafting_Step_Activation_Base(int32 EntryPoint, bool K2Node_Event_bWasCancelled, const struct FGameplayEventData& K2Node_Event_EventData, bool CallFunc_GenerateStepData_Success, bool CallFunc_SetStepData_Success, bool CallFunc_OnActivation_Success, bool CallFunc_OnPostActivation_Success, bool CallFunc_Not_PreBool_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_K2_IsTimerActiveHandle_ReturnValue, bool CallFunc_InitializeAbilityFromEvent_Success, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, bool CallFunc_GetCraftForID_Success, const struct FS_Crafting_CraftInProgress& CallFunc_GetCraftForID_CraftInProgressData, bool CallFunc_NotEqual_ByteByte_ReturnValue)
+void UGA_Crafting_Step_Activation_Base_C::ExecuteUbergraph_GA_Crafting_Step_Activation_Base(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData, bool CallFunc_GenerateStepData_Success, bool CallFunc_SetStepData_Success, bool CallFunc_OnActivation_Success, bool CallFunc_OnPostActivation_Success, bool CallFunc_Not_PreBool_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_K2_IsTimerActiveHandle_ReturnValue, bool CallFunc_InitializeAbilityFromEvent_Success, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, bool K2Node_Event_bWasCancelled, bool CallFunc_GetCraftForID_Success, const struct FS_Crafting_CraftInProgress& CallFunc_GetCraftForID_CraftInProgressData, bool CallFunc_NotEqual_ByteByte_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue, TScriptInterface<class IBPI_SchematicInterfaces_C> K2Node_DynamicCast_AsBPI_Schematic_Interfaces, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, class UBP_StructureFuelComponent_C* CallFunc_GetFuelComponent_FuelComponent, bool CallFunc_IsDrainingFuel_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -398,7 +405,6 @@ void UGA_Crafting_Step_Activation_Base_C::ExecuteUbergraph_GA_Crafting_Step_Acti
 	Params::UGA_Crafting_Step_Activation_Base_C_ExecuteUbergraph_GA_Crafting_Step_Activation_Base_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_Event_bWasCancelled = K2Node_Event_bWasCancelled;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
 	Parms.CallFunc_GenerateStepData_Success = CallFunc_GenerateStepData_Success;
 	Parms.CallFunc_SetStepData_Success = CallFunc_SetStepData_Success;
@@ -411,9 +417,17 @@ void UGA_Crafting_Step_Activation_Base_C::ExecuteUbergraph_GA_Crafting_Step_Acti
 	Parms.CallFunc_InitializeAbilityFromEvent_Success = CallFunc_InitializeAbilityFromEvent_Success;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
 	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue_1 = CallFunc_K2_SetTimerDelegate_ReturnValue_1;
+	Parms.K2Node_Event_bWasCancelled = K2Node_Event_bWasCancelled;
 	Parms.CallFunc_GetCraftForID_Success = CallFunc_GetCraftForID_Success;
 	Parms.CallFunc_GetCraftForID_CraftInProgressData = CallFunc_GetCraftForID_CraftInProgressData;
 	Parms.CallFunc_NotEqual_ByteByte_ReturnValue = CallFunc_NotEqual_ByteByte_ReturnValue;
+	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
+	Parms.K2Node_DynamicCast_AsBPI_Schematic_Interfaces = K2Node_DynamicCast_AsBPI_Schematic_Interfaces;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_GetFuelComponent_FuelComponent = CallFunc_GetFuelComponent_FuelComponent;
+	Parms.CallFunc_IsDrainingFuel_ReturnValue = CallFunc_IsDrainingFuel_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 

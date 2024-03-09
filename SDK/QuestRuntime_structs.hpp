@@ -64,7 +64,7 @@ public:
 	struct FGuid                                 InstanceUID;                                       // 0x10(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        TaskIndex;                                         // 0x20(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShouldShowOnHUD;                                  // 0x24(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33A6[0xB];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3853[0xB];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuestAssetReference                  QuestReference;                                    // 0x30(0x70)(Transient, NativeAccessSpecifierPrivate)
 };
 
@@ -82,7 +82,7 @@ public:
 struct FQuestAcceptedData
 {
 public:
-	uint8                                        Pad_33A7[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3854[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x70 (0x70 - 0x0)
@@ -95,7 +95,7 @@ public:
 	class UConditionBehaviour*                   Condition;                                         // 0x30(0x8)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class URewardBehaviour*>              Rewards;                                           // 0x38(0x10)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                         bHasTaskCompleter;                                 // 0x48(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33A8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3855[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   TaskCompleterRow;                                  // 0x50(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FItemConstraint>               TaskCompletionTurnInItems;                         // 0x60(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
@@ -107,7 +107,7 @@ struct FQuestTask
 public:
 	struct FTask                                 Task;                                              // 0x0(0x70)(Edit, BlueprintVisible, BlueprintReadOnly, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	enum class EQuestTaskNotificationPriority    TaskNotificationPriority;                          // 0x70(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33A9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3856[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UQuestTaskPresentationDataBuilder*     PresentationDataBuilder;                           // 0x78(0x8)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -120,7 +120,7 @@ public:
 	TSubclassOf<class UQuestRewardPresentationDataBuilder> PresentationDataBuilderClass;                      // 0x8(0x8)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0xA8 (0xA8 - 0x0)
+// 0x98 (0x98 - 0x0)
 // ScriptStruct QuestRuntime.Quest
 struct FQuest
 {
@@ -128,25 +128,24 @@ public:
 	TArray<enum class EFeatureFlag>              RequiredFeatures;                                  // 0x0(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	class FText                                  QuestName;                                         // 0x10(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	class FText                                  QuestDescription;                                  // 0x28(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FString                                QuestDevID;                                        // 0x40(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class URequirement*                          Requirements;                                      // 0x50(0x8)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UConditionBehaviour*                   AutoCompleteCondition;                             // 0x58(0x8)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	enum class EQuestAutoCompleteRewardBehaviour AutoCompleteRewardBehaviour;                       // 0x60(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33AA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FDataTableRowHandle                   QuestGiverRow;                                     // 0x68(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	enum class EQuestTaskNotificationPriority    QuestStartNotificationPriority;                    // 0x78(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	enum class EQuestTaskNotificationPriority    QuestCompleteNotificationPriority;                 // 0x79(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33AB[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<struct FQuestTask>                    Tasks;                                             // 0x80(0x10)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TArray<struct FQuestReward>                  Rewards;                                           // 0x90(0x10)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	bool                                         bIsRepeatable;                                     // 0xA0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bCanBeAbandoned;                                   // 0xA1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bAutoAddedToHUD;                                   // 0xA2(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bShownOnContractBoards;                            // 0xA3(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bIsPersisting;                                     // 0xA4(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	enum class EActivityTask                     PS5ActivityToStart;                                // 0xA5(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	enum class EActivityTask                     PS5ActivityToEnd;                                  // 0xA6(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33AC[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	class URequirement*                          Requirements;                                      // 0x40(0x8)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UConditionBehaviour*                   AutoCompleteCondition;                             // 0x48(0x8)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class EQuestAutoCompleteRewardBehaviour AutoCompleteRewardBehaviour;                       // 0x50(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_3857[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FDataTableRowHandle                   QuestGiverRow;                                     // 0x58(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class EQuestTaskNotificationPriority    QuestStartNotificationPriority;                    // 0x68(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class EQuestTaskNotificationPriority    QuestCompleteNotificationPriority;                 // 0x69(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_3858[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<struct FQuestTask>                    Tasks;                                             // 0x70(0x10)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TArray<struct FQuestReward>                  Rewards;                                           // 0x80(0x10)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	bool                                         bIsRepeatable;                                     // 0x90(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bCanBeAbandoned;                                   // 0x91(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bAutoAddedToHUD;                                   // 0x92(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bShownOnContractBoards;                            // 0x93(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bIsPersisting;                                     // 0x94(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class EActivityTask                     PS5ActivityToStart;                                // 0x95(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class EActivityTask                     PS5ActivityToEnd;                                  // 0x96(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_3859[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xA0 (0xA8 - 0x8)
@@ -157,10 +156,10 @@ public:
 	struct FGameplayTag                          QuestGiverTag;                                     // 0x8(0x8)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGameplayTag                          QuestModuleTag;                                    // 0x10(0x8)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsExchange;                                       // 0x18(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33AD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_385A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UChallengeDataAsset>    GatingChallengeDataAsset;                          // 0x20(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShowOnMap;                                        // 0x48(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33AE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_385B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  QuestGiverMapName;                                 // 0x50(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FDataTableRowHandle                   DefaultMapIcon;                                    // 0x68(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDataTableRowHandle                   QuestAvailableIcon;                                // 0x78(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -173,7 +172,7 @@ public:
 struct FGetQuestsRequest
 {
 public:
-	uint8                                        Pad_33AF[0x60];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_385C[0x60];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -181,7 +180,7 @@ public:
 struct FGetQuestsResponse
 {
 public:
-	uint8                                        Pad_33B0[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_385D[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x58 (0x58 - 0x0)
@@ -225,10 +224,10 @@ public:
 	class FText                                  TaskConditionTooltip;                              // 0x18(0x18)(BlueprintVisible, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UTexture2D>             TaskConditionIconTexture;                          // 0x30(0x28)(BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShowProgressValues;                               // 0x58(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33B1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_385E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CurrentValue;                                      // 0x5C(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        TargetValue;                                       // 0x60(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33B2[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_385F[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xB0 (0xB0 - 0x0)
@@ -241,13 +240,13 @@ public:
 	class FText                                  TaskTooltip;                                       // 0x30(0x18)(BlueprintVisible, NativeAccessSpecifierPublic)
 	class FText                                  TaskGameplayDescription;                           // 0x48(0x18)(BlueprintVisible, NativeAccessSpecifierPublic)
 	enum class EQuestTaskCompletionRequirements  TaskCompletionRequirements;                        // 0x60(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33B3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3860[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             TaskIconTexture;                                   // 0x68(0x28)(BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShowProgressValues;                               // 0x90(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33B4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3861[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CurrentValue;                                      // 0x94(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        TargetValue;                                       // 0x98(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33B5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3862[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FQuestTaskConditionPresentationData> TaskConditionPresentationData;                     // 0xA0(0x10)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 
@@ -257,7 +256,7 @@ struct FQuestRewardPresentationData
 {
 public:
 	int32                                        RewardQuantity;                                    // 0x0(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33B6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3863[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  RewardName;                                        // 0x8(0x18)(BlueprintVisible, NativeAccessSpecifierPublic)
 	class FText                                  ToolTipText;                                       // 0x20(0x18)(BlueprintVisible, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UTexture2D>             RewardPreviewIconTexture;                          // 0x38(0x28)(BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -273,7 +272,7 @@ public:
 	TArray<struct FQuestRewardPresentationData>  Rewards;                                           // 0x30(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                         bCanBeAbandoned;                                   // 0x40(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAutoTrackedOnHUD;                                 // 0x41(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33B7[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3864[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x78 (0x80 - 0x8)
@@ -322,7 +321,7 @@ public:
 	struct FQuestGiverKey                        QuestGiverKey;                                     // 0x0(0x10)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAvailableQuests;                                  // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bTasksToComplete;                                  // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33B8[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3865[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

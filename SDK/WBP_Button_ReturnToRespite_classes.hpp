@@ -14,7 +14,7 @@ namespace SDK
 class UWBP_Button_ReturnToRespite_C : public UWBP_Common_Button_Base_C
 {
 public:
-	uint8                                        Pad_8CF6[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8F3B[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1698(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	FMulticastInlineDelegateProperty_            ConfirmationPopup;                                 // 0x16A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UWBP_Popup_General_C*                  RespiteWindow;                                     // 0x16B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)

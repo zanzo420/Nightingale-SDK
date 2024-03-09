@@ -44,7 +44,7 @@ struct UWBP_RadioButton_C_OnButtonToggled__DelegateSignature_Params
 {
 public:
 	bool                                         IsToggled;                                         // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7082[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_74BF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_RadioButton_C*                    Widget;                                            // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 

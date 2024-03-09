@@ -102,32 +102,24 @@ void UWBP_ChallengeDetailPane_C::OnExecuteCategoryOperation(bool LIsValidReward,
 // Parameters:
 // int32                              LTotal                                                           (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              LCount                                                           (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
 // class UWBP_ChallengeDetailPane_ConditionEntry_C*CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue                                      (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int64                              CallFunc_Conv_IntToInt64_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                              CallFunc_Conv_IntToInt64_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                              CallFunc_Conv_IntToInt64_ReturnValue_2                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue_1                                    (None)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPanelSlot*                  CallFunc_AddChild_ReturnValue                                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_2                                         (ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_2                                    (None)
-// int64                              CallFunc_Conv_IntToInt64_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_3                                         (ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_3                                    (None)
-// int64                              CallFunc_Conv_IntToInt64_ReturnValue_2                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_4                           (HasGetValueTypeHash)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_4                                         (ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_4                                    (None)
 // class FText                        Temp_text_Variable                                               (ConstParm)
+// class UPanelSlot*                  CallFunc_AddChild_ReturnValue                                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ChallengeDetailPane_C::InitializeDesignerPreview(int32 LTotal, int32 LCount, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class UWBP_ChallengeDetailPane_ConditionEntry_C* CallFunc_Create_ReturnValue, class FText CallFunc_Format_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, int32 Temp_int_Variable, int64 CallFunc_Conv_IntToInt64_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, bool CallFunc_LessEqual_IntInt_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, class FText CallFunc_Format_ReturnValue_2, int64 CallFunc_Conv_IntToInt64_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_3, class FText CallFunc_Format_ReturnValue_3, int64 CallFunc_Conv_IntToInt64_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_4, class FText CallFunc_Format_ReturnValue_4, class FText Temp_text_Variable)
+void UWBP_ChallengeDetailPane_C::InitializeDesignerPreview(int32 LTotal, int32 LCount, class UWBP_ChallengeDetailPane_ConditionEntry_C* CallFunc_Create_ReturnValue, int32 Temp_int_Variable, int64 CallFunc_Conv_IntToInt64_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool CallFunc_LessEqual_IntInt_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int64 CallFunc_Conv_IntToInt64_ReturnValue_1, int64 CallFunc_Conv_IntToInt64_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1, class FText Temp_text_Variable, class UPanelSlot* CallFunc_AddChild_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -138,30 +130,22 @@ void UWBP_ChallengeDetailPane_C::InitializeDesignerPreview(int32 LTotal, int32 L
 
 	Parms.LTotal = LTotal;
 	Parms.LCount = LCount;
-	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
-	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
-	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.CallFunc_Conv_IntToInt64_ReturnValue = CallFunc_Conv_IntToInt64_ReturnValue;
-	Parms.K2Node_MakeStruct_FormatArgumentData_1 = K2Node_MakeStruct_FormatArgumentData_1;
+	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.CallFunc_LessEqual_IntInt_ReturnValue = CallFunc_LessEqual_IntInt_ReturnValue;
+	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
+	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.CallFunc_Conv_IntToInt64_ReturnValue_1 = CallFunc_Conv_IntToInt64_ReturnValue_1;
+	Parms.CallFunc_Conv_IntToInt64_ReturnValue_2 = CallFunc_Conv_IntToInt64_ReturnValue_2;
+	Parms.K2Node_MakeStruct_FormatArgumentData_1 = K2Node_MakeStruct_FormatArgumentData_1;
+	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
 	Parms.K2Node_MakeArray_Array_1 = K2Node_MakeArray_Array_1;
 	Parms.CallFunc_Format_ReturnValue_1 = CallFunc_Format_ReturnValue_1;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_AddChild_ReturnValue = CallFunc_AddChild_ReturnValue;
-	Parms.K2Node_MakeArray_Array_2 = K2Node_MakeArray_Array_2;
-	Parms.CallFunc_Format_ReturnValue_2 = CallFunc_Format_ReturnValue_2;
-	Parms.CallFunc_Conv_IntToInt64_ReturnValue_1 = CallFunc_Conv_IntToInt64_ReturnValue_1;
-	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
-	Parms.K2Node_MakeStruct_FormatArgumentData_3 = K2Node_MakeStruct_FormatArgumentData_3;
-	Parms.K2Node_MakeArray_Array_3 = K2Node_MakeArray_Array_3;
-	Parms.CallFunc_Format_ReturnValue_3 = CallFunc_Format_ReturnValue_3;
-	Parms.CallFunc_Conv_IntToInt64_ReturnValue_2 = CallFunc_Conv_IntToInt64_ReturnValue_2;
-	Parms.K2Node_MakeStruct_FormatArgumentData_4 = K2Node_MakeStruct_FormatArgumentData_4;
-	Parms.K2Node_MakeArray_Array_4 = K2Node_MakeArray_Array_4;
-	Parms.CallFunc_Format_ReturnValue_4 = CallFunc_Format_ReturnValue_4;
 	Parms.Temp_text_Variable = Temp_text_Variable;
+	Parms.CallFunc_AddChild_ReturnValue = CallFunc_AddChild_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -190,28 +174,21 @@ void UWBP_ChallengeDetailPane_C::ResetCosmetics()
 // (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<class UObject*>             LRewards                                                         (Edit, BlueprintVisible)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FUIGroupInfo                CallFunc_GetGroupInfo_ReturnValue                                (ConstParm)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ReferenceParm)
 // TArray<class URewardBehaviour*>    CallFunc_GetRewards_ReturnValue                                  (ConstParm, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
+// class FText                        CallFunc_GetDescription_ReturnValue                              (None)
 // class URewardBehaviour*            CallFunc_Array_Get_Item                                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class IChallengeRewardPresentation>CallFunc_GetChallengeRewardPresentationForReward_Presentation    (ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 // bool                               CallFunc_GetChallengeRewardPresentationForReward_ReturnValue     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     CallFunc_Conv_InterfaceToObject_ReturnValue                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetDescription_ReturnValue                              (None)
 // class FText                        CallFunc_GetTitle_ReturnValue                                    (None)
 // int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ChallengeDetailPane_C::UpdateCosmetics(const TArray<class UObject*>& LRewards, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, int32 Temp_int_Array_Index_Variable, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FUIGroupInfo& CallFunc_GetGroupInfo_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, TArray<class URewardBehaviour*>& CallFunc_GetRewards_ReturnValue, class FText CallFunc_Format_ReturnValue_1, class URewardBehaviour* CallFunc_Array_Get_Item, TScriptInterface<class IChallengeRewardPresentation> CallFunc_GetChallengeRewardPresentationForReward_Presentation, bool CallFunc_GetChallengeRewardPresentationForReward_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class FText CallFunc_GetDescription_ReturnValue, class FText CallFunc_GetTitle_ReturnValue, int32 CallFunc_Array_Add_ReturnValue)
+void UWBP_ChallengeDetailPane_C::UpdateCosmetics(const TArray<class UObject*>& LRewards, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class URewardBehaviour*>& CallFunc_GetRewards_ReturnValue, class FText CallFunc_GetDescription_ReturnValue, class URewardBehaviour* CallFunc_Array_Get_Item, TScriptInterface<class IChallengeRewardPresentation> CallFunc_GetChallengeRewardPresentationForReward_Presentation, bool CallFunc_GetChallengeRewardPresentationForReward_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class FText CallFunc_GetTitle_ReturnValue, int32 CallFunc_Array_Add_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -221,24 +198,17 @@ void UWBP_ChallengeDetailPane_C::UpdateCosmetics(const TArray<class UObject*>& L
 	Params::UWBP_ChallengeDetailPane_C_UpdateCosmetics_Params Parms{};
 
 	Parms.LRewards = LRewards;
-	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
-	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_GetGroupInfo_ReturnValue = CallFunc_GetGroupInfo_ReturnValue;
-	Parms.K2Node_MakeStruct_FormatArgumentData_1 = K2Node_MakeStruct_FormatArgumentData_1;
-	Parms.K2Node_MakeArray_Array_1 = K2Node_MakeArray_Array_1;
 	Parms.CallFunc_GetRewards_ReturnValue = CallFunc_GetRewards_ReturnValue;
-	Parms.CallFunc_Format_ReturnValue_1 = CallFunc_Format_ReturnValue_1;
+	Parms.CallFunc_GetDescription_ReturnValue = CallFunc_GetDescription_ReturnValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_GetChallengeRewardPresentationForReward_Presentation = CallFunc_GetChallengeRewardPresentationForReward_Presentation;
 	Parms.CallFunc_GetChallengeRewardPresentationForReward_ReturnValue = CallFunc_GetChallengeRewardPresentationForReward_ReturnValue;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Conv_InterfaceToObject_ReturnValue = CallFunc_Conv_InterfaceToObject_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
-	Parms.CallFunc_GetDescription_ReturnValue = CallFunc_GetDescription_ReturnValue;
 	Parms.CallFunc_GetTitle_ReturnValue = CallFunc_GetTitle_ReturnValue;
 	Parms.CallFunc_Array_Add_ReturnValue = CallFunc_Array_Add_ReturnValue;
 
@@ -289,12 +259,12 @@ void UWBP_ChallengeDetailPane_C::OnChallengeUpdated(struct FExperienceStateID& C
 // class UWBP_ChallengeDetailPane_ConditionEntry_C*CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPanelSlot*                  CallFunc_AddChild_ReturnValue                                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Map_Find_Value                                          (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
+// class UPanelSlot*                  CallFunc_AddChild_ReturnValue                                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ChallengeDetailPane_C::UpdateConditionEntries(TMap<class FString, class FString> StringMap, TArray<class FString>& CallFunc_Map_Keys_Keys, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Array_Length_ReturnValue, const class FString& CallFunc_Array_Get_Item, class FText CallFunc_Conv_StringToText_ReturnValue, int32 Temp_int_Loop_Counter_Variable, class UWBP_ChallengeDetailPane_ConditionEntry_C* CallFunc_Create_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, const class FString& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1)
+void UWBP_ChallengeDetailPane_C::UpdateConditionEntries(TMap<class FString, class FString> StringMap, TArray<class FString>& CallFunc_Map_Keys_Keys, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Array_Length_ReturnValue, const class FString& CallFunc_Array_Get_Item, class FText CallFunc_Conv_StringToText_ReturnValue, int32 Temp_int_Loop_Counter_Variable, class UWBP_ChallengeDetailPane_ConditionEntry_C* CallFunc_Create_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const class FString& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1, class UPanelSlot* CallFunc_AddChild_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -313,10 +283,10 @@ void UWBP_ChallengeDetailPane_C::UpdateConditionEntries(TMap<class FString, clas
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_AddChild_ReturnValue = CallFunc_AddChild_ReturnValue;
 	Parms.CallFunc_Map_Find_Value = CallFunc_Map_Find_Value;
 	Parms.CallFunc_Map_Find_ReturnValue = CallFunc_Map_Find_ReturnValue;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_1 = CallFunc_Conv_StringToText_ReturnValue_1;
+	Parms.CallFunc_AddChild_ReturnValue = CallFunc_AddChild_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

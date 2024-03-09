@@ -124,6 +124,48 @@ void UWBP_ShopRewardEntry_C::BndEvt__WBP_ShopRewardEntry_CBU_RewardButton_K2Node
 }
 
 
+// Function WBP_ShopRewardEntry.WBP_ShopRewardEntry_C.BndEvt__WBP_ShopRewardEntry_CBU_RewardButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ShopRewardEntry_C::BndEvt__WBP_ShopRewardEntry_CBU_RewardButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_ShopRewardEntry_C", "BndEvt__WBP_ShopRewardEntry_CBU_RewardButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::UWBP_ShopRewardEntry_C_BndEvt__WBP_ShopRewardEntry_CBU_RewardButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature_Params Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function WBP_ShopRewardEntry.WBP_ShopRewardEntry_C.BndEvt__WBP_ShopRewardEntry_CBU_RewardButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ShopRewardEntry_C::BndEvt__WBP_ShopRewardEntry_CBU_RewardButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_ShopRewardEntry_C", "BndEvt__WBP_ShopRewardEntry_CBU_RewardButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::UWBP_ShopRewardEntry_C_BndEvt__WBP_ShopRewardEntry_CBU_RewardButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature_Params Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_ShopRewardEntry.WBP_ShopRewardEntry_C.ExecuteUbergraph_WBP_ShopRewardEntry
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -132,8 +174,10 @@ void UWBP_ShopRewardEntry_C::BndEvt__WBP_ShopRewardEntry_CBU_RewardButton_K2Node
 // class FText                        CallFunc_GetItemLabel_ReturnValue                                (None)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_2                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ShopRewardEntry_C::ExecuteUbergraph_WBP_ShopRewardEntry(int32 EntryPoint, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, class FText CallFunc_GetItemLabel_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1)
+void UWBP_ShopRewardEntry_C::ExecuteUbergraph_WBP_ShopRewardEntry(int32 EntryPoint, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, class FText CallFunc_GetItemLabel_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_2, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -147,6 +191,8 @@ void UWBP_ShopRewardEntry_C::ExecuteUbergraph_WBP_ShopRewardEntry(int32 EntryPoi
 	Parms.CallFunc_GetItemLabel_ReturnValue = CallFunc_GetItemLabel_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
+	Parms.K2Node_ComponentBoundEvent_Button_2 = K2Node_ComponentBoundEvent_Button_2;
+	Parms.K2Node_ComponentBoundEvent_Button_1 = K2Node_ComponentBoundEvent_Button_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -9,14 +9,14 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x20 (0x1668 - 0x1648)
+// 0x20 (0x1638 - 0x1618)
 // BlueprintGeneratedClass BP_CreatureSpawner_Wildlife.BP_CreatureSpawner_Wildlife_C
 class ABP_CreatureSpawner_Wildlife_C : public ABP_CreatureSpawnerBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1648(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	TArray<class AActor*>                        PerceivedTargets;                                  // 0x1650(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	struct FTimerHandle                          FearValidationTimer;                               // 0x1660(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1618(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	TArray<class AActor*>                        PerceivedTargets;                                  // 0x1620(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FTimerHandle                          FearValidationTimer;                               // 0x1630(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_CreatureSpawner_Wildlife_C* GetDefaultObj();

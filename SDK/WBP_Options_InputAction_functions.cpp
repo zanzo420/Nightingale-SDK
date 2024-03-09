@@ -185,9 +185,8 @@ void UWBP_Options_InputAction_C::IsMappingInitialized(const struct FPlayerKeyMap
 // struct FPlayerKeyMapping           NewMapping                                                       (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // bool                               CallFunc_IsMappingGamepad_IsGamepad                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsMappingInitialized_IsValid                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Options_InputAction_C::AddMapping(const struct FPlayerKeyMapping& NewMapping, bool CallFunc_IsMappingGamepad_IsGamepad, bool CallFunc_IsMappingInitialized_IsValid, bool CallFunc_Not_PreBool_ReturnValue)
+void UWBP_Options_InputAction_C::AddMapping(const struct FPlayerKeyMapping& NewMapping, bool CallFunc_IsMappingGamepad_IsGamepad, bool CallFunc_IsMappingInitialized_IsValid)
 {
 	static class UFunction* Func = nullptr;
 
@@ -199,7 +198,6 @@ void UWBP_Options_InputAction_C::AddMapping(const struct FPlayerKeyMapping& NewM
 	Parms.NewMapping = NewMapping;
 	Parms.CallFunc_IsMappingGamepad_IsGamepad = CallFunc_IsMappingGamepad_IsGamepad;
 	Parms.CallFunc_IsMappingInitialized_IsValid = CallFunc_IsMappingInitialized_IsValid;
-	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -80,7 +80,7 @@ struct FStreamlineFeatureRequirements
 public:
 	enum class EUStreamlineFeatureSupport        Support;                                           // 0x0(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EUStreamlineFeatureRequirementsFlags Requirements;                                      // 0x1(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3D26[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3D05[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStreamlineVersion                    RequiredOperatingSystemVersion;                    // 0x4(0xC)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FStreamlineVersion                    DetectedOperatingSystemVersion;                    // 0x10(0xC)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FStreamlineVersion                    RequiredDriverVersion;                             // 0x1C(0xC)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)

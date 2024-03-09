@@ -25,11 +25,11 @@ public:
 class UPersistentDataComponent : public UDelayedRegistrationComponent
 {
 public:
-	uint8                                        Pad_2F04[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33A6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Namespace;                                         // 0xC0(0x10)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TSubclassOf<class UPersistentDataComponent>  StopAtClass;                                       // 0xD0(0x8)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UPersistentDataHelper*                 PersistentDataHelper;                              // 0xD8(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnTemplate, Transient, InstancedReference, NoDestructor, Protected, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_2F05[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_33A7[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPersistentDataComponent* GetDefaultObj();
@@ -41,15 +41,15 @@ public:
 class UPersistentDataHelper : public UObject
 {
 public:
-	uint8                                        Pad_2F07[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33A8[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bUseProfileV3;                                     // 0x30(0x1)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIncludeParentProperties;                          // 0x31(0x1)(Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F08[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33A9[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class FName>                            PersistentPropertyNames;                           // 0x38(0x50)(Edit, DisableEditOnTemplate, NativeAccessSpecifierPublic)
 	class FString                                Namespace;                                         // 0x88(0x10)(Edit, ZeroConstructor, DisableEditOnTemplate, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F09[0x68];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33AA[0x68];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bInitialized;                                      // 0x100(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2F0A[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_33AB[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPersistentDataHelper* GetDefaultObj();

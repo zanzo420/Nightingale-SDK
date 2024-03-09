@@ -14,11 +14,11 @@ namespace SDK
 class UGC_Impact_Shared_C : public UGC_Impact_Base_C
 {
 public:
-	uint8                                        Pad_6547[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_61D3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 PlayerFriendlyTags;                                // 0x48(0x20)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	class UWeaponBlockSwitchDataAsset*           WeaponBlockData;                                   // 0x68(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         ShouldOverrideImpactDirection;                     // 0x70(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6548[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_61D4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        VFXFocusRankThreshold;                             // 0x74(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

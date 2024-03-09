@@ -40,27 +40,41 @@ class UBP_LoadoutComponent_C* UBP_LoadoutComponent_C::GetDefaultObj()
 }
 
 
-// Function BP_LoadoutComponent.BP_LoadoutComponent_C.UnequipItem
+// Function BP_LoadoutComponent.BP_LoadoutComponent_C.UnEquipItem
 // (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // enum class ELoadoutSlotType        SlotType                                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AEquippableItem*             Item                                                             (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+// class ABP_EquippableItemBase_C*    Item                                                             (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FLoadoutSlot                CallFunc_GetSlotByType_ReturnValue                               (None)
+// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABP_EquippableItemBase_C*    K2Node_DynamicCast_AsBP_Equippable_Item_Base                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetAttachParentActor_ReturnValue                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_UndoLoadout_Success                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_LoadoutComponent_C::UnequipItem(enum class ELoadoutSlotType SlotType, class AEquippableItem* Item, const struct FLoadoutSlot& CallFunc_GetSlotByType_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void UBP_LoadoutComponent_C::UnEquipItem(enum class ELoadoutSlotType SlotType, class ABP_EquippableItemBase_C* Item, class AActor* CallFunc_GetOwner_ReturnValue, const struct FLoadoutSlot& CallFunc_GetSlotByType_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, class ABP_EquippableItemBase_C* K2Node_DynamicCast_AsBP_Equippable_Item_Base, bool K2Node_DynamicCast_bSuccess, class AActor* CallFunc_GetAttachParentActor_ReturnValue, bool CallFunc_UndoLoadout_Success, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_LoadoutComponent_C", "UnequipItem");
+		Func = Class->GetFunction("BP_LoadoutComponent_C", "UnEquipItem");
 
-	Params::UBP_LoadoutComponent_C_UnequipItem_Params Parms{};
+	Params::UBP_LoadoutComponent_C_UnEquipItem_Params Parms{};
 
 	Parms.SlotType = SlotType;
 	Parms.Item = Item;
+	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
 	Parms.CallFunc_GetSlotByType_ReturnValue = CallFunc_GetSlotByType_ReturnValue;
+	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
+	Parms.K2Node_DynamicCast_AsBP_Equippable_Item_Base = K2Node_DynamicCast_AsBP_Equippable_Item_Base;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_GetAttachParentActor_ReturnValue = CallFunc_GetAttachParentActor_ReturnValue;
+	Parms.CallFunc_UndoLoadout_Success = CallFunc_UndoLoadout_Success;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -72,13 +86,15 @@ void UBP_LoadoutComponent_C::UnequipItem(enum class ELoadoutSlotType SlotType, c
 // Parameters:
 // enum class ELoadoutSlotType        SlotType                                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AEquippableItem*             Item                                                             (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+// class ABP_EquippableItemBase_C*    Item                                                             (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FLoadoutSlot                CallFunc_GetSlotByType_ReturnValue                               (None)
 // bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABP_EquippableItemBase_C*    K2Node_DynamicCast_AsBP_Equippable_Item_Base                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool UBP_LoadoutComponent_C::EquipItem(enum class ELoadoutSlotType SlotType, class AEquippableItem* Item, class AActor* CallFunc_GetOwner_ReturnValue, const struct FLoadoutSlot& CallFunc_GetSlotByType_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+bool UBP_LoadoutComponent_C::EquipItem(enum class ELoadoutSlotType SlotType, class ABP_EquippableItemBase_C* Item, class AActor* CallFunc_GetOwner_ReturnValue, const struct FLoadoutSlot& CallFunc_GetSlotByType_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, class ABP_EquippableItemBase_C* K2Node_DynamicCast_AsBP_Equippable_Item_Base, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -92,6 +108,8 @@ bool UBP_LoadoutComponent_C::EquipItem(enum class ELoadoutSlotType SlotType, cla
 	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
 	Parms.CallFunc_GetSlotByType_ReturnValue = CallFunc_GetSlotByType_ReturnValue;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
+	Parms.K2Node_DynamicCast_AsBP_Equippable_Item_Base = K2Node_DynamicCast_AsBP_Equippable_Item_Base;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);

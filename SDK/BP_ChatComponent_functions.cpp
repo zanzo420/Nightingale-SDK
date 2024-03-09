@@ -1324,7 +1324,7 @@ void UBP_ChatComponent_C::GetCommandName(const class FString& CommandString, boo
 }
 
 
-// Function BP_ChatComponent.BP_ChatComponent_C.executeCommand
+// Function BP_ChatComponent.BP_ChatComponent_C.ExecuteCommand
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FText                        Text                                                             (BlueprintVisible, BlueprintReadOnly, Parm)
@@ -1348,7 +1348,7 @@ void UBP_ChatComponent_C::ExecuteCommand(class FText Text, class FName LocalComm
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_ChatComponent_C", "executeCommand");
+		Func = Class->GetFunction("BP_ChatComponent_C", "ExecuteCommand");
 
 	Params::UBP_ChatComponent_C_ExecuteCommand_Params Parms{};
 

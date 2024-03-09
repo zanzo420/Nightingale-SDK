@@ -17,7 +17,7 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xF8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	TArray<class FString>                        VisitedRealmIDs;                                   // 0x100(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
 	int32                                        MaxLength;                                         // 0x110(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6B99[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_672C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGameplayTagContainer>         VisitedRealmTags;                                  // 0x118(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
 	class FString                                RespiteRealmID;                                    // 0x128(0x10)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 RespiteRealmTags;                                  // 0x138(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -27,7 +27,7 @@ public:
 	TArray<struct FS_Persisted_RealmVisitedInfo> VisitedRealmInfo;                                  // 0x190(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
 	TArray<class FString>                        RecentlyPlayedWith;                                // 0x1A0(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame, RepNotify)
 	int32                                        MaxRecentPlayersListLength;                        // 0x1B0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6B9A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_672F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            RecentlyPlayedWithUpdate;                          // 0x1B8(0x10)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();

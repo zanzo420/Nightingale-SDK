@@ -21,10 +21,10 @@ public:
 	struct FGameplayTagContainer                 HarvestAbilityTag;                                 // 0xD0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FBlackboardKeySelector                Target;                                            // 0xF0(0x28)(Edit, BlueprintVisible)
 	int32                                        ModifiedIndex;                                     // 0x118(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9D95[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9DFB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_NWXActor_C*                        ResourceNode;                                      // 0x120(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FS_ResourceNode_ModifiedInstance      ModifiedInstance;                                  // 0x128(0x24)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9D96[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9DFC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FIIMInstance                          Instance;                                          // 0x150(0x170)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class ABP_ResourceNode_IIM_C*                LNode;                                             // 0x2C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        LIndex;                                            // 0x2C8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

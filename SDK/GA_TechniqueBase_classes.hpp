@@ -17,12 +17,12 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x420(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	TSoftObjectPtr<class UTechniqueDataAsset>    TechniqueRow;                                      // 0x428(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FGameplayTag                          RightHandItemSlot;                                 // 0x450(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5B5E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_309[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    ItemId;                                            // 0x460(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UClass*                                PhysicalImpactEffect;                              // 0x4E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTechnique                            TechniqueStruct;                                   // 0x4E8(0x168)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         AutoRemoveDurability;                              // 0x650(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5B5F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_30A[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_EquippableItemBase_C*              EquippedItem;                                      // 0x658(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class ANWXPlayerCharacter*                   OwningCharacter;                                   // 0x660(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          OppositeHandTag;                                   // 0x668(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

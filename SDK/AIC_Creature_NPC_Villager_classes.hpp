@@ -15,10 +15,10 @@ class AAIC_Creature_NPC_Villager_C : public AAIC_Creature_NPC_C
 {
 public:
 	class ABP_ResourceNodeIIMBase_C*             HarvestResourceNode;                               // 0x670(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7DDF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3FD7[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            HarvestResourceTransform;                          // 0x680(0x60)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        HarvestResourceIndex;                              // 0x6E0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7DE0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3FD8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXActor*                             GhostStructureActor;                               // 0x6E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               EncounterPortalLocation;                           // 0x6F0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               EncounterVillageLocation;                          // 0x708(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

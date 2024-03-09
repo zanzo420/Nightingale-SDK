@@ -65,15 +65,11 @@ class UWidget* UWBP_GuideBook_ListPanel_Header_C::BP_GetDesiredFocusTarget()
 // Function WBP_GuideBook_ListPanel_Header.WBP_GuideBook_ListPanel_Header_C.UpdateKnownEntryCounter
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TScriptInterface<class IChallengeSystemObservable>LChallengeSystem                                                 (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              LTotalKnown                                                      (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UBP_GuideBookComponent_C*    CallFunc_GetLocalPlayerGuideBookComponent_GuideBook              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTag                CallFunc_GetActiveCategory_ReturnValue                           (ConstParm, NoDestructor, HasGetValueTypeHash)
-// bool                               GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int64                              CallFunc_Conv_IntToInt64_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
@@ -88,7 +84,7 @@ class UWidget* UWBP_GuideBook_ListPanel_Header_C::BP_GetDesiredFocusTarget()
 // enum class EEntryProgressionStates CallFunc_GetState_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GuideBook_ListPanel_Header_C::UpdateKnownEntryCounter(TScriptInterface<class IChallengeSystemObservable> LChallengeSystem, int32 LTotalKnown, int32 Temp_int_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class UBP_GuideBookComponent_C* CallFunc_GetLocalPlayerGuideBookComponent_GuideBook, const struct FGameplayTag& CallFunc_GetActiveCategory_ReturnValue, bool GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess, int64 CallFunc_Conv_IntToInt64_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, int64 CallFunc_Conv_IntToInt64_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, int32 CallFunc_Add_IntInt_ReturnValue_1, class FText CallFunc_Format_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, class UNWXMenuDataEntry* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, enum class EEntryProgressionStates CallFunc_GetState_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
+void UWBP_GuideBook_ListPanel_Header_C::UpdateKnownEntryCounter(int32 LTotalKnown, int32 Temp_int_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int64 CallFunc_Conv_IntToInt64_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, int64 CallFunc_Conv_IntToInt64_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, int32 CallFunc_Add_IntInt_ReturnValue_1, class FText CallFunc_Format_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, class UNWXMenuDataEntry* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, enum class EEntryProgressionStates CallFunc_GetState_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -97,15 +93,11 @@ void UWBP_GuideBook_ListPanel_Header_C::UpdateKnownEntryCounter(TScriptInterface
 
 	Params::UWBP_GuideBook_ListPanel_Header_C_UpdateKnownEntryCounter_Params Parms{};
 
-	Parms.LChallengeSystem = LChallengeSystem;
 	Parms.LTotalKnown = LTotalKnown;
 	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.CallFunc_GetLocalPlayerGuideBookComponent_GuideBook = CallFunc_GetLocalPlayerGuideBookComponent_GuideBook;
-	Parms.CallFunc_GetActiveCategory_ReturnValue = CallFunc_GetActiveCategory_ReturnValue;
-	Parms.GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess = GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess;
 	Parms.CallFunc_Conv_IntToInt64_ReturnValue = CallFunc_Conv_IntToInt64_ReturnValue;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;

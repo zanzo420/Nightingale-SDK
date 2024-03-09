@@ -20,7 +20,7 @@ struct UVoipWrapperSubsystem_OnMuteStatusChanged_Params
 public:
 	class FString                                UniquePlayerId;                                    // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMuteAction                       MuteAction;                                        // 0x10(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3EFA[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3EC4[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

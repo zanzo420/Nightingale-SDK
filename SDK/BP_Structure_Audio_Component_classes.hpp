@@ -17,7 +17,7 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xF0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	double                                       MaxDistanceCheck;                                  // 0xF8(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        LargeCompositePieceThreshold;                      // 0x100(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_933A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_83CE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UStructureCompositePiece*>      CompletedStructures;                               // 0x108(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	struct FTimerHandle                          BulkCompletionTimer;                               // 0x118(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                 Temp_LastPawnToAddResouces;                        // 0x120(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -25,7 +25,7 @@ public:
 	TArray<int32>                                DestroyedPieceIds;                                 // 0x178(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FTimerHandle                          BulkDestructionTimer;                              // 0x188(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         Destruction_By_Local_Player;                       // 0x190(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_933B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_83CF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<int32>                                Tracked_Completed_Piece_Ids;                       // 0x198(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<int32>                                Tracked_Placed_Piece_Ids;                          // 0x1A8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UBP_CraftingStationComponent_C*        CachedCraftingStationComponent;                    // 0x1B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)

@@ -9,32 +9,32 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x168 (0x17B0 - 0x1648)
+// 0x168 (0x1780 - 0x1618)
 // BlueprintGeneratedClass BP_CreatureSpawner_NPCGroup.BP_CreatureSpawner_NPCGroup_C
 class ABP_CreatureSpawner_NPCGroup_C : public ABP_CreatureSpawnerBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1648(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAIPerceptionStimuliSourceComponent*   AIPerceptionStimuliSource;                         // 0x1650(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FS_NPCClassNPC>                NPCClasses;                                        // 0x1658(0x10)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FString                                OwningPlayerName;                                  // 0x1668(0x10)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
-	TArray<class AActor*>                        ResourceCacheList;                                 // 0x1678(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class AActor*>                        GhostStructureList;                                // 0x1688(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	struct FVector                               EscortDestination;                                 // 0x1698(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               EscortSource;                                      // 0x16B0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UDialogue*                             AmbientDialog;                                     // 0x16C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                         PlayerEmployees;                                   // 0x16D0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_7EFB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       StructureRadius;                                   // 0x16D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                 AllStructureDesireTags;                            // 0x16E0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TSet<class UObject*>                         RegisteredStructures;                              // 0x1700(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                 ActiveStructureDesireTags;                         // 0x1750(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
-	FMulticastInlineDelegateProperty_            StructureDesireTagsChanged;                        // 0x1770(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                         DestroyWhenAllCreaturesDestroyed;                  // 0x1780(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7EFC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<struct FDataTableRowHandle>           NPCDataHandles;                                    // 0x1788(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTag                          RequiredNPCTag;                                    // 0x1798(0x8)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	TArray<class AActor*>                        AllCaches;                                         // 0x17A0(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1618(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAIPerceptionStimuliSourceComponent*   AIPerceptionStimuliSource;                         // 0x1620(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FS_NPCClassNPC>                NPCClasses;                                        // 0x1628(0x10)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FString                                OwningPlayerName;                                  // 0x1638(0x10)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
+	TArray<class AActor*>                        ResourceCacheList;                                 // 0x1648(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class AActor*>                        GhostStructureList;                                // 0x1658(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FVector                               EscortDestination;                                 // 0x1668(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               EscortSource;                                      // 0x1680(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UDialogue*                             AmbientDialog;                                     // 0x1698(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                         PlayerEmployees;                                   // 0x16A0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                        Pad_8324[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       StructureRadius;                                   // 0x16A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                 AllStructureDesireTags;                            // 0x16B0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TSet<class UObject*>                         RegisteredStructures;                              // 0x16D0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                 ActiveStructureDesireTags;                         // 0x1720(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
+	FMulticastInlineDelegateProperty_            StructureDesireTagsChanged;                        // 0x1740(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                         DestroyWhenAllCreaturesDestroyed;                  // 0x1750(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_8326[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<struct FDataTableRowHandle>           NPCDataHandles;                                    // 0x1758(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTag                          RequiredNPCTag;                                    // 0x1768(0x8)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	TArray<class AActor*>                        AllCaches;                                         // 0x1770(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 
 	static class UClass* StaticClass();
 	static class ABP_CreatureSpawner_NPCGroup_C* GetDefaultObj();

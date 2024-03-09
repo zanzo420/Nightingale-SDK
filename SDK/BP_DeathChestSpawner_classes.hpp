@@ -19,7 +19,7 @@ public:
 	class USceneComponent*                       DefaultSceneRoot;                                  // 0x2B0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IItemContainer>       Container;                                         // 0x2B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TArray<struct FInventoryEntry>               InventoryEntriesToTransfer;                        // 0x2C8(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ExposeOnSpawn)
-	uint8                                        Pad_6259[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1016[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureAssetReference              DeathChest;                                        // 0x2E0(0x80)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	class UObject*                               SpawnedStructure;                                  // 0x360(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 

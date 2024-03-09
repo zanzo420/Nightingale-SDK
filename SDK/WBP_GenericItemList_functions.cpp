@@ -74,12 +74,11 @@ class UWidget* UWBP_GenericItemList_C::BP_GetDesiredFocusTarget(class UWidget* C
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FText                        Temp_text_Variable                                               (ConstParm)
-// uint8                              CallFunc_MakeLiteralByte_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWBP_BasicText_OneLine_C*    CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UVerticalBoxSlot*            CallFunc_AddChildToVerticalBox_ReturnValue                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GenericItemList_C::DisplayEmptyListText(class FText Temp_text_Variable, uint8 CallFunc_MakeLiteralByte_ReturnValue, class UWBP_BasicText_OneLine_C* CallFunc_Create_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue)
+void UWBP_GenericItemList_C::DisplayEmptyListText(class FText Temp_text_Variable, class UWBP_BasicText_OneLine_C* CallFunc_Create_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -89,7 +88,6 @@ void UWBP_GenericItemList_C::DisplayEmptyListText(class FText Temp_text_Variable
 	Params::UWBP_GenericItemList_C_DisplayEmptyListText_Params Parms{};
 
 	Parms.Temp_text_Variable = Temp_text_Variable;
-	Parms.CallFunc_MakeLiteralByte_ReturnValue = CallFunc_MakeLiteralByte_ReturnValue;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
 	Parms.K2Node_MakeStruct_Margin = K2Node_MakeStruct_Margin;
 	Parms.CallFunc_AddChildToVerticalBox_ReturnValue = CallFunc_AddChildToVerticalBox_ReturnValue;
@@ -190,6 +188,24 @@ void UWBP_GenericItemList_C::Construct()
 }
 
 
+// Function WBP_GenericItemList.WBP_GenericItemList_C.BndEvt__WBP_Crafting_IngredientList_bu_close_K2Node_ComponentBoundEvent_1_BU_Click__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+
+void UWBP_GenericItemList_C::BndEvt__WBP_Crafting_IngredientList_bu_close_K2Node_ComponentBoundEvent_1_BU_Click__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_GenericItemList_C", "BndEvt__WBP_Crafting_IngredientList_bu_close_K2Node_ComponentBoundEvent_1_BU_Click__DelegateSignature");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function WBP_GenericItemList.WBP_GenericItemList_C.OnRemovedFromFocusPath
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -211,35 +227,13 @@ void UWBP_GenericItemList_C::OnRemovedFromFocusPath(const struct FFocusEvent& In
 }
 
 
-// Function WBP_GenericItemList.WBP_GenericItemList_C.BndEvt__WBP_GenericItemList_CBU_Close_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GenericItemList_C::BndEvt__WBP_GenericItemList_CBU_Close_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_GenericItemList_C", "BndEvt__WBP_GenericItemList_CBU_Close_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::UWBP_GenericItemList_C_BndEvt__WBP_GenericItemList_CBU_Close_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature_Params Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function WBP_GenericItemList.WBP_GenericItemList_C.ExecuteUbergraph_WBP_GenericItemList
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // struct FFocusEvent                 K2Node_Event_InFocusEvent                                        (NoDestructor)
 
-void UWBP_GenericItemList_C::ExecuteUbergraph_WBP_GenericItemList(int32 EntryPoint, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, const struct FFocusEvent& K2Node_Event_InFocusEvent)
+void UWBP_GenericItemList_C::ExecuteUbergraph_WBP_GenericItemList(int32 EntryPoint, const struct FFocusEvent& K2Node_Event_InFocusEvent)
 {
 	static class UFunction* Func = nullptr;
 
@@ -249,7 +243,6 @@ void UWBP_GenericItemList_C::ExecuteUbergraph_WBP_GenericItemList(int32 EntryPoi
 	Params::UWBP_GenericItemList_C_ExecuteUbergraph_WBP_GenericItemList_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
 	Parms.K2Node_Event_InFocusEvent = K2Node_Event_InFocusEvent;
 
 	UObject::ProcessEvent(Func, &Parms);

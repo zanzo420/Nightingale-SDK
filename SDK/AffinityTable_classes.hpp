@@ -18,7 +18,7 @@ public:
 	TArray<class UScriptStruct*>                 Structures;                                        // 0x38(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FGameplayTag>                  RowTags;                                           // 0x48(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FGameplayTag>                  ColumnTags;                                        // 0x58(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_35A9[0x1B0];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_38C1[0x1B0];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAffinityTable* GetDefaultObj();

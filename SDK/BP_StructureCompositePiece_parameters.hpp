@@ -60,16 +60,16 @@ struct UBP_StructureCompositePiece_C_TraceForGroundSupport_Params
 public:
 	bool                                         bIncludeBasePotential;                             // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         OutIsIntersectingGround;                           // 0x1(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_82DA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26BA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FHitResult>                    OutResults;                                        // 0x8(0x10)(Parm, OutParm, ContainsInstancedReference)
 	TArray<struct FHitResult>                    Temp_struct_Variable;                              // 0x18(0x10)(ReferenceParm, ContainsInstancedReference)
 	bool                                         Temp_bool_Variable;                                // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_82DB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26BB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               CallFunc_GetSupportInterfaceObject_ReturnValue;    // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class ISupportInterface>    K2Node_DynamicCast_AsSupport_Interface;            // 0x38(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_TraceForGroundSupport_OutIsIntersectingGround; // 0x49(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_82DC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26BC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FHitResult>                    CallFunc_TraceForGroundSupport_OutResults;         // 0x50(0x10)(ReferenceParm, ContainsInstancedReference)
 };
 
@@ -80,7 +80,7 @@ struct UBP_StructureCompositePiece_C_TryDestroyIfUnsupported_Params
 public:
 	class AActor*                                DeconstructionSource;                              // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         ReturnValue;                                       // 0x8(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_82DE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26C0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               CallFunc_GetSupportInterfaceObject_ReturnValue;    // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class ISupportInterface>    K2Node_DynamicCast_AsSupport_Interface;            // 0x18(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -120,7 +120,7 @@ struct UBP_StructureCompositePiece_C_GetBuildRadiusInformation_Params
 {
 public:
 	float                                        OutRadius;                                         // 0x0(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_82E7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26CD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               OutOrigin;                                         // 0x8(0x18)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -131,7 +131,7 @@ struct UBP_StructureCompositePiece_C_GetDisplayNameText_Params
 public:
 	class FText                                  ReturnValue;                                       // 0x0(0x18)(Parm, OutParm, ReturnParm)
 	bool                                         CallFunc_GetUIData_IsValid;                        // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_82EC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26D4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureUIData                      CallFunc_GetUIData_OutUIData;                      // 0x20(0x78)(None)
 };
 
@@ -162,7 +162,7 @@ public:
 	TArray<struct FStructureResourceRequirements> ReturnValue;                                       // 0x0(0x10)(Parm, OutParm, ReturnParm, ContainsInstancedReference)
 	class ABP_Structure_Composite_C*             CallFunc_GetBPStructureComposite_AsBP_Structure_Composite; // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_82FC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26E1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class ISchematicInfoInterface> CallFunc_GetTotalResourceRequirements_self_CastInput; // 0x20(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FStructureResourceRequirements> CallFunc_GetTotalResourceRequirements_ReturnValue; // 0x30(0x10)(ReferenceParm, ContainsInstancedReference)
 };
@@ -173,7 +173,7 @@ struct UBP_StructureCompositePiece_C_StructureHasAddedResources_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8300[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26E2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_StructureResourcesObject_C*        CallFunc_GetResourcesInfoObject_OutComponent;      // 0x8(0x8)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_StructureHasAddedResources_HasAddedResources; // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -193,7 +193,7 @@ struct UBP_StructureCompositePiece_C_GetWorldTransform_Params
 public:
 	struct FTransform                            ReturnValue;                                       // 0x0(0x60)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBP_CompositePieceMeshInstance_C*      CallFunc_GetBPMeshInstance_MeshInstance;           // 0x60(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8304[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26E3[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            CallFunc_GetRootTransform_ReturnValue;             // 0x70(0x60)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -221,7 +221,7 @@ struct UBP_StructureCompositePiece_C_GetReachableNavTransform_Params
 public:
 	class APawn*                                 Pawn;                                              // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x8(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_830D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26E4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            ReachableNavTransform;                             // 0x10(0x60)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               Structure;                                         // 0x70(0x8)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
@@ -242,9 +242,9 @@ struct UBP_StructureCompositePiece_C_GetRangedAttackLocation_Params
 public:
 	class UObject*                               QueryingActor;                                     // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	enum class Enum_AttackLocationType           AttackLocationType;                                // 0x8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_831A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26E5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Location;                                          // 0x10(0x18)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_831B[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26E6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            CallFunc_GetStructureWorldTransform_ReturnValue;   // 0x30(0x60)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               CallFunc_BreakTransform_Location;                  // 0x90(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              CallFunc_BreakTransform_Rotation;                  // 0xA8(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -290,7 +290,7 @@ struct UBP_StructureCompositePiece_C_GetRedirectedTarget_Params
 {
 public:
 	bool                                         ShouldRedirect;                                    // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8320[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26E7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                RedirectedTarget;                                  // 0x8(0x8)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -320,7 +320,7 @@ struct UBP_StructureCompositePiece_C_GetSnapType_Params
 {
 public:
 	enum class ESnapType                         SnapPointType;                                     // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8329[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26E8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCompositePieceSnapObject*             CallFunc_GetSnapComponent_SnapObject;              // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	enum class ESnapType                         CallFunc_GetSnapType_ReturnValue;                  // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -360,7 +360,7 @@ public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FInteractionData                      InteractionData;                                   // 0x8(0x178)(BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 	bool                                         bIsDisabled;                                       // 0x180(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8331[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26E9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                DisabledText;                                      // 0x188(0x10)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 };
 
@@ -402,7 +402,7 @@ public:
 	class ANWXPlayerController*                  CallFunc_GetLocalPlayerController_LocalPlayerController; // 0x188(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x190(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_CanInteractWithStructure_CanInteract;     // 0x198(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_833E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26EA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_CanInteractWithStructure_InteractionMessage; // 0x1A0(0x18)(None)
 	class FString                                CallFunc_Conv_TextToString_ReturnValue;            // 0x1B8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 };
@@ -415,10 +415,10 @@ public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FInteractionData                      InteractionData;                                   // 0x8(0x178)(BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 	bool                                         InteractAvailable;                                 // 0x180(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8346[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26EB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x188(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_CanInteractWithStructure_CanInteract;     // 0x190(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8347[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26EC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_CanInteractWithStructure_InteractionMessage; // 0x198(0x18)(None)
 };
 
@@ -432,7 +432,7 @@ public:
 	TArray<class USkeletalMeshComponent*>        SkeletalMesh_to_Highlight;                         // 0x188(0x10)(Parm, OutParm, ContainsInstancedReference)
 	bool                                         Hostile_;                                          // 0x198(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EItemQuality                      Quality;                                           // 0x199(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_834F[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26ED[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_CompositePieceMeshInstance_C*      CallFunc_GetBPMeshInstance_MeshInstance;           // 0x1A0(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<class UStaticMeshComponent*>          CallFunc_GetMeshes_OutMeshes;                      // 0x1A8(0x10)(ReferenceParm, ContainsInstancedReference)
 };
@@ -468,13 +468,13 @@ struct UBP_StructureCompositePiece_C_ExecuteDeconstructStructure_Params
 {
 public:
 	enum class EDeconstructionResourceReturn     ResourceReturn;                                    // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8350[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26EE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                DeconstructionSource;                              // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x10(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8351[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26EF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AStructureComposite*                   OwningStructure;                                   // 0x18(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ExecuteDestroyStructure_Success;          // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8352[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26F0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_DamageObject_CompositePiece_C*     CallFunc_GetDamageObject_DamageObject;             // 0x28(0x8)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsServer_ReturnValue;                     // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -486,7 +486,7 @@ struct UBP_StructureCompositePiece_C_ExecuteDestroyStructure_Params
 public:
 	class AActor*                                DestructionSource;                                 // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x8(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8356[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26F1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_DamageObject_CompositePiece_C*     CallFunc_GetDamageObject_DamageObject;             // 0x10(0x8)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_DestroyStructure_bSuccess;                // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -527,12 +527,12 @@ public:
 	class AController*                           Controller;                                        // 0x28(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FStructurePlacementFeedback           FeedbackData;                                      // 0x30(0xB8)(Parm, OutParm, ContainsInstancedReference)
 	bool                                         ReturnValue;                                       // 0xE8(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8359[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26F2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStructurePlacerObject*                PlacerObject;                                      // 0xF0(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UStructurePlacerObject*                CallFunc_GetStructurePlacerObject_ReturnValue;     // 0xF8(0x8)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsServer_ReturnValue;                     // 0x100(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_OwnerHasAuthority_ReturnValue;            // 0x101(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_835A[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26F3[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructurePlacementFeedback           CallFunc_SetPlacementFeedback_ReturnValue;         // 0x108(0xB8)(ContainsInstancedReference)
 };
 
@@ -567,11 +567,11 @@ struct UBP_StructureCompositePiece_C_FinalizePlacement_Params
 {
 public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8363[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26F4[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSnapPlacementTargetData              SnapData;                                          // 0x10(0xA0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class FString                                Message;                                           // 0xB0(0x10)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                         ReturnValue;                                       // 0xC0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8364[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26F5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStructurePlacerObject*                CallFunc_GetStructurePlacerObject_ReturnValue;     // 0xC8(0x8)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FinalizePlacement_ReturnValue;            // 0xD0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -584,10 +584,10 @@ public:
 	class APawn*                                 PlacingCharacter;                                  // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         ReturnValue;                                       // 0x8(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EStructureState                   CallFunc_SetStructureSchematicState_ReturnValue;   // 0x9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_836A[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26F6[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_Structure_Composite_C*             CallFunc_GetBPStructureComposite_AsBP_Structure_Composite; // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_836B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26F7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IStructureStateInterface> CallFunc_SetStructureSchematicState_self_CastInput; // 0x20(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EStructureState                   CallFunc_SetStructureSchematicState_ReturnValue_1; // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -665,12 +665,12 @@ public:
 	struct FStructurePlacementFeedback           CallFunc_GetValidPlacementFeedbackData_ReturnValue; // 0x8(0xB8)(ContainsInstancedReference)
 	enum class EStructureState                   CallFunc_GetSchematicState_ReturnValue;            // 0xC0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0xC1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_836F[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26FB[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetFunctionName_ReturnValue;              // 0xC8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class UStructurePlacerObject*                CallFunc_GetStructurePlacerObject_ReturnValue;     // 0xD8(0x8)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IStructureResourceRequirementsInterface> CallFunc_GetResourceRequirementsForCurrentState_ReturnValue; // 0xE0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAnyAddedResources_ReturnValue;         // 0xF0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8370[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26FC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_CompositePieceMeshInstance_C*      CallFunc_GetBPMeshInstance_MeshInstance;           // 0xF8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x100(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -684,7 +684,7 @@ public:
 	enum class EStructureState                   CallFunc_GetSchematicState_ReturnValue;            // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EStructureState                   CallFunc_GetSchematicState_ReturnValue_1;          // 0x9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0xA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8372[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26FD[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_CompositePieceMeshInstance_C*      CallFunc_GetBPMeshInstance_MeshInstance;           // 0x10(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UBP_CompositePieceMeshInstance_C*      CallFunc_GetBPMeshInstance_MeshInstance_1;         // 0x18(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FString                                CallFunc_GetFunctionName_ReturnValue;              // 0x20(0x10)(ZeroConstructor, HasGetValueTypeHash)
@@ -708,7 +708,7 @@ struct UBP_StructureCompositePiece_C_RefreshOverlappingPawns_Params
 public:
 	class FString                                CurrentFunctionName;                               // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	bool                                         OverlappingNPCOrCharacter;                         // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8374[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2702[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                LCurrentHitActor;                                  // 0x18(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                   LCurrentMesh;                                      // 0x20(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          CallFunc_RefreshIsStructureCompletionBlocked_ReturnValue; // 0x28(0x8)(NoDestructor, HasGetValueTypeHash)
@@ -728,7 +728,7 @@ public:
 	class AStructureComposite*                   CallFunc_GetCompositeStructure_Composite;          // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	enum class EStructureState                   CallFunc_GetSchematicState_ReturnValue;            // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8377[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2703[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureDestructionData             CallFunc_MakeStructureDestructionData_DestructionData; // 0x40(0x120)(None)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x160(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsServer_ReturnValue;                     // 0x161(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -741,7 +741,7 @@ struct UBP_StructureCompositePiece_C_On_Owner_Composite_State_Changed_Params
 {
 public:
 	enum class EStructureState                   StructureState;                                    // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8378[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2704[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStructureStateObject*                 CallFunc_GetStateObject_ReturnValue;               // 0x8(0x8)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EStructureState                   CallFunc_SetStructureSchematicState_ReturnValue;   // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -768,13 +768,13 @@ public:
 	double                                       CurrentHealthPercentage;                           // 0x10(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EStructureState                   CallFunc_GetSchematicState_ReturnValue;            // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_837A[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2705[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_837B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2706[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetCurrentHealth_ReturnValue;             // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetMaxHealth_ReturnValue;                 // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_837C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2707[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x38(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBP_CompositePieceMeshInstance_C*      CallFunc_GetBPMeshInstance_MeshInstance;           // 0x40(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_VariableSet_CurrentHealth_ImplicitCast;     // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -787,7 +787,7 @@ struct UBP_StructureCompositePiece_C_ToggleMeshVisibility_Params
 {
 public:
 	bool                                         IsVisible;                                         // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_837F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2708[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_CompositePieceMeshInstance_C*      CallFunc_GetBPMeshInstance_MeshInstance;           // 0x8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -798,7 +798,7 @@ struct UBP_StructureCompositePiece_C_OnCompleteState_Params
 {
 public:
 	bool                                         Success;                                           // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8380[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2709[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AStructureComposite*                   CallFunc_GetOwnerStructureComposite_ReturnValue;   // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FCompositePieceGameplay               CallFunc_GetPieceData_OutPieceData;                // 0x10(0x140)(None)
 	class ABP_StructureComposite_Base_C*         K2Node_DynamicCast_AsBP_Structure_Composite_Base;  // 0x150(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -849,7 +849,7 @@ public:
 	class FString                                CallFunc_GetFunctionName_ReturnValue_1;            // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class UCompositePieceInstance*               CallFunc_GetMeshInstance_ReturnValue;              // 0x28(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8387[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_270A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_CompositePieceMeshInstance_C*      K2Node_DynamicCast_AsBP_Composite_Piece_Mesh_Instance; // 0x38(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -862,7 +862,7 @@ public:
 	class ABP_Structure_Composite_C*             AsBP_Structure_Composite;                          // 0x0(0x8)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AStructureComposite*                   CallFunc_GetOwnerStructureComposite_ReturnValue;   // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_838F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_270B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_Structure_Composite_C*             K2Node_DynamicCast_AsBP_Structure_Composite;       // 0x18(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1161,7 +1161,7 @@ struct UBP_StructureCompositePiece_C_K2_OnDamageReceived_Params
 {
 public:
 	float                                        Damage;                                            // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83B4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_270C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                Target;                                            // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                Source;                                            // 0x10(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 EffectTags;                                        // 0x18(0x20)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
@@ -1191,7 +1191,7 @@ struct UBP_StructureCompositePiece_C_ExecuteUbergraph_BP_StructureCompositePiece
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83C2[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_270D[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCompositePieceGameplay               CallFunc_GetPieceData_OutPieceData;                // 0x10(0x140)(None)
 	FDelegateProperty_                           K2Node_Event_SupportingObjectsChangedDelegate_1;   // 0x150(0x10)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FStructureSupportObjectData           K2Node_Event_SupportedObject_1;                    // 0x160(0x10)(ConstParm, NoDestructor)
@@ -1221,7 +1221,7 @@ public:
 	float                                        K2Node_Event_Delta_4;                              // 0x218(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_Event_Delta_3;                              // 0x21C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_Event_Delta_2;                              // 0x220(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83C3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_270E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AController*                           K2Node_Event_Controller_1;                         // 0x228(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                           K2Node_Event_Controller;                           // 0x230(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_Event_Delta_1;                              // 0x238(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1230,7 +1230,7 @@ public:
 	class ABP_Structure_Composite_C*             CallFunc_GetBPStructureComposite_AsBP_Structure_Composite; // 0x268(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x270(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_Event_Damage;                               // 0x280(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83C4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_270F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                K2Node_Event_Target;                               // 0x288(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                K2Node_Event_Source;                               // 0x290(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 K2Node_Event_EffectTags;                           // 0x298(0x20)(ConstParm)
@@ -1243,38 +1243,38 @@ public:
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x3D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_OwnerHasAuthority_ReturnValue;            // 0x3D1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsServer_ReturnValue;                     // 0x3D2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83C5[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2710[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          K2Node_Event_GameplayTag;                          // 0x3D4(0x8)(NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsServer_ReturnValue_1;                   // 0x3DC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_OwnerHasAuthority_ReturnValue_1;          // 0x3DD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83C6[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2711[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AStructureComposite*                   CallFunc_GetCompositeStructure_Composite;          // 0x3E0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_Structure_Composite_C*             CallFunc_GetBPStructureComposite_AsBP_Structure_Composite_3; // 0x3E8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class ISchematicInfoInterface> K2Node_DynamicCast_AsSchematic_Info_Interface;     // 0x3F0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x400(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83C7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2712[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UActorComponent*                       CallFunc_GetAudioComponent_ReturnValue;            // 0x408(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetIsVisible_Client_IsVisible;            // 0x410(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EStructureState                   CallFunc_GetSchematicState_ReturnValue;            // 0x411(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EStructureState                   CallFunc_SetStructureSchematicState_ReturnValue;   // 0x412(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83C8[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2713[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_1;            // 0x414(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83C9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2714[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UActorComponent*                       Temp_object_Variable;                              // 0x428(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_OwnerHasAuthority_ReturnValue_2;          // 0x430(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83CA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2715[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_Structure_Audio_Component_C*       K2Node_DynamicCast_AsBP_Structure_Audio_Component; // 0x438(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_1;                     // 0x440(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83CB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2716[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_Structure_Composite_C*             CallFunc_GetBPStructureComposite_AsBP_Structure_Composite_4; // 0x448(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x450(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83CC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2717[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStructureEventsObject*                CallFunc_GetStructureEventsObject_ReturnValue;     // 0x458(0x8)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_OwnerHasAuthority_ReturnValue_3;          // 0x460(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83CD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2718[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStructureEventsObject*                CallFunc_GetStructureEventsObject_ReturnValue_1;   // 0x468(0x8)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_OwnerHasAuthority_ReturnValue_4;          // 0x470(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_83CE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2719[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_OnStructureDamageReceived_Damage_ImplicitCast; // 0x478(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 

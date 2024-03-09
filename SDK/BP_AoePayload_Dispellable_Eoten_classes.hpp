@@ -17,13 +17,13 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x708(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class ABP_Creature_Wildlife_Eoten_C*         Eoten;                                             // 0x710(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                        LBrambleInt;                                       // 0x718(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_576F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9DBD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Telltime;                                          // 0x720(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_CreatureCreatedObstacle_Bramble_C* WallObject;                                        // 0x728(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilitySpecDef               BrambleAbility;                                    // 0x730(0x98)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FTimerHandle                          TellHandle;                                        // 0x7C8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        TellInt;                                           // 0x7D0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5770[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9DBE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_Creature_Wildlife_Eoten_Apex_C*    ElderEoten;                                        // 0x7D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

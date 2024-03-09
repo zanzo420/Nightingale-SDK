@@ -14,7 +14,7 @@ namespace SDK
 class UBP_CreatureComponent_UI_NPC_C : public UBP_CreatureComponent_UI_C
 {
 public:
-	uint8                                        Pad_9D3F[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_37F8[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xC0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class ABP_Creature_NPC_C*                    NPC;                                               // 0xC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UBP_DialogueComponent_C*               DialogComponent;                                   // 0xD0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)

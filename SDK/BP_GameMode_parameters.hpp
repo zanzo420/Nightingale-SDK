@@ -65,12 +65,12 @@ struct ABP_GameMode_C_ExecuteUbergraph_BP_GameMode_Params
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x4(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6986[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5D30[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDelegateHandleBPWrapper              CallFunc_AwaitGameModeBPTimed_Handle;              // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class APlayerController*                     K2Node_Event_NewPlayer;                            // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ANWXGameModeBase*                      K2Node_CustomEvent_GameMode;                       // 0x28(0x8)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_bIsReady;                       // 0x30(0x1)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6987[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5D31[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_SimulationStateManager_C*          CallFunc_GetManager_ReturnValue;                   // 0x38(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                           K2Node_Event_ExitingController;                    // 0x40(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };

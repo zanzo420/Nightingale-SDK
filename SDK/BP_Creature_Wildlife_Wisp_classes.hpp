@@ -9,66 +9,65 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x246 (0x1860 - 0x161A)
+// 0x23E (0x1820 - 0x15E2)
 // BlueprintGeneratedClass BP_Creature_Wildlife_Wisp.BP_Creature_Wildlife_Wisp_C
 class ABP_Creature_Wildlife_Wisp_C : public ABP_Creature_Wildlife_C
 {
 public:
-	uint8                                        Pad_6A89[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1620(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAVFXFocusComponent*                   AVFXFocus;                                         // 0x1628(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_AudioFocusMixingComponent_C*       BP_AudioFocusMixingComponent;                      // 0x1630(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     WispDeath;                                         // 0x1638(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Body;                                           // 0x1640(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                  Wisplight;                                         // 0x1648(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     WispEffect1;                                       // 0x1650(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_GlintComponent_C*                  BP_GlintComponent;                                 // 0x1658(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Head;                                           // 0x1660(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_Creature_Audio_Looping_C*          BP_Creature_Audio_Looping;                         // 0x1668(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_HarvestComponent_C*                BP_HarvestComponent;                               // 0x1670(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                      AttackCollision;                                   // 0x1678(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                        AttackTimeline_AttackLerp_41C3E5F340D0FB67252CF496939E4FD8; // 0x1680(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETimelineDirection                AttackTimeline__Direction_41C3E5F340D0FB67252CF496939E4FD8; // 0x1684(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6A8C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UTimelineComponent*                    AttackTimeline;                                    // 0x1688(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                        YRotation_YRotationRate_55997D804A71F37E909382B21EF72373; // 0x1690(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETimelineDirection                YRotation__Direction_55997D804A71F37E909382B21EF72373; // 0x1694(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6A8F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UTimelineComponent*                    YRotation;                                         // 0x1698(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                        ZRotation_ZRotationRate_2DBDC26C46515878674D479E52309D3E; // 0x16A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETimelineDirection                ZRotation__Direction_2DBDC26C46515878674D479E52309D3E; // 0x16A4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6A90[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UTimelineComponent*                    ZRotation;                                         // 0x16A8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                        XRotation_XRotationRate_583CC7C647C0438F391AA18FFDE52898; // 0x16B0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETimelineDirection                XRotation__Direction_583CC7C647C0438F391AA18FFDE52898; // 0x16B4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6A92[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UTimelineComponent*                    XRotation;                                         // 0x16B8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                        Timeline_Wisp_LightSize_AE1F035C4A4BA87E149FB5860D82BE1B; // 0x16C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETimelineDirection                Timeline_Wisp__Direction_AE1F035C4A4BA87E149FB5860D82BE1B; // 0x16C4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6A93[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UTimelineComponent*                    Timeline_Wisp;                                     // 0x16C8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                Summoner;                                          // 0x16D0(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
-	class ABP_IIMManager_C*                      CurrentIIMManager;                                 // 0x16D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               SummonerLocation;                                  // 0x16E0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               WispOffsetDistance;                                // 0x16F8(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       XRotationRate;                                     // 0x1710(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       ZRotationRate;                                     // 0x1718(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       YRotationRate;                                     // 0x1720(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       XUpdateRate;                                       // 0x1728(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       YUpdateRate;                                       // 0x1730(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6A95[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FTransform                            MoveTransform;                                     // 0x1740(0x60)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         Attacking;                                         // 0x17A0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6A96[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          LLightColor;                                       // 0x17A4(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          NatureBase;                                        // 0x17B4(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          NatureEmissive;                                    // 0x17C4(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          AttackBaseColor;                                   // 0x17D4(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          AttackEmissiveColor;                               // 0x17E4(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          AttackLightColor;                                  // 0x17F4(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6A98[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TMap<class AActor*, struct FActiveGameplayEffectHandle> ActiveLightEffects;                                // 0x1808(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class ABP_TimeOfDayManager_C*                TimeOfDayManager;                                  // 0x1858(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_99AA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x15E8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAVFXFocusComponent*                   AVFXFocus;                                         // 0x15F0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_AudioFocusMixingComponent_C*       BP_AudioFocusMixingComponent;                      // 0x15F8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     WispDeath;                                         // 0x1600(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Body;                                           // 0x1608(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                  Wisplight;                                         // 0x1610(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     WispEffect1;                                       // 0x1618(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_GlintComponent_C*                  BP_GlintComponent;                                 // 0x1620(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Head;                                           // 0x1628(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_Creature_Audio_Looping_C*          BP_Creature_Audio_Looping;                         // 0x1630(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_HarvestComponent_C*                BP_HarvestComponent;                               // 0x1638(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                      AttackCollision;                                   // 0x1640(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                        AttackTimeline_AttackLerp_41C3E5F340D0FB67252CF496939E4FD8; // 0x1648(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ETimelineDirection                AttackTimeline__Direction_41C3E5F340D0FB67252CF496939E4FD8; // 0x164C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_99AB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UTimelineComponent*                    AttackTimeline;                                    // 0x1650(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                        YRotation_YRotationRate_55997D804A71F37E909382B21EF72373; // 0x1658(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ETimelineDirection                YRotation__Direction_55997D804A71F37E909382B21EF72373; // 0x165C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_99AC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UTimelineComponent*                    YRotation;                                         // 0x1660(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                        ZRotation_ZRotationRate_2DBDC26C46515878674D479E52309D3E; // 0x1668(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ETimelineDirection                ZRotation__Direction_2DBDC26C46515878674D479E52309D3E; // 0x166C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_99AD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UTimelineComponent*                    ZRotation;                                         // 0x1670(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                        XRotation_XRotationRate_583CC7C647C0438F391AA18FFDE52898; // 0x1678(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ETimelineDirection                XRotation__Direction_583CC7C647C0438F391AA18FFDE52898; // 0x167C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_99AE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UTimelineComponent*                    XRotation;                                         // 0x1680(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                        Timeline_Wisp_LightSize_AE1F035C4A4BA87E149FB5860D82BE1B; // 0x1688(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ETimelineDirection                Timeline_Wisp__Direction_AE1F035C4A4BA87E149FB5860D82BE1B; // 0x168C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_99AF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UTimelineComponent*                    Timeline_Wisp;                                     // 0x1690(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                Summoner;                                          // 0x1698(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
+	class ABP_IIMManager_C*                      CurrentIIMManager;                                 // 0x16A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               SummonerLocation;                                  // 0x16A8(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               WispOffsetDistance;                                // 0x16C0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       XRotationRate;                                     // 0x16D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       ZRotationRate;                                     // 0x16E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       YRotationRate;                                     // 0x16E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       XUpdateRate;                                       // 0x16F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       YUpdateRate;                                       // 0x16F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                            MoveTransform;                                     // 0x1700(0x60)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Attacking;                                         // 0x1760(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_99B0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          LLightColor;                                       // 0x1764(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          NatureBase;                                        // 0x1774(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          NatureEmissive;                                    // 0x1784(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          AttackBaseColor;                                   // 0x1794(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          AttackEmissiveColor;                               // 0x17A4(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          AttackLightColor;                                  // 0x17B4(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_99B1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TMap<class AActor*, struct FActiveGameplayEffectHandle> ActiveLightEffects;                                // 0x17C8(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	class ABP_TimeOfDayManager_C*                TimeOfDayManager;                                  // 0x1818(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_Creature_Wildlife_Wisp_C* GetDefaultObj();

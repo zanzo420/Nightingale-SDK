@@ -22,7 +22,7 @@ public:
 	struct FGuid                                 PlacementAbilityId;                                // 0x450(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          DefaultMontageAction;                              // 0x460(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FSoftObjectPath                       PlacementObjectPath;                               // 0x468(0x20)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	uint8                                        Pad_A2D8[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A144[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureAssetReference              PlacementStructureRef;                             // 0x490(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UObject*                               BuildingObject;                                    // 0x510(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityPayloadHandle         DummyPayload;                                      // 0x518(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)

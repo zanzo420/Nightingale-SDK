@@ -26,10 +26,10 @@ public:
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x40(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EEncounterRewardType              CallFunc_Array_Get_Item;                           // 0x44(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_945D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DE1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FConditionalReward>            CallFunc_GenerateConditionalRewards_ReturnValue;   // 0x48(0x10)(ReferenceParm, ContainsInstancedReference)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_945E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DE2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x5C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -44,7 +44,7 @@ public:
 	TArray<struct FConditionalReward>            LOCAL_ConditionalRewards;                          // 0x38(0x10)(Edit, BlueprintVisible, ContainsInstancedReference)
 	TArray<class UConditionalRewardSet*>         L_CurrentRealmConditionalRewards;                  // 0x48(0x10)(Edit, BlueprintVisible)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9467[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DE3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<enum class EEncounterRewardType>      CallFunc_GetRewardTypesFrom_RealmTags_EncounterRewardType; // 0x60(0x10)(ReferenceParm)
 	TArray<struct FConditionalReward>            CallFunc_GenerateConditionalRewardsFromRewardTypes_PresentationData; // 0x70(0x10)(ReferenceParm, ContainsInstancedReference)
 	TArray<struct FNWXClusterCollectionPresentationData> CallFunc_GetClusterCollectionPresentationDataListFromConditionalRewards_ClusterCollectionPresentationDataList; // 0x80(0x10)(ReferenceParm)
@@ -63,19 +63,19 @@ public:
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_946F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DE4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x44(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x48(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable_1;                   // 0x4C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FConditionalReward                    CallFunc_Array_Get_Item;                           // 0x50(0x18)(NoDestructor, ContainsInstancedReference)
 	int32                                        Temp_int_Loop_Counter_Variable_1;                  // 0x68(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9470[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DE5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FNWXClusterCollectionPresentationData> CallFunc_GetClusterCollectionPresentationDataListFromRewardBehaviour_ClusterCollectionPresentationDataList; // 0x70(0x10)(ReferenceParm)
 	struct FNWXClusterCollectionPresentationData CallFunc_Array_Get_Item_1;                         // 0x80(0x60)(None)
 	int32                                        CallFunc_Array_Length_ReturnValue_1;               // 0xE0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue_1;                 // 0xE4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue_1;                // 0xE8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9473[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DE6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Array_AddUnique_ReturnValue;              // 0xEC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -91,18 +91,18 @@ public:
 	enum class ENWXDiscoveryPresentationState    Temp_byte_Variable;                                // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x151(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x152(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_947B[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DE7[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_PlayerState_C*                     CallFunc_GetLocalPlayerState_PlayerState;          // 0x158(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x160(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ENWXDiscoveryPresentationState    Temp_byte_Variable_1;                              // 0x161(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_947C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DE8[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSkillPresentationData                CallFunc_GetSkillPresentationData_ReturnValue;     // 0x168(0x58)(None)
 	TScriptInterface<class ISkillUnlockInterface> K2Node_DynamicCast_AsSkill_Unlock_Interface;       // 0x1C0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x1D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_1;                              // 0x1D1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ENWXDiscoveryPresentationState    K2Node_Select_Default;                             // 0x1D2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasSkillFullyUnlocked_ReturnValue;        // 0x1D3(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_947D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DE9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FNWXClusterCollectionPresentationData K2Node_MakeStruct_NWXClusterCollectionPresentationData; // 0x1D8(0x60)(None)
 	bool                                         CallFunc_IsValid_ReturnValue_2;                    // 0x238(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -118,21 +118,21 @@ public:
 	TArray<struct FNWXClusterCollectionPresentationData> L_TotalClusterCollectionPresentationData;          // 0x20(0x10)(Edit, BlueprintVisible)
 	class UBP_RewardBehaviour_Technique_Multiple_C* K2Node_DynamicCast_AsBP_Reward_Behaviour_Technique_Multiple; // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9483[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DEA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x40(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9484[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DEB[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSkillDataReference                   CallFunc_Array_Get_Item;                           // 0x50(0xE0)(HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x130(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x134(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x138(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9485[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DEC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FNWXClusterCollectionPresentationData CallFunc_GetClusterCollectionDiscoveryPresentationFromSkillReference_ClusterCollectionDiscoveryPresentationData; // 0x140(0x60)(None)
 	int32                                        CallFunc_Array_AddUnique_ReturnValue;              // 0x1A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9486[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DED[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_RewardBehaviour_Technique_C*       K2Node_DynamicCast_AsBP_Reward_Behaviour_Technique; // 0x1A8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_1;                     // 0x1B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9487[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DEE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FNWXClusterCollectionPresentationData CallFunc_GetClusterCollectionDiscoveryPresentationFromSkillReference_ClusterCollectionDiscoveryPresentationData_1; // 0x1B8(0x60)(None)
 	TArray<struct FNWXClusterCollectionPresentationData> K2Node_MakeArray_Array;                            // 0x218(0x10)(ReferenceParm)
 };

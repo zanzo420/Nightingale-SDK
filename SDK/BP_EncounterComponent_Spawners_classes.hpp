@@ -20,12 +20,12 @@ public:
 	int32                                        Total_Creatures_Spawned;                           // 0xD8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Position_Within_Creature_Spawners;                 // 0xDC(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Spawning_Active;                                   // 0xE0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6F61[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A424[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnSpawnerSpawned;                                  // 0xE8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<class ABP_CreatureSpawnerBase_C*>     Creature_Spawners;                                 // 0xF8(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	FMulticastInlineDelegateProperty_            OnCreatureSquadDead;                               // 0x108(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         Last_Spawner_Finished;                             // 0x118(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6F62[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A425[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnCreatureNoneRemain;                              // 0x120(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnCreatureBehaviourOverridden;                     // 0x130(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<class UClass*>                        Behaviour_Override_Cache;                          // 0x140(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -34,23 +34,23 @@ public:
 	FMulticastInlineDelegateProperty_            OnCreatureKilled;                                  // 0x170(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnWaveComplete;                                    // 0x180(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                        Creature_Realm_Power_Override;                     // 0x190(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6F63[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A426[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AEncounterBase*                        Cached_Encounter_Base;                             // 0x198(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        Current_Spawner_Index;                             // 0x1A0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6F64[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A427[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_CreatureSpawnerBase_C*             Current_Spawner;                                   // 0x1A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         Spawner_In_Progress;                               // 0x1B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6F65[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A428[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UEnvQuery*                             Bound_Miasma_EQS;                                  // 0x1B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	enum class EEnvQueryRunMode                  Run_Mode;                                          // 0x1C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Player_Is_Targeted;                                // 0x1C1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6F66[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A429[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPlayerTargeted;                                  // 0x1C8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<struct FEncounterSpawnerWaveData>     Encounter_Spawner_Wave_Data;                       // 0x1D8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class ANWXCreatureManagerBase*               Creature_Manager_Base;                             // 0x1E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TMap<class FName, struct FClusterTheme>      Realm_Clusters;                                    // 0x1F0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FEncounterLevelData                   Encounter_Level_Data;                              // 0x240(0x24)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                        Pad_6F67[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A42A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            Biome_Creature_Data_Table;                         // 0x268(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TMap<struct FSoftClassPath, int32>           Creature_Challenge_Ratings;                        // 0x270(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<enum class ESpawnerCreatureType, struct FEncounterCreatureDataArray> Creature_Type_Map;                                 // 0x2C0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)

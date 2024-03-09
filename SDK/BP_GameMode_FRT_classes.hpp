@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x5D8 - 0x5D8)
+// 0x0 (0x608 - 0x608)
 // BlueprintGeneratedClass BP_GameMode_FRT.BP_GameMode_FRT_C
 class ABP_GameMode_FRT_C : public ABP_GameMode_C
 {

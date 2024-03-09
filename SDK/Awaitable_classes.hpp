@@ -30,7 +30,7 @@ public:
 class UBasicAwaiter : public UObject
 {
 public:
-	uint8                                        Pad_2B55[0x128];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2D9F[0x128];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UBasicAwaiter* GetDefaultObj();
@@ -44,9 +44,9 @@ public:
 class UDelayedRegistrationComponent : public UActorComponent
 {
 public:
-	uint8                                        Pad_2B56[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DA0[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bClientShouldRegister;                             // 0xA8(0x1)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2B57[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DA1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBasicAwaiter*                         DelayedRegistrationAwaiter;                        // 0xB0(0x8)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();
@@ -70,7 +70,7 @@ public:
 class UMultiAwaiter : public UBasicAwaiter
 {
 public:
-	uint8                                        Pad_2B58[0x190];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DA2[0x190];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMultiAwaiter* GetDefaultObj();

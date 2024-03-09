@@ -13,38 +13,6 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x17C (0x17C - 0x0)
-// Function WBP_ShopOfferDetailsPanel.WBP_ShopOfferDetailsPanel_C.SetOfferPreviewImage
-struct UWBP_ShopOfferDetailsPanel_C_SetOfferPreviewImage_Params
-{
-public:
-	class UNWXShopOfferListItem*                 Offer;                                             // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             LRecipeSchematicImageSize;                         // 0x8(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             LItemOfferImageSize;                               // 0x18(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETransactableType                 Temp_byte_Variable;                                // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETransactableType                 Temp_byte_Variable_1;                              // 0x29(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable_2;                              // 0x2A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable_3;                              // 0x2B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable_4;                              // 0x2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable_5;                              // 0x2D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable_6;                              // 0x2E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETransactableType                 CallFunc_GetTransactableType_ReturnValue;          // 0x2F(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class UTexture2D>             CallFunc_GetIcon_ReturnValue;                      // 0x30(0x28)(UObjectWrapper, HasGetValueTypeHash)
-	class UObject*                               CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x58(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FDeprecateSlateVector2D               K2Node_Select_Default;                             // 0x60(0x8)(NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                            K2Node_DynamicCast_AsTexture_2D;                   // 0x68(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B77[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush;                      // 0x80(0xD0)(None)
-	enum class ESlateVisibility                  K2Node_Select_Default_1;                           // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B78[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FDeprecateSlateVector2D               K2Node_Select_Schematic_ImplicitCast;              // 0x154(0x8)(NoDestructor, HasGetValueTypeHash)
-	struct FDeprecateSlateVector2D               K2Node_Select_CraftingRecipe_ImplicitCast;         // 0x15C(0x8)(NoDestructor, HasGetValueTypeHash)
-	struct FDeprecateSlateVector2D               K2Node_Select_Unknown_ImplicitCast;                // 0x164(0x8)(NoDestructor, HasGetValueTypeHash)
-	struct FDeprecateSlateVector2D               K2Node_Select_Item_ImplicitCast;                   // 0x16C(0x8)(NoDestructor, HasGetValueTypeHash)
-	struct FDeprecateSlateVector2D               K2Node_Select_Emote_ImplicitCast;                  // 0x174(0x8)(NoDestructor, HasGetValueTypeHash)
-};
-
 // 0x8 (0x8 - 0x0)
 // Function WBP_ShopOfferDetailsPanel.WBP_ShopOfferDetailsPanel_C.OnShowOffer
 struct UWBP_ShopOfferDetailsPanel_C_OnShowOffer_Params
@@ -68,30 +36,31 @@ struct UWBP_ShopOfferDetailsPanel_C_SetupRewardDetails_Params
 public:
 	class UNWXShopRewardListItem*                Reward;                                            // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B7E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5284[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             CallFunc_GetIcon_ReturnValue;                      // 0x10(0x28)(UObjectWrapper, HasGetValueTypeHash)
 	class UPanelSlot*                            CallFunc_AddChild_ReturnValue;                     // 0x38(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UOverlaySlot*                          K2Node_DynamicCast_AsOverlay_Slot;                 // 0x40(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B7F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5285[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNWXShopOfferDetailsSimpleWidget*      CallFunc_GetDisplayWidgetFromOffer_ReturnValue;    // 0x50(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FText                                  CallFunc_GetItemTypeLabel_ReturnValue;             // 0x58(0x18)(None)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x51 (0x51 - 0x0)
+// 0x79 (0x79 - 0x0)
 // Function WBP_ShopOfferDetailsPanel.WBP_ShopOfferDetailsPanel_C.SetupOfferDetails
 struct UWBP_ShopOfferDetailsPanel_C_SetupOfferDetails_Params
 {
 public:
 	class UNWXShopOfferListItem*                 Offer;                                             // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B81[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  CallFunc_GetItemLabel_ReturnValue;                 // 0x10(0x18)(None)
-	class UPanelSlot*                            CallFunc_AddChild_ReturnValue;                     // 0x28(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UNWXShopOfferDetailsSimpleWidget*      CallFunc_GetDisplayWidgetFromOffer_ReturnValue;    // 0x30(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FText                                  CallFunc_GetItemTypeLabel_ReturnValue;             // 0x38(0x18)(None)
-	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_528F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TSoftObjectPtr<class UTexture2D>             CallFunc_GetIcon_ReturnValue;                      // 0x10(0x28)(UObjectWrapper, HasGetValueTypeHash)
+	class FText                                  CallFunc_GetItemLabel_ReturnValue;                 // 0x38(0x18)(None)
+	class UPanelSlot*                            CallFunc_AddChild_ReturnValue;                     // 0x50(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UNWXShopOfferDetailsSimpleWidget*      CallFunc_GetDisplayWidgetFromOffer_ReturnValue;    // 0x58(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                  CallFunc_GetItemTypeLabel_ReturnValue;             // 0x60(0x18)(None)
+	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x78(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0xD0 (0xD0 - 0x0)
@@ -107,10 +76,10 @@ public:
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0xB1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ObjectIsA_ReturnValue;                    // 0xB2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETransactableType                 CallFunc_GetTransactableType_ReturnValue_1;        // 0xB3(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B85[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5296[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                CallFunc_Map_Find_Value;                           // 0xB8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Map_Find_ReturnValue;                     // 0xC0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B86[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5297[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNWXShopOfferDetailsSimpleWidget*      CallFunc_Create_ReturnValue_1;                     // 0xC8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -121,7 +90,7 @@ struct UWBP_ShopOfferDetailsPanel_C_GetItemTypeLabel_Params
 public:
 	class FText                                  ReturnValue;                                       // 0x0(0x18)(Parm, OutParm, ReturnParm)
 	enum class ETransactableType                 CallFunc_GetTransactableType_ReturnValue;          // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B8C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5298[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Map_Find_Value;                           // 0x20(0x18)(None)
 	bool                                         CallFunc_Map_Find_ReturnValue;                     // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -133,7 +102,7 @@ struct UWBP_ShopOfferDetailsPanel_C_UpdateRequirementsNotMetPanel_Params
 public:
 	class UNWXShopOfferListItem*                 K2Node_DynamicCast_AsNWXShop_Offer_List_Item;      // 0x0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B8D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5299[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue;               // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -149,11 +118,11 @@ public:
 	bool                                         Temp_bool_Variable_4;                              // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_5;                              // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EShopOfferPurchasableState        Temp_byte_Variable;                                // 0x6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B91[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_529D[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNWXShopOfferListItem*                 K2Node_DynamicCast_AsNWXShop_Offer_List_Item;      // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B92[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_52A0[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Map_Find_Value;                           // 0x18(0x18)(None)
 	bool                                         CallFunc_Map_Find_ReturnValue;                     // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Select_Default;                             // 0x31(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -173,10 +142,10 @@ struct UWBP_ShopOfferDetailsPanel_C_ExecuteUbergraph_WBP_ShopOfferDetailsPanel_P
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B97[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_52AF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNWXShopOfferListItem*                 K2Node_DynamicCast_AsNWXShop_Offer_List_Item;      // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8B98[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_52B0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButtonBase*                     K2Node_ComponentBoundEvent_Button;                 // 0x18(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 

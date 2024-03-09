@@ -65,24 +65,6 @@ void UWBP_GuideBook_Screen_C::IsEntityPinned(class FName ID, bool* IsPinned)
 }
 
 
-// Function WBP_GuideBook_Screen.WBP_GuideBook_Screen_C.OnFlatListCustomNavigation
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UWBP_GuideBook_Screen_C::OnFlatListCustomNavigation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_GuideBook_Screen_C", "OnFlatListCustomNavigation");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function WBP_GuideBook_Screen.WBP_GuideBook_Screen_C.DoNavigationToSearchBar
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -354,6 +336,35 @@ void UWBP_GuideBook_Screen_C::HandleCodexPopup(bool IsOpen, bool Temp_bool_Varia
 }
 
 
+// Function WBP_GuideBook_Screen.WBP_GuideBook_Screen_C.OnGuideThumbHovered
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               IsHovered                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNWXMenuDataEntry*           MenuDataEntry                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     CallFunc_GetActiveWidget_ReturnValue                             (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UNWXGuidebookDetailPane*     K2Node_DynamicCast_AsNWXGuidebook_Detail_Pane                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuideBook_Screen_C::OnGuideThumbHovered(bool IsHovered, class UNWXMenuDataEntry* MenuDataEntry, class UWidget* CallFunc_GetActiveWidget_ReturnValue, class UNWXGuidebookDetailPane* K2Node_DynamicCast_AsNWXGuidebook_Detail_Pane, bool K2Node_DynamicCast_bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_GuideBook_Screen_C", "OnGuideThumbHovered");
+
+	Params::UWBP_GuideBook_Screen_C_OnGuideThumbHovered_Params Parms{};
+
+	Parms.IsHovered = IsHovered;
+	Parms.MenuDataEntry = MenuDataEntry;
+	Parms.CallFunc_GetActiveWidget_ReturnValue = CallFunc_GetActiveWidget_ReturnValue;
+	Parms.K2Node_DynamicCast_AsNWXGuidebook_Detail_Pane = K2Node_DynamicCast_AsNWXGuidebook_Detail_Pane;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_GuideBook_Screen.WBP_GuideBook_Screen_C.OnGuideThumbDoubleClicked
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -441,16 +452,18 @@ void UWBP_GuideBook_Screen_C::OnGridlistPanelCollapsedToggled(bool IsGroupExpand
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_6                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_7                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_8                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_9                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Guidebook_GridList_C*   K2Node_DynamicCast_AsWBP_Guidebook_Grid_List                     (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Guidebook_JournalList_C*K2Node_DynamicCast_AsWBP_Guidebook_Journal_List                  (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_2                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_GetChildAt_ReturnValue                                  (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_8                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_9                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_10                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_11                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GuideBook_Screen_C::UnbindFromLeftPageEvents(class UWBP_Guidebook_FlatList_C* LFlatList, class UWBP_Guidebook_GridList_C* LGridlist, class UWBP_Guidebook_JournalList_C* LJournalPage, class UWidget* LLeftContainerChild, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class UWBP_Guidebook_FlatList_C* K2Node_DynamicCast_AsWBP_Guidebook_Flat_List, bool K2Node_DynamicCast_bSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, class UWBP_Guidebook_GridList_C* K2Node_DynamicCast_AsWBP_Guidebook_Grid_List, bool K2Node_DynamicCast_bSuccess_1, class UWBP_Guidebook_JournalList_C* K2Node_DynamicCast_AsWBP_Guidebook_Journal_List, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_9)
+void UWBP_GuideBook_Screen_C::UnbindFromLeftPageEvents(class UWBP_Guidebook_FlatList_C* LFlatList, class UWBP_Guidebook_GridList_C* LGridlist, class UWBP_Guidebook_JournalList_C* LJournalPage, class UWidget* LLeftContainerChild, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class UWBP_Guidebook_FlatList_C* K2Node_DynamicCast_AsWBP_Guidebook_Flat_List, bool K2Node_DynamicCast_bSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_9, class UWBP_Guidebook_GridList_C* K2Node_DynamicCast_AsWBP_Guidebook_Grid_List, bool K2Node_DynamicCast_bSuccess_1, class UWBP_Guidebook_JournalList_C* K2Node_DynamicCast_AsWBP_Guidebook_Journal_List, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_10, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_11)
 {
 	static class UFunction* Func = nullptr;
 
@@ -473,14 +486,16 @@ void UWBP_GuideBook_Screen_C::UnbindFromLeftPageEvents(class UWBP_Guidebook_Flat
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.K2Node_CreateDelegate_OutputDelegate_6 = K2Node_CreateDelegate_OutputDelegate_6;
 	Parms.K2Node_CreateDelegate_OutputDelegate_7 = K2Node_CreateDelegate_OutputDelegate_7;
+	Parms.K2Node_CreateDelegate_OutputDelegate_8 = K2Node_CreateDelegate_OutputDelegate_8;
+	Parms.K2Node_CreateDelegate_OutputDelegate_9 = K2Node_CreateDelegate_OutputDelegate_9;
 	Parms.K2Node_DynamicCast_AsWBP_Guidebook_Grid_List = K2Node_DynamicCast_AsWBP_Guidebook_Grid_List;
 	Parms.K2Node_DynamicCast_bSuccess_1 = K2Node_DynamicCast_bSuccess_1;
 	Parms.K2Node_DynamicCast_AsWBP_Guidebook_Journal_List = K2Node_DynamicCast_AsWBP_Guidebook_Journal_List;
 	Parms.K2Node_DynamicCast_bSuccess_2 = K2Node_DynamicCast_bSuccess_2;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_GetChildAt_ReturnValue = CallFunc_GetChildAt_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate_8 = K2Node_CreateDelegate_OutputDelegate_8;
-	Parms.K2Node_CreateDelegate_OutputDelegate_9 = K2Node_CreateDelegate_OutputDelegate_9;
+	Parms.K2Node_CreateDelegate_OutputDelegate_10 = K2Node_CreateDelegate_OutputDelegate_10;
+	Parms.K2Node_CreateDelegate_OutputDelegate_11 = K2Node_CreateDelegate_OutputDelegate_11;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -565,6 +580,7 @@ void UWBP_GuideBook_Screen_C::SetupBindings(FDelegateProperty_ K2Node_CreateDele
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_9                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_10                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_11                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_12                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Guidebook_GridList_C*   K2Node_DynamicCast_AsWBP_Guidebook_Grid_List                     (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Guidebook_JournalList_C*K2Node_DynamicCast_AsWBP_Guidebook_Journal_List                  (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -574,7 +590,7 @@ void UWBP_GuideBook_Screen_C::SetupBindings(FDelegateProperty_ K2Node_CreateDele
 // bool                               GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UVerticalBoxSlot*            CallFunc_AddChildToVerticalBox_ReturnValue_2                     (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GuideBook_Screen_C::UpdateLeftContentWidget(class UWBP_Guidebook_FlatList_C* LFlatList, class UWBP_Guidebook_GridList_C* LGridlist, class UWBP_Guidebook_JournalList_C* LJournalList, class UWidget* LActiveChild, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue, class UWBP_Guidebook_FlatList_C* CallFunc_Create_ReturnValue, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue_1, class UWBP_Guidebook_FlatList_C* K2Node_DynamicCast_AsWBP_Guidebook_Flat_List, bool K2Node_DynamicCast_bSuccess, class UWBP_Guidebook_GridList_C* CallFunc_Create_ReturnValue_1, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue_2, class UWBP_Guidebook_JournalList_C* CallFunc_Create_ReturnValue_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_1, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_9, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_10, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_11, class UWBP_Guidebook_GridList_C* K2Node_DynamicCast_AsWBP_Guidebook_Grid_List, bool K2Node_DynamicCast_bSuccess_1, class UWBP_Guidebook_JournalList_C* K2Node_DynamicCast_AsWBP_Guidebook_Journal_List, bool K2Node_DynamicCast_bSuccess_2, const struct FGameplayTag& CallFunc_GetActiveCategory_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue, bool GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue_2)
+void UWBP_GuideBook_Screen_C::UpdateLeftContentWidget(class UWBP_Guidebook_FlatList_C* LFlatList, class UWBP_Guidebook_GridList_C* LGridlist, class UWBP_Guidebook_JournalList_C* LJournalList, class UWidget* LActiveChild, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue, class UWBP_Guidebook_FlatList_C* CallFunc_Create_ReturnValue, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue_1, class UWBP_Guidebook_FlatList_C* K2Node_DynamicCast_AsWBP_Guidebook_Flat_List, bool K2Node_DynamicCast_bSuccess, class UWBP_Guidebook_GridList_C* CallFunc_Create_ReturnValue_1, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue_2, class UWBP_Guidebook_JournalList_C* CallFunc_Create_ReturnValue_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_1, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_9, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_10, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_11, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_12, class UWBP_Guidebook_GridList_C* K2Node_DynamicCast_AsWBP_Guidebook_Grid_List, bool K2Node_DynamicCast_bSuccess_1, class UWBP_Guidebook_JournalList_C* K2Node_DynamicCast_AsWBP_Guidebook_Journal_List, bool K2Node_DynamicCast_bSuccess_2, const struct FGameplayTag& CallFunc_GetActiveCategory_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue, bool GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue_2)
 {
 	static class UFunction* Func = nullptr;
 
@@ -612,6 +628,7 @@ void UWBP_GuideBook_Screen_C::UpdateLeftContentWidget(class UWBP_Guidebook_FlatL
 	Parms.K2Node_CreateDelegate_OutputDelegate_9 = K2Node_CreateDelegate_OutputDelegate_9;
 	Parms.K2Node_CreateDelegate_OutputDelegate_10 = K2Node_CreateDelegate_OutputDelegate_10;
 	Parms.K2Node_CreateDelegate_OutputDelegate_11 = K2Node_CreateDelegate_OutputDelegate_11;
+	Parms.K2Node_CreateDelegate_OutputDelegate_12 = K2Node_CreateDelegate_OutputDelegate_12;
 	Parms.K2Node_DynamicCast_AsWBP_Guidebook_Grid_List = K2Node_DynamicCast_AsWBP_Guidebook_Grid_List;
 	Parms.K2Node_DynamicCast_bSuccess_1 = K2Node_DynamicCast_bSuccess_1;
 	Parms.K2Node_DynamicCast_AsWBP_Guidebook_Journal_List = K2Node_DynamicCast_AsWBP_Guidebook_Journal_List;

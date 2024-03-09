@@ -174,13 +174,12 @@ class UWidget* UWBP_Options_C::BP_GetDesiredFocusTarget(enum class E_OptionMenus
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                     CallFunc_GetChildAt_ReturnValue                                  (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Common_Button_Base_C*   CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Options_C::OnCategoryChanged(int32 ButtonIndex, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue, class UWBP_Common_Button_Base_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
+void UWBP_Options_C::OnCategoryChanged(int32 ButtonIndex, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UWBP_Common_Button_Base_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -193,11 +192,10 @@ void UWBP_Options_C::OnCategoryChanged(int32 ButtonIndex, int32 Temp_int_Array_I
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_GetChildAt_ReturnValue = CallFunc_GetChildAt_ReturnValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
-	Parms.CallFunc_EqualEqual_ObjectObject_ReturnValue = CallFunc_EqualEqual_ObjectObject_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -885,153 +883,28 @@ void UWBP_Options_C::BndEvt__WBP_Options_CBU_PreviousCategory_K2Node_ComponentBo
 }
 
 
-// Function WBP_Options.WBP_Options_C.BndEvt__WBP_Options_CBU_CategoryButton_Interface_K2Node_ComponentBoundEvent_5_CommonSelectedStateChangedBase__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               Selected                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Options_C::BndEvt__WBP_Options_CBU_CategoryButton_Interface_K2Node_ComponentBoundEvent_5_CommonSelectedStateChangedBase__DelegateSignature(class UCommonButtonBase* Button, bool Selected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_Options_C", "BndEvt__WBP_Options_CBU_CategoryButton_Interface_K2Node_ComponentBoundEvent_5_CommonSelectedStateChangedBase__DelegateSignature");
-
-	Params::UWBP_Options_C_BndEvt__WBP_Options_CBU_CategoryButton_Interface_K2Node_ComponentBoundEvent_5_CommonSelectedStateChangedBase__DelegateSignature_Params Parms{};
-
-	Parms.Button = Button;
-	Parms.Selected = Selected;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function WBP_Options.WBP_Options_C.BndEvt__WBP_Options_CBU_CategoryButton_Audio_K2Node_ComponentBoundEvent_7_CommonSelectedStateChangedBase__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               Selected                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Options_C::BndEvt__WBP_Options_CBU_CategoryButton_Audio_K2Node_ComponentBoundEvent_7_CommonSelectedStateChangedBase__DelegateSignature(class UCommonButtonBase* Button, bool Selected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_Options_C", "BndEvt__WBP_Options_CBU_CategoryButton_Audio_K2Node_ComponentBoundEvent_7_CommonSelectedStateChangedBase__DelegateSignature");
-
-	Params::UWBP_Options_C_BndEvt__WBP_Options_CBU_CategoryButton_Audio_K2Node_ComponentBoundEvent_7_CommonSelectedStateChangedBase__DelegateSignature_Params Parms{};
-
-	Parms.Button = Button;
-	Parms.Selected = Selected;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function WBP_Options.WBP_Options_C.BndEvt__WBP_Options_CBU_CategoryButton_Video_K2Node_ComponentBoundEvent_8_CommonSelectedStateChangedBase__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               Selected                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Options_C::BndEvt__WBP_Options_CBU_CategoryButton_Video_K2Node_ComponentBoundEvent_8_CommonSelectedStateChangedBase__DelegateSignature(class UCommonButtonBase* Button, bool Selected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_Options_C", "BndEvt__WBP_Options_CBU_CategoryButton_Video_K2Node_ComponentBoundEvent_8_CommonSelectedStateChangedBase__DelegateSignature");
-
-	Params::UWBP_Options_C_BndEvt__WBP_Options_CBU_CategoryButton_Video_K2Node_ComponentBoundEvent_8_CommonSelectedStateChangedBase__DelegateSignature_Params Parms{};
-
-	Parms.Button = Button;
-	Parms.Selected = Selected;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function WBP_Options.WBP_Options_C.BndEvt__WBP_Options_CBU_CategoryButton_Gameplay_K2Node_ComponentBoundEvent_13_CommonSelectedStateChangedBase__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               Selected                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Options_C::BndEvt__WBP_Options_CBU_CategoryButton_Gameplay_K2Node_ComponentBoundEvent_13_CommonSelectedStateChangedBase__DelegateSignature(class UCommonButtonBase* Button, bool Selected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_Options_C", "BndEvt__WBP_Options_CBU_CategoryButton_Gameplay_K2Node_ComponentBoundEvent_13_CommonSelectedStateChangedBase__DelegateSignature");
-
-	Params::UWBP_Options_C_BndEvt__WBP_Options_CBU_CategoryButton_Gameplay_K2Node_ComponentBoundEvent_13_CommonSelectedStateChangedBase__DelegateSignature_Params Parms{};
-
-	Parms.Button = Button;
-	Parms.Selected = Selected;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function WBP_Options.WBP_Options_C.BndEvt__WBP_Options_CBU_CategoryButton_KeyBindings_K2Node_ComponentBoundEvent_14_CommonSelectedStateChangedBase__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               Selected                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Options_C::BndEvt__WBP_Options_CBU_CategoryButton_KeyBindings_K2Node_ComponentBoundEvent_14_CommonSelectedStateChangedBase__DelegateSignature(class UCommonButtonBase* Button, bool Selected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_Options_C", "BndEvt__WBP_Options_CBU_CategoryButton_KeyBindings_K2Node_ComponentBoundEvent_14_CommonSelectedStateChangedBase__DelegateSignature");
-
-	Params::UWBP_Options_C_BndEvt__WBP_Options_CBU_CategoryButton_KeyBindings_K2Node_ComponentBoundEvent_14_CommonSelectedStateChangedBase__DelegateSignature_Params Parms{};
-
-	Parms.Button = Button;
-	Parms.Selected = Selected;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function WBP_Options.WBP_Options_C.ExecuteUbergraph_WBP_Options
 // (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UGlobalAudioSubsystem*       CallFunc_GetEngineSubsystem_ReturnValue                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_13                             (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_12                             (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_11                             (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_10                             (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_9                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsFeatureFlagEnabled_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNWXGameUserSettings*        CallFunc_GetNWXGameUserSettings_ReturnValue                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_8                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_7                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_6                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_5                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_4                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UGlobalAudioSubsystem*       CallFunc_GetEngineSubsystem_ReturnValue_1                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_3                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_2                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Common_Button_Base_C*   CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetNextCategoryIndex_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_5                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_GetNextCategoryIndex_ReturnValue_1                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_4                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_ComponentBoundEvent_Selected_4                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_3                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_ComponentBoundEvent_Selected_3                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_2                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_ComponentBoundEvent_Selected_2                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_ComponentBoundEvent_Selected_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_ComponentBoundEvent_Selected                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UNWXGameUserSettings*        CallFunc_GetNWXGameUserSettings_ReturnValue                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsFeatureFlagEnabled_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UGlobalAudioSubsystem*       CallFunc_GetEngineSubsystem_ReturnValue_1                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_GetNextCategoryIndex_ReturnValue_1                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Options_C::ExecuteUbergraph_WBP_Options(int32 EntryPoint, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_13, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_12, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_11, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_10, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_9, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_8, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_7, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_6, class UWBP_Common_Button_Base_C* CallFunc_Array_Get_Item, int32 CallFunc_GetNextCategoryIndex_ReturnValue, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_5, int32 CallFunc_GetNextCategoryIndex_ReturnValue_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_4, bool K2Node_ComponentBoundEvent_Selected_4, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_3, bool K2Node_ComponentBoundEvent_Selected_3, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_2, bool K2Node_ComponentBoundEvent_Selected_2, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_1, bool K2Node_ComponentBoundEvent_Selected_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, bool K2Node_ComponentBoundEvent_Selected, class UNWXGameUserSettings* CallFunc_GetNWXGameUserSettings_ReturnValue, bool CallFunc_IsFeatureFlagEnabled_ReturnValue, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue_1)
+void UWBP_Options_C::ExecuteUbergraph_WBP_Options(int32 EntryPoint, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue, bool CallFunc_IsFeatureFlagEnabled_ReturnValue, class UNWXGameUserSettings* CallFunc_GetNWXGameUserSettings_ReturnValue, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_8, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_7, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_6, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_5, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_4, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_3, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_2, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_1, class UWBP_Common_Button_Base_C* CallFunc_Array_Get_Item, int32 CallFunc_GetNextCategoryIndex_ReturnValue, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, int32 CallFunc_GetNextCategoryIndex_ReturnValue_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1042,31 +915,21 @@ void UWBP_Options_C::ExecuteUbergraph_WBP_Options(int32 EntryPoint, class UGloba
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetEngineSubsystem_ReturnValue = CallFunc_GetEngineSubsystem_ReturnValue;
-	Parms.K2Node_ComponentBoundEvent_Button_13 = K2Node_ComponentBoundEvent_Button_13;
-	Parms.K2Node_ComponentBoundEvent_Button_12 = K2Node_ComponentBoundEvent_Button_12;
-	Parms.K2Node_ComponentBoundEvent_Button_11 = K2Node_ComponentBoundEvent_Button_11;
-	Parms.K2Node_ComponentBoundEvent_Button_10 = K2Node_ComponentBoundEvent_Button_10;
-	Parms.K2Node_ComponentBoundEvent_Button_9 = K2Node_ComponentBoundEvent_Button_9;
+	Parms.CallFunc_IsFeatureFlagEnabled_ReturnValue = CallFunc_IsFeatureFlagEnabled_ReturnValue;
+	Parms.CallFunc_GetNWXGameUserSettings_ReturnValue = CallFunc_GetNWXGameUserSettings_ReturnValue;
 	Parms.K2Node_ComponentBoundEvent_Button_8 = K2Node_ComponentBoundEvent_Button_8;
 	Parms.K2Node_ComponentBoundEvent_Button_7 = K2Node_ComponentBoundEvent_Button_7;
 	Parms.K2Node_ComponentBoundEvent_Button_6 = K2Node_ComponentBoundEvent_Button_6;
+	Parms.K2Node_ComponentBoundEvent_Button_5 = K2Node_ComponentBoundEvent_Button_5;
+	Parms.K2Node_ComponentBoundEvent_Button_4 = K2Node_ComponentBoundEvent_Button_4;
+	Parms.CallFunc_GetEngineSubsystem_ReturnValue_1 = CallFunc_GetEngineSubsystem_ReturnValue_1;
+	Parms.K2Node_ComponentBoundEvent_Button_3 = K2Node_ComponentBoundEvent_Button_3;
+	Parms.K2Node_ComponentBoundEvent_Button_2 = K2Node_ComponentBoundEvent_Button_2;
+	Parms.K2Node_ComponentBoundEvent_Button_1 = K2Node_ComponentBoundEvent_Button_1;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_GetNextCategoryIndex_ReturnValue = CallFunc_GetNextCategoryIndex_ReturnValue;
-	Parms.K2Node_ComponentBoundEvent_Button_5 = K2Node_ComponentBoundEvent_Button_5;
-	Parms.CallFunc_GetNextCategoryIndex_ReturnValue_1 = CallFunc_GetNextCategoryIndex_ReturnValue_1;
-	Parms.K2Node_ComponentBoundEvent_Button_4 = K2Node_ComponentBoundEvent_Button_4;
-	Parms.K2Node_ComponentBoundEvent_Selected_4 = K2Node_ComponentBoundEvent_Selected_4;
-	Parms.K2Node_ComponentBoundEvent_Button_3 = K2Node_ComponentBoundEvent_Button_3;
-	Parms.K2Node_ComponentBoundEvent_Selected_3 = K2Node_ComponentBoundEvent_Selected_3;
-	Parms.K2Node_ComponentBoundEvent_Button_2 = K2Node_ComponentBoundEvent_Button_2;
-	Parms.K2Node_ComponentBoundEvent_Selected_2 = K2Node_ComponentBoundEvent_Selected_2;
-	Parms.K2Node_ComponentBoundEvent_Button_1 = K2Node_ComponentBoundEvent_Button_1;
-	Parms.K2Node_ComponentBoundEvent_Selected_1 = K2Node_ComponentBoundEvent_Selected_1;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
-	Parms.K2Node_ComponentBoundEvent_Selected = K2Node_ComponentBoundEvent_Selected;
-	Parms.CallFunc_GetNWXGameUserSettings_ReturnValue = CallFunc_GetNWXGameUserSettings_ReturnValue;
-	Parms.CallFunc_IsFeatureFlagEnabled_ReturnValue = CallFunc_IsFeatureFlagEnabled_ReturnValue;
-	Parms.CallFunc_GetEngineSubsystem_ReturnValue_1 = CallFunc_GetEngineSubsystem_ReturnValue_1;
+	Parms.CallFunc_GetNextCategoryIndex_ReturnValue_1 = CallFunc_GetNextCategoryIndex_ReturnValue_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 

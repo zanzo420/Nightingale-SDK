@@ -77,9 +77,9 @@ struct FCustomOverrides
 {
 public:
 	class UScriptStruct*                         StructClass;                                       // 0x0(0x8)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_3D65[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3D54[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInstancedStruct                      StructInstance;                                    // 0x10(0x10)(Edit, Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_3D66[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D55[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -98,9 +98,9 @@ public:
 struct FPointCloudRuleData
 {
 public:
-	uint8                                        Pad_3D67[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3D56[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWorld*                                World;                                             // 0x8(0x8)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3D68[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3D57[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCustomOverrides                      CustomOverrides;                                   // 0x20(0x28)(Edit, NativeAccessSpecifierPublic)
 	TArray<TSubclassOf<class UActorComponent>>   Components;                                        // 0x48(0x10)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	TArray<class FName>                          OverrideableProperties;                            // 0x58(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)

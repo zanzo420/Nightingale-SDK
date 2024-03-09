@@ -25,13 +25,13 @@ public:
 	class UTextBlock*                            Txt_RespiteRealmLabel;                             // 0x380(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            RealmMarbleClicked;                                // 0x388(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	float                                        Size_Override;                                     // 0x398(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_27C1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8FC6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       RotationOverride;                                  // 0x3A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 RealmTags;                                         // 0x3A8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         IsRespiteRealm;                                    // 0x3C8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	enum class EBiomeID                          Biome;                                             // 0x3C9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsCurrentRealm;                                    // 0x3CA(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_27C2[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8FC7[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Persisted_RealmVisitedInfo         RealmInfo;                                         // 0x3D0(0x78)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

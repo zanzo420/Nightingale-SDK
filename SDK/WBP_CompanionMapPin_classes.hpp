@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x5B8 - 0x5B8)
+// 0x0 (0x5B0 - 0x5B0)
 // WidgetBlueprintGeneratedClass WBP_CompanionMapPin.WBP_CompanionMapPin_C
 class UWBP_CompanionMapPin_C : public UWBP_PlayerMapPin_C
 {

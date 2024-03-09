@@ -60,18 +60,18 @@ public:
 class UToolbarComponent : public UPersistentDataComponent
 {
 public:
-	uint8                                        Pad_3B1[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C9[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTexture2D*                            EmptySlotTexture;                                  // 0x100(0x8)(Edit, ZeroConstructor, DisableEditOnInstance, NoClear, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class UToolbarSlotEntryBase>     InventoryEntrySlotEntryClass;                      // 0x108(0x8)(Edit, ZeroConstructor, DisableEditOnInstance, NoClear, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EToolbarArrangement               ToolbarArrangement;                                // 0x110(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, NoClear, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3B2[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CA[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnToolbarArrangementChanged;                       // 0x118(0x10)(ZeroConstructor, Transient, InstancedReference, NativeAccessSpecifierPrivate)
 	FMulticastInlineDelegateProperty_            OnSelectedSlotIndexChanged;                        // 0x128(0x10)(ZeroConstructor, Transient, InstancedReference, NativeAccessSpecifierPrivate)
 	FMulticastInlineDelegateProperty_            OnSlotEntryChanged;                                // 0x138(0x10)(ZeroConstructor, Transient, InstancedReference, NativeAccessSpecifierPrivate)
 	class UToolbarSlotEntryBase*                 SharedEmptySlotObject;                             // 0x148(0x8)(Net, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UToolbarSlotEntryBase*>         ToolbarEntries;                                    // 0x150(0x10)(Net, ZeroConstructor, Transient, RepNotify, NativeAccessSpecifierPrivate)
 	int32                                        SelectedSlotIndex;                                 // 0x160(0x4)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3B3[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1CB[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UToolbarComponent* GetDefaultObj();
@@ -112,7 +112,7 @@ class UToolbarEntryStackCharacteristic : public UObject
 {
 public:
 	int32                                        StackSize;                                         // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3B6[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1D3[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UToolbarEntryStackCharacteristic* GetDefaultObj();
@@ -140,7 +140,7 @@ public:
 class UToolbarEntryQualityCharacteristic : public UObject
 {
 public:
-	uint8                                        Pad_3B9[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1D7[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UToolbarEntryQualityCharacteristic* GetDefaultObj();
@@ -155,7 +155,7 @@ class UToolbarSlotEntryBase : public UObject
 {
 public:
 	int32                                        SlotIndex;                                         // 0x28(0x4)(Net, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3BD[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1D9[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class APlayerController*                     OwningControllerCache;                             // 0x30(0x8)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UToolbarComponent*                     OwningToolbarCache;                                // 0x38(0x8)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -204,7 +204,7 @@ public:
 class UToolbarSlotEntry_EmptySlot : public UToolbarSlotEntryBase
 {
 public:
-	uint8                                        Pad_3C0[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DE[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTexture2D*                            EmptySlotTexture;                                  // 0x48(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();

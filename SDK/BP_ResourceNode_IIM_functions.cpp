@@ -720,13 +720,28 @@ void ABP_ResourceNode_IIM_C::CheckSpellEssence(TArray<struct FInventoryEntry>& E
 // struct FIIMExtents                 MeshExtents                                                      (Edit, BlueprintVisible, NoDestructor)
 // class UAcousticOpeningComponent*   NewAccousticOpening                                              (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAcousticOpeningComponent*   CallFunc_AddComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_BreakTransform_Location                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRotator                    CallFunc_BreakTransform_Rotation                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                     CallFunc_BreakTransform_Scale                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_BreakVector_X                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_BreakVector_Y                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_BreakVector_Z                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_TransformLocation_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_BreakVector_X_1                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_BreakVector_Y_1                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_BreakVector_Z_1                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_Multiply_DoubleDouble_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                  CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult           (IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// double                             CallFunc_Multiply_DoubleDouble_ReturnValue_1                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_MatchesTag_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAcousticOpeningComponent*   CallFunc_AddComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // struct FIIMExtents                 CallFunc_GetInstanceMeshExtents_OutExtents                       (NoDestructor)
 // bool                               CallFunc_GetInstanceMeshExtents_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              K2Node_VariableSet_SurfaceAreaM2_ImplicitCast                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ResourceNode_IIM_C::SpawnAcousticOpeningForBustable(const struct FIIMInstance& Instance, const struct FIIMExtents& MeshExtents, class UAcousticOpeningComponent* NewAccousticOpening, bool CallFunc_IsDedicatedServer_ReturnValue, class UAcousticOpeningComponent* CallFunc_AddComponentByClass_ReturnValue, bool CallFunc_MatchesTag_ReturnValue, const struct FIIMExtents& CallFunc_GetInstanceMeshExtents_OutExtents, bool CallFunc_GetInstanceMeshExtents_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void ABP_ResourceNode_IIM_C::SpawnAcousticOpeningForBustable(const struct FIIMInstance& Instance, const struct FIIMExtents& MeshExtents, class UAcousticOpeningComponent* NewAccousticOpening, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, double CallFunc_BreakVector_X, double CallFunc_BreakVector_Y, double CallFunc_BreakVector_Z, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FVector& CallFunc_TransformLocation_ReturnValue, double CallFunc_BreakVector_X_1, double CallFunc_BreakVector_Y_1, double CallFunc_BreakVector_Z_1, double CallFunc_Multiply_DoubleDouble_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult, double CallFunc_Multiply_DoubleDouble_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_MatchesTag_ReturnValue, class UAcousticOpeningComponent* CallFunc_AddComponentByClass_ReturnValue, const struct FIIMExtents& CallFunc_GetInstanceMeshExtents_OutExtents, bool CallFunc_GetInstanceMeshExtents_ReturnValue, float K2Node_VariableSet_SurfaceAreaM2_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -739,11 +754,26 @@ void ABP_ResourceNode_IIM_C::SpawnAcousticOpeningForBustable(const struct FIIMIn
 	Parms.MeshExtents = MeshExtents;
 	Parms.NewAccousticOpening = NewAccousticOpening;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
-	Parms.CallFunc_AddComponentByClass_ReturnValue = CallFunc_AddComponentByClass_ReturnValue;
+	Parms.CallFunc_BreakTransform_Location = CallFunc_BreakTransform_Location;
+	Parms.CallFunc_BreakTransform_Rotation = CallFunc_BreakTransform_Rotation;
+	Parms.CallFunc_BreakTransform_Scale = CallFunc_BreakTransform_Scale;
+	Parms.CallFunc_BreakVector_X = CallFunc_BreakVector_X;
+	Parms.CallFunc_BreakVector_Y = CallFunc_BreakVector_Y;
+	Parms.CallFunc_BreakVector_Z = CallFunc_BreakVector_Z;
+	Parms.CallFunc_MakeVector2D_ReturnValue = CallFunc_MakeVector2D_ReturnValue;
+	Parms.CallFunc_TransformLocation_ReturnValue = CallFunc_TransformLocation_ReturnValue;
+	Parms.CallFunc_BreakVector_X_1 = CallFunc_BreakVector_X_1;
+	Parms.CallFunc_BreakVector_Y_1 = CallFunc_BreakVector_Y_1;
+	Parms.CallFunc_BreakVector_Z_1 = CallFunc_BreakVector_Z_1;
+	Parms.CallFunc_Multiply_DoubleDouble_ReturnValue = CallFunc_Multiply_DoubleDouble_ReturnValue;
+	Parms.CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult = CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult;
+	Parms.CallFunc_Multiply_DoubleDouble_ReturnValue_1 = CallFunc_Multiply_DoubleDouble_ReturnValue_1;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_MatchesTag_ReturnValue = CallFunc_MatchesTag_ReturnValue;
+	Parms.CallFunc_AddComponentByClass_ReturnValue = CallFunc_AddComponentByClass_ReturnValue;
 	Parms.CallFunc_GetInstanceMeshExtents_OutExtents = CallFunc_GetInstanceMeshExtents_OutExtents;
 	Parms.CallFunc_GetInstanceMeshExtents_ReturnValue = CallFunc_GetInstanceMeshExtents_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.K2Node_VariableSet_SurfaceAreaM2_ImplicitCast = K2Node_VariableSet_SurfaceAreaM2_ImplicitCast;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -838,31 +868,34 @@ void ABP_ResourceNode_IIM_C::Calculate_Perk_Yield_Bonus(class AActor* Gathering_
 // class ABP_IIMProxy_ChaosFallingTree_C*NewChaosTree                                                     (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 // class ANWXTreeTrunkGeometryCollection*NewTrunkGeometryCollection                                       (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 // TArray<class UMaterialInterface*>  Materials                                                        (Edit, BlueprintVisible)
-// bool                               CallFunc_HasAnyTags_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FGameplayEffectCue>  Temp_struct_Variable                                             (ConstParm, ReferenceParm)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IGameplayTagAssetInterface>K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAnyMatchingGameplayTags_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UBP_HarvestableGeomAudioComponent_C*CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class IIIMProxyResourceGranter>CallFunc_SetIIM_InstanceData_ResourceGranter_CastInput           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class IDamageEventInterface>K2Node_DynamicCast_AsDamage_Event_Interface                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValidClass_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetInstanceAmbienceData_OutDataFound                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FAmbienceDataReference      CallFunc_GetInstanceAmbienceData_ReturnValue                     (NoDestructor)
-// struct FAmbienceData               CallFunc_CopyAmbienceData_ReturnValue                            (None)
 // struct FVector                     CallFunc_GetActorForwardVector_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FAmbienceData               CallFunc_CopyAmbienceData_ReturnValue                            (None)
 // class FString                      CallFunc_GetClassDisplayName_ReturnValue                         (ZeroConstructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_NameToText_ReturnValue                             (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue                                      (None)
-// class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTagValueContainer          CallFunc_DamageActor_AggregatedDamageTags                        (None)
 // bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
+// struct FTagValueContainer          CallFunc_DamageActor_AggregatedDamageTags                        (None)
 // class AActor*                      CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ANWXTreeTrunkGeometryCollection*CallFunc_FinishSpawningActor_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -870,7 +903,7 @@ void ABP_ResourceNode_IIM_C::Calculate_Perk_Yield_Bonus(class AActor* Gathering_
 // bool                               CallFunc_IsValid_ReturnValue_4                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_DamageActor_BaseDamage_ImplicitCast                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ResourceNode_IIM_C::SpawnDestructibleTree(class UClass* TrunkGeometryClass, double BaseDamage, class AActor* DamageCauser, const struct FGameplayTagContainer& EffectTags, const struct FHitResult& HitResult, const struct FTagValueContainer& TagValueContainer, const struct FIIMInstance& Instance, bool* Success, double StumpTransitionDelaySeconds, class UBP_HarvestableGeomAudioComponent_C* NewHarvestableGeomAudioComp, class ABP_IIMProxy_ChaosFallingTree_C* NewChaosTree, class ANWXTreeTrunkGeometryCollection* NewTrunkGeometryCollection, const TArray<class UMaterialInterface*>& Materials, bool CallFunc_HasAnyTags_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsValid_ReturnValue, TArray<struct FGameplayEffectCue>& Temp_struct_Variable, class UBP_HarvestableGeomAudioComponent_C* CallFunc_GetComponentByClass_ReturnValue, TScriptInterface<class IIIMProxyResourceGranter> CallFunc_SetIIM_InstanceData_ResourceGranter_CastInput, TScriptInterface<class IDamageEventInterface> K2Node_DynamicCast_AsDamage_Event_Interface, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValidClass_ReturnValue, bool CallFunc_GetInstanceAmbienceData_OutDataFound, const struct FAmbienceDataReference& CallFunc_GetInstanceAmbienceData_ReturnValue, const struct FAmbienceData& CallFunc_CopyAmbienceData_ReturnValue, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, const class FString& CallFunc_GetClassDisplayName_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_Conv_NameToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, bool CallFunc_IsValid_ReturnValue_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FTagValueContainer& CallFunc_DamageActor_AggregatedDamageTags, bool CallFunc_IsValid_ReturnValue_3, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1, class ANWXTreeTrunkGeometryCollection* CallFunc_FinishSpawningActor_ReturnValue, class ABP_IIMProxy_ChaosFallingTree_C* CallFunc_FinishSpawningActor_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_4, float CallFunc_DamageActor_BaseDamage_ImplicitCast)
+void ABP_ResourceNode_IIM_C::SpawnDestructibleTree(class UClass* TrunkGeometryClass, double BaseDamage, class AActor* DamageCauser, const struct FGameplayTagContainer& EffectTags, const struct FHitResult& HitResult, const struct FTagValueContainer& TagValueContainer, const struct FIIMInstance& Instance, bool* Success, double StumpTransitionDelaySeconds, class UBP_HarvestableGeomAudioComponent_C* NewHarvestableGeomAudioComp, class ABP_IIMProxy_ChaosFallingTree_C* NewChaosTree, class ANWXTreeTrunkGeometryCollection* NewTrunkGeometryCollection, const TArray<class UMaterialInterface*>& Materials, TArray<struct FGameplayEffectCue>& Temp_struct_Variable, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class UBP_HarvestableGeomAudioComponent_C* CallFunc_GetComponentByClass_ReturnValue, TScriptInterface<class IIIMProxyResourceGranter> CallFunc_SetIIM_InstanceData_ResourceGranter_CastInput, TScriptInterface<class IDamageEventInterface> K2Node_DynamicCast_AsDamage_Event_Interface, bool K2Node_DynamicCast_bSuccess_1, bool Temp_bool_Variable, bool CallFunc_IsValidClass_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_GetInstanceAmbienceData_OutDataFound, const struct FAmbienceDataReference& CallFunc_GetInstanceAmbienceData_ReturnValue, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, const struct FAmbienceData& CallFunc_CopyAmbienceData_ReturnValue, const class FString& CallFunc_GetClassDisplayName_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_Conv_NameToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, const class FString& CallFunc_Conv_TextToString_ReturnValue, const struct FTagValueContainer& CallFunc_DamageActor_AggregatedDamageTags, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1, class ANWXTreeTrunkGeometryCollection* CallFunc_FinishSpawningActor_ReturnValue, class ABP_IIMProxy_ChaosFallingTree_C* CallFunc_FinishSpawningActor_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_4, float CallFunc_DamageActor_BaseDamage_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -891,31 +924,34 @@ void ABP_ResourceNode_IIM_C::SpawnDestructibleTree(class UClass* TrunkGeometryCl
 	Parms.NewChaosTree = NewChaosTree;
 	Parms.NewTrunkGeometryCollection = NewTrunkGeometryCollection;
 	Parms.Materials = Materials;
-	Parms.CallFunc_HasAnyTags_ReturnValue = CallFunc_HasAnyTags_ReturnValue;
-	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
+	Parms.K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface = K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_HasAnyMatchingGameplayTags_ReturnValue = CallFunc_HasAnyMatchingGameplayTags_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
 	Parms.CallFunc_SetIIM_InstanceData_ResourceGranter_CastInput = CallFunc_SetIIM_InstanceData_ResourceGranter_CastInput;
 	Parms.K2Node_DynamicCast_AsDamage_Event_Interface = K2Node_DynamicCast_AsDamage_Event_Interface;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.K2Node_DynamicCast_bSuccess_1 = K2Node_DynamicCast_bSuccess_1;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_IsValidClass_ReturnValue = CallFunc_IsValidClass_ReturnValue;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.CallFunc_GetInstanceAmbienceData_OutDataFound = CallFunc_GetInstanceAmbienceData_OutDataFound;
 	Parms.CallFunc_GetInstanceAmbienceData_ReturnValue = CallFunc_GetInstanceAmbienceData_ReturnValue;
-	Parms.CallFunc_CopyAmbienceData_ReturnValue = CallFunc_CopyAmbienceData_ReturnValue;
 	Parms.CallFunc_GetActorForwardVector_ReturnValue = CallFunc_GetActorForwardVector_ReturnValue;
+	Parms.CallFunc_CopyAmbienceData_ReturnValue = CallFunc_CopyAmbienceData_ReturnValue;
 	Parms.CallFunc_GetClassDisplayName_ReturnValue = CallFunc_GetClassDisplayName_ReturnValue;
 	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
 	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.CallFunc_Conv_NameToText_ReturnValue = CallFunc_Conv_NameToText_ReturnValue;
 	Parms.K2Node_MakeStruct_FormatArgumentData_1 = K2Node_MakeStruct_FormatArgumentData_1;
-	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
-	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
-	Parms.CallFunc_DamageActor_AggregatedDamageTags = CallFunc_DamageActor_AggregatedDamageTags;
 	Parms.CallFunc_IsValid_ReturnValue_3 = CallFunc_IsValid_ReturnValue_3;
+	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
+	Parms.CallFunc_DamageActor_AggregatedDamageTags = CallFunc_DamageActor_AggregatedDamageTags;
 	Parms.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue = CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue;
 	Parms.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1 = CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1;
 	Parms.CallFunc_FinishSpawningActor_ReturnValue = CallFunc_FinishSpawningActor_ReturnValue;
@@ -1605,15 +1641,17 @@ bool ABP_ResourceNode_IIM_C::GetInteractionTag(struct FGameplayTag* InteractionT
 // class UBP_HarvestableGeomAudioComponent_C*NewHarvestableGeomAudioComp                                      (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // TArray<class UMaterialInterface*>  Materials                                                        (Edit, BlueprintVisible)
 // class ANWXHarvestableGeometryCollection*NewHarvestableGeometry                                           (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValidClass_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAnyTags_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FTransform>          K2Node_MakeArray_Array                                           (ReferenceParm)
-// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FGameplayEffectCue>  Temp_struct_Variable                                             (ConstParm, ReferenceParm)
+// bool                               CallFunc_IsValidClass_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FTransform>          K2Node_MakeArray_Array                                           (ReferenceParm)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_BreakTransform_Location                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FRotator                    CallFunc_BreakTransform_Rotation                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FVector                     CallFunc_BreakTransform_Scale                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IGameplayTagAssetInterface>K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAnyMatchingGameplayTags_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GenerateItemRewardsFromRewardData_bOutAwardItem         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FInventoryEntry>     CallFunc_GenerateItemRewardsFromRewardData_ReturnValue           (ReferenceParm)
 // class UBP_HarvestableGeomAudioComponent_C*CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -1625,7 +1663,7 @@ bool ABP_ResourceNode_IIM_C::GetInteractionTag(struct FGameplayTag* InteractionT
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue                                      (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class UMaterialInterface*>  CallFunc_GetInstanceMeshMaterials_OutMaterials                   (ReferenceParm)
 // bool                               CallFunc_GetInstanceMeshMaterials_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FIIMInstance                CallFunc_UpdateInstance_OutInstance                              (None)
@@ -1639,18 +1677,19 @@ bool ABP_ResourceNode_IIM_C::GetInteractionTag(struct FGameplayTag* InteractionT
 // class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_1                         (ZeroConstructor, HasGetValueTypeHash)
 // TScriptInterface<class IDamageEventInterface>K2Node_DynamicCast_AsDamage_Event_Interface                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTagValueContainer          CallFunc_DamageActor_AggregatedDamageTags                        (None)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ANWXHarvestableGeometryCollection*CallFunc_FinishSpawningActor_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FIIMInstance                K2Node_Copy_ReturnValue                                          (None)
 // struct FIIMInstance                K2Node_SetFieldsInStruct_StructOut                               (None)
 // struct FIIMInstance                CallFunc_UpdateInstance_OutInstance_1                            (None)
 // bool                               CallFunc_UpdateInstance_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ANWXHarvestableGeometryCollection*CallFunc_FinishSpawningActor_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_DamageActor_BaseDamage_ImplicitCast                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ResourceNode_IIM_C::SpawnDestructibleRock(class UClass* HarvestableGeometryClass, double BaseDamage, class AActor* DamageCauser, const struct FGameplayTagContainer& EffectTags, const struct FHitResult& HitResult, const struct FTagValueContainer& TagValueContainer, const struct FIIMInstance& Instance, bool* Success, class UBP_HarvestableGeomAudioComponent_C* NewHarvestableGeomAudioComp, const TArray<class UMaterialInterface*>& Materials, class ANWXHarvestableGeometryCollection* NewHarvestableGeometry, bool CallFunc_IsValidClass_ReturnValue, bool CallFunc_HasAnyTags_ReturnValue, TArray<struct FTransform>& K2Node_MakeArray_Array, bool CallFunc_Not_PreBool_ReturnValue, TArray<struct FGameplayEffectCue>& Temp_struct_Variable, bool CallFunc_IsValid_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, bool CallFunc_GenerateItemRewardsFromRewardData_bOutAwardItem, TArray<struct FInventoryEntry>& CallFunc_GenerateItemRewardsFromRewardData_ReturnValue, class UBP_HarvestableGeomAudioComponent_C* CallFunc_GetComponentByClass_ReturnValue, const class FString& CallFunc_GetClassDisplayName_ReturnValue, class FText CallFunc_Conv_NameToText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, TArray<class UMaterialInterface*>& CallFunc_GetInstanceMeshMaterials_OutMaterials, bool CallFunc_GetInstanceMeshMaterials_ReturnValue, const struct FIIMInstance& CallFunc_UpdateInstance_OutInstance, bool CallFunc_UpdateInstance_ReturnValue, const class FString& CallFunc_GetClassDisplayName_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, class FText CallFunc_Conv_NameToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, class FText CallFunc_Format_ReturnValue_1, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, TScriptInterface<class IDamageEventInterface> K2Node_DynamicCast_AsDamage_Event_Interface, bool K2Node_DynamicCast_bSuccess, const struct FTagValueContainer& CallFunc_DamageActor_AggregatedDamageTags, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class ANWXHarvestableGeometryCollection* CallFunc_FinishSpawningActor_ReturnValue, const struct FIIMInstance& K2Node_Copy_ReturnValue, const struct FIIMInstance& K2Node_SetFieldsInStruct_StructOut, const struct FIIMInstance& CallFunc_UpdateInstance_OutInstance_1, bool CallFunc_UpdateInstance_ReturnValue_1, float CallFunc_DamageActor_BaseDamage_ImplicitCast)
+void ABP_ResourceNode_IIM_C::SpawnDestructibleRock(class UClass* HarvestableGeometryClass, double BaseDamage, class AActor* DamageCauser, const struct FGameplayTagContainer& EffectTags, const struct FHitResult& HitResult, const struct FTagValueContainer& TagValueContainer, const struct FIIMInstance& Instance, bool* Success, class UBP_HarvestableGeomAudioComponent_C* NewHarvestableGeomAudioComp, const TArray<class UMaterialInterface*>& Materials, class ANWXHarvestableGeometryCollection* NewHarvestableGeometry, TArray<struct FGameplayEffectCue>& Temp_struct_Variable, bool CallFunc_IsValidClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, TArray<struct FTransform>& K2Node_MakeArray_Array, bool CallFunc_IsValid_ReturnValue_1, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, bool CallFunc_GenerateItemRewardsFromRewardData_bOutAwardItem, TArray<struct FInventoryEntry>& CallFunc_GenerateItemRewardsFromRewardData_ReturnValue, class UBP_HarvestableGeomAudioComponent_C* CallFunc_GetComponentByClass_ReturnValue, const class FString& CallFunc_GetClassDisplayName_ReturnValue, class FText CallFunc_Conv_NameToText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, TArray<class UMaterialInterface*>& CallFunc_GetInstanceMeshMaterials_OutMaterials, bool CallFunc_GetInstanceMeshMaterials_ReturnValue, const struct FIIMInstance& CallFunc_UpdateInstance_OutInstance, bool CallFunc_UpdateInstance_ReturnValue, const class FString& CallFunc_GetClassDisplayName_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, class FText CallFunc_Conv_NameToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, class FText CallFunc_Format_ReturnValue_1, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, TScriptInterface<class IDamageEventInterface> K2Node_DynamicCast_AsDamage_Event_Interface, bool K2Node_DynamicCast_bSuccess_1, bool Temp_bool_Variable, const struct FTagValueContainer& CallFunc_DamageActor_AggregatedDamageTags, bool CallFunc_Not_PreBool_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, const struct FIIMInstance& K2Node_Copy_ReturnValue, const struct FIIMInstance& K2Node_SetFieldsInStruct_StructOut, const struct FIIMInstance& CallFunc_UpdateInstance_OutInstance_1, bool CallFunc_UpdateInstance_ReturnValue_1, class ANWXHarvestableGeometryCollection* CallFunc_FinishSpawningActor_ReturnValue, float CallFunc_DamageActor_BaseDamage_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1669,15 +1708,17 @@ void ABP_ResourceNode_IIM_C::SpawnDestructibleRock(class UClass* HarvestableGeom
 	Parms.NewHarvestableGeomAudioComp = NewHarvestableGeomAudioComp;
 	Parms.Materials = Materials;
 	Parms.NewHarvestableGeometry = NewHarvestableGeometry;
-	Parms.CallFunc_IsValidClass_ReturnValue = CallFunc_IsValidClass_ReturnValue;
-	Parms.CallFunc_HasAnyTags_ReturnValue = CallFunc_HasAnyTags_ReturnValue;
-	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
-	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
+	Parms.CallFunc_IsValidClass_ReturnValue = CallFunc_IsValidClass_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 	Parms.CallFunc_BreakTransform_Location = CallFunc_BreakTransform_Location;
 	Parms.CallFunc_BreakTransform_Rotation = CallFunc_BreakTransform_Rotation;
 	Parms.CallFunc_BreakTransform_Scale = CallFunc_BreakTransform_Scale;
+	Parms.K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface = K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_HasAnyMatchingGameplayTags_ReturnValue = CallFunc_HasAnyMatchingGameplayTags_ReturnValue;
 	Parms.CallFunc_GenerateItemRewardsFromRewardData_bOutAwardItem = CallFunc_GenerateItemRewardsFromRewardData_bOutAwardItem;
 	Parms.CallFunc_GenerateItemRewardsFromRewardData_ReturnValue = CallFunc_GenerateItemRewardsFromRewardData_ReturnValue;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
@@ -1689,7 +1730,7 @@ void ABP_ResourceNode_IIM_C::SpawnDestructibleRock(class UClass* HarvestableGeom
 	Parms.K2Node_MakeArray_Array_1 = K2Node_MakeArray_Array_1;
 	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
 	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
+	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
 	Parms.CallFunc_GetInstanceMeshMaterials_OutMaterials = CallFunc_GetInstanceMeshMaterials_OutMaterials;
 	Parms.CallFunc_GetInstanceMeshMaterials_ReturnValue = CallFunc_GetInstanceMeshMaterials_ReturnValue;
 	Parms.CallFunc_UpdateInstance_OutInstance = CallFunc_UpdateInstance_OutInstance;
@@ -1703,15 +1744,16 @@ void ABP_ResourceNode_IIM_C::SpawnDestructibleRock(class UClass* HarvestableGeom
 	Parms.CallFunc_Format_ReturnValue_1 = CallFunc_Format_ReturnValue_1;
 	Parms.CallFunc_Conv_TextToString_ReturnValue_1 = CallFunc_Conv_TextToString_ReturnValue_1;
 	Parms.K2Node_DynamicCast_AsDamage_Event_Interface = K2Node_DynamicCast_AsDamage_Event_Interface;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.K2Node_DynamicCast_bSuccess_1 = K2Node_DynamicCast_bSuccess_1;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_DamageActor_AggregatedDamageTags = CallFunc_DamageActor_AggregatedDamageTags;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue = CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
-	Parms.CallFunc_FinishSpawningActor_ReturnValue = CallFunc_FinishSpawningActor_ReturnValue;
 	Parms.K2Node_Copy_ReturnValue = K2Node_Copy_ReturnValue;
 	Parms.K2Node_SetFieldsInStruct_StructOut = K2Node_SetFieldsInStruct_StructOut;
 	Parms.CallFunc_UpdateInstance_OutInstance_1 = CallFunc_UpdateInstance_OutInstance_1;
 	Parms.CallFunc_UpdateInstance_ReturnValue_1 = CallFunc_UpdateInstance_ReturnValue_1;
+	Parms.CallFunc_FinishSpawningActor_ReturnValue = CallFunc_FinishSpawningActor_ReturnValue;
 	Parms.CallFunc_DamageActor_BaseDamage_ImplicitCast = CallFunc_DamageActor_BaseDamage_ImplicitCast;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1898,13 +1940,15 @@ void ABP_ResourceNode_IIM_C::AttemptToClaimResourceRewards(const struct FIIMInst
 // Parameters:
 // struct FIIMInstance                Instance                                                         (BlueprintVisible, BlueprintReadOnly, Parm)
 // TArray<class UScriptStruct*>       K2Node_MakeArray_Array                                           (ReferenceParm)
+// struct FVector                     CallFunc_BreakTransform_Location                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRotator                    CallFunc_BreakTransform_Rotation                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                     CallFunc_BreakTransform_Scale                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TSoftObjectPtr<class UStaticMesh>  CallFunc_GetInstanceMesh_OutMesh                                 (UObjectWrapper, HasGetValueTypeHash)
-// bool                               CallFunc_GetInstanceMesh_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FIIMExtents                 CallFunc_GetInstanceMeshExtents_OutExtents                       (NoDestructor)
 // bool                               CallFunc_GetInstanceMeshExtents_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TSoftObjectPtr<class UStaticMesh>  CallFunc_GetInstanceMesh_OutMesh                                 (UObjectWrapper, HasGetValueTypeHash)
+// bool                               CallFunc_GetInstanceMesh_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_TransformLocation_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UStaticMesh*                 K2Node_DynamicCast_AsStatic_Mesh                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTagContainer       CallFunc_GetTagsFromStaticMesh_ReturnValue                       (None)
@@ -1915,7 +1959,7 @@ void ABP_ResourceNode_IIM_C::AttemptToClaimResourceRewards(const struct FIIMInst
 // class UNiagaraComponent*           CallFunc_SpawnBustableDestructionVFX_ReturnValue                 (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // struct FBustableAudio_Destructed   CallFunc_GetTableCellData_OutData_1                              (None)
 
-void ABP_ResourceNode_IIM_C::SpawnBustableDestructionEffects(const struct FIIMInstance& Instance, TArray<class UScriptStruct*>& K2Node_MakeArray_Array, class AActor* CallFunc_GetOwner_ReturnValue, TSoftObjectPtr<class UStaticMesh> CallFunc_GetInstanceMesh_OutMesh, bool CallFunc_GetInstanceMesh_ReturnValue, const struct FIIMExtents& CallFunc_GetInstanceMeshExtents_OutExtents, bool CallFunc_GetInstanceMeshExtents_ReturnValue, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue, const struct FVector& CallFunc_TransformLocation_ReturnValue, class UStaticMesh* K2Node_DynamicCast_AsStatic_Mesh, bool K2Node_DynamicCast_bSuccess, const struct FGameplayTagContainer& CallFunc_GetTagsFromStaticMesh_ReturnValue, TArray<struct FGameplayTag>& CallFunc_BreakGameplayTagContainer_GameplayTags, TArray<struct FAffinityTableCellDataWrapper>& CallFunc_QueryTable_OutMemoryPtrs, bool CallFunc_QueryTable_ReturnValue, const struct FStructureNiagaraDestructionResponse& CallFunc_GetTableCellData_OutData, class UNiagaraComponent* CallFunc_SpawnBustableDestructionVFX_ReturnValue, const struct FBustableAudio_Destructed& CallFunc_GetTableCellData_OutData_1)
+void ABP_ResourceNode_IIM_C::SpawnBustableDestructionEffects(const struct FIIMInstance& Instance, TArray<class UScriptStruct*>& K2Node_MakeArray_Array, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, class AActor* CallFunc_GetOwner_ReturnValue, const struct FIIMExtents& CallFunc_GetInstanceMeshExtents_OutExtents, bool CallFunc_GetInstanceMeshExtents_ReturnValue, TSoftObjectPtr<class UStaticMesh> CallFunc_GetInstanceMesh_OutMesh, bool CallFunc_GetInstanceMesh_ReturnValue, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue, class UStaticMesh* K2Node_DynamicCast_AsStatic_Mesh, bool K2Node_DynamicCast_bSuccess, const struct FGameplayTagContainer& CallFunc_GetTagsFromStaticMesh_ReturnValue, TArray<struct FGameplayTag>& CallFunc_BreakGameplayTagContainer_GameplayTags, TArray<struct FAffinityTableCellDataWrapper>& CallFunc_QueryTable_OutMemoryPtrs, bool CallFunc_QueryTable_ReturnValue, const struct FStructureNiagaraDestructionResponse& CallFunc_GetTableCellData_OutData, class UNiagaraComponent* CallFunc_SpawnBustableDestructionVFX_ReturnValue, const struct FBustableAudio_Destructed& CallFunc_GetTableCellData_OutData_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1926,13 +1970,15 @@ void ABP_ResourceNode_IIM_C::SpawnBustableDestructionEffects(const struct FIIMIn
 
 	Parms.Instance = Instance;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
+	Parms.CallFunc_BreakTransform_Location = CallFunc_BreakTransform_Location;
+	Parms.CallFunc_BreakTransform_Rotation = CallFunc_BreakTransform_Rotation;
+	Parms.CallFunc_BreakTransform_Scale = CallFunc_BreakTransform_Scale;
 	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
-	Parms.CallFunc_GetInstanceMesh_OutMesh = CallFunc_GetInstanceMesh_OutMesh;
-	Parms.CallFunc_GetInstanceMesh_ReturnValue = CallFunc_GetInstanceMesh_ReturnValue;
 	Parms.CallFunc_GetInstanceMeshExtents_OutExtents = CallFunc_GetInstanceMeshExtents_OutExtents;
 	Parms.CallFunc_GetInstanceMeshExtents_ReturnValue = CallFunc_GetInstanceMeshExtents_ReturnValue;
+	Parms.CallFunc_GetInstanceMesh_OutMesh = CallFunc_GetInstanceMesh_OutMesh;
+	Parms.CallFunc_GetInstanceMesh_ReturnValue = CallFunc_GetInstanceMesh_ReturnValue;
 	Parms.CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue = CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue;
-	Parms.CallFunc_TransformLocation_ReturnValue = CallFunc_TransformLocation_ReturnValue;
 	Parms.K2Node_DynamicCast_AsStatic_Mesh = K2Node_DynamicCast_AsStatic_Mesh;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_GetTagsFromStaticMesh_ReturnValue = CallFunc_GetTagsFromStaticMesh_ReturnValue;

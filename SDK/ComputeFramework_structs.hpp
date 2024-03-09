@@ -72,7 +72,7 @@ public:
 	int32                                        DataInterfaceIndex;                                // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        DataInterfaceBindingIndex;                         // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bKernelInput;                                      // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4222[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4249[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                BindingFunctionNameOverride;                       // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                BindingFunctionNamespace;                          // 0x28(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -83,7 +83,7 @@ struct FComputeGraphInstance
 {
 public:
 	TArray<class UComputeDataProvider*>          DataProviders;                                     // 0x0(0x10)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4223[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_424A[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -93,7 +93,7 @@ struct FComputeKernelPermutationBool
 public:
 	class FString                                Name;                                              // 0x0(0x10)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         Value;                                             // 0x10(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4224[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_424B[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -128,7 +128,7 @@ struct FComputeKernelPermutationVector
 public:
 	TMap<class FString, uint32>                  Permutations;                                      // 0x0(0x50)(NativeAccessSpecifierPublic)
 	uint32                                       BitCount;                                          // 0x50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4225[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_424C[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -136,7 +136,7 @@ public:
 struct FShaderValueTypeHandle
 {
 public:
-	uint8                                        Pad_4226[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_424D[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -146,10 +146,10 @@ struct FShaderValueType
 public:
 	enum class EShaderFundamentalType            Type;                                              // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EShaderFundamentalDimensionType   DimensionType;                                     // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4227[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_424E[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  Name;                                              // 0x4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsDynamicArray;                                   // 0xC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4228[0x13];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_424F[0x13];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -163,7 +163,7 @@ public:
 	uint16                                       ArrayElementCount;                                 // 0x28(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EShaderParamBindingType           BindingType;                                       // 0x2A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EShaderResourceType               ResourceType;                                      // 0x2B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4229[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4250[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -174,7 +174,7 @@ public:
 	class FString                                Name;                                              // 0x0(0x10)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FShaderParamTypeDefinition>    ParamTypes;                                        // 0x10(0x10)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 	bool                                         bHasReturnType;                                    // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_422A[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4251[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

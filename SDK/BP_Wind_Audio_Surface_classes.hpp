@@ -14,7 +14,7 @@ namespace SDK
 class UBP_Wind_Audio_Surface_C : public USceneComponent
 {
 public:
-	uint8                                        Pad_7574[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A6DF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x2B0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UAmbienceManager*                      Ambience_Manager;                                  // 0x2B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FTransform>                    ChildTransforms;                                   // 0x2C0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)

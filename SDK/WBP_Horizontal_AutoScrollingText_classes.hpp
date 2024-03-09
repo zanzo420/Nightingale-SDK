@@ -20,7 +20,7 @@ public:
 	class FText                                  Text;                                              // 0x358(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	TSubclassOf<class UCommonTextStyle>          TextStyle;                                         // 0x370(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, UObjectWrapper, HasGetValueTypeHash)
 	enum class ETextJustify                      TextJustification;                                 // 0x378(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5050[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4F70[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       WidthOverride;                                     // 0x380(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	double                                       MaxWidthOverride;                                  // 0x388(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 

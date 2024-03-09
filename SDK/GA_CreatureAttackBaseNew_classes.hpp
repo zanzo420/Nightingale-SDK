@@ -20,7 +20,7 @@ public:
 	struct FGameplayTagContainer                 ImpactTags;                                        // 0x438(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FHitResult                            HitResult;                                         // 0x458(0xE8)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FS_CreatureKnockbackData              KnockbackData;                                     // 0x540(0x2E)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3D25[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_84E7[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                HitActor;                                          // 0x570(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTagValueContainer                    DamageTagValueContainer;                           // 0x578(0x10)(Edit, BlueprintVisible)
 	struct FGameplayTagContainer                 CueTag;                                            // 0x588(0x20)(Edit, BlueprintVisible)

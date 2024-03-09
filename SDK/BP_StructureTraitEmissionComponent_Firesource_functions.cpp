@@ -40,6 +40,24 @@ class UBP_StructureTraitEmissionComponent_Firesource_C* UBP_StructureTraitEmissi
 }
 
 
+// Function BP_StructureTraitEmissionComponent_Firesource.BP_StructureTraitEmissionComponent_Firesource_C.ReceiveBeginPlay
+// (Event, Public, BlueprintEvent)
+// Parameters:
+
+void UBP_StructureTraitEmissionComponent_Firesource_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_StructureTraitEmissionComponent_Firesource_C", "ReceiveBeginPlay");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function BP_StructureTraitEmissionComponent_Firesource.BP_StructureTraitEmissionComponent_Firesource_C.OnIgnite
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -97,28 +115,11 @@ void UBP_StructureTraitEmissionComponent_Firesource_C::ReceiveEndPlay(enum class
 }
 
 
-// Function BP_StructureTraitEmissionComponent_Firesource.BP_StructureTraitEmissionComponent_Firesource_C.PostInitializeEmissionTraits
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UBP_StructureTraitEmissionComponent_Firesource_C::PostInitializeEmissionTraits()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_StructureTraitEmissionComponent_Firesource_C", "PostInitializeEmissionTraits");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function BP_StructureTraitEmissionComponent_Firesource.BP_StructureTraitEmissionComponent_Firesource_C.ExecuteUbergraph_BP_StructureTraitEmissionComponent_Firesource
 // (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UStructureFireComponent*     Temp_object_Variable                                             (ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -128,10 +129,9 @@ void UBP_StructureTraitEmissionComponent_Firesource_C::PostInitializeEmissionTra
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UStructureFireComponent*     CallFunc_GetStructureFireComponent_ReturnValue                   (ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // enum class EEndPlayReason          K2Node_Event_EndPlayReason                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_StructureTraitEmissionComponent_Firesource_C::ExecuteUbergraph_BP_StructureTraitEmissionComponent_Firesource(int32 EntryPoint, class UStructureFireComponent* Temp_object_Variable, class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue_1, TScriptInterface<class IStructureFireInterface> K2Node_DynamicCast_AsStructure_Fire_Interface, bool K2Node_DynamicCast_bSuccess, class UStructureFireComponent* CallFunc_GetStructureFireComponent_ReturnValue, enum class EEndPlayReason K2Node_Event_EndPlayReason, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1)
+void UBP_StructureTraitEmissionComponent_Firesource_C::ExecuteUbergraph_BP_StructureTraitEmissionComponent_Firesource(int32 EntryPoint, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UStructureFireComponent* Temp_object_Variable, class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue_1, TScriptInterface<class IStructureFireInterface> K2Node_DynamicCast_AsStructure_Fire_Interface, bool K2Node_DynamicCast_bSuccess, class UStructureFireComponent* CallFunc_GetStructureFireComponent_ReturnValue, enum class EEndPlayReason K2Node_Event_EndPlayReason, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -141,6 +141,7 @@ void UBP_StructureTraitEmissionComponent_Firesource_C::ExecuteUbergraph_BP_Struc
 	Params::UBP_StructureTraitEmissionComponent_Firesource_C_ExecuteUbergraph_BP_StructureTraitEmissionComponent_Firesource_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -150,7 +151,6 @@ void UBP_StructureTraitEmissionComponent_Firesource_C::ExecuteUbergraph_BP_Struc
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_GetStructureFireComponent_ReturnValue = CallFunc_GetStructureFireComponent_ReturnValue;
 	Parms.K2Node_Event_EndPlayReason = K2Node_Event_EndPlayReason;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
 
 	UObject::ProcessEvent(Func, &Parms);

@@ -20,7 +20,7 @@ struct FS_CreatureAbilityZoneDefinition
 {
 public:
 	enum class Enum_ZoneDefinitionType           ZoneType_32_122562384C125B1B53512685F5172C0E;      // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5C06[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_650A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Yaw_16_CE8D8B8E4B7B6BE9F565649BD71D94D5;           // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        YawRange_17_F7DF40C2429380D92F1E59BC505B3DBD;      // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Pitch_18_864F90744F4F164C5D8CC3B33B8C7E1A;         // 0xC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -15,7 +15,7 @@ class UANS_Update_Warp_Transform_C : public UAnimNotifyState
 {
 public:
 	bool                                         TrackLocation;                                     // 0x30(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_663D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5230[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       OffsetTowardsSource;                               // 0x38(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

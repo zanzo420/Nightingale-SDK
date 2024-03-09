@@ -40,59 +40,6 @@ class UBP_CreatureComponent_Audio_C* UBP_CreatureComponent_Audio_C::GetDefaultOb
 }
 
 
-// Function BP_CreatureComponent_Audio.BP_CreatureComponent_Audio_C.Spyglass_Update
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_BreakTransform_Location                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRotator                    CallFunc_BreakTransform_Rotation                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                     CallFunc_BreakTransform_Scale                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform                  CallFunc_GetListenerTransform_ReturnValue                        (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UScopedAkComponent*          CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_Subtract_VectorVector_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                             CallFunc_VSize_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetAzimuthAndElevation_Azimuth                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetAzimuthAndElevation_Elevation                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_SetRTPCValue_Value_ImplicitCast                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_CreatureComponent_Audio_C::Spyglass_Update(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, int32 CallFunc_Add_IntInt_ReturnValue, const struct FTransform& CallFunc_GetListenerTransform_ReturnValue, class UScopedAkComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, double CallFunc_VSize_ReturnValue, float CallFunc_GetAzimuthAndElevation_Azimuth, float CallFunc_GetAzimuthAndElevation_Elevation, float CallFunc_SetRTPCValue_Value_ImplicitCast)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_CreatureComponent_Audio_C", "Spyglass_Update");
-
-	Params::UBP_CreatureComponent_Audio_C_Spyglass_Update_Params Parms{};
-
-	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
-	Parms.CallFunc_BreakTransform_Location = CallFunc_BreakTransform_Location;
-	Parms.CallFunc_BreakTransform_Rotation = CallFunc_BreakTransform_Rotation;
-	Parms.CallFunc_BreakTransform_Scale = CallFunc_BreakTransform_Scale;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_GetListenerTransform_ReturnValue = CallFunc_GetListenerTransform_ReturnValue;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
-	Parms.CallFunc_K2_GetComponentLocation_ReturnValue = CallFunc_K2_GetComponentLocation_ReturnValue;
-	Parms.CallFunc_Subtract_VectorVector_ReturnValue = CallFunc_Subtract_VectorVector_ReturnValue;
-	Parms.CallFunc_VSize_ReturnValue = CallFunc_VSize_ReturnValue;
-	Parms.CallFunc_GetAzimuthAndElevation_Azimuth = CallFunc_GetAzimuthAndElevation_Azimuth;
-	Parms.CallFunc_GetAzimuthAndElevation_Elevation = CallFunc_GetAzimuthAndElevation_Elevation;
-	Parms.CallFunc_SetRTPCValue_Value_ImplicitCast = CallFunc_SetRTPCValue_Value_ImplicitCast;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function BP_CreatureComponent_Audio.BP_CreatureComponent_Audio_C.On Creature Audio Loaded
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -395,6 +342,91 @@ void UBP_CreatureComponent_Audio_C::Cache_Footsteps(bool CallFunc_IsServer_Retur
 }
 
 
+// Function BP_CreatureComponent_Audio.BP_CreatureComponent_Audio_C.SetFootstepParameters
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                             TempDistance                                                     (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable                                             (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_1                                           (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_2                                           (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_3                                           (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_4                                           (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_5                                           (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_6                                           (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_7                                           (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_8                                           (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_9                                           (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_10                                          (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_11                                          (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_12                                          (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_13                                          (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EFootstepSoundType      Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APlayerController*           CallFunc_GetPlayerController_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetDistanceTo_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_LessEqual_DoubleDouble_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAkSwitchValue*              Temp_object_Variable_14                                          (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue_1                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<class UAkComponent*>        CallFunc_K2_GetComponentsByClass_ReturnValue                     (ReferenceParm, ContainsInstancedReference)
+// class UAkSwitchValue*              K2Node_Select_Default                                            (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class UAkComponent*                CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_LessEqual_DoubleDouble_A_ImplicitCast                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_CreatureComponent_Audio_C::SetFootstepParameters(double TempDistance, class UAkSwitchValue* Temp_object_Variable, class UAkSwitchValue* Temp_object_Variable_1, class UAkSwitchValue* Temp_object_Variable_2, class UAkSwitchValue* Temp_object_Variable_3, class UAkSwitchValue* Temp_object_Variable_4, class UAkSwitchValue* Temp_object_Variable_5, class UAkSwitchValue* Temp_object_Variable_6, class UAkSwitchValue* Temp_object_Variable_7, class UAkSwitchValue* Temp_object_Variable_8, class UAkSwitchValue* Temp_object_Variable_9, class UAkSwitchValue* Temp_object_Variable_10, class UAkSwitchValue* Temp_object_Variable_11, class UAkSwitchValue* Temp_object_Variable_12, class UAkSwitchValue* Temp_object_Variable_13, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, enum class EFootstepSoundType Temp_byte_Variable, class APlayerController* CallFunc_GetPlayerController_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, float CallFunc_GetDistanceTo_ReturnValue, bool CallFunc_LessEqual_DoubleDouble_ReturnValue, class UAkSwitchValue* Temp_object_Variable_14, class AActor* CallFunc_GetOwner_ReturnValue_1, TArray<class UAkComponent*>& CallFunc_K2_GetComponentsByClass_ReturnValue, class UAkSwitchValue* K2Node_Select_Default, class UAkComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, double CallFunc_LessEqual_DoubleDouble_A_ImplicitCast)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_CreatureComponent_Audio_C", "SetFootstepParameters");
+
+	Params::UBP_CreatureComponent_Audio_C_SetFootstepParameters_Params Parms{};
+
+	Parms.TempDistance = TempDistance;
+	Parms.Temp_object_Variable = Temp_object_Variable;
+	Parms.Temp_object_Variable_1 = Temp_object_Variable_1;
+	Parms.Temp_object_Variable_2 = Temp_object_Variable_2;
+	Parms.Temp_object_Variable_3 = Temp_object_Variable_3;
+	Parms.Temp_object_Variable_4 = Temp_object_Variable_4;
+	Parms.Temp_object_Variable_5 = Temp_object_Variable_5;
+	Parms.Temp_object_Variable_6 = Temp_object_Variable_6;
+	Parms.Temp_object_Variable_7 = Temp_object_Variable_7;
+	Parms.Temp_object_Variable_8 = Temp_object_Variable_8;
+	Parms.Temp_object_Variable_9 = Temp_object_Variable_9;
+	Parms.Temp_object_Variable_10 = Temp_object_Variable_10;
+	Parms.Temp_object_Variable_11 = Temp_object_Variable_11;
+	Parms.Temp_object_Variable_12 = Temp_object_Variable_12;
+	Parms.Temp_object_Variable_13 = Temp_object_Variable_13;
+	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
+	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
+	Parms.CallFunc_GetDistanceTo_ReturnValue = CallFunc_GetDistanceTo_ReturnValue;
+	Parms.CallFunc_LessEqual_DoubleDouble_ReturnValue = CallFunc_LessEqual_DoubleDouble_ReturnValue;
+	Parms.Temp_object_Variable_14 = Temp_object_Variable_14;
+	Parms.CallFunc_GetOwner_ReturnValue_1 = CallFunc_GetOwner_ReturnValue_1;
+	Parms.CallFunc_K2_GetComponentsByClass_ReturnValue = CallFunc_K2_GetComponentsByClass_ReturnValue;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_LessEqual_DoubleDouble_A_ImplicitCast = CallFunc_LessEqual_DoubleDouble_A_ImplicitCast;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function BP_CreatureComponent_Audio.BP_CreatureComponent_Audio_C.CreatureDeath
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -580,6 +612,33 @@ void UBP_CreatureComponent_Audio_C::CreatureTakeDamage_Audio(double DamageTaken,
 }
 
 
+// Function BP_CreatureComponent_Audio.BP_CreatureComponent_Audio_C.GetAkHead
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<class UAkComponent*>        CallFunc_GetComponentsByTag_ReturnValue                          (ReferenceParm, ContainsInstancedReference)
+// bool                               CallFunc_Array_IsValidIndex_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAkComponent*                CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UBP_CreatureComponent_Audio_C::GetAkHead(class AActor* CallFunc_GetOwner_ReturnValue, TArray<class UAkComponent*>& CallFunc_GetComponentsByTag_ReturnValue, bool CallFunc_Array_IsValidIndex_ReturnValue, class UAkComponent* CallFunc_Array_Get_Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_CreatureComponent_Audio_C", "GetAkHead");
+
+	Params::UBP_CreatureComponent_Audio_C_GetAkHead_Params Parms{};
+
+	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
+	Parms.CallFunc_GetComponentsByTag_ReturnValue = CallFunc_GetComponentsByTag_ReturnValue;
+	Parms.CallFunc_Array_IsValidIndex_ReturnValue = CallFunc_Array_IsValidIndex_ReturnValue;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function BP_CreatureComponent_Audio.BP_CreatureComponent_Audio_C.ReceiveBeginPlay
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -713,39 +772,36 @@ void UBP_CreatureComponent_Audio_C::AlertSpawnCooldown()
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue_1                               (NoDestructor, HasGetValueTypeHash)
+// class APlayerController*           CallFunc_GetPlayerController_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UAmbienceManager*            CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Event_DeltaSeconds                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      CallFunc_GetOwner_ReturnValue_1                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetRTPCValue_Value                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ERTPCValueType          CallFunc_GetRTPCValue_OutputValueType                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetRTPCValue_Value_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ERTPCValueType          CallFunc_GetRTPCValue_OutputValueType_1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetRTPCValue_Value_2                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ERTPCValueType          CallFunc_GetRTPCValue_OutputValueType_2                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ANWXAICharacter*             K2Node_DynamicCast_AsNWXAICharacter                              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      CallFunc_GetOwner_ReturnValue_2                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UScopedAkComponent*          CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// TArray<class UScopedAkComponent*>  CallFunc_K2_GetComponentsByClass_ReturnValue                     (ReferenceParm, ContainsInstancedReference)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Array_Index_Variable_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UScopedAkComponent*          CallFunc_Array_Get_Item_1                                        (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAmbienceManager*            CallFunc_GetAmbienceManager_AmbienceManager                      (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue_1                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Delay_Duration_ImplicitCast                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Delay_Duration_ImplicitCast_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_SetAttenuationScalingFactor_Value_ImplicitCast          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Delay_Duration_ImplicitCast_2                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CreatureComponent_Audio_C::ExecuteUbergraph_BP_CreatureComponent_Audio(int32 EntryPoint, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, float K2Node_Event_DeltaSeconds, int32 CallFunc_Add_IntInt_ReturnValue_1, class AActor* CallFunc_GetOwner_ReturnValue_1, class ANWXAICharacter* K2Node_DynamicCast_AsNWXAICharacter, bool K2Node_DynamicCast_bSuccess, class AActor* CallFunc_GetOwner_ReturnValue_2, class UScopedAkComponent* CallFunc_Array_Get_Item, TArray<class UScopedAkComponent*>& CallFunc_K2_GetComponentsByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_IsServer_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, int32 Temp_int_Array_Index_Variable_1, class UScopedAkComponent* CallFunc_Array_Get_Item_1, bool CallFunc_IsValid_ReturnValue_1, class UAmbienceManager* CallFunc_GetAmbienceManager_AmbienceManager, float CallFunc_Delay_Duration_ImplicitCast, float CallFunc_Delay_Duration_ImplicitCast_1, float CallFunc_SetAttenuationScalingFactor_Value_ImplicitCast, float CallFunc_Delay_Duration_ImplicitCast_2)
+void UBP_CreatureComponent_Audio_C::ExecuteUbergraph_BP_CreatureComponent_Audio(int32 EntryPoint, bool CallFunc_Not_PreBool_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue_1, class APlayerController* CallFunc_GetPlayerController_ReturnValue, class UAmbienceManager* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsServer_ReturnValue, float K2Node_Event_DeltaSeconds, float CallFunc_GetRTPCValue_Value, enum class ERTPCValueType CallFunc_GetRTPCValue_OutputValueType, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float CallFunc_GetRTPCValue_Value_1, enum class ERTPCValueType CallFunc_GetRTPCValue_OutputValueType_1, float CallFunc_GetRTPCValue_Value_2, enum class ERTPCValueType CallFunc_GetRTPCValue_OutputValueType_2, bool CallFunc_IsValid_ReturnValue_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class AActor* CallFunc_GetOwner_ReturnValue, class ANWXAICharacter* K2Node_DynamicCast_AsNWXAICharacter, bool K2Node_DynamicCast_bSuccess, class AActor* CallFunc_GetOwner_ReturnValue_1, bool CallFunc_HasAuthority_ReturnValue, float CallFunc_Delay_Duration_ImplicitCast, float CallFunc_Delay_Duration_ImplicitCast_1, float CallFunc_SetAttenuationScalingFactor_Value_ImplicitCast, float CallFunc_Delay_Duration_ImplicitCast_2)
 {
 	static class UFunction* Func = nullptr;
 
@@ -755,33 +811,30 @@ void UBP_CreatureComponent_Audio_C::ExecuteUbergraph_BP_CreatureComponent_Audio(
 	Params::UBP_CreatureComponent_Audio_C_ExecuteUbergraph_BP_CreatureComponent_Audio_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
-	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
-	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
-	Parms.Temp_int_Loop_Counter_Variable_1 = Temp_int_Loop_Counter_Variable_1;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+	Parms.CallFunc_K2_SetTimer_ReturnValue = CallFunc_K2_SetTimer_ReturnValue;
+	Parms.CallFunc_Not_PreBool_ReturnValue_1 = CallFunc_Not_PreBool_ReturnValue_1;
+	Parms.CallFunc_K2_SetTimer_ReturnValue_1 = CallFunc_K2_SetTimer_ReturnValue_1;
+	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
+	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
+	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
 	Parms.K2Node_Event_DeltaSeconds = K2Node_Event_DeltaSeconds;
-	Parms.CallFunc_Add_IntInt_ReturnValue_1 = CallFunc_Add_IntInt_ReturnValue_1;
-	Parms.CallFunc_GetOwner_ReturnValue_1 = CallFunc_GetOwner_ReturnValue_1;
+	Parms.CallFunc_GetRTPCValue_Value = CallFunc_GetRTPCValue_Value;
+	Parms.CallFunc_GetRTPCValue_OutputValueType = CallFunc_GetRTPCValue_OutputValueType;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_GetRTPCValue_Value_1 = CallFunc_GetRTPCValue_Value_1;
+	Parms.CallFunc_GetRTPCValue_OutputValueType_1 = CallFunc_GetRTPCValue_OutputValueType_1;
+	Parms.CallFunc_GetRTPCValue_Value_2 = CallFunc_GetRTPCValue_Value_2;
+	Parms.CallFunc_GetRTPCValue_OutputValueType_2 = CallFunc_GetRTPCValue_OutputValueType_2;
+	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
+	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
+	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
 	Parms.K2Node_DynamicCast_AsNWXAICharacter = K2Node_DynamicCast_AsNWXAICharacter;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_GetOwner_ReturnValue_2 = CallFunc_GetOwner_ReturnValue_2;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
-	Parms.CallFunc_K2_GetComponentsByClass_ReturnValue = CallFunc_K2_GetComponentsByClass_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
-	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
-	Parms.CallFunc_Array_Length_ReturnValue_1 = CallFunc_Array_Length_ReturnValue_1;
-	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
-	Parms.CallFunc_Less_IntInt_ReturnValue_1 = CallFunc_Less_IntInt_ReturnValue_1;
-	Parms.CallFunc_K2_SetTimer_ReturnValue = CallFunc_K2_SetTimer_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
-	Parms.Temp_int_Array_Index_Variable_1 = Temp_int_Array_Index_Variable_1;
-	Parms.CallFunc_Array_Get_Item_1 = CallFunc_Array_Get_Item_1;
-	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
-	Parms.CallFunc_GetAmbienceManager_AmbienceManager = CallFunc_GetAmbienceManager_AmbienceManager;
+	Parms.CallFunc_GetOwner_ReturnValue_1 = CallFunc_GetOwner_ReturnValue_1;
+	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.CallFunc_Delay_Duration_ImplicitCast = CallFunc_Delay_Duration_ImplicitCast;
 	Parms.CallFunc_Delay_Duration_ImplicitCast_1 = CallFunc_Delay_Duration_ImplicitCast_1;
 	Parms.CallFunc_SetAttenuationScalingFactor_Value_ImplicitCast = CallFunc_SetAttenuationScalingFactor_Value_ImplicitCast;

@@ -35,7 +35,7 @@ struct UWBP_HUD_Indicator_IncorrectActionFeedback_C_ExecuteUbergraph_WBP_HUD_Ind
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_69BC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_717C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             Temp_softobject_Variable;                          // 0x8(0x28)(HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>             Temp_softobject_Variable_1;                        // 0x30(0x28)(HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>             Temp_softobject_Variable_2;                        // 0x58(0x28)(HasGetValueTypeHash)
@@ -53,19 +53,19 @@ public:
 	TSoftObjectPtr<class UTexture2D>             Temp_softobject_Variable_14;                       // 0x238(0x28)(HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x260(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsAnimationPlaying_ReturnValue;           // 0x268(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_69C1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_717D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidgetAnimation*                      K2Node_Event_Animation;                            // 0x270(0x8)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	enum class EPlacementFeedbackType            Temp_byte_Variable;                                // 0x278(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x279(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_69C2[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_717E[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructurePlacementFeedback           K2Node_CustomEvent_FeedbackData;                   // 0x280(0xB8)(ContainsInstancedReference)
 	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x338(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x339(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EPlacementFeedbackType            CallFunc_GetPlacementFeedbackType_ReturnValue;     // 0x33A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_69C3[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_717F[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_GetPlacementFeedbackText_OutFeedbackText; // 0x340(0x18)(None)
 	bool                                         CallFunc_GetPlacementFeedbackText_ReturnValue;     // 0x358(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_69C4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7180[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             K2Node_Select_Default;                             // 0x360(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x388(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

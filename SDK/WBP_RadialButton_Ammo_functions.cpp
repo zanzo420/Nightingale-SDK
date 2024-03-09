@@ -144,7 +144,6 @@ void UWBP_RadialButton_Ammo_C::CreateTooltip(class UWBP_ItemTooltip_C* CallFunc_
 // Function WBP_RadialButton_Ammo.WBP_RadialButton_Ammo_C.CreateAmmoGridEntry
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                   Temp_struct_Variable                                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWBP_sw_GridEntryItem_C*     CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D                   CallFunc_AngleToVector_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPanelSlot*                  CallFunc_AddChild_ReturnValue                                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -153,7 +152,7 @@ void UWBP_RadialButton_Ammo_C::CreateTooltip(class UWBP_ItemTooltip_C* CallFunc_
 // class UAmmoRadialMenuEntry*        K2Node_DynamicCast_AsAmmo_Radial_Menu_Entry                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RadialButton_Ammo_C::CreateAmmoGridEntry(const struct FVector2D& Temp_struct_Variable, class UWBP_sw_GridEntryItem_C* CallFunc_Create_ReturnValue, const struct FVector2D& CallFunc_AngleToVector_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, class UAmmoRadialMenuEntry* K2Node_DynamicCast_AsAmmo_Radial_Menu_Entry, bool K2Node_DynamicCast_bSuccess)
+void UWBP_RadialButton_Ammo_C::CreateAmmoGridEntry(class UWBP_sw_GridEntryItem_C* CallFunc_Create_ReturnValue, const struct FVector2D& CallFunc_AngleToVector_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, class UAmmoRadialMenuEntry* K2Node_DynamicCast_AsAmmo_Radial_Menu_Entry, bool K2Node_DynamicCast_bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
@@ -162,7 +161,6 @@ void UWBP_RadialButton_Ammo_C::CreateAmmoGridEntry(const struct FVector2D& Temp_
 
 	Params::UWBP_RadialButton_Ammo_C_CreateAmmoGridEntry_Params Parms{};
 
-	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
 	Parms.CallFunc_AngleToVector_ReturnValue = CallFunc_AngleToVector_ReturnValue;
 	Parms.CallFunc_AddChild_ReturnValue = CallFunc_AddChild_ReturnValue;

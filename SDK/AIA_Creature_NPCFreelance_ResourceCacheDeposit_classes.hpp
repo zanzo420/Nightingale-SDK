@@ -14,7 +14,7 @@ namespace SDK
 class UAIA_Creature_NPCFreelance_ResourceCacheDeposit_C : public UAIA_Creature_NPCFreelance_C
 {
 public:
-	uint8                                        Pad_11[0x6];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8289[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       MinDistance;                                       // 0xC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       MaxDistance;                                       // 0xD0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

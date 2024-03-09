@@ -40,56 +40,6 @@ class UWBP_HUD_ActivityLog_C* UWBP_HUD_ActivityLog_C::GetDefaultObj()
 }
 
 
-// Function WBP_HUD_ActivityLog.WBP_HUD_ActivityLog_C.OnPlayerLeftParty
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                      PlayerName                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      (None)
-
-void UWBP_HUD_ActivityLog_C::OnPlayerLeftParty(const class FString& PlayerName, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_HUD_ActivityLog_C", "OnPlayerLeftParty");
-
-	Params::UWBP_HUD_ActivityLog_C_OnPlayerLeftParty_Params Parms{};
-
-	Parms.PlayerName = PlayerName;
-	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
-	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function WBP_HUD_ActivityLog.WBP_HUD_ActivityLog_C.OnPlayerJoinedParty
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                      PlayerName                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      (None)
-
-void UWBP_HUD_ActivityLog_C::OnPlayerJoinedParty(const class FString& PlayerName, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_HUD_ActivityLog_C", "OnPlayerJoinedParty");
-
-	Params::UWBP_HUD_ActivityLog_C_OnPlayerJoinedParty_Params Parms{};
-
-	Parms.PlayerName = PlayerName;
-	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
-	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function WBP_HUD_ActivityLog.WBP_HUD_ActivityLog_C.On Claim Redemption Response Received
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -613,11 +563,9 @@ void UWBP_HUD_ActivityLog_C::StatusEffectBindings(TSubclassOf<class IInterface> 
 // Parameters:
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_3                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UBP_PartyComponent_C*        CallFunc_GetLocalPartyComponent_PartyComponent                   (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_HUD_ActivityLog_C::PartyUnbindings(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent)
+void UWBP_HUD_ActivityLog_C::PartyUnbindings(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent)
 {
 	static class UFunction* Func = nullptr;
 
@@ -628,8 +576,6 @@ void UWBP_HUD_ActivityLog_C::PartyUnbindings(FDelegateProperty_ K2Node_CreateDel
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
-	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
-	Parms.K2Node_CreateDelegate_OutputDelegate_3 = K2Node_CreateDelegate_OutputDelegate_3;
 	Parms.CallFunc_GetLocalPartyComponent_PartyComponent = CallFunc_GetLocalPartyComponent_PartyComponent;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -642,11 +588,9 @@ void UWBP_HUD_ActivityLog_C::PartyUnbindings(FDelegateProperty_ K2Node_CreateDel
 // Parameters:
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_3                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UBP_PartyComponent_C*        CallFunc_GetLocalPartyComponent_PartyComponent                   (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_HUD_ActivityLog_C::PartyBindings(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent)
+void UWBP_HUD_ActivityLog_C::PartyBindings(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent)
 {
 	static class UFunction* Func = nullptr;
 
@@ -657,8 +601,6 @@ void UWBP_HUD_ActivityLog_C::PartyBindings(FDelegateProperty_ K2Node_CreateDeleg
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
-	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
-	Parms.K2Node_CreateDelegate_OutputDelegate_3 = K2Node_CreateDelegate_OutputDelegate_3;
 	Parms.CallFunc_GetLocalPartyComponent_PartyComponent = CallFunc_GetLocalPartyComponent_PartyComponent;
 
 	UObject::ProcessEvent(Func, &Parms);

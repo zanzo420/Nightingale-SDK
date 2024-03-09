@@ -19,18 +19,18 @@ public:
 	TScriptInterface<class IBPI_WeaponUser_C>    Shooter;                                           // 0x688(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                FiringActor;                                       // 0x698(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         ClientCanFire;                                     // 0x6A0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_821F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_862A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               ClientShotLocation;                                // 0x6A8(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UClass*>                        ImpactGameplayEffects;                             // 0x6C0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UClass*                                BPTA_Shot_Result_Class;                            // 0x6D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                FeedbackEffect;                                    // 0x6D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         CanEndAbility;                                     // 0x6E0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         AnimEnded;                                         // 0x6E1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8220[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_862B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        BulletsPerShot;                                    // 0x6E4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FItemData_Ammo                        LoadedAmmoData;                                    // 0x6E8(0xC0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bHitTarget;                                        // 0x7A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8221[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_862C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class AActor*, struct FScatterDamageBucket> DamageBuckets;                                     // 0x7B0(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, ContainsInstancedReference)
 	struct FHitResult                            LastHitResult;                                     // 0x800(0xE8)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 

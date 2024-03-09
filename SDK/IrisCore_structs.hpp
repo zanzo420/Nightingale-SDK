@@ -45,7 +45,7 @@ public:
 	TSubclassOf<class UObject>                   Class;                                             // 0x10(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EDataStreamSendStatus             DefaultSendStatus;                                 // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAutoCreate;                                       // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B7C[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DC0[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -53,7 +53,7 @@ public:
 struct FNetSerializerConfig
 {
 public:
-	uint8                                        Pad_2B7D[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DC1[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x10 - 0x10)
@@ -71,7 +71,7 @@ public:
 	int8                                         LowerBound;                                        // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int8                                         UpperBound;                                        // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x12(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B7E[0xD];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DC2[0xD];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x20 - 0x10)
@@ -82,7 +82,7 @@ public:
 	int16                                        LowerBound;                                        // 0x10(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int16                                        UpperBound;                                        // 0x12(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B7F[0xB];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DC3[0xB];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x28 - 0x10)
@@ -93,7 +93,7 @@ public:
 	int32                                        LowerBound;                                        // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        UpperBound;                                        // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B80[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DC4[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x30 - 0x10)
@@ -104,7 +104,7 @@ public:
 	int64                                        LowerBound;                                        // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int64                                        UpperBound;                                        // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B81[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DC5[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x20 - 0x10)
@@ -115,7 +115,7 @@ public:
 	uint8                                        LowerBound;                                        // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        UpperBound;                                        // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x12(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B82[0xD];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DC6[0xD];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x20 - 0x10)
@@ -126,7 +126,7 @@ public:
 	uint16                                       LowerBound;                                        // 0x10(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint16                                       UpperBound;                                        // 0x12(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B83[0xB];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DC7[0xB];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x28 - 0x10)
@@ -137,7 +137,7 @@ public:
 	uint32                                       LowerBound;                                        // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                       UpperBound;                                        // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B84[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DC8[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x30 - 0x10)
@@ -148,7 +148,7 @@ public:
 	uint64                                       LowerBound;                                        // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint64                                       UpperBound;                                        // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B85[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DC9[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x10 - 0x10)
@@ -178,7 +178,7 @@ struct FBitfieldNetSerializerConfig : public FNetSerializerConfig
 {
 public:
 	uint8                                        BitMask;                                           // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B86[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DCA[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x40 - 0x10)
@@ -188,9 +188,9 @@ struct FArrayPropertyNetSerializerConfig : public FNetSerializerConfig
 public:
 	uint16                                       MaxElementCount;                                   // 0x10(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint16                                       ElementCountBitCount;                              // 0x12(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B87[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DCB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FFieldPathProperty_                          Property;                                          // 0x18(0x20)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B88[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DCC[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x38 - 0x10)
@@ -200,7 +200,7 @@ struct FLastResortPropertyNetSerializerConfig : public FNetSerializerConfig
 public:
 	FFieldPathProperty_                          Property;                                          // 0x10(0x20)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                       MaxAllowedObjectReferences;                        // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B8A[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DCD[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x28 - 0x10)
@@ -215,7 +215,7 @@ public:
 	uint8                                        BitCount;                                          // 0x1A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        AutonomousProxyValue;                              // 0x1B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        SimulatedProxyValue;                               // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B8B[0xB];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DCE[0xB];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x30 - 0x10)
@@ -241,7 +241,7 @@ struct FIntNetSerializerConfig : public FNetSerializerConfig
 {
 public:
 	uint8                                        BitCount;                                          // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B8E[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DCF[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x18 - 0x10)
@@ -252,7 +252,7 @@ public:
 	int8                                         LowerBound;                                        // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int8                                         UpperBound;                                        // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x12(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B8F[0x5];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DD0[0x5];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x18 - 0x10)
@@ -263,7 +263,7 @@ public:
 	int16                                        LowerBound;                                        // 0x10(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int16                                        UpperBound;                                        // 0x12(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B91[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DD1[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x20 - 0x10)
@@ -274,7 +274,7 @@ public:
 	int32                                        LowerBound;                                        // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        UpperBound;                                        // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B93[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DD2[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x28 - 0x10)
@@ -285,7 +285,7 @@ public:
 	int64                                        LowerBound;                                        // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int64                                        UpperBound;                                        // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B95[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DD3[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x120 - 0x108)
@@ -293,9 +293,9 @@ public:
 struct FIrisFastArraySerializer : public FFastArraySerializer
 {
 public:
-	uint8                                        Pad_2B96[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DD4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	uint32                                       ChangeMaskStorage[0x4];                            // 0x10C(0x10)(ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2B97[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DD5[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -340,7 +340,7 @@ public:
 struct FStructNetSerializerConfig : public FNetSerializerConfig
 {
 public:
-	uint8                                        Pad_2B98[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DD6[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x10 - 0x10)
@@ -380,7 +380,7 @@ public:
 	class FName                                  ClassName;                                         // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        PollFrequency;                                     // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIncludeSubclasses;                                // 0xC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B99[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DD7[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -400,7 +400,7 @@ public:
 	class FName                                  ClassName;                                         // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  PrioritizerName;                                   // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bForceEnableOnAllInstances;                        // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B9A[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DD8[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xC (0xC - 0x0)
@@ -410,7 +410,7 @@ struct FObjectReplicationBridgeDeltaCompressionConfig
 public:
 	class FName                                  ClassName;                                         // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnableDeltaCompression;                           // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B9B[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DD9[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x10 - 0x10)
@@ -474,7 +474,7 @@ public:
 struct FPolymorphicStructNetSerializerConfig : public FNetSerializerConfig
 {
 public:
-	uint8                                        Pad_2B9C[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DDA[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x28 - 0x28)
@@ -567,7 +567,7 @@ struct FUintNetSerializerConfig : public FNetSerializerConfig
 {
 public:
 	uint8                                        BitCount;                                          // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B9D[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DDB[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x18 - 0x10)
@@ -578,7 +578,7 @@ public:
 	uint8                                        LowerBound;                                        // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        UpperBound;                                        // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x12(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B9E[0x5];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DDC[0x5];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x18 - 0x10)
@@ -589,7 +589,7 @@ public:
 	uint16                                       LowerBound;                                        // 0x10(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint16                                       UpperBound;                                        // 0x12(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2B9F[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DDD[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x20 - 0x10)
@@ -600,7 +600,7 @@ public:
 	uint32                                       LowerBound;                                        // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                       UpperBound;                                        // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2BA0[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DDE[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x28 - 0x10)
@@ -611,7 +611,7 @@ public:
 	uint64                                       LowerBound;                                        // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint64                                       UpperBound;                                        // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        BitCount;                                          // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2BA1[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DDF[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x10 - 0x10)
@@ -642,7 +642,7 @@ struct FSupportsStructNetSerializerConfig
 public:
 	class FName                                  StructName;                                        // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCanUseStructNetSerializer;                        // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2BA2[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DE0[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

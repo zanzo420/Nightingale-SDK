@@ -15,7 +15,7 @@ class UDualShockExternalEndpointSettings : public UAudioEndpointSettingsBase
 {
 public:
 	int32                                        ControllerIndex;                                   // 0x28(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4400[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2689[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UDualShockExternalEndpointSettings* GetDefaultObj();
@@ -28,7 +28,7 @@ class UDualShockSoundfieldEndpointSettings : public USoundfieldEndpointSettingsB
 {
 public:
 	int32                                        ControllerIndex;                                   // 0x28(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4401[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_268A[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UDualShockSoundfieldEndpointSettings* GetDefaultObj();
@@ -43,7 +43,7 @@ public:
 	float                                        Spread;                                            // 0x28(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Priority;                                          // 0x2C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         Passthrough;                                       // 0x30(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4402[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_268B[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UDualShockSpatializationSettings* GetDefaultObj();

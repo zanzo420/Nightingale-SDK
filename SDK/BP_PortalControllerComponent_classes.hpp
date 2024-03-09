@@ -16,7 +16,7 @@ class UBP_PortalControllerComponent_C : public UPortalControllerComponent
 public:
 	FMulticastInlineDelegateProperty_            OnPortalCardsCommitted;                            // 0xF8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         OneWayPortal;                                      // 0x108(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A406[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A28E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                OverrideStartTag;                                  // 0x110(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	struct FTemporalConfig                       Temporal_Config;                                   // 0x120(0x78)(Edit, BlueprintVisible, DisableEditOnInstance)
 

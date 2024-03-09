@@ -110,12 +110,17 @@ void UWBP_sw_InventoryEquipSlot_C::Highlight_DragTarget(bool Display, bool Temp_
 // enum class ELoadoutSlotType        EquipSlotType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               LShouldHighlight                                                 (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             Temp_real_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             Temp_real_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_SetRenderOpacity_InOpacity_ImplicitCast                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_sw_InventoryEquipSlot_C::UpdateHighlight(enum class ELoadoutSlotType EquipSlotType, bool LShouldHighlight, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
+void UWBP_sw_InventoryEquipSlot_C::UpdateHighlight(enum class ELoadoutSlotType EquipSlotType, bool LShouldHighlight, bool Temp_bool_Variable, double Temp_real_Variable, double Temp_real_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, double K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, float CallFunc_SetRenderOpacity_InOpacity_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -127,10 +132,15 @@ void UWBP_sw_InventoryEquipSlot_C::UpdateHighlight(enum class ELoadoutSlotType E
 	Parms.EquipSlotType = EquipSlotType;
 	Parms.LShouldHighlight = LShouldHighlight;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.Temp_real_Variable = Temp_real_Variable;
+	Parms.Temp_real_Variable_1 = Temp_real_Variable_1;
+	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.K2Node_Select_Default_1 = K2Node_Select_Default_1;
+	Parms.CallFunc_SetRenderOpacity_InOpacity_ImplicitCast = CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;
 
 	UObject::ProcessEvent(Func, &Parms);
 

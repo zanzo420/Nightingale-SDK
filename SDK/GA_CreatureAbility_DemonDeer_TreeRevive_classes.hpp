@@ -19,7 +19,7 @@ public:
 	class ABP_ResourceNode_IIM_C*                ResourceNode;                                      // 0x520(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	TArray<int32>                                ConsideredInstances;                               // 0x528(0x10)(Edit, BlueprintVisible)
 	bool                                         FoundNearEoten;                                    // 0x538(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_644F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9E13[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       HealDistance;                                      // 0x540(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDataTableRowHandle                   BPSpawnerData;                                     // 0x548(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 

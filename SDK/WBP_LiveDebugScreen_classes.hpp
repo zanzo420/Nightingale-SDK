@@ -31,7 +31,7 @@ public:
 	TMap<struct FActiveGameplayEffectHandle, class UNWXGameplayEffectUIData*> StatusEffectsData;                                 // 0x530(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	class ABP_TimeOfDayManager_C*                TimeOfDayManager;                                  // 0x580(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                        In_Delta_Time;                                     // 0x588(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_73A8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8BD6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class ABP_POIConfig_C*>               AllPOIs;                                           // 0x590(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	double                                       Minimum_Distance;                                  // 0x5A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  User_Spec_Info;                                    // 0x5A8(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -39,7 +39,7 @@ public:
 	class ANWXGameStateBase*                     LGameStateBase;                                    // 0x5D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class FText                                  LSecondsToLoad;                                    // 0x5D8(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         AllowBugScreenshot;                                // 0x5F0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_73A9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8BD7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNWXGameInstance*                      LGameInstance;                                     // 0x5F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FDeploymentInformation                Deploy_Information;                                // 0x600(0x58)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRealmSettings                        LRealmSettings;                                    // 0x658(0x40)(Edit, BlueprintVisible, DisableEditOnInstance)

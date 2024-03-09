@@ -14,7 +14,7 @@ namespace SDK
 class UAIA_Creature_Combat_Wildlife_FleeProximity_Bound_C : public UAIA_Creature_Combat_Wildlife_C
 {
 public:
-	uint8                                        Pad_98AF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7629[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x170(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
 	static class UClass* StaticClass();

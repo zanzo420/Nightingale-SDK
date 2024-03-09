@@ -21,7 +21,7 @@ public:
 	struct FGameplayTag                          ElementType;                                       // 0x70(0x8)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	double                                       FirstPerson;                                       // 0x78(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Gameplay;                                          // 0x80(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_23[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3361[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       VFX_DripsSpawnChance;                              // 0x88(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_ElectricalSparksSpawnChance;                   // 0x90(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_EmbersSpawnChance;                             // 0x98(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

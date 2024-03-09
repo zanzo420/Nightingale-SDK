@@ -78,7 +78,7 @@ public:
 class UAssetRegistryImpl : public UObject
 {
 public:
-	uint8                                        Pad_2346[0xD50];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2799[0xD50];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAssetRegistryImpl* GetDefaultObj();

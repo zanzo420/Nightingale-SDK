@@ -43,7 +43,6 @@ class UBP_MenuData_CM_GuideBook_Challenges_C* UBP_MenuData_CM_GuideBook_Challeng
 // Function BP_MenuData_CM_GuideBook_Challenges.BP_MenuData_CM_GuideBook_Challenges_C.PostInitialize
 // (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UClass*                      LLockedEntryFilter                                               (Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -55,7 +54,7 @@ class UBP_MenuData_CM_GuideBook_Challenges_C* UBP_MenuData_CM_GuideBook_Challeng
 // TScriptInterface<class IChallengeDefinition>K2Node_DynamicCast_AsChallenge_Definition                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_MenuData_CM_GuideBook_Challenges_C::PostInitialize(class UClass* LLockedEntryFilter, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<struct FPrimaryAssetId>& CallFunc_GetPrimaryAssetIdList_OutPrimaryAssetIdList, int32 CallFunc_Array_Length_ReturnValue, const struct FPrimaryAssetId& CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class UObject* CallFunc_GetObjectFromPrimaryAssetId_ReturnValue, TScriptInterface<class IChallengeDefinition> K2Node_DynamicCast_AsChallenge_Definition, bool K2Node_DynamicCast_bSuccess)
+void UBP_MenuData_CM_GuideBook_Challenges_C::PostInitialize(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<struct FPrimaryAssetId>& CallFunc_GetPrimaryAssetIdList_OutPrimaryAssetIdList, int32 CallFunc_Array_Length_ReturnValue, const struct FPrimaryAssetId& CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class UObject* CallFunc_GetObjectFromPrimaryAssetId_ReturnValue, TScriptInterface<class IChallengeDefinition> K2Node_DynamicCast_AsChallenge_Definition, bool K2Node_DynamicCast_bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
@@ -64,7 +63,6 @@ void UBP_MenuData_CM_GuideBook_Challenges_C::PostInitialize(class UClass* LLocke
 
 	Params::UBP_MenuData_CM_GuideBook_Challenges_C_PostInitialize_Params Parms{};
 
-	Parms.LLockedEntryFilter = LLockedEntryFilter;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;

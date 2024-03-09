@@ -324,18 +324,19 @@ void UWBP_GameplayMenus_C::CycleTab(int32 DeltaIncrement, int32 CurrentActiveInd
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*           SelectedButton                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TArray<class UWidget*>             LNavButtons                                                      (Edit, BlueprintVisible, ContainsInstancedReference)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class UWidget*>             CallFunc_GetAllChildren_ReturnValue                              (ReferenceParm, ContainsInstancedReference)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButtonBase*           K2Node_DynamicCast_AsCommon_Button_Base                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GameplayMenus_C::DeselectOtherButtons(class UCommonButtonBase* SelectedButton, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class UWidget*>& CallFunc_GetAllChildren_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class UWidget* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class UCommonButtonBase* K2Node_DynamicCast_AsCommon_Button_Base, bool K2Node_DynamicCast_bSuccess, bool CallFunc_EqualEqual_ObjectObject_ReturnValue)
+void UWBP_GameplayMenus_C::DeselectOtherButtons(class UCommonButtonBase* SelectedButton, const TArray<class UWidget*>& LNavButtons, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class UWidget*>& CallFunc_GetAllChildren_ReturnValue, class UWidget* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class UCommonButtonBase* K2Node_DynamicCast_AsCommon_Button_Base, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -345,15 +346,16 @@ void UWBP_GameplayMenus_C::DeselectOtherButtons(class UCommonButtonBase* Selecte
 	Params::UWBP_GameplayMenus_C_DeselectOtherButtons_Params Parms{};
 
 	Parms.SelectedButton = SelectedButton;
+	Parms.LNavButtons = LNavButtons;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.CallFunc_GetAllChildren_ReturnValue = CallFunc_GetAllChildren_ReturnValue;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
-	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.K2Node_DynamicCast_AsCommon_Button_Base = K2Node_DynamicCast_AsCommon_Button_Base;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
 	Parms.CallFunc_EqualEqual_ObjectObject_ReturnValue = CallFunc_EqualEqual_ObjectObject_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -990,24 +992,6 @@ void UWBP_GameplayMenus_C::BndEvt__WBP_GameplayMenus_Button_System_K2Node_Compon
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function WBP_GameplayMenus.WBP_GameplayMenus_C.BndEvt__WBP_GameplayMenus_WBP_PlayerMap_Screen_K2Node_ComponentBoundEvent_22_OnPlayerLocalRespiteTravelInitiated__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-
-void UWBP_GameplayMenus_C::BndEvt__WBP_GameplayMenus_WBP_PlayerMap_Screen_K2Node_ComponentBoundEvent_22_OnPlayerLocalRespiteTravelInitiated__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_GameplayMenus_C", "BndEvt__WBP_GameplayMenus_WBP_PlayerMap_Screen_K2Node_ComponentBoundEvent_22_OnPlayerLocalRespiteTravelInitiated__DelegateSignature");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
 
 }
 

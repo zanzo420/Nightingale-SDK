@@ -15,9 +15,9 @@ class UPersistentWorldState : public UObject
 {
 public:
 	TMap<class FString, class UObject*>          GenericDataMap;                                    // 0x28(0x50)(NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F1E[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33BF[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FString, struct FDestroyedLevelActorList> DestroyedPersistentLevelActors;                    // 0x98(0x50)(NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2F1F[0x290];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_33C0[0x290];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPersistentWorldState* GetDefaultObj();
@@ -29,10 +29,10 @@ public:
 class UWorldPersistenceTestActorComponent : public UActorComponent
 {
 public:
-	uint8                                        Pad_2F20[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33C1[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bTestUnsavedProperty;                              // 0xA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bTestSaveGameProperty;                             // 0xA9(0x1)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F21[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_33C2[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UWorldPersistenceTestActorComponent* GetDefaultObj();
@@ -44,10 +44,10 @@ public:
 class UWorldPersistenceTestSceneComponent : public USceneComponent
 {
 public:
-	uint8                                        Pad_2F22[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33C3[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bTestUnsavedProperty;                              // 0x2B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bTestSaveGameProperty;                             // 0x2B1(0x1)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F23[0xE];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_33C4[0xE];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UWorldPersistenceTestSceneComponent* GetDefaultObj();
@@ -59,7 +59,7 @@ public:
 class UWorldPersistenceTestActorComponentOptOut : public UActorComponent
 {
 public:
-	uint8                                        Pad_2F24[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_33C5[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UWorldPersistenceTestActorComponentOptOut* GetDefaultObj();
@@ -71,10 +71,10 @@ public:
 class AWorldPersistenceTestActor : public AActor
 {
 public:
-	uint8                                        Pad_2F26[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33C6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bTestUnsavedProperty;                              // 0x2A8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bTestSaveGameProperty;                             // 0x2A9(0x1)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F27[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33C7[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWorldPersistenceTestActorComponent*   TestActorComponent;                                // 0x2B0(0x8)(ExportObject, ZeroConstructor, InstancedReference, SaveGame, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UWorldPersistenceTestSceneComponent*   TestSceneComponent;                                // 0x2B8(0x8)(ExportObject, ZeroConstructor, InstancedReference, SaveGame, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UWorldPersistenceTestActorComponent*   TestDynamicActorComponent;                         // 0x2C0(0x8)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -90,7 +90,7 @@ public:
 class AWorldPersistenceTestActorOptOut : public AActor
 {
 public:
-	uint8                                        Pad_2F28[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_33CC[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AWorldPersistenceTestActorOptOut* GetDefaultObj();
@@ -119,12 +119,12 @@ public:
 	class FString                                SavedWorldDirectoryName;                           // 0x28(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnableFinalSave;                                  // 0x38(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnablePeriodicSave;                               // 0x39(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F2C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33CF[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        AutoSaveWorldPeriodMinutes;                        // 0x3C(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAddTimestampToSaveFiles;                          // 0x40(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bLoadWorldStateOnStartup;                          // 0x41(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bLoadWorldStateFromFile;                           // 0x42(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F2E[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33D0[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                DeploymentName;                                    // 0x48(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                FileNameToLoad;                                    // 0x58(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -144,7 +144,7 @@ class UWorldPersistenceSubsystem : public UGameInstanceSubsystem
 {
 public:
 	FMulticastInlineDelegateProperty_            OnTrackingRunningWorld;                            // 0x30(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F40[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33D7[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPersistentWorldState*                 PersistentWorldState;                              // 0x48(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<TWeakObjectPtr<class AActor>>         ActorsTrackedForPossibleDelete;                    // 0x50(0x10)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
 	TWeakObjectPtr<class UWorld>                 CurrentlyTrackedWorld;                             // 0x60(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)

@@ -40,73 +40,6 @@ class UBP_Character_Audio_Component_C* UBP_Character_Audio_Component_C::GetDefau
 }
 
 
-// Function BP_Character_Audio_Component.BP_Character_Audio_Component_C.On Item Quick Consumed Impl
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FInventoryEntry             Item                                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FTaggableSound              TaggableSound                                                    (Edit, BlueprintVisible)
-// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UScriptStruct*>       K2Node_MakeArray_Array                                           (ReferenceParm)
-// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UScriptStruct*>       K2Node_MakeArray_Array_1                                         (ReferenceParm)
-// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class APawn*                       K2Node_DynamicCast_AsPawn                                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTag                CallFunc_GetATRowAndColumnFromItemData_ATRow                     (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTag                CallFunc_GetATRowAndColumnFromItemData_ATColumn                  (NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsLocallyControlled_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FAffinityTableCellDataWrapper>CallFunc_QueryTable_OutMemoryPtrs                                (ReferenceParm)
-// bool                               CallFunc_QueryTable_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FItemAudioQuickConsume      CallFunc_GetTableCellData_OutData                                (None)
-// TArray<struct FAffinityTableCellDataWrapper>CallFunc_QueryTable_OutMemoryPtrs_1                              (ReferenceParm)
-// bool                               CallFunc_QueryTable_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FItemAudioQuickConsume      CallFunc_GetTableCellData_OutData_1                              (None)
-// bool                               CallFunc_MatchesTag_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_GetItemTags_Tags                                        (None)
-// TSoftObjectPtr<class UAkAudioEvent>CallFunc_ResolveTaggableSound_ReturnValue                        (UObjectWrapper, HasGetValueTypeHash)
-// bool                               CallFunc_IsValidSoftObjectReference_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_PostAsyncAkEventScoped_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_Character_Audio_Component_C::On_Item_Quick_Consumed_Impl(struct FInventoryEntry& Item, const struct FTaggableSound& TaggableSound, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsValid_ReturnValue, TArray<class UScriptStruct*>& K2Node_MakeArray_Array, bool CallFunc_IsValid_ReturnValue_1, TArray<class UScriptStruct*>& K2Node_MakeArray_Array_1, class AActor* CallFunc_GetOwner_ReturnValue, class APawn* K2Node_DynamicCast_AsPawn, bool K2Node_DynamicCast_bSuccess, const struct FGameplayTag& CallFunc_GetATRowAndColumnFromItemData_ATRow, const struct FGameplayTag& CallFunc_GetATRowAndColumnFromItemData_ATColumn, bool CallFunc_IsLocallyControlled_ReturnValue, TArray<struct FAffinityTableCellDataWrapper>& CallFunc_QueryTable_OutMemoryPtrs, bool CallFunc_QueryTable_ReturnValue, const struct FItemAudioQuickConsume& CallFunc_GetTableCellData_OutData, TArray<struct FAffinityTableCellDataWrapper>& CallFunc_QueryTable_OutMemoryPtrs_1, bool CallFunc_QueryTable_ReturnValue_1, const struct FItemAudioQuickConsume& CallFunc_GetTableCellData_OutData_1, bool CallFunc_MatchesTag_ReturnValue, const struct FGameplayTagContainer& CallFunc_GetItemTags_Tags, TSoftObjectPtr<class UAkAudioEvent> CallFunc_ResolveTaggableSound_ReturnValue, bool CallFunc_IsValidSoftObjectReference_ReturnValue, bool CallFunc_PostAsyncAkEventScoped_ReturnValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_Character_Audio_Component_C", "On Item Quick Consumed Impl");
-
-	Params::UBP_Character_Audio_Component_C_On_Item_Quick_Consumed_Impl_Params Parms{};
-
-	Parms.Item = Item;
-	Parms.TaggableSound = TaggableSound;
-	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
-	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
-	Parms.K2Node_MakeArray_Array_1 = K2Node_MakeArray_Array_1;
-	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
-	Parms.K2Node_DynamicCast_AsPawn = K2Node_DynamicCast_AsPawn;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_GetATRowAndColumnFromItemData_ATRow = CallFunc_GetATRowAndColumnFromItemData_ATRow;
-	Parms.CallFunc_GetATRowAndColumnFromItemData_ATColumn = CallFunc_GetATRowAndColumnFromItemData_ATColumn;
-	Parms.CallFunc_IsLocallyControlled_ReturnValue = CallFunc_IsLocallyControlled_ReturnValue;
-	Parms.CallFunc_QueryTable_OutMemoryPtrs = CallFunc_QueryTable_OutMemoryPtrs;
-	Parms.CallFunc_QueryTable_ReturnValue = CallFunc_QueryTable_ReturnValue;
-	Parms.CallFunc_GetTableCellData_OutData = CallFunc_GetTableCellData_OutData;
-	Parms.CallFunc_QueryTable_OutMemoryPtrs_1 = CallFunc_QueryTable_OutMemoryPtrs_1;
-	Parms.CallFunc_QueryTable_ReturnValue_1 = CallFunc_QueryTable_ReturnValue_1;
-	Parms.CallFunc_GetTableCellData_OutData_1 = CallFunc_GetTableCellData_OutData_1;
-	Parms.CallFunc_MatchesTag_ReturnValue = CallFunc_MatchesTag_ReturnValue;
-	Parms.CallFunc_GetItemTags_Tags = CallFunc_GetItemTags_Tags;
-	Parms.CallFunc_ResolveTaggableSound_ReturnValue = CallFunc_ResolveTaggableSound_ReturnValue;
-	Parms.CallFunc_IsValidSoftObjectReference_ReturnValue = CallFunc_IsValidSoftObjectReference_ReturnValue;
-	Parms.CallFunc_PostAsyncAkEventScoped_ReturnValue = CallFunc_PostAsyncAkEventScoped_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function BP_Character_Audio_Component.BP_Character_Audio_Component_C.CheckIsNightmareRealm
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -3416,32 +3349,10 @@ void UBP_Character_Audio_Component_C::StartDodgeVelocity()
 }
 
 
-// Function BP_Character_Audio_Component.BP_Character_Audio_Component_C.OnItemQuickConsumed
-// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FInventoryEntry             Entry                                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UBP_Character_Audio_Component_C::OnItemQuickConsumed(struct FInventoryEntry& Entry)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_Character_Audio_Component_C", "OnItemQuickConsumed");
-
-	Params::UBP_Character_Audio_Component_C_OnItemQuickConsumed_Params Parms{};
-
-	Parms.Entry = Entry;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function BP_Character_Audio_Component.BP_Character_Audio_Component_C.ExecuteUbergraph_BP_Character_Audio_Component
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FInventoryEntry             K2Node_Event_Entry                                               (ConstParm)
 // TSoftObjectPtr<class UAkAudioEvent>K2Node_CustomEvent_AkEvent                                       (HasGetValueTypeHash)
 // bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                K2Node_CustomEvent_ATRowTag                                      (NoDestructor, HasGetValueTypeHash)
@@ -3488,7 +3399,7 @@ void UBP_Character_Audio_Component_C::OnItemQuickConsumed(struct FInventoryEntry
 // float                              CallFunc_Delay_Duration_ImplicitCast_2                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_SetRTPCValue_Value_ImplicitCast                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Character_Audio_Component_C::ExecuteUbergraph_BP_Character_Audio_Component(int32 EntryPoint, const struct FInventoryEntry& K2Node_Event_Entry, TSoftObjectPtr<class UAkAudioEvent> K2Node_CustomEvent_AkEvent, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FGameplayTag& K2Node_CustomEvent_ATRowTag, const struct FGameplayTag& K2Node_CustomEvent_ATColumnTag, const struct FGameplayTagContainer& K2Node_CustomEvent_ItemTraits, const struct FVector& K2Node_CustomEvent_ItemLocation, bool CallFunc_IsValid_ReturnValue, bool CallFunc_MatchesTag_ReturnValue, double K2Node_CustomEvent_Launch_Magnitude, bool CallFunc_IsDedicatedServer_ReturnValue_1, TArray<class UScriptStruct*>& K2Node_MakeArray_Array, TArray<struct FAffinityTableCellDataWrapper>& CallFunc_QueryTable_OutMemoryPtrs, bool CallFunc_QueryTable_ReturnValue, bool CallFunc_CheckAkBody_IsValid, const struct FItemAudioPickup& CallFunc_GetTableCellData_OutData, bool CallFunc_IsDedicatedServer_ReturnValue_2, TSoftObjectPtr<class UAkAudioEvent> CallFunc_ResolveTaggableSound_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, TArray<class UScriptStruct*>& K2Node_MakeArray_Array_1, TArray<struct FAffinityTableCellDataWrapper>& CallFunc_QueryTable_OutMemoryPtrs_1, bool CallFunc_QueryTable_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FItemAudioPickup& CallFunc_GetTableCellData_OutData_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, TSoftObjectPtr<class UAkAudioEvent> CallFunc_ResolveTaggableSound_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1, float K2Node_Event_DeltaSeconds, bool CallFunc_LessEqual_DoubleDouble_ReturnValue, bool CallFunc_UpdateStructureReverbs_ReturnValue, enum class EEndPlayReason K2Node_Event_EndPlayReason, class AActor* CallFunc_GetOwner_ReturnValue, FDelegateProperty_ Temp_delegate_Variable, bool CallFunc_IsFirstPersonCharacter_ReturnValue, TArray<struct FAkExternalSourceInfo>& Temp_struct_Variable, class UCharacterMovementComponent* CallFunc_GetComponentByClass_ReturnValue, int32 CallFunc_PostAkEvent_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, double CallFunc_VSizeXY_ReturnValue, double CallFunc_MapRangeClamped_ReturnValue, float CallFunc_Delay_Duration_ImplicitCast, float CallFunc_Delay_Duration_ImplicitCast_1, float CallFunc_Delay_Duration_ImplicitCast_2, float CallFunc_SetRTPCValue_Value_ImplicitCast)
+void UBP_Character_Audio_Component_C::ExecuteUbergraph_BP_Character_Audio_Component(int32 EntryPoint, TSoftObjectPtr<class UAkAudioEvent> K2Node_CustomEvent_AkEvent, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FGameplayTag& K2Node_CustomEvent_ATRowTag, const struct FGameplayTag& K2Node_CustomEvent_ATColumnTag, const struct FGameplayTagContainer& K2Node_CustomEvent_ItemTraits, const struct FVector& K2Node_CustomEvent_ItemLocation, bool CallFunc_IsValid_ReturnValue, bool CallFunc_MatchesTag_ReturnValue, double K2Node_CustomEvent_Launch_Magnitude, bool CallFunc_IsDedicatedServer_ReturnValue_1, TArray<class UScriptStruct*>& K2Node_MakeArray_Array, TArray<struct FAffinityTableCellDataWrapper>& CallFunc_QueryTable_OutMemoryPtrs, bool CallFunc_QueryTable_ReturnValue, bool CallFunc_CheckAkBody_IsValid, const struct FItemAudioPickup& CallFunc_GetTableCellData_OutData, bool CallFunc_IsDedicatedServer_ReturnValue_2, TSoftObjectPtr<class UAkAudioEvent> CallFunc_ResolveTaggableSound_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, TArray<class UScriptStruct*>& K2Node_MakeArray_Array_1, TArray<struct FAffinityTableCellDataWrapper>& CallFunc_QueryTable_OutMemoryPtrs_1, bool CallFunc_QueryTable_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FItemAudioPickup& CallFunc_GetTableCellData_OutData_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, TSoftObjectPtr<class UAkAudioEvent> CallFunc_ResolveTaggableSound_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1, float K2Node_Event_DeltaSeconds, bool CallFunc_LessEqual_DoubleDouble_ReturnValue, bool CallFunc_UpdateStructureReverbs_ReturnValue, enum class EEndPlayReason K2Node_Event_EndPlayReason, class AActor* CallFunc_GetOwner_ReturnValue, FDelegateProperty_ Temp_delegate_Variable, bool CallFunc_IsFirstPersonCharacter_ReturnValue, TArray<struct FAkExternalSourceInfo>& Temp_struct_Variable, class UCharacterMovementComponent* CallFunc_GetComponentByClass_ReturnValue, int32 CallFunc_PostAkEvent_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, double CallFunc_VSizeXY_ReturnValue, double CallFunc_MapRangeClamped_ReturnValue, float CallFunc_Delay_Duration_ImplicitCast, float CallFunc_Delay_Duration_ImplicitCast_1, float CallFunc_Delay_Duration_ImplicitCast_2, float CallFunc_SetRTPCValue_Value_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3498,7 +3409,6 @@ void UBP_Character_Audio_Component_C::ExecuteUbergraph_BP_Character_Audio_Compon
 	Params::UBP_Character_Audio_Component_C_ExecuteUbergraph_BP_Character_Audio_Component_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_Event_Entry = K2Node_Event_Entry;
 	Parms.K2Node_CustomEvent_AkEvent = K2Node_CustomEvent_AkEvent;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 	Parms.K2Node_CustomEvent_ATRowTag = K2Node_CustomEvent_ATRowTag;

@@ -15,7 +15,7 @@ class UGA_CreatureAbility_GiantOffering_C : public UGA_CreatureAbilityBase_C
 {
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x510(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	uint8                                        Pad_50F6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_63FC[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureAssetReference              StructureRef;                                      // 0x520(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

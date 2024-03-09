@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x60 (0x3C0 - 0x360)
+// 0x70 (0x3D0 - 0x360)
 // WidgetBlueprintGeneratedClass WBP_GuideBook_DetailPane_HowToPlay.WBP_GuideBook_DetailPane_HowToPlay_C
 class UWBP_GuideBook_DetailPane_HowToPlay_C : public UNWXGuidebookDetailPane
 {
@@ -23,8 +23,10 @@ public:
 	class UTextBlock*                            Txt_subtitle;                                      // 0x390(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                            Txt_SurTitle;                                      // 0x398(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                            TXT_Title;                                         // 0x3A0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Component_Small_Flourish_Left_C*  WBP_Component_Small_Flourish_Left;                 // 0x3A8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnEntryPopupUpdated;                               // 0x3B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UWBP_Component_Large_Flourish_Center_C* WBP_Component_Large_Flourish_Center;               // 0x3A8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Component_Large_Flourish_Center_C* WBP_Component_Large_Flourish_Center_1;             // 0x3B0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Component_Small_Flourish_Left_C*  WBP_Component_Small_Flourish_Left;                 // 0x3B8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnEntryPopupUpdated;                               // 0x3C0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();
 	static class UWBP_GuideBook_DetailPane_HowToPlay_C* GetDefaultObj();

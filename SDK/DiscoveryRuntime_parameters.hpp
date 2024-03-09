@@ -28,7 +28,7 @@ struct IDiscoverySystemInterface_IsDiscoveryComplete_Params
 public:
 	class UDiscoveryDataAsset*                   DiscoveryDataAsset;                                // 0x0(0x8)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x8(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3391[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_381B[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)

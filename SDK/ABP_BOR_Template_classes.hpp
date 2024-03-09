@@ -16,7 +16,7 @@ class UABP_BOR_Template_C : public UNWXAIAnimInstance
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x6F0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimBlueprintGeneratedMutableData    __AnimBlueprintMutables;                           // 0x6F8(0x1C)(HasGetValueTypeHash)
-	uint8                                        Pad_A8A5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A8B0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x718(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x720(0x8)(None)
 	struct FAnimNode_Root                        AnimGraphNode_Root_8;                              // 0x728(0x20)(None)

@@ -25,7 +25,7 @@ public:
 	class UWBP_Component_Small_Flourish_Center_C* WBP_Component_Small_Flourish_Center;               // 0x388(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Component_SoftEdge_Divider_C*     WBP_Component_SoftEdge_Divider;                    // 0x390(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         SubTextVisible;                                    // 0x398(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_70A0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_74D4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateColor                           DisabledTint;                                      // 0x39C(0x14)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                           EnabledTint;                                       // 0x3B0(0x14)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         CacheUsingGamepad;                                 // 0x3C4(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

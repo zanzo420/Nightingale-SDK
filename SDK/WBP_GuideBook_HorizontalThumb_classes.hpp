@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xB8 (0x400 - 0x348)
+// 0xC8 (0x410 - 0x348)
 // WidgetBlueprintGeneratedClass WBP_GuideBook_HorizontalThumb.WBP_GuideBook_HorizontalThumb_C
 class UWBP_GuideBook_HorizontalThumb_C : public UNWXCommonUserWidget
 {
@@ -24,14 +24,15 @@ public:
 	class UOverlay*                              Overlay_SelectedState;                             // 0x380(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                            Txt_Name;                                          // 0x388(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNWXMenuDataEntry*                     MenuDataEntry;                                     // 0x390(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            ThumbDoubleClick;                                  // 0x398(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_            ThumbSelected;                                     // 0x3A8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FGameplayTag                          ClickedEventTag;                                   // 0x3B8(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UBP_GuideBookComponent_C*              GuideBookComponent;                                // 0x3C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IChallengeSystemObservable> ChallengeSystemObservable;                         // 0x3C8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UChallengeDataAsset*                   ChallengeData;                                     // 0x3D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnTilePressed;                                     // 0x3E0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_            ThumbRightClicked;                                 // 0x3F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            ThumbHovered;                                      // 0x398(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            ThumbDoubleClick;                                  // 0x3A8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            ThumbSelected;                                     // 0x3B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FGameplayTag                          ClickedEventTag;                                   // 0x3C8(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UBP_GuideBookComponent_C*              GuideBookComponent;                                // 0x3D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IChallengeSystemObservable> ChallengeSystemObservable;                         // 0x3D8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UChallengeDataAsset*                   ChallengeData;                                     // 0x3E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnTilePressed;                                     // 0x3F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            ThumbRightClicked;                                 // 0x400(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();
 	static class UWBP_GuideBook_HorizontalThumb_C* GetDefaultObj();
@@ -69,6 +70,7 @@ public:
 	void OnTilePressed__DelegateSignature(class UNWXMenuDataEntry* NewParam);
 	void ThumbSelected__DelegateSignature(class UNWXMenuDataEntry* MenuDataEntry);
 	void ThumbDoubleClick__DelegateSignature(class UNWXMenuDataEntry* MenuDataEntry);
+	void ThumbHovered__DelegateSignature(bool IsHovered, class UNWXMenuDataEntry* MenuDataEntry);
 };
 
 }

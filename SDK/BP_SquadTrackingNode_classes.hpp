@@ -18,7 +18,7 @@ public:
 	class USceneComponent*                       DefaultSceneRoot;                                  // 0x2A8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FS_TrackingData_Node                  NodeData;                                          // 0x2B0(0x50)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	enum class E_TrackingNodeType                NodeType;                                          // 0x300(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                        Pad_6946[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3DF3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        NodeId;                                            // 0x304(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       NodeCreationTime;                                  // 0x308(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                       NodeLife;                                          // 0x310(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
@@ -27,10 +27,10 @@ public:
 	class UClass*                                SpawnerClass;                                      // 0x330(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                        CreatureCount;                                     // 0x338(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                         Initialized;                                       // 0x33C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                        Pad_6947[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3DF4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FSplinePoint>                  NavSplineData;                                     // 0x340(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)
 	bool                                         Debug;                                             // 0x350(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_6948[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3DF5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_SquadTrackingNode_C*               PrecedingNode;                                     // 0x358(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	class ABP_SquadTrackingNode_C*               SucceedingNode;                                    // 0x360(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            OnNodeInitialized;                                 // 0x368(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)

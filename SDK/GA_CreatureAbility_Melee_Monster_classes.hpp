@@ -14,7 +14,7 @@ namespace SDK
 class UGA_CreatureAbility_Melee_Monster_C : public UGA_CreatureAbility_Melee_C
 {
 public:
-	uint8                                        Pad_4EA4[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9D1E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            LTransform;                                        // 0x550(0x60)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<enum class Enum_CreatureAbilityZone, struct FDynamicMontageArray> CreatureAbilityZone;                               // 0x5B0(0x50)(Edit, BlueprintVisible)
 	double                                       Ring3MaxDistance;                                  // 0x600(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

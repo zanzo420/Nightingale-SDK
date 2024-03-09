@@ -17,7 +17,7 @@ public:
 	class UBillboardComponent*                   Billboard;                                         // 0x2A0(0x8)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UTextureRenderTarget2D*                LightDataMap;                                      // 0x2A8(0x8)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMaterialParameterCollection*          LightDataMapParams;                                // 0x2B0(0x8)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4323[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_43DB[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ACloudsLightingSystem* GetDefaultObj();
@@ -34,14 +34,14 @@ public:
 	class UTexture2D*                            BillboardTexture;                                  // 0x2A8(0x8)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        BillboardSizeX;                                    // 0x2B0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        BillboardSizeY;                                    // 0x2B4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4324[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_43DC[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          Color;                                             // 0x2C8(0x10)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Intensity;                                         // 0x2D8(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EVLightFalloffType                FalloffType;                                       // 0x2DC(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4325[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_43DD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        FalloffMult;                                       // 0x2E0(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsEnabled;                                        // 0x2E4(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4326[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_43DE[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AVolumetricLightSource* GetDefaultObj();
@@ -56,7 +56,7 @@ public:
 	float                                        SourceRadius;                                      // 0x2E8(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FColor                                LineColor;                                         // 0x2EC(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        LineThickness;                                     // 0x2F0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4327[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_43DF[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AVolumetricPointLight* GetDefaultObj();

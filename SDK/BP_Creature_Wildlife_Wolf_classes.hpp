@@ -14,7 +14,7 @@ namespace SDK
 class ABP_Creature_Wildlife_Wolf_C : public ABP_Creature_Wildlife_C
 {
 public:
-	uint8                                        Pad_A142[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_315F[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_AudioFocusMixingComponent_C*       BP_AudioFocusMixingComponent;                      // 0x15E8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                     WP_Indicator1;                                     // 0x15F0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                     WP_Indicator;                                      // 0x15F8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)

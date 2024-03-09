@@ -157,11 +157,10 @@ void UBPFL_CraftingMenu_C::GetFilteredEntriesForContainer(TScriptInterface<class
 // Function BPFL_CraftingMenu.BPFL_CraftingMenu_C.CraftingMenu_AllSlotsSatisfied
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FCraftingConstraintSlot>CraftingConstraints                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// TArray<struct FInventoryEntry>     SlottedIngredients                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<struct FCraftingConstraintSlot>CraftingSlots                                                    (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 // class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               bAllMet                                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<int32>                      OutUnmetSlots                                                    (Parm, OutParm)
-// TArray<struct FConstraintItemPair> LContraintSlots                                                  (Edit, BlueprintVisible, ContainsInstancedReference)
 // class ANWXPlayerController*        PlayerController                                                 (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 // class UInventoryComponentBase*     Inventory                                                        (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FItemConstraint>     Constraints                                                      (Edit, BlueprintVisible, ContainsInstancedReference)
@@ -169,25 +168,24 @@ void UBPFL_CraftingMenu_C::GetFilteredEntriesForContainer(TScriptInterface<class
 // class ANWXPlayerController*        CallFunc_GetNWXPlayerController_ReturnValue                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FInventoryEntry             CallFunc_Array_Get_Item                                          (None)
 // TScriptInterface<class IItemContainer>CallFunc_GetBackpack_Container                                   (ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 // bool                               CallFunc_GetBackpack_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FCraftingConstraintSlot     CallFunc_Array_Get_Item_1                                        (ContainsInstancedReference)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FInventoryEntry>     CallFunc_GetAllItems_Entries                                     (ReferenceParm)
-// struct FConstraintItemPair         K2Node_MakeStruct_ConstraintItemPair                             (ContainsInstancedReference)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UInventoryComponentBase*     CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class IItemContainer>CallFunc_GetEssencePouch_Container                               (ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 // bool                               CallFunc_GetEssencePouch_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FInventoryEntry>     CallFunc_GetAllItems_Entries_1                                   (ReferenceParm)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_AreAllConstraintsMet_bAllMet                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<int32>                      CallFunc_AreAllConstraintsMet_OutUnmetSlots                      (ReferenceParm)
+// struct FCraftingConstraintSlot     CallFunc_Array_Get_Item                                          (ContainsInstancedReference)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBPFL_CraftingMenu_C::CraftingMenu_AllSlotsSatisfied(TArray<struct FCraftingConstraintSlot>& CraftingConstraints, TArray<struct FInventoryEntry>& SlottedIngredients, class UObject* __WorldContext, TArray<int32>* OutUnmetSlots, const TArray<struct FConstraintItemPair>& LContraintSlots, class ANWXPlayerController* PlayerController, class UInventoryComponentBase* Inventory, const TArray<struct FItemConstraint>& Constraints, const TArray<struct FInventoryEntry>& CacheItems, class ANWXPlayerController* CallFunc_GetNWXPlayerController_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, const struct FInventoryEntry& CallFunc_Array_Get_Item, TScriptInterface<class IItemContainer> CallFunc_GetBackpack_Container, bool CallFunc_GetBackpack_ReturnValue, const struct FCraftingConstraintSlot& CallFunc_Array_Get_Item_1, TArray<struct FInventoryEntry>& CallFunc_GetAllItems_Entries, const struct FConstraintItemPair& K2Node_MakeStruct_ConstraintItemPair, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class UInventoryComponentBase* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, TScriptInterface<class IItemContainer> CallFunc_GetEssencePouch_Container, bool CallFunc_GetEssencePouch_ReturnValue, TArray<struct FInventoryEntry>& CallFunc_GetAllItems_Entries_1, TArray<int32>& CallFunc_AreAllConstraintsMet_OutUnmetSlots)
+void UBPFL_CraftingMenu_C::CraftingMenu_AllSlotsSatisfied(TArray<struct FCraftingConstraintSlot>& CraftingSlots, class UObject* __WorldContext, bool* bAllMet, TArray<int32>* OutUnmetSlots, class ANWXPlayerController* PlayerController, class UInventoryComponentBase* Inventory, const TArray<struct FItemConstraint>& Constraints, const TArray<struct FInventoryEntry>& CacheItems, class ANWXPlayerController* CallFunc_GetNWXPlayerController_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 Temp_int_Loop_Counter_Variable, TScriptInterface<class IItemContainer> CallFunc_GetBackpack_Container, bool CallFunc_GetBackpack_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, TArray<struct FInventoryEntry>& CallFunc_GetAllItems_Entries, int32 Temp_int_Array_Index_Variable, class UInventoryComponentBase* CallFunc_GetComponentByClass_ReturnValue, TScriptInterface<class IItemContainer> CallFunc_GetEssencePouch_Container, bool CallFunc_GetEssencePouch_ReturnValue, TArray<struct FInventoryEntry>& CallFunc_GetAllItems_Entries_1, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_AreAllConstraintsMet_bAllMet, TArray<int32>& CallFunc_AreAllConstraintsMet_OutUnmetSlots, const struct FCraftingConstraintSlot& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -196,10 +194,8 @@ void UBPFL_CraftingMenu_C::CraftingMenu_AllSlotsSatisfied(TArray<struct FCraftin
 
 	Params::UBPFL_CraftingMenu_C_CraftingMenu_AllSlotsSatisfied_Params Parms{};
 
-	Parms.CraftingConstraints = CraftingConstraints;
-	Parms.SlottedIngredients = SlottedIngredients;
+	Parms.CraftingSlots = CraftingSlots;
 	Parms.__WorldContext = __WorldContext;
-	Parms.LContraintSlots = LContraintSlots;
 	Parms.PlayerController = PlayerController;
 	Parms.Inventory = Inventory;
 	Parms.Constraints = Constraints;
@@ -207,25 +203,27 @@ void UBPFL_CraftingMenu_C::CraftingMenu_AllSlotsSatisfied(TArray<struct FCraftin
 	Parms.CallFunc_GetNWXPlayerController_ReturnValue = CallFunc_GetNWXPlayerController_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_GetBackpack_Container = CallFunc_GetBackpack_Container;
 	Parms.CallFunc_GetBackpack_ReturnValue = CallFunc_GetBackpack_ReturnValue;
-	Parms.CallFunc_Array_Get_Item_1 = CallFunc_Array_Get_Item_1;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.CallFunc_GetAllItems_Entries = CallFunc_GetAllItems_Entries;
-	Parms.K2Node_MakeStruct_ConstraintItemPair = K2Node_MakeStruct_ConstraintItemPair;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
-	Parms.CallFunc_Array_Add_ReturnValue = CallFunc_Array_Add_ReturnValue;
-	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 	Parms.CallFunc_GetEssencePouch_Container = CallFunc_GetEssencePouch_Container;
 	Parms.CallFunc_GetEssencePouch_ReturnValue = CallFunc_GetEssencePouch_ReturnValue;
 	Parms.CallFunc_GetAllItems_Entries_1 = CallFunc_GetAllItems_Entries_1;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
+	Parms.CallFunc_AreAllConstraintsMet_bAllMet = CallFunc_AreAllConstraintsMet_bAllMet;
 	Parms.CallFunc_AreAllConstraintsMet_OutUnmetSlots = CallFunc_AreAllConstraintsMet_OutUnmetSlots;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_Array_Add_ReturnValue = CallFunc_Array_Add_ReturnValue;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (bAllMet != nullptr)
+		*bAllMet = Parms.bAllMet;
 
 	if (OutUnmetSlots != nullptr)
 		*OutUnmetSlots = std::move(Parms.OutUnmetSlots);

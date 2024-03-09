@@ -61,7 +61,7 @@ public:
 	struct FHairDataReference                    Reference;                                         // 0x0(0x70)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FHairData                             OutData;                                           // 0x70(0x158)(Parm, OutParm, NativeAccessSpecifierPublic)
 	enum class EGetResult                        OutBranches;                                       // 0x1C8(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3473[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3887[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xF0 (0xF0 - 0x0)
@@ -72,7 +72,7 @@ public:
 	struct FHairDataReference                    A;                                                 // 0x0(0x70)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FHairDataReference                    B;                                                 // 0x70(0x70)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0xE0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3474[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3888[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xA0 (0xA0 - 0x0)
@@ -82,7 +82,7 @@ struct UHairDataReferenceFunctionLibrary_MakeFromDataAsset_Params
 public:
 	TSoftObjectPtr<class UHairDataAsset>         Asset;                                             // 0x0(0x28)(ConstParm, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EHairAssetType                    Type;                                              // 0x28(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3475[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3889[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FHairDataReference                    ReturnValue;                                       // 0x30(0x70)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -93,7 +93,7 @@ struct UHairDataReferenceFunctionLibrary_IsValid_Params
 public:
 	struct FHairDataReference                    Reference;                                         // 0x0(0x70)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x70(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3477[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_388A[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xA0 (0xA0 - 0x0)
@@ -103,7 +103,7 @@ struct UHairDataReferenceFunctionLibrary_GetSoftObjectFromReference_Params
 public:
 	struct FHairDataReference                    HairDataReference;                                 // 0x0(0x70)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UHairDataAsset>         ReturnValue;                                       // 0x70(0x28)(Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3478[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_388B[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x80 (0x80 - 0x0)
@@ -121,7 +121,7 @@ struct UHairDataReferenceFunctionLibrary_GetAllHairReferences_Params
 {
 public:
 	enum class EHairAssetType                    Type;                                              // 0x0(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3479[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3894[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FHairDataReference>            OutReferences;                                     // 0x8(0x10)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 
@@ -133,7 +133,7 @@ public:
 	struct FHairDataReference                    A;                                                 // 0x0(0x70)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FHairDataReference                    B;                                                 // 0x70(0x70)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0xE0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_347A[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3895[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x90 (0x90 - 0x0)
@@ -144,7 +144,7 @@ public:
 	struct FVoiceSetDataReference                Reference;                                         // 0x0(0x60)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVoiceSetData                         OutData;                                           // 0x60(0x20)(Parm, OutParm, NativeAccessSpecifierPublic)
 	enum class EGetResult                        OutBranches;                                       // 0x80(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_347D[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3896[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xD0 (0xD0 - 0x0)
@@ -155,7 +155,7 @@ public:
 	struct FVoiceSetDataReference                A;                                                 // 0x0(0x60)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVoiceSetDataReference                B;                                                 // 0x60(0x60)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0xC0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_347E[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_389B[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x90 (0x90 - 0x0)
@@ -164,7 +164,7 @@ struct UVoiceSetDataReferenceFunctionLibrary_MakeFromDataAsset_Params
 {
 public:
 	TSoftObjectPtr<class UVoiceSetDataAsset>     Asset;                                             // 0x0(0x28)(ConstParm, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_347F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_389F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVoiceSetDataReference                ReturnValue;                                       // 0x30(0x60)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -175,7 +175,7 @@ struct UVoiceSetDataReferenceFunctionLibrary_IsValid_Params
 public:
 	struct FVoiceSetDataReference                Reference;                                         // 0x0(0x60)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x60(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3480[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_38A1[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x70 (0x70 - 0x0)
@@ -203,7 +203,7 @@ public:
 	struct FVoiceSetDataReference                A;                                                 // 0x0(0x60)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVoiceSetDataReference                B;                                                 // 0x60(0x60)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0xC0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3481[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_38A3[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

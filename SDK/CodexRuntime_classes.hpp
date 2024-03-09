@@ -14,7 +14,7 @@ namespace SDK
 class ACodexActor : public AActor
 {
 public:
-	uint8                                        Pad_2F54[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33DC[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCodexComponent*                       CodexComponent;                                    // 0x2A8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UStaticMeshComponent*                  CodexStaticMeshComponent;                          // 0x2B0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UStaticMesh*                           CodexStaticMesh;                                   // 0x2B8(0x8)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, SaveGame, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -46,7 +46,7 @@ public:
 class UCodexComponent : public UActorComponent
 {
 public:
-	uint8                                        Pad_2F64[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33E0[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnCodexInstanceIDReplicated;                       // 0xB0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
 	struct FCodexAssetReference                  CodexAssetReference;                               // 0xC0(0x10)(Net, SaveGame, NoDestructor, NativeAccessSpecifierPrivate)
 	struct FGuid                                 CodexInstanceID;                                   // 0xD0(0x10)(Net, ZeroConstructor, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -80,7 +80,7 @@ class UCodexBaseDataAsset : public UUniquelyIdentifiableDataAsset
 public:
 	enum class ECodexTemplate                    CodexTemplate;                                     // 0x48(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ECodexNotificationType            CodexNotificationType;                             // 0x49(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F70[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33E1[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class URequirement*                          Requirements;                                      // 0x50(0x8)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UTexture2D>             CardImage;                                         // 0x58(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                  Surtitle;                                          // 0x80(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
@@ -90,7 +90,7 @@ public:
 	TArray<struct FCodexSubentry>                Subentries;                                        // 0xE0(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<TSoftObjectPtr<class UTexture2D>>     CodexImages;                                       // 0xF0(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	bool                                         GrantedByDefault;                                  // 0x100(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2F72[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33E2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 FilterTags;                                        // 0x108(0x20)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -127,7 +127,7 @@ public:
 class UCodexServerWorldSubsystem : public UWorldSubsystem
 {
 public:
-	uint8                                        Pad_2F73[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_33E3[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UCodexServerWorldSubsystem* GetDefaultObj();
@@ -150,11 +150,11 @@ public:
 class UCodexTrackerComponent : public UDelayedRegistrationComponent
 {
 public:
-	uint8                                        Pad_2F74[0x48];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33E4[0x48];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCodexEntryArraySerializer            GrantedCodices;                                    // 0x100(0x188)(Net, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2F75[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33E5[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPersistentDataHelper*                 PersistentDataHelper;                              // 0x298(0x8)(Edit, ExportObject, ZeroConstructor, DisableEditOnTemplate, Transient, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2F76[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_33E6[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UCodexTrackerComponent* GetDefaultObj();

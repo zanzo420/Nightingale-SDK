@@ -16,7 +16,7 @@ class UABP_DOG_Template_C : public UNWXAIAnimInstance
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x6F0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimBlueprintGeneratedMutableData    __AnimBlueprintMutables;                           // 0x6F8(0x26)(HasGetValueTypeHash)
-	uint8                                        Pad_A896[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A8A3[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x720(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x728(0x8)(None)
 	struct FAnimNode_Root                        AnimGraphNode_Root_9;                              // 0x730(0x20)(None)

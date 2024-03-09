@@ -9,15 +9,15 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x12 (0x161A - 0x1608)
+// 0x12 (0x15E2 - 0x15D0)
 // BlueprintGeneratedClass BP_Creature_Wildlife.BP_Creature_Wildlife_C
 class ABP_Creature_Wildlife_C : public ABP_CreatureBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1608(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UClass*                                WildlifeAICClass;                                  // 0x1610(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                         Interactable;                                      // 0x1618(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	bool                                         ResetText;                                         // 0x1619(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x15D0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UClass*                                WildlifeAICClass;                                  // 0x15D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                         Interactable;                                      // 0x15E0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	bool                                         ResetText;                                         // 0x15E1(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_Creature_Wildlife_C* GetDefaultObj();

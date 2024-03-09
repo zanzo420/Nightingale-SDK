@@ -19,7 +19,7 @@ struct UComputeGraphComponent_CreateDataProviders_Params
 {
 public:
 	int32                                        InBindingIndex;                                    // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4220[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4247[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               InBindingObject;                                   // 0x8(0x8)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 

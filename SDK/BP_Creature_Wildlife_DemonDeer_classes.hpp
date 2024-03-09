@@ -9,67 +9,66 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x33E (0x1958 - 0x161A)
+// 0x336 (0x1918 - 0x15E2)
 // BlueprintGeneratedClass BP_Creature_Wildlife_DemonDeer.BP_Creature_Wildlife_DemonDeer_C
 class ABP_Creature_Wildlife_DemonDeer_C : public ABP_Creature_Wildlife_C
 {
 public:
-	uint8                                        Pad_6837[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1620(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_Creature_Audio_Looping_C*          BP_Creature_Audio_Looping;                         // 0x1628(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_AILoadoutComponentBase_C*          BP_AILoadoutComponentBase;                         // 0x1630(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                  PointLight_Incorporeal;                            // 0x1638(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     WP_Indicator;                                      // 0x1640(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Foot_RearRight;                                 // 0x1648(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Foot_RearLeft;                                  // 0x1650(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Foot_Right;                                     // 0x1658(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Foot_Left;                                      // 0x1660(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Body;                                           // 0x1668(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Head;                                           // 0x1670(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     NS_DemonDeer_Aura;                                 // 0x1678(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     NS_DemonDeer_Resurrection;                         // 0x1680(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_HarvestComponent_C*                BP_HarvestComponent;                               // 0x1688(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     NS_DemonDeer_Ambient_Breath;                       // 0x1690(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     NS_DemonDeer_Ambient_Pelvis;                       // 0x1698(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     NS_DemonDeer_Ambient_R;                            // 0x16A0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     NS_DemonDeer_Ambient_L;                            // 0x16A8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     NS_DemonDeer_Ambient;                              // 0x16B0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UInWorldItemContainerComponent*        InWorldItemContainer;                              // 0x16B8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_LoadoutComponent_C*                BP_LoadoutComponent;                               // 0x16C0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	int32                                        ApexHarvestNodeInstance;                           // 0x16C8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6838[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FVector                               ApexHarvestNodeInstanceLocation;                   // 0x16D0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABP_ResourceNode_IIM_C*                ApexHarvestNode;                                   // 0x16E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                          TimerHandle_Trees;                                 // 0x16F0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class ABP_ResourceNode_IIM_C*                LCached_Resource_Node;                             // 0x16F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	bool                                         LFound_Instance;                                   // 0x1700(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6839[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<int32>                                LConsidered_Instances;                             // 0x1708(0x10)(Edit, BlueprintVisible)
-	struct FVector                               LCached_Instance_Location;                         // 0x1718(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        LCachedInstance;                                   // 0x1730(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_683A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class ABP_AoePayload_Dispellable_Eoten_C*> Brambles;                                          // 0x1738(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, ExposeOnSpawn)
-	uint8                                        Pad_683B[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FIIMInstance                          TreeIImInst;                                       // 0x1750(0x170)(Edit, BlueprintVisible, Net, RepNotify)
-	double                                       PlayerDistanceThreshold;                           // 0x18C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         GetAggressive;                                     // 0x18C8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_683C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FTimerHandle                          TimerHandle_Aggression;                            // 0x18D0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                         Invincible;                                        // 0x18D8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	bool                                         Resurrecting;                                      // 0x18D9(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                         NearPlayer;                                        // 0x18DA(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_683D[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class AActor*>                        IIMActors;                                         // 0x18E0(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	struct FTimerHandle                          TimerHandle_GetLocalTrees;                         // 0x18F0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	int32                                        LIndex;                                            // 0x18F8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_683E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<int32>                                ValidIndexs;                                       // 0x1900(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FDataTableRowHandle                   BPSpawner_Data;                                    // 0x1910(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnDemonDeerCalm;                                   // 0x1920(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	int32                                        IMMLength;                                         // 0x1930(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        IMMCounter;                                        // 0x1934(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ABP_CreatureBase_C*>            WispSummons;                                       // 0x1938(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class ABP_CreatureBase_C*>            SpawnedWildlife;                                   // 0x1948(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	uint8                                        Pad_79D2[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x15E8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_Creature_Audio_Looping_C*          BP_Creature_Audio_Looping;                         // 0x15F0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_AILoadoutComponentBase_C*          BP_AILoadoutComponentBase;                         // 0x15F8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                  PointLight_Incorporeal;                            // 0x1600(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     WP_Indicator;                                      // 0x1608(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Foot_RearRight;                                 // 0x1610(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Foot_RearLeft;                                  // 0x1618(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Foot_Right;                                     // 0x1620(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Foot_Left;                                      // 0x1628(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Body;                                           // 0x1630(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Head;                                           // 0x1638(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     NS_DemonDeer_Aura;                                 // 0x1640(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     NS_DemonDeer_Resurrection;                         // 0x1648(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_HarvestComponent_C*                BP_HarvestComponent;                               // 0x1650(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     NS_DemonDeer_Ambient_Breath;                       // 0x1658(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     NS_DemonDeer_Ambient_Pelvis;                       // 0x1660(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     NS_DemonDeer_Ambient_R;                            // 0x1668(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     NS_DemonDeer_Ambient_L;                            // 0x1670(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     NS_DemonDeer_Ambient;                              // 0x1678(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UInWorldItemContainerComponent*        InWorldItemContainer;                              // 0x1680(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_LoadoutComponent_C*                BP_LoadoutComponent;                               // 0x1688(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	int32                                        ApexHarvestNodeInstance;                           // 0x1690(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_79D3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector                               ApexHarvestNodeInstanceLocation;                   // 0x1698(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_ResourceNode_IIM_C*                ApexHarvestNode;                                   // 0x16B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                          TimerHandle_Trees;                                 // 0x16B8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class ABP_ResourceNode_IIM_C*                LCached_Resource_Node;                             // 0x16C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	bool                                         LFound_Instance;                                   // 0x16C8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_79D4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<int32>                                LConsidered_Instances;                             // 0x16D0(0x10)(Edit, BlueprintVisible)
+	struct FVector                               LCached_Instance_Location;                         // 0x16E0(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        LCachedInstance;                                   // 0x16F8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_79D5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class ABP_AoePayload_Dispellable_Eoten_C*> Brambles;                                          // 0x1700(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, ExposeOnSpawn)
+	struct FIIMInstance                          TreeIImInst;                                       // 0x1710(0x170)(Edit, BlueprintVisible, Net, RepNotify)
+	double                                       PlayerDistanceThreshold;                           // 0x1880(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         GetAggressive;                                     // 0x1888(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_79D6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FTimerHandle                          TimerHandle_Aggression;                            // 0x1890(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                         Invincible;                                        // 0x1898(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	bool                                         Resurrecting;                                      // 0x1899(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                         NearPlayer;                                        // 0x189A(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_79D7[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class AActor*>                        IIMActors;                                         // 0x18A0(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FTimerHandle                          TimerHandle_GetLocalTrees;                         // 0x18B0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	int32                                        LIndex;                                            // 0x18B8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_79D8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<int32>                                ValidIndexs;                                       // 0x18C0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FDataTableRowHandle                   BPSpawner_Data;                                    // 0x18D0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnDemonDeerCalm;                                   // 0x18E0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	int32                                        IMMLength;                                         // 0x18F0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        IMMCounter;                                        // 0x18F4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ABP_CreatureBase_C*>            WispSummons;                                       // 0x18F8(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class ABP_CreatureBase_C*>            SpawnedWildlife;                                   // 0x1908(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 
 	static class UClass* StaticClass();
 	static class ABP_Creature_Wildlife_DemonDeer_C* GetDefaultObj();

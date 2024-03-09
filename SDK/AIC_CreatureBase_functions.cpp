@@ -639,29 +639,6 @@ void AAIC_CreatureBase_C::IsHungry(bool* bIsHungry, class APawn* CallFunc_K2_Get
 }
 
 
-// Function AIC_CreatureBase.AIC_CreatureBase_C.GetCreatureName
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                        CreatureName                                                     (Parm, OutParm)
-
-void AAIC_CreatureBase_C::GetCreatureName(class FText* CreatureName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("AIC_CreatureBase_C", "GetCreatureName");
-
-	Params::AAIC_CreatureBase_C_GetCreatureName_Params Parms{};
-
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CreatureName != nullptr)
-		*CreatureName = Parms.CreatureName;
-
-}
-
-
 // Function AIC_CreatureBase.AIC_CreatureBase_C.RemoveFromEnemies
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

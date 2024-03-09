@@ -30,14 +30,14 @@ public:
 	bool                                         CallFunc_IsFoundationSnapType_IsFoundation;        // 0x176(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESnapPointQuadrant                CallFunc_GetMirrorQuadrant_ReturnValue;            // 0x177(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x178(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A5D6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A707[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<enum class ESnapPointQuadrant>          K2Node_MakeSet_Set_1;                              // 0x180(0x50)(None)
 	TSet<enum class ESnapPointQuadrant>          K2Node_MakeSet_Set_2;                              // 0x1D0(0x50)(None)
 	TSet<enum class ESnapPointQuadrant>          K2Node_MakeSet_Set_3;                              // 0x220(0x50)(None)
 	TSet<enum class ESnapPointQuadrant>          CallFunc_GetAcceptableQuadrants_AcceptableQuadrants; // 0x270(0x50)(None)
 	enum class ESnapPointQuadrant                CallFunc_GetMirrorQuadrant_ReturnValue_1;          // 0x2C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchEnum_CmpSuccess_1;                    // 0x2C1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A5D7[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A708[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<enum class ESnapPointQuadrant>          K2Node_MakeSet_Set_4;                              // 0x2C8(0x50)(None)
 };
 

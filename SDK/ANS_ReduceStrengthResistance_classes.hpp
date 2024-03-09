@@ -15,7 +15,7 @@ class UANS_ReduceStrengthResistance_C : public UAnimNotifyState
 {
 public:
 	enum class EVisibilityBasedAnimTickOption    VisibilityBasedAnimTickOption;                     // 0x30(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A88D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A20A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_CreatureBase_C*                    Creature;                                          // 0x38(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UNWXAbilitySystemComponent*            Ability_System;                                    // 0x40(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 

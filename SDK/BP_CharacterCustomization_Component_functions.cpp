@@ -388,7 +388,7 @@ void UBP_CharacterCustomization_Component_C::GetCLothes_Gear(class USkeletalMesh
 // Function BP_CharacterCustomization_Component.BP_CharacterCustomization_Component_C.UpdateLipgloss
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                             Lipgloss                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             LipGloss                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -399,7 +399,7 @@ void UBP_CharacterCustomization_Component_C::GetCLothes_Gear(class USkeletalMesh
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_SetScalarParameterValue_Value_ImplicitCast              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CharacterCustomization_Component_C::UpdateLipgloss(double Lipgloss, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class UMaterialInstanceDynamic*>& CallFunc_GetSkinMIDs_OutSkinMIDs, double CallFunc_FClamp_ReturnValue, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, float CallFunc_SetScalarParameterValue_Value_ImplicitCast)
+void UBP_CharacterCustomization_Component_C::UpdateLipgloss(double LipGloss, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class UMaterialInstanceDynamic*>& CallFunc_GetSkinMIDs_OutSkinMIDs, double CallFunc_FClamp_ReturnValue, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, float CallFunc_SetScalarParameterValue_Value_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -408,7 +408,7 @@ void UBP_CharacterCustomization_Component_C::UpdateLipgloss(double Lipgloss, int
 
 	Params::UBP_CharacterCustomization_Component_C_UpdateLipgloss_Params Parms{};
 
-	Parms.Lipgloss = Lipgloss;
+	Parms.LipGloss = LipGloss;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -1611,7 +1611,6 @@ void UBP_CharacterCustomization_Component_C::UpdateAgeValue(double NewAgeValue)
 // TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded>MaterialOverrides                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 // TMap<enum class EMetalRegions, double>MetalOverries                                                    (BlueprintVisible, BlueprintReadOnly, Parm)
 // int32                              RandomSeed                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              TierValue                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class UMaterialInstanceDynamic*>OutMIDs                                                          (Parm, OutParm)
 // class UMaterialInstanceDynamic*    NewMID                                                           (Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FName                        CurrentSlotName                                                  (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1636,7 +1635,7 @@ void UBP_CharacterCustomization_Component_C::UpdateAgeValue(double NewAgeValue)
 // class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInterface*          CallFunc_GetMaterial_ReturnValue                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CharacterCustomization_Component_C::CreateClothDMI(class USkeletalMeshComponent* MeshComponent, TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded> MaterialOverrides, TMap<enum class EMetalRegions, double> MetalOverries, int32 RandomSeed, int32 TierValue, TArray<class UMaterialInstanceDynamic*>* OutMIDs, class UMaterialInstanceDynamic* NewMID, class FName CurrentSlotName, const TArray<class UMaterialInstanceDynamic*>& NewMIDs, class UMaterialInterface* CurrentMaterial, int32 CurrentMaterialIndex, int32 Temp_int_Array_Index_Variable, TArray<class FName>& CallFunc_GetMaterialSlotNames_ReturnValue, class FName CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, bool CallFunc_Set_Contains_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const class FString& CallFunc_GetDisplayName_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue)
+void UBP_CharacterCustomization_Component_C::CreateClothDMI(class USkeletalMeshComponent* MeshComponent, TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded> MaterialOverrides, TMap<enum class EMetalRegions, double> MetalOverries, int32 RandomSeed, TArray<class UMaterialInstanceDynamic*>* OutMIDs, class UMaterialInstanceDynamic* NewMID, class FName CurrentSlotName, const TArray<class UMaterialInstanceDynamic*>& NewMIDs, class UMaterialInterface* CurrentMaterial, int32 CurrentMaterialIndex, int32 Temp_int_Array_Index_Variable, TArray<class FName>& CallFunc_GetMaterialSlotNames_ReturnValue, class FName CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, bool CallFunc_Set_Contains_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const class FString& CallFunc_GetDisplayName_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1649,7 +1648,6 @@ void UBP_CharacterCustomization_Component_C::CreateClothDMI(class USkeletalMeshC
 	Parms.MaterialOverrides = MaterialOverrides;
 	Parms.MetalOverries = MetalOverries;
 	Parms.RandomSeed = RandomSeed;
-	Parms.TierValue = TierValue;
 	Parms.NewMID = NewMID;
 	Parms.CurrentSlotName = CurrentSlotName;
 	Parms.NewMIDs = NewMIDs;
@@ -4097,19 +4095,20 @@ void UBP_CharacterCustomization_Component_C::LoadAndWaitForCollectedData(class U
 // struct FClothRegionHiding_Torso    ShirtSettings                                                    (Edit, BlueprintVisible, NoDestructor)
 // struct FClothRegionHiding_Legs     PantsSettings                                                    (Edit, BlueprintVisible, NoDestructor)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class E_CustomizationMeshType Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class E_EquipSlotType         Temp_byte_Variable_1                                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class E_CustomizationMeshType Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // uint8                              CallFunc_Conv_IntToByte_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // uint8                              CallFunc_GetEnumeratorValueFromIndex_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable_2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Conv_ByteToInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable_2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue_3                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable_2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4121,44 +4120,30 @@ void UBP_CharacterCustomization_Component_C::LoadAndWaitForCollectedData(class U
 // int32                              Temp_int_Array_Index_Variable_4                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_MakeLiteralInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class E_EquipSlotType         Temp_byte_Variable_1                                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class E_EquipSlotType         Temp_byte_Variable_2                                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class E_EquipSlotType         Temp_byte_Variable_3                                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class E_EquipSlotType         CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class E_EquipSlotType         Temp_byte_Variable_4                                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class E_EquipSlotType         Temp_byte_Variable_3                                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_2                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_3                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class E_EquipSlotType         Temp_byte_Variable_5                                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FClothRegionHiding_Legs     K2Node_MakeStruct_ClothRegionHiding_Legs                         (NoDestructor)
+// enum class E_EquipSlotType         Temp_byte_Variable_4                                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Not_Int_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FClothRegionHiding_Legs     K2Node_MakeStruct_ClothRegionHiding_Legs_1                       (NoDestructor)
+// bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FClothRegionHiding_Torso    K2Node_MakeStruct_ClothRegionHiding_Torso                        (NoDestructor)
-// int32                              CallFunc_And_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FClothRegionHiding_Legs     K2Node_MakeStruct_ClothRegionHiding_Legs_2                       (NoDestructor)
-// struct FItemData_RegionHiding      CallFunc_Map_Find_Value                                          (None)
-// bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_And_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_And_IntInt_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_NotEqual_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USkeletalMeshComponent*      CallFunc_GetMeshBySlotAndType_Mesh                               (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetMeshBySlotAndType_bMeshExists                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FClothRegionHiding_Torso    K2Node_MakeStruct_ClothRegionHiding_Torso_1                      (NoDestructor)
+// struct FClothRegionHiding_Torso    K2Node_MakeStruct_ClothRegionHiding_Torso                        (NoDestructor)
 // class UMaterialInterface*          CallFunc_GetMaterial_ReturnValue                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<class UMaterialInterface*>  CallFunc_GetMaterials_ReturnValue                                (ReferenceParm)
 // class UMaterialInstanceDynamic*    K2Node_DynamicCast_AsMaterial_Instance_Dynamic                   (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UMaterialInterface*>  CallFunc_GetMaterials_ReturnValue                                (ReferenceParm)
 // int32                              CallFunc_Array_Length_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable_5                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInterface*          CallFunc_Array_Get_Item_1                                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -4175,9 +4160,9 @@ void UBP_CharacterCustomization_Component_C::LoadAndWaitForCollectedData(class U
 // class UMaterialInterface*          CallFunc_Array_Get_Item_2                                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue_2                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_5                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FClothRegionHiding_Torso    K2Node_MakeStruct_ClothRegionHiding_Torso_2                      (NoDestructor)
-// struct FItemData_RegionHiding      CallFunc_Map_Find_Value_1                                        (None)
-// bool                               CallFunc_Map_Find_ReturnValue_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FClothRegionHiding_Torso    K2Node_MakeStruct_ClothRegionHiding_Torso_1                      (NoDestructor)
+// struct FItemData_RegionHiding      CallFunc_Map_Find_Value                                          (None)
+// bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInterface*          CallFunc_GetMaterial_ReturnValue_2                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    K2Node_DynamicCast_AsMaterial_Instance_Dynamic_2                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_2                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4187,7 +4172,7 @@ void UBP_CharacterCustomization_Component_C::LoadAndWaitForCollectedData(class U
 // bool                               K2Node_DynamicCast_bSuccess_3                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue_2                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue_5                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FClothRegionHiding_Torso    K2Node_MakeStruct_ClothRegionHiding_Torso_3                      (NoDestructor)
+// struct FClothRegionHiding_Torso    K2Node_MakeStruct_ClothRegionHiding_Torso_2                      (NoDestructor)
 // class UMaterialInterface*          CallFunc_GetMaterial_ReturnValue_4                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    K2Node_DynamicCast_AsMaterial_Instance_Dynamic_4                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_4                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4228,7 +4213,7 @@ void UBP_CharacterCustomization_Component_C::LoadAndWaitForCollectedData(class U
 // int32                              CallFunc_Or_IntInt_ReturnValue_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Or_IntInt_ReturnValue_2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CharacterCustomization_Component_C::HandleClothHiding(TMap<enum class E_EquipSlotType, struct FItemData_RegionHiding> RegionHidingBySlot, TSet<enum class E_EquipSlotType>& HiddenSlots, enum class E_CustomizationMeshType MeshType, bool IsThirdPerson, class USkeletalMeshComponent* Clothes__Gloves_, const struct FClothRegionHiding_Gloves& GlovesSettings, class USkeletalMeshComponent* FullBodyGear, int32 MaterialIndex, class USkeletalMeshComponent* Clothes__Gear_, class USkeletalMeshComponent* Clothes__Bottom_, class USkeletalMeshComponent* Clothes__Torso_, enum class E_CustomizationMeshType LMeshType, const TArray<enum class E_EquipSlotType>& HiddenSlotArray, const struct FItemData_RegionHiding& RegionHidingForCurrentSlot, const struct FClothRegionHiding_Torso& ShirtSettings, const struct FClothRegionHiding_Legs& PantsSettings, int32 Temp_int_Array_Index_Variable, enum class E_CustomizationMeshType Temp_byte_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Variable, enum class E_EquipSlotType Temp_byte_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_2, uint8 CallFunc_Conv_IntToByte_ReturnValue, uint8 CallFunc_GetEnumeratorValueFromIndex_ReturnValue, int32 Temp_int_Loop_Counter_Variable_2, int32 CallFunc_Conv_ByteToInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_3, int32 Temp_int_Array_Index_Variable_2, int32 Temp_int_Variable_1, uint8 CallFunc_Conv_IntToByte_ReturnValue_1, uint8 CallFunc_GetValidValue_ReturnValue, int32 Temp_int_Array_Index_Variable_3, int32 Temp_int_Loop_Counter_Variable_3, int32 CallFunc_Add_IntInt_ReturnValue_4, int32 Temp_int_Array_Index_Variable_4, int32 CallFunc_MakeLiteralInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, enum class E_EquipSlotType Temp_byte_Variable_2, enum class E_EquipSlotType Temp_byte_Variable_3, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, enum class E_EquipSlotType CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue_2, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, enum class E_EquipSlotType Temp_byte_Variable_4, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, bool Temp_bool_Variable, enum class E_EquipSlotType Temp_byte_Variable_5, bool Temp_bool_Variable_1, bool CallFunc_IsValid_ReturnValue_3, bool Temp_bool_Variable_2, const struct FClothRegionHiding_Legs& K2Node_MakeStruct_ClothRegionHiding_Legs, bool Temp_bool_Variable_3, int32 CallFunc_Not_Int_ReturnValue, const struct FClothRegionHiding_Legs& K2Node_MakeStruct_ClothRegionHiding_Legs_1, bool K2Node_Select_Default, const struct FClothRegionHiding_Torso& K2Node_MakeStruct_ClothRegionHiding_Torso, int32 CallFunc_And_IntInt_ReturnValue, const struct FClothRegionHiding_Legs& K2Node_MakeStruct_ClothRegionHiding_Legs_2, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, int32 CallFunc_And_IntInt_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, int32 CallFunc_And_IntInt_ReturnValue_2, bool CallFunc_NotEqual_IntInt_ReturnValue, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh, bool CallFunc_GetMeshBySlotAndType_bMeshExists, int32 K2Node_Select_Default_1, const struct FClothRegionHiding_Torso& K2Node_MakeStruct_ClothRegionHiding_Torso_1, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Array_Index_Variable_5, class UMaterialInterface* CallFunc_Array_Get_Item_1, bool CallFunc_Set_Contains_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_Not_PreBool_ReturnValue, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh_1, bool CallFunc_GetMeshBySlotAndType_bMeshExists_1, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_1, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_1, bool K2Node_DynamicCast_bSuccess_1, int32 CallFunc_Or_IntInt_ReturnValue, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue_1, class UMaterialInterface* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_5, const struct FClothRegionHiding_Torso& K2Node_MakeStruct_ClothRegionHiding_Torso_2, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value_1, bool CallFunc_Map_Find_ReturnValue_1, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_2, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_2, bool K2Node_DynamicCast_bSuccess_2, int32 Temp_int_Loop_Counter_Variable_4, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_3, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_3, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_Less_IntInt_ReturnValue_2, int32 CallFunc_Add_IntInt_ReturnValue_5, const struct FClothRegionHiding_Torso& K2Node_MakeStruct_ClothRegionHiding_Torso_3, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_4, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_4, bool K2Node_DynamicCast_bSuccess_4, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh_2, bool CallFunc_GetMeshBySlotAndType_bMeshExists_2, bool CallFunc_Set_Contains_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_Set_Contains_ReturnValue_2, bool CallFunc_Set_Contains_ReturnValue_3, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_Set_Contains_ReturnValue_4, bool CallFunc_Not_PreBool_ReturnValue_3, TArray<enum class E_EquipSlotType>& CallFunc_Set_ToArray_Result, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue_2, class UMaterialInterface* CallFunc_Array_Get_Item_3, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_6, class UMaterialInterface* CallFunc_Array_Get_Item_4, bool CallFunc_IsValid_ReturnValue_7, int32 CallFunc_Array_Length_ReturnValue_3, bool CallFunc_Less_IntInt_ReturnValue_3, int32 CallFunc_Array_Length_ReturnValue_4, bool CallFunc_Less_IntInt_ReturnValue_4, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh_3, bool CallFunc_GetMeshBySlotAndType_bMeshExists_3, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh_4, bool CallFunc_GetMeshBySlotAndType_bMeshExists_4, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh_5, bool CallFunc_GetMeshBySlotAndType_bMeshExists_5, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue_4, class UMaterialInterface* CallFunc_Array_Get_Item_5, bool CallFunc_IsValid_ReturnValue_8, int32 CallFunc_Array_Length_ReturnValue_5, bool CallFunc_Less_IntInt_ReturnValue_5, int32 Temp_int_Loop_Counter_Variable_5, bool CallFunc_Less_IntInt_ReturnValue_6, int32 CallFunc_Add_IntInt_ReturnValue_6, int32 CallFunc_Or_IntInt_ReturnValue_1, int32 CallFunc_Or_IntInt_ReturnValue_2)
+void UBP_CharacterCustomization_Component_C::HandleClothHiding(TMap<enum class E_EquipSlotType, struct FItemData_RegionHiding> RegionHidingBySlot, TSet<enum class E_EquipSlotType>& HiddenSlots, enum class E_CustomizationMeshType MeshType, bool IsThirdPerson, class USkeletalMeshComponent* Clothes__Gloves_, const struct FClothRegionHiding_Gloves& GlovesSettings, class USkeletalMeshComponent* FullBodyGear, int32 MaterialIndex, class USkeletalMeshComponent* Clothes__Gear_, class USkeletalMeshComponent* Clothes__Bottom_, class USkeletalMeshComponent* Clothes__Torso_, enum class E_CustomizationMeshType LMeshType, const TArray<enum class E_EquipSlotType>& HiddenSlotArray, const struct FItemData_RegionHiding& RegionHidingForCurrentSlot, const struct FClothRegionHiding_Torso& ShirtSettings, const struct FClothRegionHiding_Legs& PantsSettings, int32 Temp_int_Array_Index_Variable, bool Temp_bool_Variable, bool Temp_bool_Variable_1, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Variable, enum class E_CustomizationMeshType Temp_byte_Variable, int32 CallFunc_Add_IntInt_ReturnValue_2, uint8 CallFunc_Conv_IntToByte_ReturnValue, uint8 CallFunc_GetEnumeratorValueFromIndex_ReturnValue, int32 CallFunc_Conv_ByteToInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue_3, int32 Temp_int_Array_Index_Variable_2, int32 Temp_int_Variable_1, uint8 CallFunc_Conv_IntToByte_ReturnValue_1, uint8 CallFunc_GetValidValue_ReturnValue, int32 Temp_int_Array_Index_Variable_3, int32 Temp_int_Loop_Counter_Variable_3, int32 CallFunc_Add_IntInt_ReturnValue_4, int32 Temp_int_Array_Index_Variable_4, int32 CallFunc_MakeLiteralInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, enum class E_EquipSlotType Temp_byte_Variable_1, enum class E_EquipSlotType Temp_byte_Variable_2, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, enum class E_EquipSlotType CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue_2, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, enum class E_EquipSlotType Temp_byte_Variable_3, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, bool Temp_bool_Variable_2, enum class E_EquipSlotType Temp_byte_Variable_4, bool Temp_bool_Variable_3, bool CallFunc_IsValid_ReturnValue_3, bool K2Node_Select_Default, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh, bool CallFunc_GetMeshBySlotAndType_bMeshExists, int32 K2Node_Select_Default_1, const struct FClothRegionHiding_Torso& K2Node_MakeStruct_ClothRegionHiding_Torso, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Array_Index_Variable_5, class UMaterialInterface* CallFunc_Array_Get_Item_1, bool CallFunc_Set_Contains_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_Not_PreBool_ReturnValue, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh_1, bool CallFunc_GetMeshBySlotAndType_bMeshExists_1, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_1, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_1, bool K2Node_DynamicCast_bSuccess_1, int32 CallFunc_Or_IntInt_ReturnValue, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue_1, class UMaterialInterface* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_5, const struct FClothRegionHiding_Torso& K2Node_MakeStruct_ClothRegionHiding_Torso_1, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_2, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_2, bool K2Node_DynamicCast_bSuccess_2, int32 Temp_int_Loop_Counter_Variable_4, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_3, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_3, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_Less_IntInt_ReturnValue_2, int32 CallFunc_Add_IntInt_ReturnValue_5, const struct FClothRegionHiding_Torso& K2Node_MakeStruct_ClothRegionHiding_Torso_2, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_4, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_4, bool K2Node_DynamicCast_bSuccess_4, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh_2, bool CallFunc_GetMeshBySlotAndType_bMeshExists_2, bool CallFunc_Set_Contains_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_Set_Contains_ReturnValue_2, bool CallFunc_Set_Contains_ReturnValue_3, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_Set_Contains_ReturnValue_4, bool CallFunc_Not_PreBool_ReturnValue_3, TArray<enum class E_EquipSlotType>& CallFunc_Set_ToArray_Result, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue_2, class UMaterialInterface* CallFunc_Array_Get_Item_3, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_6, class UMaterialInterface* CallFunc_Array_Get_Item_4, bool CallFunc_IsValid_ReturnValue_7, int32 CallFunc_Array_Length_ReturnValue_3, bool CallFunc_Less_IntInt_ReturnValue_3, int32 CallFunc_Array_Length_ReturnValue_4, bool CallFunc_Less_IntInt_ReturnValue_4, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh_3, bool CallFunc_GetMeshBySlotAndType_bMeshExists_3, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh_4, bool CallFunc_GetMeshBySlotAndType_bMeshExists_4, class USkeletalMeshComponent* CallFunc_GetMeshBySlotAndType_Mesh_5, bool CallFunc_GetMeshBySlotAndType_bMeshExists_5, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue_4, class UMaterialInterface* CallFunc_Array_Get_Item_5, bool CallFunc_IsValid_ReturnValue_8, int32 CallFunc_Array_Length_ReturnValue_5, bool CallFunc_Less_IntInt_ReturnValue_5, int32 Temp_int_Loop_Counter_Variable_5, bool CallFunc_Less_IntInt_ReturnValue_6, int32 CallFunc_Add_IntInt_ReturnValue_6, int32 CallFunc_Or_IntInt_ReturnValue_1, int32 CallFunc_Or_IntInt_ReturnValue_2)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4254,19 +4239,20 @@ void UBP_CharacterCustomization_Component_C::HandleClothHiding(TMap<enum class E
 	Parms.ShirtSettings = ShirtSettings;
 	Parms.PantsSettings = PantsSettings;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.Temp_int_Array_Index_Variable_1 = Temp_int_Array_Index_Variable_1;
 	Parms.Temp_int_Loop_Counter_Variable_1 = Temp_int_Loop_Counter_Variable_1;
 	Parms.CallFunc_Add_IntInt_ReturnValue_1 = CallFunc_Add_IntInt_ReturnValue_1;
 	Parms.Temp_int_Variable = Temp_int_Variable;
-	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue_2 = CallFunc_Add_IntInt_ReturnValue_2;
 	Parms.CallFunc_Conv_IntToByte_ReturnValue = CallFunc_Conv_IntToByte_ReturnValue;
 	Parms.CallFunc_GetEnumeratorValueFromIndex_ReturnValue = CallFunc_GetEnumeratorValueFromIndex_ReturnValue;
-	Parms.Temp_int_Loop_Counter_Variable_2 = Temp_int_Loop_Counter_Variable_2;
 	Parms.CallFunc_Conv_ByteToInt_ReturnValue = CallFunc_Conv_ByteToInt_ReturnValue;
+	Parms.Temp_int_Loop_Counter_Variable_2 = Temp_int_Loop_Counter_Variable_2;
 	Parms.CallFunc_Add_IntInt_ReturnValue_3 = CallFunc_Add_IntInt_ReturnValue_3;
 	Parms.Temp_int_Array_Index_Variable_2 = Temp_int_Array_Index_Variable_2;
 	Parms.Temp_int_Variable_1 = Temp_int_Variable_1;
@@ -4278,44 +4264,30 @@ void UBP_CharacterCustomization_Component_C::HandleClothHiding(TMap<enum class E
 	Parms.Temp_int_Array_Index_Variable_4 = Temp_int_Array_Index_Variable_4;
 	Parms.CallFunc_MakeLiteralInt_ReturnValue = CallFunc_MakeLiteralInt_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
 	Parms.Temp_byte_Variable_2 = Temp_byte_Variable_2;
-	Parms.Temp_byte_Variable_3 = Temp_byte_Variable_3;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue_1 = CallFunc_Less_IntInt_ReturnValue_1;
-	Parms.Temp_byte_Variable_4 = Temp_byte_Variable_4;
+	Parms.Temp_byte_Variable_3 = Temp_byte_Variable_3;
 	Parms.Temp_int_Variable_2 = Temp_int_Variable_2;
 	Parms.Temp_int_Variable_3 = Temp_int_Variable_3;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_byte_Variable_5 = Temp_byte_Variable_5;
-	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
-	Parms.CallFunc_IsValid_ReturnValue_3 = CallFunc_IsValid_ReturnValue_3;
 	Parms.Temp_bool_Variable_2 = Temp_bool_Variable_2;
-	Parms.K2Node_MakeStruct_ClothRegionHiding_Legs = K2Node_MakeStruct_ClothRegionHiding_Legs;
+	Parms.Temp_byte_Variable_4 = Temp_byte_Variable_4;
 	Parms.Temp_bool_Variable_3 = Temp_bool_Variable_3;
-	Parms.CallFunc_Not_Int_ReturnValue = CallFunc_Not_Int_ReturnValue;
-	Parms.K2Node_MakeStruct_ClothRegionHiding_Legs_1 = K2Node_MakeStruct_ClothRegionHiding_Legs_1;
+	Parms.CallFunc_IsValid_ReturnValue_3 = CallFunc_IsValid_ReturnValue_3;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
-	Parms.K2Node_MakeStruct_ClothRegionHiding_Torso = K2Node_MakeStruct_ClothRegionHiding_Torso;
-	Parms.CallFunc_And_IntInt_ReturnValue = CallFunc_And_IntInt_ReturnValue;
-	Parms.K2Node_MakeStruct_ClothRegionHiding_Legs_2 = K2Node_MakeStruct_ClothRegionHiding_Legs_2;
-	Parms.CallFunc_Map_Find_Value = CallFunc_Map_Find_Value;
-	Parms.CallFunc_Map_Find_ReturnValue = CallFunc_Map_Find_ReturnValue;
-	Parms.CallFunc_And_IntInt_ReturnValue_1 = CallFunc_And_IntInt_ReturnValue_1;
-	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
-	Parms.CallFunc_And_IntInt_ReturnValue_2 = CallFunc_And_IntInt_ReturnValue_2;
-	Parms.CallFunc_NotEqual_IntInt_ReturnValue = CallFunc_NotEqual_IntInt_ReturnValue;
 	Parms.CallFunc_GetMeshBySlotAndType_Mesh = CallFunc_GetMeshBySlotAndType_Mesh;
 	Parms.CallFunc_GetMeshBySlotAndType_bMeshExists = CallFunc_GetMeshBySlotAndType_bMeshExists;
 	Parms.K2Node_Select_Default_1 = K2Node_Select_Default_1;
-	Parms.K2Node_MakeStruct_ClothRegionHiding_Torso_1 = K2Node_MakeStruct_ClothRegionHiding_Torso_1;
+	Parms.K2Node_MakeStruct_ClothRegionHiding_Torso = K2Node_MakeStruct_ClothRegionHiding_Torso;
 	Parms.CallFunc_GetMaterial_ReturnValue = CallFunc_GetMaterial_ReturnValue;
-	Parms.CallFunc_GetMaterials_ReturnValue = CallFunc_GetMaterials_ReturnValue;
 	Parms.K2Node_DynamicCast_AsMaterial_Instance_Dynamic = K2Node_DynamicCast_AsMaterial_Instance_Dynamic;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_GetMaterials_ReturnValue = CallFunc_GetMaterials_ReturnValue;
 	Parms.CallFunc_Array_Length_ReturnValue_1 = CallFunc_Array_Length_ReturnValue_1;
 	Parms.Temp_int_Array_Index_Variable_5 = Temp_int_Array_Index_Variable_5;
 	Parms.CallFunc_Array_Get_Item_1 = CallFunc_Array_Get_Item_1;
@@ -4332,9 +4304,9 @@ void UBP_CharacterCustomization_Component_C::HandleClothHiding(TMap<enum class E
 	Parms.CallFunc_Array_Get_Item_2 = CallFunc_Array_Get_Item_2;
 	Parms.CallFunc_Array_Length_ReturnValue_2 = CallFunc_Array_Length_ReturnValue_2;
 	Parms.CallFunc_IsValid_ReturnValue_5 = CallFunc_IsValid_ReturnValue_5;
-	Parms.K2Node_MakeStruct_ClothRegionHiding_Torso_2 = K2Node_MakeStruct_ClothRegionHiding_Torso_2;
-	Parms.CallFunc_Map_Find_Value_1 = CallFunc_Map_Find_Value_1;
-	Parms.CallFunc_Map_Find_ReturnValue_1 = CallFunc_Map_Find_ReturnValue_1;
+	Parms.K2Node_MakeStruct_ClothRegionHiding_Torso_1 = K2Node_MakeStruct_ClothRegionHiding_Torso_1;
+	Parms.CallFunc_Map_Find_Value = CallFunc_Map_Find_Value;
+	Parms.CallFunc_Map_Find_ReturnValue = CallFunc_Map_Find_ReturnValue;
 	Parms.CallFunc_GetMaterial_ReturnValue_2 = CallFunc_GetMaterial_ReturnValue_2;
 	Parms.K2Node_DynamicCast_AsMaterial_Instance_Dynamic_2 = K2Node_DynamicCast_AsMaterial_Instance_Dynamic_2;
 	Parms.K2Node_DynamicCast_bSuccess_2 = K2Node_DynamicCast_bSuccess_2;
@@ -4344,7 +4316,7 @@ void UBP_CharacterCustomization_Component_C::HandleClothHiding(TMap<enum class E
 	Parms.K2Node_DynamicCast_bSuccess_3 = K2Node_DynamicCast_bSuccess_3;
 	Parms.CallFunc_Less_IntInt_ReturnValue_2 = CallFunc_Less_IntInt_ReturnValue_2;
 	Parms.CallFunc_Add_IntInt_ReturnValue_5 = CallFunc_Add_IntInt_ReturnValue_5;
-	Parms.K2Node_MakeStruct_ClothRegionHiding_Torso_3 = K2Node_MakeStruct_ClothRegionHiding_Torso_3;
+	Parms.K2Node_MakeStruct_ClothRegionHiding_Torso_2 = K2Node_MakeStruct_ClothRegionHiding_Torso_2;
 	Parms.CallFunc_GetMaterial_ReturnValue_4 = CallFunc_GetMaterial_ReturnValue_4;
 	Parms.K2Node_DynamicCast_AsMaterial_Instance_Dynamic_4 = K2Node_DynamicCast_AsMaterial_Instance_Dynamic_4;
 	Parms.K2Node_DynamicCast_bSuccess_4 = K2Node_DynamicCast_bSuccess_4;
@@ -4421,8 +4393,6 @@ void UBP_CharacterCustomization_Component_C::GetBodyType(enum class EBodyType* B
 // class UMaterialInstanceDynamic*    SkinDMI                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class USkeletalMeshComponent*      GlovesMesh                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    LowerBodyMID                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FClothRegionHiding_Legs     HipsRear                                                         (Edit, BlueprintVisible, NoDestructor)
-// struct FClothRegionHiding_Legs     HipsFront                                                        (Edit, BlueprintVisible, NoDestructor)
 // struct FSkinRegionShowing_LowerBodyLowerBodySettings                                                (Edit, BlueprintVisible, NoDestructor)
 // struct FSkinRegionHiding_UpperBody UpperBodySettings                                                (Edit, BlueprintVisible, NoDestructor)
 // enum class ESkinHidingRegions_UpperBodyFingersValue                                                     (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4442,20 +4412,18 @@ void UBP_CharacterCustomization_Component_C::GetBodyType(enum class EBodyType* B
 // bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Set_Contains_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_And_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Or_IntInt_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSkinRegionHiding_UpperBody K2Node_MakeStruct_SkinRegionHiding_UpperBody_1                   (NoDestructor)
 // struct FItemData_RegionHiding      CallFunc_Map_Find_Value_1                                        (None)
 // bool                               CallFunc_Map_Find_ReturnValue_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Set_Contains_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FItemData_RegionHiding      CallFunc_Map_Find_Value_2                                        (None)
 // bool                               CallFunc_Map_Find_ReturnValue_2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Or_IntInt_ReturnValue_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Set_Contains_ReturnValue_2                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSkinRegionHiding_UpperBody K2Node_MakeStruct_SkinRegionHiding_UpperBody_2                   (NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue_2                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanAND_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FItemData_RegionHiding      CallFunc_Map_Find_Value_3                                        (None)
@@ -4468,7 +4436,7 @@ void UBP_CharacterCustomization_Component_C::GetBodyType(enum class EBodyType* B
 // bool                               CallFunc_Not_PreBool_ReturnValue_3                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanAND_ReturnValue_3                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CharacterCustomization_Component_C::HandleSkinHiding(TMap<enum class E_EquipSlotType, struct FItemData_RegionHiding> RegionHidingData, TSet<enum class E_EquipSlotType>& HiddenSlots, class UMaterialInstanceDynamic* SkinDMI, class USkeletalMeshComponent* GlovesMesh, class UMaterialInstanceDynamic* LowerBodyMID, const struct FClothRegionHiding_Legs& HipsRear, const struct FClothRegionHiding_Legs& HipsFront, const struct FSkinRegionShowing_LowerBody& LowerBodySettings, const struct FSkinRegionHiding_UpperBody& UpperBodySettings, enum class ESkinHidingRegions_UpperBody FingersValue, enum class ESkinHidingRegions_UpperBody PalmsValue, bool bHasBareHands, enum class E_EquipSlotType Temp_byte_Variable, enum class E_EquipSlotType Temp_byte_Variable_1, enum class E_EquipSlotType Temp_byte_Variable_2, enum class E_EquipSlotType Temp_byte_Variable_3, enum class E_EquipSlotType Temp_byte_Variable_4, enum class E_EquipSlotType Temp_byte_Variable_5, enum class E_EquipSlotType Temp_byte_Variable_6, enum class E_EquipSlotType Temp_byte_Variable_7, enum class E_EquipSlotType Temp_byte_Variable_8, const struct FSkinRegionHiding_UpperBody& K2Node_MakeStruct_SkinRegionHiding_UpperBody, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool CallFunc_Set_Contains_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, int32 CallFunc_And_IntInt_ReturnValue, int32 CallFunc_Or_IntInt_ReturnValue, const struct FSkinRegionHiding_UpperBody& K2Node_MakeStruct_SkinRegionHiding_UpperBody_1, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value_1, bool CallFunc_Map_Find_ReturnValue_1, bool CallFunc_Set_Contains_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value_2, bool CallFunc_Map_Find_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_1, int32 CallFunc_Or_IntInt_ReturnValue_1, bool CallFunc_Set_Contains_ReturnValue_2, const struct FSkinRegionHiding_UpperBody& K2Node_MakeStruct_SkinRegionHiding_UpperBody_2, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_2, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value_3, bool CallFunc_Map_Find_ReturnValue_3, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value_4, bool CallFunc_Map_Find_ReturnValue_4, int32 CallFunc_And_IntInt_ReturnValue_1, const struct FSkinRegionShowing_LowerBody& K2Node_MakeStruct_SkinRegionShowing_LowerBody, bool CallFunc_Set_Contains_ReturnValue_3, bool CallFunc_Not_PreBool_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_3)
+void UBP_CharacterCustomization_Component_C::HandleSkinHiding(TMap<enum class E_EquipSlotType, struct FItemData_RegionHiding> RegionHidingData, TSet<enum class E_EquipSlotType>& HiddenSlots, class UMaterialInstanceDynamic* SkinDMI, class USkeletalMeshComponent* GlovesMesh, class UMaterialInstanceDynamic* LowerBodyMID, const struct FSkinRegionShowing_LowerBody& LowerBodySettings, const struct FSkinRegionHiding_UpperBody& UpperBodySettings, enum class ESkinHidingRegions_UpperBody FingersValue, enum class ESkinHidingRegions_UpperBody PalmsValue, bool bHasBareHands, enum class E_EquipSlotType Temp_byte_Variable, enum class E_EquipSlotType Temp_byte_Variable_1, enum class E_EquipSlotType Temp_byte_Variable_2, enum class E_EquipSlotType Temp_byte_Variable_3, enum class E_EquipSlotType Temp_byte_Variable_4, enum class E_EquipSlotType Temp_byte_Variable_5, enum class E_EquipSlotType Temp_byte_Variable_6, enum class E_EquipSlotType Temp_byte_Variable_7, enum class E_EquipSlotType Temp_byte_Variable_8, const struct FSkinRegionHiding_UpperBody& K2Node_MakeStruct_SkinRegionHiding_UpperBody, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool CallFunc_Set_Contains_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, int32 CallFunc_And_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, int32 CallFunc_Or_IntInt_ReturnValue, const struct FSkinRegionHiding_UpperBody& K2Node_MakeStruct_SkinRegionHiding_UpperBody_1, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value_1, bool CallFunc_Map_Find_ReturnValue_1, bool CallFunc_Set_Contains_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value_2, bool CallFunc_Map_Find_ReturnValue_2, bool CallFunc_Set_Contains_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_2, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value_3, bool CallFunc_Map_Find_ReturnValue_3, const struct FItemData_RegionHiding& CallFunc_Map_Find_Value_4, bool CallFunc_Map_Find_ReturnValue_4, int32 CallFunc_And_IntInt_ReturnValue_1, const struct FSkinRegionShowing_LowerBody& K2Node_MakeStruct_SkinRegionShowing_LowerBody, bool CallFunc_Set_Contains_ReturnValue_3, bool CallFunc_Not_PreBool_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_3)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4482,8 +4450,6 @@ void UBP_CharacterCustomization_Component_C::HandleSkinHiding(TMap<enum class E_
 	Parms.SkinDMI = SkinDMI;
 	Parms.GlovesMesh = GlovesMesh;
 	Parms.LowerBodyMID = LowerBodyMID;
-	Parms.HipsRear = HipsRear;
-	Parms.HipsFront = HipsFront;
 	Parms.LowerBodySettings = LowerBodySettings;
 	Parms.UpperBodySettings = UpperBodySettings;
 	Parms.FingersValue = FingersValue;
@@ -4503,20 +4469,18 @@ void UBP_CharacterCustomization_Component_C::HandleSkinHiding(TMap<enum class E_
 	Parms.CallFunc_Map_Find_ReturnValue = CallFunc_Map_Find_ReturnValue;
 	Parms.CallFunc_Set_Contains_ReturnValue = CallFunc_Set_Contains_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
-	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
 	Parms.CallFunc_And_IntInt_ReturnValue = CallFunc_And_IntInt_ReturnValue;
+	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
 	Parms.CallFunc_Or_IntInt_ReturnValue = CallFunc_Or_IntInt_ReturnValue;
 	Parms.K2Node_MakeStruct_SkinRegionHiding_UpperBody_1 = K2Node_MakeStruct_SkinRegionHiding_UpperBody_1;
 	Parms.CallFunc_Map_Find_Value_1 = CallFunc_Map_Find_Value_1;
 	Parms.CallFunc_Map_Find_ReturnValue_1 = CallFunc_Map_Find_ReturnValue_1;
 	Parms.CallFunc_Set_Contains_ReturnValue_1 = CallFunc_Set_Contains_ReturnValue_1;
 	Parms.CallFunc_Not_PreBool_ReturnValue_1 = CallFunc_Not_PreBool_ReturnValue_1;
+	Parms.CallFunc_BooleanAND_ReturnValue_1 = CallFunc_BooleanAND_ReturnValue_1;
 	Parms.CallFunc_Map_Find_Value_2 = CallFunc_Map_Find_Value_2;
 	Parms.CallFunc_Map_Find_ReturnValue_2 = CallFunc_Map_Find_ReturnValue_2;
-	Parms.CallFunc_BooleanAND_ReturnValue_1 = CallFunc_BooleanAND_ReturnValue_1;
-	Parms.CallFunc_Or_IntInt_ReturnValue_1 = CallFunc_Or_IntInt_ReturnValue_1;
 	Parms.CallFunc_Set_Contains_ReturnValue_2 = CallFunc_Set_Contains_ReturnValue_2;
-	Parms.K2Node_MakeStruct_SkinRegionHiding_UpperBody_2 = K2Node_MakeStruct_SkinRegionHiding_UpperBody_2;
 	Parms.CallFunc_Not_PreBool_ReturnValue_2 = CallFunc_Not_PreBool_ReturnValue_2;
 	Parms.CallFunc_BooleanAND_ReturnValue_2 = CallFunc_BooleanAND_ReturnValue_2;
 	Parms.CallFunc_Map_Find_Value_3 = CallFunc_Map_Find_Value_3;
@@ -4677,10 +4641,9 @@ void UBP_CharacterCustomization_Component_C::ApplyAndAttachSkeletalMesh(class US
 // TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded>CallFunc_GetMaterialOverrides_MaterialOverridesLoaded            (None)
 // struct FCharacterCustomization_LoadedMeshDataCallFunc_GetLoadedMeshData_LoadedMeshData                        (NoDestructor)
 // int32                              CallFunc_GetRandomSeed_OutRandomSeed                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_GetTierValue_TierValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CharacterCustomization_Component_C::AssignMeshFromCollectedData(class UBP_CollectedVisualMeshData_C*& Item, bool CallFunc_TryGetHatType_bHasHatType, enum class EHatType CallFunc_TryGetHatType_OutHatType, enum class E_EquipSlotType CallFunc_GetEquipSlot_EquipSlot, bool CallFunc_HasRegionHiding_bHasRegionHiding, const struct FItemData_RegionHiding& CallFunc_GetRegionHiding_RegionHiding, TMap<enum class EMetalRegions, double> CallFunc_GetMetalOverrides_MetalOverrides, TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded> CallFunc_GetMaterialOverrides_MaterialOverridesLoaded, const struct FCharacterCustomization_LoadedMeshData& CallFunc_GetLoadedMeshData_LoadedMeshData, int32 CallFunc_GetRandomSeed_OutRandomSeed, int32 CallFunc_GetTierValue_TierValue, bool CallFunc_IsValid_ReturnValue)
+void UBP_CharacterCustomization_Component_C::AssignMeshFromCollectedData(class UBP_CollectedVisualMeshData_C*& Item, bool CallFunc_TryGetHatType_bHasHatType, enum class EHatType CallFunc_TryGetHatType_OutHatType, enum class E_EquipSlotType CallFunc_GetEquipSlot_EquipSlot, bool CallFunc_HasRegionHiding_bHasRegionHiding, const struct FItemData_RegionHiding& CallFunc_GetRegionHiding_RegionHiding, TMap<enum class EMetalRegions, double> CallFunc_GetMetalOverrides_MetalOverrides, TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded> CallFunc_GetMaterialOverrides_MaterialOverridesLoaded, const struct FCharacterCustomization_LoadedMeshData& CallFunc_GetLoadedMeshData_LoadedMeshData, int32 CallFunc_GetRandomSeed_OutRandomSeed, bool CallFunc_IsValid_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4699,7 +4662,6 @@ void UBP_CharacterCustomization_Component_C::AssignMeshFromCollectedData(class U
 	Parms.CallFunc_GetMaterialOverrides_MaterialOverridesLoaded = CallFunc_GetMaterialOverrides_MaterialOverridesLoaded;
 	Parms.CallFunc_GetLoadedMeshData_LoadedMeshData = CallFunc_GetLoadedMeshData_LoadedMeshData;
 	Parms.CallFunc_GetRandomSeed_OutRandomSeed = CallFunc_GetRandomSeed_OutRandomSeed;
-	Parms.CallFunc_GetTierValue_TierValue = CallFunc_GetTierValue_TierValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -4717,7 +4679,6 @@ void UBP_CharacterCustomization_Component_C::AssignMeshFromCollectedData(class U
 // TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded>MaterialOverrides                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 // struct FCharacterCustomization_LoadedMeshDataMeshData                                                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 // int32                              RandomSeed                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              TierValue                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               ShouldApplyCustomizationToMaterial                               (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USkeletalMeshComponent*      TPMeshComp                                                       (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USkeletalMeshComponent*      FPMeshComp                                                       (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -4743,7 +4704,7 @@ void UBP_CharacterCustomization_Component_C::AssignMeshFromCollectedData(class U
 // class USkeletalMeshComponent*      CallFunc_GetFPMeshBySlot_Mesh                                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetFPMeshBySlot_IsValid                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CharacterCustomization_Component_C::AssignMeshFromVisualMeshData(enum class E_EquipSlotType Slot, bool bHasSkinHiding, const struct FItemData_RegionHiding& SkinHidingOverrides, TMap<enum class EMetalRegions, double> MetalOverrides, TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded> MaterialOverrides, const struct FCharacterCustomization_LoadedMeshData& MeshData, int32 RandomSeed, int32 TierValue, bool ShouldApplyCustomizationToMaterial, class USkeletalMeshComponent* TPMeshComp, class USkeletalMeshComponent* FPMeshComp, class USkeletalMeshComponent* FPArmMeshComp, int32 Temp_int_Array_Index_Variable, TArray<class FName>& CallFunc_GetMaterialSlotNames_ReturnValue, class FName CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, TArray<class UMaterialInstanceDynamic*>& CallFunc_CreateClothDMI_OutMIDs, TArray<class UMaterialInstanceDynamic*>& CallFunc_CreateClothDMI_OutMIDs_1, int32 Temp_int_Loop_Counter_Variable, TArray<class UMaterialInstanceDynamic*>& CallFunc_CreateClothDMI_OutMIDs_2, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Get_Is_First_Person_bValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Get_Is_First_Person_bValue_1, class USkeletalMeshComponent* CallFunc_GetFPArmMeshBySlot_Mesh, bool CallFunc_GetFPArmMeshBySlot_IsValid, class USkeletalMeshComponent* CallFunc_GetTPMeshBySlot_Mesh, bool CallFunc_GetTPMeshBySlot_Is_Valid, class USkeletalMeshComponent* CallFunc_GetFPMeshBySlot_Mesh, bool CallFunc_GetFPMeshBySlot_IsValid)
+void UBP_CharacterCustomization_Component_C::AssignMeshFromVisualMeshData(enum class E_EquipSlotType Slot, bool bHasSkinHiding, const struct FItemData_RegionHiding& SkinHidingOverrides, TMap<enum class EMetalRegions, double> MetalOverrides, TMap<enum class ECostumeRegions, struct FResourceCustomizationData_Loaded> MaterialOverrides, const struct FCharacterCustomization_LoadedMeshData& MeshData, int32 RandomSeed, bool ShouldApplyCustomizationToMaterial, class USkeletalMeshComponent* TPMeshComp, class USkeletalMeshComponent* FPMeshComp, class USkeletalMeshComponent* FPArmMeshComp, int32 Temp_int_Array_Index_Variable, TArray<class FName>& CallFunc_GetMaterialSlotNames_ReturnValue, class FName CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, TArray<class UMaterialInstanceDynamic*>& CallFunc_CreateClothDMI_OutMIDs, TArray<class UMaterialInstanceDynamic*>& CallFunc_CreateClothDMI_OutMIDs_1, int32 Temp_int_Loop_Counter_Variable, TArray<class UMaterialInstanceDynamic*>& CallFunc_CreateClothDMI_OutMIDs_2, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Get_Is_First_Person_bValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Get_Is_First_Person_bValue_1, class USkeletalMeshComponent* CallFunc_GetFPArmMeshBySlot_Mesh, bool CallFunc_GetFPArmMeshBySlot_IsValid, class USkeletalMeshComponent* CallFunc_GetTPMeshBySlot_Mesh, bool CallFunc_GetTPMeshBySlot_Is_Valid, class USkeletalMeshComponent* CallFunc_GetFPMeshBySlot_Mesh, bool CallFunc_GetFPMeshBySlot_IsValid)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4759,7 +4720,6 @@ void UBP_CharacterCustomization_Component_C::AssignMeshFromVisualMeshData(enum c
 	Parms.MaterialOverrides = MaterialOverrides;
 	Parms.MeshData = MeshData;
 	Parms.RandomSeed = RandomSeed;
-	Parms.TierValue = TierValue;
 	Parms.ShouldApplyCustomizationToMaterial = ShouldApplyCustomizationToMaterial;
 	Parms.TPMeshComp = TPMeshComp;
 	Parms.FPMeshComp = FPMeshComp;

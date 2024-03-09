@@ -22,22 +22,22 @@ public:
 	double                                       SplineSnapThreshold;                               // 0x2F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         DrawDebug;                                         // 0x2F8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	enum class E_TrackingNodeType                NodeType;                                          // 0x2F9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5845[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2825[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FSplinePoint>                  NavSplineData;                                     // 0x300(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	bool                                         Visible;                                           // 0x310(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_TrackingNodeVisited             NodeVisited;                                       // 0x311(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5846[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2826[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ACharacter*                            Character;                                         // 0x318(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            TerminalNodeChanged;                               // 0x320(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TSoftObjectPtr<class UTexture2D>             CreatureIcon;                                      // 0x330(0x28)(Edit, BlueprintVisible, Net, ExposeOnSpawn, HasGetValueTypeHash)
 	class FText                                  CreatureName;                                      // 0x358(0x18)(Edit, BlueprintVisible, Net, ExposeOnSpawn)
 	bool                                         TrailActivator;                                    // 0x370(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5849[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2827[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_SquadTrackingNode_Client_C*        Proceeding_Node;                                   // 0x378(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class ABP_SquadTrackingNode_Client_C*        TrackingNode;                                      // 0x380(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class FString>                        SpoorTypesForTracking;                             // 0x388(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         IsTerminalNode;                                    // 0x398(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_584A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2828[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                SpoorType;                                         // 0x3A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	class FString                                TrackEndNotify;                                    // 0x3B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<class ABP_CreatureBase_C*>            TrackedSquad;                                      // 0x3C0(0x10)(Edit, BlueprintVisible, Net, DisableEditOnTemplate, ExposeOnSpawn)

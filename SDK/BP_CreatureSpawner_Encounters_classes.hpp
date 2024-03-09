@@ -9,13 +9,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x9 (0x1651 - 0x1648)
+// 0x9 (0x1621 - 0x1618)
 // BlueprintGeneratedClass BP_CreatureSpawner_Encounters.BP_CreatureSpawner_Encounters_C
 class ABP_CreatureSpawner_Encounters_C : public ABP_CreatureSpawnerBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1648(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                         DestroyWhenAllCreaturesDestroyed;                  // 0x1650(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1618(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                         DestroyWhenAllCreaturesDestroyed;                  // 0x1620(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_CreatureSpawner_Encounters_C* GetDefaultObj();

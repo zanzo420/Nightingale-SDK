@@ -40,37 +40,6 @@ class UAcousticOpeningComponent* UAcousticOpeningComponent::GetDefaultObj()
 }
 
 
-// Function NWXAudio.AcousticOpeningComponent.SetTransformationsUsingExtents
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// struct FTransform                  ParentWorldTransform                                             (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                     ExtentOrigin                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                     BoxExtents                                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAcousticOpeningComponent::SetTransformationsUsingExtents(struct FTransform& ParentWorldTransform, struct FVector& ExtentOrigin, struct FVector& BoxExtents)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("AcousticOpeningComponent", "SetTransformationsUsingExtents");
-
-	Params::UAcousticOpeningComponent_SetTransformationsUsingExtents_Params Parms{};
-
-	Parms.ParentWorldTransform = ParentWorldTransform;
-	Parms.ExtentOrigin = ExtentOrigin;
-	Parms.BoxExtents = BoxExtents;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
 // Function NWXAudio.AcousticOpeningComponent.IsInteriorToExterior
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -3611,34 +3580,6 @@ float UGlobalAudioSubsystem::GetAudioMaxHealthClamped(float MaxHealthValue)
 	Params::UGlobalAudioSubsystem_GetAudioMaxHealthClamped_Params Parms{};
 
 	Parms.MaxHealthValue = MaxHealthValue;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function NWXAudio.GlobalAudioSubsystem.GetActiveMixState
-// (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
-// Parameters:
-// enum class EAudioMixState          ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-enum class EAudioMixState UGlobalAudioSubsystem::GetActiveMixState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("GlobalAudioSubsystem", "GetActiveMixState");
-
-	Params::UGlobalAudioSubsystem_GetActiveMixState_Params Parms{};
-
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

@@ -16,7 +16,7 @@ class UABP_GNM_Template_C : public UNWXAIAnimInstance
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x6F0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimBlueprintGeneratedMutableData    __AnimBlueprintMutables;                           // 0x6F8(0x7)(HasGetValueTypeHash)
-	uint8                                        Pad_9BB4[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BBF[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x700(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x708(0x8)(None)
 	struct FAnimNode_Root                        AnimGraphNode_Root_8;                              // 0x710(0x20)(None)
@@ -86,17 +86,17 @@ public:
 	struct FVector                               __CustomProperty_Hand_l_152D05004CAD97452EEA8FA61816EA45; // 0x1BB8(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       __CustomProperty_InDynamicsAlpha_990BFE4E4ED8D3A0DB0E7C98B614505E; // 0x1BD0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsDowned;                                          // 0x1BD8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9BBB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BC0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_Creature_Wildlife_HillGiant_C*     As_BP_Creature_Wildlife_Hill_Giant;                // 0x1BE0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                          Swap_from_Armed_to_Unarmed;                        // 0x1BE8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsSwampGiant;                                      // 0x1BF0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9BBC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BC1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  ArmedKey;                                          // 0x1BF4(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9BBD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BC3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Hand_l_Loc;                                        // 0x1C00(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Hand_l_Alpha;                                      // 0x1C18(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bIsOffering_;                                      // 0x1C20(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9BBE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BC4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSequenceCache                    OfferingLoop;                                      // 0x1C28(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	double                                       EyeAlpha;                                          // 0x1C38(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

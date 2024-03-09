@@ -21,7 +21,7 @@ public:
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_501E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3B05[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FShopDescriptorRegistryEntry>  CallFunc_GetAllShopDescriptors_OutShopRegistryEntries; // 0x10(0x10)(ReferenceParm)
 	struct FShopDescriptorRegistryEntry          CallFunc_Array_Get_Item;                           // 0x20(0x68)(None)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x88(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

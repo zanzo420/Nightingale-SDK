@@ -1025,6 +1025,8 @@ void UWBP_MenuDataEntryThumb_C::Construct()
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetImage_IsValidReference                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TSoftObjectPtr<class UTexture2D>   CallFunc_GetImage_EntryImage                                     (UObjectWrapper, HasGetValueTypeHash)
+// bool                               CallFunc_CanViewDetails_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_CanViewDetails_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     K2Node_Event_ListItemObject                                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UNWXMenuDataEntry*           K2Node_DynamicCast_AsNWXMenu_Data_Entry                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1037,7 +1039,7 @@ void UWBP_MenuDataEntryThumb_C::Construct()
 // bool                               K2Node_Event_bIsSelected                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bIsExpanded                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MenuDataEntryThumb_C::ExecuteUbergraph_WBP_MenuDataEntryThumb(int32 EntryPoint, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent, const struct FFocusEvent& K2Node_Event_InFocusEvent_1, const struct FFocusEvent& K2Node_Event_InFocusEvent, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_GetImage_IsValidReference, TSoftObjectPtr<class UTexture2D> CallFunc_GetImage_EntryImage, class UObject* K2Node_Event_ListItemObject, class UNWXMenuDataEntry* K2Node_DynamicCast_AsNWXMenu_Data_Entry, bool K2Node_DynamicCast_bSuccess, class UNWXMenuDataEntryObservedStateTracker* CallFunc_GetStateTracker_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class ANWXPlayerState* CallFunc_GetOwningPlayerState_ReturnValue, bool K2Node_Event_bIsSelected, bool K2Node_Event_bIsExpanded)
+void UWBP_MenuDataEntryThumb_C::ExecuteUbergraph_WBP_MenuDataEntryThumb(int32 EntryPoint, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent, const struct FFocusEvent& K2Node_Event_InFocusEvent_1, const struct FFocusEvent& K2Node_Event_InFocusEvent, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_GetImage_IsValidReference, TSoftObjectPtr<class UTexture2D> CallFunc_GetImage_EntryImage, bool CallFunc_CanViewDetails_ReturnValue, bool CallFunc_CanViewDetails_ReturnValue_1, class UObject* K2Node_Event_ListItemObject, class UNWXMenuDataEntry* K2Node_DynamicCast_AsNWXMenu_Data_Entry, bool K2Node_DynamicCast_bSuccess, class UNWXMenuDataEntryObservedStateTracker* CallFunc_GetStateTracker_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class ANWXPlayerState* CallFunc_GetOwningPlayerState_ReturnValue, bool K2Node_Event_bIsSelected, bool K2Node_Event_bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1056,6 +1058,8 @@ void UWBP_MenuDataEntryThumb_C::ExecuteUbergraph_WBP_MenuDataEntryThumb(int32 En
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_GetImage_IsValidReference = CallFunc_GetImage_IsValidReference;
 	Parms.CallFunc_GetImage_EntryImage = CallFunc_GetImage_EntryImage;
+	Parms.CallFunc_CanViewDetails_ReturnValue = CallFunc_CanViewDetails_ReturnValue;
+	Parms.CallFunc_CanViewDetails_ReturnValue_1 = CallFunc_CanViewDetails_ReturnValue_1;
 	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
 	Parms.K2Node_DynamicCast_AsNWXMenu_Data_Entry = K2Node_DynamicCast_AsNWXMenu_Data_Entry;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -1129,6 +1133,29 @@ void UWBP_MenuDataEntryThumb_C::ThumbDoubleClick__DelegateSignature(class UNWXMe
 
 	Params::UWBP_MenuDataEntryThumb_C_ThumbDoubleClick__DelegateSignature_Params Parms{};
 
+	Parms.MenuDataEntry = MenuDataEntry;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function WBP_MenuDataEntryThumb.WBP_MenuDataEntryThumb_C.ThumbHovered__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               IsHovered                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNWXMenuDataEntry*           MenuDataEntry                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MenuDataEntryThumb_C::ThumbHovered__DelegateSignature(bool IsHovered, class UNWXMenuDataEntry* MenuDataEntry)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_MenuDataEntryThumb_C", "ThumbHovered__DelegateSignature");
+
+	Params::UWBP_MenuDataEntryThumb_C_ThumbHovered__DelegateSignature_Params Parms{};
+
+	Parms.IsHovered = IsHovered;
 	Parms.MenuDataEntry = MenuDataEntry;
 
 	UObject::ProcessEvent(Func, &Parms);

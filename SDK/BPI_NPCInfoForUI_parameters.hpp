@@ -19,10 +19,10 @@ struct IBPI_NPCInfoForUI_C_GetContractInfo_Params
 {
 public:
 	bool                                         OnContract;                                        // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4844[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class APawn*                                 EmployerPawn;                                      // 0x8(0x8)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        ContractCost;                                      // 0x10(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4845[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                OrderTarget;                                       // 0x18(0x8)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -32,10 +32,10 @@ struct IBPI_NPCInfoForUI_C_GetFriendship_Params
 {
 public:
 	enum class Enum_FriendshipLevel              FriendshipLevel;                                   // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4846[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        FriendshipScore;                                   // 0x4(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsBestFriend;                                      // 0x8(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4847[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       FriendshipLevelRatio;                              // 0x10(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        FriendshipLevelScore;                              // 0x18(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        FriendshipLevelMaxScore;                           // 0x1C(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -14,7 +14,7 @@ namespace SDK
 class UPointCloud : public UObject
 {
 public:
-	uint8                                        Pad_3D39[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3D28[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class UPointCloudView*>                 RootViews;                                         // 0x30(0x50)(Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 
 	static class UClass* StaticClass();
@@ -42,7 +42,7 @@ public:
 class UPointCloudImpl : public UPointCloud
 {
 public:
-	uint8                                        Pad_3D3A[0x238];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D29[0x238];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPointCloudImpl* GetDefaultObj();
@@ -54,7 +54,7 @@ public:
 class USliceAndDiceCommandlet : public UCommandlet
 {
 public:
-	uint8                                        Pad_3D3B[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D2A[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USliceAndDiceCommandlet* GetDefaultObj();
@@ -72,7 +72,7 @@ public:
 	TArray<struct FSliceAndDiceManagedActorsHashInfo> HashInfo;                                          // 0x68(0x10)(ZeroConstructor, Deprecated, NativeAccessSpecifierPublic)
 	TArray<class USliceAndDiceManagedActors*>    Children;                                          // 0x78(0x10)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	TArray<struct FSliceAndDiceManagedActorsEntry> ActorEntries;                                      // 0x88(0x10)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_3D3C[0x98];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D2B[0x98];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USliceAndDiceManagedActors* GetDefaultObj();
@@ -88,7 +88,7 @@ public:
 	TSoftObjectPtr<class UPointCloudSliceAndDiceRuleSet> RuleSet;                                           // 0x50(0x28)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USliceAndDiceManagedActors*            Root;                                              // 0x78(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnabled;                                          // 0x80(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3D3D[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D2C[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USliceAndDiceMapping* GetDefaultObj();
@@ -102,7 +102,7 @@ class ASliceAndDiceManager : public AActor
 {
 public:
 	TArray<class USliceAndDiceMapping*>          Mappings;                                          // 0x2A0(0x10)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3D48[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D37[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ASliceAndDiceManager* GetDefaultObj();
@@ -138,10 +138,10 @@ public:
 	struct FColor                                Color;                                             // 0x38(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnabled;                                          // 0x3C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAlwaysReRun;                                      // 0x3D(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3D49[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3D38[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UPointCloudRule*>               Slots;                                             // 0x40(0x10)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TArray<class UPointCloudRuleSlot*>           SlotInfo;                                          // 0x50(0x10)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                        Pad_3D4A[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3D39[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	uint64                                       RevisionNumber;                                    // 0x90(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();
@@ -155,7 +155,7 @@ class UPointCloudSliceAndDiceRuleSet : public UObject
 {
 public:
 	TArray<class UPointCloudRule*>               Rules;                                             // 0x28(0x10)(Edit, BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3D53[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D42[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPointCloudSliceAndDiceRuleSet* GetDefaultObj();
@@ -176,9 +176,9 @@ class UPointCloudRuleSlot : public UObject
 public:
 	class FString                                Label;                                             // 0x28(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bExternallyVisible;                                // 0x38(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3D54[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3D43[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 Guid;                                              // 0x3C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3D55[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D44[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPointCloudRuleSlot* GetDefaultObj();
@@ -193,9 +193,9 @@ public:
 	struct FGuid                                 ViewGuid;                                          // 0x28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UPointCloudImpl*                       PointCloud;                                        // 0x38(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UPointCloudView*                       ParentView;                                        // 0x40(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3D63[0x18];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3D52[0x18];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class UPointCloudView*>                 ChildViews;                                        // 0x60(0x50)(Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3D64[0x38];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D53[0x38];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPointCloudView* GetDefaultObj();

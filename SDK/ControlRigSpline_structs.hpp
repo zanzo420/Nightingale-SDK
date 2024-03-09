@@ -26,7 +26,7 @@ enum class ESplineType : uint8
 struct FControlRigSplineImpl
 {
 public:
-	uint8                                        Pad_4E02[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E05[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -34,7 +34,7 @@ public:
 struct FControlRigSpline
 {
 public:
-	uint8                                        Pad_4E03[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E06[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x8 - 0x8)
@@ -52,7 +52,7 @@ public:
 	TArray<struct FVector>                       Points;                                            // 0x8(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	enum class ESplineType                       SplineMode;                                        // 0x18(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bClosed;                                           // 0x19(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E04[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E07[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        SamplesPerSegment;                                 // 0x1C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Compression;                                       // 0x20(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Stretch;                                           // 0x24(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -67,7 +67,7 @@ public:
 	TArray<struct FTransform>                    Transforms;                                        // 0x8(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	enum class ESplineType                       SplineMode;                                        // 0x18(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bClosed;                                           // 0x19(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E05[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E08[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        SamplesPerSegment;                                 // 0x1C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Compression;                                       // 0x20(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Stretch;                                           // 0x24(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -81,7 +81,7 @@ struct FRigUnit_SetSplinePoints : public FRigUnitMutable
 public:
 	TArray<struct FVector>                       Points;                                            // 0x160(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FControlRigSpline                     Spline;                                            // 0x170(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E06[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E09[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x190 - 0x160)
@@ -91,7 +91,7 @@ struct FRigUnit_SetSplineTransforms : public FRigUnitMutable
 public:
 	TArray<struct FTransform>                    Transforms;                                        // 0x160(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FControlRigSpline                     Spline;                                            // 0x170(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E07[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E0A[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x38 (0x40 - 0x8)
@@ -101,7 +101,7 @@ struct FRigUnit_PositionFromControlRigSpline : public FRigUnit_ControlRigSplineB
 public:
 	struct FControlRigSpline                     Spline;                                            // 0x8(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	float                                        U;                                                 // 0x20(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E08[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E0B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Position;                                          // 0x28(0x18)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -124,10 +124,10 @@ struct FRigUnit_TransformFromControlRigSpline2 : public FRigUnit_ControlRigSplin
 public:
 	struct FControlRigSpline                     Spline;                                            // 0x8(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	float                                        U;                                                 // 0x20(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E09[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E0C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               PrimaryAxis;                                       // 0x28(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               SecondaryAxis;                                     // 0x40(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E0A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E0D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            Transform;                                         // 0x60(0x60)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -138,7 +138,7 @@ struct FRigUnit_TangentFromControlRigSpline : public FRigUnit_ControlRigSplineBa
 public:
 	struct FControlRigSpline                     Spline;                                            // 0x8(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	float                                        U;                                                 // 0x20(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E0B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E0E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Tangent;                                           // 0x28(0x18)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -160,7 +160,7 @@ struct FRigUnit_GetLengthControlRigSpline : public FRigUnit
 public:
 	struct FControlRigSpline                     Spline;                                            // 0x8(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	float                                        Length;                                            // 0x20(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E0C[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E10[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x28 - 0x8)
@@ -181,32 +181,6 @@ public:
 	struct FRigElementKeyCollection              Items;                                             // 0x160(0x10)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FControlRigSpline                     Spline;                                            // 0x170(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	enum class EControlRigCurveAlignment         Alignment;                                         // 0x188(0x1)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E0D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        Minimum;                                           // 0x18C(0x4)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                        Maximum;                                           // 0x190(0x4)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                        SamplingPrecision;                                 // 0x194(0x4)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                               PrimaryAxis;                                       // 0x198(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                               SecondaryAxis;                                     // 0x1B0(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                               PoleVectorPosition;                                // 0x1C8(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FRigUnit_FitChainToCurve_Rotation> Rotations;                                         // 0x1E0(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	enum class ERigVMAnimEasingType              RotationEaseType;                                  // 0x1F0(0x1)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E0E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        Weight;                                            // 0x1F4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bPropagateToChildren;                              // 0x1F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E0F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FRigUnit_FitChainToCurve_DebugSettings DebugSettings;                                     // 0x200(0x90)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FRigUnit_FitChainToCurve_WorkData     WorkData;                                          // 0x290(0x98)(Transient, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E10[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
-};
-
-// 0x1D0 (0x330 - 0x160)
-// ScriptStruct ControlRigSpline.RigUnit_FitChainToSplineCurveItemArray
-struct FRigUnit_FitChainToSplineCurveItemArray : public FRigUnit_HighlevelBaseMutable
-{
-public:
-	TArray<struct FRigElementKey>                Items;                                             // 0x160(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FControlRigSpline                     Spline;                                            // 0x170(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	enum class EControlRigCurveAlignment         Alignment;                                         // 0x188(0x1)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        Pad_4E11[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Minimum;                                           // 0x18C(0x4)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Maximum;                                           // 0x190(0x4)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -225,13 +199,39 @@ public:
 	uint8                                        Pad_4E14[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
+// 0x1D0 (0x330 - 0x160)
+// ScriptStruct ControlRigSpline.RigUnit_FitChainToSplineCurveItemArray
+struct FRigUnit_FitChainToSplineCurveItemArray : public FRigUnit_HighlevelBaseMutable
+{
+public:
+	TArray<struct FRigElementKey>                Items;                                             // 0x160(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FControlRigSpline                     Spline;                                            // 0x170(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	enum class EControlRigCurveAlignment         Alignment;                                         // 0x188(0x1)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_4E15[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        Minimum;                                           // 0x18C(0x4)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                        Maximum;                                           // 0x190(0x4)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                        SamplingPrecision;                                 // 0x194(0x4)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                               PrimaryAxis;                                       // 0x198(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                               SecondaryAxis;                                     // 0x1B0(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                               PoleVectorPosition;                                // 0x1C8(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FRigUnit_FitChainToCurve_Rotation> Rotations;                                         // 0x1E0(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	enum class ERigVMAnimEasingType              RotationEaseType;                                  // 0x1F0(0x1)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_4E18[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        Weight;                                            // 0x1F4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bPropagateToChildren;                              // 0x1F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_4E19[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FRigUnit_FitChainToCurve_DebugSettings DebugSettings;                                     // 0x200(0x90)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRigUnit_FitChainToCurve_WorkData     WorkData;                                          // 0x290(0x98)(Transient, NativeAccessSpecifierPublic)
+	uint8                                        Pad_4E1A[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+};
+
 // 0x38 (0x38 - 0x0)
 // ScriptStruct ControlRigSpline.RigUnit_SplineConstraint_WorkData
 struct FRigUnit_SplineConstraint_WorkData
 {
 public:
 	float                                        ChainLength;                                       // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E15[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E1B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FTransform>                    ItemTransforms;                                    // 0x8(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<float>                                ItemSegments;                                      // 0x18(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FCachedRigElement>             CachedItems;                                       // 0x28(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
@@ -245,16 +245,16 @@ public:
 	TArray<struct FRigElementKey>                Items;                                             // 0x160(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FControlRigSpline                     Spline;                                            // 0x170(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	enum class EControlRigCurveAlignment         Alignment;                                         // 0x188(0x1)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E16[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E1D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Minimum;                                           // 0x18C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Maximum;                                           // 0x190(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E17[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E1E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               PrimaryAxis;                                       // 0x198(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               SecondaryAxis;                                     // 0x1B0(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bPropagateToChildren;                              // 0x1C8(0x1)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E18[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E1F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRigUnit_SplineConstraint_WorkData    WorkData;                                          // 0x1D0(0x38)(Transient, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E19[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E20[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x190 - 0x160)
@@ -264,7 +264,7 @@ struct FRigUnit_FitSplineCurveToChain : public FRigUnit_HighlevelBaseMutable
 public:
 	struct FRigElementKeyCollection              Items;                                             // 0x160(0x10)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FControlRigSpline                     Spline;                                            // 0x170(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E1A[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E21[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x190 - 0x160)
@@ -274,7 +274,7 @@ struct FRigUnit_FitSplineCurveToChainItemArray : public FRigUnit_HighlevelBaseMu
 public:
 	TArray<struct FRigElementKey>                Items;                                             // 0x160(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FControlRigSpline                     Spline;                                            // 0x170(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E1B[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E22[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x38 (0x40 - 0x8)
@@ -285,7 +285,7 @@ public:
 	struct FControlRigSpline                     Spline;                                            // 0x8(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FVector                               Position;                                          // 0x20(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        U;                                                 // 0x38(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E1C[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E23[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x28 - 0x8)

@@ -34,7 +34,7 @@ public:
 	bool                                         ForceLoadingScreenVisible;                         // 0x69(0x1)(Edit, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         HoldLoadingScreenAdditionalSecsEvenInEditor;       // 0x6A(0x1)(Edit, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ForceTickLoadingScreenEvenInEditor;                // 0x6B(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1AF8[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1A04[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UCommonLoadingScreenSettings* GetDefaultObj();
@@ -46,9 +46,9 @@ public:
 class ULoadingScreenManager : public UGameInstanceSubsystem
 {
 public:
-	uint8                                        Pad_1AFA[0xA8];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1A05[0xA8];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class ELoadingReason                    LoadingReason;                                     // 0xD8(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1AFB[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1A06[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULoadingScreenManager* GetDefaultObj();
@@ -61,7 +61,7 @@ public:
 class ULoadingProcessTask : public UObject
 {
 public:
-	uint8                                        Pad_1B05[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1A09[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULoadingProcessTask* GetDefaultObj();

@@ -26,9 +26,6 @@ public:
 	static class UClass* StaticClass();
 	static class UWBP_CC_DynamicSubPanel__Base_C* GetDefaultObj();
 
-	void NavigatePrevious();
-	void NavigateNext();
-	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Handled_ReturnValue);
 	void Utility_GetMorphValue(class FName MorphName, float* Value, bool CallFunc_IsValid_ReturnValue, TArray<struct FAppearanceMorphTarget>& CallFunc_GetBodyMorphTargets_OutCurrentMorphs, int32 CallFunc_Array_Length_ReturnValue, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, const struct FAppearanceMorphTarget& CallFunc_Array_Get_Item, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue);
 	void CollectPanelValues(TMap<class FString, struct FCharacterCreateTelemetryValuePairs>* OutValues, class FString* OutPanelName);
 	void SendTelemetryEvents(int32 TimeSpent, const class FString& PanelName, TMap<class FString, struct FCharacterCreateTelemetryValuePairs> Values, const struct FDateTime& CallFunc_UtcNow_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int64 CallFunc_DateTimeToUnixTimestamp_ReturnValue, int64 CallFunc_Subtract_Int64Int64_ReturnValue, bool CallFunc_IsEmpty_ReturnValue, int32 CallFunc_Conv_Int64ToInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FDateTime& CallFunc_UtcNow_ReturnValue_1, int64 CallFunc_DateTimeToUnixTimestamp_ReturnValue_1, int64 CallFunc_Subtract_Int64Int64_ReturnValue_1, const class FString& CallFunc_Conv_GuidToString_ReturnValue, int32 CallFunc_Conv_Int64ToInt_ReturnValue_1, TMap<class FString, struct FCharacterCreateTelemetryValuePairs> CallFunc_CollectPanelValues_OutValues, const class FString& CallFunc_CollectPanelValues_OutPanelName);

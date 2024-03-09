@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x128 (0x5E0 - 0x4B8)
+// 0x130 (0x5E8 - 0x4B8)
 // WidgetBlueprintGeneratedClass WBP_Popup_Dropdown.WBP_Popup_Dropdown_C
 class UWBP_Popup_Dropdown_C : public UNWXCommonWindowWidget
 {
@@ -24,19 +24,20 @@ public:
 	class UTextBlock*                            Txt_body;                                          // 0x4F0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                            TXT_Title;                                         // 0x4F8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                            Txt_warning;                                       // 0x500(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Options_Dropdown_C*               WBP_Options_Dropdown;                              // 0x508(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                        NbOfButtons;                                       // 0x510(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_61BF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  Button1_Label;                                     // 0x518(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	FMulticastInlineDelegateProperty_            Button1_Clicked;                                   // 0x530(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_            Button2_Clicked;                                   // 0x540(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_            Button3_Clicked;                                   // 0x550(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class FText                                  Button2_Label;                                     // 0x560(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                  Button3_Label;                                     // 0x578(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                  TitleText;                                         // 0x590(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                  BodyText;                                          // 0x5A8(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class FText                                  WarningText;                                       // 0x5C0(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class UDataTable*                            DropdownOptionsDataTable;                          // 0x5D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UWBP_Component_SoftEdge_Divider_C*     WBP_Component_SoftEdge_Divider_1;                  // 0x508(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Options_Dropdown_C*               WBP_Options_Dropdown;                              // 0x510(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                        NbOfButtons;                                       // 0x518(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                        Pad_2CCD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Button1_Label;                                     // 0x520(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	FMulticastInlineDelegateProperty_            Button1_Clicked;                                   // 0x538(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            Button2_Clicked;                                   // 0x548(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            Button3_Clicked;                                   // 0x558(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class FText                                  Button2_Label;                                     // 0x568(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                  Button3_Label;                                     // 0x580(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                  TitleText;                                         // 0x598(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                  BodyText;                                          // 0x5B0(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class FText                                  WarningText;                                       // 0x5C8(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class UDataTable*                            DropdownOptionsDataTable;                          // 0x5E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_Popup_Dropdown_C* GetDefaultObj();

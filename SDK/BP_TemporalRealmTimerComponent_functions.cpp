@@ -62,70 +62,6 @@ bool UBP_TemporalRealmTimerComponent_C::ShouldOptOutOfPersistenceStore()
 }
 
 
-// Function BP_TemporalRealmTimerComponent.BP_TemporalRealmTimerComponent_C.OnWorldPersistenceRestored
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// enum class E_WorldPersistenceLoadStateLoadState                                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_GetPersistenceObjectByKey_bSuccess                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     CallFunc_GetPersistenceObjectByKey_PersistedObject               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FDateTime                   CallFunc_UtcNow_ReturnValue                                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UBP_TemporalRealmTimerComponent_C*K2Node_DynamicCast_AsBP_Temporal_Realm_Timer_Component           (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int64                              CallFunc_DateTimeToUnixTimestamp_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int64                              CallFunc_Subtract_Int64Int64_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int64                              CallFunc_Add_Int64Int64_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                             CallFunc_Conv_Int64ToDouble_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_TemporalRealmTimerComponent_C::OnWorldPersistenceRestored(enum class E_WorldPersistenceLoadState LoadState, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_GetPersistenceObjectByKey_bSuccess, class UObject* CallFunc_GetPersistenceObjectByKey_PersistedObject, const struct FDateTime& CallFunc_UtcNow_ReturnValue, class UBP_TemporalRealmTimerComponent_C* K2Node_DynamicCast_AsBP_Temporal_Realm_Timer_Component, bool K2Node_DynamicCast_bSuccess, int64 CallFunc_DateTimeToUnixTimestamp_ReturnValue, int64 CallFunc_Subtract_Int64Int64_ReturnValue, int64 CallFunc_Add_Int64Int64_ReturnValue, double CallFunc_Conv_Int64ToDouble_ReturnValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_TemporalRealmTimerComponent_C", "OnWorldPersistenceRestored");
-
-	Params::UBP_TemporalRealmTimerComponent_C_OnWorldPersistenceRestored_Params Parms{};
-
-	Parms.LoadState = LoadState;
-	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
-	Parms.CallFunc_GetPersistenceObjectByKey_bSuccess = CallFunc_GetPersistenceObjectByKey_bSuccess;
-	Parms.CallFunc_GetPersistenceObjectByKey_PersistedObject = CallFunc_GetPersistenceObjectByKey_PersistedObject;
-	Parms.CallFunc_UtcNow_ReturnValue = CallFunc_UtcNow_ReturnValue;
-	Parms.K2Node_DynamicCast_AsBP_Temporal_Realm_Timer_Component = K2Node_DynamicCast_AsBP_Temporal_Realm_Timer_Component;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_DateTimeToUnixTimestamp_ReturnValue = CallFunc_DateTimeToUnixTimestamp_ReturnValue;
-	Parms.CallFunc_Subtract_Int64Int64_ReturnValue = CallFunc_Subtract_Int64Int64_ReturnValue;
-	Parms.CallFunc_Add_Int64Int64_ReturnValue = CallFunc_Add_Int64Int64_ReturnValue;
-	Parms.CallFunc_Conv_Int64ToDouble_ReturnValue = CallFunc_Conv_Int64ToDouble_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function BP_TemporalRealmTimerComponent.BP_TemporalRealmTimerComponent_C.HandleInitialLoadFromPersistence
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_TemporalRealmTimerComponent_C::HandleInitialLoadFromPersistence(class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_HasAuthority_ReturnValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_TemporalRealmTimerComponent_C", "HandleInitialLoadFromPersistence");
-
-	Params::UBP_TemporalRealmTimerComponent_C_HandleInitialLoadFromPersistence_Params Parms{};
-
-	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
-	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function BP_TemporalRealmTimerComponent.BP_TemporalRealmTimerComponent_C.GetPersistenceObjectByKey
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -308,23 +244,28 @@ void UBP_TemporalRealmTimerComponent_C::ReceiveTick(float DeltaSeconds)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int64                              CallFunc_Conv_DoubleToInt64_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Event_DeltaSeconds                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FDateTime                   CallFunc_UtcNow_ReturnValue                                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int64                              CallFunc_DateTimeToUnixTimestamp_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                              CallFunc_Subtract_Int64Int64_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue_1                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int64                              CallFunc_Add_Int64Int64_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAuthority_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_Conv_Int64ToDouble_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_GetRealTimeElapsedSeconds_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Subtract_DoubleDouble_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_DoubleDouble_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_GetRealTimeElapsedSeconds_ReturnValue_1                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FDateTime                   CallFunc_UtcNow_ReturnValue                                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int64                              CallFunc_DateTimeToUnixTimestamp_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AGameModeBase*               CallFunc_GetGameMode_ReturnValue                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ANWXGameModeBase*            K2Node_DynamicCast_AsNWXGame_Mode_Base                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FDateTime                   CallFunc_UtcNow_ReturnValue_1                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int64                              CallFunc_DateTimeToUnixTimestamp_ReturnValue_1                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_GetPersistenceObjectByKey_bSuccess                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     CallFunc_GetPersistenceObjectByKey_PersistedObject               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UBP_TemporalRealmTimerComponent_C*K2Node_DynamicCast_AsBP_Temporal_Realm_Timer_Component           (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      CallFunc_GetOwner_ReturnValue_1                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                              CallFunc_Conv_DoubleToInt64_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_TemporalRealmTimerComponent_C::ExecuteUbergraph_BP_TemporalRealmTimerComponent(int32 EntryPoint, class AActor* CallFunc_GetOwner_ReturnValue, int64 CallFunc_Conv_DoubleToInt64_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, float K2Node_Event_DeltaSeconds, double CallFunc_GetRealTimeElapsedSeconds_ReturnValue, double CallFunc_Subtract_DoubleDouble_ReturnValue, bool CallFunc_GreaterEqual_DoubleDouble_ReturnValue, double CallFunc_GetRealTimeElapsedSeconds_ReturnValue_1, const struct FDateTime& CallFunc_UtcNow_ReturnValue, int64 CallFunc_DateTimeToUnixTimestamp_ReturnValue, class AGameModeBase* CallFunc_GetGameMode_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class ANWXGameModeBase* K2Node_DynamicCast_AsNWXGame_Mode_Base, bool K2Node_DynamicCast_bSuccess, class AActor* CallFunc_GetOwner_ReturnValue_1, bool CallFunc_HasAuthority_ReturnValue_1)
+void UBP_TemporalRealmTimerComponent_C::ExecuteUbergraph_BP_TemporalRealmTimerComponent(int32 EntryPoint, class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, float K2Node_Event_DeltaSeconds, const struct FDateTime& CallFunc_UtcNow_ReturnValue, int64 CallFunc_DateTimeToUnixTimestamp_ReturnValue, int64 CallFunc_Subtract_Int64Int64_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue_1, int64 CallFunc_Add_Int64Int64_ReturnValue, bool CallFunc_HasAuthority_ReturnValue_1, double CallFunc_Conv_Int64ToDouble_ReturnValue, double CallFunc_GetRealTimeElapsedSeconds_ReturnValue, double CallFunc_Subtract_DoubleDouble_ReturnValue, bool CallFunc_GreaterEqual_DoubleDouble_ReturnValue, double CallFunc_GetRealTimeElapsedSeconds_ReturnValue_1, const struct FDateTime& CallFunc_UtcNow_ReturnValue_1, int64 CallFunc_DateTimeToUnixTimestamp_ReturnValue_1, bool CallFunc_GetPersistenceObjectByKey_bSuccess, class UObject* CallFunc_GetPersistenceObjectByKey_PersistedObject, class UBP_TemporalRealmTimerComponent_C* K2Node_DynamicCast_AsBP_Temporal_Realm_Timer_Component, bool K2Node_DynamicCast_bSuccess, int64 CallFunc_Conv_DoubleToInt64_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -335,21 +276,26 @@ void UBP_TemporalRealmTimerComponent_C::ExecuteUbergraph_BP_TemporalRealmTimerCo
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
-	Parms.CallFunc_Conv_DoubleToInt64_ReturnValue = CallFunc_Conv_DoubleToInt64_ReturnValue;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.K2Node_Event_DeltaSeconds = K2Node_Event_DeltaSeconds;
+	Parms.CallFunc_UtcNow_ReturnValue = CallFunc_UtcNow_ReturnValue;
+	Parms.CallFunc_DateTimeToUnixTimestamp_ReturnValue = CallFunc_DateTimeToUnixTimestamp_ReturnValue;
+	Parms.CallFunc_Subtract_Int64Int64_ReturnValue = CallFunc_Subtract_Int64Int64_ReturnValue;
+	Parms.CallFunc_GetOwner_ReturnValue_1 = CallFunc_GetOwner_ReturnValue_1;
+	Parms.CallFunc_Add_Int64Int64_ReturnValue = CallFunc_Add_Int64Int64_ReturnValue;
+	Parms.CallFunc_HasAuthority_ReturnValue_1 = CallFunc_HasAuthority_ReturnValue_1;
+	Parms.CallFunc_Conv_Int64ToDouble_ReturnValue = CallFunc_Conv_Int64ToDouble_ReturnValue;
 	Parms.CallFunc_GetRealTimeElapsedSeconds_ReturnValue = CallFunc_GetRealTimeElapsedSeconds_ReturnValue;
 	Parms.CallFunc_Subtract_DoubleDouble_ReturnValue = CallFunc_Subtract_DoubleDouble_ReturnValue;
 	Parms.CallFunc_GreaterEqual_DoubleDouble_ReturnValue = CallFunc_GreaterEqual_DoubleDouble_ReturnValue;
 	Parms.CallFunc_GetRealTimeElapsedSeconds_ReturnValue_1 = CallFunc_GetRealTimeElapsedSeconds_ReturnValue_1;
-	Parms.CallFunc_UtcNow_ReturnValue = CallFunc_UtcNow_ReturnValue;
-	Parms.CallFunc_DateTimeToUnixTimestamp_ReturnValue = CallFunc_DateTimeToUnixTimestamp_ReturnValue;
-	Parms.CallFunc_GetGameMode_ReturnValue = CallFunc_GetGameMode_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
-	Parms.K2Node_DynamicCast_AsNWXGame_Mode_Base = K2Node_DynamicCast_AsNWXGame_Mode_Base;
+	Parms.CallFunc_UtcNow_ReturnValue_1 = CallFunc_UtcNow_ReturnValue_1;
+	Parms.CallFunc_DateTimeToUnixTimestamp_ReturnValue_1 = CallFunc_DateTimeToUnixTimestamp_ReturnValue_1;
+	Parms.CallFunc_GetPersistenceObjectByKey_bSuccess = CallFunc_GetPersistenceObjectByKey_bSuccess;
+	Parms.CallFunc_GetPersistenceObjectByKey_PersistedObject = CallFunc_GetPersistenceObjectByKey_PersistedObject;
+	Parms.K2Node_DynamicCast_AsBP_Temporal_Realm_Timer_Component = K2Node_DynamicCast_AsBP_Temporal_Realm_Timer_Component;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_GetOwner_ReturnValue_1 = CallFunc_GetOwner_ReturnValue_1;
-	Parms.CallFunc_HasAuthority_ReturnValue_1 = CallFunc_HasAuthority_ReturnValue_1;
+	Parms.CallFunc_Conv_DoubleToInt64_ReturnValue = CallFunc_Conv_DoubleToInt64_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

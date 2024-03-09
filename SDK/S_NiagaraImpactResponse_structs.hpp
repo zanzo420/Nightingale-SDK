@@ -22,9 +22,9 @@ public:
 	TSoftObjectPtr<class UNiagaraSystem>         ImpactEffect_47_063BEC014FDA120EA8959B8C2B0C86A6;  // 0x0(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	enum class E_AngleOfIncidence                AngleOfIncidence_32_E3CAF6494E05D9B6886885817DEE94ED; // 0x28(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         StickToTarget_35_C4447D534FE2184ED06AF184EEFA6ED5; // 0x29(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_42DD[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5246[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          VFX_ColorOverride_36_16E96BED41587484DDE4BFA4E775F16A; // 0x2C(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_42DE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5247[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       VFX_Scale_17_02CABA9541B733CC1B78018CC507CC06;     // 0x40(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_DebrisSpawnChance_19_0E3BBCC44A2D8F69A6E471820737CA34; // 0x48(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_DustSpawnChance_21_647BE2A4415AEA61559130AADA576573; // 0x50(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -49,7 +49,7 @@ public:
 	double                                       VFX_SpreadScale_87_FC52CB234964B3C8146BDB85DEAB706E; // 0xF8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_DecalSpawnChance_90_B4C0CCA343E1ED1CF2CE708581839349; // 0x100(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        VFX_DecalSelect_95_BE8A5E524D5364B4840387A9E4AB6F11; // 0x108(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_42DF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5248[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       VFX_FrostSpawnChance_98_D9F9929C497039056B6FA28C9E3D233C; // 0x110(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_ArcsSpawnChance_100_37EB349C4B9E926DF01784ABAA8FDC9A; // 0x118(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       VFX_BloodSpawnChance_105_C27430AE48CFA2812899B1A00E4211A4; // 0x120(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

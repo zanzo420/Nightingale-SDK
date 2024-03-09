@@ -14,18 +14,18 @@ namespace SDK
 class UBP_Ambient_Audio_Component_Multiposition_C : public USceneComponent
 {
 public:
-	uint8                                        Pad_4CED[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A5FB[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x2B0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UAkAudioEvent*                         StartLoopEvent;                                    // 0x2B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UAkAudioEvent*                         StopLoopEvent;                                     // 0x2C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         StaticPosition;                                    // 0x2C8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseReverbVolumes;                                  // 0x2C9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4CEE[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A5FC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       OcclusionRefreshInterval;                          // 0x2D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       AttenuationScalingFactor_;                         // 0x2D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UScopedAkComponent*                    AkComponent;                                       // 0x2E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	enum class EAkMultiPositionType              MultiPositionType;                                 // 0x2E8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4CEF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A5FD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FTransform>                    ChildTransforms;                                   // 0x2F0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FVector>                       ChildVectors;                                      // 0x300(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class USceneComponent*>               ChildComponents;                                   // 0x310(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
