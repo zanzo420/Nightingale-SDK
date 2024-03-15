@@ -20,7 +20,7 @@ struct FS_UI_HUD_GoalTracking
 {
 public:
 	enum class E_UI_HudTrackingTypes             TrackType_3_666C50A44F761C54E3E42B8CD483DC7B;      // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7225[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_70AE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  Label_11_39F9F19A4910C67B8D9DADB7F562A89F;         // 0x8(0x18)(Edit, BlueprintVisible, SaveGame)
 	class FName                                  GroupID_28_9E893F914F388A25DD4D999D55295834;       // 0x20(0x8)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDataTableRowHandle                   RelatedData_29_FB6C371B410BA3F464FD1B84C6553406;   // 0x28(0x10)(Edit, BlueprintVisible, SaveGame, NoDestructor, HasGetValueTypeHash)

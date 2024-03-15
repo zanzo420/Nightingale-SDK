@@ -39,7 +39,7 @@ struct FNotificationData
 public:
 	class FString                                UniqueID;                                          // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EVoipNotificationType             Type;                                              // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3EC9[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_40C3[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

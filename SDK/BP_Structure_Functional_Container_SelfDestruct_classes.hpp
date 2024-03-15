@@ -14,7 +14,7 @@ namespace SDK
 class ABP_Structure_Functional_Container_SelfDestruct_C : public ABP_Structure_Functional_Container_C
 {
 public:
-	uint8                                        Pad_9E75[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A061[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA40(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
 	static class UClass* StaticClass();

@@ -135,15 +135,16 @@ class UWidget* UBP_MenuDataEntry_Crafting_C::GetTooltipWidget(class UWBP_Tooltip
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FInventoryEntry>     Temp_struct_Variable                                             (ReferenceParm)
 // class UBP_CraftingCreationComponent_C*CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsCraftable_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECraftingScreenState    CallFunc_GetCraftingScreenState_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_NotEqual_ByteByte_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FCraftingRecipe             CallFunc_GetCraftingRecipeData_ReturnValue                       (ContainsInstancedReference)
-// bool                               CallFunc_CraftingMenu_AllSlotsSatisfied_bAllMet                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<int32>                      CallFunc_CraftingMenu_AllSlotsSatisfied_OutUnmetSlots            (ReferenceParm)
+// bool                               CallFunc_Array_IsEmpty_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool UBP_MenuDataEntry_Crafting_C::IsCraftable(class UBP_CraftingCreationComponent_C* CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent, bool CallFunc_IsCraftable_ReturnValue, enum class ECraftingScreenState CallFunc_GetCraftingScreenState_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, const struct FCraftingRecipe& CallFunc_GetCraftingRecipeData_ReturnValue, bool CallFunc_CraftingMenu_AllSlotsSatisfied_bAllMet, TArray<int32>& CallFunc_CraftingMenu_AllSlotsSatisfied_OutUnmetSlots)
+bool UBP_MenuDataEntry_Crafting_C::IsCraftable(TArray<struct FInventoryEntry>& Temp_struct_Variable, class UBP_CraftingCreationComponent_C* CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent, bool CallFunc_IsCraftable_ReturnValue, enum class ECraftingScreenState CallFunc_GetCraftingScreenState_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, const struct FCraftingRecipe& CallFunc_GetCraftingRecipeData_ReturnValue, TArray<int32>& CallFunc_CraftingMenu_AllSlotsSatisfied_OutUnmetSlots, bool CallFunc_Array_IsEmpty_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -152,13 +153,14 @@ bool UBP_MenuDataEntry_Crafting_C::IsCraftable(class UBP_CraftingCreationCompone
 
 	Params::UBP_MenuDataEntry_Crafting_C_IsCraftable_Params Parms{};
 
+	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent = CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent;
 	Parms.CallFunc_IsCraftable_ReturnValue = CallFunc_IsCraftable_ReturnValue;
 	Parms.CallFunc_GetCraftingScreenState_ReturnValue = CallFunc_GetCraftingScreenState_ReturnValue;
 	Parms.CallFunc_NotEqual_ByteByte_ReturnValue = CallFunc_NotEqual_ByteByte_ReturnValue;
 	Parms.CallFunc_GetCraftingRecipeData_ReturnValue = CallFunc_GetCraftingRecipeData_ReturnValue;
-	Parms.CallFunc_CraftingMenu_AllSlotsSatisfied_bAllMet = CallFunc_CraftingMenu_AllSlotsSatisfied_bAllMet;
 	Parms.CallFunc_CraftingMenu_AllSlotsSatisfied_OutUnmetSlots = CallFunc_CraftingMenu_AllSlotsSatisfied_OutUnmetSlots;
+	Parms.CallFunc_Array_IsEmpty_ReturnValue = CallFunc_Array_IsEmpty_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -170,13 +172,12 @@ bool UBP_MenuDataEntry_Crafting_C::IsCraftable(class UBP_CraftingCreationCompone
 // Function BP_MenuDataEntry_Crafting.BP_MenuDataEntry_Crafting_C.CalculateMissingSlots
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               bAllMet                                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FInventoryEntry>     SlottedIngredients                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // TArray<int32>                      OutUnmetSlots                                                    (Parm, OutParm)
 // struct FCraftingRecipe             CallFunc_GetCraftingRecipeData_ReturnValue                       (ContainsInstancedReference)
-// bool                               CallFunc_CraftingMenu_AllSlotsSatisfied_bAllMet                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<int32>                      CallFunc_CraftingMenu_AllSlotsSatisfied_OutUnmetSlots            (ReferenceParm)
 
-void UBP_MenuDataEntry_Crafting_C::CalculateMissingSlots(bool* bAllMet, TArray<int32>* OutUnmetSlots, const struct FCraftingRecipe& CallFunc_GetCraftingRecipeData_ReturnValue, bool CallFunc_CraftingMenu_AllSlotsSatisfied_bAllMet, TArray<int32>& CallFunc_CraftingMenu_AllSlotsSatisfied_OutUnmetSlots)
+void UBP_MenuDataEntry_Crafting_C::CalculateMissingSlots(TArray<struct FInventoryEntry>& SlottedIngredients, TArray<int32>* OutUnmetSlots, const struct FCraftingRecipe& CallFunc_GetCraftingRecipeData_ReturnValue, TArray<int32>& CallFunc_CraftingMenu_AllSlotsSatisfied_OutUnmetSlots)
 {
 	static class UFunction* Func = nullptr;
 
@@ -185,14 +186,11 @@ void UBP_MenuDataEntry_Crafting_C::CalculateMissingSlots(bool* bAllMet, TArray<i
 
 	Params::UBP_MenuDataEntry_Crafting_C_CalculateMissingSlots_Params Parms{};
 
+	Parms.SlottedIngredients = SlottedIngredients;
 	Parms.CallFunc_GetCraftingRecipeData_ReturnValue = CallFunc_GetCraftingRecipeData_ReturnValue;
-	Parms.CallFunc_CraftingMenu_AllSlotsSatisfied_bAllMet = CallFunc_CraftingMenu_AllSlotsSatisfied_bAllMet;
 	Parms.CallFunc_CraftingMenu_AllSlotsSatisfied_OutUnmetSlots = CallFunc_CraftingMenu_AllSlotsSatisfied_OutUnmetSlots;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (bAllMet != nullptr)
-		*bAllMet = Parms.bAllMet;
 
 	if (OutUnmetSlots != nullptr)
 		*OutUnmetSlots = std::move(Parms.OutUnmetSlots);

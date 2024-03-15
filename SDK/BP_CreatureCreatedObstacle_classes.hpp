@@ -25,7 +25,7 @@ public:
 	class UCurveFloat*                           DamageHealthCurve;                                 // 0x2E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsDead;                                            // 0x2E8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsTraversable;                                     // 0x2E9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9C54[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CFB[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAkAudioEvent*                         DeathAudioEvent;                                   // 0x2F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                        CorpseTime;                                        // 0x2F8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -41,7 +41,7 @@ public:
 	void GetDamageEffect(class UClass** DamageEffect);
 	void GetRedirectedTarget(bool* ShouldRedirect, class AActor** RedirectedTarget);
 	void DeathLogic(const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UScopedAkComponent* CallFunc_SpawnScopedAkComponentAtLocation_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue);
-	void CorpseCleanup();
+	void CorpseCleanUp();
 	void OnRep_IsDead();
 	void OnDamageReceived(float Damage, class AActor* Target, class AActor* Source, struct FGameplayTagContainer& EffectTags, struct FHitResult& HitResult, struct FTagValueContainer& TagValueContainer);
 	void OnAnyAttributeChanged(struct FGameplayAttribute& Attribute);

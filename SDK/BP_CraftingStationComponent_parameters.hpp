@@ -33,7 +33,7 @@ public:
 	class UAbilitySystemComponent*               CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x30(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8C96[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1FF[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FActiveGameplayEffectHandle           CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue; // 0x3C(0x8)(NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_BP_ApplyGameplayEffectToSelf_Level_ImplicitCast; // 0x44(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -45,9 +45,9 @@ struct UBP_CraftingStationComponent_C_GetCraftInProgressID_Params
 public:
 	int32                                        CraftInProgressIndex;                              // 0x0(0x4)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                 ReturnValue;                                       // 0x4(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8C97[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_202[0xC];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_Array_Get_Item;                           // 0x20(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8C98[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_203[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1C (0x1C - 0x0)
@@ -59,7 +59,7 @@ public:
 	int32                                        CraftInProgressIndex;                              // 0x10(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ReturnValue;                                       // 0x14(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x15(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8C9A[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_207[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -71,7 +71,7 @@ public:
 	class FString                                CrafterID;                                         // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                        ClaimedQuantity;                                   // 0x10(0x4)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IncrementCraftClaimedQuantityByID_Success; // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8C9B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_20B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x18(0x18)(None)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x30(0x50)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x80(0x10)(ReferenceParm)
@@ -94,26 +94,26 @@ struct UBP_CraftingStationComponent_C_RemoveRecipesFromBench_Params
 public:
 	class UEnvironmentalInfluenceDataDisciplines* DisciplineInfluence;                               // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FCraftingRecipeReference>      RecipeReferences;                                  // 0x8(0x10)(Edit, BlueprintVisible)
-	uint8                                        Pad_8C9E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_211[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              LCraftingRecipeRef;                                // 0x20(0x70)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x90(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x94(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x98(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8C9F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_212[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0xA0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0xA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CA0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_213[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue_1;                   // 0xB0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CA1[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_214[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              CallFunc_Array_Get_Item;                           // 0xC0(0x70)(HasGetValueTypeHash)
 	TScriptInterface<class IStructureDataProviderInterface> K2Node_DynamicCast_AsStructure_Data_Provider_Interface; // 0x130(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x140(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetStructureData_IsValid;                 // 0x141(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CA2[0xE];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_215[0xE];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureData                        CallFunc_GetStructureData_OutStructureData;        // 0x150(0x3E0)(ContainsInstancedReference)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x530(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x534(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CA3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_216[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FCraftingRecipeReference>      CallFunc_GetCraftingRecipeReferences_OutRecipeReferences; // 0x538(0x10)(ReferenceParm)
 	bool                                         CallFunc_Array_RemoveItem_ReturnValue;             // 0x548(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -126,26 +126,26 @@ public:
 	class UEnvironmentalInfluenceDataDisciplines* DisciplineInfluence;                               // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FCraftingRecipeReference>      RecipeReferences;                                  // 0x8(0x10)(Edit, BlueprintVisible)
 	bool                                         AddedRecipe;                                       // 0x18(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CA5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_219[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              LCraftingRecipeRef;                                // 0x20(0x70)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x90(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x94(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x98(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CA6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_21A[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0xA0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0xA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CA7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_21B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue_1;                   // 0xB0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CA8[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_21C[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              CallFunc_Array_Get_Item;                           // 0xC0(0x70)(HasGetValueTypeHash)
 	TScriptInterface<class IStructureDataProviderInterface> K2Node_DynamicCast_AsStructure_Data_Provider_Interface; // 0x130(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x140(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetStructureData_IsValid;                 // 0x141(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CA9[0xE];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_21D[0xE];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureData                        CallFunc_GetStructureData_OutStructureData;        // 0x150(0x3E0)(ContainsInstancedReference)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x530(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x534(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CAA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_21E[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FCraftingRecipeReference>      CallFunc_GetCraftingRecipeReferences_OutRecipeReferences; // 0x538(0x10)(ReferenceParm)
 	int32                                        CallFunc_Array_AddUnique_ReturnValue;              // 0x548(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -157,12 +157,12 @@ struct UBP_CraftingStationComponent_C_GetCraftInProgressIDForCrafter_Params
 public:
 	class FString                                CrafterID;                                         // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                         bSuccess;                                          // 0x10(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CAB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_220[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 ReturnValue;                                       // 0x14(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetCraftForID_Success;                    // 0x24(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CAC[0xB];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_221[0xB];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_GetCraftForID_CraftInProgressData;        // 0x30(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8CAD[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_222[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xB38 (0xB38 - 0x0)
@@ -171,9 +171,9 @@ struct UBP_CraftingStationComponent_C_RefundUnusedItems_Params
 {
 public:
 	class ANWXPlayerController*                  CancellingController;                              // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CB5[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_223[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CraftInProgress;                                   // 0x10(0xD8)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	uint8                                        Pad_8CB6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_224[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       CurrentItemToRefund;                               // 0xF0(0x2F0)(Edit, BlueprintVisible)
 	TArray<struct FInventoryEntry>               ItemsToRefund;                                     // 0x3E0(0x10)(Edit, BlueprintVisible)
 	TArray<struct FInventoryEntry>               InputMaterials;                                    // 0x3F0(0x10)(Edit, BlueprintVisible)
@@ -188,26 +188,26 @@ public:
 	struct FVector                               CallFunc_GetActorEyesViewPoint_OutLocation;        // 0x440(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              CallFunc_GetActorEyesViewPoint_OutRotation;        // 0x458(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	int32                                        Temp_int_Loop_Counter_Variable_1;                  // 0x470(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CB7[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_225[0xC];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            CallFunc_MakeTransform_ReturnValue;                // 0x480(0x60)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue_1;                 // 0x4E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_MathExpression_ReturnValue;                 // 0x4E4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x4E8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Add_ReturnValue;                    // 0x4F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CB8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_226[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x4F8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ClaimItems_bSuccess;                      // 0x500(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CBA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_227[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGuid>                         CallFunc_ClaimItems_ClaimedInstances;              // 0x508(0x10)(ReferenceParm)
 	TArray<struct FInventoryEntry>               CallFunc_ClaimItems_UnclaimedItems;                // 0x518(0x10)(ReferenceParm)
-	uint8                                        Pad_8CBC[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_228[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       CallFunc_Array_Get_Item;                           // 0x530(0x2F0)(None)
 	struct FInventoryEntry                       CallFunc_Array_Get_Item_1;                         // 0x820(0x2F0)(None)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0xB10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue_1;               // 0xB14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0xB18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue_1;                // 0xB19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CBD[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_229[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue;             // 0xB20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0xB28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_MathExpression_ReturnValue_1;               // 0xB30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -220,13 +220,13 @@ struct UBP_CraftingStationComponent_C_ValidateCancelCraft_Params
 public:
 	class FString                                CancellingID;                                      // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                         bCancelValid;                                      // 0x10(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CC2[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_22B[0xF];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CraftToCancel;                                     // 0x20(0xD8)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	uint8                                        Pad_8CC3[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_22C[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         CallFunc_GetCraftForID_Success;                    // 0x100(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CC4[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_22D[0xF];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_GetCraftForID_CraftInProgressData;        // 0x110(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8CC5[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_22E[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x1F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x1F1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x1F2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -238,23 +238,23 @@ struct UBP_CraftingStationComponent_C_CancelCraft_Params
 {
 public:
 	class ANWXPlayerController*                  CancellingController;                              // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CC8[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_233[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CachedCraftData;                                   // 0x10(0xD8)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	uint8                                        Pad_8CC9[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_234[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CancellingID;                                      // 0xF0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class APawn*                                 CancellingPawn;                                    // 0x100(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x108(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x110(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_RemoveCraftInProgressData_bSuccess;       // 0x111(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetCraftForID_Success;                    // 0x112(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CCA[0xD];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_235[0xD];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_GetCraftForID_CraftInProgressData;        // 0x120(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8CCB[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_236[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         CallFunc_ValidateCancelCraft_bCancelValid;         // 0x200(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CCC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_237[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IBPI_PlayerAccountInfo_C> K2Node_DynamicCast_AsBPI_Player_Account_Info;      // 0x208(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x218(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CCD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_238[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetPersistentUniqueIdFromPawn_PersistentId; // 0x220(0x10)(ZeroConstructor, HasGetValueTypeHash)
 };
 
@@ -264,36 +264,36 @@ struct UBP_CraftingStationComponent_C_UnpauseAllCraftsInProgress_Params
 {
 public:
 	bool                                         Success;                                           // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CD8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       RealTimeInSecs;                                    // 0x8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDynamicTypedStructs                  NewStepData;                                       // 0x10(0x10)(Edit, BlueprintVisible)
 	double                                       NewRecipeStartTime;                                // 0x20(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       NewRefinementStartTime;                            // 0x28(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CurrentRecipeTime;                                 // 0x30(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CD9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23C[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                UnpauseCrafterID;                                  // 0x38(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x48(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x4C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CDA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23D[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class URealmTimerComponent*                  CallFunc_GetRealmTimer_RealmTimerComponent;        // 0x58(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_GetRealTimeElapsedSeconds_ReturnValue;    // 0x60(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CDB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23E[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x70(0x10)(ReferenceParm)
 	class FText                                  CallFunc_Format_ReturnValue;                       // 0x80(0x18)(None)
-	uint8                                        Pad_8CDC[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23F[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_Array_Get_Item;                           // 0xA0(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8CDD[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_240[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Conv_TextToString_ReturnValue;            // 0x180(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x190(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CDE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_241[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x194(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x198(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CDF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_242[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_Step_RefinementTimer      CallFunc_GetStructByType_OutStruct;                // 0x19C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetStructByType_ReturnValue;              // 0x1A4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CE0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_243[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x1A8(0x18)(None)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x1C0(0x50)(HasGetValueTypeHash)
 	struct FS_Crafting_Step_RefinementTimer      K2Node_SetFieldsInStruct_StructOut;                // 0x210(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -304,12 +304,12 @@ public:
 	double                                       CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x260(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Crafting_Step_RefinementTimer      CallFunc_GetStructByType_OutStruct_1;              // 0x268(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetStructByType_ReturnValue_1;            // 0x270(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CE1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_244[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Subtract_DoubleDouble_ReturnValue_1;      // 0x278(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Subtract_DoubleDouble_ReturnValue_2;      // 0x280(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Subtract_DoubleDouble_ReturnValue_3;      // 0x288(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_StartTime_5_4B3A4D174F08FE1B74B6C0BEE2BEFA1E_ImplicitCast; // 0x290(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CE2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_245[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Subtract_DoubleDouble_B_ImplicitCast;     // 0x298(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -322,13 +322,13 @@ public:
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CF0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_248[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class URealmTimerComponent*                  CallFunc_GetRealmTimer_RealmTimerComponent;        // 0x18(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_GetRealTimeElapsedSeconds_ReturnValue;    // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CF1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_249[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_Array_Get_Item;                           // 0x30(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8CF2[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24A[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x110(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x111(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x112(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -344,7 +344,7 @@ struct UBP_CraftingStationComponent_C_GetRealmTimer_Params
 public:
 	class URealmTimerComponent*                  RealmTimerComponent;                               // 0x0(0x8)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CF3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24C[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AGameStateBase*                        CallFunc_GetGameState_ReturnValue;                 // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class URealmTimerComponent*                  CallFunc_GetComponentByClass_ReturnValue;          // 0x18(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -356,7 +356,7 @@ struct UBP_CraftingStationComponent_C_SetIsRefinementModifierActive_Params
 {
 public:
 	bool                                         IsActive;                                          // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CF9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24D[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -364,10 +364,10 @@ public:
 	TScriptInterface<class IStructureTraitInterface> K2Node_DynamicCast_AsStructure_Trait_Interface;    // 0x18(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x29(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CFA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24E[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStructureTraitComponent*              CallFunc_GetStructureTraitComponent_ReturnValue;   // 0x30(0x8)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8CFB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24F[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureTrait                       CallFunc_Array_Get_Item;                           // 0x40(0x68)(ContainsInstancedReference, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0xA8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0xAC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -382,7 +382,7 @@ public:
 	struct FCraftingRecipeReference              RecipeReference;                                   // 0x0(0x70)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	double                                       Time;                                              // 0x70(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRefinementTimeModifiers              CurrentModifier;                                   // 0x78(0x50)(Edit, BlueprintVisible, ContainsInstancedReference)
-	uint8                                        Pad_8D04[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_255[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              Recipe;                                            // 0xD0(0x70)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	double                                       TimerMod;                                          // 0x140(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x148(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -393,31 +393,31 @@ public:
 	int32                                        Temp_int_Array_Index_Variable_1;                   // 0x15C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ERefinementTimeModifer            Temp_byte_Variable;                                // 0x160(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x161(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D05[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_257[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x168(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IStructureTraitInterface> K2Node_DynamicCast_AsStructure_Trait_Interface;    // 0x170(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x180(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x181(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D06[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_258[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStructureTraitComponent*              CallFunc_GetStructureTraitComponent_ReturnValue;   // 0x188(0x8)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_2;                    // 0x190(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D07[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_259[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureTrait                       CallFunc_Array_Get_Item;                           // 0x198(0x68)(ContainsInstancedReference, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x200(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x204(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_3;                    // 0x205(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D08[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25A[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRefinementTimeModifiers              CallFunc_Array_Get_Item_1;                         // 0x208(0x50)(ContainsInstancedReference)
 	int32                                        CallFunc_Array_Length_ReturnValue_1;               // 0x258(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue_1;                // 0x25C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ERefinementTimeModifer            CallFunc_GetRefinementModifierType_ReturnValue;    // 0x25D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D09[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25B[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetRefinementModifier_ReturnValue;        // 0x260(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D0B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25C[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x268(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_Select_Default;                             // 0x270(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_DoesRecipeSatisfyConstraint_ReturnValue;  // 0x278(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D0C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25D[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Add_DoubleDouble_ReturnValue;             // 0x280(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_Select_INCREASE_ImplicitCast;               // 0x288(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x290(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -432,15 +432,15 @@ public:
 	int32                                        Temp_int_Variable;                                 // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FDataTableRowHandle>           CallFunc_GetRecipeSteps_ReturnValue;               // 0x8(0x10)(ReferenceParm)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D13[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_262[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   CallFunc_Array_Get_Item;                           // 0x20(0x10)(NoDestructor, HasGetValueTypeHash)
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_MakeLiteralBool_ReturnValue;              // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_MakeLiteralBool_ReturnValue_1;            // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D14[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_264[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayAbilityTargetDataHandle      CallFunc_AbilityTargetDataFromCraftingStepEffectData_ReturnValue; // 0x40(0x28)(None)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x68(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D15[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_265[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayEventData                    K2Node_MakeStruct_GameplayEventData;               // 0x70(0xD0)(None)
 	int32                                        CallFunc_Subtract_IntInt_ReturnValue;              // 0x140(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_SendGameplayEventToActor_ReturnValue;     // 0x144(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -468,16 +468,16 @@ public:
 	struct FDataTableRowHandle                   RowHandle;                                         // 0x0(0x10)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D17[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_268[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue_1;                   // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IStructureDataProviderInterface> K2Node_DynamicCast_AsStructure_Data_Provider_Interface; // 0x28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetCraftingData_IsValid;                  // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D18[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_269[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStructureCraftingData*                CallFunc_GetCraftingData_OutCraftingData;          // 0x40(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TSet<struct FCraftingRecipeReference>        CallFunc_GetRecipesFromCraftingData_OutRecipes;    // 0x48(0x50)(None)
 	bool                                         CallFunc_GetRecipesFromCraftingData_ReturnValue;   // 0x98(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D1A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26A[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FCraftingRecipeReference>      CallFunc_Set_ToArray_Result;                       // 0xA0(0x10)(ReferenceParm)
 };
 
@@ -491,16 +491,16 @@ public:
 	class AActor*                                CraftingStationActor;                              // 0x28(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FCraftingRecipeReference>      CallFunc_GetCraftingRecipes_CurrentCraftingRecipes; // 0x30(0x10)(ReferenceParm)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D20[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 CallFunc_GetDisciplineTagsForCraftingRecipes_ReturnValue; // 0x48(0x20)(None)
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x68(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0x70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x71(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_RemoveActiveGameplayEffect_ReturnValue;   // 0x72(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D22[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26C[0x5];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayEffectContextHandle          CallFunc_MakeEffectContext_ReturnValue;            // 0x78(0x18)(None)
 	bool                                         CallFunc_IsServer_ReturnValue;                     // 0x90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D23[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26D[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayEffectSpecHandle             CallFunc_MakeOutgoingSpec_ReturnValue;             // 0x98(0x10)(None)
 	struct FGameplayEffectSpecHandle             CallFunc_AddGrantedTags_ReturnValue;               // 0xA8(0x10)(None)
 	struct FActiveGameplayEffectHandle           CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue; // 0xB8(0x8)(NoDestructor, HasGetValueTypeHash)
@@ -517,14 +517,14 @@ public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        ClaimedQuantity;                                   // 0x8(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0xC(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D25[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26E[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class APawn*                                 Pawn;                                              // 0x10(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x18(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D26[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_26F[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IBPI_PlayerAccountInfo_C> K2Node_DynamicCast_AsBPI_Player_Account_Info;      // 0x28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D27[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_270[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetPersistentUniqueIdFromPawn_PersistentId; // 0x40(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IncrementCraftClaimedQuantityByID_Success; // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -537,10 +537,10 @@ public:
 	class FString                                CrafterID;                                         // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                        ClaimedQuantity;                                   // 0x10(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x14(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D28[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_271[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CraftIndex;                                        // 0x18(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D29[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_272[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_MathExpression_ReturnValue;                 // 0x24(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -553,10 +553,10 @@ public:
 	class FString                                CrafterID;                                         // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                        ClaimedQuantity;                                   // 0x10(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x14(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D2A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_274[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CraftIndex;                                        // 0x18(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D2C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_275[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -589,14 +589,14 @@ public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        ClaimedQuantity;                                   // 0x8(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0xC(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D3A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_277[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class APawn*                                 Pawn;                                              // 0x10(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x18(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D3B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_279[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IBPI_PlayerAccountInfo_C> K2Node_DynamicCast_AsBPI_Player_Account_Info;      // 0x28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D3C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_27A[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetPersistentUniqueIdFromPawn_PersistentId; // 0x40(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_SetCraftClaimedQuantityByID_Success;      // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -609,17 +609,17 @@ public:
 	class FString                                CrafterID;                                         // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                        NewQuantity;                                       // 0x10(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x14(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D3D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_27B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CurrentCraftIndex;                                 // 0x18(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D3E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_27C[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CurrentCraft;                                      // 0x20(0xD8)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	uint8                                        Pad_8D3F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_27D[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x100(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D40[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_27E[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x104(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D41[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_27F[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_Array_Get_Item;                           // 0x110(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8D42[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_280[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1F0 (0x1F0 - 0x0)
@@ -630,16 +630,16 @@ public:
 	class FString                                CrafterID;                                         // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	enum class E_Crafting_Fabrication_Status     NewStatus;                                         // 0x10(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x11(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D47[0xE];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_283[0xE];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CraftData;                                         // 0x20(0xD8)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	uint8                                        Pad_8D48[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_284[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CraftIndex;                                        // 0x100(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x104(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D49[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_285[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x108(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D4A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_286[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_Array_Get_Item;                           // 0x110(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8D4B[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_287[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x442 (0x442 - 0x0)
@@ -650,20 +650,20 @@ public:
 	class FString                                CrafterID;                                         // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                        NewStepIndex;                                      // 0x10(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x14(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D4E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_28A[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipe                       CurrentRecipe;                                     // 0x18(0x120)(Edit, BlueprintVisible, ContainsInstancedReference)
-	uint8                                        Pad_8D50[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_28B[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CurrentCraftData;                                  // 0x140(0xD8)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	uint8                                        Pad_8D52[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_28C[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CurrentCraftIndex;                                 // 0x220(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x224(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D53[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_28D[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x228(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x22C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_MathExpression_ReturnValue;                 // 0x230(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D55[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_28E[0xF];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_Array_Get_Item;                           // 0x240(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8D57[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_28F[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipe                       CallFunc_TryGetCraftingRecipe_CraftingRecipe;      // 0x320(0x120)(ContainsInstancedReference)
 	enum class EGetResult                        CallFunc_TryGetCraftingRecipe_Branches;            // 0x440(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x441(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -676,15 +676,15 @@ struct UBP_CraftingStationComponent_C_GetCraftForID_Params
 public:
 	class FString                                CrafterID;                                         // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x10(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D59[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_291[0xF];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CraftInProgressData;                               // 0x20(0xD8)(Parm, OutParm, HasGetValueTypeHash)
-	uint8                                        Pad_8D5A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_292[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x100(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D5B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_293[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x104(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D5C[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_294[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_Array_Get_Item;                           // 0x110(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8D5D[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_295[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x148 (0x148 - 0x0)
@@ -695,10 +695,10 @@ public:
 	class FString                                CrafterID;                                         // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	struct FDynamicTypedStructs                  StepData;                                          // 0x10(0x10)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                         Success;                                           // 0x20(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D69[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_296[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CurrentCraftInProgressIndex;                       // 0x24(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D6B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_297[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                CallFunc_GetStackTraceString_ReturnValue;          // 0x30(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x40(0x18)(None)
@@ -718,14 +718,14 @@ public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	enum class E_Crafting_Fabrication_Status     Status;                                            // 0x8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x9(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D6F[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_299[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IBPI_PlayerAccountInfo_C> K2Node_DynamicCast_AsBPI_Player_Account_Info;      // 0x18(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D70[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_29A[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetPersistentUniqueIdFromPawn_PersistentId; // 0x30(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D71[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_29B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x44(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -736,19 +736,19 @@ struct UBP_CraftingStationComponent_C_RemoveCraftInProgressData_Params
 public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         bSuccess;                                          // 0x8(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D76[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_29E[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                UniqueID;                                          // 0x10(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x28(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D77[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_29F[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IBPI_PlayerAccountInfo_C> K2Node_DynamicCast_AsBPI_Player_Account_Info;      // 0x38(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D78[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2A0[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetPersistentUniqueIdFromPawn_PersistentId; // 0x50(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x60(0x18)(None)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x78(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D79[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2A1[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x7C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x80(0x50)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0xD0(0x10)(ReferenceParm)
@@ -773,9 +773,9 @@ public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        ReturnValue;                                       // 0x8(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetCurrentCraftData_Success;              // 0xC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D7B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2A2[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_GetCurrentCraftData_ReturnValue;          // 0x10(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8D7C[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2A3[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x170 (0x170 - 0x0)
@@ -784,12 +784,12 @@ struct UBP_CraftingStationComponent_C_GetCurrentRecipeID_Params
 {
 public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D7E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2A5[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              ReturnValue;                                       // 0x10(0x70)(Parm, OutParm, ReturnParm, HasGetValueTypeHash)
 	bool                                         CallFunc_GetCurrentCraftData_Success;              // 0x80(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D7F[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2A6[0xF];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_GetCurrentCraftData_ReturnValue;          // 0x90(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8D80[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2A7[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x48 (0x48 - 0x0)
@@ -800,14 +800,14 @@ public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x8(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Crafting_Fabrication_Status     Status;                                            // 0x9(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D81[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2A9[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IBPI_PlayerAccountInfo_C> K2Node_DynamicCast_AsBPI_Player_Account_Info;      // 0x18(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D82[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2AA[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetPersistentUniqueIdFromPawn_PersistentId; // 0x30(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D83[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2AC[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x44(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -819,9 +819,9 @@ public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        ReturnValue;                                       // 0x8(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetCurrentCraftData_Success;              // 0xC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D84[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2AE[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_GetCurrentCraftData_ReturnValue;          // 0x10(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8D85[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2AF[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x210 (0x210 - 0x0)
@@ -831,19 +831,19 @@ struct UBP_CraftingStationComponent_C_GetCurrentCraftData_Params
 public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x8(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D8D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2B4[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           ReturnValue;                                       // 0x10(0xD8)(Parm, OutParm, ReturnParm, HasGetValueTypeHash)
-	uint8                                        Pad_8D8E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2B5[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CrafterID;                                         // 0xF0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x100(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IBPI_PlayerAccountInfo_C> K2Node_DynamicCast_AsBPI_Player_Account_Info;      // 0x108(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x118(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x119(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D92[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2B6[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x11C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                CallFunc_GetPersistentUniqueIdFromPawn_PersistentId; // 0x120(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FS_Crafting_CraftInProgress           CallFunc_Array_Get_Item;                           // 0x130(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8D93[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2B7[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x39 (0x39 - 0x0)
@@ -856,7 +856,7 @@ public:
 	class UBP_CraftingComponent_C*               CallFunc_GetComponentByClass_ReturnValue;          // 0x10(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x18(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D94[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2B8[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAbilitySystemComponent*               CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x28(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FActiveGameplayEffectHandle           CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue; // 0x30(0x8)(NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -868,30 +868,30 @@ struct UBP_CraftingStationComponent_C_FinishCraftFailure_Params
 {
 public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D99[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2B9[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           FailedCraftInProgress;                             // 0x10(0xD8)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	uint8                                        Pad_8D9A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2BA[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CurrentCraftInProgressIndex;                       // 0xF0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D9B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2BB[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CrafterID;                                         // 0xF8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x108(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x110(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D9C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2BC[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x114(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IBPI_PlayerAccountInfo_C> K2Node_DynamicCast_AsBPI_Player_Account_Info;      // 0x118(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x128(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D9D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2BD[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetPersistentUniqueIdFromPawn_PersistentId; // 0x130(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle      CallFunc_AbilityTargetDataFromCraftingRecipeInstanced_ReturnValue; // 0x140(0x28)(None)
 	struct FGameplayAbilityPayloadHandle         CallFunc_AbilityPayloadFromBool_ReturnValue;       // 0x168(0x20)(None)
-	uint8                                        Pad_8D9F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2BE[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_Array_Get_Item;                           // 0x190(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8DA0[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2BF[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x270(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEventData                    K2Node_MakeStruct_GameplayEventData;               // 0x278(0xD0)(None)
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x348(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_SendGameplayEventToActor_ReturnValue;     // 0x350(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DA3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C0[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x358(0x18)(None)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x370(0x50)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x3C0(0x10)(ReferenceParm)
@@ -906,22 +906,22 @@ struct UBP_CraftingStationComponent_C_FindCraftForID_BP_Params
 public:
 	class FString                                CrafterID;                                         // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x10(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DA7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C8[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CraftInProgressIndex;                              // 0x14(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         FoundCraft;                                        // 0x18(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DA9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C9[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        FoundCraftInProgressIndex;                         // 0x1C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_True_if_break_was_hit_Variable;          // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_NotEqual_StrStr_ReturnValue;              // 0x21(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x22(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DAB[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2CA[0x1];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x24(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DAC[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2CB[0xC];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CallFunc_Array_Get_Item;                           // 0x40(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8DAD[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2CC[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x120(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x121(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x122(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -935,35 +935,35 @@ public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x8(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         TemporaryEndItemGranted;                           // 0x9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DB1[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D6[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class APawn*                                 CrafterPawn;                                       // 0x10(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class UAbilitySystemComponent*               CrafterAbilitySystemComponent;                     // 0x18(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilitySpecHandle            TemporaryEndCraftItemHandle;                       // 0x20(0x4)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DB2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D7[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FInventoryEntry>               InputMaterials;                                    // 0x28(0x10)(Edit, BlueprintVisible)
 	int32                                        CurrentCraftQuantity;                              // 0x38(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DB3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D9[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              CurrentRecipeReference;                            // 0x40(0x70)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	int32                                        CraftInProgressIndex;                              // 0xB0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DB4[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DA[0xC];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           CraftInProgress;                                   // 0xC0(0xD8)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	uint8                                        Pad_8DB5[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DC[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CrafterID;                                         // 0x1A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class APawn*                                 CallFunc_K2_GetPawn_ReturnValue;                   // 0x1B0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IBPI_PlayerAccountInfo_C> K2Node_DynamicCast_AsBPI_Player_Account_Info;      // 0x1B8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x1C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DB7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DF[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetPersistentUniqueIdFromPawn_PersistentId; // 0x1D0(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x1E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DB9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E1[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_CraftingComponent_C*               CallFunc_GetComponentByClass_ReturnValue;          // 0x1E8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x1F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FindCraftForID_BP_Success;                // 0x1F1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DBB[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E3[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FindCraftForID_BP_CraftInProgressIndex;   // 0x1F4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x1F8(0x18)(None)
 	struct FS_Crafting_CraftInProgress           CallFunc_Array_Get_Item;                           // 0x210(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8DBC[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E7[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x2F0(0x50)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x340(0x10)(ReferenceParm)
 	class FText                                  CallFunc_Format_ReturnValue;                       // 0x350(0x18)(None)
@@ -988,21 +988,21 @@ public:
 	class FString                                Crafter;                                           // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	struct FCraftingRecipeReference              RecipeReference;                                   // 0x10(0x70)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	int32                                        RequestedQuantity;                                 // 0x80(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DC2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2F8[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FInventoryEntry>               InputParts;                                        // 0x88(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGuid                                 CraftId;                                           // 0x98(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DC4[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2F9[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           NewCraft;                                          // 0xB0(0xD8)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	uint8                                        Pad_8DC6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2FA[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x190(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0x198(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DC7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2FC[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AGameStateBase*                        CallFunc_GetGameState_ReturnValue;                 // 0x1A0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class URealmTimerComponent*                  CallFunc_GetComponentByClass_ReturnValue;          // 0x1A8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_GetRealTimeElapsedSeconds_ReturnValue;    // 0x1B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DC8[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2FD[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_CraftInProgress           K2Node_MakeStruct_S_Crafting_CraftInProgress;      // 0x1C0(0xD8)(HasGetValueTypeHash)
-	uint8                                        Pad_8DC9[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2FE[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Array_Add_ReturnValue;                    // 0x2A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -1028,7 +1028,7 @@ struct UBP_CraftingStationComponent_C_ExecuteUbergraph_BP_CraftingStationCompone
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8DCA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_30D[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXPlayerController*                  K2Node_CustomEvent_CraftingController;             // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_PlayerController_C*                K2Node_CustomEvent_PlayerController;               // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_RemoveCraftInProgressData_bSuccess;       // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

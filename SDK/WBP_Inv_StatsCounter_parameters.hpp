@@ -32,10 +32,10 @@ public:
 	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x20(0x14)(None)
 	struct FSlateColor                           K2Node_MakeStruct_SlateColor_1;                    // 0x34(0x14)(None)
 	struct FSlateColor                           K2Node_MakeStruct_SlateColor_2;                    // 0x48(0x14)(None)
-	uint8                                        Pad_7175[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6CEF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Conv_DoubleToText_ReturnValue;            // 0x60(0x18)(None)
 	bool                                         CallFunc_Less_DoubleDouble_ReturnValue;            // 0x78(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7176[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6CF0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Conv_DoubleToText_ReturnValue_1;          // 0x80(0x18)(None)
 };
 
@@ -71,16 +71,16 @@ struct UWBP_Inv_StatsCounter_C_ExecuteUbergraph_WBP_Inv_StatsCounter_Params
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7177[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6CF2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Temp_int_Variable;                                 // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Variable_1;                               // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7178[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6CF3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x14(0x38)(IsPlainOldData, NoDestructor)
-	uint8                                        Pad_7179[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6CF4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerEvent                         K2Node_Event_MouseEvent_1;                         // 0x50(0x78)(ConstParm)
 	int32                                        K2Node_Select_Default;                             // 0xC8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_717A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6CF5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerEvent                         K2Node_Event_MouseEvent;                           // 0xD0(0x78)(ConstParm)
 };
 

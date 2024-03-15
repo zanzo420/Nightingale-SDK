@@ -26,7 +26,7 @@ public:
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDiscoveryLocation                    CallFunc_Array_Get_Item;                           // 0x24(0x10)(NoDestructor)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x34(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8ADF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_68E0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 CallFunc_Break_DiscoveryLocation_ID;               // 0x38(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -57,7 +57,7 @@ struct ABP_MapLocationManager_C_Remove_Discovery_Location_Params
 public:
 	struct FGuid                                 Discovery_Location_ID;                             // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsServer_ReturnValue;                     // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AE0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_68E9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Find_Discovery_Location_Index_Index;      // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_NotEqual_IntInt_ReturnValue;              // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -70,12 +70,12 @@ struct ABP_MapLocationManager_C_Add_Discovery_Location_Params
 public:
 	struct FDiscoveryLocation                    DIscovery_Location;                                // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	bool                                         CallFunc_IsServer_ReturnValue;                     // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AE1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_68EA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 CallFunc_Break_DiscoveryLocation_ID;               // 0x14(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Find_Fast_Travel_Location_Index_Index;    // 0x24(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0x29(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AE2[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_68EB[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Array_Add_ReturnValue;                    // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -90,10 +90,10 @@ public:
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x1C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_FastTravelLocation                 CallFunc_Array_Get_Item;                           // 0x20(0x69)(HasGetValueTypeHash)
-	uint8                                        Pad_8AE3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_68F4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x90(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                 CallFunc_Break_FastTravelLocation_ID;              // 0x94(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AE4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_68F5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               CallFunc_Break_FastTravelLocation_World_Location;  // 0xA8(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              CallFunc_Break_FastTravelLocation_Rotation;        // 0xC0(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class FText                                  CallFunc_Break_FastTravelLocation_Location_Name;   // 0xD8(0x18)(None)
@@ -118,7 +118,7 @@ struct ABP_MapLocationManager_C_Get_Fast_Travel_Location_Params
 public:
 	struct FGuid                                 Fast_Travel_Location_ID;                           // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_FastTravelLocation                 Fast_Travel_Location;                              // 0x10(0x69)(Parm, OutParm, HasGetValueTypeHash)
-	uint8                                        Pad_8AE5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_68F7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Find_Fast_Travel_Location_Index_Index;    // 0x80(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x84(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -143,13 +143,13 @@ public:
 	struct FGuid                                 Location_ID;                                       // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  New_Location_Name;                                 // 0x10(0x18)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FS_FastTravelLocation                 LocationToUpdate;                                  // 0x28(0x69)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	uint8                                        Pad_8AE6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_68FD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x98(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x9C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0xA0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0xA4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Array_RemoveItem_ReturnValue;             // 0xA5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AE7[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_68FE[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 CallFunc_Break_FastTravelLocation_ID;              // 0xA8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               CallFunc_Break_FastTravelLocation_World_Location;  // 0xB8(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              CallFunc_Break_FastTravelLocation_Rotation;        // 0xD0(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -157,17 +157,17 @@ public:
 	struct FDataTableRowHandle                   CallFunc_Break_FastTravelLocation_Fast_Travel_Type; // 0x100(0x10)(NoDestructor, HasGetValueTypeHash)
 	enum class E_FastTravelLocationState         CallFunc_Break_FastTravelLocation_Initial_Fast_Travel_Location_State; // 0x110(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsServer_ReturnValue;                     // 0x111(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AE8[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_68FF[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_FastTravelLocation                 CallFunc_Make_FastTravelLocation_Fast_Travel_Location; // 0x118(0x69)(HasGetValueTypeHash)
-	uint8                                        Pad_8AE9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6900[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x188(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AEA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6901[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_FastTravelLocation                 CallFunc_Array_Get_Item;                           // 0x190(0x69)(HasGetValueTypeHash)
-	uint8                                        Pad_8AEB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6902[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x200(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AEC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6903[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 CallFunc_Break_FastTravelLocation_ID_1;            // 0x204(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AED[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6904[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               CallFunc_Break_FastTravelLocation_World_Location_1; // 0x218(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              CallFunc_Break_FastTravelLocation_Rotation_1;      // 0x230(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class FText                                  CallFunc_Break_FastTravelLocation_Location_Name_1; // 0x248(0x18)(None)
@@ -182,25 +182,25 @@ struct ABP_MapLocationManager_C_Add_Fast_Travel_Location_Params
 {
 public:
 	struct FS_FastTravelLocation                 Fast_Travel_Location;                              // 0x0(0x69)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	uint8                                        Pad_8AEE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_690E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         NewLocalVar_0;                                     // 0x70(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AEF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_690F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 CallFunc_Break_FastTravelLocation_ID;              // 0x74(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AF0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6910[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               CallFunc_Break_FastTravelLocation_World_Location;  // 0x88(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              CallFunc_Break_FastTravelLocation_Rotation;        // 0xA0(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class FText                                  CallFunc_Break_FastTravelLocation_Location_Name;   // 0xB8(0x18)(None)
 	struct FDataTableRowHandle                   CallFunc_Break_FastTravelLocation_Fast_Travel_Type; // 0xD0(0x10)(NoDestructor, HasGetValueTypeHash)
 	enum class E_FastTravelLocationState         CallFunc_Break_FastTravelLocation_Initial_Fast_Travel_Location_State; // 0xE0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AF1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6911[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 CallFunc_Break_FastTravelLocation_ID_1;            // 0xE4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AF2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6912[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               CallFunc_Break_FastTravelLocation_World_Location_1; // 0xF8(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              CallFunc_Break_FastTravelLocation_Rotation_1;      // 0x110(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class FText                                  CallFunc_Break_FastTravelLocation_Location_Name_1; // 0x128(0x18)(None)
 	struct FDataTableRowHandle                   CallFunc_Break_FastTravelLocation_Fast_Travel_Type_1; // 0x140(0x10)(NoDestructor, HasGetValueTypeHash)
 	enum class E_FastTravelLocationState         CallFunc_Break_FastTravelLocation_Initial_Fast_Travel_Location_State_1; // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AF3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6914[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Conv_GuidToString_ReturnValue;            // 0x158(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Conv_GuidToString_ReturnValue_1;          // 0x168(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x178(0x18)(None)
@@ -215,12 +215,12 @@ public:
 	class FString                                CallFunc_Conv_TextToString_ReturnValue_1;          // 0x2A8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Conv_GuidToString_ReturnValue_2;          // 0x2B8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Find_Fast_Travel_Location_Index_Index;    // 0x2C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AF4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6915[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Concat_StrStr_ReturnValue;                // 0x2D0(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x2E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0x2E1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsServer_ReturnValue;                     // 0x2E2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AF5[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6916[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Array_Add_ReturnValue;                    // 0x2E4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -230,7 +230,7 @@ struct ABP_MapLocationManager_C_AddFastTravelLocationRPC_Params
 {
 public:
 	struct FS_FastTravelLocation                 Fast_Travel_Location;                              // 0x0(0x69)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	uint8                                        Pad_8AF6[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_6919[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -273,10 +273,10 @@ struct ABP_MapLocationManager_C_ExecuteUbergraph_BP_MapLocationManager_Params
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                 K2Node_CustomEvent_Location_ID;                    // 0x4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8AF7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_691B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  K2Node_CustomEvent_New_Location_Name;              // 0x18(0x18)(None)
 	struct FS_FastTravelLocation                 K2Node_CustomEvent_Fast_Travel_Location;           // 0x30(0x69)(HasGetValueTypeHash)
-	uint8                                        Pad_8AF8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_691C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 K2Node_CustomEvent_Fast_Travel_Location_ID;        // 0xA0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDiscoveryLocation                    K2Node_CustomEvent_Discovery_Location;             // 0xB0(0x10)(NoDestructor)
 	struct FGuid                                 K2Node_CustomEvent_Discovery_Location_ID;          // 0xC0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

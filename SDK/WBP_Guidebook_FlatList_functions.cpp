@@ -91,10 +91,9 @@ class UWidget* UWBP_Guidebook_FlatList_C::BP_GetDesiredFocusTarget(int32 CallFun
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<class UUserWidget*>         CallFunc_GetDisplayedEntryWidgets_ReturnValue                    (ConstParm, ReferenceParm, ContainsInstancedReference)
 
-void UWBP_Guidebook_FlatList_C::UnbindFromEntryEvents(class UWBP_GuideBook_HorizontalThumb_C* LThumb, const TArray<class UUserWidget*>& LDisplayedEntryWidgets, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, class UUserWidget* CallFunc_Array_Get_Item, class UWBP_GuideBook_HorizontalThumb_C* K2Node_DynamicCast_AsWBP_Guide_Book_Horizontal_Thumb, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, TArray<class UUserWidget*>& CallFunc_GetDisplayedEntryWidgets_ReturnValue)
+void UWBP_Guidebook_FlatList_C::UnbindFromEntryEvents(class UWBP_GuideBook_HorizontalThumb_C* LThumb, const TArray<class UUserWidget*>& LDisplayedEntryWidgets, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, class UUserWidget* CallFunc_Array_Get_Item, class UWBP_GuideBook_HorizontalThumb_C* K2Node_DynamicCast_AsWBP_Guide_Book_Horizontal_Thumb, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, TArray<class UUserWidget*>& CallFunc_GetDisplayedEntryWidgets_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -115,7 +114,6 @@ void UWBP_Guidebook_FlatList_C::UnbindFromEntryEvents(class UWBP_GuideBook_Horiz
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
-	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
 	Parms.CallFunc_GetDisplayedEntryWidgets_ReturnValue = CallFunc_GetDisplayedEntryWidgets_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -132,9 +130,8 @@ void UWBP_Guidebook_FlatList_C::UnbindFromEntryEvents(class UWBP_GuideBook_Horiz
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guidebook_FlatList_C::OnEntryReleased(class UUserWidget* Widget, class UWBP_GuideBook_HorizontalThumb_C* LThumb, class UWBP_GuideBook_HorizontalThumb_C* K2Node_DynamicCast_AsWBP_Guide_Book_Horizontal_Thumb, bool K2Node_DynamicCast_bSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2)
+void UWBP_Guidebook_FlatList_C::OnEntryReleased(class UUserWidget* Widget, class UWBP_GuideBook_HorizontalThumb_C* LThumb, class UWBP_GuideBook_HorizontalThumb_C* K2Node_DynamicCast_AsWBP_Guide_Book_Horizontal_Thumb, bool K2Node_DynamicCast_bSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -149,7 +146,6 @@ void UWBP_Guidebook_FlatList_C::OnEntryReleased(class UUserWidget* Widget, class
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
-	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -165,9 +161,8 @@ void UWBP_Guidebook_FlatList_C::OnEntryReleased(class UUserWidget* Widget, class
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guidebook_FlatList_C::OnEntryGenerated(class UUserWidget* Widget, class UWBP_GuideBook_HorizontalThumb_C* LThumb, class UWBP_GuideBook_HorizontalThumb_C* K2Node_DynamicCast_AsWBP_Guide_Book_Horizontal_Thumb, bool K2Node_DynamicCast_bSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2)
+void UWBP_Guidebook_FlatList_C::OnEntryGenerated(class UUserWidget* Widget, class UWBP_GuideBook_HorizontalThumb_C* LThumb, class UWBP_GuideBook_HorizontalThumb_C* K2Node_DynamicCast_AsWBP_Guide_Book_Horizontal_Thumb, bool K2Node_DynamicCast_bSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -182,7 +177,6 @@ void UWBP_Guidebook_FlatList_C::OnEntryGenerated(class UUserWidget* Widget, clas
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
-	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -233,29 +227,6 @@ void UWBP_Guidebook_FlatList_C::Refresh(const struct FGameplayTag& CallFunc_GetA
 
 	Parms.CallFunc_GetActiveCategory_ReturnValue = CallFunc_GetActiveCategory_ReturnValue;
 	Parms.CallFunc_GetFilteredEntriesByCategory_OutEntries = CallFunc_GetFilteredEntriesByCategory_OutEntries;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function WBP_Guidebook_FlatList.WBP_Guidebook_FlatList_C.OnThumbHovered
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               Hovered                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UNWXMenuDataEntry*           MenuDataEntry                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Guidebook_FlatList_C::OnThumbHovered(bool Hovered, class UNWXMenuDataEntry* MenuDataEntry)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_Guidebook_FlatList_C", "OnThumbHovered");
-
-	Params::UWBP_Guidebook_FlatList_C_OnThumbHovered_Params Parms{};
-
-	Parms.Hovered = Hovered;
-	Parms.MenuDataEntry = MenuDataEntry;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -435,25 +406,20 @@ void UWBP_Guidebook_FlatList_C::ExecuteUbergraph_WBP_Guidebook_FlatList(int32 En
 }
 
 
-// Function WBP_Guidebook_FlatList.WBP_Guidebook_FlatList_C.FlatList_ThumbHover__DelegateSignature
+// Function WBP_Guidebook_FlatList.WBP_Guidebook_FlatList_C.FlatList_CustomNavigationStarted__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Hover                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UNWXMenuDataEntry*           MenuDataEntry                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guidebook_FlatList_C::FlatList_ThumbHover__DelegateSignature(bool Hover, class UNWXMenuDataEntry* MenuDataEntry)
+void UWBP_Guidebook_FlatList_C::FlatList_CustomNavigationStarted__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("WBP_Guidebook_FlatList_C", "FlatList_ThumbHover__DelegateSignature");
+		Func = Class->GetFunction("WBP_Guidebook_FlatList_C", "FlatList_CustomNavigationStarted__DelegateSignature");
 
-	Params::UWBP_Guidebook_FlatList_C_FlatList_ThumbHover__DelegateSignature_Params Parms{};
 
-	Parms.Hover = Hover;
-	Parms.MenuDataEntry = MenuDataEntry;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 

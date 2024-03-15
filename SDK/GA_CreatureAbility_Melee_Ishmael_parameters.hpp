@@ -21,17 +21,17 @@ public:
 	struct FTransform                            TargetTransform;                                   // 0x0(0x60)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                          SelectedMontage;                                   // 0x60(0x8)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         LRotational;                                       // 0x68(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9AC2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BAA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            LTransform;                                        // 0x70(0x60)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0xD0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9AC3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BAB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetTarget_Target;                         // 0xD8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0xE0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class Enum_CreatureAbilityZone          CallFunc_Get_Creature_Ability_Zone_8_Way_CreatureAbilityZone; // 0xE1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9AC4[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BAC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDynamicMontageArray                  CallFunc_Map_Find_Value;                           // 0xE8(0x10)(HasGetValueTypeHash)
 	bool                                         CallFunc_Map_Find_ReturnValue;                     // 0xF8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9AC5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BAD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAnimMontage*                          CallFunc_SelectMontageNearTarget_ReturnValue;      // 0x100(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SelectMontageNearTarget_Leeway_ImplicitCast; // 0x108(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

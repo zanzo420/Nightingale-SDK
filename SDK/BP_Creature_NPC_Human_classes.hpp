@@ -9,42 +9,42 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xF8 (0x1880 - 0x1788)
+// 0xF8 (0x18B8 - 0x17C0)
 // BlueprintGeneratedClass BP_Creature_NPC_Human.BP_Creature_NPC_Human_C
 class ABP_Creature_NPC_Human_C : public ABP_Creature_NPC_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1788(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class USkeletalMeshComponent*                Clothes__Back_;                                    // 0x1790(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_CharacterAppearanceComponent_C*    BP_CharacterAppearanceComponent;                   // 0x1798(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Head;                                           // 0x17A0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Body;                                           // 0x17A8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Hand_R;                                         // 0x17B0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Hand_L;                                         // 0x17B8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Foot_L;                                         // 0x17C0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UScopedAkComponent*                    Ak_Foot_R;                                         // 0x17C8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Head__Eyebrows_;                                   // 0x17D0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Head__Teeth_;                                      // 0x17D8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Head__Glasses_;                                    // 0x17E0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Head__Jewelry_;                                    // 0x17E8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Head__Facial_Hair_;                                // 0x17F0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Clothes__Top_;                                     // 0x17F8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Head__eyes_;                                       // 0x1800(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Clothes__Head_;                                    // 0x1808(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Clothes__Boots_;                                   // 0x1810(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Head__Hair_;                                       // 0x1818(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Clothes__Bottom_;                                  // 0x1820(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Clothes__Gloves_;                                  // 0x1828(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                Clothes__Gear_;                                    // 0x1830(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_AsyncAssetLoader_C*                BP_AsyncAssetLoader2;                              // 0x1838(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_CharacterCustomization_Component_C* BP_CharacterCustomization;                         // 0x1840(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnIsDownChange;                                    // 0x1848(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                         bIsDown_;                                          // 0x1858(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8090[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	FMulticastInlineDelegateProperty_            OnEquipmentChange;                                 // 0x1860(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                         bPersistentLoad;                                   // 0x1870(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8091[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UDataTable*                            RandomAppearanceTable;                             // 0x1878(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x17C0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class USkeletalMeshComponent*                Clothes__Back_;                                    // 0x17C8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_CharacterAppearanceComponent_C*    BP_CharacterAppearanceComponent;                   // 0x17D0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Head;                                           // 0x17D8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Body;                                           // 0x17E0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Hand_R;                                         // 0x17E8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Hand_L;                                         // 0x17F0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Foot_L;                                         // 0x17F8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    Ak_Foot_R;                                         // 0x1800(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Head__Eyebrows_;                                   // 0x1808(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Head__Teeth_;                                      // 0x1810(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Head__Glasses_;                                    // 0x1818(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Head__Jewelry_;                                    // 0x1820(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Head__Facial_Hair_;                                // 0x1828(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Clothes__Top_;                                     // 0x1830(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Head__eyes_;                                       // 0x1838(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Clothes__Head_;                                    // 0x1840(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Clothes__Boots_;                                   // 0x1848(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Head__Hair_;                                       // 0x1850(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Clothes__Bottom_;                                  // 0x1858(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Clothes__Gloves_;                                  // 0x1860(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                Clothes__Gear_;                                    // 0x1868(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_AsyncAssetLoader_C*                BP_AsyncAssetLoader2;                              // 0x1870(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_CharacterCustomization_Component_C* BP_CharacterCustomization;                         // 0x1878(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnIsDownChange;                                    // 0x1880(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                         bIsDown_;                                          // 0x1890(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_7EE5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	FMulticastInlineDelegateProperty_            OnEquipmentChange;                                 // 0x1898(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                         bPersistentLoad;                                   // 0x18A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_7EE6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UDataTable*                            RandomAppearanceTable;                             // 0x18B0(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_Creature_NPC_Human_C* GetDefaultObj();

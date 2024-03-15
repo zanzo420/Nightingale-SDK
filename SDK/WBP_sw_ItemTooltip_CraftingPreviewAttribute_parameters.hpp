@@ -19,7 +19,7 @@ struct UWBP_sw_ItemTooltip_CraftingPreviewAttribute_C_PlayCompareAnimation_Param
 {
 public:
 	bool                                         IsBetter;                                          // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4572[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_96D3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimationForward_ReturnValue;         // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_PlayAnimationForward_PlaybackSpeed_ImplicitCast; // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -41,7 +41,7 @@ struct UWBP_sw_ItemTooltip_CraftingPreviewAttribute_C_Initialize_Params
 public:
 	bool                                         Temp_bool_Variable;                                // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4573[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_96D7[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_FormatTextFromType_ResultText;            // 0x8(0x18)(None)
 	bool                                         CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_DoubleDouble_ReturnValue;            // 0x21(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -49,11 +49,11 @@ enum class ECodexTemplate : uint8
 struct FCodexEntry : public FFastArraySerializerItem
 {
 public:
-	uint8                                        Pad_33F0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2EEF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCodexBaseDataAsset*                   CodexDataAsset;                                    // 0x10(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSet<struct FGuid>                           ContributingGuids;                                 // 0x18(0x50)(SaveGame, NativeAccessSpecifierPublic)
 	struct FGameplayTagContainer                 UnlockedSubentryTags;                              // 0x68(0x20)(BlueprintVisible, BlueprintReadOnly, SaveGame, NativeAccessSpecifierPublic)
-	uint8                                        Pad_33F1[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2EF0[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -79,7 +79,7 @@ public:
 struct FCodexEntryArraySerializer : public FFastArraySerializer
 {
 public:
-	uint8                                        Pad_33F2[0x70];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2EF1[0x70];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FCodexEntry>                   Items;                                             // 0x178(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 };
 

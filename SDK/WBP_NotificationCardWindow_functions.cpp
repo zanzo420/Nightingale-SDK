@@ -43,15 +43,12 @@ class UWBP_NotificationCardWindow_C* UWBP_NotificationCardWindow_C::GetDefaultOb
 // Function WBP_NotificationCardWindow.WBP_NotificationCardWindow_C.TriggerOpenAudio
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// struct FGameplayTag                CallFunc_MakeLiteralGameplayTag_ReturnValue                      (NoDestructor, HasGetValueTypeHash)
+// class UUIAudioSubsystem*           CallFunc_GetLocalPlayerSubsystem_ReturnValue                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTag                CallFunc_MakeLiteralGameplayTag_ReturnValue_1                    (NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 Temp_delegate_Variable                                           (ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UAkComponent*                CallFunc_SpawnAkComponentAtLocation_ReturnValue                  (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FAkExternalSourceInfo>Temp_struct_Variable                                             (ConstParm, ReferenceParm)
-// int32                              CallFunc_PostAkEvent_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NotificationCardWindow_C::TriggerOpenAudio(bool CallFunc_IsVisible_ReturnValue, FDelegateProperty_ Temp_delegate_Variable, class UAkComponent* CallFunc_SpawnAkComponentAtLocation_ReturnValue, TArray<struct FAkExternalSourceInfo>& Temp_struct_Variable, int32 CallFunc_PostAkEvent_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
+void UWBP_NotificationCardWindow_C::TriggerOpenAudio(const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue, class UUIAudioSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue_1, bool CallFunc_IsVisible_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -60,13 +57,10 @@ void UWBP_NotificationCardWindow_C::TriggerOpenAudio(bool CallFunc_IsVisible_Ret
 
 	Params::UWBP_NotificationCardWindow_C_TriggerOpenAudio_Params Parms{};
 
+	Parms.CallFunc_MakeLiteralGameplayTag_ReturnValue = CallFunc_MakeLiteralGameplayTag_ReturnValue;
+	Parms.CallFunc_GetLocalPlayerSubsystem_ReturnValue = CallFunc_GetLocalPlayerSubsystem_ReturnValue;
+	Parms.CallFunc_MakeLiteralGameplayTag_ReturnValue_1 = CallFunc_MakeLiteralGameplayTag_ReturnValue_1;
 	Parms.CallFunc_IsVisible_ReturnValue = CallFunc_IsVisible_ReturnValue;
-	Parms.Temp_delegate_Variable = Temp_delegate_Variable;
-	Parms.CallFunc_SpawnAkComponentAtLocation_ReturnValue = CallFunc_SpawnAkComponentAtLocation_ReturnValue;
-	Parms.Temp_struct_Variable = Temp_struct_Variable;
-	Parms.CallFunc_PostAkEvent_ReturnValue = CallFunc_PostAkEvent_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 

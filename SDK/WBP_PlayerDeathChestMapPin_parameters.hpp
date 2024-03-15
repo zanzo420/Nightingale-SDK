@@ -13,13 +13,12 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x30 (0x30 - 0x0)
+// 0x18 (0x18 - 0x0)
 // Function WBP_PlayerDeathChestMapPin.WBP_PlayerDeathChestMapPin_C.GetTooltipBodyText
 struct UWBP_PlayerDeathChestMapPin_C_GetTooltipBodyText_Params
 {
 public:
 	class FText                                  OutputText;                                        // 0x0(0x18)(Parm, OutParm)
-	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x18(0x18)(None)
 };
 
 // 0xA8 (0xA8 - 0x0)

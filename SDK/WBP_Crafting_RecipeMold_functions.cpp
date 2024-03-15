@@ -40,6 +40,30 @@ class UWBP_Crafting_RecipeMold_C* UWBP_Crafting_RecipeMold_C::GetDefaultObj()
 }
 
 
+// Function WBP_Crafting_RecipeMold.WBP_Crafting_RecipeMold_C.BP_GetDesiredFocusTarget
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Crafting_RecipeMoldSlot_C*CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_Crafting_RecipeMold_C::BP_GetDesiredFocusTarget(class UWBP_Crafting_RecipeMoldSlot_C* CallFunc_Array_Get_Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_Crafting_RecipeMold_C", "BP_GetDesiredFocusTarget");
+
+	Params::UWBP_Crafting_RecipeMold_C_BP_GetDesiredFocusTarget_Params Parms{};
+
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function WBP_Crafting_RecipeMold.WBP_Crafting_RecipeMold_C.IsIngredientListOpen
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -65,7 +89,7 @@ void UWBP_Crafting_RecipeMold_C::IsIngredientListOpen(bool* IsOpen, bool CallFun
 }
 
 
-// Function WBP_Crafting_RecipeMold.WBP_Crafting_RecipeMold_C.onMoldSlotHovered
+// Function WBP_Crafting_RecipeMold.WBP_Crafting_RecipeMold_C.OnMoldSlotHovered
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FInventoryEntry             DisplayedInventoryItem                                           (BlueprintVisible, BlueprintReadOnly, Parm)
@@ -79,7 +103,7 @@ void UWBP_Crafting_RecipeMold_C::OnMoldSlotHovered(const struct FInventoryEntry&
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("WBP_Crafting_RecipeMold_C", "onMoldSlotHovered");
+		Func = Class->GetFunction("WBP_Crafting_RecipeMold_C", "OnMoldSlotHovered");
 
 	Params::UWBP_Crafting_RecipeMold_C_OnMoldSlotHovered_Params Parms{};
 
@@ -150,11 +174,16 @@ void UWBP_Crafting_RecipeMold_C::OnIngredientListEntryHovered(const struct FInve
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FInventoryEntry             CallFunc_GetDisplayedIngredient_Ingredient                       (None)
+// struct FInventoryEntry             CallFunc_GetDisplayedIngredient_Ingredient_1                     (None)
+// struct FInventoryEntry             CallFunc_GetDisplayedIngredient_Ingredient_2                     (None)
+// struct FInventoryEntry             CallFunc_GetDisplayedIngredient_Ingredient_3                     (None)
+// TArray<struct FInventoryEntry>     K2Node_MakeArray_Array                                           (ReferenceParm)
 // bool                               CallFunc_Array_Contains_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FCraftingRecipe             CallFunc_GetCraftingRecipeData_ReturnValue                       (ContainsInstancedReference)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_LastIndex_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FCraftingRecipe             CallFunc_GetCraftingRecipeData_ReturnValue                       (ContainsInstancedReference)
 // struct FCraftingRecipe             CallFunc_GetCraftingRecipeData_ReturnValue_1                     (ContainsInstancedReference)
+// int32                              CallFunc_Array_LastIndex_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -166,10 +195,9 @@ void UWBP_Crafting_RecipeMold_C::OnIngredientListEntryHovered(const struct FInve
 // int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UBP_MenuDataEntry_Crafting_C*K2Node_DynamicCast_AsBP_Menu_Data_Entry_Crafting                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_CalculateMissingSlots_bAllMet                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<int32>                      CallFunc_CalculateMissingSlots_OutUnmetSlots                     (ReferenceParm)
 
-void UWBP_Crafting_RecipeMold_C::UpdateConstraintSatisfiedWidgets(const TArray<int32>& LUnmetSlots, class UBP_MenuDataEntry_Crafting_C* LMenuDataEnty, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Array_Index_Variable_1, bool CallFunc_Array_Contains_ReturnValue, const struct FCraftingRecipe& CallFunc_GetCraftingRecipeData_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, int32 CallFunc_Array_LastIndex_ReturnValue, const struct FCraftingRecipe& CallFunc_GetCraftingRecipeData_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class UWBP_Crafting_RecipeMoldSlot_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable_1, class UWBP_Crafting_RecipeMoldSlot_C* CallFunc_Array_Get_Item_1, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, class UBP_MenuDataEntry_Crafting_C* K2Node_DynamicCast_AsBP_Menu_Data_Entry_Crafting, bool K2Node_DynamicCast_bSuccess, bool CallFunc_CalculateMissingSlots_bAllMet, TArray<int32>& CallFunc_CalculateMissingSlots_OutUnmetSlots)
+void UWBP_Crafting_RecipeMold_C::UpdateConstraintSatisfiedWidgets(const TArray<int32>& LUnmetSlots, class UBP_MenuDataEntry_Crafting_C* LMenuDataEnty, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Array_Index_Variable_1, const struct FInventoryEntry& CallFunc_GetDisplayedIngredient_Ingredient, const struct FInventoryEntry& CallFunc_GetDisplayedIngredient_Ingredient_1, const struct FInventoryEntry& CallFunc_GetDisplayedIngredient_Ingredient_2, const struct FInventoryEntry& CallFunc_GetDisplayedIngredient_Ingredient_3, TArray<struct FInventoryEntry>& K2Node_MakeArray_Array, bool CallFunc_Array_Contains_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FCraftingRecipe& CallFunc_GetCraftingRecipeData_ReturnValue, const struct FCraftingRecipe& CallFunc_GetCraftingRecipeData_ReturnValue_1, int32 CallFunc_Array_LastIndex_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class UWBP_Crafting_RecipeMoldSlot_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable_1, class UWBP_Crafting_RecipeMoldSlot_C* CallFunc_Array_Get_Item_1, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, class UBP_MenuDataEntry_Crafting_C* K2Node_DynamicCast_AsBP_Menu_Data_Entry_Crafting, bool K2Node_DynamicCast_bSuccess, TArray<int32>& CallFunc_CalculateMissingSlots_OutUnmetSlots)
 {
 	static class UFunction* Func = nullptr;
 
@@ -184,11 +212,16 @@ void UWBP_Crafting_RecipeMold_C::UpdateConstraintSatisfiedWidgets(const TArray<i
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Array_Index_Variable_1 = Temp_int_Array_Index_Variable_1;
+	Parms.CallFunc_GetDisplayedIngredient_Ingredient = CallFunc_GetDisplayedIngredient_Ingredient;
+	Parms.CallFunc_GetDisplayedIngredient_Ingredient_1 = CallFunc_GetDisplayedIngredient_Ingredient_1;
+	Parms.CallFunc_GetDisplayedIngredient_Ingredient_2 = CallFunc_GetDisplayedIngredient_Ingredient_2;
+	Parms.CallFunc_GetDisplayedIngredient_Ingredient_3 = CallFunc_GetDisplayedIngredient_Ingredient_3;
+	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.CallFunc_Array_Contains_ReturnValue = CallFunc_Array_Contains_ReturnValue;
-	Parms.CallFunc_GetCraftingRecipeData_ReturnValue = CallFunc_GetCraftingRecipeData_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
-	Parms.CallFunc_Array_LastIndex_ReturnValue = CallFunc_Array_LastIndex_ReturnValue;
+	Parms.CallFunc_GetCraftingRecipeData_ReturnValue = CallFunc_GetCraftingRecipeData_ReturnValue;
 	Parms.CallFunc_GetCraftingRecipeData_ReturnValue_1 = CallFunc_GetCraftingRecipeData_ReturnValue_1;
+	Parms.CallFunc_Array_LastIndex_ReturnValue = CallFunc_Array_LastIndex_ReturnValue;
 	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
@@ -200,7 +233,6 @@ void UWBP_Crafting_RecipeMold_C::UpdateConstraintSatisfiedWidgets(const TArray<i
 	Parms.CallFunc_Add_IntInt_ReturnValue_1 = CallFunc_Add_IntInt_ReturnValue_1;
 	Parms.K2Node_DynamicCast_AsBP_Menu_Data_Entry_Crafting = K2Node_DynamicCast_AsBP_Menu_Data_Entry_Crafting;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_CalculateMissingSlots_bAllMet = CallFunc_CalculateMissingSlots_bAllMet;
 	Parms.CallFunc_CalculateMissingSlots_OutUnmetSlots = CallFunc_CalculateMissingSlots_OutUnmetSlots;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -237,47 +269,6 @@ void UWBP_Crafting_RecipeMold_C::SetDetailSwitcher(bool bShow, enum class ESlate
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function WBP_Crafting_RecipeMold.WBP_Crafting_RecipeMold_C.ValidateUpgradeSlots
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                              SlotIndexRestored                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CurrentSlotIndex                                                 (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_LastIndex_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWBP_Crafting_RecipeMoldSlot_C*CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// struct FInventoryEntry             CallFunc_GetDisplayedIngredient_Ingredient                       (None)
-// bool                               CallFunc_CompareItemCharacteristics_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_NotEqual_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Crafting_RecipeMold_C::ValidateUpgradeSlots(int32 SlotIndexRestored, int32 CurrentSlotIndex, int32 CallFunc_Array_LastIndex_ReturnValue, int32 Temp_int_Variable, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class UWBP_Crafting_RecipeMoldSlot_C* CallFunc_Array_Get_Item, const struct FInventoryEntry& CallFunc_GetDisplayedIngredient_Ingredient, bool CallFunc_CompareItemCharacteristics_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_Crafting_RecipeMold_C", "ValidateUpgradeSlots");
-
-	Params::UWBP_Crafting_RecipeMold_C_ValidateUpgradeSlots_Params Parms{};
-
-	Parms.SlotIndexRestored = SlotIndexRestored;
-	Parms.CurrentSlotIndex = CurrentSlotIndex;
-	Parms.CallFunc_Array_LastIndex_ReturnValue = CallFunc_Array_LastIndex_ReturnValue;
-	Parms.Temp_int_Variable = Temp_int_Variable;
-	Parms.CallFunc_LessEqual_IntInt_ReturnValue = CallFunc_LessEqual_IntInt_ReturnValue;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
-	Parms.CallFunc_GetDisplayedIngredient_Ingredient = CallFunc_GetDisplayedIngredient_Ingredient;
-	Parms.CallFunc_CompareItemCharacteristics_ReturnValue = CallFunc_CompareItemCharacteristics_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_NotEqual_IntInt_ReturnValue = CallFunc_NotEqual_IntInt_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -328,16 +319,15 @@ void UWBP_Crafting_RecipeMold_C::Update_Preview_Without_Comparison(class ANWXPla
 
 
 // Function WBP_Crafting_RecipeMold.WBP_Crafting_RecipeMold_C.UpdateDetails
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FInventoryEntry             Entry                                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 // bool                               Compare_Previous                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FInventoryEntry>     CallFunc_GetDisplayedIngredients_DisplayedIngredients            (ReferenceParm)
 // class UBP_CraftingCreationComponent_C*CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // enum class ECraftingScreenState    CallFunc_GetCraftingScreenState_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Crafting_RecipeMold_C::UpdateDetails(const struct FInventoryEntry& Entry, bool Compare_Previous, TArray<struct FInventoryEntry>& CallFunc_GetDisplayedIngredients_DisplayedIngredients, class UBP_CraftingCreationComponent_C* CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent, enum class ECraftingScreenState CallFunc_GetCraftingScreenState_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
+void UWBP_Crafting_RecipeMold_C::UpdateDetails(const struct FInventoryEntry& Entry, bool Compare_Previous, class UBP_CraftingCreationComponent_C* CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent, enum class ECraftingScreenState CallFunc_GetCraftingScreenState_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
 	static class UFunction* Func = nullptr;
 
@@ -348,7 +338,6 @@ void UWBP_Crafting_RecipeMold_C::UpdateDetails(const struct FInventoryEntry& Ent
 
 	Parms.Entry = Entry;
 	Parms.Compare_Previous = Compare_Previous;
-	Parms.CallFunc_GetDisplayedIngredients_DisplayedIngredients = CallFunc_GetDisplayedIngredients_DisplayedIngredients;
 	Parms.CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent = CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent;
 	Parms.CallFunc_GetCraftingScreenState_ReturnValue = CallFunc_GetCraftingScreenState_ReturnValue;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -362,9 +351,8 @@ void UWBP_Crafting_RecipeMold_C::UpdateDetails(const struct FInventoryEntry& Ent
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // enum class ECraftingScreenState    NewScreenState                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Crafting_RecipeMold_C::On_Screen_State_Updated(enum class ECraftingScreenState NewScreenState, bool K2Node_SwitchEnum_CmpSuccess)
+void UWBP_Crafting_RecipeMold_C::On_Screen_State_Updated(enum class ECraftingScreenState NewScreenState)
 {
 	static class UFunction* Func = nullptr;
 
@@ -374,7 +362,6 @@ void UWBP_Crafting_RecipeMold_C::On_Screen_State_Updated(enum class ECraftingScr
 	Params::UWBP_Crafting_RecipeMold_C_On_Screen_State_Updated_Params Parms{};
 
 	Parms.NewScreenState = NewScreenState;
-	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -770,7 +757,7 @@ void UWBP_Crafting_RecipeMold_C::RemoveSlotBindings(int32 Temp_int_Array_Index_V
 
 
 // Function WBP_Crafting_RecipeMold.WBP_Crafting_RecipeMold_C.GetDefaultFocusWidget
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Crafting_RecipeMoldSlot_C*CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -1455,8 +1442,8 @@ void UWBP_Crafting_RecipeMold_C::CheckSlots(bool* SlotsFull, bool Failed, int32 
 // Parameters:
 // struct FCraftingConstraintSlot     SlotConstraints                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 // int32                              SlotIndex                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Crafting_IngredientList_C*CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UOverlay*                    K2Node_Select_Default                                            (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UOverlaySlot*                CallFunc_AddChildToOverlay_ReturnValue                           (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -1464,7 +1451,7 @@ void UWBP_Crafting_RecipeMold_C::CheckSlots(bool* SlotsFull, bool Failed, int32 
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_3                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Crafting_RecipeMold_C::OnSlotClicked(const struct FCraftingConstraintSlot& SlotConstraints, int32 SlotIndex, int32 Temp_int_Variable, class UWBP_Crafting_IngredientList_C* CallFunc_Create_ReturnValue, class UOverlay* K2Node_Select_Default, class UOverlaySlot* CallFunc_AddChildToOverlay_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3)
+void UWBP_Crafting_RecipeMold_C::OnSlotClicked(const struct FCraftingConstraintSlot& SlotConstraints, int32 SlotIndex, class UWBP_Crafting_IngredientList_C* CallFunc_Create_ReturnValue, int32 Temp_int_Variable, class UOverlay* K2Node_Select_Default, class UOverlaySlot* CallFunc_AddChildToOverlay_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1475,8 +1462,8 @@ void UWBP_Crafting_RecipeMold_C::OnSlotClicked(const struct FCraftingConstraintS
 
 	Parms.SlotConstraints = SlotConstraints;
 	Parms.SlotIndex = SlotIndex;
-	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
+	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.CallFunc_AddChildToOverlay_ReturnValue = CallFunc_AddChildToOverlay_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;

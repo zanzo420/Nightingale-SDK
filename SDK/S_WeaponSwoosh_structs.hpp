@@ -20,12 +20,12 @@ struct FS_WeaponSwoosh
 {
 public:
 	float                                        VFX_FirstPerson_25_989AC6F143FE2FC337DD95B05D0B133C; // 0x0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4AAD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6351[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UNiagaraSystem>         SwooshEffect_20_7A78300E412AA5604561C89544CE5737;  // 0x8(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	struct FLinearColor                          VFX_BaseColor_2_806860EC4039382491D0379C8EB2B11C;  // 0x30(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          VFX_EmissiveColor_4_B80A07BE4EE7FF2DAFB8B9AA03815AC8; // 0x40(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         VFX_Gameplay_22_BEF71220401C8096B62B15A61F654565;  // 0x50(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4AAE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6352[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               VFX_BoxSize_7_4E9526024722AFC04256C8A1D842C6B7;    // 0x58(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        VFX_LifetimeScale_14_737D9D5944E0ABB0344DB19FE324823F; // 0x70(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        VFX_IndexofRefraction_15_1D0750AF4AE8F2842BAFF7A7352AC05E; // 0x74(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -16,16 +16,16 @@ class UBP_AbilityZoneVisualizationComponent_C : public UActorComponent
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                         Sequential;                                        // 0xA8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_654D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6300[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          RefreshTimer;                                      // 0xB0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       RefreshInterval;                                   // 0xB8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        SequenceItr;                                       // 0xC0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_654E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6301[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FS_CreatureAbilityZoneDefinition> ZoneDefinitions;                                   // 0xC8(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	TArray<struct FLinearColor>                  ZoneColorArray;                                    // 0xD8(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	double                                       ZoneDebugRange;                                    // 0xE8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        ZoneSegments;                                      // 0xF0(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_654F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6302[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        ZoneLabelArray;                                    // 0xF8(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	int32                                        PointDensity;                                      // 0x108(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         DrawZones;                                         // 0x10C(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -73,7 +73,7 @@ struct UBuiltInDynamicBindingResolverLibrary_ResolveToPlayerPawn_Params
 public:
 	class UObject*                               WorldContextObject;                                // 0x0(0x8)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PlayerControllerIndex;                             // 0x8(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2FC1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2B7D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMovieSceneDynamicBindingResolveResult ReturnValue;                                       // 0x10(0x10)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 
@@ -378,7 +378,7 @@ struct UMovieSceneSequencePlayer_RPC_ExplicitServerUpdateEvent_Params
 {
 public:
 	enum class EUpdatePositionMethod             Method;                                            // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2FDF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2B8B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFrameTime                            RelevantTime;                                      // 0x4(0x8)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        NewSerialNumber;                                   // 0xC(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -390,7 +390,7 @@ struct UMovieSceneSequencePlayer_PlayTo_Params
 public:
 	struct FMovieSceneSequencePlaybackParams     PlaybackParams;                                    // 0x0(0x28)(Parm, NativeAccessSpecifierPublic)
 	struct FMovieSceneSequencePlayToParams       PlayToParams;                                      // 0x28(0x1)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2FE0[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2B8C[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4 (0x4 - 0x0)
@@ -439,7 +439,7 @@ struct UMovieSceneSequencePlayer_GetSequenceName_Params
 {
 public:
 	bool                                         bAddClientInfo;                                    // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2FE5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2B8D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ReturnValue;                                       // 0x8(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 

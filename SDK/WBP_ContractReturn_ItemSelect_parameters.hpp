@@ -29,13 +29,13 @@ public:
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_99[0x4];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8699[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UWidget*>                       CallFunc_GetAllChildren_ReturnValue;               // 0x10(0x10)(ReferenceParm, ContainsInstancedReference)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9A[0x4];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_869A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidget*                               CallFunc_Array_Get_Item;                           // 0x28(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9B[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_869B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_ContractReturn_ItemSelect_ConstraintGroup_C* K2Node_DynamicCast_AsWBP_Contract_Return_Item_Select_Constraint_Group; // 0x38(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsConstraintSatisfied_IsSatisfied;        // 0x41(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -51,13 +51,13 @@ public:
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0xC(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9C[0x4];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_869D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UWidget*>                       CallFunc_GetAllChildren_ReturnValue;               // 0x20(0x10)(ReferenceParm, ContainsInstancedReference)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9D[0x4];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_869E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidget*                               CallFunc_Array_Get_Item;                           // 0x38(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_869F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_ContractReturn_ItemSelect_ConstraintGroup_C* K2Node_DynamicCast_AsWBP_Contract_Return_Item_Select_Constraint_Group; // 0x48(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -77,16 +77,16 @@ public:
 	struct FInventoryEntryIdAndQuantity          K2Node_MakeStruct_InventoryEntryIdAndQuantity;     // 0x314(0x14)(NoDestructor)
 	int32                                        Temp_int_Loop_Counter_Variable_1;                  // 0x328(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x32C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue_1;                 // 0x330(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Add_ReturnValue;                    // 0x334(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWidget*>                       CallFunc_GetAllChildren_ReturnValue;               // 0x338(0x10)(ReferenceParm, ContainsInstancedReference)
 	bool                                         CallFunc_GetIsEnabled_ReturnValue;                 // 0x348(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidget*                               CallFunc_Array_Get_Item_1;                         // 0x350(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_ContractReturn_ItemSelect_ConstraintGroup_C* K2Node_DynamicCast_AsWBP_Contract_Return_Item_Select_Constraint_Group; // 0x358(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x360(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A1[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86A8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Array_Length_ReturnValue_1;               // 0x364(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FInventoryEntry>               CallFunc_GetSelectedItems_SelectedItem;            // 0x368(0x10)(ReferenceParm)
 	bool                                         CallFunc_Less_IntInt_ReturnValue_1;                // 0x378(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -103,31 +103,31 @@ public:
 	TArray<struct FInventoryEntry>               PotentialItems;                                    // 0x310(0x10)(Edit, BlueprintVisible)
 	class APlayerState*                          PlayerState;                                       // 0x320(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x328(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_11E[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86AF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               CallFunc_Conv_InterfaceToObject_ReturnValue;       // 0x330(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWBP_ContractReturn_ItemSelect_ConstraintGroup_C* CallFunc_Create_ReturnValue;                       // 0x338(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x340(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_11F[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXPlayerState*                       CallFunc_GetOwningPlayerState_ReturnValue;         // 0x348(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x350(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x360(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_120[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPanelSlot*                            CallFunc_AddChild_ReturnValue;                     // 0x368(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FItemConstraint                       CallFunc_Array_Get_Item;                           // 0x370(0x40)(ContainsInstancedReference)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x3B0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_121[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FItemConstraint>               CallFunc_GetTaskItemConstraints_OutItemConstraints; // 0x3B8(0x10)(ReferenceParm, ContainsInstancedReference)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x3C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x3CC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_122[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x3D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_123[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IQuestTrackerProviderInterface> K2Node_DynamicCast_AsQuest_Tracker_Provider_Interface; // 0x3D8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x3E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_124[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FInventoryEntry>               CallFunc_GetTaskTurnInItemsFromPlayerInventory_OutInventoryItems; // 0x3F0(0x10)(ReferenceParm)
 	bool                                         CallFunc_GetTaskTurnInItemsFromPlayerInventory_ReturnValue; // 0x400(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_125[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86B6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IQuestTrackerInterface> CallFunc_GetQuestTracker_ReturnValue;              // 0x408(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
 

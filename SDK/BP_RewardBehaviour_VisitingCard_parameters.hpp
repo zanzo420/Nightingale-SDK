@@ -19,25 +19,25 @@ struct UBP_RewardBehaviour_VisitingCard_C_InventoryCheck_Params
 {
 public:
 	class APlayerState*                          PlayerState;                                       // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0B9[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_60FF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       VisitingCard;                                      // 0x10(0x2F0)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                         RewardVisitingCard;                                // 0x300(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         VisitingCardFound;                                 // 0x301(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0BA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6100[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x308(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x310(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0BB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6101[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXPlayerController*                  K2Node_DynamicCast_AsNWXPlayer_Controller;         // 0x318(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x320(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0BC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6102[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x324(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FInventoryEntry>               CallFunc_GetPlayerRealmCards_RealmCardsArray;      // 0x328(0x10)(ReferenceParm)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x338(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x33C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0BD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6103[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x340(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable_1;                   // 0x344(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0BE[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6104[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       CallFunc_Array_Get_Item;                           // 0x350(0x2F0)(None)
 	struct FGameplayTagContainer                 CallFunc_GetItemTraitsFromEntry_Traits;            // 0x640(0x20)(None)
 	TArray<struct FGameplayTag>                  CallFunc_BreakGameplayTagContainer_GameplayTags;   // 0x660(0x10)(ReferenceParm)
@@ -46,7 +46,7 @@ public:
 	int32                                        Temp_int_Loop_Counter_Variable_1;                  // 0x67C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_GameplayTag_ReturnValue;       // 0x680(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue_1;                // 0x681(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0BF[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6105[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue_1;                 // 0x684(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -59,24 +59,24 @@ public:
 	class APlayerState*                          LPlayerState;                                      // 0x8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	struct FItemDataReference                    LItemReference;                                    // 0x10(0x80)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	class UBP_InventoryComponent_C*              LPlayerInventory;                                  // 0x90(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0C2[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6106[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       LRealmCard;                                        // 0xA0(0x2F0)(Edit, BlueprintVisible)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x390(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0C3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6107[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class APlayerController*                     CallFunc_GetPlayerController_ReturnValue;          // 0x398(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x3A0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0C4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6108[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_InventoryComponent_C*              CallFunc_GetComponentByClass_ReturnValue;          // 0x3A8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_2;                    // 0x3B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_InventoryCheck_RewardVisitingCard;        // 0x3B1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0C5[0xE];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6109[0xE];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       CallFunc_CreateNPCAddressRealmCardForThisDeploy_OutInventoryEntry; // 0x3C0(0x2F0)(None)
 	enum class EGetResult                        CallFunc_CreateNPCAddressRealmCardForThisDeploy_Branches; // 0x6B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x6B1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0C6[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_610A[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IItemContainer>       CallFunc_AddItemToCorrectContainer_OutContainerAddedTo; // 0x6B8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	int32                                        CallFunc_AddItemToCorrectContainer_OutAmountAdded; // 0x6C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0C7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_610B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGuid>                         CallFunc_AddItemToCorrectContainer_OutModifiedInstances; // 0x6D0(0x10)(ReferenceParm)
 	bool                                         CallFunc_AddItemToCorrectContainer_ReturnValue;    // 0x6E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -96,7 +96,7 @@ struct UBP_RewardBehaviour_VisitingCard_C_ExecuteUbergraph_BP_RewardBehaviour_Vi
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A0C9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_610C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class APlayerState*                          K2Node_Event_PlayerState;                          // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               K2Node_Event_SenderContextObject;                  // 0x10(0x8)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };

@@ -115,7 +115,7 @@ public:
 	class AController*                           Controller;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FInteractionData                      InteractionData;                                   // 0x8(0x178)(BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 	bool                                         bIsDisabled;                                       // 0x180(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E14[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B23[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                DisabledText;                                      // 0x188(0x10)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 };
 
@@ -143,7 +143,7 @@ struct ABP_IIMProxy_FallingTree_Base_C_VanishTree_Params
 public:
 	struct FTimerHandle                          CompletionTimer;                                   // 0x0(0x8)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsServer_ReturnValue;                     // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E15[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B25[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USceneComponent*                       CallFunc_K2_GetRootComponent_ReturnValue;          // 0x10(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -178,7 +178,7 @@ public:
 	double                                       CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue;             // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_NVFX_SpawnSystem_ReturnValue;             // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E16[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B28[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNiagaraComponent*                     CallFunc_NVFX_SpawnSystem_NiagaraSystemSpawned;    // 0x58(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetFloatParameter_Param_ImplicitCast;     // 0x60(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetCanopyBoundsScaled_MaximumExtentMultiplier_ImplicitCast; // 0x64(0x4)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -200,7 +200,7 @@ public:
 	struct FRotator                              CallFunc_BreakTransform_Rotation;                  // 0xC0(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                               CallFunc_BreakTransform_Scale;                     // 0xD8(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_NVFX_SpawnSystem_ReturnValue;             // 0xF0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E17[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B2B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNiagaraComponent*                     CallFunc_NVFX_SpawnSystem_NiagaraSystemSpawned;    // 0xF8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -222,7 +222,7 @@ struct ABP_IIMProxy_FallingTree_Base_C_ThrottledDamageGate_Params
 {
 public:
 	bool                                         DamageAllowed;                                     // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E18[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B2F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          CallFunc_K2_SetTimer_ReturnValue;                  // 0x8(0x8)(NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_K2_SetTimer_Time_ImplicitCast;            // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -244,15 +244,15 @@ public:
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x178(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x179(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x17A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E1A[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B31[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetLinearVelocitySquared_ReturnValue;     // 0x17C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          CallFunc_MeleeTag_MeleeTag;                        // 0x180(0x8)(NoDestructor, HasGetValueTypeHash)
 	struct FS_CreatureKnockbackData              K2Node_MakeStruct_S_CreatureKnockbackData;         // 0x188(0x2E)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E1B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B32[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x1B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Set_Contains_ReturnValue;                 // 0x1B9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x1BA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E1C[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B33[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGameplayEffectCue>            Temp_struct_Variable;                              // 0x1C0(0x10)(ConstParm, ReferenceParm)
 	struct FTagValueContainer                    CallFunc_DamageActor_AggregatedDamageTags;         // 0x1D0(0x10)(None)
 	double                                       CallFunc_Greater_DoubleDouble_A_ImplicitCast;      // 0x1E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -275,13 +275,13 @@ public:
 	bool                                         CallFunc_ActorHasTag_ReturnValue;                  // 0x112(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x113(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ThrottledDamageGate_DamageAllowed;        // 0x114(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E1D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B38[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x118(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTagValueContainer                    Temp_struct_Variable_1;                            // 0x120(0x10)(ConstParm)
 	TArray<struct FGameplayEffectCue>            Temp_struct_Variable_2;                            // 0x130(0x10)(ConstParm, ReferenceParm)
 	struct FTagValueContainer                    CallFunc_DamageActor_AggregatedDamageTags;         // 0x140(0x10)(None)
 	bool                                         CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E1E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B39[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_DamageActor_BaseDamage_ImplicitCast;      // 0x154(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -291,20 +291,20 @@ struct ABP_IIMProxy_FallingTree_Base_C_UserConstructionScript_Params
 {
 public:
 	int32                                        CallFunc_GetCurrentRealmPower_RealmPower;          // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E21[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B3D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue;             // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_GetCurrentRealmPower_RealmPower_1;        // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_1;              // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E22[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B3F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E25[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B40[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_B_ImplicitCast;     // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_1;      // 0x48(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E26[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B41[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_B_ImplicitCast_1;   // 0x50(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -322,7 +322,7 @@ struct ABP_IIMProxy_FallingTree_Base_C_ExecuteUbergraph_BP_IIMProxy_FallingTree_
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E28[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B44[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AController*                           K2Node_Event_Controller;                           // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 

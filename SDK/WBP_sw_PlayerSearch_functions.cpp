@@ -67,6 +67,29 @@ void UWBP_sw_PlayerSearch_C::CREATEDELEGATE_PROXYFUNCTION_0(const class FString&
 }
 
 
+// Function WBP_sw_PlayerSearch.WBP_sw_PlayerSearch_C.On Category Changed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                        SelectedTabName                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                              ActiveTab                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_sw_PlayerSearch_C::On_Category_Changed(class FText SelectedTabName, int32 ActiveTab)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_sw_PlayerSearch_C", "On Category Changed");
+
+	Params::UWBP_sw_PlayerSearch_C_On_Category_Changed_Params Parms{};
+
+	Parms.SelectedTabName = SelectedTabName;
+	Parms.ActiveTab = ActiveTab;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_sw_PlayerSearch.WBP_sw_PlayerSearch_C.ReturnNavigableTarget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -699,7 +722,6 @@ void UWBP_sw_PlayerSearch_C::BndEvt__WBP_sw_PlayerSearch_CBU_ClearSearch_K2Node_
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_ComponentBoundEvent_SelectedTabName                       (None)
 // int32                              K2Node_ComponentBoundEvent_ActiveTab                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_ComponentBoundEvent_Text                                  (ConstParm)
@@ -721,8 +743,10 @@ void UWBP_sw_PlayerSearch_C::BndEvt__WBP_sw_PlayerSearch_CBU_ClearSearch_K2Node_
 // bool                               CallFunc_GetRealmHistoryComponent_Success_1                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_6                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_7                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_8                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_sw_PlayerSearch_C::ExecuteUbergraph_WBP_sw_PlayerSearch(int32 EntryPoint, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, class FText K2Node_ComponentBoundEvent_SelectedTabName, int32 K2Node_ComponentBoundEvent_ActiveTab, class FText K2Node_ComponentBoundEvent_Text, enum class ETextCommit K2Node_ComponentBoundEvent_CommitMethod, bool K2Node_SwitchEnum_CmpSuccess, const class FString& CallFunc_Conv_TextToString_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class UBP_RealmHistory_Persistence_C* CallFunc_GetRealmHistoryComponent_Realm_History_Persistence_Component, bool CallFunc_GetRealmHistoryComponent_Success, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class UBP_RealmHistory_Persistence_C* CallFunc_GetRealmHistoryComponent_Realm_History_Persistence_Component_1, bool CallFunc_GetRealmHistoryComponent_Success_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7)
+void UWBP_sw_PlayerSearch_C::ExecuteUbergraph_WBP_sw_PlayerSearch(int32 EntryPoint, class FText K2Node_ComponentBoundEvent_SelectedTabName, int32 K2Node_ComponentBoundEvent_ActiveTab, class FText K2Node_ComponentBoundEvent_Text, enum class ETextCommit K2Node_ComponentBoundEvent_CommitMethod, bool K2Node_SwitchEnum_CmpSuccess, const class FString& CallFunc_Conv_TextToString_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class UBP_RealmHistory_Persistence_C* CallFunc_GetRealmHistoryComponent_Realm_History_Persistence_Component, bool CallFunc_GetRealmHistoryComponent_Success, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class UBP_RealmHistory_Persistence_C* CallFunc_GetRealmHistoryComponent_Realm_History_Persistence_Component_1, bool CallFunc_GetRealmHistoryComponent_Success_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8)
 {
 	static class UFunction* Func = nullptr;
 
@@ -732,7 +756,6 @@ void UWBP_sw_PlayerSearch_C::ExecuteUbergraph_WBP_sw_PlayerSearch(int32 EntryPoi
 	Params::UWBP_sw_PlayerSearch_C_ExecuteUbergraph_WBP_sw_PlayerSearch_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
 	Parms.K2Node_ComponentBoundEvent_SelectedTabName = K2Node_ComponentBoundEvent_SelectedTabName;
 	Parms.K2Node_ComponentBoundEvent_ActiveTab = K2Node_ComponentBoundEvent_ActiveTab;
 	Parms.K2Node_ComponentBoundEvent_Text = K2Node_ComponentBoundEvent_Text;
@@ -754,6 +777,8 @@ void UWBP_sw_PlayerSearch_C::ExecuteUbergraph_WBP_sw_PlayerSearch(int32 EntryPoi
 	Parms.CallFunc_GetRealmHistoryComponent_Success_1 = CallFunc_GetRealmHistoryComponent_Success_1;
 	Parms.K2Node_CreateDelegate_OutputDelegate_6 = K2Node_CreateDelegate_OutputDelegate_6;
 	Parms.K2Node_CreateDelegate_OutputDelegate_7 = K2Node_CreateDelegate_OutputDelegate_7;
+	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
+	Parms.K2Node_CreateDelegate_OutputDelegate_8 = K2Node_CreateDelegate_OutputDelegate_8;
 
 	UObject::ProcessEvent(Func, &Parms);
 

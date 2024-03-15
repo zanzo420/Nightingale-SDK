@@ -25,9 +25,9 @@ public:
 	struct FGameplayEffectContextHandle          CallFunc_GetEffectContext_ReturnValue;             // 0x2D0(0x18)(None)
 	class AActor*                                CallFunc_EffectContextGetInstigatorActor_ReturnValue; // 0x2E8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsObjectHailDamageSource_ReturnValue;     // 0x2F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F27[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FD1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          CallFunc_CreatureOriginatorTag_CreatureOriginatorTag; // 0x2F4(0x8)(NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F29[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FD2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 CallFunc_GetSourceAggregatedTags_ReturnValue;      // 0x300(0x20)(None)
 	bool                                         CallFunc_ContainerContainsState_ReturnValue;       // 0x320(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ContainerContainsState_ReturnValue_1;     // 0x321(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -45,7 +45,7 @@ public:
 	struct FGameplayTag                          Temp_struct_Variable;                              // 0x2C8(0x8)(ConstParm, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x2D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_DoubleDouble_ReturnValue;            // 0x2D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F2A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FD3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 CallFunc_GetSourceAggregatedTags_ReturnValue;      // 0x2E0(0x20)(None)
 	bool                                         CallFunc_ContainerContainsState_ReturnValue;       // 0x300(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x301(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -63,7 +63,7 @@ public:
 	struct FGameplayTagContainer                 CallFunc_GetSourceAggregatedTags_ReturnValue;      // 0x2D0(0x20)(None)
 	struct FGameplayTag                          CallFunc_CreatureOriginatorTag_CreatureOriginatorTag; // 0x2F0(0x8)(NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ContainerContainsState_ReturnValue;       // 0x2F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F2B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FD4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 CallFunc_GetSourceAggregatedTags_ReturnValue_1;    // 0x300(0x20)(None)
 	bool                                         CallFunc_ContainerContainsState_ReturnValue_1;     // 0x320(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -80,7 +80,7 @@ public:
 	struct FGameplayTagContainer                 CallFunc_GetSourceAggregatedTags_ReturnValue;      // 0x2D0(0x20)(None)
 	struct FGameplayTag                          CallFunc_EncounterOriginatorTag_EncounterOriginatorTag; // 0x2F0(0x8)(NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ContainerContainsState_ReturnValue;       // 0x2F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F2C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FD5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 CallFunc_GetSourceAggregatedTags_ReturnValue_1;    // 0x300(0x20)(None)
 	bool                                         CallFunc_ContainerContainsState_ReturnValue_1;     // 0x320(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -93,14 +93,14 @@ public:
 	struct FGameplayEffectSpec                   Spec;                                              // 0x0(0x2B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FTagValueContainer                    MMCIntermediateOutputs;                            // 0x2B8(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	float                                        ReturnValue;                                       // 0x2C8(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F33[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FD6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Damage;                                            // 0x2D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_NWXCalculateBaseMagnitude_ReturnValue;    // 0x2D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F34[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FD7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayEffectContextHandle          CallFunc_GetEffectContext_ReturnValue;             // 0x2E0(0x18)(None)
 	class AActor*                                CallFunc_EffectContextGetInstigatorActor_ReturnValue; // 0x2F8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsObjectHailDamageSource_ReturnValue;     // 0x300(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F35[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FD8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Piece_Modify_OutDamage;                   // 0x308(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Repair_Modify_OutDamage;                  // 0x310(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Sledgehammer_Modify_OutDamage;            // 0x318(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -124,7 +124,7 @@ public:
 	struct FGameplayTag                          CallFunc_SledgehammerTag_SledgehammerTag;          // 0x2D0(0x8)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 CallFunc_GetSourceAggregatedTags_ReturnValue;      // 0x2D8(0x20)(None)
 	bool                                         CallFunc_HasTag_ReturnValue;                       // 0x2F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F36[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FD9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x300(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_DoubleDouble_ReturnValue;            // 0x308(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x309(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -141,12 +141,12 @@ public:
 	struct FGameplayTag                          CallFunc_PieceHealthTag_PieceHealthTag;            // 0x2C8(0x8)(NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x2D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetSetByCallerMagnitudeInSpec_ReturnValue; // 0x2D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F37[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FDA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x2E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_FMax_ReturnValue;                         // 0x2E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_DoubleDouble_ReturnValue;            // 0x2F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x2F1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F38[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FDB[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetSetByCallerMagnitudeInSpec_DefaultIfNotFound_ImplicitCast; // 0x2F4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x2F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -161,9 +161,9 @@ public:
 	double                                       OutDamage;                                         // 0x2C0(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_DoubleDouble_ReturnValue;            // 0x2C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x2C9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F39[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FDC[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          CallFunc_SchematicTag_SchematicTag;                // 0x2CC(0x8)(NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F3A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6FDD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 CallFunc_GetTargetAggregatedTags_ReturnValue;      // 0x2D8(0x20)(None)
 	bool                                         CallFunc_ContainerContainsState_ReturnValue;       // 0x2F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

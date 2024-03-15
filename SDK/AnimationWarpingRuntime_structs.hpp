@@ -62,7 +62,7 @@ public:
 	float                                        FloorAngularStiffness;                             // 0x18(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        FloorAngularDamping;                               // 0x1C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnableFloorInterpolation;                         // 0x20(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_466E[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_51B7[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1C (0x1C - 0x0)
@@ -74,12 +74,12 @@ public:
 	float                                        EndOffset;                                         // 0x4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        SweepRadius;                                       // 0x8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ETraceTypeQuery                   ComplexTraceChannel;                               // 0xC(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_466F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51B8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        MaxGroundPenetration;                              // 0x10(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        SimpleCollisionInfluence;                          // 0x14(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ETraceTypeQuery                   SimpleTraceChannel;                                // 0x18(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnabled;                                          // 0x19(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4670[0x2];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_51B9[0x2];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -105,7 +105,7 @@ public:
 	enum class EPelvisHeightMode                 PelvisHeightMode;                                  // 0x18(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EActorMovementCompensationMode    ActorMovementCompensationMode;                     // 0x19(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnableInterpolation;                              // 0x1A(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4671[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_51BA[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x44 (0x44 - 0x0)
@@ -129,7 +129,7 @@ public:
 	float                                        SpeedThreshold;                                    // 0x0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        DistanceToGround;                                  // 0x4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EFootPlacementLockType            LockType;                                          // 0x8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4672[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51BB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        UnplantRadius;                                     // 0xC(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        ReplantRadiusRatio;                                // 0x10(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        UnplantAngle;                                      // 0x14(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -140,7 +140,7 @@ public:
 	float                                        UnalignmentSpeedThreshold;                         // 0x28(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        AnkleTwistReduction;                               // 0x2C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAdjustHeelBeforePlanting;                         // 0x30(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4674[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_51BC[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x348 (0x410 - 0xC8)
@@ -149,7 +149,7 @@ struct FAnimNode_FootPlacement : public FAnimNode_SkeletalControlBase
 {
 public:
 	enum class EWarpingEvaluationMode            PlantSpeedMode;                                    // 0xC8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4677[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51BD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FBoneReference                        IKFootRootBone;                                    // 0xCC(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FBoneReference                        PelvisBone;                                        // 0xDC(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FFootPlacementPelvisSettings          PelvisSettings;                                    // 0xEC(0x1C)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
@@ -157,7 +157,7 @@ public:
 	struct FFootPlacementPlantSettings           PlantSettings;                                     // 0x118(0x34)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FFootPlacementInterpolationSettings   InterpolationSettings;                             // 0x14C(0x24)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FFootPlacementTraceSettings           TraceSettings;                                     // 0x170(0x1C)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4679[0x284];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_51BE[0x284];                                   // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xC8 (0x190 - 0xC8)
@@ -165,7 +165,7 @@ public:
 struct FAnimNode_OffsetRootBone : public FAnimNode_SkeletalControlBase
 {
 public:
-	uint8                                        Pad_467B[0xC8];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_51BF[0xC8];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xD0 (0x198 - 0xC8)
@@ -174,23 +174,23 @@ struct FAnimNode_OrientationWarping : public FAnimNode_SkeletalControlBase
 {
 public:
 	enum class EWarpingEvaluationMode            Mode;                                              // 0xC8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_467C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51C0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        OrientationAngle;                                  // 0xCC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        LocomotionAngle;                                   // 0xD0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        MinRootMotionSpeedThreshold;                       // 0xD4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        LocomotionAngleDeltaThreshold;                     // 0xD8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_467E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51C1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FBoneReference>                SpineBones;                                        // 0xE0(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FBoneReference                        IKFootRootBone;                                    // 0xF0(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<struct FBoneReference>                IKFootBones;                                       // 0x100(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	enum class EAxis                             RotationAxis;                                      // 0x110(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4680[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51C2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        DistributedBoneOrientationAlpha;                   // 0x114(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        RotationInterpSpeed;                               // 0x118(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        WarpingAlpha;                                      // 0x11C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        OffsetAlpha;                                       // 0x120(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        MaxOffsetAngle;                                    // 0x124(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4681[0x70];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_51C3[0x70];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -209,7 +209,7 @@ public:
 struct FSlopeWarpingFootData
 {
 public:
-	uint8                                        Pad_4682[0xB0];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_51C4[0xB0];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x218 (0x2E0 - 0xC8)
@@ -217,23 +217,23 @@ public:
 struct FAnimNode_SlopeWarping : public FAnimNode_SkeletalControlBase
 {
 public:
-	uint8                                        Pad_4685[0x18];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51C5[0x18];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FBoneReference                        IKFootRootBone;                                    // 0xE0(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FBoneReference                        PelvisBone;                                        // 0xF0(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<struct FSlopeWarpingFootDefinition>   FeetDefinitions;                                   // 0x100(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FSlopeWarpingFootData>         FeetData;                                          // 0x110(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	struct FVectorRK4SpringInterpolator          PelvisOffsetInterpolator;                          // 0x120(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4686[0x58];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51C6[0x58];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               GravityDir;                                        // 0x180(0x18)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               CustomFloorOffset;                                 // 0x198(0x18)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        CachedDeltaTime;                                   // 0x1B0(0x4)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4687[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51C7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               TargetFloorNormalWorldSpace;                       // 0x1B8(0x18)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVectorRK4SpringInterpolator          FloorNormalInterpolator;                           // 0x1D0(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4689[0x58];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51C8[0x58];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               TargetFloorOffsetLocalSpace;                       // 0x230(0x18)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVectorRK4SpringInterpolator          FloorOffsetInterpolator;                           // 0x248(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_468B[0x58];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51C9[0x58];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        MaxStepHeight;                                     // 0x2A8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bKeepMeshInsideOfCapsule : 1;                      // Mask: 0x1, PropSize: 0x10x2AC(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bPullPelvisDown : 1;                               // Mask: 0x2, PropSize: 0x10x2AC(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -241,8 +241,8 @@ public:
 	uint8                                        bWasOnGround : 1;                                  // Mask: 0x8, PropSize: 0x10x2AC(0x1)(Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bShowDebug : 1;                                    // Mask: 0x10, PropSize: 0x10x2AC(0x1)(Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bFloorSmoothingInitialized : 1;                    // Mask: 0x20, PropSize: 0x10x2AC(0x1)(Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_230 : 2;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_468E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_23A : 2;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_51CA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               ActorLocation;                                     // 0x2B0(0x18)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               GravityDirCompSpace;                               // 0x2C8(0x18)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
@@ -263,24 +263,24 @@ struct FAnimNode_StrideWarping : public FAnimNode_SkeletalControlBase
 {
 public:
 	enum class EWarpingEvaluationMode            Mode;                                              // 0xC8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4690[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51CB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               StrideDirection;                                   // 0xD0(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        StrideScale;                                       // 0xE8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        LocomotionSpeed;                                   // 0xEC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        MinRootMotionSpeedThreshold;                       // 0xF0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBoneReference                        PelvisBone;                                        // 0xF4(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FBoneReference                        IKFootRootBone;                                    // 0x104(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4691[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51CC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FStrideWarpingFootDefinition>  FootDefinitions;                                   // 0x118(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FInputClampConstants                  StrideScaleModifier;                               // 0x128(0x14)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4693[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51CD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FWarpingVectorValue                   FloorNormalDirection;                              // 0x140(0x20)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FWarpingVectorValue                   GravityDirection;                                  // 0x160(0x20)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FIKFootPelvisPullDownSolver           PelvisIKFootSolver;                                // 0x180(0x80)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bOrientStrideDirectionUsingFloorNormal;            // 0x200(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCompensateIKUsingFKThighRotation;                 // 0x201(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bClampIKUsingFKLimits;                             // 0x202(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4694[0x45];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_51CE[0x45];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

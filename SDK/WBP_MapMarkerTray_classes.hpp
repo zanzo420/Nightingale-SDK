@@ -39,7 +39,7 @@ public:
 	class UWBP_MapMarkerTray_Button_C*           WBP_MapMarkerTray_Button_C_10;                     // 0x568(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            MapMarkerSelected;                                 // 0x570(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                        Max_Stamp_Count;                                   // 0x580(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8F85[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8C8D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FDataTableRowHandle>           CachedMarkers;                                     // 0x588(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FVector2D                             TrayPosition;                                      // 0x598(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TArray<class UWBP_MapMarkerTray_Button_C*>   BeaconsArray;                                      // 0x5A8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)

@@ -45,7 +45,7 @@ enum class EMetaSoundBuilderResult : uint8
 struct FMetaSoundOutput : public FSoundGeneratorOutput
 {
 public:
-	uint8                                        Pad_41A2[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_5002[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -69,9 +69,9 @@ public:
 struct FMetaSoundAsyncAssetDependencies
 {
 public:
-	uint8                                        Pad_41A3[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5003[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               Metasound;                                         // 0x8(0x8)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_41A4[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_5004[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x20 - 0x20)
@@ -104,7 +104,7 @@ public:
 	class FName                                  Name;                                              // 0x0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bForceUniqueClassName;                             // 0x8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAddToRegistry;                                    // 0x9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_41A5[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5005[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IMetaSoundDocumentInterface> ExistingMetaSound;                                 // 0x10(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 

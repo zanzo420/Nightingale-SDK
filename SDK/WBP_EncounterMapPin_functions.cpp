@@ -49,12 +49,13 @@ class UWBP_EncounterMapPin_C* UWBP_EncounterMapPin_C::GetDefaultObj()
 // class ABP_PlayerState_C*           CallFunc_GetLocalPlayerState_PlayerState                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UEncounterProgressTracker*   CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // struct FGuid                       CallFunc_Parse_StringToGuid_OutGuid                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Parse_StringToGuid_Success                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FEncounterDynamicData       CallFunc_TryGetEncounterDynamicData_OutData                      (None)
 // bool                               CallFunc_TryGetEncounterDynamicData_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EncounterMapPin_C::TryGet_Encounter_Status_Enum(enum class EEncounterStatus* EncountStatusEnum, bool* Success, class UEncounterProgressTracker* EncounterProgressTracker, class ABP_PlayerState_C* CallFunc_GetLocalPlayerState_PlayerState, class UEncounterProgressTracker* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FGuid& CallFunc_Parse_StringToGuid_OutGuid, bool CallFunc_Parse_StringToGuid_Success, const struct FEncounterDynamicData& CallFunc_TryGetEncounterDynamicData_OutData, bool CallFunc_TryGetEncounterDynamicData_ReturnValue)
+void UWBP_EncounterMapPin_C::TryGet_Encounter_Status_Enum(enum class EEncounterStatus* EncountStatusEnum, bool* Success, class UEncounterProgressTracker* EncounterProgressTracker, class ABP_PlayerState_C* CallFunc_GetLocalPlayerState_PlayerState, class UEncounterProgressTracker* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, const struct FGuid& CallFunc_Parse_StringToGuid_OutGuid, bool CallFunc_Parse_StringToGuid_Success, const struct FEncounterDynamicData& CallFunc_TryGetEncounterDynamicData_OutData, bool CallFunc_TryGetEncounterDynamicData_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67,6 +68,7 @@ void UWBP_EncounterMapPin_C::TryGet_Encounter_Status_Enum(enum class EEncounterS
 	Parms.CallFunc_GetLocalPlayerState_PlayerState = CallFunc_GetLocalPlayerState_PlayerState;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
 	Parms.CallFunc_Parse_StringToGuid_OutGuid = CallFunc_Parse_StringToGuid_OutGuid;
 	Parms.CallFunc_Parse_StringToGuid_Success = CallFunc_Parse_StringToGuid_Success;
 	Parms.CallFunc_TryGetEncounterDynamicData_OutData = CallFunc_TryGetEncounterDynamicData_OutData;

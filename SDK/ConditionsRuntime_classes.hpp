@@ -18,10 +18,10 @@ public:
 	struct FGuid                                 ConditionHandle;                                   // 0x30(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TWeakObjectPtr<class UObject>                Listener;                                          // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EConditionState                   CurrentState;                                      // 0x48(0x1)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3363[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E55[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FConditionPersistentData              ProgressData;                                      // 0x4C(0x8)(SaveGame, NoDestructor, NativeAccessSpecifierPrivate)
 	struct FConditionPersistentData              CompletionData;                                    // 0x54(0x8)(NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3364[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E57[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CancellationMessage;                               // 0x60(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();
@@ -46,9 +46,9 @@ public:
 class UCompoundCondition : public UConditionBehaviour
 {
 public:
-	uint8                                        Pad_3365[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E5B[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UConditionBehaviour*>           Conditions;                                        // 0x78(0x10)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3366[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2E5C[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UCompoundCondition* GetDefaultObj();
@@ -72,7 +72,7 @@ class UCompoundConditionOr : public UCompoundCondition
 {
 public:
 	int32                                        CountThreshold;                                    // 0xF0(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3367[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2E5F[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UCompoundConditionOr* GetDefaultObj();
@@ -111,7 +111,7 @@ public:
 class UConditionListenerActorComponent : public UActorComponent
 {
 public:
-	uint8                                        Pad_336D[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2E6A[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UConditionListenerActorComponent* GetDefaultObj();
@@ -123,7 +123,7 @@ public:
 class UConditionListenerSceneComponent : public USceneComponent
 {
 public:
-	uint8                                        Pad_336E[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2E6B[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UConditionListenerSceneComponent* GetDefaultObj();
@@ -162,7 +162,7 @@ public:
 class AConditionTestActor : public AActor
 {
 public:
-	uint8                                        Pad_336F[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2E6F[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AConditionTestActor* GetDefaultObj();

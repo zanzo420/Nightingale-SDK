@@ -47,13 +47,13 @@ public:
 	class UTextBlock*                            Txt_realmTags;                                     // 0x5B8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FPlayerLoadoutDataReference           Active_Loadout;                                    // 0x5C0(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                         DefaultDebugMenuInitialized;                       // 0x5E8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9360[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E3F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCodexTrackerComponent*                CodexTrackerComponent;                             // 0x5F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FString                                FactionTagsString;                                 // 0x5F8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FDeploymentInformation                Deploy_Information;                                // 0x608(0x58)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  Influences;                                        // 0x660(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         GrantLoadoutUnlocked;                              // 0x678(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9361[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2E40[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ReferencePage_URL;                                 // 0x680(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<struct FPlayerLoadoutDataReference>   AvailableLoadouts;                                 // 0x690(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 

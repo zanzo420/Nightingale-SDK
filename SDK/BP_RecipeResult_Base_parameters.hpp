@@ -50,7 +50,7 @@ public:
 	TArray<struct FInventoryEntry>               InputItems;                                        // 0x38(0x10)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<class UItemProcessingDataAsset*>      ProcessingData;                                    // 0x48(0x10)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	bool                                         bSuccess;                                          // 0x58(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5178[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_558B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UItemProcessingDataAsset*>      ReturnValue;                                       // 0x60(0x10)(Parm, OutParm, ReturnParm, ContainsInstancedReference)
 };
 
@@ -65,7 +65,7 @@ public:
 	TArray<struct FInventoryEntry>               InputItems;                                        // 0x38(0x10)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<class UItemProcessingDataAsset*>      ProcessingData;                                    // 0x48(0x10)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	bool                                         bSuccess;                                          // 0x58(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5179[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_558C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UItemProcessingDataAsset*>      ReturnValue;                                       // 0x60(0x10)(Parm, OutParm, ReturnParm, ContainsInstancedReference)
 };
 

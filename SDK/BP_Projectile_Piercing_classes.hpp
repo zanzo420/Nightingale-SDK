@@ -14,7 +14,7 @@ namespace SDK
 class ABP_Projectile_Piercing_C : public ABP_ProjectileBase_C
 {
 public:
-	uint8                                        Pad_A7F8[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A4D6[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                PassthroughAbility;                                // 0xCB8(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        PassthroughCounter;                                // 0xCC0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                        MaxPassthroughCount;                               // 0xCC4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

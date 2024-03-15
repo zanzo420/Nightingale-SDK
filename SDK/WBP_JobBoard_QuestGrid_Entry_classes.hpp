@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x278 (0x5B8 - 0x340)
+// 0x290 (0x5D0 - 0x340)
 // WidgetBlueprintGeneratedClass WBP_JobBoard_QuestGrid_Entry.WBP_JobBoard_QuestGrid_Entry_C
 class UWBP_JobBoard_QuestGrid_Entry_C : public UNWXUserWidget
 {
@@ -23,8 +23,8 @@ public:
 	class UButton_Network*                       Button_Network_1;                                  // 0x370(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                        HB_FactionStoreBox;                                // 0x378(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                Img_GodRayHighlight;                               // 0x380(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                Img_Icon;                                          // 0x388(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                Img_Icon_1;                                        // 0x390(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                Img_icon;                                          // 0x388(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                Img_icon_1;                                        // 0x390(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                              Overlay_SelectedState;                             // 0x398(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                              Overlay_SelectedState_1;                           // 0x3A0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                            Txt_ListView_Requirement_Label;                    // 0x3A8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -35,7 +35,7 @@ public:
 	class UWidgetSwitcher*                       WidgetSwitcher_0;                                  // 0x3D0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            JobBoardQuestSelected;                             // 0x3D8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            JobBoardQuestHovered;                              // 0x3E8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	uint8                                        Pad_79BF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7B89[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FOngoingTaskProgress                  TaskProgress;                                      // 0x400(0xB0)(Edit, BlueprintVisible, ExposeOnSpawn)
 	enum class E_Contract_StateType              ContractState;                                     // 0x4B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         IsJobBoard;                                        // 0x4B1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -44,12 +44,12 @@ public:
 	int32                                        GridIndex;                                         // 0x4B4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            JobBoardQuestConfirmed;                            // 0x4B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         IsListView;                                        // 0x4C8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_79C0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FShopOfferPresentation                ShopOffer;                                         // 0x4D0(0xC0)(Edit, BlueprintVisible, ExposeOnSpawn)
-	bool                                         IsShop;                                            // 0x590(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_79C1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	FMulticastInlineDelegateProperty_            JobBoardShopOfferSelected;                         // 0x598(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_            JobBoardShopOfferHovered;                          // 0x5A8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	uint8                                        Pad_7B8A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FShopOfferPresentation                ShopOffer;                                         // 0x4D0(0xD8)(Edit, BlueprintVisible, ExposeOnSpawn)
+	bool                                         IsShop;                                            // 0x5A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                        Pad_7B8B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	FMulticastInlineDelegateProperty_            JobBoardShopOfferSelected;                         // 0x5B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            JobBoardShopOfferHovered;                          // 0x5C0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();
 	static class UWBP_JobBoard_QuestGrid_Entry_C* GetDefaultObj();

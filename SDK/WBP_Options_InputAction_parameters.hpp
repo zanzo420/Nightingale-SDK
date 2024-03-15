@@ -43,7 +43,7 @@ public:
 	class UNWXKeyMappingWidget*                  CallFunc_CreateWidget_KeyMappingWidget_1;          // 0x8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsMappingInitialized_IsValid;             // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsMappingInitialized_IsValid_1;           // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6C5B[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_55F0[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNWXKeyMappingWidget*                  CallFunc_CreateWidget_KeyMappingWidget_2;          // 0x18(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsMappingInitialized_IsValid_2;           // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -68,7 +68,7 @@ public:
 	bool                                         CallFunc_NotEqual_NameName_ReturnValue;            // 0x91(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x92 (0x92 - 0x0)
+// 0x93 (0x93 - 0x0)
 // Function WBP_Options_InputAction.WBP_Options_InputAction_C.AddMapping
 struct UWBP_Options_InputAction_C_AddMapping_Params
 {
@@ -76,6 +76,7 @@ public:
 	struct FPlayerKeyMapping                     NewMapping;                                        // 0x0(0x90)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                         CallFunc_IsMappingGamepad_IsGamepad;               // 0x90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsMappingInitialized_IsValid;             // 0x91(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x92(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0xB0 (0xB0 - 0x0)
@@ -102,7 +103,7 @@ struct UWBP_Options_InputAction_C_ExecuteUbergraph_WBP_Options_InputAction_Param
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x4(0x38)(IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6C5F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_55F1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerEvent                         K2Node_Event_MouseEvent_1;                         // 0x40(0x78)(ConstParm)
 	struct FPointerEvent                         K2Node_Event_MouseEvent;                           // 0xB8(0x78)(ConstParm)
 };

@@ -33,7 +33,8 @@ public:
 	void Construct();
 	void Destruct();
 	void CustomEvent(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_ShopScreen(int32 EntryPoint, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UCommonButtonBase* K2Node_CustomEvent_Button);
+	void BP_OnDeactivated();
+	void ExecuteUbergraph_WBP_ShopScreen(int32 EntryPoint, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UCommonButtonBase* K2Node_CustomEvent_Button, class UNWXShopOfferListPanelWidget* CallFunc_GetShopOfferList_ReturnValue, class UWBP_ShopOfferListPanel_C* K2Node_DynamicCast_AsWBP_Shop_Offer_List_Panel, bool K2Node_DynamicCast_bSuccess, class UWidget* CallFunc_GetFirstScrollChild_Output);
 };
 
 }

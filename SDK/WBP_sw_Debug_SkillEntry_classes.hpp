@@ -21,10 +21,10 @@ public:
 	class UTextBlock*                            Txt_skillName;                                     // 0x360(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                            Txt_skillpath;                                     // 0x368(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         AllowGranting_cheaterstore_;                       // 0x370(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_9306[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_90B7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  SkillName;                                         // 0x378(0x18)(Edit, BlueprintVisible)
 	class UNWXUserWidget*                        OwningScreen;                                      // 0x390(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9308[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_90B8[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSkillDataReference                   SkillReference;                                    // 0x3A0(0xE0)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

@@ -86,16 +86,16 @@ void ABP_Encounter_ArchetypeArena_C::GetTimeoutHandle(struct FTimerHandle* Timeo
 }
 
 
-// Function BP_Encounter_ArchetypeArena.BP_Encounter_ArchetypeArena_C.Reset Platforms and Award
+// Function BP_Encounter_ArchetypeArena.BP_Encounter_ArchetypeArena_C.Reset Platforms And Award
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void ABP_Encounter_ArchetypeArena_C::Reset_Platforms_and_Award()
+void ABP_Encounter_ArchetypeArena_C::Reset_Platforms_And_Award()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_Encounter_ArchetypeArena_C", "Reset Platforms and Award");
+		Func = Class->GetFunction("BP_Encounter_ArchetypeArena_C", "Reset Platforms And Award");
 
 
 
@@ -696,19 +696,20 @@ void ABP_Encounter_ArchetypeArena_C::Player_Interact(class ABP_Structure_Encount
 // (Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UEncounterDataAsset*         CallFunc_GetEncounterData_ReturnValue                            (ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UEncounterDataAsset*         CallFunc_GetEncounterData_ReturnValue_1                          (ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Get_Spawner_Waves_Current_Wave                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Get_Spawner_Waves_Total_Waves                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UEncounterDataAsset*         CallFunc_GetEncounterData_ReturnValue_1                          (ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_LessEqual_DoubleDouble_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UEncounterDataAsset*         CallFunc_GetEncounterData_ReturnValue_2                          (ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_LessEqual_DoubleDouble_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UEncounterArchetypeDataAssetArena*K2Node_DynamicCast_AsEncounter_Archetype_Data_Asset_Arena        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UEncounterDataAsset*         CallFunc_GetEncounterData_ReturnValue_3                          (ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_LessEqual_DoubleDouble_A_ImplicitCast                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_LessEqual_DoubleDouble_B_ImplicitCast                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Encounter_ArchetypeArena_C::Initialize(class UEncounterDataAsset* CallFunc_GetEncounterData_ReturnValue, int32 CallFunc_Get_Spawner_Waves_Current_Wave, int32 CallFunc_Get_Spawner_Waves_Total_Waves, bool CallFunc_GreaterEqual_IntInt_ReturnValue, class UEncounterDataAsset* CallFunc_GetEncounterData_ReturnValue_1, bool CallFunc_LessEqual_DoubleDouble_ReturnValue, class UEncounterDataAsset* CallFunc_GetEncounterData_ReturnValue_2, class UEncounterArchetypeDataAssetArena* K2Node_DynamicCast_AsEncounter_Archetype_Data_Asset_Arena, bool K2Node_DynamicCast_bSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, double CallFunc_LessEqual_DoubleDouble_A_ImplicitCast, double CallFunc_LessEqual_DoubleDouble_B_ImplicitCast)
+void ABP_Encounter_ArchetypeArena_C::Initialize(class UEncounterDataAsset* CallFunc_GetEncounterData_ReturnValue, class UEncounterDataAsset* CallFunc_GetEncounterData_ReturnValue_1, int32 CallFunc_Get_Spawner_Waves_Current_Wave, int32 CallFunc_Get_Spawner_Waves_Total_Waves, bool CallFunc_GreaterEqual_IntInt_ReturnValue, class UEncounterDataAsset* CallFunc_GetEncounterData_ReturnValue_2, bool CallFunc_LessEqual_DoubleDouble_ReturnValue, class UEncounterArchetypeDataAssetArena* K2Node_DynamicCast_AsEncounter_Archetype_Data_Asset_Arena, bool K2Node_DynamicCast_bSuccess, class UEncounterDataAsset* CallFunc_GetEncounterData_ReturnValue_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, double CallFunc_LessEqual_DoubleDouble_A_ImplicitCast, double CallFunc_LessEqual_DoubleDouble_B_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -718,14 +719,15 @@ void ABP_Encounter_ArchetypeArena_C::Initialize(class UEncounterDataAsset* CallF
 	Params::ABP_Encounter_ArchetypeArena_C_Initialize_Params Parms{};
 
 	Parms.CallFunc_GetEncounterData_ReturnValue = CallFunc_GetEncounterData_ReturnValue;
+	Parms.CallFunc_GetEncounterData_ReturnValue_1 = CallFunc_GetEncounterData_ReturnValue_1;
 	Parms.CallFunc_Get_Spawner_Waves_Current_Wave = CallFunc_Get_Spawner_Waves_Current_Wave;
 	Parms.CallFunc_Get_Spawner_Waves_Total_Waves = CallFunc_Get_Spawner_Waves_Total_Waves;
 	Parms.CallFunc_GreaterEqual_IntInt_ReturnValue = CallFunc_GreaterEqual_IntInt_ReturnValue;
-	Parms.CallFunc_GetEncounterData_ReturnValue_1 = CallFunc_GetEncounterData_ReturnValue_1;
-	Parms.CallFunc_LessEqual_DoubleDouble_ReturnValue = CallFunc_LessEqual_DoubleDouble_ReturnValue;
 	Parms.CallFunc_GetEncounterData_ReturnValue_2 = CallFunc_GetEncounterData_ReturnValue_2;
+	Parms.CallFunc_LessEqual_DoubleDouble_ReturnValue = CallFunc_LessEqual_DoubleDouble_ReturnValue;
 	Parms.K2Node_DynamicCast_AsEncounter_Archetype_Data_Asset_Arena = K2Node_DynamicCast_AsEncounter_Archetype_Data_Asset_Arena;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_GetEncounterData_ReturnValue_3 = CallFunc_GetEncounterData_ReturnValue_3;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_LessEqual_DoubleDouble_A_ImplicitCast = CallFunc_LessEqual_DoubleDouble_A_ImplicitCast;
 	Parms.CallFunc_LessEqual_DoubleDouble_B_ImplicitCast = CallFunc_LessEqual_DoubleDouble_B_ImplicitCast;
@@ -875,13 +877,14 @@ void ABP_Encounter_ArchetypeArena_C::ArenaTimedOut()
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_K2_IsTimerActiveHandle_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_K2_IsValidTimerHandle_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_K2_IsTimerActiveHandle_ReturnValue_1                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_K2_IsValidTimerHandle_ReturnValue_1                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AEncounterConfig*            K2Node_Event_OverridePOITarget_1                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanAND_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AEncounterConfig*            K2Node_Event_OverridePOITarget                                   (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -889,7 +892,7 @@ void ABP_Encounter_ArchetypeArena_C::ArenaTimedOut()
 // struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAnyPlayerInRadius_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Encounter_ArchetypeArena_C::ExecuteUbergraph_BP_Encounter_ArchetypeArena(int32 EntryPoint, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_K2_IsTimerActiveHandle_ReturnValue, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_K2_IsTimerActiveHandle_ReturnValue_1, bool CallFunc_K2_IsValidTimerHandle_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, class AEncounterConfig* K2Node_Event_OverridePOITarget_1, bool CallFunc_IsValid_ReturnValue, class AEncounterConfig* K2Node_Event_OverridePOITarget, bool CallFunc_IsValid_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsAnyPlayerInRadius_ReturnValue)
+void ABP_Encounter_ArchetypeArena_C::ExecuteUbergraph_BP_Encounter_ArchetypeArena(int32 EntryPoint, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_K2_IsTimerActiveHandle_ReturnValue, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_K2_IsTimerActiveHandle_ReturnValue_1, bool CallFunc_K2_IsValidTimerHandle_ReturnValue_1, class AEncounterConfig* K2Node_Event_OverridePOITarget_1, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_IsValid_ReturnValue, class AEncounterConfig* K2Node_Event_OverridePOITarget, bool CallFunc_IsValid_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsAnyPlayerInRadius_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -900,13 +903,14 @@ void ABP_Encounter_ArchetypeArena_C::ExecuteUbergraph_BP_Encounter_ArchetypeAren
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
 	Parms.CallFunc_K2_IsTimerActiveHandle_ReturnValue = CallFunc_K2_IsTimerActiveHandle_ReturnValue;
 	Parms.CallFunc_K2_IsValidTimerHandle_ReturnValue = CallFunc_K2_IsValidTimerHandle_ReturnValue;
-	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
+	Parms.CallFunc_BooleanAND_ReturnValue_1 = CallFunc_BooleanAND_ReturnValue_1;
 	Parms.CallFunc_K2_IsTimerActiveHandle_ReturnValue_1 = CallFunc_K2_IsTimerActiveHandle_ReturnValue_1;
 	Parms.CallFunc_K2_IsValidTimerHandle_ReturnValue_1 = CallFunc_K2_IsValidTimerHandle_ReturnValue_1;
-	Parms.CallFunc_BooleanAND_ReturnValue_1 = CallFunc_BooleanAND_ReturnValue_1;
 	Parms.K2Node_Event_OverridePOITarget_1 = K2Node_Event_OverridePOITarget_1;
+	Parms.CallFunc_BooleanAND_ReturnValue_2 = CallFunc_BooleanAND_ReturnValue_2;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.K2Node_Event_OverridePOITarget = K2Node_Event_OverridePOITarget;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;

@@ -24,7 +24,7 @@ public:
 	struct FSlateColor                           LNeutralTint;                                      // 0x30(0x14)(Edit, BlueprintVisible)
 	bool                                         CallFunc_Less_DoubleDouble_ReturnValue;            // 0x44(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x45(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_74DE[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7DE2[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_FormatTextFromType_ResultText;            // 0x48(0x18)(None)
 };
 

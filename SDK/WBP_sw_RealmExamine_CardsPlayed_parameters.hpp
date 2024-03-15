@@ -28,13 +28,13 @@ public:
 	class ANWXGameStateBase*                     CallFunc_GetNWXGameStateBase_ReturnValue;          // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FItemData>                     CallFunc_GenerateRealmCardsData_ReturnValue;       // 0x38(0x10)(ReferenceParm, ContainsInstancedReference)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x48(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7420[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_72FA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemData                             CallFunc_Array_Get_Item_1;                         // 0x50(0xD8)(ContainsInstancedReference)
 	bool                                         CallFunc_Greater_IntInt_ReturnValue;               // 0x128(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7421[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_72FB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetDefaultItemName_ReturnValue;           // 0x130(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue_1;               // 0x140(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7422[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_72FC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x148(0x18)(None)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x160(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -45,7 +45,7 @@ struct UWBP_sw_RealmExamine_CardsPlayed_C_ExecuteUbergraph_WBP_sw_RealmExamine_C
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7423[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_72FD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UWBP_sw_Readiness_RealmCard_C*> K2Node_MakeArray_Array;                            // 0x8(0x10)(ReferenceParm, ContainsInstancedReference)
 };
 

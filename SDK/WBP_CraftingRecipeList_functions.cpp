@@ -350,16 +350,12 @@ void UWBP_CraftingRecipeList_C::GetPopulatedVB(class UPanelWidget** PanelWidget,
 
 
 // Function WBP_CraftingRecipeList.WBP_CraftingRecipeList_C.OnEntrySelected
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UNWXMenuDataEntry*           SelectedEntry                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_GetImage_IsValidReference                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TSoftObjectPtr<class UTexture2D>   CallFunc_GetImage_EntryImage                                     (UObjectWrapper, HasGetValueTypeHash)
-// class FText                        CallFunc_GetDescription_ReturnValue                              (None)
-// class FText                        CallFunc_GetDisplayName_ReturnValue                              (None)
 
-void UWBP_CraftingRecipeList_C::OnEntrySelected(class UNWXMenuDataEntry* SelectedEntry, bool CallFunc_IsValid_ReturnValue, bool CallFunc_GetImage_IsValidReference, TSoftObjectPtr<class UTexture2D> CallFunc_GetImage_EntryImage, class FText CallFunc_GetDescription_ReturnValue, class FText CallFunc_GetDisplayName_ReturnValue)
+void UWBP_CraftingRecipeList_C::OnEntrySelected(class UNWXMenuDataEntry* SelectedEntry, bool CallFunc_IsValid_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -370,10 +366,6 @@ void UWBP_CraftingRecipeList_C::OnEntrySelected(class UNWXMenuDataEntry* Selecte
 
 	Parms.SelectedEntry = SelectedEntry;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_GetImage_IsValidReference = CallFunc_GetImage_IsValidReference;
-	Parms.CallFunc_GetImage_EntryImage = CallFunc_GetImage_EntryImage;
-	Parms.CallFunc_GetDescription_ReturnValue = CallFunc_GetDescription_ReturnValue;
-	Parms.CallFunc_GetDisplayName_ReturnValue = CallFunc_GetDisplayName_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -796,12 +788,34 @@ void UWBP_CraftingRecipeList_C::BndEvt__WBP_CraftingRecipeList_bu_ClearSearch_K2
 }
 
 
+// Function WBP_CraftingRecipeList.WBP_CraftingRecipeList_C.BndEvt__WBP_CraftingRecipeList_WBP_Common_Button_Base_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CraftingRecipeList_C::BndEvt__WBP_CraftingRecipeList_WBP_Common_Button_Base_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_CraftingRecipeList_C", "BndEvt__WBP_CraftingRecipeList_WBP_Common_Button_Base_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::UWBP_CraftingRecipeList_C_BndEvt__WBP_CraftingRecipeList_WBP_Common_Button_Base_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature_Params Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_CraftingRecipeList.WBP_CraftingRecipeList_C.ExecuteUbergraph_WBP_CraftingRecipeList
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_GetDescription_ReturnValue                              (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_GetDisplayName_ReturnValue                              (None)
 // class FText                        K2Node_ComponentBoundEvent_Text                                  (ConstParm)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -818,10 +832,14 @@ void UWBP_CraftingRecipeList_C::BndEvt__WBP_CraftingRecipeList_bu_ClearSearch_K2
 // class FString                      CallFunc_GetSearchString_ReturnValue_1                           (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsEmpty_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                     K2Node_Select_Default                                            (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     K2Node_Select_Default                                            (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UNWXLocalPlayer*             CallFunc_GetOwningLocalPlayer_ReturnValue                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Generic_Text_Popup_C*   CallFunc_CreateWidgetInstanceFromLayer_ReturnValue               (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CraftingRecipeList_C::ExecuteUbergraph_WBP_CraftingRecipeList(int32 EntryPoint, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue, class FText K2Node_ComponentBoundEvent_Text, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, class UBP_CraftingCreationComponent_C* CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent, const class FString& CallFunc_GetSearchString_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, enum class ECraftingScreenState CallFunc_GetCraftingScreenState_ReturnValue, const class FString& CallFunc_GetSearchString_ReturnValue_1, bool CallFunc_IsEmpty_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UWidget* K2Node_Select_Default, bool CallFunc_IsValid_ReturnValue_2)
+void UWBP_CraftingRecipeList_C::ExecuteUbergraph_WBP_CraftingRecipeList(int32 EntryPoint, class FText CallFunc_GetDescription_ReturnValue, bool CallFunc_IsValid_ReturnValue, class FText CallFunc_GetDisplayName_ReturnValue, class FText K2Node_ComponentBoundEvent_Text, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, class UBP_CraftingCreationComponent_C* CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent, const class FString& CallFunc_GetSearchString_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, enum class ECraftingScreenState CallFunc_GetCraftingScreenState_ReturnValue, const class FString& CallFunc_GetSearchString_ReturnValue_1, bool CallFunc_IsEmpty_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue_2, class UWidget* K2Node_Select_Default, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, class UNWXLocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue, class UWBP_Generic_Text_Popup_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -831,8 +849,9 @@ void UWBP_CraftingRecipeList_C::ExecuteUbergraph_WBP_CraftingRecipeList(int32 En
 	Params::UWBP_CraftingRecipeList_C_ExecuteUbergraph_WBP_CraftingRecipeList_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.CallFunc_GetDescription_ReturnValue = CallFunc_GetDescription_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_GetDisplayName_ReturnValue = CallFunc_GetDisplayName_ReturnValue;
 	Parms.K2Node_ComponentBoundEvent_Text = K2Node_ComponentBoundEvent_Text;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -849,8 +868,12 @@ void UWBP_CraftingRecipeList_C::ExecuteUbergraph_WBP_CraftingRecipeList(int32 En
 	Parms.CallFunc_GetSearchString_ReturnValue_1 = CallFunc_GetSearchString_ReturnValue_1;
 	Parms.CallFunc_IsEmpty_ReturnValue = CallFunc_IsEmpty_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
-	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
+	Parms.CallFunc_GetOwningLocalPlayer_ReturnValue = CallFunc_GetOwningLocalPlayer_ReturnValue;
+	Parms.CallFunc_CreateWidgetInstanceFromLayer_ReturnValue = CallFunc_CreateWidgetInstanceFromLayer_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -67,7 +67,7 @@ public:
 struct FAddAccountEntitlementsResponse
 {
 public:
-	uint8                                        Pad_2C71[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2848[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -75,7 +75,7 @@ public:
 struct FAddProfileResponse
 {
 public:
-	uint8                                        Pad_2C72[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2849[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -83,7 +83,7 @@ public:
 struct FAddProfileEntitlementsResponse
 {
 public:
-	uint8                                        Pad_2C73[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_284A[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -99,7 +99,7 @@ public:
 struct FAddRoleToAccountResponse
 {
 public:
-	uint8                                        Pad_2C74[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_284B[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -115,7 +115,7 @@ public:
 struct FAttachFileToJiraResponse
 {
 public:
-	uint8                                        Pad_2C75[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_284C[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -126,10 +126,10 @@ public:
 	class FString                                ID;                                                // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                PingEndpoint;                                      // 0x10(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PingPort;                                          // 0x20(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C76[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_284D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Platform;                                          // 0x28(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxDeploys;                                        // 0x38(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C77[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_284E[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -196,7 +196,7 @@ public:
 struct FClaimCodeResponse
 {
 public:
-	uint8                                        Pad_2C78[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_284F[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -220,7 +220,7 @@ public:
 struct FCopyWorldStateResponse
 {
 public:
-	uint8                                        Pad_2C79[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2850[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -236,7 +236,7 @@ public:
 struct FCreateCodeResponse
 {
 public:
-	uint8                                        Pad_2C7A[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2851[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -261,7 +261,7 @@ public:
 struct FOperation
 {
 public:
-	uint8                                        Pad_2C7B[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2852[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x50 (0x50 - 0x0)
@@ -302,7 +302,7 @@ public:
 struct FCreateRedemptionsResponse
 {
 public:
-	uint8                                        Pad_2C7C[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2853[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -326,7 +326,7 @@ public:
 struct FCreateShardResponse
 {
 public:
-	uint8                                        Pad_2C7D[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2854[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -334,7 +334,7 @@ public:
 struct FDeleteResponse
 {
 public:
-	uint8                                        Pad_2C7E[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2855[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -342,7 +342,7 @@ public:
 struct FDeleteProfileResponse
 {
 public:
-	uint8                                        Pad_2C7F[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2856[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -350,7 +350,7 @@ public:
 struct FDeleteShardResponse
 {
 public:
-	uint8                                        Pad_2C80[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2857[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -418,10 +418,10 @@ public:
 	class FString                                Name;                                              // 0x10(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Shard;                                             // 0x20(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Players;                                           // 0x30(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C81[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2858[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Map;                                               // 0x38(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EDeployStatus                     Status;                                            // 0x48(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C82[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2859[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        Tags;                                              // 0x50(0x10)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	TMap<class FString, class FString>           Annotations;                                       // 0x60(0x50)(BlueprintVisible, NativeAccessSpecifierPublic)
 	class FString                                Platform;                                          // 0xB0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -554,7 +554,7 @@ public:
 	class FString                                ID;                                                // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                RewardSku;                                         // 0x10(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsFinite;                                          // 0x20(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C83[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_285A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                SourceType;                                        // 0x28(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                SourceId;                                          // 0x38(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -706,7 +706,7 @@ public:
 	class FString                                Name;                                              // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Map;                                               // 0x10(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Capacity;                                          // 0x20(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C84[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_285B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        Tags;                                              // 0x28(0x10)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	TMap<class FString, class FString>           Annotations;                                       // 0x38(0x50)(BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FTimespan                             ReservationTime;                                   // 0x88(0x8)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -727,16 +727,16 @@ public:
 	TArray<class FString>                        InitialMaplist;                                    // 0x68(0x10)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	class FString                                InitialBootstrapConfig;                            // 0x78(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         EnforceSupportRoles;                               // 0x88(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C85[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_285C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Ttl;                                               // 0x8C(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         UseFleets;                                         // 0x90(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C86[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_285D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDateTime                             CreatedAt;                                         // 0x98(0x8)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDateTime                             UpdatedAt;                                         // 0xA0(0x8)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FDeploymentSet>                DeploymentSets;                                    // 0xA8(0x10)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	TMap<class FString, class FString>           Annotations;                                       // 0xB8(0x50)(BlueprintVisible, NativeAccessSpecifierPublic)
 	int32                                        BufferSize;                                        // 0x108(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C87[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_285E[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x110 (0x110 - 0x0)
@@ -779,7 +779,7 @@ public:
 struct FInvitePlayersToRoomResponse
 {
 public:
-	uint8                                        Pad_2C88[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_285F[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -787,7 +787,7 @@ public:
 struct FInvitePlayerToRealmViaChatResponse
 {
 public:
-	uint8                                        Pad_2C89[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2860[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -798,7 +798,7 @@ public:
 	TArray<class FString>                        Accounts;                                          // 0x0(0x10)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	class FString                                NextPageToken;                                     // 0x10(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        NumAssociatedAccounts;                             // 0x20(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C8A[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2861[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -809,7 +809,7 @@ public:
 	TArray<class FString>                        Accounts;                                          // 0x0(0x10)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	class FString                                NextPageToken;                                     // 0x10(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        NumAssociatedAccounts;                             // 0x20(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C8B[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2862[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -829,7 +829,7 @@ public:
 	class FString                                DeployId;                                          // 0x10(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDateTime                             CreatedAt;                                         // 0x20(0x8)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EEventType                        EventType;                                         // 0x28(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C8C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2863[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Platform;                                          // 0x30(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                GameServer;                                        // 0x40(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -885,7 +885,7 @@ struct FReward
 public:
 	class FString                                ID;                                                // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsFinite;                                          // 0x10(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C8D[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2864[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -919,7 +919,7 @@ public:
 struct FMakeAnnouncementResponse
 {
 public:
-	uint8                                        Pad_2C8E[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2865[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -942,9 +942,9 @@ public:
 	TArray<class FString>                        Tags;                                              // 0x20(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                        Players;                                           // 0x30(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsRunning;                                        // 0x34(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C8F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2866[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Capacity;                                          // 0x38(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C90[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2867[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -978,7 +978,7 @@ public:
 struct FRecordDeployEventsResponse
 {
 public:
-	uint8                                        Pad_2C91[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2868[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -986,7 +986,7 @@ public:
 struct FRecordDeployPlayersResponse
 {
 public:
-	uint8                                        Pad_2C92[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2869[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -994,7 +994,7 @@ public:
 struct FRemoveAccountEntitlementsResponse
 {
 public:
-	uint8                                        Pad_2C93[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_286A[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1002,7 +1002,7 @@ public:
 struct FRemovePlayersFromRoomResponse
 {
 public:
-	uint8                                        Pad_2C94[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_286B[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1010,7 +1010,7 @@ public:
 struct FRemoveProfileResponse
 {
 public:
-	uint8                                        Pad_2C95[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_286C[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1018,7 +1018,7 @@ public:
 struct FRemoveProfileEntitlementsResponse
 {
 public:
-	uint8                                        Pad_2C96[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_286D[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1026,7 +1026,7 @@ public:
 struct FRemoveProviderByAccountIDResponse
 {
 public:
-	uint8                                        Pad_2C97[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_286E[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1034,7 +1034,7 @@ public:
 struct FRemoveRoleFromAccountResponse
 {
 public:
-	uint8                                        Pad_2C98[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_286F[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1042,7 +1042,7 @@ public:
 struct FReportPlayerActionResponse
 {
 public:
-	uint8                                        Pad_2C99[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2870[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1050,7 +1050,7 @@ public:
 struct FReportPlayerResponse
 {
 public:
-	uint8                                        Pad_2C9A[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2871[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -1084,7 +1084,7 @@ public:
 struct FSetDeployAnnotationsResponse
 {
 public:
-	uint8                                        Pad_2C9B[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2872[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1092,7 +1092,7 @@ public:
 struct FSetDeployScoreResponse
 {
 public:
-	uint8                                        Pad_2C9C[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2873[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -1108,7 +1108,7 @@ public:
 struct FSetRespiteResponse
 {
 public:
-	uint8                                        Pad_2C9D[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2874[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1116,7 +1116,7 @@ public:
 struct FSetWorldStateResponse
 {
 public:
-	uint8                                        Pad_2C9E[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2875[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1124,7 +1124,7 @@ public:
 struct FStopAllDeploysResponse
 {
 public:
-	uint8                                        Pad_2C9F[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2876[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1132,7 +1132,7 @@ public:
 struct FStopDeployResponse
 {
 public:
-	uint8                                        Pad_2CA0[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2877[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -1148,7 +1148,7 @@ public:
 struct FUnaryCallResponse
 {
 public:
-	uint8                                        Pad_2CA1[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2878[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -1158,7 +1158,7 @@ struct FUnaryCallWithParamsResponse
 public:
 	class FString                                AResponseString;                                   // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        AnResponseInt;                                     // 0x10(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CA2[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2879[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xD8 (0xD8 - 0x0)
@@ -1174,7 +1174,7 @@ public:
 struct FUpdateProfileMetadataResponse
 {
 public:
-	uint8                                        Pad_2CA3[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_287A[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1182,7 +1182,7 @@ public:
 struct FUpdateShardResponse
 {
 public:
-	uint8                                        Pad_2CA4[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_287B[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1190,7 +1190,7 @@ public:
 struct FUpdateShardVersionsResponse
 {
 public:
-	uint8                                        Pad_2CA5[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_287C[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -1216,7 +1216,7 @@ public:
 	TMap<class FString, class FString>           LoadoutMetadata;                                   // 0xE0(0x50)(BlueprintVisible, NativeAccessSpecifierPublic)
 	TSet<class FName>                            Roles;                                             // 0x130(0x50)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	int64                                        LastSpawnedTimestamp;                              // 0x180(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CA6[0xD8];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_287D[0xD8];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x78 (0x78 - 0x0)
@@ -1228,7 +1228,7 @@ public:
 	int32                                        BaseRealmPower;                                    // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        RealmDifficulty;                                   // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsCurated;                                        // 0xC(0x1)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CA7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_287E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        HumanInfluenceLevel;                               // 0x10(0x4)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        NatureInfluenceLevel;                              // 0x14(0x4)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        CreatureInfluenceLevel;                            // 0x18(0x4)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1238,7 +1238,7 @@ public:
 	class FString                                PortalTargetDeploymentID;                          // 0x40(0x10)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                PortalTargetPlayerStartTag;                        // 0x50(0x10)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsDebugRealm;                                     // 0x60(0x1)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CA8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_287F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                POIDistributionKey;                                // 0x68(0x10)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1253,7 +1253,7 @@ public:
 	class FString                                PreferredRegion;                                   // 0x30(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Platform;                                          // 0x40(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsPublicRealm;                                    // 0x50(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CA9[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2880[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -1322,7 +1322,7 @@ struct FListRolesRequest
 {
 public:
 	int32                                        PageSize;                                          // 0x0(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CAA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2881[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PageToken;                                         // 0x8(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1333,7 +1333,7 @@ struct FListAccountsWithRoleRequest
 public:
 	class FString                                Role;                                              // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PageSize;                                          // 0x10(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CAB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2882[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PageToken;                                         // 0x18(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1380,12 +1380,13 @@ public:
 	TArray<uint8>                                EncryptedAppTicket;                                // 0x0(0x10)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 
-// 0x10 (0x10 - 0x0)
+// 0x20 (0x20 - 0x0)
 // ScriptStruct NWXOnlineServices.AuthWithEOSRequest
 struct FAuthWithEOSRequest
 {
 public:
 	class FString                                IdToken;                                           // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                EntitlementToken;                                  // 0x10(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x10 (0x10 - 0x0)
@@ -1417,7 +1418,7 @@ public:
 struct FAcceptEULARequest
 {
 public:
-	uint8                                        Pad_2CAC[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2883[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -1437,7 +1438,7 @@ struct FCreateRoomRequest
 public:
 	class FString                                RoomName;                                          // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        RoomCapacity;                                      // 0x10(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CAD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2884[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        ProfileIds;                                        // 0x18(0x10)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	class FString                                Reason;                                            // 0x28(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1516,7 +1517,7 @@ public:
 struct FGetMessageOfTheDayRequest
 {
 public:
-	uint8                                        Pad_2CAE[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2885[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -1611,7 +1612,7 @@ struct FListDeployRecordsRequest
 public:
 	class FString                                Shard;                                             // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PageSize;                                          // 0x10(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CAF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2886[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PageToken;                                         // 0x18(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1630,7 +1631,7 @@ struct FListDeployEventsRequest
 public:
 	class FString                                ID;                                                // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PageSize;                                          // 0x10(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CB0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2887[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PageToken;                                         // 0x18(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1654,7 +1655,7 @@ struct FSetDeployScoreRequest
 public:
 	class FString                                DeployName;                                        // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Score;                                             // 0x10(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CB1[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2888[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -1700,7 +1701,7 @@ struct FBootstrapDeploymentResponse
 {
 public:
 	class FString                                Name;                                              // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CB2[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2889[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1708,7 +1709,7 @@ public:
 struct FGetMyAccountEntitlementsRequest
 {
 public:
-	uint8                                        Pad_2CB3[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_288A[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1716,7 +1717,7 @@ public:
 struct FGetMyProfileEntitlementsRequest
 {
 public:
-	uint8                                        Pad_2CB4[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_288B[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -1811,7 +1812,7 @@ struct FListEntitlementsRequest
 {
 public:
 	int32                                        PageSize;                                          // 0x0(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CB5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_288C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PageToken;                                         // 0x8(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1823,7 +1824,7 @@ public:
 	class FString                                Entitlement;                                       // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                PageToken;                                         // 0x10(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PageSize;                                          // 0x20(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CB6[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_288D[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -1834,7 +1835,7 @@ public:
 	class FString                                Entitlement;                                       // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                PageToken;                                         // 0x10(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PageSize;                                          // 0x20(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CB7[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_288E[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -2063,7 +2064,7 @@ struct FSearchProfilesRequest
 {
 public:
 	int32                                        PageSize;                                          // 0x0(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CB8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2890[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PageToken;                                         // 0x8(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Name;                                              // 0x18(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                ShardId;                                           // 0x28(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2075,7 +2076,7 @@ struct FQueryProfilesRequest
 {
 public:
 	int32                                        PageSize;                                          // 0x0(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CB9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2891[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PageToken;                                         // 0x8(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Name;                                              // 0x18(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -2121,7 +2122,7 @@ struct FCreateRewardRequest
 public:
 	class FString                                RewardSku;                                         // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsFinite;                                          // 0x10(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CBA[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2892[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -2129,7 +2130,7 @@ public:
 struct FAssignMyTwitchRedemptionsRequest
 {
 public:
-	uint8                                        Pad_2CBB[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2893[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -2137,7 +2138,7 @@ public:
 struct FGetMyClaimableRedemptionsRequest
 {
 public:
-	uint8                                        Pad_2CBC[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2894[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -2154,7 +2155,7 @@ public:
 struct FListRewardsRequest
 {
 public:
-	uint8                                        Pad_2CBD[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2895[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -2235,7 +2236,7 @@ struct FListShardsRequest
 {
 public:
 	int32                                        PageSize;                                          // 0x0(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CBE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2896[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PageToken;                                         // 0x8(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -2260,7 +2261,7 @@ public:
 struct FUnaryCallRequest
 {
 public:
-	uint8                                        Pad_2CBF[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2897[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -2270,7 +2271,7 @@ struct FUnaryCallWithParamsRequest
 public:
 	class FString                                AString;                                           // 0x0(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        AnInt;                                             // 0x10(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CC0[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2898[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)

@@ -15,7 +15,7 @@ class UBP_ConditionBehaviour_Creature_Killed_WithTraits_C : public UBP_Condition
 {
 public:
 	enum class EGameplayContainerMatchType       CheckType;                                         // 0x9C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A2FD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A3C3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 CreatureTraits;                                    // 0xA0(0x20)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 	static class UClass* StaticClass();

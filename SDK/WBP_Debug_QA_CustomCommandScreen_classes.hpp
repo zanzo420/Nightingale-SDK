@@ -49,7 +49,7 @@ public:
 	class FString                                Str_commandToAdd;                                  // 0x458(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	class UCodexTrackerComponent*                CodexTrackerComponent;                             // 0x468(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         bViewRecipeAssets;                                 // 0x470(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2F13[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_91F4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            NewEventDispatcher;                                // 0x478(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UNWXCheatManager*                      CurrentCheatManager;                               // 0x488(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FSkillDataReference                   DefaultLoadout;                                    // 0x490(0xE0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)

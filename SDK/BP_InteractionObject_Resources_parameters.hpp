@@ -20,7 +20,7 @@ struct UBP_InteractionObject_Resources_C_GetInteractionTextForResourceNode_Param
 public:
 	class AResourceNodeIIMBase*                  ResourceNode;                                      // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        InstanceID;                                        // 0x8(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8080[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_35B2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  InteractText;                                      // 0x10(0x18)(Parm, OutParm)
 };
 

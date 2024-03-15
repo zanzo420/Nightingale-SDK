@@ -9,21 +9,21 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x28 (0x368 - 0x340)
+// 0x28 (0x370 - 0x348)
 // WidgetBlueprintGeneratedClass WBP_GuideBook_SearchBar.WBP_GuideBook_SearchBar_C
-class UWBP_GuideBook_SearchBar_C : public UNWXUserWidget
+class UWBP_GuideBook_SearchBar_C : public UNWXCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x340(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBorder*                               Border_0;                                          // 0x348(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                               but_ClearText;                                     // 0x350(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNWXEditableText*                      SearchText;                                        // 0x358(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_GuideBookComponent_C*              GuideBookComponent;                                // 0x360(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x348(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBorder*                               Border_0;                                          // 0x350(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                               but_ClearText;                                     // 0x358(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNWXEditableText*                      SearchText;                                        // 0x360(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_GuideBookComponent_C*              GuideBookComponent;                                // 0x368(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_GuideBook_SearchBar_C* GetDefaultObj();
 
-	class UWidget* GetDefaultFocusWidget();
+	class UWidget* BP_GetDesiredFocusTarget();
 	void SetSearchText(class FText NewSearchText, const class FString& CallFunc_Conv_TextToString_ReturnValue);
 	void Construct();
 	void BndEvt__WBP_GuideBook_SearchBar_but_ClearText_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();

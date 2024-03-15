@@ -19,7 +19,7 @@ struct UWBP_Inv_StorageScreen_C_BndEvt__WBP_Inv_StorageScreen_WBP_StoragePanel_K
 {
 public:
 	bool                                         IsHovered;                                         // 0x0(0x1)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_399D[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_98F6[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       InventoryEntry;                                    // 0x10(0x2F0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	enum class ETooltipSource                    TooltipSource;                                     // 0x300(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -31,13 +31,13 @@ struct UWBP_Inv_StorageScreen_C_ExecuteUbergraph_WBP_Inv_StorageScreen_Params
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_39A0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_98F7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UGlobalAudioSubsystem*                 CallFunc_GetEngineSubsystem_ReturnValue;           // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_ComponentBoundEvent_IsHovered;              // 0x10(0x1)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_39A1[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_98F8[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       K2Node_ComponentBoundEvent_InventoryEntry;         // 0x20(0x2F0)(ConstParm)
 	enum class ETooltipSource                    K2Node_ComponentBoundEvent_TooltipSource;          // 0x310(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_39A2[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_98F9[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       K2Node_Select_Default;                             // 0x320(0x2F0)(None)
 	struct FInventoryEntry                       CallFunc_GetSelectedEntry_ReturnValue;             // 0x610(0x2F0)(ConstParm)
 };

@@ -35,16 +35,16 @@ public:
 	float                                        Shadow_Sample_Scale_63_B2B5A85144B03CB782979B9493FF91A1; // 0x34(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Shadow_Tracing_Distance_65_8979419A481525A7A3CF03A3CDD1EB20; // 0x38(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ENoiseType                        Volumetric_Cloud_Noise_Type_125_C81EA4194E2624ED5E7F1ABDE5F06D89; // 0x3C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64EA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33C8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Base_Cloud_Mip_Level_67_2A79A24B45028B91B1FA8D9C61FDBC95; // 0x40(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Macro_Variation_69_26385AE64A1CC508CFBA82BCEBB78639; // 0x44(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Macro_Scale_71_055A59C94973E1FE1E5BA4A6A4AABE83;   // 0x48(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Volumetric_CLoud_Scale_73_3E52287B46CAA17A756AAD8FE2CC5066; // 0x4C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Two_Layers_76_AFA441C3417C963AE348F68FB174D751;    // 0x50(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64EC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33C9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Layer_2_Density_Scale_79_EF3FD1884F2626EC414B3FAF7242962B; // 0x54(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Layer_2_Extinction_Scale_81_6B992C7F401F05C995C4AEA5EB5EB246; // 0x58(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64EE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_33CA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             Layer_2_Cloud_Scale_84_F150751247A7EC7C229EA5800AEA9A3E; // 0x60(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Layer_2_Mip_Offset_91_4965C85D454066683A2FF0AE7E7F9266; // 0x70(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Distance_between_Layers_92_9CCAC85640A30D9822E867BD0E626FDA; // 0x74(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

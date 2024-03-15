@@ -34,7 +34,7 @@ public:
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x50(0x50)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array_1;                          // 0xA0(0x10)(ReferenceParm)
 	bool                                         CallFunc_IsGameplayTagValid_ReturnValue;           // 0xB0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_59B4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_70B4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Format_ReturnValue_1;                     // 0xB8(0x18)(None)
 	class FString                                CallFunc_Conv_TextToString_ReturnValue_1;          // 0xD0(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                  CallFunc_Get_Specific_Codex_Subentry_For_Popup_CodexSubentryText; // 0xE0(0x18)(None)

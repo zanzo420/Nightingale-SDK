@@ -30,7 +30,7 @@ public:
 	class UAkComponent*                          AkComponentTrunk;                                  // 0x778(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                       CachedFallSpeed;                                   // 0x780(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         MinorAudioImpactOnCooldown;                        // 0x788(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45B9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FD0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       BranchesAudioImpactCooldownTime;                   // 0x790(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          UpdateAudioTimerHandle;                            // 0x798(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       AudioCacheTime;                                    // 0x7A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -42,23 +42,23 @@ public:
 	double                                       AudioUpdateTime;                                   // 0x7D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FTransform>                    AudioMultipositionTransforms;                      // 0x7D8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         BranchesImpactAudioOnCooldown;                     // 0x7E8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45BA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FD1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                DamageCauser;                                      // 0x7F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         AudioDebugActive;                                  // 0x7F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         PlayedBranchAudioOnce;                             // 0x7F9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         DrawColliders;                                     // 0x7FA(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         LeavesScheduled;                                   // 0x7FB(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45BB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FD2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       FallingLeavesSpeedThreshold;                       // 0x800(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FAmbienceData                         AmbienceDataRow;                                   // 0x808(0x110)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UNiagaraComponent*>             FallingLeaves;                                     // 0x918(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	bool                                         GroundHitEventsCalled;                             // 0x928(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45BC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FD3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       FrameFallSpeed;                                    // 0x930(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       JointBreakSpeedThreshold;                          // 0x938(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CutOffsetInCM;                                     // 0x940(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ConstraintsActive;                                 // 0x948(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45BD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FD4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       AnchorHeightInCM;                                  // 0x950(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       MinimumTrunkRadius;                                // 0x958(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       MaximumTrunkRadius;                                // 0x960(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -66,12 +66,12 @@ public:
 	double                                       MaximumJointLimit;                                 // 0x970(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       AngularMotorSizeThreshold;                         // 0x978(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ANWXTreeTrunkGeometryCollection*       TrunkGeometryCollection;                           // 0x980(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_45BE[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FD5[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FIIMInstance                          IIMInstance;                                       // 0x990(0x170)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UInstancedResourceNodeComponent*       IIMComponent;                                      // 0xB00(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IIIMProxyResourceGranter> ResourceGranter;                                   // 0xB08(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ResourcesGranted;                                  // 0xB18(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45BF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FD6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 DamageTags;                                        // 0xB20(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                       TrunkDamagePower;                                  // 0xB40(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       StumpTransitionDelayInSecs;                        // 0xB48(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

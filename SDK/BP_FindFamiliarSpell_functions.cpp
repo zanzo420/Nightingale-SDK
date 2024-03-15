@@ -210,16 +210,16 @@ void ABP_FindFamiliarSpell_C::ConcentrationCheck(const struct FGameplayTag& Temp
 }
 
 
-// Function BP_FindFamiliarSpell.BP_FindFamiliarSpell_C.CorpseCleanup
+// Function BP_FindFamiliarSpell.BP_FindFamiliarSpell_C.CorpseCleanUp
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void ABP_FindFamiliarSpell_C::CorpseCleanup()
+void ABP_FindFamiliarSpell_C::CorpseCleanUp()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_FindFamiliarSpell_C", "CorpseCleanup");
+		Func = Class->GetFunction("BP_FindFamiliarSpell_C", "CorpseCleanUp");
 
 
 

@@ -18,14 +18,14 @@ public:
 	class UInWorldItemContainerComponent*        CachedItemRewards;                                 // 0xA30(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	TArray<class FString>                        ProfilesGivenLoot;                                 // 0xA38(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	bool                                         bIsUnlocked;                                       // 0xA48(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A50A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5717[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FConditionalReward>            ConditionalRewards;                                // 0xA50(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<TScriptInterface<class IItemContainer>> Containers;                                        // 0xA60(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	TMap<class FString, struct FInventoryEntryPersistedArray> PersistedItems;                                    // 0xA70(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, SaveGame)
 	class USphereComponent*                      AOESphere;                                         // 0xAC0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         bIsContainerOpen;                                  // 0xAC8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	bool                                         bLocalCachedContainerOpen;                         // 0xAC9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A50B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5718[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        ProximityRadius;                                   // 0xACC(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

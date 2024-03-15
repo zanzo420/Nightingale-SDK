@@ -36,7 +36,7 @@ struct UBP_UIMenusComponent_C_GetPingObjectType_Params
 {
 public:
 	enum class E_PingObjectType                  PingObjectType;                                    // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_521A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EE0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  DataTableRowName;                                  // 0x4(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -59,17 +59,17 @@ public:
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsStandalone_ReturnValue;                 // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0x9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_521B[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EE5[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_PlayerController_C*                CallFunc_GetOwningPlayerController_PlayerController; // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_PlayerController_C*                CallFunc_GetOwningPlayerController_PlayerController_1; // 0x18(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FErrorMessageData                     CallFunc_GetNextError_OutErrorMessageData;         // 0x20(0x58)(None)
 	bool                                         CallFunc_GetNextError_ReturnValue;                 // 0x78(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_521C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EE6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UErrorMessagingSubsystem*              CallFunc_GetLocalPlayerSubSystemFromPlayerController_ReturnValue; // 0x80(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x88(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_521D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EE7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x8C(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_521E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EE8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_PlayerController_C*                CallFunc_GetOwningPlayerController_PlayerController_2; // 0xA0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0xA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -80,7 +80,7 @@ struct UBP_UIMenusComponent_C_IssueReportWindowCurrentlyOpen_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_521F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EEC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXHUDBase*                           CallFunc_GetNWXHUD_ReturnValue;                    // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsCurrentlyOpenWindowOfClass_ReturnValue; // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -102,7 +102,7 @@ public:
 	class UNWXCommonWindowWidget*                Window;                                            // 0x18(0x8)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class ANWXPlayerController*                  CallFunc_GetLocalPlayerController_LocalPlayerController; // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5220[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EEF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ULocalPlayer*                          CallFunc_GetLocalPlayerFromController_ReturnValue; // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWBP_SocialScreen_C*                   CallFunc_CreateWidgetInstanceFromLayer_ReturnValue; // 0x38(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue_1;          // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -110,7 +110,7 @@ public:
 	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue_3;          // 0x42(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue_4;          // 0x43(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue_5;          // 0x44(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5221[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EF0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXPlayerController*                  CallFunc_GetLocalPlayerController_LocalPlayerController_1; // 0x48(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          CallFunc_GuideBookCraftingRecipesCategoryTag_ReturnValue; // 0x50(0x8)(NoDestructor, HasGetValueTypeHash)
 	class ULocalPlayer*                          CallFunc_GetLocalPlayerFromController_ReturnValue_1; // 0x58(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -149,7 +149,7 @@ struct UBP_UIMenusComponent_C_IsWindowOpen_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5222[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EF6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_PlayerController_C*                PlayerController;                                  // 0x8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class UNWXWindowWidget*                      CallFunc_GetCurrentlyOpenWindow_ReturnValue;       // 0x10(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -168,7 +168,7 @@ public:
 	struct FMember                               CallFunc_Array_Get_Item;                           // 0x50(0x20)(None)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x70(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x74(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5223[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EF7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x78(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -180,21 +180,21 @@ public:
 	class UNWXWindowWidget*                      Window;                                            // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                        ZOrder;                                            // 0x8(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ReturnValue;                                       // 0xC(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5224[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EFB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXPlayerController*                  PlayerController;                                  // 0x10(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetWorldIsTearingDown_ReturnValue;        // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x1A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5225[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EFC[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXPlayerController*                  CallFunc_GetLocalPlayerController_LocalPlayerController; // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x29(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5226[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EFD[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsServer_ReturnValue;                     // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsDedicatedServer_ReturnValue;            // 0x3A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5227[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6EFE[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AHUD*                                  CallFunc_GetHUD_ReturnValue;                       // 0x40(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AHUD_NWX_C*                            K2Node_DynamicCast_AsHUD_NWX;                      // 0x48(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -238,7 +238,7 @@ public:
 	class ABP_PlayerController_C*                PlayerController;                                  // 0x0(0x8)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                     CallFunc_GetPlayerController_ReturnValue;          // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5231[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F04[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_PlayerController_C*                K2Node_DynamicCast_AsBP_Player_Controller;         // 0x18(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -250,11 +250,11 @@ struct UBP_UIMenusComponent_C_AddPanelToViewport_Params
 public:
 	class UUserWidget*                           Window;                                            // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                        ZOrder;                                            // 0x8(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5232[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F0A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNWXWindowWidget*                      CallFunc_GetCurrentlyOpenWindow_ReturnValue;       // 0x10(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EInputMode                        CallFunc_GetDesiredInputMode_ReturnValue;          // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5233[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F0B[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_PlayerController_C*                CallFunc_GetOwningPlayerController_PlayerController; // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IBPI_HUD_Manager_C>   CallFunc_Get_HUD_Manager_HUD_Manager;              // 0x28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -375,22 +375,22 @@ struct UBP_UIMenusComponent_C_ExecuteUbergraph_BP_UIMenusComponent_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5234[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F27[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXPlayerController*                  CallFunc_GetLocalPlayerController_LocalPlayerController; // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ULocalPlayer*                          CallFunc_GetLocalPlayerFromController_ReturnValue; // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsWindowOpen_ReturnValue;                 // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5235[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F29[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_ReportIssue_Screen_C*             CallFunc_CreateWidgetInstanceFromLayer_ReturnValue; // 0x20(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class ANWXPlayerController*                  CallFunc_GetNWXPlayerController_ReturnValue;       // 0x28(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_Creature_NPC_Human_C*              K2Node_CustomEvent_NPCToRevive;                    // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ULocalPlayer*                          CallFunc_GetLocalPlayerFromController_ReturnValue_1; // 0x38(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWBP_NPC_Screen_C*                     CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1; // 0x40(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5236[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F2B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_NPCComponent_C*                    K2Node_CustomEvent_NpcComponent;                   // 0x50(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                K2Node_CustomEvent_NPC_Actor;                      // 0x58(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x60(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5237[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F2C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                K2Node_CustomEvent_GroupId;                        // 0x68(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x78(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UGroupComponentBase*                   CallFunc_GetGroupSystem_GroupComponent;            // 0x88(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -400,18 +400,18 @@ public:
 	class FString                                CallFunc_GetGroupName_ReturnValue;                 // 0xC0(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	struct FMember                               K2Node_CustomEvent_NewItem;                        // 0xD0(0x20)(ConstParm)
 	int32                                        CallFunc_Array_Add_ReturnValue;                    // 0xF0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5238[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F2E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0xF8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_PlayerState_C*                     K2Node_DynamicCast_AsBP_Player_State;              // 0x100(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x108(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5239[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F30[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureAssetReference              K2Node_CustomEvent_PlacementStructureAssetRef;     // 0x110(0x80)(HasGetValueTypeHash)
 	struct FStructureAssetReference              K2Node_Event_StructureAssetRef;                    // 0x190(0x80)(HasGetValueTypeHash)
 	bool                                         K2Node_Event_IsAdding_1;                           // 0x210(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_523A[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F31[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              K2Node_Event_CraftingRecipeRef;                    // 0x220(0x70)(HasGetValueTypeHash)
 	bool                                         K2Node_Event_IsAdding;                             // 0x290(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_523B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F32[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNWXWindowWidget*                      K2Node_CustomEvent_Window;                         // 0x298(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UNWXCommonWindowWidget*                CallFunc_OpenWindowFromKey_Window;                 // 0x2A0(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FKey                                  K2Node_Event_Key;                                  // 0x2A8(0x18)(HasGetValueTypeHash)
@@ -419,13 +419,13 @@ public:
 	class ULocalPlayer*                          CallFunc_GetLocalPlayerFromController_ReturnValue_2; // 0x2C8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IBuildingInterface>   K2Node_DynamicCast_AsBuilding_Interface;           // 0x2D0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_1;                     // 0x2E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_523C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F33[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_PlayerReadiness_C*                CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_2; // 0x2E8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class ANWXPlayerController*                  CallFunc_GetNWXPlayerController_ReturnValue_2;     // 0x2F0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TSubclassOf<class IInterface>                Temp_class_Variable;                               // 0x2F8(0x8)(ConstParm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class UObject*                               CallFunc_FindFirstImplementor_ReturnValue;         // 0x300(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_2;                    // 0x308(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_523D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F34[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXPlayerController*                  CallFunc_GetNWXPlayerController_ReturnValue_3;     // 0x310(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                  K2Node_CustomEvent_TitleText;                      // 0x318(0x18)(None)
 	class FText                                  K2Node_CustomEvent_BodyText;                       // 0x330(0x18)(None)
@@ -434,13 +434,13 @@ public:
 	class ULocalPlayer*                          CallFunc_GetLocalPlayerFromController_ReturnValue_3; // 0x360(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Popup_General_C*                  CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_3; // 0x368(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_3;                    // 0x370(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_523E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F35[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSubclassOf<class IInterface>                Temp_class_Variable_1;                             // 0x378(0x8)(ConstParm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class UObject*                               CallFunc_FindFirstImplementor_ReturnValue_1;       // 0x380(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                CallFunc_ScreenShotDir_ReturnValue;                // 0x388(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Concat_StrStr_ReturnValue;                // 0x398(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IssueReportWindowCurrentlyOpen_ReturnValue; // 0x3A8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_523F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6F36[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               K2Node_CustomEvent_Structure;                      // 0x3B0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ANWXPlayerController*                  CallFunc_GetLocalPlayerController_LocalPlayerController_2; // 0x3B8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                  Temp_text_Variable;                                // 0x3C0(0x18)(ConstParm)

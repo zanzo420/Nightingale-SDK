@@ -16,13 +16,13 @@ class UBP_RangedWeaponClip_C : public UActorComponent
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	int32                                        ClipSize;                                          // 0xA8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8306[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_605E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnReloadFinished;                                  // 0xB0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UInventoryComponentBase*               InventoryComponent;                                // 0xC0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            OnAmmoChanged;                                     // 0xC8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FGuid                                 OwningInstanceID;                                  // 0xD8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FItemDataReference>            AllowedAmmoTypes;                                  // 0xE8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                        Pad_830A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_605F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInstanceData_AmmoClip                CurrentLoadedAmmoData;                             // 0x100(0x90)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	struct FInstanceData_AmmoClip                PreviousLoadedAmmoData;                            // 0x190(0x90)(Edit, BlueprintVisible, DisableEditOnInstance)
 

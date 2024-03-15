@@ -40,6 +40,71 @@ class UWBP_ShopOfferDetailsPanel_C* UWBP_ShopOfferDetailsPanel_C::GetDefaultObj(
 }
 
 
+// Function WBP_ShopOfferDetailsPanel.WBP_ShopOfferDetailsPanel_C.SetOfferPreviewImage
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNWXShopOfferListItem*       Offer                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   LRecipeSchematicImageSize                                        (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   LItemOfferImageSize                                              (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ETransactableType       Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ETransactableType       Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_5                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_6                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ETransactableType       CallFunc_GetTransactableType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TSoftObjectPtr<class UTexture2D>   CallFunc_GetIcon_ReturnValue                                     (UObjectWrapper, HasGetValueTypeHash)
+// class UObject*                     CallFunc_LoadAsset_Blocking_ReturnValue                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FDeprecateSlateVector2D     K2Node_Select_Default                                            (NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                  K2Node_DynamicCast_AsTexture_2D                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     (None)
+// enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FDeprecateSlateVector2D     K2Node_Select_Schematic_ImplicitCast                             (NoDestructor, HasGetValueTypeHash)
+// struct FDeprecateSlateVector2D     K2Node_Select_CraftingRecipe_ImplicitCast                        (NoDestructor, HasGetValueTypeHash)
+// struct FDeprecateSlateVector2D     K2Node_Select_Unknown_ImplicitCast                               (NoDestructor, HasGetValueTypeHash)
+// struct FDeprecateSlateVector2D     K2Node_Select_Item_ImplicitCast                                  (NoDestructor, HasGetValueTypeHash)
+// struct FDeprecateSlateVector2D     K2Node_Select_Emote_ImplicitCast                                 (NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ShopOfferDetailsPanel_C::SetOfferPreviewImage(class UNWXShopOfferListItem* Offer, const struct FVector2D& LRecipeSchematicImageSize, const struct FVector2D& LItemOfferImageSize, enum class ETransactableType Temp_byte_Variable, enum class ETransactableType Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility Temp_byte_Variable_6, enum class ETransactableType CallFunc_GetTransactableType_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetIcon_ReturnValue, class UObject* CallFunc_LoadAsset_Blocking_ReturnValue, const struct FDeprecateSlateVector2D& K2Node_Select_Default, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, enum class ESlateVisibility K2Node_Select_Default_1, const struct FDeprecateSlateVector2D& K2Node_Select_Schematic_ImplicitCast, const struct FDeprecateSlateVector2D& K2Node_Select_CraftingRecipe_ImplicitCast, const struct FDeprecateSlateVector2D& K2Node_Select_Unknown_ImplicitCast, const struct FDeprecateSlateVector2D& K2Node_Select_Item_ImplicitCast, const struct FDeprecateSlateVector2D& K2Node_Select_Emote_ImplicitCast)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_ShopOfferDetailsPanel_C", "SetOfferPreviewImage");
+
+	Params::UWBP_ShopOfferDetailsPanel_C_SetOfferPreviewImage_Params Parms{};
+
+	Parms.Offer = Offer;
+	Parms.LRecipeSchematicImageSize = LRecipeSchematicImageSize;
+	Parms.LItemOfferImageSize = LItemOfferImageSize;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
+	Parms.Temp_byte_Variable_2 = Temp_byte_Variable_2;
+	Parms.Temp_byte_Variable_3 = Temp_byte_Variable_3;
+	Parms.Temp_byte_Variable_4 = Temp_byte_Variable_4;
+	Parms.Temp_byte_Variable_5 = Temp_byte_Variable_5;
+	Parms.Temp_byte_Variable_6 = Temp_byte_Variable_6;
+	Parms.CallFunc_GetTransactableType_ReturnValue = CallFunc_GetTransactableType_ReturnValue;
+	Parms.CallFunc_GetIcon_ReturnValue = CallFunc_GetIcon_ReturnValue;
+	Parms.CallFunc_LoadAsset_Blocking_ReturnValue = CallFunc_LoadAsset_Blocking_ReturnValue;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.K2Node_DynamicCast_AsTexture_2D = K2Node_DynamicCast_AsTexture_2D;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.K2Node_MakeStruct_SlateBrush = K2Node_MakeStruct_SlateBrush;
+	Parms.K2Node_Select_Default_1 = K2Node_Select_Default_1;
+	Parms.K2Node_Select_Schematic_ImplicitCast = K2Node_Select_Schematic_ImplicitCast;
+	Parms.K2Node_Select_CraftingRecipe_ImplicitCast = K2Node_Select_CraftingRecipe_ImplicitCast;
+	Parms.K2Node_Select_Unknown_ImplicitCast = K2Node_Select_Unknown_ImplicitCast;
+	Parms.K2Node_Select_Item_ImplicitCast = K2Node_Select_Item_ImplicitCast;
+	Parms.K2Node_Select_Emote_ImplicitCast = K2Node_Select_Emote_ImplicitCast;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_ShopOfferDetailsPanel.WBP_ShopOfferDetailsPanel_C.OnHideOffer
 // (Event, Protected, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -142,14 +207,13 @@ void UWBP_ShopOfferDetailsPanel_C::SetupRewardDetails(class UNWXShopRewardListIt
 // Parameters:
 // class UNWXShopOfferListItem*       Offer                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TSoftObjectPtr<class UTexture2D>   CallFunc_GetIcon_ReturnValue                                     (UObjectWrapper, HasGetValueTypeHash)
 // class FText                        CallFunc_GetItemLabel_ReturnValue                                (None)
 // class UPanelSlot*                  CallFunc_AddChild_ReturnValue                                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UNWXShopOfferDetailsSimpleWidget*CallFunc_GetDisplayWidgetFromOffer_ReturnValue                   (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetItemTypeLabel_ReturnValue                            (None)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ShopOfferDetailsPanel_C::SetupOfferDetails(class UNWXShopOfferListItem* Offer, bool CallFunc_IsValid_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetIcon_ReturnValue, class FText CallFunc_GetItemLabel_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UNWXShopOfferDetailsSimpleWidget* CallFunc_GetDisplayWidgetFromOffer_ReturnValue, class FText CallFunc_GetItemTypeLabel_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
+void UWBP_ShopOfferDetailsPanel_C::SetupOfferDetails(class UNWXShopOfferListItem* Offer, bool CallFunc_IsValid_ReturnValue, class FText CallFunc_GetItemLabel_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UNWXShopOfferDetailsSimpleWidget* CallFunc_GetDisplayWidgetFromOffer_ReturnValue, class FText CallFunc_GetItemTypeLabel_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -160,7 +224,6 @@ void UWBP_ShopOfferDetailsPanel_C::SetupOfferDetails(class UNWXShopOfferListItem
 
 	Parms.Offer = Offer;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_GetIcon_ReturnValue = CallFunc_GetIcon_ReturnValue;
 	Parms.CallFunc_GetItemLabel_ReturnValue = CallFunc_GetItemLabel_ReturnValue;
 	Parms.CallFunc_AddChild_ReturnValue = CallFunc_AddChild_ReturnValue;
 	Parms.CallFunc_GetDisplayWidgetFromOffer_ReturnValue = CallFunc_GetDisplayWidgetFromOffer_ReturnValue;

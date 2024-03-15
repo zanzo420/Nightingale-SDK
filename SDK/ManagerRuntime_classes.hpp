@@ -14,12 +14,12 @@ namespace SDK
 class AManagerBase : public AActor
 {
 public:
-	uint8                                        Pad_3350[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DFA[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        InitialisationTimeout;                             // 0x2A8(0x4)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_3351[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DFB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBasicAwaiter*                         ManagerBaseAwaiter;                                // 0x2B0(0x8)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bManagerInitialized;                               // 0x2B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3352[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DFC[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AManagerBase* GetDefaultObj();

@@ -15,18 +15,18 @@ class UGA_Interaction_Proxy_C : public UGA_Interaction_Base_C
 {
 public:
 	TArray<struct FS_InstanceWithQuantity>       ItemInstances;                                     // 0x668(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                        Pad_2611[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_99C2[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    ProxyItemID;                                       // 0x680(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FGuid                                 ItemGuid;                                          // 0x700(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_AnimCharacter_C*                   Character;                                         // 0x710(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class ABP_ItemProxy_C*                       ItemProxy;                                         // 0x718(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       IsUnderwaterTestDistance;                          // 0x720(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                CharPersistenceID;                                 // 0x728(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	uint8                                        Pad_2612[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_99C3[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       ItemEntry;                                         // 0x740(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FInventoryEntry>               UnclaimedResources;                                // 0xA30(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        NumberUnclaimed;                                   // 0xA40(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2613[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_99C4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AController*                           Controller;                                        // 0xA48(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

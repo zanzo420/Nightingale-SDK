@@ -18,21 +18,21 @@ public:
 	class UBP_EncounterComponent_Spawners_C*     BP_EncounterComponent_Spawners;                    // 0x450(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                         bMustDefendNPCs;                                   // 0x458(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bMustDefendStructures;                             // 0x459(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A880[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7FAA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_Creature_NPC_C*                    NPCLeader;                                         // 0x460(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          WaveTimerHandle;                                   // 0x468(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         DefenseComplete;                                   // 0x470(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A881[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7FAB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_Structure_EncounterTrigger_Defense_C* ExtractionActorStructure;                          // 0x478(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class ABP_Structure_EncounterTrigger_ArenaContainer_C* HopeContainmentStructure;                          // 0x480(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class ABP_Creature_NPC_C*>            AllEncounterNPCs;                                  // 0x488(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	int32                                        NumberOfNPCs;                                      // 0x498(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A882[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7FAC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       InitialWaveTime;                                   // 0x4A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       BetweenWaveLullTime;                               // 0x4A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FStructureAssetReference              Human_Reward_Chest_SDA;                            // 0x4B0(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class ABP_Structure_Functional_Container_Instanced_C* Human_Reward_Chest;                                // 0x530(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A883[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7FAD[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureAssetReference              HECU_SDA;                                          // 0x540(0x80)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

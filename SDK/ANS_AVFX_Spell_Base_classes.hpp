@@ -15,7 +15,7 @@ class UANS_AVFX_Spell_Base_C : public UAnimNotifyState_FPTP
 {
 public:
 	bool                                         HandleNotifyTick;                                  // 0x38(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_65FB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_68BC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          SpellcastingStateTag;                              // 0x3C(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          AnimPreviewSpell;                                  // 0x44(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          AnimPreviewItem;                                   // 0x4C(0x8)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)

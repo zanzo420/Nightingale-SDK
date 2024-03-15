@@ -14,12 +14,12 @@ namespace SDK
 class ABP_AoePayload_SunGiant_Eruption_C : public ABP_AoePayloadBase_C
 {
 public:
-	uint8                                        Pad_9AE7[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BD5[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x6E8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UNiagaraComponent*                     TellEffect;                                        // 0x6F0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        TellTimeline_TellPct_B581E03E4078B4D6EEC7C99756F37A6F; // 0x6F8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                TellTimeline__Direction_B581E03E4078B4D6EEC7C99756F37A6F; // 0x6FC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9AE8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BD6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    TellTimeline;                                      // 0x700(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UScopedAkComponent*                    EruptScopedAk;                                     // 0x708(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FTransform>                    TransformArray;                                    // 0x710(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)

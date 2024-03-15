@@ -39,6 +39,10 @@ public:
 	static class UClass* StaticClass();
 	static class UWBP_SocialScreen_C* GetDefaultObj();
 
+	class UWidget* Do_Custom_RightToLeftPanel_Navigation(enum class EUINavigation Navigation);
+	class UWidget* Do_Custom_ConsoleInviteButton_Navigation(enum class EUINavigation Navigation, class UWidget* CallFunc_GetChildAt_ReturnValue, class UWBP_PartyMemberCard_C* K2Node_DynamicCast_AsWBP_Party_Member_Card, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsEmpty_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue);
+	class UWidget* Do_Custom_InvitesButton_Navigation(enum class EUINavigation Navigation, bool CallFunc_IsVisible_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UWBP_PartyMemberCard_C* K2Node_DynamicCast_AsWBP_Party_Member_Card, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsEmpty_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue);
+	class UWidget* DoCustomUpNav(enum class EUINavigation Navigation, bool CallFunc_IsVisible_ReturnValue);
 	class UWidget* DoCustomRightToLeftNav(enum class EUINavigation Navigation, class UWidget* CallFunc_GetDesiredFocusTarget_ReturnValue);
 	class UWidget* DoCustomLeftToRightNav(enum class EUINavigation Navigation, class UWidget* CallFunc_ReturnNavigableTarget_Output);
 	void UpdatePlatformInviteButtonVisibility(bool CallFunc_IsOnConsolePlatform_ReturnValue);

@@ -40,6 +40,27 @@ class ABP_TimeOfDayManager_C* ABP_TimeOfDayManager_C::GetDefaultObj()
 }
 
 
+// Function BP_TimeOfDayManager.BP_TimeOfDayManager_C.ApplyGameRuleChanges
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UGameRule_ApplyEnvironmentEffect*ApplyEffects                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TimeOfDayManager_C::ApplyGameRuleChanges(class UGameRule_ApplyEnvironmentEffect* ApplyEffects)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_TimeOfDayManager_C", "ApplyGameRuleChanges");
+
+	Params::ABP_TimeOfDayManager_C_ApplyGameRuleChanges_Params Parms{};
+
+	Parms.ApplyEffects = ApplyEffects;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function BP_TimeOfDayManager.BP_TimeOfDayManager_C.ApplyTimeModifiers
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -397,9 +418,11 @@ void ABP_TimeOfDayManager_C::ApplyAtmosphereModifiers(class UAtmosphereColorTemp
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UGameRule_ApplyEnvironmentEffect*K2Node_DynamicCast_AsGame_Rule_Apply_Environment_Effect          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UGameRule_EnvironmentEffect* K2Node_DynamicCast_AsGame_Rule_Environment_Effect                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TimeOfDayManager_C::OnGameRuleEvent(class UGameRule* GameRule, enum class EGameRuleEvent GameRuleEvent, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UGameRule_ApplyEnvironmentEffect* K2Node_DynamicCast_AsGame_Rule_Apply_Environment_Effect, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsServer_ReturnValue)
+void ABP_TimeOfDayManager_C::OnGameRuleEvent(class UGameRule* GameRule, enum class EGameRuleEvent GameRuleEvent, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UGameRule_ApplyEnvironmentEffect* K2Node_DynamicCast_AsGame_Rule_Apply_Environment_Effect, bool K2Node_DynamicCast_bSuccess, class UGameRule_EnvironmentEffect* K2Node_DynamicCast_AsGame_Rule_Environment_Effect, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsServer_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -413,6 +436,8 @@ void ABP_TimeOfDayManager_C::OnGameRuleEvent(class UGameRule* GameRule, enum cla
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
 	Parms.K2Node_DynamicCast_AsGame_Rule_Apply_Environment_Effect = K2Node_DynamicCast_AsGame_Rule_Apply_Environment_Effect;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.K2Node_DynamicCast_AsGame_Rule_Environment_Effect = K2Node_DynamicCast_AsGame_Rule_Environment_Effect;
+	Parms.K2Node_DynamicCast_bSuccess_1 = K2Node_DynamicCast_bSuccess_1;
 	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -8359,9 +8384,9 @@ void ABP_TimeOfDayManager_C::RealmColorSelect(int32 Number)
 // Function BP_TimeOfDayManager.BP_TimeOfDayManager_C.ManualCloudControl
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                              OFF                                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Off                                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TimeOfDayManager_C::ManualCloudControl(int32 OFF)
+void ABP_TimeOfDayManager_C::ManualCloudControl(int32 Off)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8370,7 +8395,7 @@ void ABP_TimeOfDayManager_C::ManualCloudControl(int32 OFF)
 
 	Params::ABP_TimeOfDayManager_C_ManualCloudControl_Params Parms{};
 
-	Parms.OFF = OFF;
+	Parms.Off = Off;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -8380,9 +8405,9 @@ void ABP_TimeOfDayManager_C::ManualCloudControl(int32 OFF)
 // Function BP_TimeOfDayManager.BP_TimeOfDayManager_C.CascadeScalabilityOverride
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                              OFF                                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Off                                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TimeOfDayManager_C::CascadeScalabilityOverride(int32 OFF)
+void ABP_TimeOfDayManager_C::CascadeScalabilityOverride(int32 Off)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8391,7 +8416,7 @@ void ABP_TimeOfDayManager_C::CascadeScalabilityOverride(int32 OFF)
 
 	Params::ABP_TimeOfDayManager_C_CascadeScalabilityOverride_Params Parms{};
 
-	Parms.OFF = OFF;
+	Parms.Off = Off;
 
 	UObject::ProcessEvent(Func, &Parms);
 

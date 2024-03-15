@@ -16,7 +16,7 @@ class UABP_DOG_DayLoiters_C : public UNWXAILinkedLoiterAnimInstance
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x760(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimBlueprintGeneratedMutableData    __AnimBlueprintMutables;                           // 0x768(0x3)(HasGetValueTypeHash)
-	uint8                                        Pad_9B9A[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A51D[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x770(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x778(0x8)(None)
 	struct FAnimNode_Root                        AnimGraphNode_Root_1;                              // 0x780(0x20)(None)

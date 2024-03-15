@@ -28,7 +28,7 @@ struct FInterchangeFilePickerParameters
 {
 public:
 	bool                                         bAllowMultipleFiles;                               // 0x0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_49C9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4C5A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  Title;                                             // 0x8(0x18)(Edit, NativeAccessSpecifierPublic)
 	class FString                                DefaultPath;                                       // 0x20(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -69,7 +69,7 @@ public:
 	class FName                                  DefaultPipelineStack;                              // 0x50(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftClassPtr<class UInterchangePipelineConfigurationBase> PipelineConfigurationDialogClass;                  // 0x58(0x28)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShowPipelineStacksConfigurationDialog;            // 0x80(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_49CA[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4C5B[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xA0 (0x128 - 0x88)
@@ -86,7 +86,7 @@ public:
 struct FPropertyData
 {
 public:
-	uint8                                        Pad_49CC[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4C5C[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xA0 (0xA0 - 0x0)
@@ -98,16 +98,16 @@ public:
 	int32                                        ReimportSourceIndex;                               // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsAutomated;                                      // 0xC(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bFollowRedirectors;                                // 0xD(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_49CD[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4C5D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FSoftObjectPath>               OverridePipelines;                                 // 0x10(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	FDelegateProperty_                           OnAssetDone;                                       // 0x20(0x10)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_49CE[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4C5E[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	FDelegateProperty_                           OnAssetsImportDone;                                // 0x40(0x10)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_49CF[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4C5F[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	FDelegateProperty_                           OnSceneObjectDone;                                 // 0x60(0x10)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_49D0[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4C60[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	FDelegateProperty_                           OnSceneImportDone;                                 // 0x80(0x10)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_49D1[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4C61[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

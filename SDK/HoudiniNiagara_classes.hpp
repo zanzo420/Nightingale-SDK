@@ -25,7 +25,7 @@ public:
 	float                                        MaxSampleTime;                                     // 0x54(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                SourceCSVTitleRow;                                 // 0x58(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        AttributeArray;                                    // 0x68(0x10)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	uint8                                        Pad_45F7[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4685[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<float>                                FloatSampleData;                                   // 0x80(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<float>                                SpawnTimes;                                        // 0x90(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<float>                                LifeValues;                                        // 0xA0(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
@@ -34,7 +34,7 @@ public:
 	TArray<struct FPointIndexes>                 PointValueIndexes;                                 // 0xD0(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	bool                                         UseCustomCSVTitleRow;                              // 0xE0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EHoudiniPointCacheFileType        FileType;                                          // 0xE1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_45F8[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4686[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UHoudiniPointCache* GetDefaultObj();

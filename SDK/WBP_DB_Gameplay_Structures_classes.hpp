@@ -28,7 +28,7 @@ public:
 	class UWBP_button_base_C*                    WBP_button_base;                                   // 0x510(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                        StructuresFound;                                   // 0x518(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Enable_cheat;                                      // 0x51C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_86AC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_65B0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          Handle;                                            // 0x520(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            OnPlacement;                                       // 0x528(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<struct FStructureAssetReference>      AllStructureReferences;                            // 0x538(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)

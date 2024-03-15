@@ -9,49 +9,49 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x1B8 (0x1788 - 0x15D0)
+// 0x1B8 (0x17C0 - 0x1608)
 // BlueprintGeneratedClass BP_Creature_NPC.BP_Creature_NPC_C
 class ABP_Creature_NPC_C : public ABP_CreatureBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x15D0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_Combat_Analyser_C*                 BP_Combat_Analyser;                                // 0x15D8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_AILoadoutComponentBase_C*          BP_AILoadoutComponentBase;                         // 0x15E0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_HarvestComponent_C*                BP_HarvestComponent;                               // 0x15E8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_LoadoutComponent_C*                Loadout;                                           // 0x15F0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UInWorldItemContainerComponent*        Inventory;                                         // 0x15F8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UWidgetComponent*                      UI_DialogWidget;                                   // 0x1600(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_UI_NPCMenuComponent_C*             BP_NPC_MenuComponent;                              // 0x1608(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_DialogueComponent_C*               BP_DialogueComponent;                              // 0x1610(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_NPCComponent_C*                    BP_NPCComponent;                                   // 0x1618(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	double                                       StartAmbientDialogueRadius;                        // 0x1620(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	double                                       EndAmbientDialogueRadius;                          // 0x1628(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class FText                                  FactionName;                                       // 0x1630(0x18)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
-	bool                                         PlayerEmployee;                                    // 0x1648(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6D97[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FDataTableRowHandle                   EmployeeManagement;                                // 0x1650(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnOwnerSet;                                        // 0x1660(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class AEncounterBase*                        Associated_Encounter;                              // 0x1670(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                OriginalPlayerView;                                // 0x1678(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UDialogue*                             Dialogue;                                          // 0x1680(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class UDialogue*                             Ambient_Dialogue;                                  // 0x1688(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FTimerHandle                          AmbientDialogueTimer;                              // 0x1690(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class ABP_AmbientDialogue_C*                 ActiveAmbientDialog;                               // 0x1698(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	double                                       AmbientDialogCooldown;                             // 0x16A0(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	double                                       LastAmbientDialogTime;                             // 0x16A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class E_NPC_Moods                       NewMood;                                           // 0x16B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class E_NPC_Moods                       OldMood;                                           // 0x16B1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6D98[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UAkStateValue*                         Music_State;                                       // 0x16B8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FDataTableRowHandle                   NPCData;                                           // 0x16C0(0x10)(Edit, BlueprintVisible, SaveGame, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FVector                               HomeLocation;                                      // 0x16D0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                 Associated_Encounter_ID;                           // 0x16E8(0x10)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FDataTableRowHandle>           Original_NPC_Menus;                                // 0x16F8(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
-	TMap<class AActor*, struct FActiveGameplayEffectHandle> DialogueProtectionEffects;                         // 0x1708(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	struct FDataTableRowHandle                   CurrentEncounterMenu;                              // 0x1758(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
-	struct FS_NPCIndicatorSignProperties         NPC_Indicator_Sign;                                // 0x1768(0x2)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6D99[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FStringTableEntryHandle               NPCNameHandle;                                     // 0x1770(0x18)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1608(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_Combat_Analyser_C*                 BP_Combat_Analyser;                                // 0x1610(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_AILoadoutComponentBase_C*          BP_AILoadoutComponentBase;                         // 0x1618(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_HarvestComponent_C*                BP_HarvestComponent;                               // 0x1620(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_LoadoutComponent_C*                Loadout;                                           // 0x1628(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UInWorldItemContainerComponent*        Inventory;                                         // 0x1630(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UWidgetComponent*                      UI_DialogWidget;                                   // 0x1638(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_UI_NPCMenuComponent_C*             BP_NPC_MenuComponent;                              // 0x1640(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_DialogueComponent_C*               BP_DialogueComponent;                              // 0x1648(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_NPCComponent_C*                    BP_NPCComponent;                                   // 0x1650(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	double                                       StartAmbientDialogueRadius;                        // 0x1658(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	double                                       EndAmbientDialogueRadius;                          // 0x1660(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class FText                                  FactionName;                                       // 0x1668(0x18)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
+	bool                                         PlayerEmployee;                                    // 0x1680(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_7EC8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FDataTableRowHandle                   EmployeeManagement;                                // 0x1688(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnOwnerSet;                                        // 0x1698(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class AEncounterBase*                        Associated_Encounter;                              // 0x16A8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                OriginalPlayerView;                                // 0x16B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UDialogue*                             Dialogue;                                          // 0x16B8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UDialogue*                             Ambient_Dialogue;                                  // 0x16C0(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FTimerHandle                          AmbientDialogueTimer;                              // 0x16C8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class ABP_AmbientDialogue_C*                 ActiveAmbientDialog;                               // 0x16D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	double                                       AmbientDialogCooldown;                             // 0x16D8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	double                                       LastAmbientDialogTime;                             // 0x16E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class E_NPC_Moods                       NewMood;                                           // 0x16E8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class E_NPC_Moods                       OldMood;                                           // 0x16E9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_7EC9[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UAkStateValue*                         Music_State;                                       // 0x16F0(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FDataTableRowHandle                   NPCData;                                           // 0x16F8(0x10)(Edit, BlueprintVisible, SaveGame, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FVector                               HomeLocation;                                      // 0x1708(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                 Associated_Encounter_ID;                           // 0x1720(0x10)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FDataTableRowHandle>           Original_NPC_Menus;                                // 0x1730(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
+	TMap<class AActor*, struct FActiveGameplayEffectHandle> DialogueProtectionEffects;                         // 0x1740(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FDataTableRowHandle                   CurrentEncounterMenu;                              // 0x1790(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
+	struct FS_NPCIndicatorSignProperties         NPC_Indicator_Sign;                                // 0x17A0(0x2)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_7ECA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FStringTableEntryHandle               NPCNameHandle;                                     // 0x17A8(0x18)(Edit, BlueprintVisible, Net, DisableEditOnInstance, SaveGame)
 
 	static class UClass* StaticClass();
 	static class ABP_Creature_NPC_C* GetDefaultObj();

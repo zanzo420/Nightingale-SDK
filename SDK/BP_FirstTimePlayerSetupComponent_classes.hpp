@@ -16,7 +16,7 @@ class UBP_FirstTimePlayerSetupComponent_C : public UFirstTimePlayerSetupComponen
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xF8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                         InitialItemsGranted;                               // 0x100(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_92F6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9026[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPlayerLoadoutDataReference           FallbackLoadout;                                   // 0x108(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FPlayerLoadoutDataReference           DEBUG_LastGrantedLoadoutHandle;                    // 0x130(0x28)(Edit, BlueprintVisible, Net, DisableEditOnInstance, HasGetValueTypeHash)
 

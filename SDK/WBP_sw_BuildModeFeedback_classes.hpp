@@ -24,7 +24,7 @@ public:
 	class UWBP_Component_SoftEdge_Divider_C*     WBP_Component_SoftEdge_Divider;                    // 0x378(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         bIsPositiveTrait;                                  // 0x380(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         bShowBottomDivider;                                // 0x381(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_739F[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5392[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  TraitDescription;                                  // 0x388(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	TSoftObjectPtr<class UTexture2D>             Icon;                                              // 0x3A0(0x28)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	class FText                                  TraitName;                                         // 0x3C8(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)

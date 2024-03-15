@@ -699,16 +699,16 @@ void UWBP_Crafting_IngredientList_C::BndEvt__WBP_Crafting_IngredientList_bu_clos
 }
 
 
-// Function WBP_Crafting_IngredientList.WBP_Crafting_IngredientList_C.BP_OnActivated
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Crafting_IngredientList.WBP_Crafting_IngredientList_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
-void UWBP_Crafting_IngredientList_C::BP_OnActivated()
+void UWBP_Crafting_IngredientList_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("WBP_Crafting_IngredientList_C", "BP_OnActivated");
+		Func = Class->GetFunction("WBP_Crafting_IngredientList_C", "Construct");
 
 
 
@@ -717,16 +717,16 @@ void UWBP_Crafting_IngredientList_C::BP_OnActivated()
 }
 
 
-// Function WBP_Crafting_IngredientList.WBP_Crafting_IngredientList_C.BP_OnDeactivated
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Crafting_IngredientList.WBP_Crafting_IngredientList_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
-void UWBP_Crafting_IngredientList_C::BP_OnDeactivated()
+void UWBP_Crafting_IngredientList_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("WBP_Crafting_IngredientList_C", "BP_OnDeactivated");
+		Func = Class->GetFunction("WBP_Crafting_IngredientList_C", "Destruct");
 
 
 

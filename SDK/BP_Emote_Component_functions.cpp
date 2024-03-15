@@ -43,11 +43,16 @@ class UBP_Emote_Component_C* UBP_Emote_Component_C::GetDefaultObj()
 // Function BP_Emote_Component.BP_Emote_Component_C.TriggerYawnEmote
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// double                             TimeSinceLastYawn                                                (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_GetAudioTimeSeconds_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_GreaterEqual_DoubleDouble_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_Subtract_DoubleDouble_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_GetAudioTimeSeconds_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_GetCurrentHealth_CurrentHealth                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_DoubleDouble_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Emote_Component_C::TriggerYawnEmote(double CallFunc_GetCurrentHealth_CurrentHealth, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Greater_DoubleDouble_ReturnValue)
+void UBP_Emote_Component_C::TriggerYawnEmote(double TimeSinceLastYawn, double CallFunc_GetAudioTimeSeconds_ReturnValue, bool CallFunc_GreaterEqual_DoubleDouble_ReturnValue, double CallFunc_Subtract_DoubleDouble_ReturnValue, double CallFunc_GetAudioTimeSeconds_ReturnValue_1, double CallFunc_GetCurrentHealth_CurrentHealth, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Greater_DoubleDouble_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -56,6 +61,11 @@ void UBP_Emote_Component_C::TriggerYawnEmote(double CallFunc_GetCurrentHealth_Cu
 
 	Params::UBP_Emote_Component_C_TriggerYawnEmote_Params Parms{};
 
+	Parms.TimeSinceLastYawn = TimeSinceLastYawn;
+	Parms.CallFunc_GetAudioTimeSeconds_ReturnValue = CallFunc_GetAudioTimeSeconds_ReturnValue;
+	Parms.CallFunc_GreaterEqual_DoubleDouble_ReturnValue = CallFunc_GreaterEqual_DoubleDouble_ReturnValue;
+	Parms.CallFunc_Subtract_DoubleDouble_ReturnValue = CallFunc_Subtract_DoubleDouble_ReturnValue;
+	Parms.CallFunc_GetAudioTimeSeconds_ReturnValue_1 = CallFunc_GetAudioTimeSeconds_ReturnValue_1;
 	Parms.CallFunc_GetCurrentHealth_CurrentHealth = CallFunc_GetCurrentHealth_CurrentHealth;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_Greater_DoubleDouble_ReturnValue = CallFunc_Greater_DoubleDouble_ReturnValue;
@@ -339,10 +349,11 @@ void UBP_Emote_Component_C::Set_Health(double New_Health, double MaxHealth, doub
 // Function BP_Emote_Component.BP_Emote_Component_C.Update Health
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// double                             CallFunc_GetMaxHealth_MaxHealth                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_GetCurrentHealth_CurrentHealth                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Emote_Component_C::Update_Health(double CallFunc_GetCurrentHealth_CurrentHealth, bool CallFunc_IsValid_ReturnValue)
+void UBP_Emote_Component_C::Update_Health(double CallFunc_GetMaxHealth_MaxHealth, double CallFunc_GetCurrentHealth_CurrentHealth, bool CallFunc_IsValid_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -351,6 +362,7 @@ void UBP_Emote_Component_C::Update_Health(double CallFunc_GetCurrentHealth_Curre
 
 	Params::UBP_Emote_Component_C_Update_Health_Params Parms{};
 
+	Parms.CallFunc_GetMaxHealth_MaxHealth = CallFunc_GetMaxHealth_MaxHealth;
 	Parms.CallFunc_GetCurrentHealth_CurrentHealth = CallFunc_GetCurrentHealth_CurrentHealth;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
@@ -935,13 +947,19 @@ void UBP_Emote_Component_C::Update_Health_Switch(int32 Temp_int_Variable, bool C
 // double                             Old_Health                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             New_Health                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Suppress_Emote                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             MaxHealth                                                        (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_EqualEqual_DoubleDouble_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_DoubleDouble_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_LessEqual_DoubleDouble_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_GetMaxHealth_MaxHealth                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_GetVelocity_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             CallFunc_VSize_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class IGameplayTagAssetInterface>CallFunc_HasMatchingGameplayTag_self_CastInput                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_HasMatchingGameplayTag_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                             CallFunc_VSize_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Emote_Component_C::Handle_on_Health_Decreased(double Old_Health, double New_Health, bool Suppress_Emote, class AActor* CallFunc_GetOwner_ReturnValue, const struct FVector& CallFunc_GetVelocity_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput, bool CallFunc_HasMatchingGameplayTag_ReturnValue, double CallFunc_VSize_ReturnValue)
+void UBP_Emote_Component_C::Handle_on_Health_Decreased(double Old_Health, double New_Health, bool Suppress_Emote, double MaxHealth, bool CallFunc_EqualEqual_DoubleDouble_ReturnValue, bool CallFunc_Less_DoubleDouble_ReturnValue, bool CallFunc_LessEqual_DoubleDouble_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue, double CallFunc_GetMaxHealth_MaxHealth, const struct FVector& CallFunc_GetVelocity_ReturnValue, double CallFunc_VSize_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput, bool CallFunc_HasMatchingGameplayTag_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -953,11 +971,17 @@ void UBP_Emote_Component_C::Handle_on_Health_Decreased(double Old_Health, double
 	Parms.Old_Health = Old_Health;
 	Parms.New_Health = New_Health;
 	Parms.Suppress_Emote = Suppress_Emote;
+	Parms.MaxHealth = MaxHealth;
+	Parms.CallFunc_EqualEqual_DoubleDouble_ReturnValue = CallFunc_EqualEqual_DoubleDouble_ReturnValue;
+	Parms.CallFunc_Less_DoubleDouble_ReturnValue = CallFunc_Less_DoubleDouble_ReturnValue;
+	Parms.CallFunc_LessEqual_DoubleDouble_ReturnValue = CallFunc_LessEqual_DoubleDouble_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
+	Parms.CallFunc_GetMaxHealth_MaxHealth = CallFunc_GetMaxHealth_MaxHealth;
 	Parms.CallFunc_GetVelocity_ReturnValue = CallFunc_GetVelocity_ReturnValue;
+	Parms.CallFunc_VSize_ReturnValue = CallFunc_VSize_ReturnValue;
 	Parms.CallFunc_HasMatchingGameplayTag_self_CastInput = CallFunc_HasMatchingGameplayTag_self_CastInput;
 	Parms.CallFunc_HasMatchingGameplayTag_ReturnValue = CallFunc_HasMatchingGameplayTag_ReturnValue;
-	Parms.CallFunc_VSize_ReturnValue = CallFunc_VSize_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1282,6 +1306,24 @@ void UBP_Emote_Component_C::TriggerBlockEmoteFromServer()
 
 	if (!Func)
 		Func = Class->GetFunction("BP_Emote_Component_C", "TriggerBlockEmoteFromServer");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_Emote_Component.BP_Emote_Component_C.Trigger Yawn Emote From Server
+// (Net, NetClient, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UBP_Emote_Component_C::Trigger_Yawn_Emote_From_Server()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_Emote_Component_C", "Trigger Yawn Emote From Server");
 
 
 

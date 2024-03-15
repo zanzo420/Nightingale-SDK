@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x190 (0x670 - 0x4E0)
+// 0x1A0 (0x680 - 0x4E0)
 // WidgetBlueprintGeneratedClass WBP_PlayerMap_Screen.WBP_PlayerMap_Screen_C
 class UWBP_PlayerMap_Screen_C : public UPlayerMapScreen
 {
@@ -53,6 +53,7 @@ public:
 	double                                       AnalogInputY;                                      // 0x658(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       GamepadMapPanSpeed;                                // 0x660(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Tooltip_MapMarker_C*              GamepadTooltipWidget;                              // 0x668(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnPlayerLocalRespiteTravelInitiated;               // 0x670(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();
 	static class UWBP_PlayerMap_Screen_C* GetDefaultObj();
@@ -86,6 +87,7 @@ public:
 	void BP_OnDeactivated();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void ExecuteUbergraph_WBP_PlayerMap_Screen(int32 EntryPoint, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, class FText Temp_text_Variable, const struct FRealmPlacementRequirement& K2Node_MakeStruct_RealmPlacementRequirement, class FText Temp_text_Variable_1, class ANWXPlayerController* CallFunc_GetNWXPlayerController_ReturnValue, class UPlayerSpawnComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_GetRealmInfo_CurrentRealm_Success, const struct FS_Persisted_RealmVisitedInfo& CallFunc_GetRealmInfo_CurrentRealm_RealmInfo, const struct FRealmSettings& K2Node_MakeStruct_RealmSettings, const class FString& CallFunc_GetLocalPlayerName_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue, class ULocalPlayer* CallFunc_GetLocalPlayerFromController_ReturnValue, class UWBP_Popup_General_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, enum class ECommonInputType K2Node_Event_CurrentInputType, bool K2Node_SwitchEnum_CmpSuccess, const struct FVector2D& CallFunc_GetGamepadPointerRelativePos_ReturnValue, const struct FVector2D& CallFunc_GetGamepadPointerRelativePos_ReturnValue_1, const struct FVector2D& CallFunc_GetGamepadPointerRelativePos_ReturnValue_2, const struct FVector2D& CallFunc_GetGamepadPointerRelativePos_ReturnValue_3, const struct FVector2D& CallFunc_GetGamepadPointerRelativePos_ReturnValue_4, class FText Temp_text_Variable_2, class UNWXLocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue, class UWBP_MapMarkerTray_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FVector2D& CallFunc_GetLocalPositionWithinReferenceWidget_ReturnValue, const struct FVector2D& CallFunc_Add_Vector2DVector2D_ReturnValue, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, double CallFunc_Multiply_DoubleDouble_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class ANWXPlayerController* CallFunc_GetLocalPlayerController_LocalPlayerController, TScriptInterface<class IPlayerMapPinControllerInterface> CallFunc_RemovePlayerOwnedMapPin_self_CastInput, class UObject* Temp_object_Variable, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue_1, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue, bool CallFunc_DoesRealmMeetRequirement_RequirementMet, bool CallFunc_Not_PreBool_ReturnValue, double CallFunc_VSize2D_ReturnValue, bool CallFunc_Greater_DoubleDouble_ReturnValue, double CallFunc_Multiply_DoubleDouble_A_ImplicitCast);
+	void OnPlayerLocalRespiteTravelInitiated__DelegateSignature();
 	void ConfirmationPopup__DelegateSignature(bool ConfirmOpened);
 };
 

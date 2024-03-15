@@ -13,64 +13,64 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xC9 (0xC9 - 0x0)
+// 0xE1 (0xE1 - 0x0)
 // Function WBP_Shop_JobBoard_ScreenSpace.WBP_Shop_JobBoard_ScreenSpace_C.ShopOfferHovered
 struct UWBP_Shop_JobBoard_ScreenSpace_C_ShopOfferHovered_Params
 {
 public:
 	bool                                         Hovered;                                           // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5733[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FShopOfferPresentation                ShopOffer;                                         // 0x8(0xC0)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                         CallFunc_IsValidOfferId_ReturnValue;               // 0xC8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2BFC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FShopOfferPresentation                ShopOffer;                                         // 0x8(0xD8)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                         CallFunc_IsValidOfferId_ReturnValue;               // 0xE0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0xCE (0xCE - 0x0)
+// 0xE6 (0xE6 - 0x0)
 // Function WBP_Shop_JobBoard_ScreenSpace.WBP_Shop_JobBoard_ScreenSpace_C.ShopOfferSelected
 struct UWBP_Shop_JobBoard_ScreenSpace_C_ShopOfferSelected_Params
 {
 public:
 	int32                                        Grid_Index;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5734[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FShopOfferPresentation                ShopOffer;                                         // 0x8(0xC0)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                        CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0xC8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0xCC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0xCD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2BFD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FShopOfferPresentation                ShopOffer;                                         // 0x8(0xD8)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                        CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0xE0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0xE4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0xE5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x228 (0x228 - 0x0)
+// 0x258 (0x258 - 0x0)
 // Function WBP_Shop_JobBoard_ScreenSpace.WBP_Shop_JobBoard_ScreenSpace_C.PopulateShopOffers
 struct UWBP_Shop_JobBoard_ScreenSpace_C_PopulateShopOffers_Params
 {
 public:
-	struct FShopOfferPresentation                LShopOffer;                                        // 0x0(0xC0)(Edit, BlueprintVisible)
-	int32                                        GridWidth;                                         // 0xC0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5735[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UWBP_JobBoard_QuestGrid_Entry_C*       JobBoardQuestEntry;                                // 0xC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                        QuestIndex;                                        // 0xD0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5736[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UWBP_JobBoard_QuestGrid_Entry_C*       CallFunc_Create_ReturnValue;                       // 0xD8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                        Temp_int_Array_Index_Variable;                     // 0xE0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        Temp_int_Loop_Counter_Variable;                    // 0xE4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0xE8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_MakeColor_ReturnValue;                    // 0xEC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                 CallFunc_Array_Get_Item;                           // 0xFC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5737[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FShopOfferPresentation                CallFunc_MakePresentationData_ReturnValue;         // 0x110(0xC0)(None)
-	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x1D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x1D4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x1D5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5738[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x1D8(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_1;            // 0x1E8(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FGuid>                         CallFunc_GetAvailableOffers_OutAvailableOffers;    // 0x1F8(0x10)(ReferenceParm)
-	class UVerticalBoxSlot*                      CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x208(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Percent_IntInt_ReturnValue;               // 0x210(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        CallFunc_MakeLiteralByte_ReturnValue;              // 0x214(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x215(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5739[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Divide_IntInt_ReturnValue;                // 0x218(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_573A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UUniformGridSlot*                      CallFunc_AddChildToUniformGrid_ReturnValue;        // 0x220(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FShopOfferPresentation                LShopOffer;                                        // 0x0(0xD8)(Edit, BlueprintVisible)
+	int32                                        GridWidth;                                         // 0xD8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2BFE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UWBP_JobBoard_QuestGrid_Entry_C*       JobBoardQuestEntry;                                // 0xE0(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                        QuestIndex;                                        // 0xE8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2BFF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UWBP_JobBoard_QuestGrid_Entry_C*       CallFunc_Create_ReturnValue;                       // 0xF0(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                        Temp_int_Array_Index_Variable;                     // 0xF8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        Temp_int_Loop_Counter_Variable;                    // 0xFC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x100(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_MakeColor_ReturnValue;                    // 0x104(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                 CallFunc_Array_Get_Item;                           // 0x114(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2C00[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FShopOfferPresentation                CallFunc_MakePresentationData_ReturnValue;         // 0x128(0xD8)(None)
+	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x200(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x204(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x205(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2C01[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x208(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_1;            // 0x218(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FGuid>                         CallFunc_GetAvailableOffers_OutAvailableOffers;    // 0x228(0x10)(ReferenceParm)
+	class UVerticalBoxSlot*                      CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x238(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Percent_IntInt_ReturnValue;               // 0x240(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        CallFunc_MakeLiteralByte_ReturnValue;              // 0x244(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x245(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2C02[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Divide_IntInt_ReturnValue;                // 0x248(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2C03[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UUniformGridSlot*                      CallFunc_AddChildToUniformGrid_ReturnValue;        // 0x250(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x42 (0x42 - 0x0)
@@ -87,14 +87,14 @@ public:
 	enum class EFaction                          Temp_byte_Variable_3;                              // 0x6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_3;                              // 0x7(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFaction                          Temp_byte_Variable_4;                              // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_573B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C04[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          Temp_struct_Variable;                              // 0xC(0x8)(ConstParm, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          Temp_struct_Variable_1;                            // 0x14(0x8)(ConstParm, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          Temp_struct_Variable_2;                            // 0x1C(0x8)(ConstParm, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          Temp_struct_Variable_3;                            // 0x24(0x8)(ConstParm, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_4;                              // 0x2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFaction                          Temp_byte_Variable_5;                              // 0x2D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_573C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C05[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          Temp_struct_Variable_4;                            // 0x30(0x8)(ConstParm, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ActorHasTag_ReturnValue;                  // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ActorHasTag_ReturnValue_1;                // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -125,7 +125,7 @@ public:
 	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x1E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFaction                          Temp_byte_Variable_2;                              // 0x1F(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                        CallFunc_GetValidValue_ReturnValue;                // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_573D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C06[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_Select_Default;                             // 0x24(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_ByteToInt_ReturnValue;               // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_LessEqual_IntInt_ReturnValue;             // 0x2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -155,13 +155,13 @@ struct UWBP_Shop_JobBoard_ScreenSpace_C_HandleIfListIsEmpty_Params
 {
 public:
 	bool                                         Temp_bool_Variable;                                // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_573E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C07[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Temp_int_Variable;                                 // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Variable_1;                               // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_573F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C08[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_BasicText_OneLine_C*              CallFunc_Create_ReturnValue;                       // 0x10(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAnyChildren_ReturnValue;               // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5740[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C09[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_Select_Default;                             // 0x1C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  Temp_text_Variable;                                // 0x20(0x18)(ConstParm)
 	class UPanelSlot*                            CallFunc_AddChild_ReturnValue;                     // 0x38(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -187,7 +187,7 @@ public:
 	class UWidget*                               CallFunc_GetChildAt_ReturnValue_1;                 // 0x10(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAnyChildren_ReturnValue;               // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAnyChildren_ReturnValue_1;             // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5741[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C0A[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidget*                               CallFunc_GetDefaultFocusWidget_ReturnValue;        // 0x20(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -201,7 +201,7 @@ public:
 	struct FEventReply                           CallFunc_Unhandled_ReturnValue;                    // 0x170(0xB8)(None)
 	class UWidget*                               CallFunc_GetChildAt_ReturnValue;                   // 0x228(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAnyChildren_ReturnValue;               // 0x230(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5742[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C0B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FEventReply                           CallFunc_Unhandled_ReturnValue_1;                  // 0x238(0xB8)(None)
 	struct FEventReply                           CallFunc_Handled_ReturnValue_1;                    // 0x2F0(0xB8)(None)
 	class UWidget*                               CallFunc_GetChildAt_ReturnValue_1;                 // 0x3A8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -217,7 +217,7 @@ struct UWBP_Shop_JobBoard_ScreenSpace_C_SetGridPanelQuestEntriesToUnselected_Par
 public:
 	class UPanelWidget*                          GridPanelWidget;                                   // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                        IndexToIgnore;                                     // 0x8(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5743[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C0C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidget*                               CurrentChildWidget;                                // 0x10(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<class UWidget*>                       CallFunc_GetAllChildren_ReturnValue;               // 0x18(0x10)(ReferenceParm, ContainsInstancedReference)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -226,9 +226,9 @@ public:
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_NotEqual_IntInt_ReturnValue;              // 0x3C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x3D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5744[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C0D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x40(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5745[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C0E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWBP_JobBoard_QuestGrid_Entry_C*       K2Node_DynamicCast_AsWBP_Job_Board_Quest_Grid_Entry; // 0x48(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -258,7 +258,7 @@ struct UWBP_Shop_JobBoard_ScreenSpace_C_RefreshList_Params
 public:
 	struct FEventReply                           CallFunc_FocusDefaultWidget_ReturnValue;           // 0x0(0xB8)(None)
 	bool                                         CallFunc_IsUsingGamepad_ReturnValue;               // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5746[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C0F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UShopProviderComponent*                CallFunc_GetComponentByClass_ReturnValue;          // 0xC0(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0xC8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -366,7 +366,7 @@ struct UWBP_Shop_JobBoard_ScreenSpace_C_ExecuteUbergraph_WBP_Shop_JobBoard_Scree
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5747[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C10[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   K2Node_Event_Creature_Information;                 // 0x8(0x10)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 K2Node_Event_CreatureTagContainer;                 // 0x18(0x20)(None)
 	struct FGameplayTagContainer                 K2Node_Event_KillerTagContainer;                   // 0x38(0x20)(None)
@@ -374,24 +374,24 @@ public:
 	struct FDataTableRowHandle                   K2Node_Event_StructureDataHandle;                  // 0x60(0x10)(NoDestructor, HasGetValueTypeHash)
 	struct FInventoryEntry                       K2Node_Event_ItemEntry;                            // 0x70(0x2F0)(None)
 	int32                                        K2Node_Event_Amount;                               // 0x360(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5748[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C11[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                K2Node_Event_Owning_Actor;                         // 0x368(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_Event_Piece_ID;                             // 0x370(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5749[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C12[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    K2Node_Event_ItemRowHandle;                        // 0x380(0x80)(HasGetValueTypeHash)
 	int32                                        K2Node_Event_Quantity;                             // 0x400(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          K2Node_Event_ContainerTag;                         // 0x404(0x8)(NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_574A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C13[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 K2Node_Event_WeakpointType;                        // 0x410(0x20)(None)
 	struct FGameplayTagContainer                 K2Node_Event_CreatureTags;                         // 0x430(0x20)(None)
 	struct FHitResult                            K2Node_Event_HitResult;                            // 0x450(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	TSoftObjectPtr<class UTechniqueDataAsset>    K2Node_Event_SpellCast;                            // 0x538(0x28)(HasGetValueTypeHash)
 	struct FFish                                 K2Node_Event_CaughtFish;                           // 0x560(0x90)(ConstParm, ContainsInstancedReference)
 	class APawn*                                 K2Node_Event_InteractingPawn;                      // 0x5F0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_574B[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C14[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FOngoingTaskProgress                  K2Node_ComponentBoundEvent_Accepted;               // 0x600(0xB0)(None)
 	enum class E_Contract_StateType              K2Node_ComponentBoundEvent_Contract_State;         // 0x6B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_574C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C15[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXPlayerController*                  CallFunc_GetLocalPlayerController_LocalPlayerController; // 0x6B8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UShopPurchaserComponent*               CallFunc_GetComponentByClass_ReturnValue;          // 0x6C0(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };

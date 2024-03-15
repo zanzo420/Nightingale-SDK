@@ -49,7 +49,7 @@ public:
 	enum class EInterchangeCurveInterpMode       InterpMode;                                        // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EInterchangeCurveTangentMode      TangentMode;                                       // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EInterchangeCurveTangentWeightMode TangentWeightMode;                                 // 0x2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E4C[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_52B2[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Time;                                              // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Value;                                             // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        ArriveTangent;                                     // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -72,7 +72,7 @@ struct FInterchangeStepCurve
 {
 public:
 	TArray<float>                                KeyTimes;                                          // 0x0(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4E4D[0x60];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_52B3[0x60];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

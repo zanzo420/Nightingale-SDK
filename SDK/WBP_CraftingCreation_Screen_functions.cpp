@@ -40,6 +40,34 @@ class UWBP_CraftingCreation_Screen_C* UWBP_CraftingCreation_Screen_C::GetDefault
 }
 
 
+// Function WBP_CraftingCreation_Screen.WBP_CraftingCreation_Screen_C.DoCustomNavigation_RightPanel_AND_Mold
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class EUINavigation           Navigation                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     CallFunc_BP_GetDesiredFocusTarget_ReturnValue                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_CraftingCreation_Screen_C::DoCustomNavigation_RightPanel_AND_Mold(enum class EUINavigation Navigation, bool K2Node_SwitchEnum_CmpSuccess, class UWidget* CallFunc_BP_GetDesiredFocusTarget_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_CraftingCreation_Screen_C", "DoCustomNavigation_RightPanel_AND_Mold");
+
+	Params::UWBP_CraftingCreation_Screen_C_DoCustomNavigation_RightPanel_AND_Mold_Params Parms{};
+
+	Parms.Navigation = Navigation;
+	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
+	Parms.CallFunc_BP_GetDesiredFocusTarget_ReturnValue = CallFunc_BP_GetDesiredFocusTarget_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function WBP_CraftingCreation_Screen.WBP_CraftingCreation_Screen_C.DoCustomNavigation
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -47,8 +75,9 @@ class UWBP_CraftingCreation_Screen_C* UWBP_CraftingCreation_Screen_C::GetDefault
 // class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_BP_GetDesiredFocusTarget_ReturnValue                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     CallFunc_BP_GetDesiredFocusTarget_ReturnValue_1                  (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_CraftingCreation_Screen_C::DoCustomNavigation(enum class EUINavigation Navigation, bool K2Node_SwitchEnum_CmpSuccess, class UWidget* CallFunc_BP_GetDesiredFocusTarget_ReturnValue)
+class UWidget* UWBP_CraftingCreation_Screen_C::DoCustomNavigation(enum class EUINavigation Navigation, bool K2Node_SwitchEnum_CmpSuccess, class UWidget* CallFunc_BP_GetDesiredFocusTarget_ReturnValue, class UWidget* CallFunc_BP_GetDesiredFocusTarget_ReturnValue_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -60,6 +89,7 @@ class UWidget* UWBP_CraftingCreation_Screen_C::DoCustomNavigation(enum class EUI
 	Parms.Navigation = Navigation;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 	Parms.CallFunc_BP_GetDesiredFocusTarget_ReturnValue = CallFunc_BP_GetDesiredFocusTarget_ReturnValue;
+	Parms.CallFunc_BP_GetDesiredFocusTarget_ReturnValue_1 = CallFunc_BP_GetDesiredFocusTarget_ReturnValue_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -189,13 +219,13 @@ bool UWBP_CraftingCreation_Screen_C::GetIsNavbarEnabled(bool CallFunc_IsIngredie
 // Parameters:
 // class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_BP_GetDesiredFocusTarget_ReturnValue                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                     CallFunc_GetDefaultFocusWidget_ReturnValue                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     CallFunc_BP_GetDesiredFocusTarget_ReturnValue_1                  (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // enum class E_Crafting_MoldSteps    CallFunc_GetState_State                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_CraftingCreation_Screen_C::BP_GetDesiredFocusTarget(class UWidget* CallFunc_BP_GetDesiredFocusTarget_ReturnValue, class UWidget* CallFunc_GetDefaultFocusWidget_ReturnValue, enum class E_Crafting_MoldSteps CallFunc_GetState_State, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue)
+class UWidget* UWBP_CraftingCreation_Screen_C::BP_GetDesiredFocusTarget(class UWidget* CallFunc_BP_GetDesiredFocusTarget_ReturnValue, class UWidget* CallFunc_BP_GetDesiredFocusTarget_ReturnValue_1, enum class E_Crafting_MoldSteps CallFunc_GetState_State, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -205,7 +235,7 @@ class UWidget* UWBP_CraftingCreation_Screen_C::BP_GetDesiredFocusTarget(class UW
 	Params::UWBP_CraftingCreation_Screen_C_BP_GetDesiredFocusTarget_Params Parms{};
 
 	Parms.CallFunc_BP_GetDesiredFocusTarget_ReturnValue = CallFunc_BP_GetDesiredFocusTarget_ReturnValue;
-	Parms.CallFunc_GetDefaultFocusWidget_ReturnValue = CallFunc_GetDefaultFocusWidget_ReturnValue;
+	Parms.CallFunc_BP_GetDesiredFocusTarget_ReturnValue_1 = CallFunc_BP_GetDesiredFocusTarget_ReturnValue_1;
 	Parms.CallFunc_GetState_State = CallFunc_GetState_State;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue_1 = CallFunc_EqualEqual_ByteByte_ReturnValue_1;
@@ -874,34 +904,6 @@ void UWBP_CraftingCreation_Screen_C::OnMoldUpdated(class UNWXMenuDataEntryCrafti
 }
 
 
-// Function WBP_CraftingCreation_Screen.WBP_CraftingCreation_Screen_C.GetDefaultFocusWidget
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// enum class E_Crafting_MoldSteps    Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class E_Crafting_MoldSteps    CallFunc_GetState_State                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                     K2Node_Select_Default                                            (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_CraftingCreation_Screen_C::GetDefaultFocusWidget(enum class E_Crafting_MoldSteps Temp_byte_Variable, enum class E_Crafting_MoldSteps CallFunc_GetState_State, class UWidget* K2Node_Select_Default)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_CraftingCreation_Screen_C", "GetDefaultFocusWidget");
-
-	Params::UWBP_CraftingCreation_Screen_C_GetDefaultFocusWidget_Params Parms{};
-
-	Parms.Temp_byte_Variable = Temp_byte_Variable;
-	Parms.CallFunc_GetState_State = CallFunc_GetState_State;
-	Parms.K2Node_Select_Default = K2Node_Select_Default;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
 // Function WBP_CraftingCreation_Screen.WBP_CraftingCreation_Screen_C.UpdateDisplayedEntry
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -957,8 +959,9 @@ void UWBP_CraftingCreation_Screen_C::OnItemAddedOrRemoved(TScriptInterface<class
 // Parameters:
 // class UNWXMenuDataEntry*           SelectedEntry                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     CallFunc_BP_GetDesiredFocusTarget_ReturnValue                    (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CraftingCreation_Screen_C::OnEntrySelected(class UNWXMenuDataEntry* SelectedEntry, bool CallFunc_IsValid_ReturnValue)
+void UWBP_CraftingCreation_Screen_C::OnEntrySelected(class UNWXMenuDataEntry* SelectedEntry, bool CallFunc_IsValid_ReturnValue, class UWidget* CallFunc_BP_GetDesiredFocusTarget_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -969,6 +972,7 @@ void UWBP_CraftingCreation_Screen_C::OnEntrySelected(class UNWXMenuDataEntry* Se
 
 	Parms.SelectedEntry = SelectedEntry;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_BP_GetDesiredFocusTarget_ReturnValue = CallFunc_BP_GetDesiredFocusTarget_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1756,14 +1760,35 @@ void UWBP_CraftingCreation_Screen_C::BndEvt__WBP_CraftingCreation_Screen_CBU_Clo
 }
 
 
+// Function WBP_CraftingCreation_Screen.WBP_CraftingCreation_Screen_C.BndEvt__WBP_CraftingCreation_Screen_WBP_Common_Button_Base_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*           Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CraftingCreation_Screen_C::BndEvt__WBP_CraftingCreation_Screen_WBP_Common_Button_Base_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_CraftingCreation_Screen_C", "BndEvt__WBP_CraftingCreation_Screen_WBP_Common_Button_Base_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::UWBP_CraftingCreation_Screen_C_BndEvt__WBP_CraftingCreation_Screen_WBP_Common_Button_Base_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature_Params Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_CraftingCreation_Screen.WBP_CraftingCreation_Screen_C.ExecuteUbergraph_WBP_CraftingCreation_Screen
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UGlobalAudioSubsystem*       CallFunc_GetEngineSubsystem_ReturnValue                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UGlobalAudioSubsystem*       CallFunc_GetEngineSubsystem_ReturnValue_1                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_ComponentBoundEvent_Quantity                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_ComponentBoundEvent_Shown                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1775,25 +1800,28 @@ void UWBP_CraftingCreation_Screen_C::BndEvt__WBP_CraftingCreation_Screen_CBU_Clo
 // TScriptInterface<class IBPI_SchematicInterfaces_C>K2Node_DynamicCast_AsBPI_Schematic_Interfaces                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UBP_StructureFuelComponent_C*CallFunc_GetFuelComponent_FuelComponent                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsFireLitIfRequired_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_4                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_HasFuelIfRequired_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ANWXPlayerController*        CallFunc_GetOwningPlayerController_ReturnValue                   (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_5                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_4                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ULocalPlayer*                CallFunc_GetLocalPlayerFromController_ReturnValue                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Inv_StructureTransfer_C*CallFunc_CreateWidgetInstanceFromLayer_ReturnValue               (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_5                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ANWXPlayerController*        CallFunc_GetOwningPlayerController_ReturnValue_1                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_4                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_3                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_2                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Array_IsNotEmpty_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*           K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UNWXLocalPlayer*             CallFunc_GetOwningLocalPlayer_ReturnValue                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UWBP_StructureTraitsScreen_C*CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1             (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CraftingCreation_Screen_C::ExecuteUbergraph_WBP_CraftingCreation_Screen(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue_1, int32 K2Node_ComponentBoundEvent_Quantity, bool K2Node_ComponentBoundEvent_Shown, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class UBP_CraftingStationComponent_C* CallFunc_GetComponentByClass_ReturnValue, TArray<struct FCraftingRecipeReference>& CallFunc_GetCraftingRecipes_CurrentCraftingRecipes, class UBP_CraftingCreationComponent_C* CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent, bool CallFunc_IsValid_ReturnValue_1, TScriptInterface<class IBPI_SchematicInterfaces_C> K2Node_DynamicCast_AsBPI_Schematic_Interfaces, bool K2Node_DynamicCast_bSuccess, class UBP_StructureFuelComponent_C* CallFunc_GetFuelComponent_FuelComponent, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsFireLitIfRequired_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_HasFuelIfRequired_ReturnValue, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue, bool CallFunc_IsValid_ReturnValue_5, class ULocalPlayer* CallFunc_GetLocalPlayerFromController_ReturnValue, class UWBP_Inv_StructureTransfer_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue_1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_3, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_2, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, bool CallFunc_Array_IsNotEmpty_ReturnValue)
+void UWBP_CraftingCreation_Screen_C::ExecuteUbergraph_WBP_CraftingCreation_Screen(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue, class UGlobalAudioSubsystem* CallFunc_GetEngineSubsystem_ReturnValue_1, bool Temp_bool_Variable, int32 K2Node_ComponentBoundEvent_Quantity, bool K2Node_ComponentBoundEvent_Shown, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class UBP_CraftingStationComponent_C* CallFunc_GetComponentByClass_ReturnValue, TArray<struct FCraftingRecipeReference>& CallFunc_GetCraftingRecipes_CurrentCraftingRecipes, class UBP_CraftingCreationComponent_C* CallFunc_GetLocalPlayerCraftingCreationComponent_CraftingCreationComponent, bool CallFunc_IsValid_ReturnValue_1, TScriptInterface<class IBPI_SchematicInterfaces_C> K2Node_DynamicCast_AsBPI_Schematic_Interfaces, bool K2Node_DynamicCast_bSuccess, class UBP_StructureFuelComponent_C* CallFunc_GetFuelComponent_FuelComponent, bool CallFunc_IsFireLitIfRequired_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_HasFuelIfRequired_ReturnValue, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, class ULocalPlayer* CallFunc_GetLocalPlayerFromController_ReturnValue, class UWBP_Inv_StructureTransfer_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue, bool CallFunc_IsValid_ReturnValue_5, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_4, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_3, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_2, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button_1, bool CallFunc_Array_IsNotEmpty_ReturnValue, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, class UNWXLocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue, class UWBP_StructureTraitsScreen_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1804,9 +1832,9 @@ void UWBP_CraftingCreation_Screen_C::ExecuteUbergraph_WBP_CraftingCreation_Scree
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
-	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
 	Parms.CallFunc_GetEngineSubsystem_ReturnValue = CallFunc_GetEngineSubsystem_ReturnValue;
 	Parms.CallFunc_GetEngineSubsystem_ReturnValue_1 = CallFunc_GetEngineSubsystem_ReturnValue_1;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.K2Node_ComponentBoundEvent_Quantity = K2Node_ComponentBoundEvent_Quantity;
 	Parms.K2Node_ComponentBoundEvent_Shown = K2Node_ComponentBoundEvent_Shown;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -1818,23 +1846,26 @@ void UWBP_CraftingCreation_Screen_C::ExecuteUbergraph_WBP_CraftingCreation_Scree
 	Parms.K2Node_DynamicCast_AsBPI_Schematic_Interfaces = K2Node_DynamicCast_AsBPI_Schematic_Interfaces;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_GetFuelComponent_FuelComponent = CallFunc_GetFuelComponent_FuelComponent;
-	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
 	Parms.CallFunc_IsFireLitIfRequired_ReturnValue = CallFunc_IsFireLitIfRequired_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
 	Parms.CallFunc_IsValid_ReturnValue_3 = CallFunc_IsValid_ReturnValue_3;
-	Parms.CallFunc_IsValid_ReturnValue_4 = CallFunc_IsValid_ReturnValue_4;
 	Parms.CallFunc_HasFuelIfRequired_ReturnValue = CallFunc_HasFuelIfRequired_ReturnValue;
 	Parms.CallFunc_GetOwningPlayerController_ReturnValue = CallFunc_GetOwningPlayerController_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue_5 = CallFunc_IsValid_ReturnValue_5;
+	Parms.CallFunc_IsValid_ReturnValue_4 = CallFunc_IsValid_ReturnValue_4;
 	Parms.CallFunc_GetLocalPlayerFromController_ReturnValue = CallFunc_GetLocalPlayerFromController_ReturnValue;
 	Parms.CallFunc_CreateWidgetInstanceFromLayer_ReturnValue = CallFunc_CreateWidgetInstanceFromLayer_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_5 = CallFunc_IsValid_ReturnValue_5;
 	Parms.CallFunc_GetOwningPlayerController_ReturnValue_1 = CallFunc_GetOwningPlayerController_ReturnValue_1;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.K2Node_ComponentBoundEvent_Button_4 = K2Node_ComponentBoundEvent_Button_4;
 	Parms.K2Node_ComponentBoundEvent_Button_3 = K2Node_ComponentBoundEvent_Button_3;
 	Parms.K2Node_ComponentBoundEvent_Button_2 = K2Node_ComponentBoundEvent_Button_2;
 	Parms.K2Node_ComponentBoundEvent_Button_1 = K2Node_ComponentBoundEvent_Button_1;
-	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
 	Parms.CallFunc_Array_IsNotEmpty_ReturnValue = CallFunc_Array_IsNotEmpty_ReturnValue;
+	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
+	Parms.CallFunc_GetOwningLocalPlayer_ReturnValue = CallFunc_GetOwningLocalPlayer_ReturnValue;
+	Parms.CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1 = CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 

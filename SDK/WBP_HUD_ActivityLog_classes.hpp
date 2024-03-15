@@ -23,13 +23,15 @@ public:
 	struct FSlateColor                           DefaultColor;                                      // 0x380(0x14)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                           NegativeColor;                                     // 0x394(0x14)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                           SpecialColor;                                      // 0x3A8(0x14)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                        Pad_6F51[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6A6F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class URealmCardsProcessor*                  RealmCardsProcessor;                               // 0x3C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class URedemptionComponent*                  RedemptionComponent;                               // 0x3C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_HUD_ActivityLog_C* GetDefaultObj();
 
+	void OnPlayerLeftParty(const class FString& PlayerName, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue);
+	void OnPlayerJoinedParty(const class FString& PlayerName, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue);
 	void On_Claim_Redemption_Response_Received(bool bSuccess, const class FString& RewardName, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue);
 	void OnMinorCardAddedToRealm(TScriptInterface<class IRealmCard>& RealmCard, enum class ERealmCardAction CardAction, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class FText CallFunc_GetName_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue);
 	void OnInventoryOverflowed();
@@ -47,8 +49,8 @@ public:
 	void OnItemRemovedFromInventory(TScriptInterface<class IItemContainer>& Source, struct FInventoryEntry& Item, int32 Quantity);
 	void OnItemAddedToInventory(TScriptInterface<class IItemContainer>& Source, struct FInventoryEntry& Item, int32 Quantity);
 	void StatusEffectBindings(TSubclassOf<class IInterface> Temp_class_Variable, class APawn* CallFunc_GetOwningPlayerPawn_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UObject* CallFunc_FindFirstImplementor_ReturnValue, TScriptInterface<class IGameplayEffectUIObservable> K2Node_DynamicCast_AsGameplay_Effect_UIObservable, bool K2Node_DynamicCast_bSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1);
-	void PartyUnbindings(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent);
-	void PartyBindings(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent);
+	void PartyUnbindings(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent);
+	void PartyBindings(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UBP_PartyComponent_C* CallFunc_GetLocalPartyComponent_PartyComponent);
 	void InventoryUnbindings(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, TScriptInterface<class IItemContainer> CallFunc_GetBackpack_Container, bool CallFunc_GetBackpack_ReturnValue, TScriptInterface<class IItemContainer> CallFunc_GetEssencePouch_Container, bool CallFunc_GetEssencePouch_ReturnValue, TScriptInterface<class IItemContainer> CallFunc_GetRealmCardDeck_Container, bool CallFunc_GetRealmCardDeck_ReturnValue, bool CallFunc_IsValid_ReturnValue);
 	void OnInventoryReady(bool Success, class UBP_InventoryComponent_C* LInventoryComponent, class UBP_InventoryComponent_C* CallFunc_GetLocalPlayerInventoryComponent_BPInventoryComponent, bool CallFunc_IsValid_ReturnValue);
 	void InventoryBindings(class UBP_InventoryComponent_C* InInventoryComponent, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, TScriptInterface<class IItemContainer> CallFunc_GetEssencePouch_Container, bool CallFunc_GetEssencePouch_ReturnValue, TScriptInterface<class IItemContainer> CallFunc_GetRealmCardDeck_Container, bool CallFunc_GetRealmCardDeck_ReturnValue, TScriptInterface<class IItemContainer> CallFunc_GetBackpack_Container, bool CallFunc_GetBackpack_ReturnValue, bool CallFunc_IsValid_ReturnValue);

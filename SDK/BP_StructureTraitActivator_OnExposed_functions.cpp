@@ -40,29 +40,6 @@ class UBP_StructureTraitActivator_OnExposed_C* UBP_StructureTraitActivator_OnExp
 }
 
 
-// Function BP_StructureTraitActivator_OnExposed.BP_StructureTraitActivator_OnExposed_C.CheckActiveByMinorCard_0
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FStructureTrait>     CallFunc_GetActiveRealmCardTraits_ReturnValue                    (ReferenceParm, ContainsInstancedReference)
-// bool                               CallFunc_Array_Contains_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_StructureTraitActivator_OnExposed_C::CheckActiveByMinorCard_0(TArray<struct FStructureTrait>& CallFunc_GetActiveRealmCardTraits_ReturnValue, bool CallFunc_Array_Contains_ReturnValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_StructureTraitActivator_OnExposed_C", "CheckActiveByMinorCard_0");
-
-	Params::UBP_StructureTraitActivator_OnExposed_C_CheckActiveByMinorCard_0_Params Parms{};
-
-	Parms.CallFunc_GetActiveRealmCardTraits_ReturnValue = CallFunc_GetActiveRealmCardTraits_ReturnValue;
-	Parms.CallFunc_Array_Contains_ReturnValue = CallFunc_Array_Contains_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function BP_StructureTraitActivator_OnExposed.BP_StructureTraitActivator_OnExposed_C.OnSheltered
 // (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

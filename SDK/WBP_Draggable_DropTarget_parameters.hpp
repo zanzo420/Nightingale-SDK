@@ -89,16 +89,16 @@ public:
 	struct FPointerEvent                         K2Node_Event_PointerEvent;                         // 0xD8(0x78)(None)
 	class UDragDropOperation*                    K2Node_Event_Operation;                            // 0x150(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x158(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72BB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7143[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x160(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsAnimationPlaying_ReturnValue;           // 0x168(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsRendered_ReturnValue;                   // 0x169(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72BC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7144[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_1;              // 0x170(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_2;              // 0x178(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsAnimationPlaying_ReturnValue_1;         // 0x180(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Display;                        // 0x181(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_72BD[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7145[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_3;              // 0x188(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 

@@ -36,7 +36,7 @@ struct UWBP_PopupCheatGrantItem_C_ExecuteUbergraph_WBP_PopupCheatGrantItem_Param
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9395[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9225[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    K2Node_Event_ItemID;                               // 0x10(0x80)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x90(0x10)(ReferenceParm)
 	class FText                                  CallFunc_Format_ReturnValue;                       // 0xA0(0x18)(None)

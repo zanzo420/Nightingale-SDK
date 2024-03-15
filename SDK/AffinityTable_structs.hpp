@@ -19,7 +19,7 @@ namespace SDK
 struct FCellDataArrayWrapper
 {
 public:
-	uint8                                        Pad_38D3[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_36A6[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -27,7 +27,7 @@ public:
 struct FAffinityTableCellDataWrapper
 {
 public:
-	uint8                                        Pad_38D4[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_36A8[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

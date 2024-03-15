@@ -37,7 +37,7 @@ public:
 	class ABP_FluxOceanWave_C*                   OceanWaveActor;                                    // 0x370(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class AActor>                 ScenePainterActor;                                 // 0x378(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	enum class EBE_SurfaceMesh                   SurfaceMeshMode;                                   // 0x3A0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_75C4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_682D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                ExternalMeshActor;                                 // 0x3A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                            SurfaceMeshTransform;                              // 0x3B0(0x60)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                    SurfaceOverMaterial;                               // 0x410(0x8)(Edit, BlueprintVisible, ZeroConstructor, Interp, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -57,10 +57,10 @@ public:
 	class UMaterialInstanceDynamic*              PostprocessInstance;                               // 0x490(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              VolumeAbsorptionInstance;                          // 0x498(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         GenerateProceduralMeshView;                        // 0x4A0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_75C5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_682E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInterface*                    GeneratedSurfaceOverMaterial;                      // 0x4A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                        GenerateEdgePadding;                               // 0x4B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_75C6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6830[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        GenerateLOD;                                       // 0x4B4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       AudioFalloffDistance;                              // 0x4B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               AudioExtendDistance;                               // 0x4C0(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -71,7 +71,7 @@ public:
 	double                                       CurrentCameraBlur;                                 // 0x500(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsCameraVolumeRendered;                            // 0x508(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         InitVolumeRendered;                                // 0x509(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_75C7[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6831[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AStaticMeshActor*>              DistantMeshes;                                     // 0x510(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	TMap<int32, struct FBS_FluxSplashData>       InteractionSplashes;                               // 0x520(0x50)(Edit, BlueprintVisible, ContainsInstancedReference)
 	class USceneComponent*                       CameraComponent;                                   // 0x570(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -79,7 +79,7 @@ public:
 	class FString                                GeneratedMeshStats;                                // 0x5C8(0x10)(Edit, BlueprintVisible, ZeroConstructor, Transient, HasGetValueTypeHash)
 	TMap<enum class EBE_SurfaceMesh, TSoftObjectPtr<class UStaticMesh>> SectionMeshes;                                     // 0x5D8(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FIntVector                            WorldOriginLocation;                               // 0x628(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_75C8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6832[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNiagaraComponent*                     InfiniteOverPlane;                                 // 0x638(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                     InfiniteUnderPlane;                                // 0x640(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               ExtendVolumeSize;                                  // 0x648(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -91,7 +91,7 @@ public:
 	class UPDA_FluxSurfacePreset_C*              ShoreColorPreset;                                  // 0x6A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPDA_FluxSurfacePreset_C*              PainterColorPreset;                                // 0x6A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         AllowUnderwaterEffects;                            // 0x6B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_75CA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6833[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       InfiniteGridBoundsScale;                           // 0x6B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                              CutMaskTexture;                                    // 0x6C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                              POITexture;                                        // 0x6C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)

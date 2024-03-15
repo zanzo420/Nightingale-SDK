@@ -64,7 +64,7 @@ enum class EPropertyBagMissingEnum : uint8
 struct FInstancedStruct
 {
 public:
-	uint8                                        Pad_3CD7[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D67[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -72,7 +72,7 @@ public:
 struct FInstancedStructContainer
 {
 public:
-	uint8                                        Pad_3CD8[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D68[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x3 (0x3 - 0x0)
@@ -80,7 +80,7 @@ public:
 struct FPropertyBagContainerTypes
 {
 public:
-	uint8                                        Pad_3CD9[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D69[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -102,7 +102,7 @@ public:
 	class FName                                  Name;                                              // 0x18(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EPropertyBagPropertyType          ValueType;                                         // 0x20(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPropertyBagContainerTypes            ContainerTypes;                                    // 0x21(0x3)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3CDA[0xC];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D6A[0xC];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -118,7 +118,7 @@ public:
 struct FPropertyBagMissingStruct
 {
 public:
-	uint8                                        Pad_3CDB[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D6B[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -126,7 +126,7 @@ public:
 struct FSharedStruct
 {
 public:
-	uint8                                        Pad_3CDC[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D6C[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -134,7 +134,7 @@ public:
 struct FConstSharedStruct
 {
 public:
-	uint8                                        Pad_3CDD[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3D6D[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

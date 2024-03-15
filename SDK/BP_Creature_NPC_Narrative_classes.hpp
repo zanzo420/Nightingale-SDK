@@ -9,19 +9,19 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x68 (0x18E8 - 0x1880)
+// 0x68 (0x1920 - 0x18B8)
 // BlueprintGeneratedClass BP_Creature_NPC_Narrative.BP_Creature_NPC_Narrative_C
 class ABP_Creature_NPC_Narrative_C : public ABP_Creature_NPC_Human_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1880(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMaterialBillboardComponent*           QuestIndicatorSign;                                // 0x1888(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                  CompassMarker;                                     // 0x1890(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_QuestGiverComponent_C*             BP_QuestGiverComponent;                            // 0x1898(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                   ContractMenuHandle;                                // 0x18A0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UNarrativeNPCMapPinComponent*          NarrativeNPCMapPin;                                // 0x18B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UAnimInstance*                         AnimInstance;                                      // 0x18B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class UCreatureAnimationDataAsset> DefaultIdleAnimAsset;                              // 0x18C0(0x28)(Edit, BlueprintVisible, Net, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x18B8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMaterialBillboardComponent*           QuestIndicatorSign;                                // 0x18C0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                  CompassMarker;                                     // 0x18C8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_QuestGiverComponent_C*             BP_QuestGiverComponent;                            // 0x18D0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                   ContractMenuHandle;                                // 0x18D8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UNarrativeNPCMapPinComponent*          NarrativeNPCMapPin;                                // 0x18E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UAnimInstance*                         AnimInstance;                                      // 0x18F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UCreatureAnimationDataAsset> DefaultIdleAnimAsset;                              // 0x18F8(0x28)(Edit, BlueprintVisible, Net, DisableEditOnInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_Creature_NPC_Narrative_C* GetDefaultObj();

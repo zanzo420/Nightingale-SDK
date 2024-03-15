@@ -30,23 +30,23 @@ public:
 	class UTextBlock*                            Txt_NotificationHeader_queue;                      // 0x3B0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Component_Small_Flourish_Right_C* WBP_Component_Small_Flourish_Right;                // 0x3B8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         NotificationFinished;                              // 0x3C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7988[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7B0A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       DisplayTime;                                       // 0x3C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              Material_Wash;                                     // 0x3D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       TimeWash;                                          // 0x3D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        TitleMaxLength;                                    // 0x3E0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7989[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7B0B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_QuestNotificatorInfo               CurrentNotication;                                 // 0x3E8(0xA0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<struct FS_QuestNotificatorInfo>       NotificationQueue;                                 // 0x488(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                        TimeBetweenNotifications;                          // 0x498(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         EntireWidgetShown;                                 // 0x49C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_798A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7B0C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAkComponent*                          AkComponent;                                       // 0x4A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_NotificationCardWindow_C* GetDefaultObj();
 
-	void TriggerOpenAudio(bool CallFunc_IsVisible_ReturnValue, FDelegateProperty_ Temp_delegate_Variable, class UAkComponent* CallFunc_SpawnAkComponentAtLocation_ReturnValue, TArray<struct FAkExternalSourceInfo>& Temp_struct_Variable, int32 CallFunc_PostAkEvent_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1);
+	void TriggerOpenAudio(const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue, class UUIAudioSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue_1, bool CallFunc_IsVisible_ReturnValue);
 	struct FEventReply OnInputStart(const struct FEventReply& CallFunc_Handled_ReturnValue);
 	struct FEventReply OnInputSelect(const struct FEventReply& CallFunc_Handled_ReturnValue);
 	void RemoveCurrentNotificationFromQueue(bool* Success, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FS_QuestNotificatorInfo& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_EqualEqual_TextText_ReturnValue);

@@ -21,7 +21,7 @@ public:
 	double                                       Ring1MaxDistance;                                  // 0x578(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FVector>                       EQSLocations;                                      // 0x580(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        ProjectileIndex;                                   // 0x590(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_598A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_703C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UScopedAkComponent*                    EruptScopedAk;                                     // 0x598(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

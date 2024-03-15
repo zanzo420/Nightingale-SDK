@@ -16,7 +16,7 @@ class UABP_Cooking_Station_Template_C : public UNWXStructureAnimInstance
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x4A0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimBlueprintGeneratedMutableData    __AnimBlueprintMutables;                           // 0x4A8(0x2)(HasGetValueTypeHash)
-	uint8                                        Pad_A5BB[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A4BC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x4B0(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x4B8(0x8)(None)
 	struct FAnimNode_Root                        AnimGraphNode_Root;                                // 0x4C0(0x20)(None)

@@ -19,7 +19,7 @@ namespace SDK
 struct FDelegateHandleBPWrapper
 {
 public:
-	uint8                                        Pad_2DA3[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2977[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

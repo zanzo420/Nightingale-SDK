@@ -16,7 +16,7 @@ class UABP_HMU_NPC_Template_C : public UNWXAINPCAnimInstance
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x710(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimBlueprintGeneratedMutableData    __AnimBlueprintMutables;                           // 0x718(0x5)(HasGetValueTypeHash)
-	uint8                                        Pad_6136[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9E3E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x720(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_BlendSpaceGraph;            // 0x728(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x730(0x8)(None)
@@ -223,11 +223,11 @@ public:
 	bool                                         K2Node_PropertyAccess_2;                           // 0x50B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_PropertyAccess_1;                           // 0x50B1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_PropertyAccess;                             // 0x50B2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6137[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9E4B[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               __CustomProperty_EyeOffset_B96ADEFC4923E8F3DC57E2A776BF3504; // 0x50B8(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EABDesignationType                ActiveBankAB;                                      // 0x50D0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EAlertnessLevelType               AlertnessLevel;                                    // 0x50D1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6138[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9E4C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_CreatureBase_C*                    Character;                                         // 0x50D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UOverlay_AnimB_Base_C*                 OverlayBank_A;                                     // 0x50E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UOverlay_AnimB_Base_C*                 OverlayBank_B;                                     // 0x50E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -249,7 +249,7 @@ public:
 	double                                       Arm_R_LS;                                          // 0x5168(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Arm_R_MS;                                          // 0x5170(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFootStanceType                   BaseStanceType;                                    // 0x5178(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6139[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9E4D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Offset;                                            // 0x5180(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EBodyType                         BodyType;                                          // 0x5198(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

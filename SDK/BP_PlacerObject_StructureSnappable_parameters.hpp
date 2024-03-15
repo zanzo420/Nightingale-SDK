@@ -22,29 +22,29 @@ public:
 	class AController*                           Controller;                                        // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FSnapPlacementTargetData              SnapData;                                          // 0x10(0xA0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                         ReturnValue;                                       // 0xB0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52EC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2958[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCompositePieceSnapObject*             AttachedObjectSnapComponent;                       // 0xB8(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGridPoint                            TargetSnapPoint;                                   // 0xC0(0xD0)(Edit, BlueprintVisible)
 	class UObject*                               AttachedObject;                                    // 0x190(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_FinalizeStructureData_ReturnValue;        // 0x198(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52ED[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2959[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               CallFunc_GetSupportObjectFromStructure_ReturnValue; // 0x1A0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class ISupportInterface>    K2Node_DynamicCast_AsSupport_Interface;            // 0x1A8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x1B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52EE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_295A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               CallFunc_GetSnapActorFromTargetData_OutActor;      // 0x1C0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52EF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_295B[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGridPoint                            CallFunc_GetSnapActorFromTargetData_OutSelectedSnapPoint; // 0x1D0(0xD0)(None)
 	TScriptInterface<class IStructureSnappableInterface> K2Node_DynamicCast_AsStructure_Snappable_Interface; // 0x2A0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_1;                     // 0x2B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52F0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_295C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IStructureSnappableInterface> K2Node_DynamicCast_AsStructure_Snappable_Interface_1; // 0x2B8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_2;                     // 0x2C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52F2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_295D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCompositePieceSnapObject*             CallFunc_GetSnapComponent_SnapObject;              // 0x2D0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCompositePieceSnapObject*             CallFunc_GetSnapComponent_SnapObject_1;            // 0x2D8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x2E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52F4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_295E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetFunctionName_ReturnValue;              // 0x2E8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x2F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -72,27 +72,27 @@ public:
 	TArray<class AActor*>                        NearbyActors;                                      // 0xF0(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	TArray<struct FGridPoint>                    SnapPoints;                                        // 0x100(0x10)(Edit, BlueprintVisible)
 	enum class ESnapType                         DesiredSnapType;                                   // 0x110(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_531D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_295F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructurePlacementFeedback           FeedbackData;                                      // 0x118(0xB8)(Edit, BlueprintVisible, ContainsInstancedReference)
 	class USphereComponent*                      Temp_object_Variable;                              // 0x1D0(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x1D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_531E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2960[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AActor*>                        CallFunc_GetOverlappingActors_OverlappingActors;   // 0x1E0(0x10)(ReferenceParm)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x1F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_531F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2961[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_Array_Get_Item;                           // 0x1F8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x200(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5320[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2962[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class ISchematicInfoInterface> K2Node_DynamicCast_AsSchematic_Info_Interface;     // 0x208(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x218(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5321[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2963[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSnapPlacementTargetData              CallFunc_GetSnapPlacementData_OutData;             // 0x220(0xA0)(None)
 	class USphereComponent*                      CallFunc_GetAreaOfEffect_ReturnValue;              // 0x2C0(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               CallFunc_GetSnapActorFromTargetData_OutActor;      // 0x2C8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGridPoint                            CallFunc_GetSnapActorFromTargetData_OutSelectedSnapPoint; // 0x2D0(0xD0)(None)
 	struct FTransform                            CallFunc_GetGridPointWorldTransform_ReturnValue;   // 0x3A0(0x60)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x400(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5322[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2964[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               CallFunc_BreakTransform_Location;                  // 0x408(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              CallFunc_BreakTransform_Rotation;                  // 0x420(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                               CallFunc_BreakTransform_Scale;                     // 0x438(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -100,14 +100,14 @@ public:
 	TScriptInterface<class IStructureSnappableInterface> K2Node_DynamicCast_AsStructure_Snappable_Interface; // 0x508(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_1;                     // 0x518(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESnapType                         CallFunc_GetSnapType_SnapPointType;                // 0x519(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5323[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2965[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructurePlacementFeedback_SnapPoint K2Node_MakeStruct_StructurePlacementFeedback_SnapPoint; // 0x520(0x28)(None)
 	TArray<struct FGridPoint>                    CallFunc_GetUnoccupiedSnapPointsForPieceOfType_OutMatchingSnapPoints; // 0x548(0x10)(ReferenceParm)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x558(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x55C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5324[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2966[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x560(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5325[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2967[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructurePlacementFeedback_SnapPoint K2Node_MakeStruct_StructurePlacementFeedback_SnapPoint_1; // 0x568(0x28)(None)
 	TArray<struct FGridPoint>                    CallFunc_GetUnoccupiedSnapPointsForPieceViaTrace_OutSnapPoints; // 0x590(0x10)(ReferenceParm)
 	TArray<struct FGridPoint>                    CallFunc_GetUnoccupiedSnapPointsForPieceOfType_OutMatchingSnapPoints_1; // 0x5A0(0x10)(ReferenceParm)
@@ -128,10 +128,10 @@ public:
 	struct FGameplayAbilityTargetDataHandle      CallFunc_GetPlacementTransform_ReturnValue_1;      // 0x68(0x28)(None)
 	TScriptInterface<class IStructureSnappableInterface> K2Node_DynamicCast_AsStructure_Snappable_Interface; // 0x90(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0xA0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_532E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2968[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCompositePieceSnapObject*             CallFunc_GetSnapComponent_SnapObject;              // 0xA8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0xB0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_532F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2969[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayAbilityTargetDataHandle      CallFunc_GetSnapPlacementTransform_SnapTargetData; // 0xB8(0x28)(None)
 	bool                                         CallFunc_GetSnapPlacementTransform_ReturnValue;    // 0xE0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -148,20 +148,20 @@ public:
 	TArray<class UObject*>                       LIgnoredObjects;                                   // 0x48(0x10)(Edit, BlueprintVisible)
 	TArray<class UObject*>                       CallFunc_GetObjectsToIgnoreInGeometryTrace_OutObjectsToIgnore; // 0x58(0x10)(ReferenceParm)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5331[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_296A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TScriptInterface<class IStructureSnappableInterface> K2Node_DynamicCast_AsStructure_Snappable_Interface; // 0x70(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x80(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5332[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_296B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCompositePieceSnapObject*             CallFunc_GetSnapComponent_SnapObject;              // 0x88(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Add_ReturnValue;                    // 0x90(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x94(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5333[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_296C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UObject*>                       CallFunc_GetAllConnectedStructures_ConnectedStructures; // 0x98(0x10)(ReferenceParm)
 	int32                                        CallFunc_Array_Add_ReturnValue_1;                  // 0xA8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5334[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_296D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSnapPlacementTargetData              CallFunc_GetSnapPlacementData_OutData;             // 0xB0(0xA0)(None)
 	class UObject*                               CallFunc_GetSnapActorFromTargetData_OutActor;      // 0x150(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5335[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_296E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGridPoint                            CallFunc_GetSnapActorFromTargetData_OutSelectedSnapPoint; // 0x160(0xD0)(None)
 };
 

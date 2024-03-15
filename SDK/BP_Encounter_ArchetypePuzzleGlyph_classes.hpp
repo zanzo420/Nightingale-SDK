@@ -17,13 +17,13 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x448(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UBP_EncounterComponent_Spawners_C*     BP_EncounterComponent_Spawners;                    // 0x450(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	int32                                        GlyphTotalCount;                                   // 0x458(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_273E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A6D1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_Structure_EncounterTrigger_ArenaContainer_C* Hope_Containment_Structure;                        // 0x460(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FTransform>                    Container_Glyph_Anchors;                           // 0x468(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class AGlyphVolume*>                  PuzzleGlyphs;                                      // 0x478(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	int32                                        DiscoveredGlyphCount;                              // 0x488(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         AllGlyphsFound;                                    // 0x48C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_273F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A6D4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class AGlyphVolume*, class AGlyphVolume*> GlyphToGlyphCopy;                                  // 0x490(0x50)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 
 	static class UClass* StaticClass();

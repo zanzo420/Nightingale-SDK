@@ -26,10 +26,10 @@ public:
 	class UCodexTrackerComponent*                CallFunc_GetComponentByClass_ReturnValue;          // 0x30(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Popup_Codex_C*                    CallFunc_CreateWidgetInstanceFromLayer_ReturnValue; // 0x38(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_43D3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8C1F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_MenuDataEntry_Codex_C*             K2Node_DynamicCast_AsBP_Menu_Data_Entry_Codex;     // 0x48(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_43D4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8C20[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCodexBaseDataAsset*                   CallFunc_GetCodexDataAsset_CodexDataAsset;         // 0x58(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class ICodexTrackerInterface> CallFunc_GetCodexEntry_self_CastInput;             // 0x60(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FCodexEntry                           CallFunc_GetCodexEntry_OutCodexEntry;              // 0x70(0xF0)(None)
@@ -60,14 +60,14 @@ public:
 	bool                                         Temp_bool_Variable_2;                              // 0xE(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_4;                              // 0xF(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_5;                              // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_43D5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8C21[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x18(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetImage_IsValidReference;                // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_43D6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8C22[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             CallFunc_GetImage_EntryImage;                      // 0x28(0x28)(UObjectWrapper, HasGetValueTypeHash)
 	class UBP_MenuDataEntry_Codex_C*             K2Node_DynamicCast_AsBP_Menu_Data_Entry_Codex;     // 0x50(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_43D7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8C23[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCodexBaseDataAsset*                   CallFunc_GetCodexDataAsset_CodexDataAsset;         // 0x60(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                  CallFunc_Get_Codex_Subentries_In_Guidebook_Codex_Subentry_Text; // 0x68(0x18)(None)
 	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x80(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -76,7 +76,7 @@ public:
 	enum class ESlateVisibility                  K2Node_Select_Default_1;                           // 0x83(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_TextIsEmpty_ReturnValue_2;                // 0x84(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_2;                           // 0x85(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_43D8[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8C24[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_PlayerState_C*                     CallFunc_GetLocalPlayerState_PlayerState;          // 0x88(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -94,7 +94,7 @@ struct UWBP_GuideBook_DetailPane_Codex_C_ExecuteUbergraph_WBP_GuideBook_DetailPa
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_43DA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8C25[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButtonBase*                     K2Node_ComponentBoundEvent_Button;                 // 0x8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 

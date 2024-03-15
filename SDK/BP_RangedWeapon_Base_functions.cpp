@@ -915,7 +915,7 @@ void ABP_RangedWeapon_Base_C::GetReloadType(enum class ERangedWeaponReloadType* 
 
 
 // Function BP_RangedWeapon_Base.BP_RangedWeapon_Base_C.AddEffects
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UAbilitySystemComponent*     ParentAbilitySystem                                              (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -974,7 +974,7 @@ void ABP_RangedWeapon_Base_C::AddEffects(class UAbilitySystemComponent* ParentAb
 
 
 // Function BP_RangedWeapon_Base.BP_RangedWeapon_Base_C.FinishLoadout
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void ABP_RangedWeapon_Base_C::FinishLoadout()

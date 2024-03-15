@@ -15,7 +15,7 @@ class UBP_RecipeResult_AddSpell_C : public UBP_RecipeResult_GrantItem_C
 {
 public:
 	int32                                        SlotToImbue;                                       // 0x30(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_62EC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A78D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<TSoftObjectPtr<class UTechniqueDataAsset>> SpellTechniques;                                   // 0x38(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();

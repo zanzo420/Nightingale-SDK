@@ -27,7 +27,7 @@ struct UWBP_Debug_QA_CustomCommandButton_C_ExecuteUbergraph_WBP_Debug_QA_CustomC
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_935C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_331A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x8(0x18)(None)
 };
 

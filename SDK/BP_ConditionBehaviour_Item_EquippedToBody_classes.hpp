@@ -17,7 +17,7 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x80(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class ULoadoutComponentBase*                 LoadoutComponent;                                  // 0x88(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	enum class ELoadoutSlotType                  LoadoutSlot;                                       // 0x90(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A2E5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A40B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemConstraint                       ItemConstraint;                                    // 0x98(0x40)(Edit, BlueprintVisible, ContainsInstancedReference, ExposeOnSpawn)
 
 	static class UClass* StaticClass();

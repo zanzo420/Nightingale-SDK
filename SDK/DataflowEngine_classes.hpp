@@ -26,9 +26,9 @@ public:
 class UDataflowEdNode : public UEdGraphNode
 {
 public:
-	uint8                                        Pad_2E61[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2A77[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bRenderInAssetEditor;                              // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2E62[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2A78[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UDataflowEdNode* GetDefaultObj();
@@ -40,9 +40,9 @@ public:
 class UDataflow : public UEdGraph
 {
 public:
-	uint8                                        Pad_2E63[0x28];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2A79[0x28];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bActive;                                           // 0x88(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2E64[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2A7A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UObject*>                       Targets;                                           // 0x90(0x10)(Edit, ZeroConstructor, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic)
 	class UMaterial*                             Material;                                          // 0xA0(0x8)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 

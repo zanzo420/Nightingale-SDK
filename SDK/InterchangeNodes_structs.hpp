@@ -81,7 +81,7 @@ struct FInterchangeAnimationPayLoadKey
 public:
 	class FString                                UniqueID;                                          // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EInterchangeAnimationPayLoadType  Type;                                              // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A56[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4A94[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -91,7 +91,7 @@ struct FInterchangeMeshPayLoadKey
 public:
 	class FString                                UniqueID;                                          // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EInterchangeMeshPayLoadType       Type;                                              // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A57[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4A95[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

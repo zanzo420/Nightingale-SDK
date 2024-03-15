@@ -49,7 +49,7 @@ public:
 	TMap<class FString, TSoftObjectPtr<class UObject>> AssetReferences;                                   // 0x18(0x50)(Edit, EditConst, RepSkip, UObjectWrapper, NativeAccessSpecifierPrivate)
 	TSet<struct FSoftObjectPath>                 AssetPaths;                                        // 0x68(0x50)(Edit, EditConst, RepSkip, NativeAccessSpecifierPrivate)
 	TSet<struct FGameplayTag>                    GameplayTagReferences;                             // 0xB8(0x50)(Edit, EditConst, RepSkip, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2BEF[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1817[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)

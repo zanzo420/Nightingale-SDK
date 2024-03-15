@@ -20,7 +20,7 @@ public:
 	class UTextBlock*                            Txt_Value;                                         // 0x3B0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FGameplayAttributeUIData              AttributeUIData;                                   // 0x3B8(0xC0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         ValueChanged;                                      // 0x478(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2641[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5D67[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        ArrayOfAttributesWeapon;                           // 0x480(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class FString>                        ArrayOfAttributesAddition;                         // 0x490(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                       OldValue;                                          // 0x4A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

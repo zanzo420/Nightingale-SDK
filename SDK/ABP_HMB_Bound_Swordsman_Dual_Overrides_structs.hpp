@@ -19,7 +19,7 @@ namespace SDK
 struct FAnimBlueprintGeneratedConstantData : public FAnimBlueprintConstantData
 {
 public:
-	uint8                                        Pad_A7F2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A4D7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  __NameProperty_65;                                 // 0x4(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  __NameProperty_66;                                 // 0xC(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  __NameProperty_67;                                 // 0x14(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -29,7 +29,7 @@ public:
 	class FName                                  __NameProperty_71;                                 // 0x34(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  __NameProperty_72;                                 // 0x3C(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  __NameProperty_73;                                 // 0x44(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A7F3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A4D8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimNodeFunctionRef                  __StructProperty_74;                               // 0x50(0x20)(BlueprintVisible, NoDestructor)
 	class FName                                  __NameProperty_75;                                 // 0x70(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  __NameProperty_76;                                 // 0x78(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -61,7 +61,7 @@ struct FTelemetryEventDescriptor
 {
 public:
 	enum class EMetricsClass                     MetricsClass;                                      // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1888[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9F2[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                EventName;                                         // 0x8(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FMetricsEventAttr>             Attributes;                                        // 0x18(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };

@@ -46,7 +46,7 @@ public:
 	bool                                         CallFunc_TextIsEmpty_ReturnValue_2;                // 0x87(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_1;                           // 0x88(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_2;                           // 0x89(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_74CE[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_73BC[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateColor                           K2Node_Select_Default_3;                           // 0x8C(0x14)(None)
 };
 
@@ -81,7 +81,7 @@ struct UWBP_HUD_InteractHint_txt_C_ExecuteUbergraph_WBP_HUD_InteractHint_txt_Par
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ECommonInputType                  K2Node_Event_CurrentInputType;                     // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_74D0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_73BD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInteractionUIContext                 K2Node_CustomEvent_InteractionContext;             // 0x8(0x78)(None)
 	class UCommonInputSubsystem*                 CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x80(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue;          // 0x88(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

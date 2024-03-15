@@ -20,27 +20,27 @@ struct UWBP_EncounterDetailsUpdater_C_GetEncounterDetailsViaInstanceID_Params
 public:
 	struct FGuid                                 EncounterInstance;                                 // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x10(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7647[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_767D[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Encounter_UI_Details               Details;                                           // 0x20(0x200)(Parm, OutParm, ContainsInstancedReference, HasGetValueTypeHash)
 	TArray<struct FEncounterDynamicData>         DynamicData;                                       // 0x220(0x10)(Edit, BlueprintVisible)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x230(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x234(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x238(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x23C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7648[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_767E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x240(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7649[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_767F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FEncounterDynamicData                 CallFunc_Array_Get_Item;                           // 0x248(0xB0)(None)
 	bool                                         CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x2F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x2F9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_764A[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7680[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDA_EncounterDetailsDataAsset_C*       K2Node_DynamicCast_AsDA_Encounter_Details_Data_Asset; // 0x300(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x308(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_764B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7681[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANWXPlayerState*                       CallFunc_GetOwningPlayerState_ReturnValue;         // 0x310(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UEncounterProgressTracker*             CallFunc_GetComponentByClass_ReturnValue;          // 0x318(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x320(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_764C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7682[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FEncounterDynamicData>         CallFunc_GetAllDynamicData_OutData;                // 0x328(0x10)(ReferenceParm)
 };
 
@@ -54,10 +54,10 @@ public:
 	class FText                                  CallFunc_Format_ReturnValue;                       // 0x210(0x18)(None)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array_1;                          // 0x228(0x10)(ReferenceParm)
 	bool                                         Temp_bool_Variable;                                // 0x238(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7656[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7683[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Format_ReturnValue_1;                     // 0x240(0x18)(None)
 	bool                                         CallFunc_EqualEqual_TextText_ReturnValue;          // 0x258(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7657[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7684[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  K2Node_Select_Default;                             // 0x260(0x18)(None)
 };
 
@@ -110,7 +110,7 @@ struct UWBP_EncounterDetailsUpdater_C_ExecuteUbergraph_WBP_EncounterDetailsUpdat
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetEncounterDetailsViaInstanceID_Success; // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_765E[0xB];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7685[0xB];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Encounter_UI_Details               CallFunc_GetEncounterDetailsViaInstanceID_Details; // 0x10(0x200)(ContainsInstancedReference, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x210(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IEncounterUIDataInterface> K2Node_CustomEvent_EncounterData_1;                // 0x218(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -127,12 +127,12 @@ public:
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x298(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x299(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x29A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_765F[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7686[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_4;              // 0x2A0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IEncounterUIDataInterface> K2Node_CustomEvent_EncounterData_2;                // 0x2A8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FNotificationEncounter                K2Node_CustomEvent_Notification;                   // 0x2B8(0x60)(None)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x318(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7660[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7687[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 K2Node_CustomEvent_EncounterInstanceID;            // 0x31C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Delay_Duration_ImplicitCast;              // 0x32C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

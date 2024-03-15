@@ -14,18 +14,18 @@ namespace SDK
 class ABP_CreatureCreatedObstacle_Bramble_C : public ABP_CreatureCreatedObstacle_C
 {
 public:
-	uint8                                        Pad_9C31[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6981[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x300(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UBoxComponent*                         Box;                                               // 0x308(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAIPerceptionStimuliSourceComponent*   AIPerceptionStimuliSource;                         // 0x310(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                     NS_EotenBramble_0;                                 // 0x318(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        Timeline_SpawnAnim_EF50FF89449A763F4FB4BDB4AEA3F532; // 0x320(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                Timeline__Direction_EF50FF89449A763F4FB4BDB4AEA3F532; // 0x324(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9C32[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6982[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    Timeline;                                          // 0x328(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                        Timeline_0_SpawnAnim_36FB2077489B55D67A41579EE8752ABD; // 0x330(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                Timeline_0__Direction_36FB2077489B55D67A41579EE8752ABD; // 0x334(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9C33[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6983[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    Timeline_0;                                        // 0x338(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               SpawnLocation;                                     // 0x340(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               EndLocation;                                       // 0x358(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

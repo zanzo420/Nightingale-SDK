@@ -17,9 +17,9 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x678(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class ABP_Character_C*                       PlayerCharacter;                                   // 0x680(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	enum class EInputActionTypes                 ShoveInputSlot;                                    // 0x688(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A6D9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A821[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTechniqueDataAsset>    ShoveTechniqueAsset;                               // 0x690(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	uint8                                        Pad_A6DA[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A822[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    UnarmedReference;                                  // 0x6C0(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FInventoryEntry                       Item_Entry;                                        // 0x740(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         BlockStarted;                                      // 0xA30(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

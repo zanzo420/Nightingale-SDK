@@ -28,7 +28,7 @@ public:
 	double                                       HitReactionThresholdKnockdown_99_0E043984433C32FCADBDB181F6807263; // 0x68(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       HitReactionThresholdExplosive_102_F681D9B246B2FB37F6AAF2BD47575BD4; // 0x70(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         AllowCorpseDamage_39_B02E6CE644AECF6AAD5C76BE25A19FBA; // 0x78(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_68E2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6848[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<struct FGameplayAttribute, double>      GASAttributes_47_D7D5DB844903F7C7243F3BA3DD65BC40; // 0x80(0x50)(Edit, BlueprintVisible)
 	struct FS_HitReactThresholdReactions         HitReactThresholdReactions_53_4CA5202E457299B7D756F5855349F67E; // 0xD0(0x18)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<enum class EMovementSpeed, double>      MovementSpeeds_58_B5681098453142D99C175ABC409D7C9B; // 0xE8(0x50)(Edit, BlueprintVisible)

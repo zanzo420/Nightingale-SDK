@@ -39,12 +39,12 @@ class UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties : public UI
 {
 public:
 	bool                                         bImportOnlyAnimations;                             // 0xE8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A8C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E59[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TWeakObjectPtr<class USkeleton>              Skeleton;                                          // 0xEC(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bImportMeshesInBoneHierarchy;                      // 0xF4(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseT0AsRefPose;                                   // 0xF5(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bConvertStaticsWithMorphTargetsToSkeletals;        // 0xF6(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A8D[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E5A[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties* GetDefaultObj();
@@ -57,7 +57,7 @@ class UGLTFPipelineSettings : public UDeveloperSettings
 {
 public:
 	TMap<class FString, struct FSoftObjectPath>  MaterialParents;                                   // 0x38(0x50)(Edit, Config, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A8E[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E5B[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGLTFPipelineSettings* GetDefaultObj();
@@ -69,9 +69,9 @@ public:
 class UInterchangeGLTFPipeline : public UInterchangePipelineBase
 {
 public:
-	uint8                                        Pad_4A8F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E5C[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bUseGLTFMaterialInstanceLibrary;                   // 0xF0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A90[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E5D[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeGLTFPipeline* GetDefaultObj();
@@ -95,7 +95,7 @@ public:
 class UInterchangeMaterialXPipeline : public UInterchangePipelineBase
 {
 public:
-	uint8                                        Pad_4A91[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E5E[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeMaterialXPipeline* GetDefaultObj();
@@ -112,10 +112,10 @@ public:
 	bool                                         bImportAnimations;                                 // 0xF8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bImportBoneTracks;                                 // 0xF9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EInterchangeAnimationRange        AnimationRange;                                    // 0xFA(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A92[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E5F[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInt32Interval                        FrameImportRange;                                  // 0xFC(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUse30HzToBakeBoneAnimation;                       // 0x104(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A93[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E60[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CustomBoneAnimationSampleRate;                     // 0x108(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bSnapToClosestFrameBoundary;                       // 0x10C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bImportCustomAttribute;                            // 0x10D(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -127,10 +127,10 @@ public:
 	bool                                         bDeleteExistingNonCurveCustomAttributes;           // 0x122(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bDeleteExistingCustomAttributeCurves;              // 0x123(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bDeleteExistingMorphTargetCurves;                  // 0x124(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A94[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E61[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                SourceAnimationName;                               // 0x128(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bSceneImport;                                      // 0x138(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4A95[0x1F];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E62[0x1F];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeGenericAnimationPipeline* GetDefaultObj();
@@ -144,18 +144,18 @@ class UInterchangeGenericAssetsPipeline : public UInterchangePipelineBase
 public:
 	enum class EReimportStrategyFlags            ReimportStrategy;                                  // 0xE8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseSourceNameForAsset;                            // 0xE9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A96[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E63[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                AssetName;                                         // 0xF0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               ImportOffsetTranslation;                           // 0x100(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                              ImportOffsetRotation;                              // 0x118(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ImportOffsetUniformScale;                          // 0x130(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A97[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E64[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UInterchangeGenericCommonMeshesProperties* CommonMeshesProperties;                            // 0x138(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties* CommonSkeletalMeshesAndAnimationsProperties;       // 0x140(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UInterchangeGenericMeshPipeline*       MeshPipeline;                                      // 0x148(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UInterchangeGenericAnimationPipeline*  AnimationPipeline;                                 // 0x150(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UInterchangeGenericMaterialPipeline*   MaterialPipeline;                                  // 0x158(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A98[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E65[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeGenericAssetsPipeline* GetDefaultObj();
@@ -168,14 +168,14 @@ class UInterchangeGenericMaterialPipeline : public UInterchangePipelineBase
 {
 public:
 	bool                                         bImportMaterials;                                  // 0xE8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A99[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E66[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                AssetName;                                         // 0xF0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EInterchangeMaterialImportOption  MaterialImport;                                    // 0x100(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A9A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E67[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSoftObjectPath                       ParentMaterial;                                    // 0x108(0x20)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UInterchangeGenericTexturePipeline*    TexturePipeline;                                   // 0x128(0x8)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UInterchangeBaseNodeContainer*         BaseNodeContainer;                                 // 0x130(0x8)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_4A9B[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E68[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeGenericMaterialPipeline* GetDefaultObj();
@@ -191,7 +191,7 @@ public:
 	TWeakObjectPtr<class UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties> CommonSkeletalMeshesAndAnimationsProperties;       // 0xF0(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bImportStaticMeshes;                               // 0xF8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCombineStaticMeshes;                              // 0xF9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A9C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E69[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  LODGroup;                                          // 0xFC(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bImportCollision;                                  // 0x104(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bImportCollisionAccordingToMeshName;               // 0x105(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -215,16 +215,16 @@ public:
 	bool                                         bImportMorphTargets;                               // 0x144(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUpdateSkeletonReferencePose;                      // 0x145(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCreatePhysicsAsset;                               // 0x146(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A9D[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E6A[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TWeakObjectPtr<class UPhysicsAsset>          PhysicsAsset;                                      // 0x148(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseHighPrecisionSkinWeights;                      // 0x150(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A9E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E6B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        ThresholdPosition;                                 // 0x154(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        ThresholdTangentNormal;                            // 0x158(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        ThresholdUV;                                       // 0x15C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        MorphThresholdPosition;                            // 0x160(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        BoneInfluenceLimit;                                // 0x164(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4A9F[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E6C[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeGenericMeshPipeline* GetDefaultObj();
@@ -242,7 +242,7 @@ public:
 	bool                                         bForceReimportDeletedAssets;                       // 0xEB(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bDeleteMissingAssets;                              // 0xEC(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUsePhysicalInsteadOfStandardPerspectiveCamera;    // 0xED(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_4AA0[0xA];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E6D[0xA];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeGenericLevelPipeline* GetDefaultObj();
@@ -255,12 +255,12 @@ class UInterchangeGenericTexturePipeline : public UInterchangePipelineBase
 {
 public:
 	bool                                         bImportTextures;                                   // 0xE8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4AA1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E6E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                AssetName;                                         // 0xF0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAllowNonPowerOfTwo;                               // 0x100(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4AA2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E6F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UInterchangeBaseNodeContainer*         BaseNodeContainer;                                 // 0x108(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4AA3[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E70[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeGenericTexturePipeline* GetDefaultObj();
@@ -272,7 +272,7 @@ public:
 class UInterchangePipelineMeshesUtilities : public UObject
 {
 public:
-	uint8                                        Pad_4AA6[0x100];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E73[0x100];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangePipelineMeshesUtilities* GetDefaultObj();

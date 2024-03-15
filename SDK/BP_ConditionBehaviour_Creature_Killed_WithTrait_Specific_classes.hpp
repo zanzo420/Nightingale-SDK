@@ -15,7 +15,7 @@ class UBP_ConditionBehaviour_Creature_Killed_WithTrait_Specific_C : public UBP_C
 {
 public:
 	struct FGameplayTag                          Creature_Trait;                                    // 0x9C(0x8)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_A2FC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A3E8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UItemConstraintPresentationDataAsset*  ItemConstraintPresentationData;                    // 0xA8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

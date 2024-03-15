@@ -40,6 +40,130 @@ class UWBP_SocialScreen_C* UWBP_SocialScreen_C::GetDefaultObj()
 }
 
 
+// Function WBP_SocialScreen.WBP_SocialScreen_C.Do Custom RightToLeftPanel Navigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class EUINavigation           Navigation                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_SocialScreen_C::Do_Custom_RightToLeftPanel_Navigation(enum class EUINavigation Navigation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_SocialScreen_C", "Do Custom RightToLeftPanel Navigation");
+
+	Params::UWBP_SocialScreen_C_Do_Custom_RightToLeftPanel_Navigation_Params Parms{};
+
+	Parms.Navigation = Navigation;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function WBP_SocialScreen.WBP_SocialScreen_C.Do Custom ConsoleInviteButton Navigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class EUINavigation           Navigation                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     CallFunc_GetChildAt_ReturnValue                                  (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PartyMemberCard_C*      K2Node_DynamicCast_AsWBP_Party_Member_Card                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsEmpty_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_SocialScreen_C::Do_Custom_ConsoleInviteButton_Navigation(enum class EUINavigation Navigation, class UWidget* CallFunc_GetChildAt_ReturnValue, class UWBP_PartyMemberCard_C* K2Node_DynamicCast_AsWBP_Party_Member_Card, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsEmpty_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_SocialScreen_C", "Do Custom ConsoleInviteButton Navigation");
+
+	Params::UWBP_SocialScreen_C_Do_Custom_ConsoleInviteButton_Navigation_Params Parms{};
+
+	Parms.Navigation = Navigation;
+	Parms.CallFunc_GetChildAt_ReturnValue = CallFunc_GetChildAt_ReturnValue;
+	Parms.K2Node_DynamicCast_AsWBP_Party_Member_Card = K2Node_DynamicCast_AsWBP_Party_Member_Card;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_IsEmpty_ReturnValue = CallFunc_IsEmpty_ReturnValue;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function WBP_SocialScreen.WBP_SocialScreen_C.Do Custom InvitesButton Navigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class EUINavigation           Navigation                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     CallFunc_GetChildAt_ReturnValue                                  (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PartyMemberCard_C*      K2Node_DynamicCast_AsWBP_Party_Member_Card                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsEmpty_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_SocialScreen_C::Do_Custom_InvitesButton_Navigation(enum class EUINavigation Navigation, bool CallFunc_IsVisible_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UWBP_PartyMemberCard_C* K2Node_DynamicCast_AsWBP_Party_Member_Card, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsEmpty_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_SocialScreen_C", "Do Custom InvitesButton Navigation");
+
+	Params::UWBP_SocialScreen_C_Do_Custom_InvitesButton_Navigation_Params Parms{};
+
+	Parms.Navigation = Navigation;
+	Parms.CallFunc_IsVisible_ReturnValue = CallFunc_IsVisible_ReturnValue;
+	Parms.CallFunc_GetChildAt_ReturnValue = CallFunc_GetChildAt_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.K2Node_DynamicCast_AsWBP_Party_Member_Card = K2Node_DynamicCast_AsWBP_Party_Member_Card;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_IsEmpty_ReturnValue = CallFunc_IsEmpty_ReturnValue;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function WBP_SocialScreen.WBP_SocialScreen_C.DoCustomUpNav
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class EUINavigation           Navigation                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_SocialScreen_C::DoCustomUpNav(enum class EUINavigation Navigation, bool CallFunc_IsVisible_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_SocialScreen_C", "DoCustomUpNav");
+
+	Params::UWBP_SocialScreen_C_DoCustomUpNav_Params Parms{};
+
+	Parms.Navigation = Navigation;
+	Parms.CallFunc_IsVisible_ReturnValue = CallFunc_IsVisible_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function WBP_SocialScreen.WBP_SocialScreen_C.DoCustomRightToLeftNav
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

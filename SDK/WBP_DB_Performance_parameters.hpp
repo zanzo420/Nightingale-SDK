@@ -28,7 +28,7 @@ struct UWBP_DB_Performance_C_ExecuteUbergraph_WBP_DB_Performance_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8228[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_67EC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  K2Node_ComponentBoundEvent_SelectedTabName;        // 0x8(0x18)(None)
 	int32                                        K2Node_ComponentBoundEvent_ActiveTab;              // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

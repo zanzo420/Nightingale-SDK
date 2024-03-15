@@ -14,7 +14,7 @@ namespace SDK
 class UBP_DB_QuestListEntryData_C : public UObject
 {
 public:
-	uint8                                        Pad_718C[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_61DA[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuestAssetReference                  QuestAssetReference;                               // 0x30(0x70)(Edit, BlueprintVisible, BlueprintReadOnly, ExposeOnSpawn)
 
 	static class UClass* StaticClass();

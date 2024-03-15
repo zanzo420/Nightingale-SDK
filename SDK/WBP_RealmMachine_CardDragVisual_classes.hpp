@@ -16,7 +16,7 @@ class UWBP_RealmMachine_CardDragVisual_C : public UNWXCommonUserWidget
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x348(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UBorder*                               Border_CardContainer;                              // 0x350(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	uint8                                        Pad_4F02[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_51EB[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       CardData;                                          // 0x360(0x2F0)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 	static class UClass* StaticClass();

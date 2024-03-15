@@ -30,7 +30,7 @@ public:
 	double                                       PlacementZHeight;                                  // 0x660(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            OnStructureCompleted;                              // 0x668(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         Client_IsVisible;                                  // 0x678(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_81C8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7631[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                StateObjectClass;                                  // 0x680(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                DefaultPlacerObject;                               // 0x688(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class UStaticMeshComponent*>          PieceMeshes;                                       // 0x690(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)

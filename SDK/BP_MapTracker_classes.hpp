@@ -21,7 +21,7 @@ public:
 	TArray<struct FS_FastTravelLocation>         Fast_Travel_Locations;                             // 0x130(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	FMulticastInlineDelegateProperty_            UpdateWaypoints;                                   // 0x140(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                        MaxStampsPerRealm;                                 // 0x150(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8BC1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_71A0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FS_LevelWaypoints>             All_Party_Member_Waypoint_Markers;                 // 0x158(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, ContainsInstancedReference)
 
 	static class UClass* StaticClass();

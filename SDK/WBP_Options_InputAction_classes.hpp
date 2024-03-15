@@ -35,7 +35,7 @@ public:
 	void CreateKeyMappingWidgets(class UNWXKeyMappingWidget* CallFunc_CreateWidget_KeyMappingWidget, class UNWXKeyMappingWidget* CallFunc_CreateWidget_KeyMappingWidget_1, bool CallFunc_IsMappingInitialized_IsValid, bool CallFunc_IsMappingInitialized_IsValid_1, class UNWXKeyMappingWidget* CallFunc_CreateWidget_KeyMappingWidget_2, bool CallFunc_IsMappingInitialized_IsValid_2);
 	void IsMappingGamepad(const struct FPlayerKeyMapping& PlayerKeyMapping, bool* IsGamepad, bool CallFunc_Key_IsGamepadKey_ReturnValue);
 	void IsMappingInitialized(const struct FPlayerKeyMapping& PlayerKeyMapping, bool* IsValid, bool CallFunc_NotEqual_NameName_ReturnValue);
-	void AddMapping(const struct FPlayerKeyMapping& NewMapping, bool CallFunc_IsMappingGamepad_IsGamepad, bool CallFunc_IsMappingInitialized_IsValid);
+	void AddMapping(const struct FPlayerKeyMapping& NewMapping, bool CallFunc_IsMappingGamepad_IsGamepad, bool CallFunc_IsMappingInitialized_IsValid, bool CallFunc_Not_PreBool_ReturnValue);
 	void Construct();
 	void OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent);
 	void OnMouseLeave(struct FPointerEvent& MouseEvent);

@@ -287,16 +287,16 @@ void ABP_CreatureCreatedObstacle_C::DeathLogic(const struct FVector& CallFunc_K2
 }
 
 
-// Function BP_CreatureCreatedObstacle.BP_CreatureCreatedObstacle_C.CorpseCleanup
+// Function BP_CreatureCreatedObstacle.BP_CreatureCreatedObstacle_C.CorpseCleanUp
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void ABP_CreatureCreatedObstacle_C::CorpseCleanup()
+void ABP_CreatureCreatedObstacle_C::CorpseCleanUp()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_CreatureCreatedObstacle_C", "CorpseCleanup");
+		Func = Class->GetFunction("BP_CreatureCreatedObstacle_C", "CorpseCleanUp");
 
 
 

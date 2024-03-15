@@ -22,9 +22,9 @@ public:
 	struct FHitResult                            HitResult;                                         // 0x460(0xE8)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UBP_CreatureSocketTraceComponent_C*    SocketTraceComponent;                              // 0x548(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseKnockback;                                      // 0x550(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_968C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89A0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_CreatureKnockbackData              KnockbackData;                                     // 0x558(0x2E)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_968D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89A1[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                HitActor;                                          // 0x588(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 CueTag;                                            // 0x590(0x20)(Edit, BlueprintVisible)
 	struct FTagValueContainer                    DamageTagValueContainer;                           // 0x5B0(0x10)(Edit, BlueprintVisible)

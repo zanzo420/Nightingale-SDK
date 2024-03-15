@@ -84,6 +84,50 @@ void UWBP_ItemTooltip_C::CREATEDELEGATE_PROXYFUNCTION_0(struct FInventoryEntry& 
 }
 
 
+// Function WBP_ItemTooltip.WBP_ItemTooltip_C.OnInputMethodChanged
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class ECommonInputType        CurrentInputType                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemTooltip_C::OnInputMethodChanged(enum class ECommonInputType CurrentInputType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_ItemTooltip_C", "OnInputMethodChanged");
+
+	Params::UWBP_ItemTooltip_C_OnInputMethodChanged_Params Parms{};
+
+	Parms.CurrentInputType = CurrentInputType;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function WBP_ItemTooltip.WBP_ItemTooltip_C.RefreshInputActionPresentation
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class ECommonInputType        Selection                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemTooltip_C::RefreshInputActionPresentation(enum class ECommonInputType Selection, bool K2Node_SwitchEnum_CmpSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_ItemTooltip_C", "RefreshInputActionPresentation");
+
+	Params::UWBP_ItemTooltip_C_RefreshInputActionPresentation_Params Parms{};
+
+	Parms.Selection = Selection;
+	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_ItemTooltip.WBP_ItemTooltip_C.AddModifierToList
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -240,10 +284,16 @@ void UWBP_ItemTooltip_C::AddModifierToList(TArray<struct FInstancedItemAttribute
 // Function WBP_ItemTooltip.WBP_ItemTooltip_C.RefreshGammepadActionWidgets
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ECommonInputType        CallFunc_GetOwningPlayerInputType_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsUsingGamepad_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemTooltip_C::RefreshGammepadActionWidgets(bool CallFunc_IsUsingGamepad_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
+void UWBP_ItemTooltip_C::RefreshGammepadActionWidgets(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ECommonInputType CallFunc_GetOwningPlayerInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_IsUsingGamepad_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
 	static class UFunction* Func = nullptr;
 
@@ -252,6 +302,12 @@ void UWBP_ItemTooltip_C::RefreshGammepadActionWidgets(bool CallFunc_IsUsingGamep
 
 	Params::UWBP_ItemTooltip_C_RefreshGammepadActionWidgets_Params Parms{};
 
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.CallFunc_GetOwningPlayerInputType_ReturnValue = CallFunc_GetOwningPlayerInputType_ReturnValue;
+	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.CallFunc_IsUsingGamepad_ReturnValue = CallFunc_IsUsingGamepad_ReturnValue;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 
@@ -501,11 +557,8 @@ void UWBP_ItemTooltip_C::FilterAttributes(TMap<struct FGameplayAttribute, double
 // bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetPublicNameWithoutDiscriminator_ReturnValue           (ZeroConstructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
-// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
-void UWBP_ItemTooltip_C::OnCrafterNameRetrieved(struct FProfileNamesMapWrapper& Wrapper, struct FOnlineServiceStatus& ServiceStatus, bool CallFunc_IsSuccess_bIsSuccess, const struct FUniqueName& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, const class FString& CallFunc_GetPublicNameWithoutDiscriminator_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
+void UWBP_ItemTooltip_C::OnCrafterNameRetrieved(struct FProfileNamesMapWrapper& Wrapper, struct FOnlineServiceStatus& ServiceStatus, bool CallFunc_IsSuccess_bIsSuccess, const struct FUniqueName& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, const class FString& CallFunc_GetPublicNameWithoutDiscriminator_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -521,9 +574,6 @@ void UWBP_ItemTooltip_C::OnCrafterNameRetrieved(struct FProfileNamesMapWrapper& 
 	Parms.CallFunc_Map_Find_ReturnValue = CallFunc_Map_Find_ReturnValue;
 	Parms.CallFunc_GetPublicNameWithoutDiscriminator_ReturnValue = CallFunc_GetPublicNameWithoutDiscriminator_ReturnValue;
 	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
-	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
-	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
-	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -533,13 +583,13 @@ void UWBP_ItemTooltip_C::OnCrafterNameRetrieved(struct FProfileNamesMapWrapper& 
 // Function WBP_ItemTooltip.WBP_ItemTooltip_C.RefreshCrafterName
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<class FString>              K2Node_MakeArray_Array                                           (ConstParm, ReferenceParm)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FInstanceData_CrafterName   CallFunc_TryGetItemCrafterName_Name                              (None)
 // enum class EGetResult              CallFunc_TryGetItemCrafterName_Branches                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemTooltip_C::RefreshCrafterName(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, TArray<class FString>& K2Node_MakeArray_Array, const struct FInstanceData_CrafterName& CallFunc_TryGetItemCrafterName_Name, enum class EGetResult CallFunc_TryGetItemCrafterName_Branches, bool K2Node_SwitchEnum_CmpSuccess)
+void UWBP_ItemTooltip_C::RefreshCrafterName(TArray<class FString>& K2Node_MakeArray_Array, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FInstanceData_CrafterName& CallFunc_TryGetItemCrafterName_Name, enum class EGetResult CallFunc_TryGetItemCrafterName_Branches, bool K2Node_SwitchEnum_CmpSuccess)
 {
 	static class UFunction* Func = nullptr;
 
@@ -548,8 +598,8 @@ void UWBP_ItemTooltip_C::RefreshCrafterName(FDelegateProperty_ K2Node_CreateDele
 
 	Params::UWBP_ItemTooltip_C_RefreshCrafterName_Params Parms{};
 
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_TryGetItemCrafterName_Name = CallFunc_TryGetItemCrafterName_Name;
 	Parms.CallFunc_TryGetItemCrafterName_Branches = CallFunc_TryGetItemCrafterName_Branches;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -1685,12 +1735,15 @@ void UWBP_ItemTooltip_C::RefreshDurability(const struct FItemInstanceDurabilityD
 // Parameters:
 // class FText                        CallFunc_GetItemDescription_ReturnValue                          (None)
 // TSoftObjectPtr<class UTexture2D>   CallFunc_GetItemIcon_ReturnValue                                 (UObjectWrapper, HasGetValueTypeHash)
+// class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // class UObject*                     CallFunc_LoadAsset_Blocking_ReturnValue                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetStringWithOutMarkUp_ReturnValue                      (ZeroConstructor, HasGetValueTypeHash)
 // class UTexture2D*                  K2Node_DynamicCast_AsTexture_2D                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // class FText                        CallFunc_GetItemName_ReturnValue                                 (None)
 
-void UWBP_ItemTooltip_C::RefreshStaticItemData(class FText CallFunc_GetItemDescription_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetItemIcon_ReturnValue, class UObject* CallFunc_LoadAsset_Blocking_ReturnValue, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess, class FText CallFunc_GetItemName_ReturnValue)
+void UWBP_ItemTooltip_C::RefreshStaticItemData(class FText CallFunc_GetItemDescription_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetItemIcon_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, class UObject* CallFunc_LoadAsset_Blocking_ReturnValue, const class FString& CallFunc_GetStringWithOutMarkUp_ReturnValue, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess, class FText CallFunc_Conv_StringToText_ReturnValue, class FText CallFunc_GetItemName_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1701,9 +1754,12 @@ void UWBP_ItemTooltip_C::RefreshStaticItemData(class FText CallFunc_GetItemDescr
 
 	Parms.CallFunc_GetItemDescription_ReturnValue = CallFunc_GetItemDescription_ReturnValue;
 	Parms.CallFunc_GetItemIcon_ReturnValue = CallFunc_GetItemIcon_ReturnValue;
+	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
 	Parms.CallFunc_LoadAsset_Blocking_ReturnValue = CallFunc_LoadAsset_Blocking_ReturnValue;
+	Parms.CallFunc_GetStringWithOutMarkUp_ReturnValue = CallFunc_GetStringWithOutMarkUp_ReturnValue;
 	Parms.K2Node_DynamicCast_AsTexture_2D = K2Node_DynamicCast_AsTexture_2D;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
 	Parms.CallFunc_GetItemName_ReturnValue = CallFunc_GetItemName_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1841,27 +1897,6 @@ void UWBP_ItemTooltip_C::OnAnimationFinished(class UWidgetAnimation* Animation)
 }
 
 
-// Function WBP_ItemTooltip.WBP_ItemTooltip_C.OnInputMethodChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// enum class ECommonInputType        CurrentInputType                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemTooltip_C::OnInputMethodChanged(enum class ECommonInputType CurrentInputType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_ItemTooltip_C", "OnInputMethodChanged");
-
-	Params::UWBP_ItemTooltip_C_OnInputMethodChanged_Params Parms{};
-
-	Parms.CurrentInputType = CurrentInputType;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function WBP_ItemTooltip.WBP_ItemTooltip_C.ExecuteUbergraph_WBP_ItemTooltip
 // (Final, UbergraphFunction)
 // Parameters:
@@ -1872,10 +1907,8 @@ void UWBP_ItemTooltip_C::OnInputMethodChanged(enum class ECommonInputType Curren
 // bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_1                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAnimationPlaying_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ECommonInputType        K2Node_Event_CurrentInputType                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemTooltip_C::ExecuteUbergraph_WBP_ItemTooltip(int32 EntryPoint, bool CallFunc_ValidateItemVariables_HasValidData, class UWidgetAnimation* K2Node_Event_Animation, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool CallFunc_IsAnimationPlaying_ReturnValue, enum class ECommonInputType K2Node_Event_CurrentInputType, bool K2Node_SwitchEnum_CmpSuccess)
+void UWBP_ItemTooltip_C::ExecuteUbergraph_WBP_ItemTooltip(int32 EntryPoint, bool CallFunc_ValidateItemVariables_HasValidData, class UWidgetAnimation* K2Node_Event_Animation, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool CallFunc_IsAnimationPlaying_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1891,8 +1924,6 @@ void UWBP_ItemTooltip_C::ExecuteUbergraph_WBP_ItemTooltip(int32 EntryPoint, bool
 	Parms.CallFunc_EqualEqual_ObjectObject_ReturnValue = CallFunc_EqualEqual_ObjectObject_ReturnValue;
 	Parms.CallFunc_PlayAnimation_ReturnValue_1 = CallFunc_PlayAnimation_ReturnValue_1;
 	Parms.CallFunc_IsAnimationPlaying_ReturnValue = CallFunc_IsAnimationPlaying_ReturnValue;
-	Parms.K2Node_Event_CurrentInputType = K2Node_Event_CurrentInputType;
-	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 
 	UObject::ProcessEvent(Func, &Parms);
 

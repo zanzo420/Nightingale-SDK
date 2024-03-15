@@ -17,7 +17,7 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x368(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	double                                       Status_Effect_Duration;                            // 0x370(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                        Status_Effect_Level;                               // 0x378(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9897[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6CE7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Favour_Index;                                      // 0x37C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FEncounterFavourData>          Favour_Rewards;                                    // 0x380(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FEncounterFavourData                  Active_Favour;                                     // 0x390(0x28)(Edit, BlueprintVisible, Net, DisableEditOnInstance)

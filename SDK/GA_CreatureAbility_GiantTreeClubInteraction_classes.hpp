@@ -15,7 +15,7 @@ class UGA_CreatureAbility_GiantTreeClubInteraction_C : public UGA_CreatureAbilit
 {
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x510(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	uint8                                        Pad_9B82[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_45BD[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    WeaponReference;                                   // 0x520(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

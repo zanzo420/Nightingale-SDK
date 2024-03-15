@@ -14,7 +14,7 @@ namespace SDK
 class UABP_GNM_SunGiant_Overrides_C : public UAnimInstance
 {
 public:
-	uint8                                        Pad_9BEF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CB1[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x350(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_PropertyAccess;             // 0x358(0x8)(None)
 	struct FAnimSubsystemInstance                AnimBlueprintExtension_Base;                       // 0x360(0x8)(None)
@@ -41,7 +41,7 @@ public:
 	struct FAnimNode_LinkedInputPose             AnimGraphNode_LinkedInputPose_2;                   // 0x1770(0xB8)(None)
 	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x1828(0x20)(None)
 	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x1848(0x20)(None)
-	uint8                                        Pad_9BF2[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CB2[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimNode_LookAt                      AnimGraphNode_LookAt_2;                            // 0x1870(0x250)(None)
 	struct FAnimNode_LookAt                      AnimGraphNode_LookAt_1;                            // 0x1AC0(0x250)(None)
 	struct FAnimNode_LookAt                      AnimGraphNode_LookAt;                              // 0x1D10(0x250)(None)

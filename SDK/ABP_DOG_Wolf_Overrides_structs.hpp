@@ -19,7 +19,7 @@ namespace SDK
 struct FAnimBlueprintGeneratedConstantData : public FAnimBlueprintConstantData
 {
 public:
-	uint8                                        Pad_462B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A8E6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  __NameProperty_86;                                 // 0x4(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  __NameProperty_87;                                 // 0xC(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  __NameProperty_88;                                 // 0x14(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -29,12 +29,19 @@ public:
 	class FName                                  __NameProperty_92;                                 // 0x34(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  __NameProperty_93;                                 // 0x3C(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  __NameProperty_94;                                 // 0x44(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_462C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A8E7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAnimNodeFunctionRef                  __StructProperty_95;                               // 0x50(0x20)(BlueprintVisible, NoDestructor)
 	class FName                                  __NameProperty_96;                                 // 0x70(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  __NameProperty_97;                                 // 0x78(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FAnimSubsystem_PropertyAccess         AnimBlueprintExtension_PropertyAccess;             // 0x80(0x80)(None)
 	struct FAnimSubsystem_Base                   AnimBlueprintExtension_Base;                       // 0x100(0x18)(None)
+};
+
+// 0x0 (0x1 - 0x1)
+// ScriptStruct ABP_DOG_Wolf_Overrides.ABP_DOG_Wolf_Overrides_C.AnimBlueprintGeneratedMutableData
+struct FAnimBlueprintGeneratedMutableData : public FAnimBlueprintMutableData
+{
+public:
 };
 
 }

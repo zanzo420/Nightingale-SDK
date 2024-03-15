@@ -20,7 +20,7 @@ public:
 	struct FInteractionData                      InteractionData;                                   // 0x438(0x178)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	bool                                         bClientOnly;                                       // 0x5B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bInputHeld;                                        // 0x5B1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9120[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_99AA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          Interaction_Timer_Handle;                          // 0x5B8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

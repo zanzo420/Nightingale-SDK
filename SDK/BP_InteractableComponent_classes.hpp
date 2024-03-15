@@ -16,7 +16,7 @@ class UBP_InteractableComponent_C : public UActorComponent
 public:
 	class FString                                InteractionText;                                   // 0xA0(0x10)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                         Enabled;                                           // 0xB0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_545C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1FBF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        NumberOfUses;                                      // 0xB4(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        TimesUsed;                                         // 0xB8(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Interaction_Distance            InteractionDistance;                               // 0xBC(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

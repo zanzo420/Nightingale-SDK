@@ -122,16 +122,16 @@ void ABP_Creature_Automaton_C::OnRep_HeartMeshOff()
 }
 
 
-// Function BP_Creature_Automaton.BP_Creature_Automaton_C.CorpseCleanup
+// Function BP_Creature_Automaton.BP_Creature_Automaton_C.CorpseCleanUp
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void ABP_Creature_Automaton_C::CorpseCleanup()
+void ABP_Creature_Automaton_C::CorpseCleanUp()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_Creature_Automaton_C", "CorpseCleanup");
+		Func = Class->GetFunction("BP_Creature_Automaton_C", "CorpseCleanUp");
 
 
 

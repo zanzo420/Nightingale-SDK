@@ -21,7 +21,7 @@ public:
 	class FText                                  NameText;                                          // 0x370(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	enum class E_ChatMessageType                 MessageType;                                       // 0x388(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	enum class E_ChatSystemMessageType           SystemMessageType;                                 // 0x389(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_46F3[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6632[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  TimeStampText;                                     // 0x390(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  ChannelText;                                       // 0x3A8(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	int32                                        PlayerId;                                          // 0x3C0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
