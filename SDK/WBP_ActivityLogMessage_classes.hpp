@@ -19,7 +19,7 @@ public:
 	class UBorder*                               Border_0;                                          // 0x358(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                      CommonTextBlock_32;                                // 0x360(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FSlateColor                           Color;                                             // 0x368(0x14)(Edit, BlueprintVisible, ExposeOnSpawn)
-	uint8                                        Pad_5A46[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_DB5[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  Message;                                           // 0x380(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 	static class UClass* StaticClass();

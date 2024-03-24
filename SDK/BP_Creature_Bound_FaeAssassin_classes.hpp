@@ -14,7 +14,7 @@ namespace SDK
 class ABP_Creature_Bound_FaeAssassin_C : public ABP_Creature_Bound_C
 {
 public:
-	uint8                                        Pad_A4E6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A417[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1670(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UNiagaraComponent*                     WP_Indicator1;                                     // 0x1678(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UScopedAkComponent*                    Ak_Foot_R;                                         // 0x1680(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -26,7 +26,7 @@ public:
 	class USkeletalMeshComponent*                SwordRH;                                           // 0x16B0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                SwordLH;                                           // 0x16B8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class ABP_Creature_Bound_EliteGuard_C*       EliteGuard;                                        // 0x16C0(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A4E7[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A41A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            BladeProjectileRight;                              // 0x16D0(0x60)(Edit, BlueprintVisible, Net, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                            BladeProjectileLeft;                               // 0x1730(0x60)(Edit, BlueprintVisible, Net, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_CreatureProjectile_Fae_ReturningBlade_C* ProjectileR;                                       // 0x1790(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)

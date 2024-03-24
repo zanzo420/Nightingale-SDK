@@ -768,9 +768,9 @@ void ABP_PlayerState_C::CallResourceHarvested(const struct FInventoryEntry& Item
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                      Owning_Actor                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                              Piece_ID                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Piece_Id                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerState_C::CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_ID)
+void ABP_PlayerState_C::CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_Id)
 {
 	static class UFunction* Func = nullptr;
 
@@ -780,7 +780,7 @@ void ABP_PlayerState_C::CallStructureCompleted(class AActor* Owning_Actor, int32
 	Params::ABP_PlayerState_C_CallStructureCompleted_Params Parms{};
 
 	Parms.Owning_Actor = Owning_Actor;
-	Parms.Piece_ID = Piece_ID;
+	Parms.Piece_Id = Piece_Id;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1529,9 +1529,9 @@ void ABP_PlayerState_C::ItemDepositedWorldContainer__DelegateSignature(const str
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                      Owning_Actor                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                              Piece_ID                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Piece_Id                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerState_C::StructureCompleted__DelegateSignature(class AActor* Owning_Actor, int32 Piece_ID)
+void ABP_PlayerState_C::StructureCompleted__DelegateSignature(class AActor* Owning_Actor, int32 Piece_Id)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1541,7 +1541,7 @@ void ABP_PlayerState_C::StructureCompleted__DelegateSignature(class AActor* Owni
 	Params::ABP_PlayerState_C_StructureCompleted__DelegateSignature_Params Parms{};
 
 	Parms.Owning_Actor = Owning_Actor;
-	Parms.Piece_ID = Piece_ID;
+	Parms.Piece_Id = Piece_Id;
 
 	UObject::ProcessEvent(Func, &Parms);
 

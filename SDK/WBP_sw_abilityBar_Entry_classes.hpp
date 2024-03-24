@@ -27,7 +27,7 @@ public:
 	class USizeBox*                              SizeBox_2;                                         // 0x398(0x8)(ExportObject, ZeroConstructor, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_NWX_ProgressBar_C*                Stae_Cooldown;                                     // 0x3A0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         DebugTextRender;                                   // 0x3A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7AC5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7FF[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTechniqueDetails                     Technique;                                         // 0x3B0(0x80)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UMaterialInstanceDynamic*              IconMaterial;                                      // 0x430(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UInputMappingContext>   InputMappingContext;                               // 0x438(0x28)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)

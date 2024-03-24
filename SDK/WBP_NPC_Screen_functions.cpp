@@ -1236,9 +1236,9 @@ void UWBP_NPC_Screen_C::CallResourceHarvested(const struct FInventoryEntry& Item
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                      Owning_Actor                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                              Piece_ID                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Piece_Id                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NPC_Screen_C::CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_ID)
+void UWBP_NPC_Screen_C::CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_Id)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1248,7 +1248,7 @@ void UWBP_NPC_Screen_C::CallStructureCompleted(class AActor* Owning_Actor, int32
 	Params::UWBP_NPC_Screen_C_CallStructureCompleted_Params Parms{};
 
 	Parms.Owning_Actor = Owning_Actor;
-	Parms.Piece_ID = Piece_ID;
+	Parms.Piece_Id = Piece_Id;
 
 	UObject::ProcessEvent(Func, &Parms);
 

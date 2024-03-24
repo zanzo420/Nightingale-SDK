@@ -689,9 +689,9 @@ void UWBP_Shop_JobBoard_ScreenSpace_C::CallResourceHarvested(const struct FInven
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                      Owning_Actor                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                              Piece_ID                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Piece_Id                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_JobBoard_ScreenSpace_C::CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_ID)
+void UWBP_Shop_JobBoard_ScreenSpace_C::CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_Id)
 {
 	static class UFunction* Func = nullptr;
 
@@ -701,7 +701,7 @@ void UWBP_Shop_JobBoard_ScreenSpace_C::CallStructureCompleted(class AActor* Owni
 	Params::UWBP_Shop_JobBoard_ScreenSpace_C_CallStructureCompleted_Params Parms{};
 
 	Parms.Owning_Actor = Owning_Actor;
-	Parms.Piece_ID = Piece_ID;
+	Parms.Piece_Id = Piece_Id;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -24,7 +24,7 @@ public:
 	class UCommonTextBlock*                      TXT_Title;                                         // 0x380(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Component_Small_Flourish_Left_C*  WBP_Component_Small_Flourish_Left;                 // 0x388(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URedemptionComponent*                  RedemptionComponent;                               // 0x390(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_60FC[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_48B6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRedemptionEntry                      CurrentRedemptionEntry;                            // 0x3A0(0x80)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 	static class UClass* StaticClass();

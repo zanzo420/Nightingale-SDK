@@ -412,11 +412,11 @@ void UWBP_SubContextShortcutMenu_C::CheckExtractEnabled(class UWidget* ShortcutE
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ANWXPlayerController*        CallFunc_GetOwningPlayerController_ReturnValue                   (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ANWXPlayerController*        CallFunc_GetOwningPlayerController_ReturnValue                   (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UInventoryComponentBase*     CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_GetAvailableRepairEssences_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_GetAvailableRepairEssenceCount_ReturnValue              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanRepair_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -433,7 +433,7 @@ void UWBP_SubContextShortcutMenu_C::CheckExtractEnabled(class UWidget* ShortcutE
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Format_ReturnValue                                      (None)
 
-void UWBP_SubContextShortcutMenu_C::UpdateRepair(int32 AvailableRepairEssences, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, class UInventoryComponentBase* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_GetAvailableRepairEssences_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_CanRepair_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, int64 CallFunc_Conv_IntToInt64_ReturnValue, const struct FLinearColor& K2Node_Select_Default, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool Temp_bool_Variable_1, int32 CallFunc_GetRequiredEssencesForItemRepair_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int64 CallFunc_Conv_IntToInt64_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, enum class ESlateVisibility K2Node_Select_Default_1, class FText CallFunc_Format_ReturnValue)
+void UWBP_SubContextShortcutMenu_C::UpdateRepair(int32 AvailableRepairEssences, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, enum class ESlateVisibility Temp_byte_Variable, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue, class UInventoryComponentBase* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_GetAvailableRepairEssenceCount_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_CanRepair_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, int64 CallFunc_Conv_IntToInt64_ReturnValue, const struct FLinearColor& K2Node_Select_Default, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool Temp_bool_Variable_1, int32 CallFunc_GetRequiredEssencesForItemRepair_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int64 CallFunc_Conv_IntToInt64_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, enum class ESlateVisibility K2Node_Select_Default_1, class FText CallFunc_Format_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -446,11 +446,11 @@ void UWBP_SubContextShortcutMenu_C::UpdateRepair(int32 AvailableRepairEssences, 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.Temp_struct_Variable_1 = Temp_struct_Variable_1;
-	Parms.CallFunc_GetOwningPlayerController_ReturnValue = CallFunc_GetOwningPlayerController_ReturnValue;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.CallFunc_GetOwningPlayerController_ReturnValue = CallFunc_GetOwningPlayerController_ReturnValue;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_GetAvailableRepairEssences_ReturnValue = CallFunc_GetAvailableRepairEssences_ReturnValue;
+	Parms.CallFunc_GetAvailableRepairEssenceCount_ReturnValue = CallFunc_GetAvailableRepairEssenceCount_ReturnValue;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
 	Parms.CallFunc_CanRepair_ReturnValue = CallFunc_CanRepair_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;

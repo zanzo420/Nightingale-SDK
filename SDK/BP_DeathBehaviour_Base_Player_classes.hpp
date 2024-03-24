@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x60 - 0x60)
+// 0x0 (0x58 - 0x58)
 // BlueprintGeneratedClass BP_DeathBehaviour_Base_Player.BP_DeathBehaviour_Base_Player_C
 class UBP_DeathBehaviour_Base_Player_C : public UPlayerDeathBehaviour
 {

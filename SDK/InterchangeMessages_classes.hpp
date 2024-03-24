@@ -75,7 +75,7 @@ class UInterchangeResultMeshWarning_TooManyUVs : public UInterchangeResultMeshWa
 {
 public:
 	int32                                        ExcessUVs;                                         // 0x70(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4952[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4A37[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UInterchangeResultMeshWarning_TooManyUVs* GetDefaultObj();

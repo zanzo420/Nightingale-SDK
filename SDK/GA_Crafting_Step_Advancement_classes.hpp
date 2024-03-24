@@ -14,17 +14,17 @@ namespace SDK
 class UGA_Crafting_Step_Advancement_C : public UGA_Crafting_Step_Base_C
 {
 public:
-	uint8                                        Pad_9538[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_95B0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x478(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FS_Crafting_Step_Definition           PreAdvanceStepDefinition;                          // 0x480(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash)
 	struct FS_Crafting_CraftInProgress           CurrentCraftData;                                  // 0x4D0(0xD8)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	uint8                                        Pad_9539[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_95B1[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              CurrentRecipeHandle;                               // 0x5B0(0x70)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	int32                                        PreAdvanceStepIndex;                               // 0x620(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_953A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_95B2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipe                       CurrentRecipe;                                     // 0x628(0x120)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	int32                                        CurrentCraftRequestedQuantity;                     // 0x748(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_953B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_95B3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FInventoryEntry>               CurrentCraftInputItems;                            // 0x750(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         CraftSuccess;                                      // 0x760(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

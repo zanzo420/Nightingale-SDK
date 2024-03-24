@@ -25,10 +25,10 @@ public:
 	class AQuestGiverSession*                    QuestGiverSession;                                 // 0x388(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FOngoingTaskProgress                  TaskProgressSticky;                                // 0x390(0xB0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	enum class E_Contract_StateType              TaskProgressStateSticky;                           // 0x440(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_734F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_58A9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        GridIndex_Ready_Sticky;                            // 0x444(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        GridIndex_Available_Sticky;                        // 0x448(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7350[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_58AA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            ShowDetailPane;                                    // 0x450(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();
@@ -50,7 +50,7 @@ public:
 	void CallGiveTag(const struct FGameplayTag& Gameplay_Tag);
 	void CallStructureBlueprintPlaced(const struct FDataTableRowHandle& StructureDataHandle);
 	void CallResourceHarvested(const struct FInventoryEntry& ItemEntry, int32 Amount);
-	void CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_ID);
+	void CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_Id);
 	void CallItemDeposited_InWorldContainer(const struct FItemDataReference& ItemRowHandle, int32 Quantity, const struct FGameplayTag& ContainerTag);
 	void CallWeakpointHit(const struct FGameplayTagContainer& WeakpointType, const struct FGameplayTagContainer& CreatureTags, const struct FHitResult& HitResult);
 	void CallOnSpellCast(TSoftObjectPtr<class UTechniqueDataAsset> SpellCast);

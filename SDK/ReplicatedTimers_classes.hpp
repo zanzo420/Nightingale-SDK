@@ -16,7 +16,7 @@ class UReplicatedTimersComponent : public UActorComponent
 public:
 	struct FReplicatedTimerDataArray             TimerData;                                         // 0xA0(0x160)(Net, NativeAccessSpecifierPrivate)
 	struct FReplicatedTimerCheckpointDataArray   TimerCheckpointData;                               // 0x200(0x160)(Net, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3D3B[0x240];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_32D3[0x240];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UReplicatedTimersComponent* GetDefaultObj();

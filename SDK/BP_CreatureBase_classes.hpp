@@ -34,15 +34,15 @@ public:
 	struct FS_CreatureInfo                       CreatureInfoCache;                                 // 0xE38(0xC8)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	double                                       CorpseCleanupTime;                                 // 0xF00(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bIsDead;                                           // 0xF08(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58A3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7EFF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGameplayTag>                  CreatureAttacks;                                   // 0xF10(0x10)(Edit, BlueprintVisible)
 	bool                                         bTriggeredDeathReaction;                           // 0xF20(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bDisableBlendspace;                                // 0xF21(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58A4[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F01[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AActor*>                        AttackVolumeHitActors;                             // 0xF28(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	FMulticastInlineDelegateProperty_            OnCreatureDamaged;                                 // 0xF38(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         bAttackVolumeEnabled;                              // 0xF48(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58A5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F02[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       AbilityDamage;                                     // 0xF50(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_            OnAttackCollisionBegin;                            // 0xF58(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnAttackCollisionEnd;                              // 0xF68(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -60,10 +60,10 @@ public:
 	class UBP_CreatureComponent_VFX_C*           BP_CreatureComponent_VFX;                          // 0xFF0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FGameplayTag>                  CreatureWeapons;                                   // 0xFF8(0x10)(Edit, BlueprintVisible)
 	enum class E_NPC_Item_AnimBank               ItemAnimBank;                                      // 0x1008(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58A6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F04[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBP_CreatureComponent_UI_C*            BP_CreatureComponent_UI;                           // 0x1010(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	enum class ECollisionProfiles                CapsuleCollisionOverride;                          // 0x1018(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58A7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F06[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class ABP_PlayerController_C*>        LifetimeDamagers;                                  // 0x1020(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	class FName                                  ProjectileSocket;                                  // 0x1030(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsInHitReaction;                                   // 0x1038(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -71,7 +71,7 @@ public:
 	bool                                         PlayEntrance;                                      // 0x103A(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         PlayExit;                                          // 0x103B(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         EnableAbilityZoneVisualization;                    // 0x103C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58A8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F08[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   WeaponHandle;                                      // 0x1040(0x10)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FDataTableRowHandle                   BPCreatureData;                                    // 0x1050(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FDataTableRowHandle                   AICCreatureData;                                   // 0x1060(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -79,10 +79,10 @@ public:
 	struct FGameplayTagContainer                 Prey;                                              // 0x1080(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UNWXPlayMontageAndWaitForEvent*        CurrentAbilityMontage;                             // 0x10A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	enum class EVisibilityBasedAnimTickOption    CachedStartingVisibilityBasedAnimTickOption;       // 0x10A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58A9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F09[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          UIHarvestTag;                                      // 0x10AC(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         AllowHitReactions;                                 // 0x10B4(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58AA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F0A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          HackAnimTickTimer;                                 // 0x10B8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                          HackAnimTickMontage;                               // 0x10C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          HackAnimCheckMontageTimer;                         // 0x10C8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -93,12 +93,12 @@ public:
 	struct FTimerHandle                          LootCompleteTimer;                                 // 0x1100(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       LastDamageCall;                                    // 0x1108(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         AllowCorpseDamage;                                 // 0x1110(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58AB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F0B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<struct FGameplayAttribute, double>      GASAttributes;                                     // 0x1118(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UBP_AbilityZoneVisualizationComponent_C* ZoneVisualizationComponent;                        // 0x1168(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          Hit_React_Tags;                                    // 0x1170(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseHitReactThresholdReactions;                     // 0x1178(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58AC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F0D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       HitReactThresholdValue;                            // 0x1180(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       HitReactThresholdUpdateRate;                       // 0x1188(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       HitReactThresholdDecayRate;                        // 0x1190(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -107,7 +107,7 @@ public:
 	double                                       HitReactThresholdIncreaseDecayRate;                // 0x11A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CurrentHitReactionThresholdValue;                  // 0x11B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Abstract;                                          // 0x11B8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58AD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F0F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 KillerTagContainer;                                // 0x11C0(0x20)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	struct FDataTableRowHandle                   UIData;                                            // 0x11E0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FGameplayAbilitySpecHandle>    SpawnerAbilityHandles;                             // 0x11F0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -115,30 +115,30 @@ public:
 	TArray<TSoftObjectPtr<class USkeletalMesh>>  Mesh_Variations;                                   // 0x1208(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TSoftObjectPtr<class USkeletalMesh>          MeshOverride;                                      // 0x1218(0x28)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify, HasGetValueTypeHash)
 	bool                                         HasBroadcastDeath;                                 // 0x1240(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58AE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F10[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<struct FGuid, struct FVector>           SocketTraceLocations;                              // 0x1248(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	enum class EDrawDebugTrace                   SocketTraceDebug;                                  // 0x1298(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58AF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F11[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FS_CreatureSocketTraceData>    Socket_Trace_Data;                                 // 0x12A0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTag                          FamilyTag;                                         // 0x12B0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                       DamageMultiplier;                                  // 0x12B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ShowNameplate;                                     // 0x12C0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F13[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<struct FGuid, struct FRotator>          SocketTraceRotations;                              // 0x12C8(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FVector                               BeamImpactPoint;                                   // 0x1318(0x18)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ShowWeakpoint;                                     // 0x1330(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F14[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       MagicResist;                                       // 0x1338(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AEquippableItem*                       Weapon;                                            // 0x1340(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          Tag;                                               // 0x1348(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                     DissolveCrustEffect;                               // 0x1350(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         DeathDissolve;                                     // 0x1358(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F15[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          DissolveInTag;                                     // 0x135C(0x8)(Edit, BlueprintVisible, Net, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F16[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       DissolveTime;                                      // 0x1368(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsNight;                                           // 0x1370(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F17[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       ConeBeamTickrateValue;                             // 0x1378(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FItemDataReference                    StartingWeaponReference;                           // 0x1380(0x80)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FItemDataReference                    CurrentWeaponReference;                            // 0x1400(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
@@ -148,15 +148,15 @@ public:
 	TArray<class UAkSwitchValue*>                Wwise_Internal_Switch_Values;                      // 0x1498(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	struct FGameplayTag                          DissolveOutTag;                                    // 0x14A8(0x8)(Edit, BlueprintVisible, Net, NoDestructor, HasGetValueTypeHash)
 	bool                                         NatureGlow;                                        // 0x14B0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F1B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNiagaraComponent*                     VFXNatureGlow;                                     // 0x14B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         LookForNewObject;                                  // 0x14C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F1C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<struct FGameplayTag, TSoftObjectPtr<class UTexture2D>> HarvestIconMap;                                    // 0x14C8(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	FMulticastInlineDelegateProperty_            OnMontageNotificationBegin;                        // 0x1518(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FDataTableRowHandle                   Map_Pin_Presentation_Data_Handle;                  // 0x1528(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsGettingTracked;                                  // 0x1538(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F1F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMapPinComponent*                      TrackingMapPin;                                    // 0x1540(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                        Blendshape0Weight;                                 // 0x1548(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Blendshape1Weight;                                 // 0x154C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -172,15 +172,15 @@ public:
 	class UNiagaraComponent*                     BeastInstinctVFX;                                  // 0x1588(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          BeastInstinctTimer;                                // 0x1590(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         BeastInstinctOn;                                   // 0x1598(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F21[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          ExposeWeaknessTimer;                               // 0x15A0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         WeakpointActive;                                   // 0x15A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F22[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCurveFloat*                           HealthCurve;                                       // 0x15B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           StrengthResistCurve;                               // 0x15B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           FallingCurve;                                      // 0x15C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                        FallingDamagePct;                                  // 0x15C8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58BA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F23[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTagValueContainer                    FallingTagValueContainer;                          // 0x15D0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTagContainer                 HarvestTags;                                       // 0x15E0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                       CreatureNameplateOffset;                           // 0x1600(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -290,7 +290,7 @@ public:
 	void OnDayNightChange(bool IsNight);
 	void OnDemonDeerDeath(class ANWXAICharacter* Character);
 	void OnRep_DeathDissolve(bool CallFunc_K2_IsValidTimerHandle_ReturnValue, bool CallFunc_IsServer_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_K2_SetTimerDelegate_Time_ImplicitCast);
-	void CorpseCleanUp(const struct FGameplayTag& Temp_struct_Variable);
+	void CorpseCleanup(const struct FGameplayTag& Temp_struct_Variable);
 	void Stop_WP_Indicator();
 	void Start_WP_Indicator();
 	void GetSpawner(class ANWXAISpawner** Spawner);

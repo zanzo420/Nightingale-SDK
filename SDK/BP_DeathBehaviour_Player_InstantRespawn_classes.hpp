@@ -9,12 +9,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0x120 - 0x118)
+// 0x8 (0x110 - 0x108)
 // BlueprintGeneratedClass BP_DeathBehaviour_Player_InstantRespawn.BP_DeathBehaviour_Player_InstantRespawn_C
 class UBP_DeathBehaviour_Player_InstantRespawn_C : public UBP_DeathBehaviour_Player_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x118(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x108(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
 	static class UClass* StaticClass();
 	static class UBP_DeathBehaviour_Player_InstantRespawn_C* GetDefaultObj();

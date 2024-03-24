@@ -14,12 +14,12 @@ namespace SDK
 class ABP_Structure_EncounterTrigger_PuzzleMemoryCentre_C : public ABP_Structure_EncounterTrigger_HopeEchoContainer_C
 {
 public:
-	uint8                                        Pad_A52B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6900[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xBD8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UArrowComponent*                       Hope_Echo_Target;                                  // 0xBE0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                  VFXAnchor_Beam;                                    // 0xBE8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        Instability;                                       // 0xBF0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A52C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6901[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FName, struct FVector>            PuzzlePieceArray;                                  // 0xBF8(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FVector>                       PuzzleBeamVFXVectors;                              // 0xC48(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
 	bool                                         IncompleteLoopActive;                              // 0xC58(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -14,7 +14,7 @@ namespace SDK
 class ABP_Creature_Bound_EliteGuard_C : public ABP_Creature_Bound_C
 {
 public:
-	uint8                                        Pad_A4DD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1962[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNiagaraComponent*                     WP_Indicator;                                      // 0x1670(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UScopedAkComponent*                    Ak_Hand_L;                                         // 0x1678(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UScopedAkComponent*                    Ak_Foot_Left;                                      // 0x1680(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)

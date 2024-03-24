@@ -21,7 +21,7 @@ public:
 	class UAnimMontage*                          InitialMontage;                                    // 0xC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         SucceedIfAbilityFails;                             // 0xD0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseRandomChance;                                   // 0xD1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7F22[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_72B6[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FBlackboardKeySelector                RandomChance;                                      // 0xD8(0x28)(Edit, BlueprintVisible)
 
 	static class UClass* StaticClass();

@@ -18,7 +18,7 @@ public:
 	static class UClass* StaticClass();
 	static class UBPFL_EquippableItemTags_C* GetDefaultObj();
 
-	void MainhandTag(class UObject* __WorldContext, struct FGameplayTag* SledgehammerTag);
+	void MainHandTag(class UObject* __WorldContext, struct FGameplayTag* SledgehammerTag);
 	void GearAndClothingSlotTags(class UObject* __WorldContext, struct FGameplayTagContainer* Tags);
 	void AxepickTag(class UObject* __WorldContext, struct FGameplayTag* AxepickTag);
 	void HuntingKnifeTag(class UObject* __WorldContext, struct FGameplayTag* HuntingKnifeTag);

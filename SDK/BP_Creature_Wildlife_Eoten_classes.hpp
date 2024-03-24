@@ -14,7 +14,7 @@ namespace SDK
 class ABP_Creature_Wildlife_Eoten_C : public ABP_Creature_Wildlife_C
 {
 public:
-	uint8                                        Pad_9E78[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FB9[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1620(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UNiagaraComponent*                     NS_Eoten_FallingRubble;                            // 0x1628(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UScopedAkComponent*                    Ak_Hand_Right;                                     // 0x1630(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -42,17 +42,17 @@ public:
 	class UInWorldItemContainerComponent*        InWorldItemContainer;                              // 0x16E0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBP_LoadoutComponent_C*                BP_LoadoutComponent;                               // 0x16E8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	int32                                        ApexHarvestNodeInstance;                           // 0x16F0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E79[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FBA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               ApexHarvestNodeInstanceLocation;                   // 0x16F8(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_ResourceNode_IIM_C*                ApexHarvestNode;                                   // 0x1710(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          TimerHandle;                                       // 0x1718(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class ABP_ResourceNode_IIM_C*                LCached_Resource_Node;                             // 0x1720(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	bool                                         LFound_Instance;                                   // 0x1728(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E7A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FBB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<int32>                                LConsidered_Instances;                             // 0x1730(0x10)(Edit, BlueprintVisible)
 	struct FVector                               LCached_Instance_Location;                         // 0x1740(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        LCachedInstance;                                   // 0x1758(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E7B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FBC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class ABP_AoePayload_Dispellable_Eoten_C*> Brambles;                                          // 0x1760(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, ExposeOnSpawn)
 	TSoftObjectPtr<class UStaticMesh>            TreeIImInst;                                       // 0x1770(0x28)(Edit, BlueprintVisible, Net, RepNotify, HasGetValueTypeHash)
 	TArray<int32>                                LocalConsideredInstances;                          // 0x1798(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -63,26 +63,26 @@ public:
 	bool                                         Pacified;                                          // 0x1820(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	bool                                         Hidden;                                            // 0x1821(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         LFoundInstanceTreeMesh;                            // 0x1822(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E7C[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FBD[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        TreeCheck;                                         // 0x1824(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         PlayEffects;                                       // 0x1828(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E7D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FBE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNiagaraComponent*                     WP_Indicator_1;                                    // 0x1830(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               EotenAltar;                                        // 0x1838(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FStructureAssetReference              EotenAltarData;                                    // 0x1840(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                         BrambleFirstInstance;                              // 0x18C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Glow;                                              // 0x18C1(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E7E[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FBF[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        GlowCount;                                         // 0x18C4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          GlintTimerHandle;                                  // 0x18C8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FInventoryEntry                       ItemOffering;                                      // 0x18D0(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class ABP_CreatureCreatedObstacle_Bramble_C*> WallsObjects;                                      // 0x1BC0(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	struct FTimerHandle                          AltarTimer;                                        // 0x1BD0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         NoJuvenileTrees;                                   // 0x1BD8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E7F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FC0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_AoePayload_Dispellable_Eoten_C*    BramblesInRange;                                   // 0x1BE0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         bUnderground;                                      // 0x1BE8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9E80[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9FC1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPhysicsAsset*                         Underground_Physics_Asset;                         // 0x1BF0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UPhysicsAsset*                         Overground_Physics_Asset;                          // 0x1BF8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 

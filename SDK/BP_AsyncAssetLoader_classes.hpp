@@ -21,7 +21,7 @@ public:
 	double                                       TimeoutPerAsset;                                   // 0x158(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          TimeoutHandle;                                     // 0x160(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        RemainingDataToLoad;                               // 0x168(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_173B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_225B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UObject*>                       LoadedAssets;                                      // 0x170(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UClass*>                        LoadedClasses;                                     // 0x180(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 

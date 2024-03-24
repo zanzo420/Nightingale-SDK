@@ -13,6 +13,17 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
+// 0x20 (0x20 - 0x0)
+// Function WBP_PlayerMapPin.WBP_PlayerMapPin_C.Interact
+struct UWBP_PlayerMapPin_C_Interact_Params
+{
+public:
+	bool                                         CallFunc_IsPlayerEditable_IsPlayerEditable;        // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_E9A[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	class ANWXPlayerController*                  CallFunc_GetLocalPlayerController_LocalPlayerController; // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IPlayerMapPinControllerInterface> CallFunc_RemovePlayerOwnedMapPin_self_CastInput;   // 0x10(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
 // 0x28 (0x28 - 0x0)
 // Function WBP_PlayerMapPin.WBP_PlayerMapPin_C.GetOwningPlayersName
 struct UWBP_PlayerMapPin_C_GetOwningPlayersName_Params
@@ -30,7 +41,7 @@ struct UWBP_PlayerMapPin_C_IsAPartyMemberBeacon_Params
 public:
 	bool                                         IsAPartyMembersBeacon;                             // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsOwnedByLocalPlayer_IsOwnedByLocalPlayer; // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_601B[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EBC[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMapWaypointInfo                      CallFunc_GetMapPinInfo_ReturnValue;                // 0x8(0x120)(None)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x128(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x129(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,7 +54,7 @@ struct UWBP_PlayerMapPin_C_IsOwnedByLocalPlayer_Params
 {
 public:
 	bool                                         IsOwnedByLocalPlayer;                              // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_601C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_ED4[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetLocalPlayerPersistentId_PlayerId;      // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -59,7 +70,7 @@ public:
 	bool                                         Temp_bool_Variable_1;                              // 0x3(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_2;                              // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsOwnedByLocalPlayer_IsOwnedByLocalPlayer; // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_601D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EDE[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMapWaypointInfo                      CallFunc_GetMapPinInfo_ReturnValue;                // 0x8(0x120)(None)
 	bool                                         K2Node_Select_Default;                             // 0x128(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x129(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -72,7 +83,7 @@ struct UWBP_PlayerMapPin_C_GetMapPinInfo_Params
 public:
 	struct FMapWaypointInfo                      ReturnValue;                                       // 0x0(0x120)(Parm, OutParm, ReturnParm)
 	bool                                         CallFunc_DoesDataTableRowExist_ReturnValue;        // 0x120(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_601E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EED[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMapWaypointInfo                      CallFunc_GetDataTableRowFromName_OutRow;           // 0x128(0x120)(None)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x248(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -127,7 +138,7 @@ struct UWBP_PlayerMapPin_C_GetMapPinType_Params
 {
 public:
 	enum class EMapMarkerType                    MapPinType;                                        // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_601F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_F10[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMapWaypointInfo                      CallFunc_GetDataTableRowFromName_OutRow;           // 0x8(0x120)(None)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x128(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -146,7 +157,7 @@ struct UWBP_PlayerMapPin_C_RefreshView_Params
 {
 public:
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6020[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_F1D[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             CallFunc_MakeVector2D_ReturnValue;                 // 0x8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             CallFunc_MapUI_WorldLocationToMapPosition_Map_Position; // 0x18(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_MakeVector2D_X_ImplicitCast;              // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -219,12 +230,12 @@ public:
 	struct FEventReply                           CallFunc_OnMouseLeftClick_Handled;                 // 0x168(0xB8)(None)
 	struct FKey                                  CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x220(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x238(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6026[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_F6B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FEventReply                           CallFunc_Unhandled_ReturnValue;                    // 0x240(0xB8)(None)
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x2F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x260 (0x260 - 0x0)
+// 0x240 (0x240 - 0x0)
 // Function WBP_PlayerMapPin.WBP_PlayerMapPin_C.OnMouseButtonDown
 struct UWBP_PlayerMapPin_C_OnMouseButtonDown_Params
 {
@@ -232,68 +243,52 @@ public:
 	struct FGeometry                             MyGeometry;                                        // 0x0(0x38)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                         MouseEvent;                                        // 0x38(0x78)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FEventReply                           ReturnValue;                                       // 0xB0(0xB8)(Parm, OutParm, ReturnParm)
-	bool                                         CallFunc_IsPlayerEditable_IsPlayerEditable;        // 0x168(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6027[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FKey                                  CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x170(0x18)(HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x188(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6028[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class ANWXPlayerController*                  CallFunc_GetLocalPlayerController_LocalPlayerController; // 0x190(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IPlayerMapPinControllerInterface> CallFunc_RemovePlayerOwnedMapPin_self_CastInput;   // 0x198(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FEventReply                           CallFunc_Handled_ReturnValue;                      // 0x1A8(0xB8)(None)
+	struct FKey                                  CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x168(0x18)(HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x180(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_F75[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FEventReply                           CallFunc_Handled_ReturnValue;                      // 0x188(0xB8)(None)
 };
 
-// 0x3C (0x3C - 0x0)
-// Function WBP_PlayerMapPin.WBP_PlayerMapPin_C.Tick
-struct UWBP_PlayerMapPin_C_Tick_Params
-{
-public:
-	struct FGeometry                             MyGeometry;                                        // 0x0(0x38)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                        InDeltaTime;                                       // 0x38(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x228 (0x228 - 0x0)
+// 0x1E8 (0x1E8 - 0x0)
 // Function WBP_PlayerMapPin.WBP_PlayerMapPin_C.ExecuteUbergraph_WBP_PlayerMapPin
 struct UWBP_PlayerMapPin_C_ExecuteUbergraph_WBP_PlayerMapPin_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6029[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_FA8[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Temp_real_Variable;                                // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Temp_real_Variable_1;                              // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Temp_real_Variable_2;                              // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x20(0x38)(IsPlainOldData, NoDestructor)
-	float                                        K2Node_Event_InDeltaTime;                          // 0x58(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_602A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x60(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_MapUI_GetLevelMapRotation_TableRowFound;  // 0x69(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_602B[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_MapUI_GetLevelMapRotation_Rotation;       // 0x70(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class E_MapRotation                     CallFunc_MapUI_GetLevelMapRotation_Map_Rotation_Override; // 0x78(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_602C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_MapRangeClamped_ReturnValue;              // 0x80(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EMapMarkerType                    Temp_byte_Variable;                                // 0x88(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_602D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FMapWaypointInfo                      CallFunc_GetDataTableRowFromName_OutRow;           // 0x90(0x120)(None)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x1B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_602E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x1B4(0x14)(None)
-	class UObject*                               CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x1C8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x1D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_602F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UTexture2D*                            K2Node_DynamicCast_AsTexture_2D;                   // 0x1D8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x1E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x1E1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6030[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FSlateColor                           K2Node_MakeStruct_SlateColor_1;                    // 0x1E4(0x14)(None)
-	double                                       K2Node_Select_Default;                             // 0x1F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x200(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             CallFunc_MakeVector2D_ReturnValue;                 // 0x208(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsAPartyMemberBeacon_IsAPartyMembersBeacon; // 0x218(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6031[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x21C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetWidthOverride_InWidthOverride_ImplicitCast; // 0x220(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x224(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_MapUI_GetLevelMapRotation_TableRowFound;  // 0x29(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FAB[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_MapUI_GetLevelMapRotation_Rotation;       // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class E_MapRotation                     CallFunc_MapUI_GetLevelMapRotation_Map_Rotation_Override; // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FAD[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_MapRangeClamped_ReturnValue;              // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EMapMarkerType                    Temp_byte_Variable;                                // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FB0[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FMapWaypointInfo                      CallFunc_GetDataTableRowFromName_OutRow;           // 0x50(0x120)(None)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x170(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FB1[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x174(0x14)(None)
+	class UObject*                               CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x188(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x190(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FB5[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	class UTexture2D*                            K2Node_DynamicCast_AsTexture_2D;                   // 0x198(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x1A0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x1A1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FB8[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSlateColor                           K2Node_MakeStruct_SlateColor_1;                    // 0x1A4(0x14)(None)
+	double                                       K2Node_Select_Default;                             // 0x1B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x1C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             CallFunc_MakeVector2D_ReturnValue;                 // 0x1C8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsAPartyMemberBeacon_IsAPartyMembersBeacon; // 0x1D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FBA[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x1DC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetWidthOverride_InWidthOverride_ImplicitCast; // 0x1E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x1E4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0xB0 (0xB0 - 0x0)

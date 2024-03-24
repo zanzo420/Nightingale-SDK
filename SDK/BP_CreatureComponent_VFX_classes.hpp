@@ -14,7 +14,7 @@ namespace SDK
 class UBP_CreatureComponent_VFX_C : public UBP_CreatureComponentBase_C
 {
 public:
-	uint8                                        Pad_4E7F[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_642F[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xC0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class ACharacter*                            OwningCreature;                                    // 0xC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                SkeletalMeshComponent;                             // 0xD0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)

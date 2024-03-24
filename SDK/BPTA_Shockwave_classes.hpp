@@ -14,7 +14,7 @@ namespace SDK
 class ABPTA_Shockwave_C : public ABPTA_SpellTarget_C
 {
 public:
-	uint8                                        Pad_5B8A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A7F3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               ImpactPoint;                                       // 0x418(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	double                                       Radius;                                            // 0x430(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UClass*                                ClassFilter;                                       // 0x438(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

@@ -19,7 +19,7 @@ public:
 	TMap<enum class Enum_CreatureAbilityZone, struct FDynamicMontageArray> CreatureAbilityZone;                               // 0x550(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class AActor*                                ProjectileTarget;                                  // 0x5A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        NumberOfBrambles;                                  // 0x5A8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9F6E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A05B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AActor*>                        ActorsToAvoid;                                     // 0x5B0(0x10)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 
 	static class UClass* StaticClass();

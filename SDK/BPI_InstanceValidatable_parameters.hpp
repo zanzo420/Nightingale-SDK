@@ -19,7 +19,7 @@ struct IBPI_InstanceValidatable_C_ValidateInstance_Params
 {
 public:
 	bool                                         PassedValidation;                                  // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_671C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_58F7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FText>                          ValidationErrors;                                  // 0x8(0x10)(Parm, OutParm)
 };
 

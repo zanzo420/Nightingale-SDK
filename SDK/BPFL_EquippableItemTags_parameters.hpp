@@ -14,8 +14,8 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 
 // 0x10 (0x10 - 0x0)
-// Function BPFL_EquippableItemTags.BPFL_EquippableItemTags_C.MainhandTag
-struct UBPFL_EquippableItemTags_C_MainhandTag_Params
+// Function BPFL_EquippableItemTags.BPFL_EquippableItemTags_C.MainHandTag
+struct UBPFL_EquippableItemTags_C_MainHandTag_Params
 {
 public:
 	class UObject*                               __WorldContext;                                    // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)

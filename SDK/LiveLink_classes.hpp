@@ -15,7 +15,7 @@ class ULiveLinkBasicFrameInterpolationProcessor : public ULiveLinkFrameInterpola
 {
 public:
 	bool                                         bInterpolatePropertyValues;                        // 0x28(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_452E[0x17];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4543[0x17];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkBasicFrameInterpolationProcessor* GetDefaultObj();
@@ -27,7 +27,7 @@ public:
 class ULiveLinkAnimationFrameInterpolationProcessor : public ULiveLinkBasicFrameInterpolationProcessor
 {
 public:
-	uint8                                        Pad_452F[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4548[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkAnimationFrameInterpolationProcessor* GetDefaultObj();
@@ -39,9 +39,9 @@ public:
 class ULiveLinkAnimationVirtualSubject : public ULiveLinkVirtualSubject
 {
 public:
-	uint8                                        Pad_4530[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_454A[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bAppendSubjectNameToBones;                         // 0x161(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4531[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_454B[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkAnimationVirtualSubject* GetDefaultObj();
@@ -100,7 +100,7 @@ class ULiveLinkComponent : public UActorComponent
 {
 public:
 	FMulticastInlineDelegateProperty_            OnLiveLinkUpdated;                                 // 0xA0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4549[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_45A8[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkComponent* GetDefaultObj();
@@ -120,7 +120,7 @@ public:
 	class FName                                  ActorTransformBone;                                // 0xA8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bModifyActorTransform;                             // 0xB0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bSetRelativeLocation;                              // 0xB1(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_454A[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_45A9[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkDrivenComponent* GetDefaultObj();
@@ -132,7 +132,7 @@ public:
 class ULiveLinkMessageBusFinder : public UObject
 {
 public:
-	uint8                                        Pad_454C[0x58];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_45AB[0x58];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkMessageBusFinder* GetDefaultObj();
@@ -171,7 +171,7 @@ class ULiveLinkPreset : public UObject
 public:
 	TArray<struct FLiveLinkSourcePreset>         Sources;                                           // 0x28(0x10)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate)
 	TArray<struct FLiveLinkSubjectPreset>        Subjects;                                          // 0x38(0x10)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_454F[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_45AC[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkPreset* GetDefaultObj();
@@ -204,7 +204,7 @@ public:
 	TSoftObjectPtr<class ULiveLinkPreset>        DefaultLiveLinkPreset;                             // 0x40(0x28)(Edit, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        ClockOffsetCorrectionStep;                         // 0x68(0x4)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELiveLinkSourceMode               DefaultMessageBusSourceMode;                       // 0x6C(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4551[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_45AD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       MessageBusPingRequestFrequency;                    // 0x70(0x8)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	double                                       MessageBusHeartbeatFrequency;                      // 0x78(0x8)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	double                                       MessageBusHeartbeatTimeout;                        // 0x80(0x8)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -214,7 +214,7 @@ public:
 	struct FLinearColor                          InvalidColor;                                      // 0xA8(0x10)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        TextSizeSource;                                    // 0xB8(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        TextSizeSubject;                                   // 0xB9(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4553[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_45AE[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkSettings* GetDefaultObj();
@@ -229,10 +229,10 @@ public:
 	struct FLiveLinkSubjectKey                   SubjectKey;                                        // 0x30(0x18)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class ELiveLinkTimecodeProviderEvaluationType Evaluation;                                        // 0x48(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bOverrideFrameRate;                                // 0x4C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4554[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_45AF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFrameRate                            OverrideFrameRate;                                 // 0x50(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                        BufferSize;                                        // 0x58(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_4555[0x64];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_45B0[0x64];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkTimecodeProvider* GetDefaultObj();
@@ -245,7 +245,7 @@ class ULiveLinkTimeSynchronizationSource : public UTimeSynchronizationSource
 {
 public:
 	struct FLiveLinkSubjectName                  SubjectName;                                       // 0x30(0x8)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4556[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_45B1[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkTimeSynchronizationSource* GetDefaultObj();
@@ -274,10 +274,10 @@ public:
 	enum class ELiveLinkAxis                     UpAxis;                                            // 0x2A(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bUseOffsetPosition;                                // 0x2B(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bUseOffsetOrientation;                             // 0x2C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_4559[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_45B2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               OffsetPosition;                                    // 0x30(0x18)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FRotator                              OffsetOrientation;                                 // 0x48(0x18)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_455A[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_45B3[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkTransformAxisSwitchPreProcessor* GetDefaultObj();
@@ -301,7 +301,7 @@ class ULiveLinkAnimationRoleToTransform : public ULiveLinkFrameTranslator
 {
 public:
 	class FName                                  BoneName;                                          // 0x28(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_455D[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_45B4[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkAnimationRoleToTransform* GetDefaultObj();
@@ -313,7 +313,7 @@ public:
 class ULiveLinkBlueprintVirtualSubject : public ULiveLinkVirtualSubject
 {
 public:
-	uint8                                        Pad_4564[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_45B7[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULiveLinkBlueprintVirtualSubject* GetDefaultObj();

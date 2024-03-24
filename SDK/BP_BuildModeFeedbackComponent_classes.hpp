@@ -17,7 +17,7 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	FMulticastInlineDelegateProperty_            OnBuildModeContextChanged;                         // 0xA8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	enum class EBuildModeContext                 Mode;                                              // 0xB8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_551C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5C1F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<enum class EBuildModeInput, enum class EBuildModeAction> PlacementActions;                                  // 0xC0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<enum class EBuildModeInput, enum class EBuildModeAction> BuildModeActions;                                  // 0x110(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UBP_BuildModeFeedbackData_C*           CurrentContext;                                    // 0x160(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

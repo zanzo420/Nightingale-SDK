@@ -30,7 +30,7 @@ public:
 	FMulticastInlineDelegateProperty_            OnClaimRedemptionResponseReceived;                 // 0xB8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnCurrentRedemptionsUpdated;                       // 0xC8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TArray<struct FRedemptionEntry>              CurrentRedemptions;                                // 0xD8(0x10)(Net, ZeroConstructor, RepNotify, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3FCB[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3971[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                OwnerProfileId;                                    // 0xF0(0x10)(Net, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();

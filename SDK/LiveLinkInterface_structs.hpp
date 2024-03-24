@@ -34,7 +34,7 @@ enum class ELiveLinkSourceMode : uint8
 struct FLiveLinkSourceHandle
 {
 public:
-	uint8                                        Pad_4502[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4378[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -80,7 +80,7 @@ public:
 	struct FLiveLinkWorldTime                    WorldTime;                                         // 0x0(0x10)(Edit, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 	struct FLiveLinkMetaData                     MetaData;                                          // 0x10(0x60)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TArray<float>                                PropertyValues;                                    // 0x70(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4503[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_437C[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0xB0 - 0xA0)
@@ -96,7 +96,7 @@ public:
 struct FLiveLinkBaseBlueprintData
 {
 public:
-	uint8                                        Pad_4504[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_437E[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xB0 (0xB8 - 0x8)
@@ -116,7 +116,7 @@ public:
 	bool                                         bIsLocationSupported;                              // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsRotationSupported;                              // 0x11(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsScaleSupported;                                 // 0x12(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4505[0x5];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4381[0x5];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x28 - 0x18)
@@ -133,7 +133,7 @@ public:
 	bool                                         bIsApertureSupported;                              // 0x24(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsFocusDistanceSupported;                         // 0x25(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsDepthOfFieldSupported;                          // 0x26(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4506[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4383[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x60 (0x100 - 0xA0)
@@ -155,7 +155,7 @@ public:
 	float                                        Aperture;                                          // 0x10C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        FocusDistance;                                     // 0x110(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELiveLinkCameraProjectionMode     ProjectionMode;                                    // 0x114(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4507[0xB];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4384[0xB];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x148 (0x150 - 0x8)
@@ -181,7 +181,7 @@ public:
 	bool                                         bIsSourceLenghtSupported;                          // 0x1E(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsSourceRadiusSupported;                          // 0x1F(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsSoftSourceRadiusSupported;                      // 0x20(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4508[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4385[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x130 - 0x100)
@@ -198,7 +198,7 @@ public:
 	float                                        SourceRadius;                                      // 0x118(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        SoftSourceRadius;                                  // 0x11C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        SourceLength;                                      // 0x120(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4509[0xC];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_438A[0xC];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x158 (0x160 - 0x8)
@@ -247,7 +247,7 @@ public:
 	class ULiveLinkSubjectSettings*              Settings;                                          // 0x20(0x8)(Edit, ZeroConstructor, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULiveLinkVirtualSubject*               VirtualSubject;                                    // 0x28(0x8)(Edit, ZeroConstructor, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnabled;                                          // 0x30(0x1)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_450A[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_438E[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -291,28 +291,28 @@ struct FLiveLinkSourceBufferManagementSettings
 {
 public:
 	bool                                         bValidEngineTimeEnabled;                           // 0x0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_450B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4392[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        ValidEngineTime;                                   // 0x4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        EngineTimeOffset;                                  // 0x8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_450C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4393[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       EngineTimeClockOffset;                             // 0x10(0x8)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	double                                       SmoothEngineTimeOffset;                            // 0x18(0x8)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bGenerateSubFrame;                                 // 0x20(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_450D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4394[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFrameRate                            DetectedFrameRate;                                 // 0x24(0x8)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseTimecodeSmoothLatest;                          // 0x2C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_450E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4395[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFrameRate                            SourceTimecodeFrameRate;                           // 0x30(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bValidTimecodeFrameEnabled;                        // 0x38(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_450F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4396[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        ValidTimecodeFrame;                                // 0x3C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        TimecodeFrameOffset;                               // 0x40(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4510[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4397[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       TimecodeClockOffset;                               // 0x48(0x8)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        LatestOffset;                                      // 0x50(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxNumberOfFrameToBuffered;                        // 0x54(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bKeepAtLeastOneFrame;                              // 0x58(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4511[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_439A[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -340,7 +340,7 @@ struct FLiveLinkInterpolationSettings
 {
 public:
 	bool                                         bUseInterpolation;                                 // 0x0(0x1)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4512[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_439D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        InterpolationOffset;                               // 0x4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -405,7 +405,7 @@ public:
 	TMap<class FName, class FString>             StringMetaData;                                    // 0x0(0x50)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FTimecode                             SceneTimecode;                                     // 0x50(0x14)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameRate                            SceneFramerate;                                    // 0x64(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4514[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_43A3[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x160 (0x160 - 0x0)
@@ -413,7 +413,7 @@ public:
 struct FCachedSubjectFrame
 {
 public:
-	uint8                                        Pad_4515[0x160];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_43A4[0x160];                                   // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -421,7 +421,7 @@ public:
 struct FLiveLinkTransform
 {
 public:
-	uint8                                        Pad_4516[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_43A5[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x18 - 0x8)
@@ -429,7 +429,7 @@ public:
 struct FSubjectFrameHandle : public FLiveLinkBaseBlueprintData
 {
 public:
-	uint8                                        Pad_4517[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_43A6[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

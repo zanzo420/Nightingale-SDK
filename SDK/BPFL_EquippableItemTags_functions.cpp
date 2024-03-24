@@ -40,20 +40,20 @@ class UBPFL_EquippableItemTags_C* UBPFL_EquippableItemTags_C::GetDefaultObj()
 }
 
 
-// Function BPFL_EquippableItemTags.BPFL_EquippableItemTags_C.MainhandTag
+// Function BPFL_EquippableItemTags.BPFL_EquippableItemTags_C.MainHandTag
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                SledgehammerTag                                                  (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
 
-void UBPFL_EquippableItemTags_C::MainhandTag(class UObject* __WorldContext, struct FGameplayTag* SledgehammerTag)
+void UBPFL_EquippableItemTags_C::MainHandTag(class UObject* __WorldContext, struct FGameplayTag* SledgehammerTag)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BPFL_EquippableItemTags_C", "MainhandTag");
+		Func = Class->GetFunction("BPFL_EquippableItemTags_C", "MainHandTag");
 
-	Params::UBPFL_EquippableItemTags_C_MainhandTag_Params Parms{};
+	Params::UBPFL_EquippableItemTags_C_MainHandTag_Params Parms{};
 
 	Parms.__WorldContext = __WorldContext;
 

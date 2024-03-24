@@ -40,6 +40,247 @@ class UWBP_LiveDebugScreen_C* UWBP_LiveDebugScreen_C::GetDefaultObj()
 }
 
 
+// Function WBP_LiveDebugScreen.WBP_LiveDebugScreen_C.Debug Print Log
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class FString                      Function_Name                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                      Message                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                               Valid                                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_LiveDebugScreen_C::Debug_Print_Log(const class FString& Function_Name, const class FString& Message, bool* Valid, const class FString& CallFunc_Concat_StrStr_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_LiveDebugScreen_C", "Debug Print Log");
+
+	Params::UWBP_LiveDebugScreen_C_Debug_Print_Log_Params Parms{};
+
+	Parms.Function_Name = Function_Name;
+	Parms.Message = Message;
+	Parms.CallFunc_Concat_StrStr_ReturnValue = CallFunc_Concat_StrStr_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Valid != nullptr)
+		*Valid = Parms.Valid;
+
+}
+
+
+// Function WBP_LiveDebugScreen.WBP_LiveDebugScreen_C.GetMinorRealmCard
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                      Result                                                           (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                      MinorRealmCard                                                   (Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ANWXPlayerController*        CallFunc_GetOwningPlayerController_ReturnValue                   (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ANWXGameStateBase*           CallFunc_GetGameState_GameState                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Array_IsNotEmpty_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ANWXPlayerController*        CallFunc_GetOwningPlayerController_ReturnValue_1                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ANWXGameStateBase*           CallFunc_GetGameState_GameState_1                                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRealmCardDefinitionReferenceCallFunc_Array_Get_Item                                          (HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IRealmCard> CallFunc_GetRealmCardInterfaceFromRealmCardDefinitionReference_ReturnValue(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class FText                        CallFunc_GetName_ReturnValue                                     (None)
+// enum class ERealmCardType          CallFunc_GetType_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                        CallFunc_StringTableIdAndKeyFromText_OutTableId                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_StringTableIdAndKeyFromText_OutKey                      (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_StringTableIdAndKeyFromText_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetTableEntrySourceString_ReturnValue                   (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      K2Node_Select_Default                                            (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Concat_StrStr_ReturnValue_1                             (ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_LiveDebugScreen_C::GetMinorRealmCard(class FString* Result, const class FString& MinorRealmCard, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue, bool Temp_bool_Variable, class ANWXGameStateBase* CallFunc_GetGameState_GameState, bool CallFunc_Array_IsNotEmpty_ReturnValue, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue_1, class ANWXGameStateBase* CallFunc_GetGameState_GameState_1, int32 CallFunc_Array_Length_ReturnValue, const struct FRealmCardDefinitionReference& CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, TScriptInterface<class IRealmCard> CallFunc_GetRealmCardInterfaceFromRealmCardDefinitionReference_ReturnValue, class FText CallFunc_GetName_ReturnValue, enum class ERealmCardType CallFunc_GetType_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class FName CallFunc_StringTableIdAndKeyFromText_OutTableId, const class FString& CallFunc_StringTableIdAndKeyFromText_OutKey, bool CallFunc_StringTableIdAndKeyFromText_ReturnValue, const class FString& CallFunc_GetTableEntrySourceString_ReturnValue, const class FString& K2Node_Select_Default, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_LiveDebugScreen_C", "GetMinorRealmCard");
+
+	Params::UWBP_LiveDebugScreen_C_GetMinorRealmCard_Params Parms{};
+
+	Parms.MinorRealmCard = MinorRealmCard;
+	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
+	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.CallFunc_GetOwningPlayerController_ReturnValue = CallFunc_GetOwningPlayerController_ReturnValue;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.CallFunc_GetGameState_GameState = CallFunc_GetGameState_GameState;
+	Parms.CallFunc_Array_IsNotEmpty_ReturnValue = CallFunc_Array_IsNotEmpty_ReturnValue;
+	Parms.CallFunc_GetOwningPlayerController_ReturnValue_1 = CallFunc_GetOwningPlayerController_ReturnValue_1;
+	Parms.CallFunc_GetGameState_GameState_1 = CallFunc_GetGameState_GameState_1;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_GetRealmCardInterfaceFromRealmCardDefinitionReference_ReturnValue = CallFunc_GetRealmCardInterfaceFromRealmCardDefinitionReference_ReturnValue;
+	Parms.CallFunc_GetName_ReturnValue = CallFunc_GetName_ReturnValue;
+	Parms.CallFunc_GetType_ReturnValue = CallFunc_GetType_ReturnValue;
+	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
+	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
+	Parms.CallFunc_StringTableIdAndKeyFromText_OutTableId = CallFunc_StringTableIdAndKeyFromText_OutTableId;
+	Parms.CallFunc_StringTableIdAndKeyFromText_OutKey = CallFunc_StringTableIdAndKeyFromText_OutKey;
+	Parms.CallFunc_StringTableIdAndKeyFromText_ReturnValue = CallFunc_StringTableIdAndKeyFromText_ReturnValue;
+	Parms.CallFunc_GetTableEntrySourceString_ReturnValue = CallFunc_GetTableEntrySourceString_ReturnValue;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.CallFunc_Concat_StrStr_ReturnValue = CallFunc_Concat_StrStr_ReturnValue;
+	Parms.CallFunc_Concat_StrStr_ReturnValue_1 = CallFunc_Concat_StrStr_ReturnValue_1;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = std::move(Parms.Result);
+
+}
+
+
+// Function WBP_LiveDebugScreen.WBP_LiveDebugScreen_C.GetCurrentMapName
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                        Map_Level_Name                                                   (Parm, OutParm)
+// class FText                        Biome                                                            (Edit, BlueprintVisible)
+// struct FGameplayTagContainer       AppendArray                                                      (Edit, BlueprintVisible)
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
+// class FText                        Temp_text_Variable_4                                             (None)
+// class FText                        Temp_text_Variable_5                                             (None)
+// class FText                        Temp_text_Variable_6                                             (None)
+// class FText                        Temp_text_Variable_7                                             (None)
+// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_True_if_break_was_hit_Variable                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        Temp_text_Variable_8                                             (None)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
+// class FText                        Temp_text_Variable_9                                             (None)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
+// class FText                        Temp_text_Variable_10                                            (None)
+// enum class EBiomeID                Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_GetCurrentRealmTags_Success                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTagContainer       CallFunc_GetCurrentRealmTags_RealmTags                           (None)
+// class FText                        Temp_text_Variable_11                                            (None)
+// class ANWXWorldSettings*           CallFunc_GetWorldSettings_ReturnValue                            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FDataTableRowHandle> CallFunc_GetDataTableRowHandles_RowHandles                       (ReferenceParm)
+// class FText                        Temp_text_Variable_12                                            (None)
+// struct FDataTableRowHandle         CallFunc_Array_Get_Item                                          (NoDestructor, HasGetValueTypeHash)
+// class FText                        K2Node_Select_Default                                            (None)
+// struct FS_RealmMapLevelNameTag     CallFunc_GetDataTableRowFromName_OutRow                          (HasGetValueTypeHash)
+// bool                               CallFunc_GetDataTableRowFromName_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAnyTags_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
+// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
+// class FName                        CallFunc_StringTableIdAndKeyFromText_OutTableId                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_StringTableIdAndKeyFromText_OutKey                      (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_StringTableIdAndKeyFromText_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FString                      CallFunc_GetTableEntrySourceString_ReturnValue                   (ZeroConstructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
+// class FString                      CallFunc_GetCurrentLevelName_ReturnValue                         (ZeroConstructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
+// TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ReferenceParm)
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
+// class FName                        CallFunc_Conv_StringToName_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FS_UI_MapTable              CallFunc_GetDataTableRowFromName_OutRow_1                        (HasGetValueTypeHash)
+// bool                               CallFunc_GetDataTableRowFromName_ReturnValue_1                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                        CallFunc_StringTableIdAndKeyFromText_OutTableId_1                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_StringTableIdAndKeyFromText_OutKey_1                    (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_StringTableIdAndKeyFromText_ReturnValue_1               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetTableEntrySourceString_ReturnValue_1                 (ZeroConstructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         (None)
+
+void UWBP_LiveDebugScreen_C::GetCurrentMapName(class FText* Map_Level_Name, class FText Biome, const struct FGameplayTagContainer& AppendArray, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, class FText Temp_text_Variable_4, class FText Temp_text_Variable_5, class FText Temp_text_Variable_6, class FText Temp_text_Variable_7, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, class FText Temp_text_Variable_8, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText Temp_text_Variable_9, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, class FText Temp_text_Variable_10, enum class EBiomeID Temp_byte_Variable, bool CallFunc_IsValid_ReturnValue, bool CallFunc_GetCurrentRealmTags_Success, const struct FGameplayTagContainer& CallFunc_GetCurrentRealmTags_RealmTags, class FText Temp_text_Variable_11, class ANWXWorldSettings* CallFunc_GetWorldSettings_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, TArray<struct FDataTableRowHandle>& CallFunc_GetDataTableRowHandles_RowHandles, class FText Temp_text_Variable_12, const struct FDataTableRowHandle& CallFunc_Array_Get_Item, class FText K2Node_Select_Default, const struct FS_RealmMapLevelNameTag& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_HasAnyTags_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FName CallFunc_StringTableIdAndKeyFromText_OutTableId, const class FString& CallFunc_StringTableIdAndKeyFromText_OutKey, bool CallFunc_StringTableIdAndKeyFromText_ReturnValue, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_GetTableEntrySourceString_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, const class FString& CallFunc_GetCurrentLevelName_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, class FText CallFunc_Conv_StringToText_ReturnValue_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1, class FName CallFunc_Conv_StringToName_ReturnValue, const struct FS_UI_MapTable& CallFunc_GetDataTableRowFromName_OutRow_1, bool CallFunc_GetDataTableRowFromName_ReturnValue_1, class FName CallFunc_StringTableIdAndKeyFromText_OutTableId_1, const class FString& CallFunc_StringTableIdAndKeyFromText_OutKey_1, bool CallFunc_StringTableIdAndKeyFromText_ReturnValue_1, const class FString& CallFunc_GetTableEntrySourceString_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue_2)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_LiveDebugScreen_C", "GetCurrentMapName");
+
+	Params::UWBP_LiveDebugScreen_C_GetCurrentMapName_Params Parms{};
+
+	Parms.Biome = Biome;
+	Parms.AppendArray = AppendArray;
+	Parms.Temp_text_Variable = Temp_text_Variable;
+	Parms.Temp_text_Variable_1 = Temp_text_Variable_1;
+	Parms.Temp_text_Variable_2 = Temp_text_Variable_2;
+	Parms.Temp_text_Variable_3 = Temp_text_Variable_3;
+	Parms.Temp_text_Variable_4 = Temp_text_Variable_4;
+	Parms.Temp_text_Variable_5 = Temp_text_Variable_5;
+	Parms.Temp_text_Variable_6 = Temp_text_Variable_6;
+	Parms.Temp_text_Variable_7 = Temp_text_Variable_7;
+	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.Temp_bool_True_if_break_was_hit_Variable = Temp_bool_True_if_break_was_hit_Variable;
+	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+	Parms.Temp_text_Variable_8 = Temp_text_Variable_8;
+	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
+	Parms.Temp_text_Variable_9 = Temp_text_Variable_9;
+	Parms.K2Node_MakeStruct_FormatArgumentData_1 = K2Node_MakeStruct_FormatArgumentData_1;
+	Parms.Temp_text_Variable_10 = Temp_text_Variable_10;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_GetCurrentRealmTags_Success = CallFunc_GetCurrentRealmTags_Success;
+	Parms.CallFunc_GetCurrentRealmTags_RealmTags = CallFunc_GetCurrentRealmTags_RealmTags;
+	Parms.Temp_text_Variable_11 = Temp_text_Variable_11;
+	Parms.CallFunc_GetWorldSettings_ReturnValue = CallFunc_GetWorldSettings_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
+	Parms.CallFunc_GetDataTableRowHandles_RowHandles = CallFunc_GetDataTableRowHandles_RowHandles;
+	Parms.Temp_text_Variable_12 = Temp_text_Variable_12;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.CallFunc_GetDataTableRowFromName_OutRow = CallFunc_GetDataTableRowFromName_OutRow;
+	Parms.CallFunc_GetDataTableRowFromName_ReturnValue = CallFunc_GetDataTableRowFromName_ReturnValue;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_HasAnyTags_ReturnValue = CallFunc_HasAnyTags_ReturnValue;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
+	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
+	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
+	Parms.CallFunc_StringTableIdAndKeyFromText_OutTableId = CallFunc_StringTableIdAndKeyFromText_OutTableId;
+	Parms.CallFunc_StringTableIdAndKeyFromText_OutKey = CallFunc_StringTableIdAndKeyFromText_OutKey;
+	Parms.CallFunc_StringTableIdAndKeyFromText_ReturnValue = CallFunc_StringTableIdAndKeyFromText_ReturnValue;
+	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
+	Parms.CallFunc_GetTableEntrySourceString_ReturnValue = CallFunc_GetTableEntrySourceString_ReturnValue;
+	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
+	Parms.CallFunc_GetCurrentLevelName_ReturnValue = CallFunc_GetCurrentLevelName_ReturnValue;
+	Parms.K2Node_MakeStruct_FormatArgumentData_3 = K2Node_MakeStruct_FormatArgumentData_3;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_1 = CallFunc_Conv_StringToText_ReturnValue_1;
+	Parms.K2Node_MakeArray_Array_1 = K2Node_MakeArray_Array_1;
+	Parms.CallFunc_Format_ReturnValue_1 = CallFunc_Format_ReturnValue_1;
+	Parms.CallFunc_Conv_StringToName_ReturnValue = CallFunc_Conv_StringToName_ReturnValue;
+	Parms.CallFunc_GetDataTableRowFromName_OutRow_1 = CallFunc_GetDataTableRowFromName_OutRow_1;
+	Parms.CallFunc_GetDataTableRowFromName_ReturnValue_1 = CallFunc_GetDataTableRowFromName_ReturnValue_1;
+	Parms.CallFunc_StringTableIdAndKeyFromText_OutTableId_1 = CallFunc_StringTableIdAndKeyFromText_OutTableId_1;
+	Parms.CallFunc_StringTableIdAndKeyFromText_OutKey_1 = CallFunc_StringTableIdAndKeyFromText_OutKey_1;
+	Parms.CallFunc_StringTableIdAndKeyFromText_ReturnValue_1 = CallFunc_StringTableIdAndKeyFromText_ReturnValue_1;
+	Parms.CallFunc_GetTableEntrySourceString_ReturnValue_1 = CallFunc_GetTableEntrySourceString_ReturnValue_1;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_2 = CallFunc_Conv_StringToText_ReturnValue_2;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Map_Level_Name != nullptr)
+		*Map_Level_Name = Parms.Map_Level_Name;
+
+}
+
+
 // Function WBP_LiveDebugScreen.WBP_LiveDebugScreen_C.Get Framegeneration Info
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -910,36 +1151,38 @@ class FText UWBP_LiveDebugScreen_C::Get_CurrentTimeText_Text(double Time24h, boo
 // class FString                      POI_name                                                         (Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 // TArray<class ABP_POIConfig_C*>     NewLocalVar_1                                                    (Edit, BlueprintVisible, DisableEditOnTemplate)
 // float                              NormalizedRealmTime                                              (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_BoolToText_ReturnValue                             (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
-// class FString                      CallFunc_GetEnumeratorUserFriendlyName_ReturnValue               (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_GetDebugStringFromGameplayTagContainer_ReturnValue      (ZeroConstructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_BoolToText_ReturnValue                             (None)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_4                           (HasGetValueTypeHash)
-// class FString                      CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1             (ZeroConstructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_3                         (None)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_4                         (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_5                           (HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_6                           (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_5                         (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_7                           (HasGetValueTypeHash)
+// class FString                      CallFunc_GetEnumeratorUserFriendlyName_ReturnValue               (ZeroConstructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_4                         (None)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_6                         (None)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_6                           (HasGetValueTypeHash)
 // int64                              CallFunc_Conv_IntToInt64_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetDebugStringFromGameplayTagContainer_ReturnValue      (ZeroConstructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_7                           (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_5                         (None)
+// class FString                      CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1             (ZeroConstructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_8                           (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_6                         (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_9                           (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_7                         (None)
 // class FString                      CallFunc_Update_POI_String_POI_Name                              (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Get_CurrentTimeText_Text_ReturnValue                    (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_10                          (HasGetValueTypeHash)
+// class FText                        CallFunc_Get_CurrentTimeText_Text_ReturnValue                    (None)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_11                          (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue                                      (None)
 
-void UWBP_LiveDebugScreen_C::Update_Realm_Info(const class FString& POI_name, const TArray<class ABP_POIConfig_C*>& NewLocalVar_1, float NormalizedRealmTime, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, class FText CallFunc_Conv_BoolToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, const class FString& CallFunc_GetEnumeratorUserFriendlyName_ReturnValue, const class FString& CallFunc_GetDebugStringFromGameplayTagContainer_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, const class FString& CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue_3, class FText CallFunc_Conv_StringToText_ReturnValue_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_5, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_6, class FText CallFunc_Conv_StringToText_ReturnValue_5, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_7, int32 CallFunc_Array_Length_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_6, int64 CallFunc_Conv_IntToInt64_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_8, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_9, const class FString& CallFunc_Update_POI_String_POI_Name, class FText CallFunc_Get_CurrentTimeText_Text_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_10, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
+void UWBP_LiveDebugScreen_C::Update_Realm_Info(const class FString& POI_name, const TArray<class ABP_POIConfig_C*>& NewLocalVar_1, float NormalizedRealmTime, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, class FText CallFunc_Conv_StringToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, class FText CallFunc_Conv_BoolToText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, class FText CallFunc_Conv_StringToText_ReturnValue_3, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_5, const class FString& CallFunc_GetEnumeratorUserFriendlyName_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_4, int32 CallFunc_Array_Length_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_6, int64 CallFunc_Conv_IntToInt64_ReturnValue, const class FString& CallFunc_GetDebugStringFromGameplayTagContainer_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_7, class FText CallFunc_Conv_StringToText_ReturnValue_5, const class FString& CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_8, class FText CallFunc_Conv_StringToText_ReturnValue_6, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_9, class FText CallFunc_Conv_StringToText_ReturnValue_7, const class FString& CallFunc_Update_POI_String_POI_Name, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_10, class FText CallFunc_Get_CurrentTimeText_Text_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_11, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -951,32 +1194,34 @@ void UWBP_LiveDebugScreen_C::Update_Realm_Info(const class FString& POI_name, co
 	Parms.POI_name = POI_name;
 	Parms.NewLocalVar_1 = NewLocalVar_1;
 	Parms.NormalizedRealmTime = NormalizedRealmTime;
-	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
+	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.K2Node_MakeStruct_FormatArgumentData_1 = K2Node_MakeStruct_FormatArgumentData_1;
-	Parms.CallFunc_Conv_BoolToText_ReturnValue = CallFunc_Conv_BoolToText_ReturnValue;
-	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
-	Parms.CallFunc_GetEnumeratorUserFriendlyName_ReturnValue = CallFunc_GetEnumeratorUserFriendlyName_ReturnValue;
-	Parms.CallFunc_GetDebugStringFromGameplayTagContainer_ReturnValue = CallFunc_GetDebugStringFromGameplayTagContainer_ReturnValue;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_1 = CallFunc_Conv_StringToText_ReturnValue_1;
+	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
+	Parms.CallFunc_Conv_BoolToText_ReturnValue = CallFunc_Conv_BoolToText_ReturnValue;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_2 = CallFunc_Conv_StringToText_ReturnValue_2;
 	Parms.K2Node_MakeStruct_FormatArgumentData_3 = K2Node_MakeStruct_FormatArgumentData_3;
 	Parms.K2Node_MakeStruct_FormatArgumentData_4 = K2Node_MakeStruct_FormatArgumentData_4;
-	Parms.CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1 = CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_3 = CallFunc_Conv_StringToText_ReturnValue_3;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_4 = CallFunc_Conv_StringToText_ReturnValue_4;
 	Parms.K2Node_MakeStruct_FormatArgumentData_5 = K2Node_MakeStruct_FormatArgumentData_5;
-	Parms.K2Node_MakeStruct_FormatArgumentData_6 = K2Node_MakeStruct_FormatArgumentData_6;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_5 = CallFunc_Conv_StringToText_ReturnValue_5;
-	Parms.K2Node_MakeStruct_FormatArgumentData_7 = K2Node_MakeStruct_FormatArgumentData_7;
+	Parms.CallFunc_GetEnumeratorUserFriendlyName_ReturnValue = CallFunc_GetEnumeratorUserFriendlyName_ReturnValue;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_4 = CallFunc_Conv_StringToText_ReturnValue_4;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_6 = CallFunc_Conv_StringToText_ReturnValue_6;
+	Parms.K2Node_MakeStruct_FormatArgumentData_6 = K2Node_MakeStruct_FormatArgumentData_6;
 	Parms.CallFunc_Conv_IntToInt64_ReturnValue = CallFunc_Conv_IntToInt64_ReturnValue;
+	Parms.CallFunc_GetDebugStringFromGameplayTagContainer_ReturnValue = CallFunc_GetDebugStringFromGameplayTagContainer_ReturnValue;
+	Parms.K2Node_MakeStruct_FormatArgumentData_7 = K2Node_MakeStruct_FormatArgumentData_7;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_5 = CallFunc_Conv_StringToText_ReturnValue_5;
+	Parms.CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1 = CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1;
 	Parms.K2Node_MakeStruct_FormatArgumentData_8 = K2Node_MakeStruct_FormatArgumentData_8;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_6 = CallFunc_Conv_StringToText_ReturnValue_6;
 	Parms.K2Node_MakeStruct_FormatArgumentData_9 = K2Node_MakeStruct_FormatArgumentData_9;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_7 = CallFunc_Conv_StringToText_ReturnValue_7;
 	Parms.CallFunc_Update_POI_String_POI_Name = CallFunc_Update_POI_String_POI_Name;
-	Parms.CallFunc_Get_CurrentTimeText_Text_ReturnValue = CallFunc_Get_CurrentTimeText_Text_ReturnValue;
 	Parms.K2Node_MakeStruct_FormatArgumentData_10 = K2Node_MakeStruct_FormatArgumentData_10;
+	Parms.CallFunc_Get_CurrentTimeText_Text_ReturnValue = CallFunc_Get_CurrentTimeText_Text_ReturnValue;
+	Parms.K2Node_MakeStruct_FormatArgumentData_11 = K2Node_MakeStruct_FormatArgumentData_11;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
 
@@ -1058,48 +1303,54 @@ void UWBP_LiveDebugScreen_C::UpdateStatusEffectsData(struct FActiveGameplayEffec
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      Temp_string_Variable_1                                           (ZeroConstructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsEmpty_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UNWXGameplayEffectUIData*    CallFunc_Array_Get_Item                                          (ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class FString                      K2Node_Select_Default                                            (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNWXGameplayEffectUIData*    CallFunc_Array_Get_Item                                          (ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // TArray<class UNWXGameplayEffectUIData*>CallFunc_Map_Values_Values                                       (ReferenceParm, ContainsInstancedReference)
+// class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
+// class FName                        CallFunc_StringTableIdAndKeyFromText_OutTableId                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_StringTableIdAndKeyFromText_OutKey                      (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_StringTableIdAndKeyFromText_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_Map_Keys_Keys                                           (ReferenceParm)
+// class FString                      CallFunc_GetTableEntrySourceString_ReturnValue                   (ZeroConstructor, HasGetValueTypeHash)
 // struct FActiveGameplayEffectHandle CallFunc_Array_Get_Item_1                                        (NoDestructor, HasGetValueTypeHash)
-// class FString                      CallFunc_Concat_StrStr_ReturnValue_1                             (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      K2Node_Select_Default_1                                          (ZeroConstructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Concat_StrStr_ReturnValue_1                             (ZeroConstructor, HasGetValueTypeHash)
 // struct FTimespan                   CallFunc_FromSeconds_ReturnValue                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   CallFunc_FromSeconds_ReturnValue_1                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakTimespan_Days                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakTimespan_Hours                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakTimespan_Minutes                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakTimespan_Seconds                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakTimespan_Milliseconds                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                      CallFunc_Conv_IntToString_ReturnValue                            (ZeroConstructor, HasGetValueTypeHash)
-// struct FTimespan                   CallFunc_FromSeconds_ReturnValue_1                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakTimespan_Days_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakTimespan_Hours_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakTimespan_Minutes_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakTimespan_Seconds_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakTimespan_Milliseconds_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_LessEqual_DoubleDouble_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Conv_IntToString_ReturnValue                            (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Conv_IntToString_ReturnValue_1                          (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_2                             (ZeroConstructor, HasGetValueTypeHash)
-// bool                               CallFunc_LessEqual_DoubleDouble_ReturnValue_1                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_LessEqual_DoubleDouble_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_3                             (ZeroConstructor, HasGetValueTypeHash)
-// bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_4                             (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_LessEqual_DoubleDouble_ReturnValue_1                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_5                             (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      K2Node_Select_Default_1                                          (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetActiveGameplayEffectRemainingDuration_ReturnValue    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      K2Node_Select_Default_2                                          (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_6                             (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_7                             (ZeroConstructor, HasGetValueTypeHash)
 // float                              CallFunc_GetActiveGameplayEffectTotalDuration_ReturnValue        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_LessEqual_DoubleDouble_A_ImplicitCast                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LiveDebugScreen_C::Get_Gameplay_Effect_States(class FString* StatusEffects, const class FString& StatusEffectTexts, int32 LCurrentArrayIndex, const TArray<class UNWXGameplayEffectUIData*>& LGameplayEffectUIDataArray, const class FString& LEffectName, float Total_Duration, float RemainingDuration, const struct FActiveGameplayEffectHandle& LEffectHandle, bool Temp_bool_Variable, const class FString& Temp_string_Variable, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const class FString& Temp_string_Variable_1, bool CallFunc_IsEmpty_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, bool Temp_bool_Variable_1, class UNWXGameplayEffectUIData* CallFunc_Array_Get_Item, const class FString& K2Node_Select_Default, const class FString& CallFunc_Conv_TextToString_ReturnValue, TArray<class UNWXGameplayEffectUIData*>& CallFunc_Map_Values_Values, TArray<struct FActiveGameplayEffectHandle>& CallFunc_Map_Keys_Keys, const struct FActiveGameplayEffectHandle& CallFunc_Array_Get_Item_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, const struct FTimespan& CallFunc_FromSeconds_ReturnValue, int32 CallFunc_BreakTimespan_Days, int32 CallFunc_BreakTimespan_Hours, int32 CallFunc_BreakTimespan_Minutes, int32 CallFunc_BreakTimespan_Seconds, int32 CallFunc_BreakTimespan_Milliseconds, const class FString& CallFunc_Conv_IntToString_ReturnValue, const struct FTimespan& CallFunc_FromSeconds_ReturnValue_1, int32 CallFunc_BreakTimespan_Days_1, int32 CallFunc_BreakTimespan_Hours_1, int32 CallFunc_BreakTimespan_Minutes_1, int32 CallFunc_BreakTimespan_Seconds_1, int32 CallFunc_BreakTimespan_Milliseconds_1, bool CallFunc_LessEqual_DoubleDouble_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_2, bool CallFunc_LessEqual_DoubleDouble_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_3, bool CallFunc_BooleanOR_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_4, const class FString& CallFunc_Concat_StrStr_ReturnValue_5, const class FString& K2Node_Select_Default_1, float CallFunc_GetActiveGameplayEffectRemainingDuration_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_6, const class FString& CallFunc_Concat_StrStr_ReturnValue_7, float CallFunc_GetActiveGameplayEffectTotalDuration_ReturnValue, double CallFunc_LessEqual_DoubleDouble_A_ImplicitCast, double CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1)
+void UWBP_LiveDebugScreen_C::Get_Gameplay_Effect_States(class FString* StatusEffects, const class FString& StatusEffectTexts, int32 LCurrentArrayIndex, const TArray<class UNWXGameplayEffectUIData*>& LGameplayEffectUIDataArray, const class FString& LEffectName, float Total_Duration, float RemainingDuration, const struct FActiveGameplayEffectHandle& LEffectHandle, bool Temp_bool_Variable, const class FString& Temp_string_Variable, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const class FString& Temp_string_Variable_1, bool Temp_bool_Variable_1, bool CallFunc_IsEmpty_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& K2Node_Select_Default, bool Temp_bool_Variable_2, class UNWXGameplayEffectUIData* CallFunc_Array_Get_Item, TArray<class UNWXGameplayEffectUIData*>& CallFunc_Map_Values_Values, const class FString& CallFunc_Conv_TextToString_ReturnValue, class FName CallFunc_StringTableIdAndKeyFromText_OutTableId, const class FString& CallFunc_StringTableIdAndKeyFromText_OutKey, bool CallFunc_StringTableIdAndKeyFromText_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_Map_Keys_Keys, const class FString& CallFunc_GetTableEntrySourceString_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_Array_Get_Item_1, const class FString& K2Node_Select_Default_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, const struct FTimespan& CallFunc_FromSeconds_ReturnValue, const struct FTimespan& CallFunc_FromSeconds_ReturnValue_1, int32 CallFunc_BreakTimespan_Days, int32 CallFunc_BreakTimespan_Hours, int32 CallFunc_BreakTimespan_Minutes, int32 CallFunc_BreakTimespan_Seconds, int32 CallFunc_BreakTimespan_Milliseconds, int32 CallFunc_BreakTimespan_Days_1, int32 CallFunc_BreakTimespan_Hours_1, int32 CallFunc_BreakTimespan_Minutes_1, int32 CallFunc_BreakTimespan_Seconds_1, int32 CallFunc_BreakTimespan_Milliseconds_1, const class FString& CallFunc_Conv_IntToString_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_2, bool CallFunc_LessEqual_DoubleDouble_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_3, const class FString& CallFunc_Concat_StrStr_ReturnValue_4, bool CallFunc_LessEqual_DoubleDouble_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_5, bool CallFunc_BooleanOR_ReturnValue, float CallFunc_GetActiveGameplayEffectRemainingDuration_ReturnValue, const class FString& K2Node_Select_Default_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_6, const class FString& CallFunc_Concat_StrStr_ReturnValue_7, float CallFunc_GetActiveGameplayEffectTotalDuration_ReturnValue, double CallFunc_LessEqual_DoubleDouble_A_ImplicitCast, double CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1121,41 +1372,47 @@ void UWBP_LiveDebugScreen_C::Get_Gameplay_Effect_States(class FString* StatusEff
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.Temp_string_Variable_1 = Temp_string_Variable_1;
+	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
 	Parms.CallFunc_IsEmpty_ReturnValue = CallFunc_IsEmpty_ReturnValue;
 	Parms.CallFunc_Concat_StrStr_ReturnValue = CallFunc_Concat_StrStr_ReturnValue;
-	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
-	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
+	Parms.Temp_bool_Variable_2 = Temp_bool_Variable_2;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_Map_Values_Values = CallFunc_Map_Values_Values;
+	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
+	Parms.CallFunc_StringTableIdAndKeyFromText_OutTableId = CallFunc_StringTableIdAndKeyFromText_OutTableId;
+	Parms.CallFunc_StringTableIdAndKeyFromText_OutKey = CallFunc_StringTableIdAndKeyFromText_OutKey;
+	Parms.CallFunc_StringTableIdAndKeyFromText_ReturnValue = CallFunc_StringTableIdAndKeyFromText_ReturnValue;
 	Parms.CallFunc_Map_Keys_Keys = CallFunc_Map_Keys_Keys;
+	Parms.CallFunc_GetTableEntrySourceString_ReturnValue = CallFunc_GetTableEntrySourceString_ReturnValue;
 	Parms.CallFunc_Array_Get_Item_1 = CallFunc_Array_Get_Item_1;
-	Parms.CallFunc_Concat_StrStr_ReturnValue_1 = CallFunc_Concat_StrStr_ReturnValue_1;
+	Parms.K2Node_Select_Default_1 = K2Node_Select_Default_1;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_Concat_StrStr_ReturnValue_1 = CallFunc_Concat_StrStr_ReturnValue_1;
 	Parms.CallFunc_FromSeconds_ReturnValue = CallFunc_FromSeconds_ReturnValue;
+	Parms.CallFunc_FromSeconds_ReturnValue_1 = CallFunc_FromSeconds_ReturnValue_1;
 	Parms.CallFunc_BreakTimespan_Days = CallFunc_BreakTimespan_Days;
 	Parms.CallFunc_BreakTimespan_Hours = CallFunc_BreakTimespan_Hours;
 	Parms.CallFunc_BreakTimespan_Minutes = CallFunc_BreakTimespan_Minutes;
 	Parms.CallFunc_BreakTimespan_Seconds = CallFunc_BreakTimespan_Seconds;
 	Parms.CallFunc_BreakTimespan_Milliseconds = CallFunc_BreakTimespan_Milliseconds;
-	Parms.CallFunc_Conv_IntToString_ReturnValue = CallFunc_Conv_IntToString_ReturnValue;
-	Parms.CallFunc_FromSeconds_ReturnValue_1 = CallFunc_FromSeconds_ReturnValue_1;
 	Parms.CallFunc_BreakTimespan_Days_1 = CallFunc_BreakTimespan_Days_1;
 	Parms.CallFunc_BreakTimespan_Hours_1 = CallFunc_BreakTimespan_Hours_1;
 	Parms.CallFunc_BreakTimespan_Minutes_1 = CallFunc_BreakTimespan_Minutes_1;
 	Parms.CallFunc_BreakTimespan_Seconds_1 = CallFunc_BreakTimespan_Seconds_1;
 	Parms.CallFunc_BreakTimespan_Milliseconds_1 = CallFunc_BreakTimespan_Milliseconds_1;
-	Parms.CallFunc_LessEqual_DoubleDouble_ReturnValue = CallFunc_LessEqual_DoubleDouble_ReturnValue;
+	Parms.CallFunc_Conv_IntToString_ReturnValue = CallFunc_Conv_IntToString_ReturnValue;
 	Parms.CallFunc_Conv_IntToString_ReturnValue_1 = CallFunc_Conv_IntToString_ReturnValue_1;
 	Parms.CallFunc_Concat_StrStr_ReturnValue_2 = CallFunc_Concat_StrStr_ReturnValue_2;
-	Parms.CallFunc_LessEqual_DoubleDouble_ReturnValue_1 = CallFunc_LessEqual_DoubleDouble_ReturnValue_1;
+	Parms.CallFunc_LessEqual_DoubleDouble_ReturnValue = CallFunc_LessEqual_DoubleDouble_ReturnValue;
 	Parms.CallFunc_Concat_StrStr_ReturnValue_3 = CallFunc_Concat_StrStr_ReturnValue_3;
-	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
 	Parms.CallFunc_Concat_StrStr_ReturnValue_4 = CallFunc_Concat_StrStr_ReturnValue_4;
+	Parms.CallFunc_LessEqual_DoubleDouble_ReturnValue_1 = CallFunc_LessEqual_DoubleDouble_ReturnValue_1;
 	Parms.CallFunc_Concat_StrStr_ReturnValue_5 = CallFunc_Concat_StrStr_ReturnValue_5;
-	Parms.K2Node_Select_Default_1 = K2Node_Select_Default_1;
+	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
 	Parms.CallFunc_GetActiveGameplayEffectRemainingDuration_ReturnValue = CallFunc_GetActiveGameplayEffectRemainingDuration_ReturnValue;
+	Parms.K2Node_Select_Default_2 = K2Node_Select_Default_2;
 	Parms.CallFunc_Concat_StrStr_ReturnValue_6 = CallFunc_Concat_StrStr_ReturnValue_6;
 	Parms.CallFunc_Concat_StrStr_ReturnValue_7 = CallFunc_Concat_StrStr_ReturnValue_7;
 	Parms.CallFunc_GetActiveGameplayEffectTotalDuration_ReturnValue = CallFunc_GetActiveGameplayEffectTotalDuration_ReturnValue;
@@ -1354,77 +1611,77 @@ void UWBP_LiveDebugScreen_C::FoundGameplayAttribute(bool Found, double Float_Att
 // TArray<struct FActiveGameplayEffectHandle>NewLocalVar                                                      (Edit, BlueprintVisible)
 // struct FVector                     PlayerLocation                                                   (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      Temp_string_Variable                                             (ZeroConstructor, HasGetValueTypeHash)
-// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                      CallFunc_FoundGameplayAttribute_Text                             (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_FoundGameplayAttribute_Text_1                           (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
-// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_2(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_2(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_3(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_3(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                      CallFunc_FoundGameplayAttribute_Text_2                           (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_FoundGameplayAttribute_Text_3                           (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         (None)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_3                         (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
-// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_4(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_4(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_5(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_5(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                      CallFunc_FoundGameplayAttribute_Text_4                           (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_FoundGameplayAttribute_Text_5                           (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_4                         (None)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_5                         (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_4                           (HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_5                           (HasGetValueTypeHash)
-// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_6(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_6(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_7(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_7(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                      CallFunc_FoundGameplayAttribute_Text_6                           (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_FoundGameplayAttribute_Text_7                           (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_6                         (None)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_7                         (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_6                           (HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_7                           (HasGetValueTypeHash)
-// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_8(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_8(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_9(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_9(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                      CallFunc_FoundGameplayAttribute_Text_8                           (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_FoundGameplayAttribute_Text_9                           (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_8                         (None)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_9                         (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_8                           (HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_9                           (HasGetValueTypeHash)
-// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_10(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_10(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                      CallFunc_Get_Gameplay_Effect_States_StatusEffects                (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_FoundGameplayAttribute_Text_10                          (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_10                        (None)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_11                        (None)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_10                          (HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_11                          (HasGetValueTypeHash)
 // struct FVector                     CallFunc_Get_Player_Movement_Mode_Current_Velocity               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Get_Player_Movement_Mode_Current_Speed                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Get_Player_Movement_Mode_Max_Speed                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Get_Player_Movement_Mode_MovementMode                   (ZeroConstructor, HasGetValueTypeHash)
-// bool                               CallFunc_Vector_IsNearlyZero_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_12                        (None)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
+// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
+// class FString                      CallFunc_FoundGameplayAttribute_Text                             (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
+// class FString                      CallFunc_FoundGameplayAttribute_Text_1                           (ZeroConstructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         (None)
+// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_2(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_2(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
+// class FString                      CallFunc_FoundGameplayAttribute_Text_2                           (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_3(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_3(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_3                         (None)
+// class FString                      CallFunc_FoundGameplayAttribute_Text_3                           (ZeroConstructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_4                         (None)
+// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_4(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_4(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_4                           (HasGetValueTypeHash)
+// class FString                      CallFunc_FoundGameplayAttribute_Text_4                           (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_5(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_5(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_5                         (None)
+// class FString                      CallFunc_FoundGameplayAttribute_Text_5                           (ZeroConstructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_5                           (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_6                         (None)
+// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_6(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_6(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_6                           (HasGetValueTypeHash)
+// class FString                      CallFunc_FoundGameplayAttribute_Text_6                           (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_7(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_7(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_7                         (None)
+// class FString                      CallFunc_FoundGameplayAttribute_Text_7                           (ZeroConstructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_7                           (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_8                         (None)
+// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_8(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_8(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_8                           (HasGetValueTypeHash)
+// class FString                      CallFunc_FoundGameplayAttribute_Text_8                           (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_9(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_9(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_9                         (None)
+// class FString                      CallFunc_FoundGameplayAttribute_Text_9                           (ZeroConstructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_9                           (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_10                        (None)
+// bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_10(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_10(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_10                          (HasGetValueTypeHash)
+// class FString                      CallFunc_FoundGameplayAttribute_Text_10                          (ZeroConstructor, HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_11                          (HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_11                        (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_12                          (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_13                          (HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_14                          (HasGetValueTypeHash)
 // class FString                      CallFunc_Conv_VectorToString_ReturnValue                         (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_Conv_VectorToString_ReturnValue_1                       (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Get_Gameplay_Effect_States_StatusEffects                (ZeroConstructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_12                        (None)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_13                        (None)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_14                          (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_15                          (HasGetValueTypeHash)
+// bool                               CallFunc_Vector_IsNearlyZero_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Conv_VectorToString_ReturnValue_1                       (ZeroConstructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      K2Node_Select_Default                                            (ZeroConstructor, HasGetValueTypeHash)
@@ -1445,7 +1702,7 @@ void UWBP_LiveDebugScreen_C::FoundGameplayAttribute(bool Found, double Float_Att
 // double                             CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_9(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_10(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LiveDebugScreen_C::Update_Player_State(const TArray<struct FActiveGameplayEffectHandle>& NewLocalVar, const struct FVector& PlayerLocation, const class FString& Temp_string_Variable, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1, const class FString& CallFunc_FoundGameplayAttribute_Text, const class FString& CallFunc_FoundGameplayAttribute_Text_1, class FText CallFunc_Conv_StringToText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_2, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_2, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_3, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_3, const class FString& CallFunc_FoundGameplayAttribute_Text_2, const class FString& CallFunc_FoundGameplayAttribute_Text_3, class FText CallFunc_Conv_StringToText_ReturnValue_2, class FText CallFunc_Conv_StringToText_ReturnValue_3, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_4, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_4, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_5, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_5, const class FString& CallFunc_FoundGameplayAttribute_Text_4, const class FString& CallFunc_FoundGameplayAttribute_Text_5, class FText CallFunc_Conv_StringToText_ReturnValue_4, class FText CallFunc_Conv_StringToText_ReturnValue_5, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_5, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_6, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_6, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_7, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_7, const class FString& CallFunc_FoundGameplayAttribute_Text_6, const class FString& CallFunc_FoundGameplayAttribute_Text_7, class FText CallFunc_Conv_StringToText_ReturnValue_6, class FText CallFunc_Conv_StringToText_ReturnValue_7, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_6, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_7, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_8, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_8, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_9, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_9, const class FString& CallFunc_FoundGameplayAttribute_Text_8, const class FString& CallFunc_FoundGameplayAttribute_Text_9, class FText CallFunc_Conv_StringToText_ReturnValue_8, class FText CallFunc_Conv_StringToText_ReturnValue_9, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_8, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_9, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_10, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_10, const class FString& CallFunc_Get_Gameplay_Effect_States_StatusEffects, const class FString& CallFunc_FoundGameplayAttribute_Text_10, class FText CallFunc_Conv_StringToText_ReturnValue_10, class FText CallFunc_Conv_StringToText_ReturnValue_11, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_10, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_11, const struct FVector& CallFunc_Get_Player_Movement_Mode_Current_Velocity, double CallFunc_Get_Player_Movement_Mode_Current_Speed, double CallFunc_Get_Player_Movement_Mode_Max_Speed, const class FString& CallFunc_Get_Player_Movement_Mode_MovementMode, bool CallFunc_Vector_IsNearlyZero_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_12, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_12, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_13, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_14, const class FString& CallFunc_Conv_VectorToString_ReturnValue, const class FString& CallFunc_Conv_VectorToString_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue_13, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_15, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue, const class FString& K2Node_Select_Default, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_14, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_16, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_1, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_2, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_3, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_4, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_5, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_6, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_7, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_8, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_9, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_10)
+void UWBP_LiveDebugScreen_C::Update_Player_State(const TArray<struct FActiveGameplayEffectHandle>& NewLocalVar, const struct FVector& PlayerLocation, const class FString& Temp_string_Variable, const struct FVector& CallFunc_Get_Player_Movement_Mode_Current_Velocity, double CallFunc_Get_Player_Movement_Mode_Current_Speed, double CallFunc_Get_Player_Movement_Mode_Max_Speed, const class FString& CallFunc_Get_Player_Movement_Mode_MovementMode, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const class FString& CallFunc_FoundGameplayAttribute_Text, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue_1, const class FString& CallFunc_FoundGameplayAttribute_Text_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, class FText CallFunc_Conv_StringToText_ReturnValue_2, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_2, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, const class FString& CallFunc_FoundGameplayAttribute_Text_2, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_3, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_3, class FText CallFunc_Conv_StringToText_ReturnValue_3, const class FString& CallFunc_FoundGameplayAttribute_Text_3, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, class FText CallFunc_Conv_StringToText_ReturnValue_4, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_4, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, const class FString& CallFunc_FoundGameplayAttribute_Text_4, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_5, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_5, class FText CallFunc_Conv_StringToText_ReturnValue_5, const class FString& CallFunc_FoundGameplayAttribute_Text_5, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_5, class FText CallFunc_Conv_StringToText_ReturnValue_6, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_6, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_6, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_6, const class FString& CallFunc_FoundGameplayAttribute_Text_6, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_7, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_7, class FText CallFunc_Conv_StringToText_ReturnValue_7, const class FString& CallFunc_FoundGameplayAttribute_Text_7, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_7, class FText CallFunc_Conv_StringToText_ReturnValue_8, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_8, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_8, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_8, const class FString& CallFunc_FoundGameplayAttribute_Text_8, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_9, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_9, class FText CallFunc_Conv_StringToText_ReturnValue_9, const class FString& CallFunc_FoundGameplayAttribute_Text_9, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_9, class FText CallFunc_Conv_StringToText_ReturnValue_10, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_10, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_10, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_10, const class FString& CallFunc_FoundGameplayAttribute_Text_10, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_11, class FText CallFunc_Conv_StringToText_ReturnValue_11, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_12, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_13, const class FString& CallFunc_Conv_VectorToString_ReturnValue, const class FString& CallFunc_Get_Gameplay_Effect_States_StatusEffects, class FText CallFunc_Conv_StringToText_ReturnValue_12, class FText CallFunc_Conv_StringToText_ReturnValue_13, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_14, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_15, bool CallFunc_Vector_IsNearlyZero_ReturnValue, const class FString& CallFunc_Conv_VectorToString_ReturnValue_1, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue, const class FString& K2Node_Select_Default, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_14, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_16, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_1, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_2, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_3, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_4, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_5, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_6, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_7, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_8, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_9, double CallFunc_FoundGameplayAttribute_Float_Attribute_Value_ImplicitCast_10)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1457,77 +1714,77 @@ void UWBP_LiveDebugScreen_C::Update_Player_State(const TArray<struct FActiveGame
 	Parms.NewLocalVar = NewLocalVar;
 	Parms.PlayerLocation = PlayerLocation;
 	Parms.Temp_string_Variable = Temp_string_Variable;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1;
-	Parms.CallFunc_FoundGameplayAttribute_Text = CallFunc_FoundGameplayAttribute_Text;
-	Parms.CallFunc_FoundGameplayAttribute_Text_1 = CallFunc_FoundGameplayAttribute_Text_1;
-	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_1 = CallFunc_Conv_StringToText_ReturnValue_1;
-	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
-	Parms.K2Node_MakeStruct_FormatArgumentData_1 = K2Node_MakeStruct_FormatArgumentData_1;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_2 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_2;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_2 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_2;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_3 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_3;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_3 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_3;
-	Parms.CallFunc_FoundGameplayAttribute_Text_2 = CallFunc_FoundGameplayAttribute_Text_2;
-	Parms.CallFunc_FoundGameplayAttribute_Text_3 = CallFunc_FoundGameplayAttribute_Text_3;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_2 = CallFunc_Conv_StringToText_ReturnValue_2;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_3 = CallFunc_Conv_StringToText_ReturnValue_3;
-	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
-	Parms.K2Node_MakeStruct_FormatArgumentData_3 = K2Node_MakeStruct_FormatArgumentData_3;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_4 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_4;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_4 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_4;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_5 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_5;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_5 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_5;
-	Parms.CallFunc_FoundGameplayAttribute_Text_4 = CallFunc_FoundGameplayAttribute_Text_4;
-	Parms.CallFunc_FoundGameplayAttribute_Text_5 = CallFunc_FoundGameplayAttribute_Text_5;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_4 = CallFunc_Conv_StringToText_ReturnValue_4;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_5 = CallFunc_Conv_StringToText_ReturnValue_5;
-	Parms.K2Node_MakeStruct_FormatArgumentData_4 = K2Node_MakeStruct_FormatArgumentData_4;
-	Parms.K2Node_MakeStruct_FormatArgumentData_5 = K2Node_MakeStruct_FormatArgumentData_5;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_6 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_6;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_6 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_6;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_7 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_7;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_7 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_7;
-	Parms.CallFunc_FoundGameplayAttribute_Text_6 = CallFunc_FoundGameplayAttribute_Text_6;
-	Parms.CallFunc_FoundGameplayAttribute_Text_7 = CallFunc_FoundGameplayAttribute_Text_7;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_6 = CallFunc_Conv_StringToText_ReturnValue_6;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_7 = CallFunc_Conv_StringToText_ReturnValue_7;
-	Parms.K2Node_MakeStruct_FormatArgumentData_6 = K2Node_MakeStruct_FormatArgumentData_6;
-	Parms.K2Node_MakeStruct_FormatArgumentData_7 = K2Node_MakeStruct_FormatArgumentData_7;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_8 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_8;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_8 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_8;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_9 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_9;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_9 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_9;
-	Parms.CallFunc_FoundGameplayAttribute_Text_8 = CallFunc_FoundGameplayAttribute_Text_8;
-	Parms.CallFunc_FoundGameplayAttribute_Text_9 = CallFunc_FoundGameplayAttribute_Text_9;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_8 = CallFunc_Conv_StringToText_ReturnValue_8;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_9 = CallFunc_Conv_StringToText_ReturnValue_9;
-	Parms.K2Node_MakeStruct_FormatArgumentData_8 = K2Node_MakeStruct_FormatArgumentData_8;
-	Parms.K2Node_MakeStruct_FormatArgumentData_9 = K2Node_MakeStruct_FormatArgumentData_9;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_10 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_10;
-	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_10 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_10;
-	Parms.CallFunc_Get_Gameplay_Effect_States_StatusEffects = CallFunc_Get_Gameplay_Effect_States_StatusEffects;
-	Parms.CallFunc_FoundGameplayAttribute_Text_10 = CallFunc_FoundGameplayAttribute_Text_10;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_10 = CallFunc_Conv_StringToText_ReturnValue_10;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_11 = CallFunc_Conv_StringToText_ReturnValue_11;
-	Parms.K2Node_MakeStruct_FormatArgumentData_10 = K2Node_MakeStruct_FormatArgumentData_10;
-	Parms.K2Node_MakeStruct_FormatArgumentData_11 = K2Node_MakeStruct_FormatArgumentData_11;
 	Parms.CallFunc_Get_Player_Movement_Mode_Current_Velocity = CallFunc_Get_Player_Movement_Mode_Current_Velocity;
 	Parms.CallFunc_Get_Player_Movement_Mode_Current_Speed = CallFunc_Get_Player_Movement_Mode_Current_Speed;
 	Parms.CallFunc_Get_Player_Movement_Mode_Max_Speed = CallFunc_Get_Player_Movement_Mode_Max_Speed;
 	Parms.CallFunc_Get_Player_Movement_Mode_MovementMode = CallFunc_Get_Player_Movement_Mode_MovementMode;
-	Parms.CallFunc_Vector_IsNearlyZero_ReturnValue = CallFunc_Vector_IsNearlyZero_ReturnValue;
-	Parms.CallFunc_Conv_StringToText_ReturnValue_12 = CallFunc_Conv_StringToText_ReturnValue_12;
+	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue;
+	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
+	Parms.CallFunc_FoundGameplayAttribute_Text = CallFunc_FoundGameplayAttribute_Text;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_1 = CallFunc_Conv_StringToText_ReturnValue_1;
+	Parms.CallFunc_FoundGameplayAttribute_Text_1 = CallFunc_FoundGameplayAttribute_Text_1;
+	Parms.K2Node_MakeStruct_FormatArgumentData_1 = K2Node_MakeStruct_FormatArgumentData_1;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_2 = CallFunc_Conv_StringToText_ReturnValue_2;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_2 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_2;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_2 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_2;
+	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
+	Parms.CallFunc_FoundGameplayAttribute_Text_2 = CallFunc_FoundGameplayAttribute_Text_2;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_3 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_3;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_3 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_3;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_3 = CallFunc_Conv_StringToText_ReturnValue_3;
+	Parms.CallFunc_FoundGameplayAttribute_Text_3 = CallFunc_FoundGameplayAttribute_Text_3;
+	Parms.K2Node_MakeStruct_FormatArgumentData_3 = K2Node_MakeStruct_FormatArgumentData_3;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_4 = CallFunc_Conv_StringToText_ReturnValue_4;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_4 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_4;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_4 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_4;
+	Parms.K2Node_MakeStruct_FormatArgumentData_4 = K2Node_MakeStruct_FormatArgumentData_4;
+	Parms.CallFunc_FoundGameplayAttribute_Text_4 = CallFunc_FoundGameplayAttribute_Text_4;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_5 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_5;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_5 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_5;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_5 = CallFunc_Conv_StringToText_ReturnValue_5;
+	Parms.CallFunc_FoundGameplayAttribute_Text_5 = CallFunc_FoundGameplayAttribute_Text_5;
+	Parms.K2Node_MakeStruct_FormatArgumentData_5 = K2Node_MakeStruct_FormatArgumentData_5;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_6 = CallFunc_Conv_StringToText_ReturnValue_6;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_6 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_6;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_6 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_6;
+	Parms.K2Node_MakeStruct_FormatArgumentData_6 = K2Node_MakeStruct_FormatArgumentData_6;
+	Parms.CallFunc_FoundGameplayAttribute_Text_6 = CallFunc_FoundGameplayAttribute_Text_6;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_7 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_7;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_7 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_7;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_7 = CallFunc_Conv_StringToText_ReturnValue_7;
+	Parms.CallFunc_FoundGameplayAttribute_Text_7 = CallFunc_FoundGameplayAttribute_Text_7;
+	Parms.K2Node_MakeStruct_FormatArgumentData_7 = K2Node_MakeStruct_FormatArgumentData_7;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_8 = CallFunc_Conv_StringToText_ReturnValue_8;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_8 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_8;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_8 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_8;
+	Parms.K2Node_MakeStruct_FormatArgumentData_8 = K2Node_MakeStruct_FormatArgumentData_8;
+	Parms.CallFunc_FoundGameplayAttribute_Text_8 = CallFunc_FoundGameplayAttribute_Text_8;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_9 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_9;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_9 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_9;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_9 = CallFunc_Conv_StringToText_ReturnValue_9;
+	Parms.CallFunc_FoundGameplayAttribute_Text_9 = CallFunc_FoundGameplayAttribute_Text_9;
+	Parms.K2Node_MakeStruct_FormatArgumentData_9 = K2Node_MakeStruct_FormatArgumentData_9;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_10 = CallFunc_Conv_StringToText_ReturnValue_10;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_10 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_10;
+	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_10 = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_10;
+	Parms.K2Node_MakeStruct_FormatArgumentData_10 = K2Node_MakeStruct_FormatArgumentData_10;
+	Parms.CallFunc_FoundGameplayAttribute_Text_10 = CallFunc_FoundGameplayAttribute_Text_10;
+	Parms.K2Node_MakeStruct_FormatArgumentData_11 = K2Node_MakeStruct_FormatArgumentData_11;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_11 = CallFunc_Conv_StringToText_ReturnValue_11;
 	Parms.K2Node_MakeStruct_FormatArgumentData_12 = K2Node_MakeStruct_FormatArgumentData_12;
 	Parms.K2Node_MakeStruct_FormatArgumentData_13 = K2Node_MakeStruct_FormatArgumentData_13;
-	Parms.K2Node_MakeStruct_FormatArgumentData_14 = K2Node_MakeStruct_FormatArgumentData_14;
 	Parms.CallFunc_Conv_VectorToString_ReturnValue = CallFunc_Conv_VectorToString_ReturnValue;
-	Parms.CallFunc_Conv_VectorToString_ReturnValue_1 = CallFunc_Conv_VectorToString_ReturnValue_1;
+	Parms.CallFunc_Get_Gameplay_Effect_States_StatusEffects = CallFunc_Get_Gameplay_Effect_States_StatusEffects;
+	Parms.CallFunc_Conv_StringToText_ReturnValue_12 = CallFunc_Conv_StringToText_ReturnValue_12;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_13 = CallFunc_Conv_StringToText_ReturnValue_13;
+	Parms.K2Node_MakeStruct_FormatArgumentData_14 = K2Node_MakeStruct_FormatArgumentData_14;
 	Parms.K2Node_MakeStruct_FormatArgumentData_15 = K2Node_MakeStruct_FormatArgumentData_15;
+	Parms.CallFunc_Vector_IsNearlyZero_ReturnValue = CallFunc_Vector_IsNearlyZero_ReturnValue;
+	Parms.CallFunc_Conv_VectorToString_ReturnValue_1 = CallFunc_Conv_VectorToString_ReturnValue_1;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
@@ -1597,35 +1854,51 @@ void UWBP_LiveDebugScreen_C::Update_Player_Info(const struct FVector& PlayerLoca
 
 
 // Function WBP_LiveDebugScreen.WBP_LiveDebugScreen_C.Set Variables
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                      CallFunc_GetCurrentLevelName_ReturnValue                         (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_UI_Get_NWX_CurrentRealmName_Map_Level_Name              (None)
-// class FText                        CallFunc_UI_Get_NWX_CurrentRealmName_Description                 (None)
-// bool                               CallFunc_UI_Get_NWX_CurrentRealmName_Found_Details               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UGameInstance*               CallFunc_GetGameInstance_ReturnValue                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UNWXGameInstance*            K2Node_DynamicCast_AsNWXGame_Instance                            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Valid                                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetMinorRealmCard_Result                                (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetUserSpecInfo_CPUBrand                                (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetUserSpecInfo_GPUBrand                                (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetUserSpecInfo_OS                                      (ZeroConstructor, HasGetValueTypeHash)
-// class ABP_TimeOfDayManager_C*      CallFunc_GetActorOfClass_ReturnValue                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetDriverInfo_ActiveDriver                              (ZeroConstructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
-// class ANWXGameStateBase*           CallFunc_GetNWXGameStateBase_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetFunctionName_ReturnValue                             (ZeroConstructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ReferenceParm)
-// bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Debug_Print_Log_Valid                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Format_ReturnValue                                      (None)
-// class FString                      CallFunc_GetDriverInfo_ActiveDriver                              (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetFunctionName_ReturnValue_1                           (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetFunctionName_ReturnValue_2                           (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_Debug_Print_Log_Valid_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Debug_Print_Log_Valid_2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetFunctionName_ReturnValue_3                           (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetFunctionName_ReturnValue_4                           (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_Debug_Print_Log_Valid_3                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Debug_Print_Log_Valid_4                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetFunctionName_ReturnValue_5                           (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetFunctionName_ReturnValue_6                           (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_Debug_Print_Log_Valid_5                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Debug_Print_Log_Valid_6                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetFunctionName_ReturnValue_7                           (ZeroConstructor, HasGetValueTypeHash)
+// class FText                        CallFunc_GetCurrentMapName_Map_Level_Name                        (None)
+// bool                               CallFunc_Debug_Print_Log_Valid_7                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetCurrentLevelName_ReturnValue                         (ZeroConstructor, HasGetValueTypeHash)
+// class UGameInstance*               CallFunc_GetGameInstance_ReturnValue                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UNWXGameInstance*            K2Node_DynamicCast_AsNWXGame_Instance                            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABP_TimeOfDayManager_C*      CallFunc_GetActorOfClass_ReturnValue                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ANWXGameStateBase*           CallFunc_GetNWXGameStateBase_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                       CallFunc_GetPawn_ReturnValue                                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ANWXPlayerState*             K2Node_DynamicCast_AsNWXPlayer_State                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APawn*                       CallFunc_GetPawn_ReturnValue                                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_4                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_5                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1634,7 +1907,7 @@ void UWBP_LiveDebugScreen_C::Update_Player_Info(const struct FVector& PlayerLoca
 // bool                               CallFunc_IsValid_ReturnValue_6                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_7                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LiveDebugScreen_C::Set_Variables(const class FString& CallFunc_GetCurrentLevelName_ReturnValue, class FText CallFunc_UI_Get_NWX_CurrentRealmName_Map_Level_Name, class FText CallFunc_UI_Get_NWX_CurrentRealmName_Description, bool CallFunc_UI_Get_NWX_CurrentRealmName_Found_Details, class UGameInstance* CallFunc_GetGameInstance_ReturnValue, class UNWXGameInstance* K2Node_DynamicCast_AsNWXGame_Instance, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const class FString& CallFunc_GetUserSpecInfo_CPUBrand, const class FString& CallFunc_GetUserSpecInfo_GPUBrand, const class FString& CallFunc_GetUserSpecInfo_OS, class ABP_TimeOfDayManager_C* CallFunc_GetActorOfClass_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_Conv_StringToText_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, class ANWXGameStateBase* CallFunc_GetNWXGameStateBase_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, bool CallFunc_IsValid_ReturnValue_2, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_GetDriverInfo_ActiveDriver, class ANWXPlayerState* K2Node_DynamicCast_AsNWXPlayer_State, bool K2Node_DynamicCast_bSuccess_1, class APawn* CallFunc_GetPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_5, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue, bool CallFunc_IsValid_ReturnValue_6, bool CallFunc_IsValid_ReturnValue_7)
+void UWBP_LiveDebugScreen_C::Set_Variables(bool* Valid, const class FString& CallFunc_GetMinorRealmCard_Result, const class FString& CallFunc_GetUserSpecInfo_CPUBrand, const class FString& CallFunc_GetUserSpecInfo_GPUBrand, const class FString& CallFunc_GetUserSpecInfo_OS, const class FString& CallFunc_GetDriverInfo_ActiveDriver, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_Conv_StringToText_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, const class FString& CallFunc_GetFunctionName_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, bool CallFunc_Debug_Print_Log_Valid, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_GetFunctionName_ReturnValue_1, const class FString& CallFunc_GetFunctionName_ReturnValue_2, bool CallFunc_Debug_Print_Log_Valid_1, bool CallFunc_Debug_Print_Log_Valid_2, const class FString& CallFunc_GetFunctionName_ReturnValue_3, const class FString& CallFunc_GetFunctionName_ReturnValue_4, bool CallFunc_Debug_Print_Log_Valid_3, bool CallFunc_Debug_Print_Log_Valid_4, const class FString& CallFunc_GetFunctionName_ReturnValue_5, const class FString& CallFunc_GetFunctionName_ReturnValue_6, bool CallFunc_Debug_Print_Log_Valid_5, bool CallFunc_Debug_Print_Log_Valid_6, const class FString& CallFunc_GetFunctionName_ReturnValue_7, class FText CallFunc_GetCurrentMapName_Map_Level_Name, bool CallFunc_Debug_Print_Log_Valid_7, const class FString& CallFunc_GetCurrentLevelName_ReturnValue, class UGameInstance* CallFunc_GetGameInstance_ReturnValue, class UNWXGameInstance* K2Node_DynamicCast_AsNWXGame_Instance, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class ABP_TimeOfDayManager_C* CallFunc_GetActorOfClass_ReturnValue, class ANWXGameStateBase* CallFunc_GetNWXGameStateBase_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class APawn* CallFunc_GetPawn_ReturnValue, class ANWXPlayerState* K2Node_DynamicCast_AsNWXPlayer_State, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_5, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, class ANWXPlayerController* CallFunc_GetOwningPlayerController_ReturnValue, bool CallFunc_IsValid_ReturnValue_6, bool CallFunc_IsValid_ReturnValue_7)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1643,33 +1916,48 @@ void UWBP_LiveDebugScreen_C::Set_Variables(const class FString& CallFunc_GetCurr
 
 	Params::UWBP_LiveDebugScreen_C_Set_Variables_Params Parms{};
 
-	Parms.CallFunc_GetCurrentLevelName_ReturnValue = CallFunc_GetCurrentLevelName_ReturnValue;
-	Parms.CallFunc_UI_Get_NWX_CurrentRealmName_Map_Level_Name = CallFunc_UI_Get_NWX_CurrentRealmName_Map_Level_Name;
-	Parms.CallFunc_UI_Get_NWX_CurrentRealmName_Description = CallFunc_UI_Get_NWX_CurrentRealmName_Description;
-	Parms.CallFunc_UI_Get_NWX_CurrentRealmName_Found_Details = CallFunc_UI_Get_NWX_CurrentRealmName_Found_Details;
-	Parms.CallFunc_GetGameInstance_ReturnValue = CallFunc_GetGameInstance_ReturnValue;
-	Parms.K2Node_DynamicCast_AsNWXGame_Instance = K2Node_DynamicCast_AsNWXGame_Instance;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
+	Parms.CallFunc_GetMinorRealmCard_Result = CallFunc_GetMinorRealmCard_Result;
 	Parms.CallFunc_GetUserSpecInfo_CPUBrand = CallFunc_GetUserSpecInfo_CPUBrand;
 	Parms.CallFunc_GetUserSpecInfo_GPUBrand = CallFunc_GetUserSpecInfo_GPUBrand;
 	Parms.CallFunc_GetUserSpecInfo_OS = CallFunc_GetUserSpecInfo_OS;
-	Parms.CallFunc_GetActorOfClass_ReturnValue = CallFunc_GetActorOfClass_ReturnValue;
+	Parms.CallFunc_GetDriverInfo_ActiveDriver = CallFunc_GetDriverInfo_ActiveDriver;
 	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
 	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_1 = CallFunc_Conv_StringToText_ReturnValue_1;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_2 = CallFunc_Conv_StringToText_ReturnValue_2;
 	Parms.K2Node_MakeStruct_FormatArgumentData_1 = K2Node_MakeStruct_FormatArgumentData_1;
 	Parms.K2Node_MakeStruct_FormatArgumentData_2 = K2Node_MakeStruct_FormatArgumentData_2;
-	Parms.CallFunc_GetNWXGameStateBase_ReturnValue = CallFunc_GetNWXGameStateBase_ReturnValue;
+	Parms.CallFunc_GetFunctionName_ReturnValue = CallFunc_GetFunctionName_ReturnValue;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
-	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
+	Parms.CallFunc_Debug_Print_Log_Valid = CallFunc_Debug_Print_Log_Valid;
 	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
-	Parms.CallFunc_GetDriverInfo_ActiveDriver = CallFunc_GetDriverInfo_ActiveDriver;
+	Parms.CallFunc_GetFunctionName_ReturnValue_1 = CallFunc_GetFunctionName_ReturnValue_1;
+	Parms.CallFunc_GetFunctionName_ReturnValue_2 = CallFunc_GetFunctionName_ReturnValue_2;
+	Parms.CallFunc_Debug_Print_Log_Valid_1 = CallFunc_Debug_Print_Log_Valid_1;
+	Parms.CallFunc_Debug_Print_Log_Valid_2 = CallFunc_Debug_Print_Log_Valid_2;
+	Parms.CallFunc_GetFunctionName_ReturnValue_3 = CallFunc_GetFunctionName_ReturnValue_3;
+	Parms.CallFunc_GetFunctionName_ReturnValue_4 = CallFunc_GetFunctionName_ReturnValue_4;
+	Parms.CallFunc_Debug_Print_Log_Valid_3 = CallFunc_Debug_Print_Log_Valid_3;
+	Parms.CallFunc_Debug_Print_Log_Valid_4 = CallFunc_Debug_Print_Log_Valid_4;
+	Parms.CallFunc_GetFunctionName_ReturnValue_5 = CallFunc_GetFunctionName_ReturnValue_5;
+	Parms.CallFunc_GetFunctionName_ReturnValue_6 = CallFunc_GetFunctionName_ReturnValue_6;
+	Parms.CallFunc_Debug_Print_Log_Valid_5 = CallFunc_Debug_Print_Log_Valid_5;
+	Parms.CallFunc_Debug_Print_Log_Valid_6 = CallFunc_Debug_Print_Log_Valid_6;
+	Parms.CallFunc_GetFunctionName_ReturnValue_7 = CallFunc_GetFunctionName_ReturnValue_7;
+	Parms.CallFunc_GetCurrentMapName_Map_Level_Name = CallFunc_GetCurrentMapName_Map_Level_Name;
+	Parms.CallFunc_Debug_Print_Log_Valid_7 = CallFunc_Debug_Print_Log_Valid_7;
+	Parms.CallFunc_GetCurrentLevelName_ReturnValue = CallFunc_GetCurrentLevelName_ReturnValue;
+	Parms.CallFunc_GetGameInstance_ReturnValue = CallFunc_GetGameInstance_ReturnValue;
+	Parms.K2Node_DynamicCast_AsNWXGame_Instance = K2Node_DynamicCast_AsNWXGame_Instance;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
+	Parms.CallFunc_GetActorOfClass_ReturnValue = CallFunc_GetActorOfClass_ReturnValue;
+	Parms.CallFunc_GetNWXGameStateBase_ReturnValue = CallFunc_GetNWXGameStateBase_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
+	Parms.CallFunc_GetPawn_ReturnValue = CallFunc_GetPawn_ReturnValue;
 	Parms.K2Node_DynamicCast_AsNWXPlayer_State = K2Node_DynamicCast_AsNWXPlayer_State;
 	Parms.K2Node_DynamicCast_bSuccess_1 = K2Node_DynamicCast_bSuccess_1;
-	Parms.CallFunc_GetPawn_ReturnValue = CallFunc_GetPawn_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_3 = CallFunc_IsValid_ReturnValue_3;
 	Parms.CallFunc_IsValid_ReturnValue_4 = CallFunc_IsValid_ReturnValue_4;
 	Parms.CallFunc_IsValid_ReturnValue_5 = CallFunc_IsValid_ReturnValue_5;
@@ -1680,6 +1968,9 @@ void UWBP_LiveDebugScreen_C::Set_Variables(const class FString& CallFunc_GetCurr
 
 	UObject::ProcessEvent(Func, &Parms);
 
+	if (Valid != nullptr)
+		*Valid = Parms.Valid;
+
 }
 
 
@@ -1687,9 +1978,12 @@ void UWBP_LiveDebugScreen_C::Set_Variables(const class FString& CallFunc_GetCurr
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetFunctionName_ReturnValue                             (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_Debug_Print_Log_Valid                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Set_Variables_Valid                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LiveDebugScreen_C::Display_Debug_Screen(bool CallFunc_IsVisible_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
+void UWBP_LiveDebugScreen_C::Display_Debug_Screen(bool CallFunc_IsVisible_ReturnValue, const class FString& CallFunc_GetFunctionName_ReturnValue, bool CallFunc_Debug_Print_Log_Valid, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_Set_Variables_Valid)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1699,7 +1993,10 @@ void UWBP_LiveDebugScreen_C::Display_Debug_Screen(bool CallFunc_IsVisible_Return
 	Params::UWBP_LiveDebugScreen_C_Display_Debug_Screen_Params Parms{};
 
 	Parms.CallFunc_IsVisible_ReturnValue = CallFunc_IsVisible_ReturnValue;
+	Parms.CallFunc_GetFunctionName_ReturnValue = CallFunc_GetFunctionName_ReturnValue;
+	Parms.CallFunc_Debug_Print_Log_Valid = CallFunc_Debug_Print_Log_Valid;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_Set_Variables_Valid = CallFunc_Set_Variables_Valid;
 
 	UObject::ProcessEvent(Func, &Parms);
 

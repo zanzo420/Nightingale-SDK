@@ -15,7 +15,7 @@ class ABP_RangedWeapon_Base_C : public ABP_Weapon_Base_C
 {
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x9F0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UScopedAkComponent*                    ScopedAk_Weapon;                                   // 0x9F8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UScopedAkComponent*                    ScopedAk_weapon;                                   // 0x9F8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBP_RangedWeaponClip_C*                BP_RangedWeaponClip;                               // 0xA00(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBP_RangedWeaponComponent_C*           BP_RangedWeaponComponent;                          // 0xA08(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	double                                       DelayToNext;                                       // 0xA10(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -27,20 +27,20 @@ public:
 	bool                                         bIsReloading;                                      // 0xA58(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bIsAutoReloading;                                  // 0xA59(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bUsesAnimationPriorityReload;                      // 0xA5A(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_772B[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86F5[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       PreviousFOV;                                       // 0xA60(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bReloadHint1Triggered;                             // 0xA68(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bReloadHint2Triggered;                             // 0xA69(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_772C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86F6[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            ReloadCancelled;                                   // 0xA70(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         FailedToFireSoundReady;                            // 0xA80(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_772D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86F7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       FailedToFireCooldownTime;                          // 0xA88(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<int32, struct FGameplayTag>             AmmoAmountReloads;                                 // 0xA90(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TSoftObjectPtr<class UTechniqueDataAsset>    FireTechnique;                                     // 0xAE0(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
 	class UAkSwitchValue*                        AmmoRemainingLastShotRef;                          // 0xB08(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UAkSwitchValue*                        AmmoRemainingRef;                                  // 0xB10(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_772E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86F9[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPostProcessSettings                  PreviousPostProcessSettings;                       // 0xB20(0x6E0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FHitResult>                    BuckshotHitResults;                                // 0x1200(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UAkRtpc*>                       AmmoTypes;                                         // 0x1210(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)

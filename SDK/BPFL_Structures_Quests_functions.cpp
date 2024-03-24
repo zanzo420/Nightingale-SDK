@@ -45,7 +45,7 @@ class UBPFL_Structures_Quests_C* UBPFL_Structures_Quests_C::GetDefaultObj()
 // Parameters:
 // class UObject*                     Object                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      Owning_Actor                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                              Piece_ID                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Piece_Id                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               NewLocalVar_0                                                    (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -70,7 +70,7 @@ class UBPFL_Structures_Quests_C* UBPFL_Structures_Quests_C::GetDefaultObj()
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBPFL_Structures_Quests_C::UpdateContributerObjectiveProgress(class UObject* Object, class AActor* Owning_Actor, int32 Piece_ID, class UObject* __WorldContext, bool NewLocalVar_0, bool CallFunc_HasAuthority_ReturnValue, int32 Temp_int_Array_Index_Variable, TScriptInterface<class IStructureResourceManagerOwnerInterface> K2Node_DynamicCast_AsStructure_Resource_Manager_Owner_Interface, bool K2Node_DynamicCast_bSuccess, class APlayerState* CallFunc_GetOwningPlayerState_OutPlayerState, bool CallFunc_GetOwningPlayerState_ReturnValue, TScriptInterface<class IStructureResourceConsumerInterface> CallFunc_GetConstructionResourcesManager_ReturnValue, TArray<class APlayerState*>& CallFunc_GetContributingPlayerStates_PlayerStates, TScriptInterface<class IBPI_TaskTracking_C> K2Node_DynamicCast_AsBPI_Task_Tracking, bool K2Node_DynamicCast_bSuccess_1, class APlayerState* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class ABP_PlayerState_C* K2Node_DynamicCast_AsBP_Player_State, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue, TScriptInterface<class IBPI_TaskTracking_C> K2Node_DynamicCast_AsBPI_Task_Tracking_1, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_NotEqual_ObjectObject_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
+void UBPFL_Structures_Quests_C::UpdateContributerObjectiveProgress(class UObject* Object, class AActor* Owning_Actor, int32 Piece_Id, class UObject* __WorldContext, bool NewLocalVar_0, bool CallFunc_HasAuthority_ReturnValue, int32 Temp_int_Array_Index_Variable, TScriptInterface<class IStructureResourceManagerOwnerInterface> K2Node_DynamicCast_AsStructure_Resource_Manager_Owner_Interface, bool K2Node_DynamicCast_bSuccess, class APlayerState* CallFunc_GetOwningPlayerState_OutPlayerState, bool CallFunc_GetOwningPlayerState_ReturnValue, TScriptInterface<class IStructureResourceConsumerInterface> CallFunc_GetConstructionResourcesManager_ReturnValue, TArray<class APlayerState*>& CallFunc_GetContributingPlayerStates_PlayerStates, TScriptInterface<class IBPI_TaskTracking_C> K2Node_DynamicCast_AsBPI_Task_Tracking, bool K2Node_DynamicCast_bSuccess_1, class APlayerState* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class ABP_PlayerState_C* K2Node_DynamicCast_AsBP_Player_State, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue, TScriptInterface<class IBPI_TaskTracking_C> K2Node_DynamicCast_AsBPI_Task_Tracking_1, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_NotEqual_ObjectObject_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -81,7 +81,7 @@ void UBPFL_Structures_Quests_C::UpdateContributerObjectiveProgress(class UObject
 
 	Parms.Object = Object;
 	Parms.Owning_Actor = Owning_Actor;
-	Parms.Piece_ID = Piece_ID;
+	Parms.Piece_Id = Piece_Id;
 	Parms.__WorldContext = __WorldContext;
 	Parms.NewLocalVar_0 = NewLocalVar_0;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;

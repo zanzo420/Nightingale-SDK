@@ -28,7 +28,7 @@ struct AAIC_Puck_C_ExecuteUbergraph_AIC_Puck_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_61C0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1786[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                K2Node_ComponentBoundEvent_Actor;                  // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAIStimulus                           K2Node_ComponentBoundEvent_Stimulus;               // 0x10(0x58)(NoDestructor)
 };

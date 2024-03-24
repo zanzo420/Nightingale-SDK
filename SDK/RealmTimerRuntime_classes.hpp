@@ -37,9 +37,9 @@ public:
 	float                                        ServerResolutionInSeconds;                         // 0xC0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        ClientResolutionInSeconds;                         // 0xC4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bTimerSchedulerOnly;                               // 0xC8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3EE6[0x27];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_35EC[0x27];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       AccumulatedSeconds;                                // 0xF0(0x8)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3EE7[0x38];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_35ED[0x38];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class URealmTimerComponent* GetDefaultObj();

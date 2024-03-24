@@ -34,14 +34,14 @@ public:
 	struct FDataTableRowHandle                   ExistingAppearance;                                // 0x130(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class UBP_CollectedVisualMeshData_C*> DefaultCollectedVisualMeshes;                      // 0x140(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bHasReceivedEquippedVisualMeshes;                  // 0x150(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_41CA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8375[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FEquippedVisualMesh>           EquippedVisualMeshes;                              // 0x158(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
 	class AActor*                                OwningActor;                                       // 0x168(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class AController*                           OwnerController;                                   // 0x170(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         bHasBegunPlay;                                     // 0x178(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bHasReceivedDefaultAppearance;                     // 0x179(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EBodyType                         BodyType;                                          // 0x17A(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_41CB[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8378[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<enum class E_EquipSlotType>             RequiredTPSlots;                                   // 0x180(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TSet<enum class E_EquipSlotType>             RequiredFPSlots;                                   // 0x1D0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TSet<enum class E_EquipSlotType>             TotallyHiddenTPSlots;                              // 0x220(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -55,7 +55,7 @@ public:
 	TMap<enum class E_EquipSlotType, struct FItemData_RegionHiding> RegionHidingBySlotTP;                              // 0x2F8(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<enum class E_EquipSlotType, struct FItemData_RegionHiding> RegionHidingBySlotFPArms;                          // 0x348(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bNeedsUpdate;                                      // 0x398(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_41CC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8380[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       InitialLoadStartTimeout;                           // 0x3A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       LoadTimeout;                                       // 0x3A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       MaxLoadTimeoutDelay;                               // 0x3B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -66,7 +66,7 @@ public:
 	bool                                         bHasStartedInitialLoad;                            // 0x3D1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_LoadingState                    CurrentLoadingState;                               // 0x3D2(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bHasDoneFirstUpdate;                               // 0x3D3(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_41CD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8382[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<enum class E_EquipSlotType>             ValidThirdPersonSlots;                             // 0x3D8(0x50)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	TSet<enum class E_EquipSlotType>             ValidFirstPersonBodyMeshSlots;                     // 0x428(0x50)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	TSet<enum class E_EquipSlotType>             ValidFirstPersonArmsMeshSlots;                     // 0x478(0x50)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
@@ -82,7 +82,7 @@ public:
 	struct FEyeAppearance                        LeftEyeData;                                       // 0x628(0x78)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FEyeAppearance                        RightEyeData;                                      // 0x6A0(0x78)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FTeethAppearance                      TeethData;                                         // 0x718(0xC)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                        Pad_41CE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8383[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTexture2D*                            AMMRMask_Loaded;                                   // 0x728(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class UTexture2D*                            NHMask_Loaded;                                     // 0x730(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class UTexture2D*                            FaceSwatch_Loaded;                                 // 0x738(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
@@ -94,11 +94,11 @@ public:
 	bool                                         bEnableProximityHiding;                            // 0x788(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bHasHat;                                           // 0x789(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EHatType                          CurrentHatType;                                    // 0x78A(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_41CF[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8385[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FEyeLashAppearance                    LeftEyeLashData;                                   // 0x790(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FEyeLashAppearance                    RightEyeLashData;                                  // 0x7E0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                         bProximityOutOfRange;                              // 0x830(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_41D0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8387[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<enum class EHairAssetType, struct FHairData> CurrentHairDatum;                                  // 0x838(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<enum class EHairAssetType, struct FLinearColor> CurrentHairColorDatum;                             // 0x888(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class USkeletalMeshComponent*                TP_Head__Eyebrows_;                                // 0x8D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)

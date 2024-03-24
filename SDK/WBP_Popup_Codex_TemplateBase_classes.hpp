@@ -20,7 +20,7 @@ public:
 	struct FCodexEntry                           Codex_Entry;                                       // 0x320(0xF0)(Edit, BlueprintVisible, ExposeOnSpawn)
 	struct FGameplayTag                          Subentry_Tag;                                      // 0x410(0x8)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         Show_All_Unlocked_Subentries;                      // 0x418(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_71BE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6DCC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       ScrollOffsetScale;                                 // 0x420(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

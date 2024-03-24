@@ -24,7 +24,7 @@ public:
 	void CallOnSpellCast(TSoftObjectPtr<class UTechniqueDataAsset> SpellCast);
 	void CallWeakpointHit(const struct FGameplayTagContainer& WeakpointType, const struct FGameplayTagContainer& CreatureTags, const struct FHitResult& HitResult);
 	void CallItemDeposited_InWorldContainer(const struct FItemDataReference& ItemRowHandle, int32 Quantity, const struct FGameplayTag& ContainerTag);
-	void CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_ID);
+	void CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_Id);
 	void CallResourceHarvested(const struct FInventoryEntry& ItemEntry, int32 Amount);
 	void CallStructureBlueprintPlaced(const struct FDataTableRowHandle& StructureDataHandle);
 	void CallGiveTag(const struct FGameplayTag& Gameplay_Tag);

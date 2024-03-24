@@ -9,24 +9,24 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x118 (0x368 - 0x250)
+// 0x118 (0x378 - 0x260)
 // BlueprintGeneratedClass BP_PartyComponent.BP_PartyComponent_C
 class UBP_PartyComponent_C : public UPartyComponentBase
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x250(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	FMulticastInlineDelegateProperty_            OnPlayerListChanged;                               // 0x258(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FPartyInvite                          PartyInvite;                                       // 0x268(0x48)(Edit, BlueprintVisible, DisableEditOnInstance)
-	FMulticastInlineDelegateProperty_            OnPartyListChanged;                                // 0x2B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class FText                                  InviteTitleText;                                   // 0x2C0(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	class UWBP_Popup_General_C*                  InvitePopup;                                       // 0x2D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnPendingInvitesChanged;                           // 0x2E0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UWBP_Popup_General_C*                  WarningPopup;                                      // 0x2F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Popup_General_C*                  TravelInvitePopup;                                 // 0x2F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FTravelInviteBP                       TravelInvite;                                      // 0x300(0x40)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UBP_RealmHistory_Persistence_C*        RealmHistoryPersistenceComponent;                  // 0x340(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnPartyMemberJoinedParty;                          // 0x348(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_            OnPartyMemberLeftParty;                            // 0x358(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x260(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	FMulticastInlineDelegateProperty_            OnPlayerListChanged;                               // 0x268(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPartyInvite                          PartyInvite;                                       // 0x278(0x48)(Edit, BlueprintVisible, DisableEditOnInstance)
+	FMulticastInlineDelegateProperty_            OnPartyListChanged;                                // 0x2C0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class FText                                  InviteTitleText;                                   // 0x2D0(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	class UWBP_Popup_General_C*                  InvitePopup;                                       // 0x2E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnPendingInvitesChanged;                           // 0x2F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UWBP_Popup_General_C*                  WarningPopup;                                      // 0x300(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Popup_General_C*                  TravelInvitePopup;                                 // 0x308(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FTravelInviteBP                       TravelInvite;                                      // 0x310(0x40)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UBP_RealmHistory_Persistence_C*        RealmHistoryPersistenceComponent;                  // 0x350(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnPartyMemberJoinedParty;                          // 0x358(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            OnPartyMemberLeftParty;                            // 0x368(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();
 	static class UBP_PartyComponent_C* GetDefaultObj();

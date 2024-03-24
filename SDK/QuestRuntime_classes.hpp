@@ -26,11 +26,11 @@ public:
 class UAbstractQuestModuleComponent : public UActorComponent
 {
 public:
-	uint8                                        Pad_354A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_252A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          ModuleTag;                                         // 0xA8(0x8)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class AQuestGiverSession>        QuestGiverSessionClass;                            // 0xB0(0x8)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxReturnedQuestCount;                             // 0xB8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_354B[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_252B[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAbstractQuestModuleComponent* GetDefaultObj();
@@ -44,7 +44,7 @@ class UConditionQuestAccepted : public UConditionBehaviour
 {
 public:
 	struct FQuestAssetReference                  Quest;                                             // 0x70(0x70)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, NativeAccessSpecifierPublic)
-	uint8                                        Pad_354C[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_252F[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UConditionQuestAccepted* GetDefaultObj();
@@ -59,9 +59,9 @@ public:
 class UConditionQuestAcceptedGlobal : public UConditionBehaviour
 {
 public:
-	uint8                                        Pad_354D[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2533[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuestAssetReference                  Quest;                                             // 0x80(0x70)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, NativeAccessSpecifierPublic)
-	uint8                                        Pad_354E[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2534[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UConditionQuestAcceptedGlobal* GetDefaultObj();
@@ -78,12 +78,12 @@ public:
 	FMulticastInlineDelegateProperty_            OnAvailableQuestsChanged;                          // 0x2A0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnTasksToCompleteChanged;                          // 0x2B0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class AActor*                                InteractionInstigator;                             // 0x2C0(0x8)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_354F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2543[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                QuestGiver;                                        // 0x2D0(0x8)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_3550[0x70];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2544[0x70];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FQuestAssetReference>          AvailableQuests;                                   // 0x348(0x10)(Net, ZeroConstructor, RepNotify, NativeAccessSpecifierPrivate)
 	TArray<struct FOngoingTaskProgress>          TasksToComplete;                                   // 0x358(0x10)(Net, ZeroConstructor, RepNotify, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_3551[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2545[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AQuestGiverSession* GetDefaultObj();
@@ -135,7 +135,7 @@ public:
 class UQuestDataAsset : public UUniquelyIdentifiableDataAsset
 {
 public:
-	uint8                                        Pad_3556[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2599[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuest                                Quest;                                             // 0x50(0xA8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -192,7 +192,7 @@ public:
 class UQuestGiverComponent : public UActorComponent
 {
 public:
-	uint8                                        Pad_3561[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25CF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   QuestGiverHandle;                                  // 0xA8(0x10)(Edit, BlueprintVisible, Net, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                 QuestGiverID;                                      // 0xB8(0x10)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -249,7 +249,7 @@ public:
 class UQuestOngoingRequirement : public URequirement
 {
 public:
-	uint8                                        Pad_3563[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25F1[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuestAssetReference                  QuestReference;                                    // 0x30(0x70)(Edit, DisableEditOnTemplate, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -262,12 +262,12 @@ public:
 class UQuestTaskReadyToCompleteRequirement : public URequirement
 {
 public:
-	uint8                                        Pad_3564[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25F3[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuestAssetReference                  QuestReference;                                    // 0x30(0x70)(Edit, DisableEditOnTemplate, NativeAccessSpecifierPublic)
 	bool                                         bUseTaskIndex;                                     // 0xA0(0x1)(Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3565[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25F5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        TaskIndex;                                         // 0xA4(0x4)(Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3566[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_25F6[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UQuestTaskReadyToCompleteRequirement* GetDefaultObj();
@@ -279,10 +279,10 @@ public:
 class UQuestTaskOngoingRequirement : public URequirement
 {
 public:
-	uint8                                        Pad_3567[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25F9[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuestAssetReference                  QuestReference;                                    // 0x30(0x70)(Edit, DisableEditOnTemplate, NativeAccessSpecifierPublic)
 	int32                                        TaskIndex;                                         // 0xA0(0x4)(Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3568[0xC];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_25FA[0xC];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UQuestTaskOngoingRequirement* GetDefaultObj();
@@ -294,7 +294,7 @@ public:
 class UQuestIsAbleToAcceptRequirement : public URequirement
 {
 public:
-	uint8                                        Pad_3569[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25FB[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuestAssetReference                  QuestReference;                                    // 0x30(0x70)(Edit, DisableEditOnTemplate, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -330,7 +330,7 @@ public:
 class UQuestServerWorldSubsystem : public UNWXWorldSubsystem
 {
 public:
-	uint8                                        Pad_356B[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25FE[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<TWeakObjectPtr<class UQuestGiverComponent>> QuestGiversArray;                                  // 0x60(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();
@@ -447,7 +447,7 @@ class URandomQuestModuleComponent : public UAbstractQuestModuleComponent
 {
 public:
 	TArray<class UQuestAssetReferenceTable*>     QuestTables;                                       // 0xC0(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3573[0x1388];                                  // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2614[0x1388];                                  // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class URandomQuestModuleComponent* GetDefaultObj();

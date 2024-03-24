@@ -883,6 +883,34 @@ bool IItemContainer::AddItem(struct FInventoryEntry& Entry, int32* Amount, TArra
 }
 
 
+// Class InventoryRuntime.ItemContainerFunctionLibrary
+// (None)
+
+class UClass* UItemContainerFunctionLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemContainerFunctionLibrary");
+
+	return Clss;
+}
+
+
+// ItemContainerFunctionLibrary InventoryRuntime.Default__ItemContainerFunctionLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UItemContainerFunctionLibrary* UItemContainerFunctionLibrary::GetDefaultObj()
+{
+	static class UItemContainerFunctionLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemContainerFunctionLibrary*>(UItemContainerFunctionLibrary::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Class InventoryRuntime.ItemContainerProvider
 // (None)
 

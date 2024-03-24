@@ -18,7 +18,7 @@ public:
 	struct FBlackboardKeySelector                Distance;                                          // 0xC8(0x28)(Edit, BlueprintVisible)
 	bool                                         RequireLineOfSight;                                // 0xF0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         DistanceAsMinRange;                                // 0xF1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2DE9[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7FB9[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       ConstDistance;                                     // 0xF8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

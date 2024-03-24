@@ -50,17 +50,17 @@ public:
 	TArray<struct FRealmRecipe>                  AvailableRecipes;                                  // 0x608(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        Seed;                                              // 0x618(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         DisableRealmButton;                                // 0x61C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6D10[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9941[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        MaxSeedSize;                                       // 0x620(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6D11[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9942[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                POIDistributionKey;                                // 0x628(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	uint8                                        Pad_6D12[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9943[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    BiomeCard_DARef;                                   // 0x640(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<struct FItemDataReference>            MajorCard_DARef;                                   // 0x6C0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRealmSettings                        RealmSetting;                                      // 0x6D0(0x40)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         HasBiomeCard;                                      // 0x710(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ERealmDifficulty                  RealmDifficulty;                                   // 0x711(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6D13[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9944[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  DifficultyEasy;                                    // 0x718(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  DifficultyMedium;                                  // 0x730(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  DifficultyHard;                                    // 0x748(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)

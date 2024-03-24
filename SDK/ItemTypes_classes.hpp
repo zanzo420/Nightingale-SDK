@@ -72,7 +72,7 @@ public:
 class UObjectWrapper_ItemDataReference : public UObject
 {
 public:
-	uint8                                        Pad_331F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_227F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemDataReference                    ItemDataReference;                                 // 0x30(0x80)(BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();

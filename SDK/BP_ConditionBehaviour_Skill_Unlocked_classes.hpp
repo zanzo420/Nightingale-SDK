@@ -15,7 +15,7 @@ class UBP_ConditionBehaviour_Skill_Unlocked_C : public UBP_ConditionBehaviour_C
 {
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x80(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	uint8                                        Pad_4E8A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A3CF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSkillDataReference                   SkillReference;                                    // 0x90(0xE0)(Edit, BlueprintVisible, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

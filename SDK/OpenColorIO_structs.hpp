@@ -28,7 +28,7 @@ struct FOpenColorIOColorSpace
 public:
 	class FString                                ColorSpaceName;                                    // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ColorSpaceIndex;                                   // 0x10(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3E83[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4636[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                FamilyName;                                        // 0x18(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -51,7 +51,7 @@ public:
 	struct FOpenColorIOColorSpace                DestinationColorSpace;                             // 0x30(0x28)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FOpenColorIODisplayView               DestinationDisplayView;                            // 0x58(0x20)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	enum class EOpenColorIOViewTransformDirection DisplayViewDirection;                              // 0x78(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3E84[0x1F];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4637[0x1F];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xA0 (0xA0 - 0x0)
@@ -60,7 +60,7 @@ struct FOpenColorIODisplayConfiguration
 {
 public:
 	bool                                         bIsEnabled;                                        // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3E85[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4638[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FOpenColorIOColorConversionSettings   ColorConfiguration;                                // 0x8(0x98)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 

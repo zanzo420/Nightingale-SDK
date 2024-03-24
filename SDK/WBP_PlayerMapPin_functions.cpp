@@ -40,6 +40,31 @@ class UWBP_PlayerMapPin_C* UWBP_PlayerMapPin_C::GetDefaultObj()
 }
 
 
+// Function WBP_PlayerMapPin.WBP_PlayerMapPin_C.Interact
+// (Exec, Public, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// bool                               CallFunc_IsPlayerEditable_IsPlayerEditable                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ANWXPlayerController*        CallFunc_GetLocalPlayerController_LocalPlayerController          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IPlayerMapPinControllerInterface>CallFunc_RemovePlayerOwnedMapPin_self_CastInput                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerMapPin_C::Interact(bool CallFunc_IsPlayerEditable_IsPlayerEditable, class ANWXPlayerController* CallFunc_GetLocalPlayerController_LocalPlayerController, TScriptInterface<class IPlayerMapPinControllerInterface> CallFunc_RemovePlayerOwnedMapPin_self_CastInput)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_PlayerMapPin_C", "Interact");
+
+	Params::UWBP_PlayerMapPin_C_Interact_Params Parms{};
+
+	Parms.CallFunc_IsPlayerEditable_IsPlayerEditable = CallFunc_IsPlayerEditable_IsPlayerEditable;
+	Parms.CallFunc_GetLocalPlayerController_LocalPlayerController = CallFunc_GetLocalPlayerController_LocalPlayerController;
+	Parms.CallFunc_RemovePlayerOwnedMapPin_self_CastInput = CallFunc_RemovePlayerOwnedMapPin_self_CastInput;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_PlayerMapPin.WBP_PlayerMapPin_C.GetOwningPlayersName
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -101,7 +126,7 @@ void UWBP_PlayerMapPin_C::IsAPartyMemberBeacon(bool* IsAPartyMembersBeacon, bool
 
 
 // Function WBP_PlayerMapPin.WBP_PlayerMapPin_C.IsOwnedByLocalPlayer
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // bool                               IsOwnedByLocalPlayer                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetLocalPlayerPersistentId_PlayerId                     (ZeroConstructor, HasGetValueTypeHash)
@@ -275,7 +300,7 @@ void UWBP_PlayerMapPin_C::GetTooltipTitleText(class FText* OutputText, const str
 
 
 // Function WBP_PlayerMapPin.WBP_PlayerMapPin_C.IsPlayerEditable
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // bool                               IsPlayerEditable                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsOwnedByLocalPlayer_IsOwnedByLocalPlayer               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -310,7 +335,7 @@ void UWBP_PlayerMapPin_C::IsPlayerEditable(bool* IsPlayerEditable, bool CallFunc
 
 
 // Function WBP_PlayerMapPin.WBP_PlayerMapPin_C.GetMapPinType
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // enum class EMapMarkerType          MapPinType                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FMapWaypointInfo            CallFunc_GetDataTableRowFromName_OutRow                          (None)
@@ -566,14 +591,11 @@ struct FEventReply UWBP_PlayerMapPin_C::OnMouseButtonUp(const struct FGeometry& 
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// bool                               CallFunc_IsPlayerEditable_IsPlayerEditable                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FKey                        CallFunc_PointerEvent_GetEffectingButton_ReturnValue             (HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ANWXPlayerController*        CallFunc_GetLocalPlayerController_LocalPlayerController          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TScriptInterface<class IPlayerMapPinControllerInterface>CallFunc_RemovePlayerOwnedMapPin_self_CastInput                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
-struct FEventReply UWBP_PlayerMapPin_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, bool CallFunc_IsPlayerEditable_IsPlayerEditable, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, class ANWXPlayerController* CallFunc_GetLocalPlayerController_LocalPlayerController, TScriptInterface<class IPlayerMapPinControllerInterface> CallFunc_RemovePlayerOwnedMapPin_self_CastInput, const struct FEventReply& CallFunc_Handled_ReturnValue)
+struct FEventReply UWBP_PlayerMapPin_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -584,39 +606,13 @@ struct FEventReply UWBP_PlayerMapPin_C::OnMouseButtonDown(const struct FGeometry
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
-	Parms.CallFunc_IsPlayerEditable_IsPlayerEditable = CallFunc_IsPlayerEditable_IsPlayerEditable;
 	Parms.CallFunc_PointerEvent_GetEffectingButton_ReturnValue = CallFunc_PointerEvent_GetEffectingButton_ReturnValue;
 	Parms.CallFunc_EqualEqual_KeyKey_ReturnValue = CallFunc_EqualEqual_KeyKey_ReturnValue;
-	Parms.CallFunc_GetLocalPlayerController_LocalPlayerController = CallFunc_GetLocalPlayerController_LocalPlayerController;
-	Parms.CallFunc_RemovePlayerOwnedMapPin_self_CastInput = CallFunc_RemovePlayerOwnedMapPin_self_CastInput;
 	Parms.CallFunc_Handled_ReturnValue = CallFunc_Handled_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-
-}
-
-
-// Function WBP_PlayerMapPin.WBP_PlayerMapPin_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                              InDeltaTime                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerMapPin_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("WBP_PlayerMapPin_C", "Tick");
-
-	Params::UWBP_PlayerMapPin_C_Tick_Params Parms{};
-
-	Parms.MyGeometry = MyGeometry;
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -646,8 +642,6 @@ void UWBP_PlayerMapPin_C::Construct()
 // double                             Temp_real_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             Temp_real_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             Temp_real_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGeometry                   K2Node_Event_MyGeometry                                          (IsPlainOldData, NoDestructor)
-// float                              K2Node_Event_InDeltaTime                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_MapUI_GetLevelMapRotation_TableRowFound                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -672,7 +666,7 @@ void UWBP_PlayerMapPin_C::Construct()
 // float                              CallFunc_SetWidthOverride_InWidthOverride_ImplicitCast           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerMapPin_C::ExecuteUbergraph_WBP_PlayerMapPin(int32 EntryPoint, double Temp_real_Variable, double Temp_real_Variable_1, double Temp_real_Variable_2, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_MapUI_GetLevelMapRotation_TableRowFound, double CallFunc_MapUI_GetLevelMapRotation_Rotation, enum class E_MapRotation CallFunc_MapUI_GetLevelMapRotation_Map_Rotation_Override, double CallFunc_MapRangeClamped_ReturnValue, enum class EMapMarkerType Temp_byte_Variable, const struct FMapWaypointInfo& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, const struct FSlateColor& K2Node_MakeStruct_SlateColor, class UObject* CallFunc_LoadAsset_Blocking_ReturnValue, bool CallFunc_IsValidSoftObjectReference_ReturnValue, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue_1, const struct FSlateColor& K2Node_MakeStruct_SlateColor_1, double K2Node_Select_Default, double CallFunc_Multiply_DoubleDouble_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, bool CallFunc_IsAPartyMemberBeacon_IsAPartyMembersBeacon, float CallFunc_SetScalarParameterValue_Value_ImplicitCast, float CallFunc_SetWidthOverride_InWidthOverride_ImplicitCast, float CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast)
+void UWBP_PlayerMapPin_C::ExecuteUbergraph_WBP_PlayerMapPin(int32 EntryPoint, double Temp_real_Variable, double Temp_real_Variable_1, double Temp_real_Variable_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_MapUI_GetLevelMapRotation_TableRowFound, double CallFunc_MapUI_GetLevelMapRotation_Rotation, enum class E_MapRotation CallFunc_MapUI_GetLevelMapRotation_Map_Rotation_Override, double CallFunc_MapRangeClamped_ReturnValue, enum class EMapMarkerType Temp_byte_Variable, const struct FMapWaypointInfo& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, const struct FSlateColor& K2Node_MakeStruct_SlateColor, class UObject* CallFunc_LoadAsset_Blocking_ReturnValue, bool CallFunc_IsValidSoftObjectReference_ReturnValue, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue_1, const struct FSlateColor& K2Node_MakeStruct_SlateColor_1, double K2Node_Select_Default, double CallFunc_Multiply_DoubleDouble_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, bool CallFunc_IsAPartyMemberBeacon_IsAPartyMembersBeacon, float CallFunc_SetScalarParameterValue_Value_ImplicitCast, float CallFunc_SetWidthOverride_InWidthOverride_ImplicitCast, float CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -685,8 +679,6 @@ void UWBP_PlayerMapPin_C::ExecuteUbergraph_WBP_PlayerMapPin(int32 EntryPoint, do
 	Parms.Temp_real_Variable = Temp_real_Variable;
 	Parms.Temp_real_Variable_1 = Temp_real_Variable_1;
 	Parms.Temp_real_Variable_2 = Temp_real_Variable_2;
-	Parms.K2Node_Event_MyGeometry = K2Node_Event_MyGeometry;
-	Parms.K2Node_Event_InDeltaTime = K2Node_Event_InDeltaTime;
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_MapUI_GetLevelMapRotation_TableRowFound = CallFunc_MapUI_GetLevelMapRotation_TableRowFound;

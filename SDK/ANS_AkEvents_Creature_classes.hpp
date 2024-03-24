@@ -17,9 +17,9 @@ public:
 	TSoftObjectPtr<class UAkAudioEvent>          AkEvent_Start;                                     // 0x30(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TSoftObjectPtr<class UAkAudioEvent>          AkEvent_End;                                       // 0x58(0x28)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                         Attached;                                          // 0x80(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_76C3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_753B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  JointForDetachedSound;                             // 0x84(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_76C4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_753D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UComponentAudioBucket*                 Bucket;                                            // 0x90(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

@@ -31,10 +31,10 @@ public:
 	class UWidgetSwitcher*                       WidgetSwitcher_AttributeBox;                       // 0x3B8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FInventoryEntry                       InventoryItemEntry;                                // 0x3C0(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        DesiredQuantity;                                   // 0x6B0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_972D[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_97F5[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCraftingRecipeReference              RecipeId;                                          // 0x6C0(0x70)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UNWXMenuDataEntry*                     ComparisonEntry;                                   // 0x730(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_972E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_97F6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       PreviousInventoryItemEntry;                        // 0x740(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<struct FGameplayAttribute, float>       PreviousAttribute_Values;                          // 0xA30(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FLinearColor                          SelectedColor;                                     // 0xA80(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -42,7 +42,7 @@ public:
 	struct FGameplayAttribute                    LCurrentAttribute;                                 // 0xAA0(0x38)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TMap<struct FGameplayAttribute, float>       AttributeModifierMultipliers;                      // 0xAD8(0x50)(Edit, BlueprintVisible)
 	TMap<struct FGameplayAttribute, double>      LOutAttributes;                                    // 0xB28(0x50)(Edit, BlueprintVisible)
-	uint8                                        Pad_972F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_97F7[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       FilterInventoryItemEntry;                          // 0xB80(0x2F0)(Edit, BlueprintVisible, ExposeOnSpawn)
 	TMap<struct FGameplayAttribute, double>      LFilterAttributes;                                 // 0xE70(0x50)(Edit, BlueprintVisible)
 	class AActor*                                Interaction_Actor;                                 // 0xEC0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

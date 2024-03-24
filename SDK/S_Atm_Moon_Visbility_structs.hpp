@@ -29,7 +29,7 @@ public:
 	bool                                         Moon_Atm_Crescent_D_02_37_AFC3C6DD4563CE0369B2FCAEC25471C4; // 0x7(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Moon_Atm_Crescent_D_03_38_5E3620194E68EBBF3DC55B9621BB3900; // 0x8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Blood_Moon_45_AE6DB72D4DDEC775A1AC8E91FC5EECF7;    // 0x9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_69D2[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10AC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FRealmPlacementRequirement>    Realm_Placement_Requirement_43_93E12B944256D87FBA3A1795FB98C29C; // 0x10(0x10)(Edit, BlueprintVisible)
 };
 

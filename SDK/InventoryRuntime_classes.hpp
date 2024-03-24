@@ -14,7 +14,7 @@ namespace SDK
 class UConditionInventoryEntryUpdate : public UConditionBehaviour
 {
 public:
-	uint8                                        Pad_3352[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_227D[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UConditionInventoryEntryUpdate* GetDefaultObj();
@@ -87,6 +87,17 @@ public:
 	bool CanAddItem(struct FInventoryEntry& Entry);
 	bool CanAddAnyItem(TArray<struct FInventoryEntry>& Entries);
 	bool AddItem(struct FInventoryEntry& Entry, int32* Amount, TArray<struct FGuid>* ModifiedInstances, bool bIgnoreCapacity);
+};
+
+// 0x0 (0x28 - 0x28)
+// Class InventoryRuntime.ItemContainerFunctionLibrary
+class UItemContainerFunctionLibrary : public UBlueprintFunctionLibrary
+{
+public:
+
+	static class UClass* StaticClass();
+	static class UItemContainerFunctionLibrary* GetDefaultObj();
+
 };
 
 // 0x0 (0x28 - 0x28)

@@ -20,18 +20,18 @@ struct FS_Realm_Profile_Components
 {
 public:
 	enum class ETime_Dilation                    TimeDilation_42_C6C3E93A44D3596D96F604BBB8D3308A;  // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52FD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6734[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        DayBrightness_45_654194E84791EB5D6641B8B9B3491AC2; // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        ExposureMinusDay_155_0EC08FBA424142E4815C008DAD565359; // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        NightBrightness_46_D21514134D435620E5E9FAACE1253D93; // 0xC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        ExposureMinusNight_158_CFD8E7464A0BF78AFBFE3488F43C5444; // 0x10(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        ExposureMinusDawnDusk_175_25608EF14C49835B0E1061A5359C46F7; // 0x14(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Color_Category                  ColorCategory_11_4DD6654D4941469EAA271DA471F5EB45; // 0x18(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52FE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6735[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Color_14_B48BAE0842000E0A04DD409322CF416F;         // 0x1C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        ColorSaturation_22_736C8ABD4DFE5474CF7F639111B1263C; // 0x20(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_LUT_Category                    LUTMinusCategory_83_4668B2D04ABDC31FF63735B2648739B9; // 0x24(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52FF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6736[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        LUT_20_A60FFF6245828E23A241899121DA8007;           // 0x28(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        LUTMinusSaturation_84_5134FEEF4685DCDD5D21F79EBE83E39A; // 0x2C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        FogMinusDensity_152_B4E54E5D4C5365DE4EE86E9369F40650; // 0x30(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,12 +48,12 @@ public:
 	int32                                        AtmosphereMinusViewDistance_92_EE22565C4144A859B5A9C4A9422BBE45; // 0x5C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        AtmosphereMinusFalloff_93_5A7B36084A70CA227E9E7B923FDA8730; // 0x60(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Cloud_Category                  CloudCategory_52_CC8EC003460576684AC48CAC6636DFBC; // 0x64(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5300[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6737[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Cloud_95_289845B64C9122FDBFE5F4B175FC2D13;         // 0x68(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Rain_Category                   RainType_96_92163CC14D2AD8D175D959BCBE95EA1F;      // 0x6C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Seasons                         SeasonType_97_F0213D984D089528FA03D59599DC976C;    // 0x6D(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Celestial_Category              CelestialCategory_54_A8724A1B431A80133EC36ABEED9D75C8; // 0x6E(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5301[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6738[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        MainCelestialColor_110_68D941AD4AD37504C41095B66A652788; // 0x70(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        MainMoonType_113_81F30D1641B30017365A14A8499F6AAC; // 0x74(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        MainMoonColors_115_A900C9F54CE02786D3ACE9BA6E0AAC23; // 0x78(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -66,12 +66,12 @@ public:
 	int32                                        SecondaryNebulaColor_127_7335A3FA49799DDBBA6320A014F8BEC0; // 0x94(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        SecondaryNebulaBrightness_129_76A40C864F6B3CF91176DDBA5F1863F3; // 0x98(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         RingOverride_132_CD93737E45B33AF1DE3AC7A601E16995; // 0x9C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5302[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6739[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        RingType_134_24659D8947CFA00501BBB9B93B5792B7;     // 0xA0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        RingColor_137_B0E107E34BEF475CE43413A6CECEFACF;    // 0xA4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Aurora_139_A4EAA18D40D091C71CD02F98E45015FA;       // 0xA8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Aurora                          AuroraType_138_777A6EBF432200953248FDB603829C36;   // 0xA9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5303[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_673B[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<enum class EBiomeID>                  AllowedBiomes_145_8C99A8CB459843A874C0CDA85E836F06; // 0xB0(0x10)(Edit, BlueprintVisible)
 	struct FRealmInfluenceValues                 Minimum_Influence_105_CF2F07094294B96628C4DDAC6C7C4826; // 0xC0(0x10)(Edit, BlueprintVisible, NoDestructor)
 	struct FRealmInfluenceValues                 Maximum_Influence_106_B5F560E9478FDE9A154BBCA71BC69A77; // 0xD0(0x10)(Edit, BlueprintVisible, NoDestructor)

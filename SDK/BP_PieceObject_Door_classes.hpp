@@ -14,7 +14,7 @@ namespace SDK
 class UBP_PieceObject_Door_C : public UBP_StructureCompositePiece_C
 {
 public:
-	uint8                                        Pad_7031[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7416[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1F8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FTransform                            CachedDoorStateTransform;                          // 0x200(0x60)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                            OriginalTransform;                                 // 0x260(0x60)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

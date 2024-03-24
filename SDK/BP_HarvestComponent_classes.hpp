@@ -21,7 +21,7 @@ public:
 	TArray<struct FActorAndInstanceIds>          EligibleActorsAndInstances;                        // 0x140(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         UsingIIMSystem;                                    // 0x150(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ResourceAvailable;                                 // 0x151(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7E92[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6A8D[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               ResourceLocation;                                  // 0x158(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_ResourceNodeIIMBase_C*             ResourceNode;                                      // 0x170(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        ResourceIndex;                                     // 0x178(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

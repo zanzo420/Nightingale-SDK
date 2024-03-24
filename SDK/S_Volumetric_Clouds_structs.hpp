@@ -42,7 +42,7 @@ public:
 	double                                       MacroVariation_40_505458B843F50A7B88DF458E232EF15D; // 0xA0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ENoiseType                        VolumetricCloudNoiseType_97_A0B5B49B45C6C3685303A1AB29E7C160; // 0xA8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         TwoLayers_27_229624534ECA534EE90AD48B1233B351;     // 0xA9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6237[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5FAF[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Layer2CoverageScale_50_528B5B3F43BA8126C9C068A78F24082A; // 0xB0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Layer2ExtinctionScale_52_E770E4094843FE95FAE26094AEBB5F66; // 0xB8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             Layer2CloudScale_47_213A377747FE55E164A1CCABA50EA8C1; // 0xC0(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

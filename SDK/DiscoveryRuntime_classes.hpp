@@ -14,7 +14,7 @@ namespace SDK
 class UDiscoveryDataAsset : public UUniquelyIdentifiableDataAsset
 {
 public:
-	uint8                                        Pad_358E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_284F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UConditionBehaviour*                   Condition;                                         // 0x50(0x8)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class URewardBehaviour*>              Rewards;                                           // 0x58(0x10)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FDiscoveryPresentationData            QuestTaskPresentationData;                         // 0x68(0x58)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)

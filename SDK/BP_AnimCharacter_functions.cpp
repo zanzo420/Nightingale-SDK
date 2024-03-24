@@ -394,7 +394,7 @@ void ABP_AnimCharacter_C::OnCharacterMovementStateChanged(enum class ERALSMoveme
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGameplayTag                OffhandTag                                                       (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTag                MainhandTag                                                      (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTag                MainHandTag                                                      (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 // class UBP_LoadoutComponent_C*      CallFunc_GetLoadoutComponent_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UBP_LoadoutComponent_C*      CallFunc_GetLoadoutComponent_ReturnValue_1                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class AEquippableItem*             CallFunc_GetItemInSlot_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -408,7 +408,7 @@ void ABP_AnimCharacter_C::OnCharacterMovementStateChanged(enum class ERALSMoveme
 // bool                               CallFunc_HasTag_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_AnimCharacter_C::CheckOffhandEmpty(const struct FGameplayTag& OffhandTag, const struct FGameplayTag& MainhandTag, class UBP_LoadoutComponent_C* CallFunc_GetLoadoutComponent_ReturnValue, class UBP_LoadoutComponent_C* CallFunc_GetLoadoutComponent_ReturnValue_1, class AEquippableItem* CallFunc_GetItemInSlot_ReturnValue, class AEquippableItem* CallFunc_GetItemInSlot_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, const struct FInventoryEntry& CallFunc_GetInventoryEntry_ReturnValue, const struct FInstanceData_Traits& CallFunc_TryGetItemTraits_Traits, enum class EGetResult CallFunc_TryGetItemTraits_Branches, bool CallFunc_IsValid_ReturnValue_1, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_HasTag_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
+void ABP_AnimCharacter_C::CheckOffhandEmpty(const struct FGameplayTag& OffhandTag, const struct FGameplayTag& MainHandTag, class UBP_LoadoutComponent_C* CallFunc_GetLoadoutComponent_ReturnValue, class UBP_LoadoutComponent_C* CallFunc_GetLoadoutComponent_ReturnValue_1, class AEquippableItem* CallFunc_GetItemInSlot_ReturnValue, class AEquippableItem* CallFunc_GetItemInSlot_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, const struct FInventoryEntry& CallFunc_GetInventoryEntry_ReturnValue, const struct FInstanceData_Traits& CallFunc_TryGetItemTraits_Traits, enum class EGetResult CallFunc_TryGetItemTraits_Branches, bool CallFunc_IsValid_ReturnValue_1, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_HasTag_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -418,7 +418,7 @@ void ABP_AnimCharacter_C::CheckOffhandEmpty(const struct FGameplayTag& OffhandTa
 	Params::ABP_AnimCharacter_C_CheckOffhandEmpty_Params Parms{};
 
 	Parms.OffhandTag = OffhandTag;
-	Parms.MainhandTag = MainhandTag;
+	Parms.MainHandTag = MainHandTag;
 	Parms.CallFunc_GetLoadoutComponent_ReturnValue = CallFunc_GetLoadoutComponent_ReturnValue;
 	Parms.CallFunc_GetLoadoutComponent_ReturnValue_1 = CallFunc_GetLoadoutComponent_ReturnValue_1;
 	Parms.CallFunc_GetItemInSlot_ReturnValue = CallFunc_GetItemInSlot_ReturnValue;

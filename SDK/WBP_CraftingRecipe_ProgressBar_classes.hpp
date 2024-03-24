@@ -14,12 +14,12 @@ namespace SDK
 class UWBP_CraftingRecipe_ProgressBar_C : public UWBP_NWX_ProgressBar_C
 {
 public:
-	uint8                                        Pad_9649[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_742C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x440(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UBP_CraftingStationComponent_C*        CraftingStationComponent;                          // 0x448(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FCraftingRecipeReference              Recipe;                                            // 0x450(0x70)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FS_Crafting_CraftInProgress           CraftInProgress;                                   // 0x4C0(0xD8)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	uint8                                        Pad_964A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_742D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Crafting_Step_RefinementTimer      RefinementTimer;                                   // 0x5A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsCraftPaused;                                     // 0x5A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

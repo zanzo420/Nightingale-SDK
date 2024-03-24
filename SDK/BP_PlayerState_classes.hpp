@@ -27,14 +27,14 @@ public:
 	class UBP_CharacterAppearanceComponent_C*    BP_CharacterAppearanceComponent;                   // 0x5A8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                       DefaultSceneRoot;                                  // 0x5B0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                         bServerReady;                                      // 0x5B8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_62DF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5CCE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            CharacterStatesUpdated;                            // 0x5C0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<struct FS_CharacterStateEntry>        CharacterStatesList;                               // 0x5D0(0x10)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
 	FMulticastInlineDelegateProperty_            PlayerStateReady;                                  // 0x5E0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OwnerReplicated;                                   // 0x5F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         bClientReady;                                      // 0x600(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_DebugModes                      DebugMode;                                         // 0x601(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_62E0[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5CCF[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            TagGiven;                                          // 0x608(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            CreatureKilled;                                    // 0x618(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class ANWXPlayerStart*                       RespawnPoint;                                      // 0x628(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -84,7 +84,7 @@ public:
 	void CallCreatureKilled(const struct FDataTableRowHandle& Creature_Information, const struct FGameplayTagContainer& CreatureTagContainer, const struct FGameplayTagContainer& KillerTagContainer);
 	void CallStructureBlueprintPlaced(const struct FDataTableRowHandle& StructureDataHandle);
 	void CallResourceHarvested(const struct FInventoryEntry& ItemEntry, int32 Amount);
-	void CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_ID);
+	void CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_Id);
 	void CallItemDeposited_InWorldContainer(const struct FItemDataReference& ItemRowHandle, int32 Quantity, const struct FGameplayTag& ContainerTag);
 	void CrossServer_StructureBlueprintPlaced(const struct FDataTableRowHandle& StructureDataHandle);
 	void CrossServer_CallCreatureKilled(const struct FDataTableRowHandle& Creature_Info, const struct FGameplayTagContainer& CreatureTagContainer, const struct FGameplayTagContainer& KillerTagContainer);
@@ -113,7 +113,7 @@ public:
 	void OnItemAbilityUsed__DelegateSignature(TSoftObjectPtr<class UTechniqueDataAsset> Technique, const struct FInventoryEntry& ItemEntry);
 	void OnControllerFound__DelegateSignature();
 	void ItemDepositedWorldContainer__DelegateSignature(const struct FItemDataReference& ItemRowHandle, int32 Quantity, const struct FGameplayTag& ContainerTag);
-	void StructureCompleted__DelegateSignature(class AActor* Owning_Actor, int32 Piece_ID);
+	void StructureCompleted__DelegateSignature(class AActor* Owning_Actor, int32 Piece_Id);
 	void ResourceHarvested__DelegateSignature(const struct FInventoryEntry& ItemEntry, int32 Amount);
 	void StructureBlueprintPlaced__DelegateSignature(const struct FDataTableRowHandle& StructureDataHandle);
 	void OnRespawnPointSet__DelegateSignature();

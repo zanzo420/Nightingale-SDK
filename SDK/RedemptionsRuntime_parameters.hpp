@@ -35,7 +35,7 @@ struct URedemptionComponent_Client_RedemptionResponse_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3FC9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_396B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                RewardName;                                        // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -46,7 +46,7 @@ struct URedemptionComponent_CanRedemptionBeClaimed_Params
 public:
 	struct FRedemptionEntry                      Entry;                                             // 0x0(0x80)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x80(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3FCA[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3970[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xE0 (0xE0 - 0x0)
@@ -57,7 +57,7 @@ public:
 	struct FRedemptionEntry                      Entry;                                             // 0x0(0x80)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRedeemableRewardUIData               OutData;                                           // 0x80(0x58)(Parm, OutParm, NativeAccessSpecifierPublic)
 	enum class EGetResult                        OutBranches;                                       // 0xD8(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3FCC[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_397A[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x90 (0x90 - 0x0)
@@ -67,7 +67,7 @@ struct URedemptionEntryFunctionLibrary_IsRedemptionValid_Params
 public:
 	struct FRedemptionEntry                      Entry;                                             // 0x0(0x80)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x80(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3FCD[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_397D[0xF];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x90 (0x90 - 0x0)

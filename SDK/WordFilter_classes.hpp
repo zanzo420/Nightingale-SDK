@@ -14,7 +14,7 @@ namespace SDK
 class UProfanityFilter : public UObject
 {
 public:
-	uint8                                        Pad_3F80[0x70];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3693[0x70];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UProfanityFilter* GetDefaultObj();

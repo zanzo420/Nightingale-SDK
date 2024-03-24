@@ -19,7 +19,7 @@ public:
 	class UWBP_Options_Dropdown_C*               WBP_Options_Dropdown;                              // 0x520(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_OptionBool_C*                     WBP_ShowSubtitles_Checkbox;                        // 0x528(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         bLanaguageDisplayLocalised;                        // 0x530(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_78BE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7915[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        LocalizedCultures;                                 // 0x538(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UWidget*>                       NavigationWidgets;                                 // 0x548(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 

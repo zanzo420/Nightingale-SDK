@@ -49,15 +49,15 @@ public:
 	class UWidgetSwitcher*                       WidgetSwitcher_QuestsOrExchanges;                  // 0x440(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AActor*                                NPC_Actor;                                         // 0x448(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class AQuestGiverSession*                    QuestGiverSession;                                 // 0x450(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2C16[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_88E1[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FOngoingTaskProgress                  TaskProgressSticky;                                // 0x460(0xB0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	enum class E_Contract_StateType              TaskProgressStateSticky;                           // 0x510(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2C17[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_88E2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        GridIndex_Ready_Sticky;                            // 0x514(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        GridIndex_Available_Sticky;                        // 0x518(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsFactionStoreListView;                            // 0x51C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFaction                          Faction;                                           // 0x51D(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2C18[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_88E3[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UShopPurchaserComponent*               ShopPurchaserComponent;                            // 0x520(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IShopInteractionModel> ShopInteractionSession;                            // 0x528(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FGuid>                         AvailableShopOffers;                               // 0x538(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -86,7 +86,7 @@ public:
 	void CallGiveTag(const struct FGameplayTag& Gameplay_Tag);
 	void CallStructureBlueprintPlaced(const struct FDataTableRowHandle& StructureDataHandle);
 	void CallResourceHarvested(const struct FInventoryEntry& ItemEntry, int32 Amount);
-	void CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_ID);
+	void CallStructureCompleted(class AActor* Owning_Actor, int32 Piece_Id);
 	void CallItemDeposited_InWorldContainer(const struct FItemDataReference& ItemRowHandle, int32 Quantity, const struct FGameplayTag& ContainerTag);
 	void CallWeakpointHit(const struct FGameplayTagContainer& WeakpointType, const struct FGameplayTagContainer& CreatureTags, const struct FHitResult& HitResult);
 	void CallOnSpellCast(TSoftObjectPtr<class UTechniqueDataAsset> SpellCast);

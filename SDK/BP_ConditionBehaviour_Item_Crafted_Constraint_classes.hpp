@@ -16,7 +16,7 @@ class UBP_ConditionBehaviour_Item_Crafted_Constraint_C : public UBP_ConditionBeh
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x80(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	int32                                        Current_Count;                                     // 0x88(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A3D0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A3CE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FItemConstraint                       ItemConstraint;                                    // 0x90(0x40)(Edit, BlueprintVisible, ContainsInstancedReference, ExposeOnSpawn)
 	class UBP_CraftingComponent_C*               CraftingComponent;                                 // 0xD0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 

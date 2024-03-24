@@ -47,7 +47,7 @@ public:
 	int32                                        Nebula_Color_B_55_A2C7E21442E1795A6444FA9BEC841C44; // 0x64(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Nebula_Atm_Override_58_8757116647CA1C76FAB3148CAFE9678C; // 0x68(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Ring_Override_59_E5AA33D643FD4CF3E26AAEA9C7349ED2; // 0x69(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6316[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_601F[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Nebula_Brightness_Array_62_DC26254A4896C8E5C42415B59846D9FF; // 0x6C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Celestial_Type_64_299707064D62EBA3EB3D6A8836BF44C3; // 0x70(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

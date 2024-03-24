@@ -44,7 +44,7 @@ public:
 	struct FPlayerLoadoutDataReference           SelectedLoadout;                                   // 0x5A0(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<struct FInventoryEntry>               Tools;                                             // 0x5C8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<TSoftObjectPtr<class UTechniqueDataAsset>> Spells;                                            // 0x5D8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                        Pad_77D6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9C4[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       SelectedClothing;                                  // 0x5F0(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FInventoryEntry                       SelectedTool;                                      // 0x8E0(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FItemPerkDataReference                SelectedPerk;                                      // 0xBD0(0x80)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -54,14 +54,14 @@ public:
 	struct FLinearColor                          ButtonOnColor;                                     // 0xC80(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          ButtonOffColor;                                    // 0xC90(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class Enum_HopeEvent                    SelectedHopeEvent;                                 // 0xCA0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_77D7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9C5[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                RewardDescription;                                 // 0xCA8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FPlayerLoadoutDataReference           StartPlaytestLoadout;                              // 0xCB8(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<struct FPlayerLoadoutDataReference>   AvailableLoadouts;                                 // 0xCE0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FInventoryEntry>               Clothings;                                         // 0xCF0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FItemPerkDataReference>        Perks;                                             // 0xD00(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        SelectedStatusEffectLevelIndex;                    // 0xD10(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_77D8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9C8[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStatusEffectDataAsset*                SelectedStatusEffect;                              // 0xD18(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FActiveGameplayEffectHandle>   Active_Effect_Handles;                             // 0xD20(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UNWXGameplayEffectUIData*>      Active_Status_Effect_UIs;                          // 0xD30(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)

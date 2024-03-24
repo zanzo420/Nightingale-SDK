@@ -27,10 +27,10 @@ public:
 	class UWBP_GoalTracker_Panel_C*              WBP_GoalTracker_Panel;                             // 0x528(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<class UNWXRadialMenuButtonWidget*>    RadialMenuSegments;                                // 0x530(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	int32                                        LastSeleectedSegment;                              // 0x540(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D52[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6395[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<TScriptInterface<class IRadialMenuInterface>> MenuEntries;                                       // 0x548(0x10)(Edit, BlueprintVisible, ExposeOnSpawn)
 	float                                        DegreesSegmentRadius;                              // 0x558(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8D53[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_6396[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UImage*>                        SeparatorContainer;                                // 0x560(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	struct FSlateBrush                           LineBrush;                                         // 0x570(0xD0)(Edit, BlueprintVisible)
 	struct FSlateBrush                           LineBrushHighlighted;                              // 0x640(0xD0)(Edit, BlueprintVisible)

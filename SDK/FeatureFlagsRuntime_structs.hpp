@@ -76,7 +76,7 @@ struct FFeatureSetContent : public FTableRowBase
 {
 public:
 	enum class EFeatureFlag                      ActiveFeatureFlag;                                 // 0x8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_28EA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_106C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<TSoftObjectPtr<class UDataTable>>     TablesToInclude;                                   // 0x10(0x10)(Edit, BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 };
 
@@ -86,7 +86,7 @@ struct FFeatureSetAndDebugContent : public FFeatureSetContent
 {
 public:
 	bool                                         IsDebugRealm;                                      // 0x20(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_28EB[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_106E[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

@@ -29,7 +29,7 @@ public:
 	FMulticastInlineDelegateProperty_            OnWeakPointTriggered;                              // 0x390(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMap<class FName, double>                    CumulativeDamageAccrued;                           // 0x3A0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)
 	bool                                         Debug;                                             // 0x3F0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_979[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5B77[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FName, bool>                      WPHasTriggered;                                    // 0x3F8(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)
 	TMap<class FName, bool>                      WindowMode;                                        // 0x448(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)
 	TMap<class FName, bool>                      WPFirstHit;                                        // 0x498(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)

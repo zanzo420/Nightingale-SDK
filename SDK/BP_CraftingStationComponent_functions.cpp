@@ -508,17 +508,20 @@ void UBP_CraftingStationComponent_C::ValidateCancelCraft(const class FString& Ca
 // struct FS_Crafting_CraftInProgress CachedCraftData                                                  (Edit, BlueprintVisible, HasGetValueTypeHash)
 // class FString                      CancellingID                                                     (Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 // class APawn*                       CancellingPawn                                                   (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-// class APawn*                       CallFunc_K2_GetPawn_ReturnValue                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ABP_PlayerController_C*      K2Node_DynamicCast_AsBP_Player_Controller                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ANWXPlayerState*             K2Node_DynamicCast_AsNWXPlayer_State                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetPersistentUniqueId_ReturnValue                       (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_RemoveCraftInProgressData_bSuccess                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetCraftForID_Success                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FS_Crafting_CraftInProgress CallFunc_GetCraftForID_CraftInProgressData                       (HasGetValueTypeHash)
 // bool                               CallFunc_ValidateCancelCraft_bCancelValid                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TScriptInterface<class IBPI_PlayerAccountInfo_C>K2Node_DynamicCast_AsBPI_Player_Account_Info                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                      CallFunc_GetPersistentUniqueIdFromPawn_PersistentId              (ZeroConstructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CraftingStationComponent_C::CancelCraft(class ANWXPlayerController* CancellingController, const struct FS_Crafting_CraftInProgress& CachedCraftData, const class FString& CancellingID, class APawn* CancellingPawn, class APawn* CallFunc_K2_GetPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_RemoveCraftInProgressData_bSuccess, bool CallFunc_GetCraftForID_Success, const struct FS_Crafting_CraftInProgress& CallFunc_GetCraftForID_CraftInProgressData, bool CallFunc_ValidateCancelCraft_bCancelValid, TScriptInterface<class IBPI_PlayerAccountInfo_C> K2Node_DynamicCast_AsBPI_Player_Account_Info, bool K2Node_DynamicCast_bSuccess, const class FString& CallFunc_GetPersistentUniqueIdFromPawn_PersistentId)
+void UBP_CraftingStationComponent_C::CancelCraft(class ANWXPlayerController* CancellingController, const struct FS_Crafting_CraftInProgress& CachedCraftData, const class FString& CancellingID, class APawn* CancellingPawn, class ABP_PlayerController_C* K2Node_DynamicCast_AsBP_Player_Controller, bool K2Node_DynamicCast_bSuccess, class ANWXPlayerState* K2Node_DynamicCast_AsNWXPlayer_State, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue, const class FString& CallFunc_GetPersistentUniqueId_ReturnValue, bool CallFunc_RemoveCraftInProgressData_bSuccess, bool CallFunc_GetCraftForID_Success, const struct FS_Crafting_CraftInProgress& CallFunc_GetCraftForID_CraftInProgressData, bool CallFunc_ValidateCancelCraft_bCancelValid, class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_HasAuthority_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -531,15 +534,18 @@ void UBP_CraftingStationComponent_C::CancelCraft(class ANWXPlayerController* Can
 	Parms.CachedCraftData = CachedCraftData;
 	Parms.CancellingID = CancellingID;
 	Parms.CancellingPawn = CancellingPawn;
-	Parms.CallFunc_K2_GetPawn_ReturnValue = CallFunc_K2_GetPawn_ReturnValue;
+	Parms.K2Node_DynamicCast_AsBP_Player_Controller = K2Node_DynamicCast_AsBP_Player_Controller;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.K2Node_DynamicCast_AsNWXPlayer_State = K2Node_DynamicCast_AsNWXPlayer_State;
+	Parms.K2Node_DynamicCast_bSuccess_1 = K2Node_DynamicCast_bSuccess_1;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_GetPersistentUniqueId_ReturnValue = CallFunc_GetPersistentUniqueId_ReturnValue;
 	Parms.CallFunc_RemoveCraftInProgressData_bSuccess = CallFunc_RemoveCraftInProgressData_bSuccess;
 	Parms.CallFunc_GetCraftForID_Success = CallFunc_GetCraftForID_Success;
 	Parms.CallFunc_GetCraftForID_CraftInProgressData = CallFunc_GetCraftForID_CraftInProgressData;
 	Parms.CallFunc_ValidateCancelCraft_bCancelValid = CallFunc_ValidateCancelCraft_bCancelValid;
-	Parms.K2Node_DynamicCast_AsBPI_Player_Account_Info = K2Node_DynamicCast_AsBPI_Player_Account_Info;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_GetPersistentUniqueIdFromPawn_PersistentId = CallFunc_GetPersistentUniqueIdFromPawn_PersistentId;
+	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
+	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -981,23 +987,22 @@ void UBP_CraftingStationComponent_C::LoadDataFromTable(const struct FDataTableRo
 // struct FGameplayTagContainer       CombinedDisciplineTags                                           (Edit, BlueprintVisible)
 // class UAbilitySystemComponent*     Abs                                                              (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CraftingStationActor                                             (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FCraftingRecipeReference>CallFunc_GetCraftingRecipes_CurrentCraftingRecipes               (ReferenceParm)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_GetDisciplineTagsForCraftingRecipes_ReturnValue         (None)
 // class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FCraftingRecipeReference>CallFunc_GetCraftingRecipes_CurrentCraftingRecipes               (ReferenceParm)
+// struct FGameplayTagContainer       CallFunc_GetDisciplineTagsForCraftingRecipes_ReturnValue         (None)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_RemoveActiveGameplayEffect_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayEffectContextHandleCallFunc_MakeEffectContext_ReturnValue                           (None)
-// bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingSpec_ReturnValue                            (None)
+// class UAbilitySystemComponent*     CallFunc_GetAbilitySystemComponent_ReturnValue                   (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayEffectSpecHandle   CallFunc_AddGrantedTags_ReturnValue                              (None)
 // struct FActiveGameplayEffectHandle CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue            (NoDestructor, HasGetValueTypeHash)
-// class UAbilitySystemComponent*     CallFunc_GetAbilitySystemComponent_ReturnValue                   (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_GetOwner_ReturnValue_1                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CraftingStationComponent_C::ApplyStationActiveEffectToStation(const struct FGameplayTagContainer& CombinedDisciplineTags, class UAbilitySystemComponent* Abs, class AActor* CraftingStationActor, TArray<struct FCraftingRecipeReference>& CallFunc_GetCraftingRecipes_CurrentCraftingRecipes, bool CallFunc_IsValid_ReturnValue, const struct FGameplayTagContainer& CallFunc_GetDisciplineTagsForCraftingRecipes_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_RemoveActiveGameplayEffect_ReturnValue, const struct FGameplayEffectContextHandle& CallFunc_MakeEffectContext_ReturnValue, bool CallFunc_IsServer_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingSpec_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AddGrantedTags_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2)
+void UBP_CraftingStationComponent_C::ApplyStationActiveEffectToStation(const struct FGameplayTagContainer& CombinedDisciplineTags, class UAbilitySystemComponent* Abs, class AActor* CraftingStationActor, class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_IsValid_ReturnValue, TArray<struct FCraftingRecipeReference>& CallFunc_GetCraftingRecipes_CurrentCraftingRecipes, const struct FGameplayTagContainer& CallFunc_GetDisciplineTagsForCraftingRecipes_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_RemoveActiveGameplayEffect_ReturnValue, const struct FGameplayEffectContextHandle& CallFunc_MakeEffectContext_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingSpec_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AddGrantedTags_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1009,19 +1014,18 @@ void UBP_CraftingStationComponent_C::ApplyStationActiveEffectToStation(const str
 	Parms.CombinedDisciplineTags = CombinedDisciplineTags;
 	Parms.Abs = Abs;
 	Parms.CraftingStationActor = CraftingStationActor;
-	Parms.CallFunc_GetCraftingRecipes_CurrentCraftingRecipes = CallFunc_GetCraftingRecipes_CurrentCraftingRecipes;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_GetDisciplineTagsForCraftingRecipes_ReturnValue = CallFunc_GetDisciplineTagsForCraftingRecipes_ReturnValue;
 	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_GetCraftingRecipes_CurrentCraftingRecipes = CallFunc_GetCraftingRecipes_CurrentCraftingRecipes;
+	Parms.CallFunc_GetDisciplineTagsForCraftingRecipes_ReturnValue = CallFunc_GetDisciplineTagsForCraftingRecipes_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 	Parms.CallFunc_RemoveActiveGameplayEffect_ReturnValue = CallFunc_RemoveActiveGameplayEffect_ReturnValue;
 	Parms.CallFunc_MakeEffectContext_ReturnValue = CallFunc_MakeEffectContext_ReturnValue;
-	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
 	Parms.CallFunc_MakeOutgoingSpec_ReturnValue = CallFunc_MakeOutgoingSpec_ReturnValue;
+	Parms.CallFunc_GetAbilitySystemComponent_ReturnValue = CallFunc_GetAbilitySystemComponent_ReturnValue;
 	Parms.CallFunc_AddGrantedTags_ReturnValue = CallFunc_AddGrantedTags_ReturnValue;
 	Parms.CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue = CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue;
-	Parms.CallFunc_GetAbilitySystemComponent_ReturnValue = CallFunc_GetAbilitySystemComponent_ReturnValue;
 	Parms.CallFunc_GetOwner_ReturnValue_1 = CallFunc_GetOwner_ReturnValue_1;
 	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
 
@@ -1534,10 +1538,9 @@ void UBP_CraftingStationComponent_C::RemoveCraftInProgressData(class AController
 // Function BP_CraftingStationComponent.BP_CraftingStationComponent_C.OnRep_CraftsInProgress
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CraftingStationComponent_C::OnRep_CraftsInProgress(class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_HasAuthority_ReturnValue)
+void UBP_CraftingStationComponent_C::OnRep_CraftsInProgress(bool CallFunc_IsDedicatedServer_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1546,8 +1549,7 @@ void UBP_CraftingStationComponent_C::OnRep_CraftsInProgress(class AActor* CallFu
 
 	Params::UBP_CraftingStationComponent_C_OnRep_CraftsInProgress_Params Parms{};
 
-	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
-	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

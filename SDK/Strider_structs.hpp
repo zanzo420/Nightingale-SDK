@@ -43,7 +43,7 @@ struct FBoneChainLink
 public:
 	struct FBoneReference                        bone;                                              // 0x0(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	float                                        Weight;                                            // 0x10(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_439A[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_402E[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -52,7 +52,7 @@ struct FBoneChainStrider
 {
 public:
 	TArray<struct FBoneChainLink>                BoneChain;                                         // 0x0(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_439B[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_402F[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xA0 (0xB0 - 0x10)
@@ -64,16 +64,16 @@ public:
 	float                                        Acceleration;                                      // 0x20(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Direction;                                         // 0x24(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        ALPHA;                                             // 0x28(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_439C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4031[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               UpAxis;                                            // 0x30(0x18)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        TorsoBendRatio;                                    // 0x48(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        MaxTorsoBend;                                      // 0x4C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Smoothing;                                         // 0x50(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_439E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4032[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FBoneChainStrider                     SpineChain;                                        // 0x58(0x20)(Edit, NativeAccessSpecifierPublic)
-	uint8                                        Pad_439F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4033[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuat                                 RootCounterRotation;                               // 0x80(0x20)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43A0[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4034[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xC0 (0xD0 - 0x10)
@@ -92,10 +92,10 @@ public:
 	float                                        MaxLean;                                           // 0x64(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Smoothing;                                         // 0x68(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBoneReference                        RootBone;                                          // 0x6C(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43A3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4035[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FBoneChainStrider                     SpineChain;                                        // 0x80(0x20)(Edit, NativeAccessSpecifierPublic)
 	struct FQuat                                 RootCounterRotation;                               // 0xA0(0x20)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43A4[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4036[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xB0 (0xC0 - 0x10)
@@ -107,17 +107,28 @@ public:
 	float                                        Direction;                                         // 0x20(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Offset;                                            // 0x24(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        UpperBodyAlpha;                                    // 0x28(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43A8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4038[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               UpAxis;                                            // 0x30(0x18)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        ALPHA;                                             // 0x48(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        MaxWarpDelta;                                      // 0x4C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Smoothing;                                         // 0x50(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBoneReference                        RootBone;                                          // 0x54(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43A9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4039[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FBoneChainStrider                     SpineChain;                                        // 0x68(0x20)(Edit, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43AA[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_403A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuat                                 RootCounterRotation;                               // 0x90(0x20)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43AB[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_403B[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+};
+
+// 0xC0 (0xC0 - 0x0)
+// ScriptStruct Strider.LimbDefinition
+struct FLimbDefinition
+{
+public:
+	struct FBoneReference                        Tip;                                               // 0x0(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FBoneReference                        IkTarget;                                          // 0x10(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                        BoneCount;                                         // 0x20(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_403C[0x9C];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -130,17 +141,6 @@ public:
 	float                                        MaxRecoveryRate;                                   // 0x14(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0xC0 (0xC0 - 0x0)
-// ScriptStruct Strider.LimbDefinition
-struct FLimbDefinition
-{
-public:
-	struct FBoneReference                        Tip;                                               // 0x0(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FBoneReference                        IkTarget;                                          // 0x10(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                        BoneCount;                                         // 0x20(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43AE[0x9C];                                    // Fixing Size Of Struct [ Dumper-7 ]
-};
-
 // 0x108 (0x1D0 - 0xC8)
 // ScriptStruct Strider.AnimNode_SlopeWarp
 struct FAnimNode_SlopeWarp : public FAnimNode_SkeletalControlBase
@@ -150,7 +150,7 @@ public:
 	struct FVector                               SlopePoint;                                        // 0xE0(0x18)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ESlopeDetectionMode               SlopeDetectionMode;                                // 0xF8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ESlopeRollCompensation            SlopeRollCompensation;                             // 0xF9(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43AF[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_403E[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        MaxSlopeAngle;                                     // 0xFC(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        HeightOffset;                                      // 0x100(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        SlopeSmoothingRate;                                // 0x104(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -159,7 +159,7 @@ public:
 	struct FBoneReference                        IkRoot;                                            // 0x110(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FHipAdjustment                        HipAdjustment;                                     // 0x120(0x18)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<struct FLimbDefinition>               Limbs;                                             // 0x138(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43B0[0x88];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_403F[0x88];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x90 (0x90 - 0x0)
@@ -169,13 +169,13 @@ struct FStridePivot
 public:
 	struct FBoneReference                        Root;                                              // 0x0(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bProjectToGround;                                  // 0x10(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43B1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4041[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Offset;                                            // 0x14(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EStrideVectorMethod               StrideVectorMethod;                                // 0x18(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43B2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4043[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Smoothing;                                         // 0x1C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bChooseNearestAxis;                                // 0x20(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43B3[0x6F];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4044[0x6F];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xE8 (0x1B0 - 0xC8)
@@ -187,11 +187,11 @@ public:
 	float                                        Direction;                                         // 0xCC(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Twist;                                             // 0xD0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        AllowExtensionPercent;                             // 0xD4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43B4[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4046[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStridePivot                          StridePivot;                                       // 0xE0(0x90)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FHipAdjustment                        HipAdjustment;                                     // 0x170(0x18)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<struct FLimbDefinition>               Limbs;                                             // 0x188(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43B5[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4047[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

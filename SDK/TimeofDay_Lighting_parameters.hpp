@@ -21,20 +21,20 @@ public:
 	double                                       Adjusted_Time_24;                                  // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FWeightedBlendables                   ReturnValue;                                       // 0x8(0x10)(Parm, OutParm, ReturnParm)
 	int32                                        Temp_int_Variable;                                 // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6353[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BA9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FWeightedBlendables                   Temp_struct_Variable;                              // 0x20(0x10)(None)
 	struct FWeightedBlendables                   Temp_struct_Variable_1;                            // 0x30(0x10)(None)
 	class UCurveFloat*                           CallFunc_Array_Get_Item;                           // 0x40(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_FClamp_ReturnValue;                       // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6354[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BAA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_MapRangeUnclamped_ReturnValue;            // 0x58(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue;                         // 0x60(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0x68(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6355[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BAC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FWeightedBlendables                   K2Node_Select_Default;                             // 0x70(0x10)(None)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x80(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6356[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BAD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x88(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -47,10 +47,10 @@ public:
 	double                                       Finalgather;                                       // 0x8(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue;                         // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6359[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BAE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_1;                       // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_635A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BAF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -64,24 +64,24 @@ public:
 	class UCurveFloat*                           Exposure_Comp_Night_Lerp;                          // 0x10(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           Exposure_Comp_Day_Lerp;                            // 0x18(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_635C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BB3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item;                           // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_1;                         // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue;                         // 0x38(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_1;                       // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_2;                         // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_1;              // 0x50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_635D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BB5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_2;                       // 0x58(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_2;              // 0x60(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_635E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BB6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_3;                       // 0x68(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_4;                       // 0x70(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Add_DoubleDouble_ReturnValue;             // 0x78(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x80(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_1;      // 0x84(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_2;      // 0x88(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_635F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BB7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x90(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x98(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_1;                // 0xA0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -94,7 +94,7 @@ struct UTimeofDay_Lighting_C_PostProcessMaterals_Params
 public:
 	struct FWeightedBlendables                   ReturnValue;                                       // 0x0(0x10)(Parm, OutParm, ReturnParm)
 	int32                                        Temp_int_Variable;                                 // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6363[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BBB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FWeightedBlendables                   Temp_struct_Variable;                              // 0x18(0x10)(None)
 	struct FWeightedBlendables                   K2Node_Select_Default;                             // 0x28(0x10)(None)
 };
@@ -107,10 +107,10 @@ public:
 	double                                       Adjsuted_Time_24hr;                                // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       ReturnValue;                                       // 0x8(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6364[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BBD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue;                         // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6365[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BBE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -142,24 +142,24 @@ public:
 	class UCurveFloat*                           Exposure_Comp_Night_Lerp;                          // 0x10(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           Exposure_Comp_Day_Lerp;                            // 0x18(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6369[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BCC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item;                           // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_1;                         // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue;                         // 0x38(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_1;                       // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_2;                         // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_1;              // 0x50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_636A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BCD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_2;                       // 0x58(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_2;              // 0x60(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_636B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BCE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_3;                       // 0x68(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_4;                       // 0x70(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Add_DoubleDouble_ReturnValue;             // 0x78(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x80(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_1;      // 0x84(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_2;      // 0x88(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_636C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BCF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x90(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x98(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_1;                // 0xA0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -223,7 +223,7 @@ public:
 	double                                       Blur_Kernel_size;                                  // 0x28(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Middlegrey_Bias;                                   // 0x30(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6372[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BDC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue;                         // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_1;                       // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_2;                       // 0x50(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -232,7 +232,7 @@ public:
 	double                                       CallFunc_Lerp_ReturnValue_5;                       // 0x68(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_6;                       // 0x70(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x78(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6373[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BDE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x80(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -244,12 +244,12 @@ public:
 	double                                       AdjustedTime_24Hour;                               // 0x0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue;               // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0xC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6374[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BE5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               CallFunc_GetForwardVector_ReturnValue;             // 0x18(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x34(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6375[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BE6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              CallFunc_MakeRotator_ReturnValue;                  // 0x38(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FRotator                              CallFunc_NegateRotator_ReturnValue;                // 0x50(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x68(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
@@ -264,7 +264,7 @@ struct UTimeofDay_Lighting_C_UpdateLightingCache_Params
 public:
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6376[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BEF[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Celestials_Cache_Cached_Ring_Toggle;      // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Sky_Cache_Cached_Rayleigh_Color;          // 0x8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Sky_Cache_Cached_Sky_Luminance_Color;     // 0x18(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -286,7 +286,7 @@ public:
 	int32                                        CallFunc_Color_Correction_Cache_Exposure_Day;      // 0x120(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Color_Correction_Cache_Exposure_Night;    // 0x124(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Vault_Override_Cache_VaultOverride;       // 0x128(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6377[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BF4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Sun_Cache_Angle_X;                        // 0x130(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Sun_Cache_Sun_Color;                      // 0x138(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Sun_Cache_Cached_Sun_Disk_Color_Set;      // 0x148(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -305,17 +305,17 @@ public:
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames;         // 0x0(0x10)(ReferenceParm)
 	double                                       CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6379[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C15[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstance*                     CallFunc_Array_Get_Item;                           // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_1;                         // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0x30(0x10)(ReferenceParm)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow;           // 0x40(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0xAC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_637A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C18[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_2;                         // 0xB0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_1;         // 0xB8(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0xD0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_637B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C19[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue;             // 0xD8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0xE0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0xE8(0x10)(ReferenceParm)
@@ -323,13 +323,13 @@ public:
 	class FName                                  CallFunc_Array_Get_Item_3;                         // 0x108(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x110(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x128(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_637C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C1A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_4;                         // 0x12C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_637D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C1B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x138(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0x151(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_637E[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C1C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x158(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstance*                     CallFunc_Array_Get_Item_5;                         // 0x160(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x168(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -338,93 +338,93 @@ public:
 	double                                       CallFunc_Conv_ByteToDouble_ReturnValue_1;          // 0x188(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_4;         // 0x190(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_4;    // 0x1A8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_637F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C1D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FTrunc_ReturnValue_1;                     // 0x1AC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_5;       // 0x1B0(0x10)(ReferenceParm)
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue_2;           // 0x1C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_7;                         // 0x1C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_5;         // 0x1D0(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_5;    // 0x23C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6380[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C1E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstance*                     CallFunc_Array_Get_Item_8;                         // 0x240(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_6;       // 0x248(0x10)(ReferenceParm)
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue_2; // 0x258(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_9;                         // 0x260(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_6;         // 0x268(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_6;    // 0x280(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6381[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C1F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_7;       // 0x288(0x10)(ReferenceParm)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_1;                 // 0x298(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6382[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C20[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_10;                        // 0x29C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6383[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C21[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_7;         // 0x2A8(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_7;    // 0x2C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6384[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C22[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue;               // 0x2C4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_2;                 // 0x2C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6385[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C23[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue_3;           // 0x2D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_8;       // 0x2D8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_11;                        // 0x2E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstance*                     CallFunc_Array_Get_Item_12;                        // 0x2F0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_8;         // 0x2F8(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_8;    // 0x310(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6386[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C24[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_9;       // 0x318(0x10)(ReferenceParm)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_3;                 // 0x328(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6387[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C25[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_13;                        // 0x32C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6388[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C26[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_9;         // 0x338(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_9;    // 0x350(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6389[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C27[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue_3; // 0x358(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_10;      // 0x360(0x10)(ReferenceParm)
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue_4;           // 0x370(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_14;                        // 0x378(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_10;        // 0x380(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_10;   // 0x398(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_638A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C28[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstance*                     CallFunc_Array_Get_Item_15;                        // 0x3A0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue_5;           // 0x3A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue_4; // 0x3B0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_1;             // 0x3B8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_638B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C29[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_ByteToDouble_ReturnValue_2;          // 0x3C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_4;                 // 0x3C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_638C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C2A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FTrunc_ReturnValue_2;                     // 0x3CC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_11;      // 0x3D0(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_16;                        // 0x3E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_12;      // 0x3E8(0x10)(ReferenceParm)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_11;        // 0x3F8(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_11;   // 0x464(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_638D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C2B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_17;                        // 0x468(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_12;        // 0x470(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_12;   // 0x488(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_5;                 // 0x489(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_638E[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C2C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstance*                     CallFunc_Array_Get_Item_18;                        // 0x490(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_13;      // 0x498(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_19;                        // 0x4A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue_5; // 0x4B0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_13;        // 0x4B8(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_13;   // 0x4D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_638F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C2E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_14;      // 0x4D8(0x10)(ReferenceParm)
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue_6;           // 0x4E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_20;                        // 0x4F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fae_Magic_Toggle                   CallFunc_GetDataTableRowFromName_OutRow_14;        // 0x4F8(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_14;   // 0x510(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6390[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C2F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstance*                     CallFunc_Array_Get_Item_21;                        // 0x518(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue_7;           // 0x520(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue_6; // 0x528(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_2;             // 0x530(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_6;                 // 0x534(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6391[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C30[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstance*                     CallFunc_Array_Get_Item_22;                        // 0x538(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue_7; // 0x540(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast; // 0x548(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -465,10 +465,10 @@ public:
 	class FName                                  CallFunc_Array_Get_Item_2;                         // 0x138(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow;           // 0x140(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_639D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C4A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x154(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x164(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_639E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C4B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_3;                         // 0x168(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_4;                         // 0x178(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0x188(0x10)(ReferenceParm)
@@ -476,37 +476,37 @@ public:
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x1A0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x1B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0x1B1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_639F[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C4C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_3;       // 0x1B8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_6;                         // 0x1C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x1D0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x1E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_1;                 // 0x1E1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63A0[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C4D[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_4;       // 0x1E8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_7;                         // 0x1F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_5;       // 0x200(0x10)(ReferenceParm)
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_4;         // 0x210(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_4;    // 0x220(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63A1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C4E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_6;       // 0x228(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_8;                         // 0x238(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_5;         // 0x240(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_5;    // 0x250(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_2;                 // 0x251(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63A2[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C4F[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_9;                         // 0x254(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63A3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C50[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_7;       // 0x268(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_10;                        // 0x278(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_11;                        // 0x280(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Atm_Moon_Visbility                 CallFunc_GetDataTableRowFromName_OutRow_6;         // 0x288(0x20)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_6;    // 0x2A8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63A4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C51[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_7;         // 0x2AC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_7;    // 0x2BC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_3;                 // 0x2BD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63A5[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C52[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_12;                        // 0x2C0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_8;       // 0x2D0(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_9;       // 0x2E0(0x10)(ReferenceParm)
@@ -514,10 +514,10 @@ public:
 	class FName                                  CallFunc_Array_Get_Item_14;                        // 0x2F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_8;         // 0x300(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_8;    // 0x310(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63A6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C53[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_9;         // 0x314(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_9;    // 0x324(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63A7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C54[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_15;                        // 0x328(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_16;                        // 0x338(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_10;      // 0x348(0x10)(ReferenceParm)
@@ -525,24 +525,24 @@ public:
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_10;        // 0x360(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_10;   // 0x370(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_4;                 // 0x371(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63A8[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C55[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_11;      // 0x378(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_18;                        // 0x388(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_11;        // 0x390(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_11;   // 0x3A0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_5;                 // 0x3A1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63A9[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C56[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_12;      // 0x3A8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_19;                        // 0x3B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_13;      // 0x3C0(0x10)(ReferenceParm)
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_12;        // 0x3D0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_12;   // 0x3E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63AA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C57[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_20;                        // 0x3E4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_13;        // 0x3EC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_13;   // 0x3FC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_6;                 // 0x3FD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63AB[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C58[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_21;                        // 0x400(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_14;      // 0x410(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_22;                        // 0x420(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -550,17 +550,17 @@ public:
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_14;        // 0x438(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_14;   // 0x448(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_7;                 // 0x449(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63AC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C59[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_15;      // 0x450(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_16;      // 0x460(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_24;                        // 0x470(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_25;                        // 0x478(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_15;        // 0x480(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_15;   // 0x490(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63AD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C5A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_16;        // 0x494(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_16;   // 0x4A4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63AE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C5B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_26;                        // 0x4A8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_27;                        // 0x4B8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_17;      // 0x4C8(0x10)(ReferenceParm)
@@ -568,24 +568,24 @@ public:
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_17;        // 0x4E0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_17;   // 0x4F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_8;                 // 0x4F1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63AF[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C5C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_18;      // 0x4F8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_29;                        // 0x508(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_18;        // 0x510(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_18;   // 0x520(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_9;                 // 0x521(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63B0[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C5D[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_19;      // 0x528(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_30;                        // 0x538(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_20;      // 0x540(0x10)(ReferenceParm)
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_19;        // 0x550(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_19;   // 0x560(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63B1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C5E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_31;                        // 0x564(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_20;        // 0x56C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_20;   // 0x57C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_10;                // 0x57D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63B2[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C5F[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_32;                        // 0x580(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_21;      // 0x590(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_33;                        // 0x5A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -593,7 +593,7 @@ public:
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_21;        // 0x5B8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_21;   // 0x5C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_11;                // 0x5C9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63B3[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C60[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue;             // 0x5D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x5D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue_2;           // 0x5E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -603,11 +603,11 @@ public:
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_23;      // 0x608(0x10)(ReferenceParm)
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_22;        // 0x618(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_22;   // 0x628(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63B4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C61[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_36;                        // 0x62C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_23;        // 0x634(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_23;   // 0x644(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63B5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C62[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_37;                        // 0x648(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_38;                        // 0x658(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_24;      // 0x668(0x10)(ReferenceParm)
@@ -615,24 +615,24 @@ public:
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_24;        // 0x680(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_24;   // 0x690(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_12;                // 0x691(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63B6[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C63[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_25;      // 0x698(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_40;                        // 0x6A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_25;        // 0x6B0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_25;   // 0x6C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_13;                // 0x6C1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63B7[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C64[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_26;      // 0x6C8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_41;                        // 0x6D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_27;      // 0x6E0(0x10)(ReferenceParm)
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_26;        // 0x6F0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_26;   // 0x700(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63B8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C65[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_42;                        // 0x704(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_27;        // 0x70C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_27;   // 0x71C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_14;                // 0x71D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63B9[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C66[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_43;                        // 0x720(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_28;      // 0x730(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_29;      // 0x740(0x10)(ReferenceParm)
@@ -640,34 +640,34 @@ public:
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_30;      // 0x758(0x10)(ReferenceParm)
 	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_28;        // 0x768(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_28;   // 0x778(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63BA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C67[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_31;      // 0x780(0x10)(ReferenceParm)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_15;                // 0x790(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63BB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C68[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_32;      // 0x798(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_33;      // 0x7A8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_45;                        // 0x7B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_SecondaryMoon_Groups               CallFunc_GetDataTableRowFromName_OutRow_29;        // 0x7C0(0x20)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_29;   // 0x7E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63BC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C69[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_46;                        // 0x7E4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_47;                        // 0x7EC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63BD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C6A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_30;        // 0x7F8(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_30;   // 0x820(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63BE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C6B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_31;        // 0x828(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_31;   // 0x850(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63BF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C6C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_48;                        // 0x854(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_49;                        // 0x85C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63C0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C6D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_32;        // 0x868(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_32;   // 0x890(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63C1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C6E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_33;        // 0x898(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_33;   // 0x8C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63C2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C6F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        K2Node_VariableSet_Cached_Cloud_Index_D_ImplicitCast; // 0x8C4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_VariableSet_Cached_Cloud_Index_C_ImplicitCast; // 0x8C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_VariableSet_Cached_Cloud_Index_B_ImplicitCast; // 0x8CC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -680,24 +680,24 @@ struct UTimeofDay_Lighting_C_Celestials_Cache_Params
 {
 public:
 	int32                                        Cached_Ring_Toggle;                                // 0x0(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63C3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C70[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames;         // 0x8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item;                           // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow;           // 0x20(0x20)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63C4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C71[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            CallFunc_Array_Get_Item_1;                         // 0x48(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0x50(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0x60(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_2;                         // 0x70(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x78(0x60)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0xD8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63C5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C72[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_3;                         // 0xDC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63C6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C73[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Ring_Type                          CallFunc_GetDataTableRowFromName_OutRow_2;         // 0xE8(0x30)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x118(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63C7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C74[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_4;                         // 0x11C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_5;                         // 0x12C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_6;                         // 0x13C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -708,12 +708,12 @@ public:
 	struct FLinearColor                          CallFunc_Array_Get_Item_11;                        // 0x18C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_12;                        // 0x19C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_13;                        // 0x1AC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63C8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C75[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_3;       // 0x1C0(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_14;                        // 0x1D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Ring_Toggle                        CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x1D8(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x1F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63C9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C76[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue;               // 0x1F4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -736,7 +736,7 @@ public:
 	class FName                                  CallFunc_Array_Get_Item;                           // 0x68(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Atmosphere                         CallFunc_GetDataTableRowFromName_OutRow;           // 0x70(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x98(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63CA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C77[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0xA0(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0xB0(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_3;       // 0xC0(0x10)(ReferenceParm)
@@ -744,33 +744,33 @@ public:
 	class FName                                  CallFunc_Array_Get_Item_1;                         // 0xE0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_1;         // 0xE8(0x20)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x108(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63CB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C78[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            CallFunc_Array_Get_Item_2;                         // 0x110(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_5;       // 0x118(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_3;                         // 0x128(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x130(0x60)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x190(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63CC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C79[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_4;                         // 0x194(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_5;                         // 0x19C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63CD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C7A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x1A8(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x1D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63CE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C7B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_4;         // 0x1D8(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_4;    // 0x200(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0x201(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_1;                 // 0x202(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63CF[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C7C[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_6;                         // 0x204(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_7;                         // 0x20C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63D0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C7D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_5;         // 0x220(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_5;    // 0x248(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63D1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C7E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_8;                         // 0x24C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_2;                 // 0x25C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63D2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C7F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_9;                         // 0x260(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -790,35 +790,35 @@ public:
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_3;       // 0x78(0x10)(ReferenceParm)
 	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow;           // 0x88(0x20)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0xA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63D3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C80[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            CallFunc_Array_Get_Item_1;                         // 0xB0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_4;       // 0xB8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_2;                         // 0xC8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_1;         // 0xD0(0x60)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x130(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63D4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C81[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_3;                         // 0x134(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63D5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C82[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Main_Celestial_Color               CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x140(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x158(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63D6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C83[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_4;                         // 0x15C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x164(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x168(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63D7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C84[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_5;                         // 0x16C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_6;                         // 0x17C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_7;                         // 0x18C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63D8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C85[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Main_Celestial_Color               CallFunc_GetDataTableRowFromName_OutRow_4;         // 0x198(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_4;    // 0x1B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63D9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C86[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_5;       // 0x1B8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_8;                         // 0x1C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_5;         // 0x1D0(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_5;    // 0x1F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0x1F9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63DA[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C87[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_9;                         // 0x1FC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -838,112 +838,112 @@ public:
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0xB8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item;                           // 0xC8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue;               // 0xD0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63DB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C88[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Exposure                           CallFunc_GetDataTableRowFromName_OutRow;           // 0xD8(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0xF0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0xF1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63DC[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C89[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_1;             // 0xF4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_1;                 // 0xF8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63DD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C8A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0x100(0x10)(ReferenceParm)
 	double                                       CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x110(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0x118(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_1;                         // 0x11C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x124(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x190(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63DE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C8B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_3;       // 0x198(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_2;                         // 0x1A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_3;                         // 0x1B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Volumetric_Clouds                  CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x1B8(0x100)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x2B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63DF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C8C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Exposure                           CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x2C0(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x2D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63E0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C8D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_4;       // 0x2E0(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_5;       // 0x2F0(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_4;                         // 0x300(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_5;                         // 0x308(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Exposure                           CallFunc_GetDataTableRowFromName_OutRow_4;         // 0x310(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_4;    // 0x328(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63E1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C8E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Exposure                           CallFunc_GetDataTableRowFromName_OutRow_5;         // 0x330(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_5;    // 0x348(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63E2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C8F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_6;       // 0x350(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_7;       // 0x360(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_8;       // 0x370(0x10)(ReferenceParm)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_2;             // 0x380(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63E3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C90[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_ByteToDouble_ReturnValue_1;          // 0x388(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_2;                 // 0x390(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63E4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C91[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FTrunc_ReturnValue_1;                     // 0x394(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_9;       // 0x398(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_6;                         // 0x3A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_6;         // 0x3B0(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_6;    // 0x41C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63E5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C92[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_10;      // 0x420(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_7;                         // 0x430(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Volumetric_Clouds                  CallFunc_GetDataTableRowFromName_OutRow_7;         // 0x438(0x100)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_7;    // 0x538(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_3;                 // 0x539(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63E6[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C93[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_8;                         // 0x53C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63E7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C94[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCurveFloat*                           CallFunc_Array_Get_Item_9;                         // 0x548(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FS_Volumetric_Clouds                  CallFunc_GetDataTableRowFromName_OutRow_8;         // 0x550(0x100)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_8;    // 0x650(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63E8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C95[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_10;                        // 0x654(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63E9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C96[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCurveFloat*                           CallFunc_Array_Get_Item_11;                        // 0x660(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FS_Volumetric_Clouds                  CallFunc_GetDataTableRowFromName_OutRow_9;         // 0x668(0x100)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_9;    // 0x768(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63EA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C97[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_12;                        // 0x76C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63EB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C98[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCurveFloat*                           CallFunc_Array_Get_Item_13;                        // 0x778(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FS_Volumetric_Clouds                  CallFunc_GetDataTableRowFromName_OutRow_10;        // 0x780(0x100)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_10;   // 0x880(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63EC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C99[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCurveFloat*                           CallFunc_Array_Get_Item_14;                        // 0x888(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_11;      // 0x890(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_15;                        // 0x8A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Volumetric_Clouds                  CallFunc_GetDataTableRowFromName_OutRow_11;        // 0x8A8(0x100)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_11;   // 0x9A8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63ED[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C9A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_12;      // 0x9B0(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_16;                        // 0x9C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Volumetric_Clouds                  CallFunc_GetDataTableRowFromName_OutRow_12;        // 0x9C8(0x100)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_12;   // 0xAC8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63EE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C9B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCurveFloat*                           CallFunc_Array_Get_Item_17;                        // 0xAD0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           CallFunc_Array_Get_Item_18;                        // 0xAD8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_4;                 // 0xAE0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63EF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C9C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_13;      // 0xAE8(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_14;      // 0xAF8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_19;                        // 0xB08(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_15;      // 0xB10(0x10)(ReferenceParm)
 	struct FS_Volumetric_Clouds                  CallFunc_GetDataTableRowFromName_OutRow_13;        // 0xB20(0x100)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_13;   // 0xC20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C9D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_16;      // 0xC28(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_20;                        // 0xC38(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_21;                        // 0xC40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F1[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C9E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Color_Correction_Presets           CallFunc_GetDataTableRowFromName_OutRow_14;        // 0xC50(0xB0)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_14;   // 0xD00(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1C9F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Exposure                           CallFunc_GetDataTableRowFromName_OutRow_15;        // 0xD08(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_15;   // 0xD20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CA0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_22;                        // 0xD24(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CA1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Exposure                           CallFunc_GetDataTableRowFromName_OutRow_16;        // 0xD30(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_16;   // 0xD48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -954,7 +954,7 @@ struct UTimeofDay_Lighting_C_Vault_Override_Cache_Params
 {
 public:
 	int32                                        VaultOverride;                                     // 0x0(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CA2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames;         // 0x8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item;                           // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Vault_Override                     CallFunc_GetDataTableRowFromName_OutRow;           // 0x20(0x18)(HasGetValueTypeHash)
@@ -976,25 +976,25 @@ public:
 	class FName                                  CallFunc_Array_Get_Item;                           // 0x68(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow;           // 0x70(0x20)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CA3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            CallFunc_Array_Get_Item_1;                         // 0x98(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0xA0(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_2;                         // 0xB0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_1;         // 0xB8(0x60)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x118(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CA4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_3;       // 0x120(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_3;                         // 0x130(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_4;                         // 0x138(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x148(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x170(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CA5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_5;                         // 0x174(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0x17C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CA6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x180(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x184(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63FA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CA7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_6;                         // 0x188(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_7;                         // 0x198(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_4;       // 0x1A8(0x10)(ReferenceParm)
@@ -1016,12 +1016,12 @@ public:
 	class FName                                  CallFunc_Array_Get_Item;                           // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x28(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63FB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CAF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0x58(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_1;                         // 0x68(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x70(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x98(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63FC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CB0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0xA0(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_2;                         // 0xB0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fog_Volumetric                     CallFunc_GetDataTableRowFromName_OutRow_2;         // 0xB8(0x18)(HasGetValueTypeHash)
@@ -1036,7 +1036,7 @@ public:
 	double                                       Light_Intensity_Out;                               // 0x0(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x3710 (0x3710 - 0x0)
+// 0x3770 (0x3770 - 0x0)
 // Function TimeofDay_Lighting.TimeofDay_Lighting_C.Sky
 struct UTimeofDay_Lighting_C_Sky_Params
 {
@@ -1044,10 +1044,10 @@ public:
 	float                                        Nebula_Brightness;                                 // 0x0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Ring_Brightness_Value;                             // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Atmosphere_Dawn_Dusk;                              // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63FD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CCA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              Sky_Angle_Z_Inv_Rotator;                           // 0x10(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                        Fae_Magic_Brightness;                              // 0x28(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63FE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1CCB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCurveFloat*                           Stars_Brightness_Ultra_Clear;                      // 0x30(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           Stars_Brightness;                                  // 0x38(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           SkyLight_Lerp;                                     // 0x40(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -1106,849 +1106,862 @@ public:
 	class UCurveFloat*                           Sky_Sphere_Visibility;                             // 0x2E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                       AdjustedTime_24Hour;                               // 0x2E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           Sky_Atm_Height_Fog_Contribution;                   // 0x2F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue;                         // 0x2F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames;         // 0x300(0x10)(ReferenceParm)
-	double                                       CallFunc_Lerp_ReturnValue_1;                       // 0x310(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0x318(0x10)(ReferenceParm)
-	double                                       CallFunc_Lerp_ReturnValue_2;                       // 0x328(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item;                           // 0x330(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x338(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x360(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63FF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x364(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0x368(0x10)(ReferenceParm)
-	double                                       CallFunc_Lerp_ReturnValue_3;                       // 0x378(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_1;                         // 0x380(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Atmosphere                         CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x388(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x3B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0x3B1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6400[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_3;       // 0x3B8(0x10)(ReferenceParm)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_4;       // 0x3C8(0x10)(ReferenceParm)
-	float                                        CallFunc_GetFloatValue_ReturnValue_1;              // 0x3D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6401[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_5;       // 0x3E0(0x10)(ReferenceParm)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_1;                 // 0x3F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6402[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue;               // 0x3F4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_2;                 // 0x3F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6403[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetFloatValue_ReturnValue_2;              // 0x3FC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_3;              // 0x400(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_3;                 // 0x404(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6404[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_6;       // 0x408(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_2;                         // 0x418(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Atmosphere                         CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x420(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x448(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6405[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetFloatValue_ReturnValue_4;              // 0x44C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_4;                       // 0x450(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_5;                       // 0x458(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_5;              // 0x460(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6406[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_ReturnValue_6;                       // 0x468(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0x2F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CCC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_ReturnValue;                         // 0x300(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_1;                       // 0x308(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_2;                       // 0x310(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_3;                       // 0x318(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames;         // 0x320(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0x330(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item;                           // 0x340(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow;           // 0x348(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x370(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CCD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x374(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0x378(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_1;                         // 0x388(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Atmosphere                         CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x390(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x3B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CCE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_3;       // 0x3C0(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_4;       // 0x3D0(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_2;                         // 0x3E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_5;       // 0x3E8(0x10)(ReferenceParm)
+	struct FS_Atmosphere                         CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x3F8(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x420(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CCF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue_1;              // 0x424(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_6;       // 0x428(0x10)(ReferenceParm)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_1;                 // 0x438(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CD0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue;               // 0x43C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_2;                 // 0x440(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CD1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue_2;              // 0x444(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_3;              // 0x448(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_3;                 // 0x44C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CD2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue_4;              // 0x450(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_5;              // 0x454(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_4;                       // 0x458(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_5;                       // 0x460(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_6;              // 0x468(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CD3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_7;       // 0x470(0x10)(ReferenceParm)
-	double                                       CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x480(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0x488(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6407[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Conv_ByteToDouble_ReturnValue_1;          // 0x490(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_3;                         // 0x498(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_FTrunc_ReturnValue_1;                     // 0x4A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x4A4(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x510(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6408[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_8;       // 0x518(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_4;                         // 0x528(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_4;         // 0x530(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_4;    // 0x59C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6409[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_9;       // 0x5A0(0x10)(ReferenceParm)
-	double                                       CallFunc_Conv_ByteToDouble_ReturnValue_2;          // 0x5B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_FTrunc_ReturnValue_2;                     // 0x5B8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_6;              // 0x5BC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_5;                         // 0x5C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_10;      // 0x5C8(0x10)(ReferenceParm)
-	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_5;         // 0x5D8(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_5;    // 0x644(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_640A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_6;                         // 0x648(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_6;         // 0x650(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_6;    // 0x678(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_640B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_11;      // 0x680(0x10)(ReferenceParm)
-	double                                       CallFunc_Conv_ByteToDouble_ReturnValue_3;          // 0x690(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_FTrunc_ReturnValue_3;                     // 0x698(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_7;                         // 0x69C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_7;         // 0x6A4(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_7;    // 0x710(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_640C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_12;      // 0x718(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_8;                         // 0x728(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_9;                         // 0x730(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_8;         // 0x738(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_8;    // 0x760(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_640D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_9;         // 0x768(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_9;    // 0x790(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_640E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_10;                        // 0x794(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_640F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_10;        // 0x7A0(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_10;   // 0x7C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6410[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_11;                        // 0x7CC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6411[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Atmosphere                         CallFunc_GetDataTableRowFromName_OutRow_11;        // 0x7D8(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_11;   // 0x800(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6412[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_ReturnValue_7;                       // 0x808(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_8;                       // 0x810(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_9;                       // 0x818(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_10;                      // 0x820(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_11;                      // 0x828(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_13;      // 0x830(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_12;                        // 0x840(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_12;        // 0x848(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_12;   // 0x870(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6413[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetFloatValue_ReturnValue_7;              // 0x874(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_12;                      // 0x878(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_13;                        // 0x880(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_14;                        // 0x890(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_15;                        // 0x8A0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_14;      // 0x8B0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_16;                        // 0x8C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_13;        // 0x8C8(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_13;   // 0x8F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6414[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_17;                        // 0x8F4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6415[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_ReturnValue_13;                      // 0x908(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_18;                        // 0x910(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_19;                        // 0x920(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_20;                        // 0x930(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_21;                        // 0x940(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_1;             // 0x950(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_4;                 // 0x954(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6416[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_22;                        // 0x958(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_23;                        // 0x968(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_24;                        // 0x978(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_14;                      // 0x988(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_15;                      // 0x990(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_16;                      // 0x998(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_15;      // 0x9A0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_25;                        // 0x9B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_14;        // 0x9B8(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_14;   // 0x9D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6417[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_ReturnValue_17;                      // 0x9E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UDataTable*                            CallFunc_Array_Get_Item_26;                        // 0x9E8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_16;      // 0x9F0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_27;                        // 0xA00(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_15;        // 0xA08(0x60)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_15;   // 0xA68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6418[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_28;                        // 0xA6C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_29;                        // 0xA7C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6419[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_16;        // 0xA88(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_16;   // 0xAB0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_641A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_30;                        // 0xAB4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_641B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_ReturnValue_18;                      // 0xAC8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_31;                        // 0xAD0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_32;                        // 0xAE0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_33;                        // 0xAF0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_17;      // 0xB00(0x10)(ReferenceParm)
-	double                                       CallFunc_Lerp_ReturnValue_19;                      // 0xB10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_20;                      // 0xB18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_21;                      // 0xB20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_18;      // 0xB28(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_34;                        // 0xB38(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0xB40(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FS_Ring_Type                          CallFunc_GetDataTableRowFromName_OutRow_17;        // 0xC28(0x30)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_17;   // 0xC58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_641C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_35;                        // 0xC5C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_36;                        // 0xC6C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_37;                        // 0xC7C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_641D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Ring_Color                         CallFunc_GetDataTableRowFromName_OutRow_18;        // 0xC88(0x18)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_18;   // 0xCA0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_641E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_38;                        // 0xCA4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_641F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class UCurveFloat*>                   K2Node_MakeArray_Array;                            // 0xCB8(0x10)(ReferenceParm)
-	struct FLinearColor                          CallFunc_Array_Get_Item_39;                        // 0xCC8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_19;      // 0xCD8(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_40;                        // 0xCE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_20;      // 0xCF0(0x10)(ReferenceParm)
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_19;        // 0xD00(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_19;   // 0xD10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6420[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_41;                        // 0xD14(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_20;        // 0xD1C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_20;   // 0xD2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6421[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class UMaterialInstance*>             K2Node_MakeArray_Array_1;                          // 0xD30(0x10)(ReferenceParm)
-	TArray<class UMaterialInstance*>             K2Node_MakeArray_Array_2;                          // 0xD40(0x10)(ReferenceParm)
-	TArray<class UMaterialInstance*>             K2Node_MakeArray_Array_3;                          // 0xD50(0x10)(ReferenceParm)
-	struct FLinearColor                          CallFunc_Array_Get_Item_42;                        // 0xD60(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_43;                        // 0xD70(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_21;      // 0xD80(0x10)(ReferenceParm)
-	TArray<class UMaterialInstance*>             K2Node_MakeArray_Array_4;                          // 0xD90(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_44;                        // 0xDA0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_21;        // 0xDA8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_21;   // 0xDB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_5;                 // 0xDB9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6422[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_22;      // 0xDC0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_45;                        // 0xDD0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInstance*>             K2Node_MakeArray_Array_5;                          // 0xDD8(0x10)(ReferenceParm)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_22;        // 0xDE8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_22;   // 0xDF8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_6;                 // 0xDF9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6423[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_23;      // 0xE00(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_46;                        // 0xE10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_24;      // 0xE18(0x10)(ReferenceParm)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_23;        // 0xE28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_23;   // 0xE38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6424[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_47;                        // 0xE3C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_24;        // 0xE44(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_24;   // 0xE54(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_7;                 // 0xE55(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6425[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_48;                        // 0xE58(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UCurveFloat*>                   K2Node_MakeArray_Array_6;                          // 0xE68(0x10)(ReferenceParm)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_25;      // 0xE78(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_49;                        // 0xE88(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_25;        // 0xE90(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_25;   // 0xEA0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6426[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_50;                        // 0xEA4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_8;                 // 0xEB4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6427[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class UCurveFloat*>                   K2Node_MakeArray_Array_7;                          // 0xEB8(0x10)(ReferenceParm)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_26;      // 0xEC8(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_51;                        // 0xED8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_27;      // 0xEE0(0x10)(ReferenceParm)
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_26;        // 0xEF0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_26;   // 0xF00(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6428[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_52;                        // 0xF04(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_27;        // 0xF0C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_27;   // 0xF1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6429[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_53;                        // 0xF20(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_54;                        // 0xF30(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_28;      // 0xF40(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_55;                        // 0xF50(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_28;        // 0xF58(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_28;   // 0xF68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_9;                 // 0xF69(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_642A[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_29;      // 0xF70(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_56;                        // 0xF80(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_29;        // 0xF88(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_29;   // 0xF98(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_10;                // 0xF99(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_642B[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_30;      // 0xFA0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_57;                        // 0xFB0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_31;      // 0xFB8(0x10)(ReferenceParm)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_30;        // 0xFC8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_30;   // 0xFD8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_642C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_58;                        // 0xFDC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_31;        // 0xFE4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_31;   // 0xFF4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_11;                // 0xFF5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_642D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_59;                        // 0xFF8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_32;      // 0x1008(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_60;                        // 0x1018(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_61;                        // 0x1020(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_32;        // 0x1030(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_32;   // 0x1040(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_12;                // 0x1041(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_642E[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_33;      // 0x1048(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_62;                        // 0x1058(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_34;      // 0x1060(0x10)(ReferenceParm)
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_33;        // 0x1070(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_33;   // 0x1080(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_642F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_63;                        // 0x1084(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_34;        // 0x108C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_34;   // 0x109C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6430[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_64;                        // 0x10A0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_65;                        // 0x10B0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_35;      // 0x10C0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_66;                        // 0x10D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_35;        // 0x10D8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_35;   // 0x10E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_13;                // 0x10E9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6431[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_36;      // 0x10F0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_67;                        // 0x1100(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_36;        // 0x1108(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_36;   // 0x1118(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_14;                // 0x1119(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6432[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_37;      // 0x1120(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_68;                        // 0x1130(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_38;      // 0x1138(0x10)(ReferenceParm)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_37;        // 0x1148(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_37;   // 0x1158(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6433[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_69;                        // 0x115C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_38;        // 0x1164(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_38;   // 0x1174(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_15;                // 0x1175(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6434[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_70;                        // 0x1178(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_39;      // 0x1188(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_71;                        // 0x1198(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_72;                        // 0x11A0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_39;        // 0x11B0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_39;   // 0x11C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_16;                // 0x11C1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6435[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_40;      // 0x11C8(0x10)(ReferenceParm)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_41;      // 0x11D8(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_73;                        // 0x11E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_74;                        // 0x11F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_40;        // 0x11F8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_40;   // 0x1208(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6436[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_41;        // 0x120C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_41;   // 0x121C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6437[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_75;                        // 0x1220(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_76;                        // 0x1230(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_42;      // 0x1240(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_77;                        // 0x1250(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_42;        // 0x1258(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_42;   // 0x1268(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_17;                // 0x1269(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6438[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_43;      // 0x1270(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_78;                        // 0x1280(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_43;        // 0x1288(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_43;   // 0x1298(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_18;                // 0x1299(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6439[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_44;      // 0x12A0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_79;                        // 0x12B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_45;      // 0x12B8(0x10)(ReferenceParm)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_44;        // 0x12C8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_44;   // 0x12D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_643A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_80;                        // 0x12DC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_45;        // 0x12E4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_45;   // 0x12F4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_19;                // 0x12F5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_643B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_81;                        // 0x12F8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_46;      // 0x1308(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_82;                        // 0x1318(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_46;        // 0x1320(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_46;   // 0x1330(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_20;                // 0x1331(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_643C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_47;      // 0x1338(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_83;                        // 0x1348(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_47;        // 0x1350(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_47;   // 0x1370(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_643D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Conv_IntToDouble_ReturnValue;             // 0x1378(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UDataTable*                            CallFunc_Array_Get_Item_84;                        // 0x1380(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_48;      // 0x1388(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_85;                        // 0x1398(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_48;        // 0x13A0(0x60)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_48;   // 0x1400(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_643E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x1408(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Conv_IntToDouble_ReturnValue_2;           // 0x1410(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Conv_IntToDouble_ReturnValue_3;           // 0x1418(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_49;      // 0x1420(0x10)(ReferenceParm)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_50;      // 0x1430(0x10)(ReferenceParm)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_51;      // 0x1440(0x10)(ReferenceParm)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_52;      // 0x1450(0x10)(ReferenceParm)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_53;      // 0x1460(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_86;                        // 0x1470(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_SecondaryMoon_Groups               CallFunc_GetDataTableRowFromName_OutRow_49;        // 0x1478(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_49;   // 0x1498(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_643F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_54;      // 0x14A0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_87;                        // 0x14B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_50;        // 0x14B8(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_50;   // 0x14D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6440[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_88;                        // 0x14DC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6441[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_51;        // 0x14E8(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_51;   // 0x1510(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6442[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UDataTable*                            CallFunc_Array_Get_Item_89;                        // 0x1518(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_55;      // 0x1520(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_90;                        // 0x1530(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_52;        // 0x1538(0x60)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_52;   // 0x1598(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6443[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_91;                        // 0x159C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_92;                        // 0x15A4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6444[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_53;        // 0x15B0(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_53;   // 0x15D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6445[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_54;        // 0x15E0(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_54;   // 0x1608(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6446[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_93;                        // 0x160C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6447[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_55;        // 0x1618(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_55;   // 0x1640(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6448[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_56;      // 0x1648(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_94;                        // 0x1658(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Atm_Moon_Visbility                 CallFunc_GetDataTableRowFromName_OutRow_56;        // 0x1660(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_56;   // 0x1680(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_21;                // 0x1681(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6449[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_57;      // 0x1688(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_95;                        // 0x1698(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_22;                // 0x16A0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_644A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Ring_Toggle                        CallFunc_GetDataTableRowFromName_OutRow_57;        // 0x16A8(0x18)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_57;   // 0x16C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_644B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetFloatValue_ReturnValue_8;              // 0x16C4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_2;             // 0x16C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_23;                // 0x16CC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_644C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetFloatValue_ReturnValue_9;              // 0x16D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_10;             // 0x16D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_11;             // 0x16D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_12;             // 0x16DC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_58;      // 0x16E0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_96;                        // 0x16F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Atm_Moon_Visbility                 CallFunc_GetDataTableRowFromName_OutRow_58;        // 0x16F8(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_58;   // 0x1718(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_644D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetFloatValue_ReturnValue_13;             // 0x171C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_14;             // 0x1720(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_15;             // 0x1724(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_16;             // 0x1728(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_644E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_59;      // 0x1730(0x10)(ReferenceParm)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_60;      // 0x1740(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_97;                        // 0x1750(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_61;      // 0x1758(0x10)(ReferenceParm)
-	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_59;        // 0x1768(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_59;   // 0x1788(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_644F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_98;                        // 0x178C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6450[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_60;        // 0x1798(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_60;   // 0x17B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6451[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UDataTable*                            CallFunc_Array_Get_Item_99;                        // 0x17C0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_62;      // 0x17C8(0x10)(ReferenceParm)
-	class UDataTable*                            CallFunc_Array_Get_Item_100;                       // 0x17D8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_101;                       // 0x17E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_63;      // 0x17E8(0x10)(ReferenceParm)
-	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_61;        // 0x17F8(0x60)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_61;   // 0x1858(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6452[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_102;                       // 0x185C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6453[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_62;        // 0x1868(0x60)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_62;   // 0x18C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6454[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_103;                       // 0x18CC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_63;        // 0x18D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_63;   // 0x18D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6455[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_104;                       // 0x18DC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_105;                       // 0x18EC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6456[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_64;      // 0x1900(0x10)(ReferenceParm)
-	float                                        CallFunc_GetFloatValue_ReturnValue_17;             // 0x1910(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_106;                       // 0x1914(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue;              // 0x191C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6457[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Atmosphere                         CallFunc_GetDataTableRowFromName_OutRow_64;        // 0x1930(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_64;   // 0x1958(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6458[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_107;                       // 0x195C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6459[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_65;      // 0x1970(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_108;                       // 0x1980(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_65;        // 0x1988(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_65;   // 0x19B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_645A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_109;                       // 0x19B4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_24;                // 0x19C4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_645B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_66;      // 0x19C8(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_110;                       // 0x19D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_66;        // 0x19E0(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_66;   // 0x1A08(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_645C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_111;                       // 0x1A0C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_25;                // 0x1A1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_645D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_67;      // 0x1A20(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_112;                       // 0x1A30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_67;        // 0x1A38(0x28)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_67;   // 0x1A60(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_645E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_113;                       // 0x1A64(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_26;                // 0x1A74(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_645F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_114;                       // 0x1A78(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_3;             // 0x1A88(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_27;                // 0x1A8C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6460[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_115;                       // 0x1A90(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_68;      // 0x1AA0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_116;                       // 0x1AB0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_68;        // 0x1AB8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_68;   // 0x1ABC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6461[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_69;      // 0x1AC0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_117;                       // 0x1AD0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_118;                       // 0x1AD8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_69;        // 0x1AE8(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_69;   // 0x1B08(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6462[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UDataTable*                            CallFunc_Array_Get_Item_119;                       // 0x1B10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_70;      // 0x1B18(0x10)(ReferenceParm)
-	float                                        CallFunc_GetFloatValue_ReturnValue_18;             // 0x1B28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_120;                       // 0x1B2C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6463[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_70;        // 0x1B38(0x60)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_70;   // 0x1B98(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6464[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_121;                       // 0x1B9C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue_1;            // 0x1BAC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_4;             // 0x1BBC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_28;                // 0x1BC0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6465[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_71;      // 0x1BC8(0x10)(ReferenceParm)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_72;      // 0x1BD8(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_122;                       // 0x1BE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_71;        // 0x1BF0(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_71;   // 0x1C10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6466[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_123;                       // 0x1C14(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6467[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UDataTable*                            CallFunc_Array_Get_Item_124;                       // 0x1C28(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_73;      // 0x1C30(0x10)(ReferenceParm)
-	float                                        CallFunc_GetFloatValue_ReturnValue_19;             // 0x1C40(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_125;                       // 0x1C44(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6468[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_72;        // 0x1C50(0x60)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_72;   // 0x1CB0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6469[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_5;             // 0x1CB4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_29;                // 0x1CB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_646A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_126;                       // 0x1CBC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_646B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_74;      // 0x1CC8(0x10)(ReferenceParm)
-	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_73;        // 0x1CD8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_73;   // 0x1CDC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_646C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CallFunc_Array_Get_Item_127;                       // 0x1CE0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_74;        // 0x1CE8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_74;   // 0x1CEC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_646D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_128;                       // 0x1CF0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue_2;            // 0x1D00(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_75;      // 0x1D10(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_129;                       // 0x1D20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_130;                       // 0x1D28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_75;        // 0x1D38(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_75;   // 0x1D58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_646E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UDataTable*                            CallFunc_Array_Get_Item_131;                       // 0x1D60(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_76;      // 0x1D68(0x10)(ReferenceParm)
-	float                                        CallFunc_GetFloatValue_ReturnValue_20;             // 0x1D78(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_132;                       // 0x1D7C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_646F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_76;        // 0x1D88(0x60)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_76;   // 0x1DE8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6470[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_77;      // 0x1DF0(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_133;                       // 0x1E00(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_77;        // 0x1E08(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_77;   // 0x1E0C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6471[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_78;      // 0x1E10(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_134;                       // 0x1E20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_135;                       // 0x1E28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_78;        // 0x1E38(0x20)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_78;   // 0x1E58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6472[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UDataTable*                            CallFunc_Array_Get_Item_136;                       // 0x1E60(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_79;      // 0x1E68(0x10)(ReferenceParm)
-	float                                        CallFunc_GetFloatValue_ReturnValue_21;             // 0x1E78(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_Array_Get_Item_137;                       // 0x1E7C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6473[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_79;        // 0x1E88(0x60)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_79;   // 0x1EE8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6474[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_6;             // 0x1EEC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_30;                // 0x1EF0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6475[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_138;                       // 0x1EF4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_7;             // 0x1F04(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue_3;            // 0x1F08(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_31;                // 0x1F18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6476[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_8;             // 0x1F1C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_9;             // 0x1F20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_32;                // 0x1F24(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_33;                // 0x1F25(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6477[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetFloatValue_ReturnValue_22;             // 0x1F28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_10;            // 0x1F2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_ReturnValue_22;                      // 0x1F30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_34;                // 0x1F38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6478[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_ReturnValue_6;                       // 0x480(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_3;                         // 0x488(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x490(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x4B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CD4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_8;       // 0x4C0(0x10)(ReferenceParm)
+	double                                       CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x4D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0x4D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_4;                         // 0x4DC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CD5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Conv_ByteToDouble_ReturnValue_1;          // 0x4E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_4;         // 0x4F0(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_4;    // 0x55C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CD6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_FTrunc_ReturnValue_1;                     // 0x560(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CD7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_9;       // 0x568(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_5;                         // 0x578(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_5;         // 0x580(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_5;    // 0x5EC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CD8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Conv_ByteToDouble_ReturnValue_2;          // 0x5F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_FTrunc_ReturnValue_2;                     // 0x5F8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CD9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_10;      // 0x600(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_11;      // 0x610(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_6;                         // 0x620(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_7;                         // 0x628(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_6;         // 0x630(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_6;    // 0x69C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CDA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_7;         // 0x6A0(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_7;    // 0x6C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CDB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_ReturnValue_7;                       // 0x6D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_12;      // 0x6D8(0x10)(ReferenceParm)
+	double                                       CallFunc_Conv_ByteToDouble_ReturnValue_3;          // 0x6E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_FTrunc_ReturnValue_3;                     // 0x6F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CDC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_13;      // 0x6F8(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_8;                         // 0x708(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_8;         // 0x710(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_8;    // 0x77C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CDD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_9;                         // 0x780(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_9;         // 0x788(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_9;    // 0x7B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CDE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_10;                        // 0x7B4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CDF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_10;        // 0x7C0(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_10;   // 0x7E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CE0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_11;                        // 0x7EC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CE1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_11;        // 0x7F8(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_11;   // 0x820(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CE2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_12;                        // 0x824(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CE3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Atmosphere                         CallFunc_GetDataTableRowFromName_OutRow_12;        // 0x830(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_12;   // 0x858(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CE4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_ReturnValue_8;                       // 0x860(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_9;                       // 0x868(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_10;                      // 0x870(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_11;                      // 0x878(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_12;                      // 0x880(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_14;      // 0x888(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_13;                        // 0x898(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_13;        // 0x8A0(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_13;   // 0x8C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CE5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue_7;              // 0x8CC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_13;                      // 0x8D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_14;                        // 0x8D8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_15;                        // 0x8E8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_16;                        // 0x8F8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_17;                        // 0x908(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_18;                        // 0x918(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_19;                        // 0x928(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_20;                        // 0x938(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_21;                        // 0x948(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_14;                      // 0x958(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_1;             // 0x960(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_4;                 // 0x964(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CE7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_ReturnValue_15;                      // 0x968(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_16;                      // 0x970(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_22;                        // 0x978(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_17;                      // 0x988(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_23;                        // 0x990(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_24;                        // 0x9A0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_18;                      // 0x9B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_19;                      // 0x9B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_20;                      // 0x9C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_21;                      // 0x9C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_15;      // 0x9D0(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_25;                        // 0x9E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_14;        // 0x9E8(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_14;   // 0xA08(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CE8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UDataTable*                            CallFunc_Array_Get_Item_26;                        // 0xA10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_27;                        // 0xA18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_16;      // 0xA20(0x10)(ReferenceParm)
+	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_15;        // 0xA30(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_15;   // 0xA58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CE9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_28;                        // 0xA5C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CEA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_16;        // 0xA68(0x60)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_16;   // 0xAC8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CEB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_ReturnValue_22;                      // 0xAD0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_29;                        // 0xAD8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_30;                        // 0xAE8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_31;                        // 0xAF8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_32;                        // 0xB08(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_33;                        // 0xB18(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_17;      // 0xB28(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_18;      // 0xB38(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_34;                        // 0xB48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0xB50(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FS_Ring_Type                          CallFunc_GetDataTableRowFromName_OutRow_17;        // 0xC38(0x30)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_17;   // 0xC68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CEC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_35;                        // 0xC6C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_36;                        // 0xC7C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_37;                        // 0xC8C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CED[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Ring_Color                         CallFunc_GetDataTableRowFromName_OutRow_18;        // 0xC98(0x18)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_18;   // 0xCB0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CEE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_38;                        // 0xCB4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CEF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class UCurveFloat*>                   K2Node_MakeArray_Array;                            // 0xCC8(0x10)(ReferenceParm)
+	struct FLinearColor                          CallFunc_Array_Get_Item_39;                        // 0xCD8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_19;      // 0xCE8(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_40;                        // 0xCF8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_20;      // 0xD00(0x10)(ReferenceParm)
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_19;        // 0xD10(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_19;   // 0xD20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CF0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_41;                        // 0xD24(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_20;        // 0xD2C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_20;   // 0xD3C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CF2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class UMaterialInstance*>             K2Node_MakeArray_Array_1;                          // 0xD40(0x10)(ReferenceParm)
+	TArray<class UMaterialInstance*>             K2Node_MakeArray_Array_2;                          // 0xD50(0x10)(ReferenceParm)
+	TArray<class UMaterialInstance*>             K2Node_MakeArray_Array_3;                          // 0xD60(0x10)(ReferenceParm)
+	struct FLinearColor                          CallFunc_Array_Get_Item_42;                        // 0xD70(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_43;                        // 0xD80(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_21;      // 0xD90(0x10)(ReferenceParm)
+	TArray<class UMaterialInstance*>             K2Node_MakeArray_Array_4;                          // 0xDA0(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_44;                        // 0xDB0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_21;        // 0xDB8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_21;   // 0xDC8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_5;                 // 0xDC9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CF3[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_22;      // 0xDD0(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_45;                        // 0xDE0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInstance*>             K2Node_MakeArray_Array_5;                          // 0xDE8(0x10)(ReferenceParm)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_22;        // 0xDF8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_22;   // 0xE08(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_6;                 // 0xE09(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CF4[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_23;      // 0xE10(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_46;                        // 0xE20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_24;      // 0xE28(0x10)(ReferenceParm)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_23;        // 0xE38(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_23;   // 0xE48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CF5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_47;                        // 0xE4C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_24;        // 0xE54(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_24;   // 0xE64(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_7;                 // 0xE65(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CF6[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_48;                        // 0xE68(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UCurveFloat*>                   K2Node_MakeArray_Array_6;                          // 0xE78(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_25;      // 0xE88(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_49;                        // 0xE98(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_25;        // 0xEA0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_25;   // 0xEB0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CF7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_50;                        // 0xEB4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_8;                 // 0xEC4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CF8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class UCurveFloat*>                   K2Node_MakeArray_Array_7;                          // 0xEC8(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_26;      // 0xED8(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_51;                        // 0xEE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_27;      // 0xEF0(0x10)(ReferenceParm)
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_26;        // 0xF00(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_26;   // 0xF10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CF9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_52;                        // 0xF14(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_27;        // 0xF1C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_27;   // 0xF2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CFA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_53;                        // 0xF30(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_54;                        // 0xF40(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_28;      // 0xF50(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_55;                        // 0xF60(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_28;        // 0xF68(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_28;   // 0xF78(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_9;                 // 0xF79(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CFB[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_29;      // 0xF80(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_56;                        // 0xF90(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_29;        // 0xF98(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_29;   // 0xFA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_10;                // 0xFA9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CFC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_30;      // 0xFB0(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_57;                        // 0xFC0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_31;      // 0xFC8(0x10)(ReferenceParm)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_30;        // 0xFD8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_30;   // 0xFE8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CFD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_58;                        // 0xFEC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_31;        // 0xFF4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_31;   // 0x1004(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_11;                // 0x1005(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CFE[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_59;                        // 0x1008(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_32;      // 0x1018(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_60;                        // 0x1028(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_61;                        // 0x1030(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_32;        // 0x1040(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_32;   // 0x1050(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_12;                // 0x1051(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1CFF[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_33;      // 0x1058(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_62;                        // 0x1068(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_34;      // 0x1070(0x10)(ReferenceParm)
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_33;        // 0x1080(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_33;   // 0x1090(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D01[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_63;                        // 0x1094(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_34;        // 0x109C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_34;   // 0x10AC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D02[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_64;                        // 0x10B0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_65;                        // 0x10C0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_35;      // 0x10D0(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_66;                        // 0x10E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_35;        // 0x10E8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_35;   // 0x10F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_13;                // 0x10F9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D03[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_36;      // 0x1100(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_67;                        // 0x1110(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_36;        // 0x1118(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_36;   // 0x1128(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_14;                // 0x1129(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D04[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_37;      // 0x1130(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_68;                        // 0x1140(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_38;      // 0x1148(0x10)(ReferenceParm)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_37;        // 0x1158(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_37;   // 0x1168(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D05[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_69;                        // 0x116C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_38;        // 0x1174(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_38;   // 0x1184(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_15;                // 0x1185(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D06[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_70;                        // 0x1188(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_39;      // 0x1198(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_71;                        // 0x11A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_72;                        // 0x11B0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_39;        // 0x11C0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_39;   // 0x11D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_16;                // 0x11D1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D08[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_40;      // 0x11D8(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_41;      // 0x11E8(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_73;                        // 0x11F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_74;                        // 0x1200(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_40;        // 0x1208(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_40;   // 0x1218(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D09[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_41;        // 0x121C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_41;   // 0x122C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D0A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_75;                        // 0x1230(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_76;                        // 0x1240(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_42;      // 0x1250(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_77;                        // 0x1260(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_42;        // 0x1268(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_42;   // 0x1278(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_17;                // 0x1279(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D0C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_43;      // 0x1280(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_78;                        // 0x1290(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_43;        // 0x1298(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_43;   // 0x12A8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_18;                // 0x12A9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D0D[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_44;      // 0x12B0(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_79;                        // 0x12C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_45;      // 0x12C8(0x10)(ReferenceParm)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_44;        // 0x12D8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_44;   // 0x12E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D0E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_80;                        // 0x12EC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color                         CallFunc_GetDataTableRowFromName_OutRow_45;        // 0x12F4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_45;   // 0x1304(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_19;                // 0x1305(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D0F[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_81;                        // 0x1308(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_46;      // 0x1318(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_82;                        // 0x1328(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Moon_Color_Saturation              CallFunc_GetDataTableRowFromName_OutRow_46;        // 0x1330(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_46;   // 0x1340(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_20;                // 0x1341(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D10[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_47;      // 0x1348(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_83;                        // 0x1358(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_47;        // 0x1360(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_47;   // 0x1380(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D11[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Conv_IntToDouble_ReturnValue;             // 0x1388(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UDataTable*                            CallFunc_Array_Get_Item_84;                        // 0x1390(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_48;      // 0x1398(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_85;                        // 0x13A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_48;        // 0x13B0(0x60)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_48;   // 0x1410(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D12[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x1418(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Conv_IntToDouble_ReturnValue_2;           // 0x1420(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Conv_IntToDouble_ReturnValue_3;           // 0x1428(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_49;      // 0x1430(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_50;      // 0x1440(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_51;      // 0x1450(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_52;      // 0x1460(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_53;      // 0x1470(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_86;                        // 0x1480(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_SecondaryMoon_Groups               CallFunc_GetDataTableRowFromName_OutRow_49;        // 0x1488(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_49;   // 0x14A8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D13[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_54;      // 0x14B0(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_87;                        // 0x14C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_50;        // 0x14C8(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_50;   // 0x14E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D14[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_88;                        // 0x14EC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D15[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_51;        // 0x14F8(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_51;   // 0x1520(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D16[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UDataTable*                            CallFunc_Array_Get_Item_89;                        // 0x1528(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_55;      // 0x1530(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_90;                        // 0x1540(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_52;        // 0x1548(0x60)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_52;   // 0x15A8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D17[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_91;                        // 0x15AC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_92;                        // 0x15B4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D18[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_53;        // 0x15C0(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_53;   // 0x15E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D19[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_54;        // 0x15F0(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_54;   // 0x1618(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D1A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_93;                        // 0x161C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D1B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Secondary_moon_Color               CallFunc_GetDataTableRowFromName_OutRow_55;        // 0x1628(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_55;   // 0x1650(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D1C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_56;      // 0x1658(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_94;                        // 0x1668(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Atm_Moon_Visbility                 CallFunc_GetDataTableRowFromName_OutRow_56;        // 0x1670(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_56;   // 0x1690(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_21;                // 0x1691(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D1D[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_57;      // 0x1698(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_95;                        // 0x16A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_22;                // 0x16B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D1E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Ring_Toggle                        CallFunc_GetDataTableRowFromName_OutRow_57;        // 0x16B8(0x18)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_57;   // 0x16D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D1F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue_8;              // 0x16D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_2;             // 0x16D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_23;                // 0x16DC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D20[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue_9;              // 0x16E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_10;             // 0x16E4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_11;             // 0x16E8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_12;             // 0x16EC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_58;      // 0x16F0(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_96;                        // 0x1700(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Atm_Moon_Visbility                 CallFunc_GetDataTableRowFromName_OutRow_58;        // 0x1708(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_58;   // 0x1728(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D21[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue_13;             // 0x172C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_14;             // 0x1730(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_15;             // 0x1734(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_16;             // 0x1738(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D22[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_59;      // 0x1740(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_60;      // 0x1750(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_97;                        // 0x1760(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_61;      // 0x1768(0x10)(ReferenceParm)
+	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_59;        // 0x1778(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_59;   // 0x1798(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D23[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_98;                        // 0x179C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D24[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_60;        // 0x17A8(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_60;   // 0x17C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D25[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UDataTable*                            CallFunc_Array_Get_Item_99;                        // 0x17D0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_62;      // 0x17D8(0x10)(ReferenceParm)
+	class UDataTable*                            CallFunc_Array_Get_Item_100;                       // 0x17E8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_101;                       // 0x17F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_63;      // 0x17F8(0x10)(ReferenceParm)
+	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_61;        // 0x1808(0x60)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_61;   // 0x1868(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D26[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_102;                       // 0x186C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D27[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_62;        // 0x1878(0x60)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_62;   // 0x18D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D28[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_103;                       // 0x18DC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_63;        // 0x18E4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_63;   // 0x18E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D29[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_104;                       // 0x18EC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_105;                       // 0x18FC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D2A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_64;      // 0x1910(0x10)(ReferenceParm)
+	float                                        CallFunc_GetFloatValue_ReturnValue_17;             // 0x1920(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_106;                       // 0x1924(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue;              // 0x192C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D2B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Atmosphere                         CallFunc_GetDataTableRowFromName_OutRow_64;        // 0x1940(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_64;   // 0x1968(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D2C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_107;                       // 0x196C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D2D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_65;      // 0x1980(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_108;                       // 0x1990(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_65;        // 0x1998(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_65;   // 0x19C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D2E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_109;                       // 0x19C4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_24;                // 0x19D4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D2F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_66;      // 0x19D8(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_110;                       // 0x19E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_66;        // 0x19F0(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_66;   // 0x1A18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D30[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_111;                       // 0x1A1C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_25;                // 0x1A2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D31[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_67;      // 0x1A30(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_112;                       // 0x1A40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_67;        // 0x1A48(0x28)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_67;   // 0x1A70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D32[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_113;                       // 0x1A74(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_26;                // 0x1A84(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D33[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_114;                       // 0x1A88(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_3;             // 0x1A98(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_27;                // 0x1A9C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D34[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_115;                       // 0x1AA0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_68;      // 0x1AB0(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_116;                       // 0x1AC0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_68;        // 0x1AC8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_68;   // 0x1ACC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D35[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_69;      // 0x1AD0(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_117;                       // 0x1AE0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_118;                       // 0x1AE8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_69;        // 0x1AF8(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_69;   // 0x1B18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D36[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UDataTable*                            CallFunc_Array_Get_Item_119;                       // 0x1B20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_70;      // 0x1B28(0x10)(ReferenceParm)
+	float                                        CallFunc_GetFloatValue_ReturnValue_18;             // 0x1B38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_120;                       // 0x1B3C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D37[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_70;        // 0x1B48(0x60)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_70;   // 0x1BA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D38[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_121;                       // 0x1BAC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue_1;            // 0x1BBC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_4;             // 0x1BCC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_28;                // 0x1BD0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D39[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_71;      // 0x1BD8(0x10)(ReferenceParm)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_72;      // 0x1BE8(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_122;                       // 0x1BF8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_71;        // 0x1C00(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_71;   // 0x1C20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D3A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_123;                       // 0x1C24(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D3B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UDataTable*                            CallFunc_Array_Get_Item_124;                       // 0x1C38(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_73;      // 0x1C40(0x10)(ReferenceParm)
+	float                                        CallFunc_GetFloatValue_ReturnValue_19;             // 0x1C50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_125;                       // 0x1C54(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D3C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_72;        // 0x1C60(0x60)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_72;   // 0x1CC0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D3D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_5;             // 0x1CC4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_29;                // 0x1CC8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D3E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_126;                       // 0x1CCC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D3F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_74;      // 0x1CD8(0x10)(ReferenceParm)
+	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_73;        // 0x1CE8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_73;   // 0x1CEC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D40[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CallFunc_Array_Get_Item_127;                       // 0x1CF0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_74;        // 0x1CF8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_74;   // 0x1CFC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D41[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_128;                       // 0x1D00(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue_2;            // 0x1D10(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_75;      // 0x1D20(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_129;                       // 0x1D30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_130;                       // 0x1D38(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_75;        // 0x1D48(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_75;   // 0x1D68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D42[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UDataTable*                            CallFunc_Array_Get_Item_131;                       // 0x1D70(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_76;      // 0x1D78(0x10)(ReferenceParm)
+	float                                        CallFunc_GetFloatValue_ReturnValue_20;             // 0x1D88(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_132;                       // 0x1D8C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D43[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_76;        // 0x1D98(0x60)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_76;   // 0x1DF8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D44[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_77;      // 0x1E00(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_133;                       // 0x1E10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_77;        // 0x1E18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_77;   // 0x1E1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D45[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_78;      // 0x1E20(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_134;                       // 0x1E30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_135;                       // 0x1E38(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_78;        // 0x1E48(0x20)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_78;   // 0x1E68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D46[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UDataTable*                            CallFunc_Array_Get_Item_136;                       // 0x1E70(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_79;      // 0x1E78(0x10)(ReferenceParm)
+	float                                        CallFunc_GetFloatValue_ReturnValue_21;             // 0x1E88(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Array_Get_Item_137;                       // 0x1E8C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D47[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_79;        // 0x1E98(0x60)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_79;   // 0x1EF8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D48[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_6;             // 0x1EFC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_30;                // 0x1F00(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D49[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_138;                       // 0x1F04(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_7;             // 0x1F14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue_3;            // 0x1F18(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_31;                // 0x1F28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D4A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_8;             // 0x1F2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_9;             // 0x1F30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_32;                // 0x1F34(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_33;                // 0x1F35(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D4B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue_22;             // 0x1F38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_10;            // 0x1F3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_23;                      // 0x1F40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_35;                // 0x1F48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6479[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetFloatValue_ReturnValue_23;             // 0x1F4C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_80;      // 0x1F50(0x10)(ReferenceParm)
-	class FName                                  CallFunc_Array_Get_Item_139;                       // 0x1F60(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_140;                       // 0x1F68(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_Ring_Color                         CallFunc_GetDataTableRowFromName_OutRow_80;        // 0x1F78(0x18)(HasGetValueTypeHash)
-	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_80;   // 0x1F90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_647A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_141;                       // 0x1F94(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_142;                       // 0x1FA4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_11;            // 0x1FB4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_12;            // 0x1FB8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_36;                // 0x1FBC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_37;                // 0x1FBD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_647B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetFloatValue_ReturnValue_24;             // 0x1FC0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_647C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_ReturnValue_24;                      // 0x1FC8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Array_Get_Item_143;                       // 0x1FD0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue_4;            // 0x1FE0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_25;             // 0x1FF0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue_5;            // 0x1FF4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_647D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_MapRangeClamped_ReturnValue;              // 0x2008(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_1;  // 0x2010(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                        CallFunc_GetFloatValue_ReturnValue_26;             // 0x20F8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_647E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_2;  // 0x2100(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FRotator                              CallFunc_MakeRotator_ReturnValue;                  // 0x21E8(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                              CallFunc_NegateRotator_ReturnValue;                // 0x2200(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                        CallFunc_GetFloatValue_ReturnValue_27;             // 0x2218(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_647F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_3;  // 0x2220(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_4;  // 0x2308(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_5;  // 0x23F0(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_6;  // 0x24D8(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_7;  // 0x25C0(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_8;  // 0x26A8(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_9;  // 0x2790(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_10; // 0x2878(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_11; // 0x2960(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_12; // 0x2A48(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_13; // 0x2B30(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_14; // 0x2C18(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_15; // 0x2D00(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_16; // 0x2DE8(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_17; // 0x2ED0(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_18; // 0x2FB8(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_19; // 0x30A0(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_20; // 0x3188(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_21; // 0x3270(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_22; // 0x3358(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_13;            // 0x3440(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_38;                // 0x3444(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6480[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_14;            // 0x3448(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_39;                // 0x344C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6481[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetFloatValue_ReturnValue_28;             // 0x3450(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_29;             // 0x3454(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_30;             // 0x3458(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_31;             // 0x345C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_32;             // 0x3460(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_33;             // 0x3464(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_ReturnValue_34;             // 0x3468(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_40;                // 0x346C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6482[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_144;                       // 0x3470(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_15;            // 0x3480(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_41;                // 0x3484(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_42;                // 0x3485(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6483[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_145;                       // 0x3488(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_16;            // 0x3498(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_43;                // 0x349C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6484[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          CallFunc_Array_Get_Item_146;                       // 0x34A0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_44;                // 0x34B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6485[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_17;            // 0x34B4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x34B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchInteger_CmpSuccess_45;                // 0x34B9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x34BA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_2;                    // 0x34BB(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_3;                    // 0x34BC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_4;                    // 0x34BD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_5;                    // 0x34BE(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_6;                    // 0x34BF(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_7;                    // 0x34C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_8;                    // 0x34C1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_9;                    // 0x34C2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_10;                   // 0x34C3(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_11;                   // 0x34C4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_12;                   // 0x34C5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_13;                   // 0x34C6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_14;                   // 0x34C7(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_15;                   // 0x34C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_16;                   // 0x34C9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_17;                   // 0x34CA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_18;                   // 0x34CB(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_19;                   // 0x34CC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_20;                   // 0x34CD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue_21;                   // 0x34CE(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6486[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x34D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x34D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast; // 0x34E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6487[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_1;                // 0x34E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast; // 0x34F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6488[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_2;                // 0x34F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast; // 0x3500(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x3504(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_3;                // 0x3508(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_4;                // 0x3510(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_5;                // 0x3518(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast; // 0x3520(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6489[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_6;                // 0x3528(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_7;                // 0x3530(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_8;                // 0x3538(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_9;                // 0x3540(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_10;               // 0x3548(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_1;      // 0x3550(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_648A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_11;               // 0x3558(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_2;      // 0x3560(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_648B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_12;               // 0x3568(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_13;               // 0x3570(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_3;      // 0x3578(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast; // 0x357C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_1; // 0x3580(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_4;      // 0x3584(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_2; // 0x3588(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_3; // 0x358C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_5;      // 0x3590(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_648C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_14;               // 0x3598(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_4; // 0x35A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_6;      // 0x35A4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_15;               // 0x35A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast; // 0x35B0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast_1; // 0x35B4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast_1; // 0x35B8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast_1; // 0x35BC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast_1; // 0x35C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_7;      // 0x35C4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_16;               // 0x35C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast_1; // 0x35D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast_2; // 0x35D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_17;               // 0x35D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_18;               // 0x35E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast_2; // 0x35E8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast_2; // 0x35EC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_19;               // 0x35F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_34;                // 0x1F48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D4C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_ReturnValue_24;                      // 0x1F50(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_35;                // 0x1F58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D4D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue_23;             // 0x1F5C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_80;      // 0x1F60(0x10)(ReferenceParm)
+	class FName                                  CallFunc_Array_Get_Item_139;                       // 0x1F70(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_140;                       // 0x1F78(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_Ring_Color                         CallFunc_GetDataTableRowFromName_OutRow_80;        // 0x1F88(0x18)(HasGetValueTypeHash)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_80;   // 0x1FA0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D4E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_141;                       // 0x1FA4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_142;                       // 0x1FB4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_11;            // 0x1FC4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_12;            // 0x1FC8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_36;                // 0x1FCC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_37;                // 0x1FCD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D4F[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue_24;             // 0x1FD0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D50[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_ReturnValue_25;                      // 0x1FD8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_26;                      // 0x1FE0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_27;                      // 0x1FE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Array_Get_Item_143;                       // 0x1FF0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_ReturnValue_28;                      // 0x2000(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue_4;            // 0x2008(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_25;             // 0x2018(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D51[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_MapRangeClamped_ReturnValue;              // 0x2020(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_LinearColorLerp_ReturnValue_5;            // 0x2028(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_1;  // 0x2038(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                        CallFunc_GetFloatValue_ReturnValue_26;             // 0x2120(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D52[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_2;  // 0x2128(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FRotator                              CallFunc_MakeRotator_ReturnValue;                  // 0x2210(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                              CallFunc_NegateRotator_ReturnValue;                // 0x2228(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                        CallFunc_GetFloatValue_ReturnValue_27;             // 0x2240(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D53[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_3;  // 0x2248(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_4;  // 0x2330(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_5;  // 0x2418(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_6;  // 0x2500(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_7;  // 0x25E8(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_8;  // 0x26D0(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_9;  // 0x27B8(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_10; // 0x28A0(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_11; // 0x2988(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_12; // 0x2A70(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_13; // 0x2B58(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_14; // 0x2C40(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_15; // 0x2D28(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_16; // 0x2E10(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_17; // 0x2EF8(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_18; // 0x2FE0(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_19; // 0x30C8(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_20; // 0x31B0(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_21; // 0x3298(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_22; // 0x3380(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_13;            // 0x3468(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_38;                // 0x346C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D54[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_14;            // 0x3470(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_39;                // 0x3474(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D55[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetFloatValue_ReturnValue_28;             // 0x3478(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_29;             // 0x347C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_30;             // 0x3480(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_31;             // 0x3484(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_32;             // 0x3488(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_33;             // 0x348C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_ReturnValue_34;             // 0x3490(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D56[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_ReturnValue_29;                      // 0x3498(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_40;                // 0x34A0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D57[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_144;                       // 0x34A4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_15;            // 0x34B4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_41;                // 0x34B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_42;                // 0x34B9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D58[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_145;                       // 0x34BC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_16;            // 0x34CC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_43;                // 0x34D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D59[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          CallFunc_Array_Get_Item_146;                       // 0x34D4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_44;                // 0x34E4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D5A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_17;            // 0x34E8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x34EC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchInteger_CmpSuccess_45;                // 0x34ED(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x34EE(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_2;                    // 0x34EF(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_3;                    // 0x34F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_4;                    // 0x34F1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_5;                    // 0x34F2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_6;                    // 0x34F3(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_7;                    // 0x34F4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_8;                    // 0x34F5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_9;                    // 0x34F6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_10;                   // 0x34F7(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_11;                   // 0x34F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_12;                   // 0x34F9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_13;                   // 0x34FA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_14;                   // 0x34FB(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_15;                   // 0x34FC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_16;                   // 0x34FD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_17;                   // 0x34FE(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_18;                   // 0x34FF(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_19;                   // 0x3500(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_20;                   // 0x3501(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue_21;                   // 0x3502(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D5B[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x3508(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x3510(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_1;                // 0x3518(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_2;                // 0x3520(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_3;                // 0x3528(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_4;                // 0x3530(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast; // 0x3538(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast; // 0x353C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast; // 0x3540(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast; // 0x3544(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x3548(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D5C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_5;                // 0x3550(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_6;                // 0x3558(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_7;                // 0x3560(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_8;                // 0x3568(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_9;                // 0x3570(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_10;               // 0x3578(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_1;      // 0x3580(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D5D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_11;               // 0x3588(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_2;      // 0x3590(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D5E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_12;               // 0x3598(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_13;               // 0x35A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_14;               // 0x35A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_15;               // 0x35B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_16;               // 0x35B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_17;               // 0x35C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_18;               // 0x35C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_3;      // 0x35D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast; // 0x35D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_1; // 0x35D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_4;      // 0x35DC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_19;               // 0x35E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_5;      // 0x35E8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_2; // 0x35EC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_3; // 0x35F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_6;      // 0x35F4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_20;               // 0x35F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast_2; // 0x3600(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_648D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_21;               // 0x3608(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast_2; // 0x3610(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast; // 0x3614(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast_3; // 0x3618(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast_1; // 0x361C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast_2; // 0x3620(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast_3; // 0x3624(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_5; // 0x3628(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_6; // 0x362C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_7; // 0x3630(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_8; // 0x3634(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_9; // 0x3638(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_10; // 0x363C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_8;      // 0x3640(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_9;      // 0x3644(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_10;     // 0x3648(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_11;     // 0x364C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_12;     // 0x3650(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_13;     // 0x3654(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_14;     // 0x3658(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_15;     // 0x365C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_16;     // 0x3660(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_17;     // 0x3664(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast_3; // 0x3668(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast_3; // 0x366C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast_4; // 0x3670(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast_3; // 0x3674(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast_3; // 0x3678(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_18;     // 0x367C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_19;     // 0x3680(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_20;     // 0x3684(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_21;     // 0x3688(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_22;     // 0x368C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_22;               // 0x3690(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast_4; // 0x3698(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_23;     // 0x369C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_11; // 0x36A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_12; // 0x36A4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_24;     // 0x36A8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_648E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Lerp_Alpha_ImplicitCast_23;               // 0x36B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast_4; // 0x36B8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast_5; // 0x36BC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast_4; // 0x36C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast_5; // 0x36C4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast_5; // 0x36C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast_5; // 0x36CC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast_4; // 0x36D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast_4; // 0x36D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast_5; // 0x36D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_25;     // 0x36DC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_13; // 0x36E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_MakeRotator_Roll_ImplicitCast;            // 0x36E4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_26;     // 0x36E8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_27;     // 0x36EC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_28;     // 0x36F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_29;     // 0x36F4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_30;     // 0x36F8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_31;     // 0x36FC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_32;     // 0x3700(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_33;     // 0x3704(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_34;     // 0x3708(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast_5; // 0x370C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_4; // 0x3600(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast; // 0x3604(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast_1; // 0x3608(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast_1; // 0x360C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast_1; // 0x3610(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast_1; // 0x3614(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast_1; // 0x3618(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_7;      // 0x361C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_21;               // 0x3620(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast_2; // 0x3628(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D61[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_22;               // 0x3630(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast_2; // 0x3638(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D62[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_23;               // 0x3640(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast_2; // 0x3648(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D63[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_24;               // 0x3650(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_25;               // 0x3658(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast_2; // 0x3660(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D64[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_26;               // 0x3668(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast_2; // 0x3670(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast; // 0x3674(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast_1; // 0x3678(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast_2; // 0x367C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast_3; // 0x3680(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast_3; // 0x3684(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_5; // 0x3688(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_6; // 0x368C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_7; // 0x3690(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_8; // 0x3694(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_9; // 0x3698(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_10; // 0x369C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_8;      // 0x36A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_9;      // 0x36A4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_10;     // 0x36A8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_11;     // 0x36AC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_12;     // 0x36B0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_13;     // 0x36B4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_14;     // 0x36B8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_15;     // 0x36BC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_16;     // 0x36C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_17;     // 0x36C4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast_3; // 0x36C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast_3; // 0x36CC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast_4; // 0x36D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast_3; // 0x36D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast_3; // 0x36D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_18;     // 0x36DC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_19;     // 0x36E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_20;     // 0x36E4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_21;     // 0x36E8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_22;     // 0x36EC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_27;               // 0x36F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast_4; // 0x36F8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_23;     // 0x36FC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_11; // 0x3700(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_12; // 0x3704(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_24;     // 0x3708(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1D66[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Lerp_Alpha_ImplicitCast_28;               // 0x3710(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetHeightFogContribution_NewValue_ImplicitCast_5; // 0x3718(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast_4; // 0x371C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast_4; // 0x3720(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetAerialPespectiveViewDistanceScale_NewValue_ImplicitCast_5; // 0x3724(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieAbsorptionScale_NewValue_ImplicitCast_5; // 0x3728(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetMieScatteringScale_NewValue_ImplicitCast_5; // 0x372C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast_4; // 0x3730(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast_4; // 0x3734(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetRayleighScatteringScale_NewValue_ImplicitCast_5; // 0x3738(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_25;     // 0x373C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast_13; // 0x3740(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_MakeRotator_Roll_ImplicitCast;            // 0x3744(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_26;     // 0x3748(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_27;     // 0x374C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_28;     // 0x3750(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_29;     // 0x3754(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_30;     // 0x3758(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_31;     // 0x375C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_32;     // 0x3760(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_33;     // 0x3764(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_34;     // 0x3768(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        K2Node_VariableSet_AerialPerspectiveStartDepth_ImplicitCast_5; // 0x376C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0xDD4 (0xDD4 - 0x0)
@@ -1995,7 +2008,7 @@ public:
 	double                                       CallFunc_Lerp_ReturnValue;                         // 0x188(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_1;                       // 0x190(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_2;              // 0x198(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_648F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1D97[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_2;                       // 0x1A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_3;              // 0x1A8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_4;              // 0x1AC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2015,16 +2028,16 @@ public:
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x238(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0x239(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_1;                 // 0x23A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6490[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1D99[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FWeightedBlendables                   CallFunc_Desert_PPM_ReturnValue;                   // 0x240(0x10)(None)
 	double                                       CallFunc_Final_Gather_Update_Speed_finalgather;    // 0x250(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Exposure_Compensation_NoLumen_Exposure_Compensation; // 0x258(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_LensFlare_ReturnValue;                    // 0x260(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_5;              // 0x268(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6491[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1D9A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_5;                       // 0x270(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_6;              // 0x278(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6492[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1D9B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_6;                       // 0x280(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_7;              // 0x288(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_8;              // 0x28C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2050,7 +2063,7 @@ public:
 	double                                       CallFunc_Array_Get_Item_4;                         // 0x330(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_8;                       // 0x338(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_9;              // 0x340(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6493[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1D9F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Add_DoubleDouble_ReturnValue;             // 0x348(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UCurveFloat*>                   K2Node_MakeArray_Array;                            // 0x350(0x10)(ReferenceParm)
 	TArray<class UCurveFloat*>                   K2Node_MakeArray_Array_1;                          // 0x360(0x10)(ReferenceParm)
@@ -2095,7 +2108,7 @@ public:
 	double                                       CallFunc_Local_Exposure_Middlegrey_Bias_3;         // 0x4E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UTexture*>                      K2Node_MakeArray_Array_9;                          // 0x4E8(0x10)(ReferenceParm)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_2;                 // 0x4F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6494[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DA5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_LensFlare_ReturnValue_3;                  // 0x500(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UCurveFloat*>                   K2Node_MakeArray_Array_10;                         // 0x508(0x10)(ReferenceParm)
 	TArray<double>                               K2Node_MakeArray_Array_11;                         // 0x518(0x10)(ReferenceParm)
@@ -2118,7 +2131,7 @@ public:
 	double                                       CallFunc_LensFlare_ReturnValue_4;                  // 0x5C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FWeightedBlendables                   Temp_struct_Variable;                              // 0x5C8(0x10)(None)
 	int32                                        Temp_int_Variable;                                 // 0x5D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6495[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DA8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FWeightedBlendables                   CallFunc_PostProcessMaterals_ReturnValue_2;        // 0x5E0(0x10)(None)
 	double                                       CallFunc_SkylightLeaking_ReturnValue_4;            // 0x5F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Diffuse_Color_Boost_Final_Gather_Quality_4; // 0x5F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2140,7 +2153,7 @@ public:
 	double                                       CallFunc_Local_Exposure_Blur_Kernel_size_6;        // 0x678(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Local_Exposure_Middlegrey_Bias_6;         // 0x680(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_10;             // 0x688(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6496[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DAB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_5;                         // 0x690(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_6;                         // 0x698(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_7;                         // 0x6A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2158,7 +2171,7 @@ public:
 	double                                       CallFunc_Lerp_ReturnValue_13;                      // 0x6E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_14;                      // 0x6F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_17;             // 0x6F8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6497[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DAC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_15;                      // 0x700(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_18;             // 0x708(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_19;             // 0x70C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2166,41 +2179,41 @@ public:
 	double                                       CallFunc_Lerp_ReturnValue_16;                      // 0x718(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_17;                      // 0x720(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_3;                 // 0x728(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6498[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DAD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue;               // 0x72C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_4;                 // 0x730(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6499[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DAE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x738(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0x740(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_649A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DAF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0x748(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_9;                         // 0x758(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FWeightedBlendables                   CallFunc_Desert_PPM_ReturnValue_2;                 // 0x760(0x10)(None)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x770(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x7DC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_649B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DB0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_3;       // 0x7E0(0x10)(ReferenceParm)
 	double                                       CallFunc_Array_Get_Item_10;                        // 0x7F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_11;                        // 0x7F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_5;                 // 0x800(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_649C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DB1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_12;                        // 0x804(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_649D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DB3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Color_Correction_Presets           CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x810(0xB0)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x8C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_649E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DB4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FWeightedBlendables                   K2Node_Select_Default;                             // 0x8C8(0x10)(None)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_4;       // 0x8D8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_13;                        // 0x8E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Correction_Presets           CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x8F0(0xB0)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x9A0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_649F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DB5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_14;                        // 0x9A4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64A0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DB6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Exposure                           CallFunc_GetDataTableRowFromName_OutRow_4;         // 0x9B0(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_4;    // 0x9C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x9C9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64A1[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DB7[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x9D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x9D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_1;      // 0x9DC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2213,7 +2226,7 @@ public:
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_3;      // 0xA04(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_3;                // 0xA08(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_4;      // 0xA10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64A2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DB8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_4;                // 0xA18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_AutoExposureSpeedDown_ImplicitCast; // 0xA20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_AutoExposureSpeedUp_ImplicitCast; // 0xA24(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2276,7 +2289,7 @@ public:
 	float                                        K2Node_SetFieldsInStruct_LumenFinalGatherLightingUpdateSpeed_ImplicitCast_2; // 0xB18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_LensFlareIntensity_ImplicitCast_2; // 0xB1C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_9;      // 0xB20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64A3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DB9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0xB28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_AutoExposureBias_ImplicitCast_1; // 0xB30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_LumenSkylightLeaking_ImplicitCast_2; // 0xB34(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2393,24 +2406,24 @@ public:
 	float                                        K2Node_SetFieldsInStruct_AutoExposureBias_ImplicitCast_6; // 0xCFC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_11;               // 0xD00(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_14;     // 0xD08(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64A4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DBE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_12;               // 0xD10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_AutoExposureHighPercent_ImplicitCast_6; // 0xD18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_15;     // 0xD1C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_16;     // 0xD20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64A5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DBF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_13;               // 0xD28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_14;               // 0xD30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_LumenFullSkylightLeakingDistance_ImplicitCast_6; // 0xD38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_AutoExposureLowPercent_ImplicitCast_6; // 0xD3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_17;     // 0xD40(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64A6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DC1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_15;               // 0xD48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_LensFlareIntensity_ImplicitCast_6; // 0xD50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_18;     // 0xD54(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_16;               // 0xD58(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_19;     // 0xD60(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64A7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DC2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_17;               // 0xD68(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_AutoExposureSpeedDown_ImplicitCast_5; // 0xD70(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_AutoExposureSpeedUp_ImplicitCast_5; // 0xD74(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2468,49 +2481,49 @@ public:
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue;               // 0x128(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0x12C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_1;                 // 0x12D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64A8[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DCD[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x130(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_2;                 // 0x134(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64A9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DCE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue;                         // 0x138(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_1;              // 0x140(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64AA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DCF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_1;                       // 0x148(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_3;                 // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_4;                 // 0x151(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64AB[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DD0[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x158(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames;         // 0x160(0x10)(ReferenceParm)
 	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0x170(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item;                           // 0x174(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow;           // 0x17C(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x1E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64AC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DD1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetFloatValue_ReturnValue_2;              // 0x1EC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_2;                       // 0x1F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_1;             // 0x1F8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64AD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DD2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_ByteToDouble_ReturnValue_1;          // 0x200(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_5;                 // 0x208(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64AE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DD3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FTrunc_ReturnValue_1;                     // 0x20C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0x210(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_1;                         // 0x220(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x228(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x294(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64AF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DD4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetFloatValue_ReturnValue_3;              // 0x298(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64B0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DD5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_3;                       // 0x2A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_2;             // 0x2A8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_6;                 // 0x2AC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x2AD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64B1[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DD6[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x2B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetIntensity_NewIntensity_ImplicitCast;   // 0x2B8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetIntensity_NewIntensity_ImplicitCast_1; // 0x2BC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x2C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64B2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DD7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x2C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetIntensity_NewIntensity_ImplicitCast_2; // 0x2D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_1;      // 0x2D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2550,46 +2563,46 @@ public:
 	double                                       AdjustedTime24Hour;                                // 0xB0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item;                           // 0xB8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0xC0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64B3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DE2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue;                         // 0xC8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0xD0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_1;                 // 0xD1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_2;                 // 0xD2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64B4[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DE3[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetFloatValue_ReturnValue_1;              // 0xD4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FColor                                CallFunc_Conv_LinearColorToColor_ReturnValue;      // 0xD8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_3;                 // 0xDC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_4;                 // 0xDD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_5;                 // 0xDE(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64B5[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DE4[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetFloatValue_ReturnValue_2;              // 0xE0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0xE4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Conv_IntToBool_ReturnValue;               // 0xE8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64B6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DE5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetFloatValue_ReturnValue_3;              // 0xEC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              CallFunc_MakeRotator_ReturnValue;                  // 0xF0(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FRotator                              CallFunc_NegateRotator_ReturnValue;                // 0x108(0x18)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                        CallFunc_GetFloatValue_ReturnValue_4;              // 0x120(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64B7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DE6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x128(0xE8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	int32                                        CallFunc_FTrunc_ReturnValue_1;                     // 0x210(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Conv_IntToBool_ReturnValue_1;             // 0x214(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64B8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DE7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames;         // 0x218(0x10)(ReferenceParm)
 	double                                       CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x228(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue_2;                     // 0x230(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_1;                         // 0x234(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow;           // 0x23C(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x2A8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64B9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DEA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_2;                         // 0x2B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_1;                       // 0x2B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue;               // 0x2C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_6;                 // 0x2C4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64BA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DEB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UGameUserSettings*                     CallFunc_GetGameUserSettings_ReturnValue;          // 0x2C8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_GetShadowQuality_ReturnValue;             // 0x2D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64BB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DEC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0x2D8(0x10)(ReferenceParm)
 	TArray<double>                               K2Node_MakeArray_Array;                            // 0x2E8(0x10)(ReferenceParm)
 	double                                       CallFunc_Array_Get_Item_3;                         // 0x2F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2601,7 +2614,7 @@ public:
 	class FName                                  CallFunc_Array_Get_Item_6;                         // 0x32C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x334(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x3A0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64BC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DED[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_7;                         // 0x3A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<double>                               K2Node_MakeArray_Array_2;                          // 0x3B0(0x10)(ReferenceParm)
 	double                                       CallFunc_Array_Get_Item_8;                         // 0x3C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2613,38 +2626,38 @@ public:
 	class FName                                  CallFunc_Array_Get_Item_11;                        // 0x408(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x410(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x414(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64BD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DEE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_3;       // 0x418(0x10)(ReferenceParm)
 	struct FLinearColor                          CallFunc_Array_Get_Item_12;                        // 0x428(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_4;       // 0x438(0x10)(ReferenceParm)
 	float                                        CallFunc_GetFloatValue_ReturnValue_5;              // 0x448(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_13;                        // 0x44C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64BE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DF0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Atmosphere_Master                  CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x458(0x30)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x488(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64BF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DF1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_5;       // 0x490(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_14;                        // 0x4A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_4;         // 0x4A8(0x20)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_4;    // 0x4C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64C0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DF2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            CallFunc_Array_Get_Item_15;                        // 0x4D0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_6;       // 0x4D8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_16;                        // 0x4E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_6;              // 0x4F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64C1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DF3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_5;         // 0x4F8(0x60)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_5;    // 0x558(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64C2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DF4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_7;       // 0x560(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_17;                        // 0x570(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_18;                        // 0x578(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Rayleigh_Inverse                   CallFunc_GetDataTableRowFromName_OutRow_6;         // 0x580(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_6;    // 0x584(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64C3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DF6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_7;         // 0x588(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_7;    // 0x5B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64C4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DF7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_19;                        // 0x5B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          CallFunc_Array_Get_Item_20;                        // 0x5C0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_21;                        // 0x5D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2654,75 +2667,75 @@ public:
 	double                                       CallFunc_Lerp_ReturnValue_3;                       // 0x5F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_23;                        // 0x600(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Nebula_Type                        CallFunc_GetDataTableRowFromName_OutRow_8;         // 0x608(0x1C)(HasGetValueTypeHash)
-	uint8                                        Pad_64C5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DF8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_8;    // 0x628(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64C6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DF9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_9;       // 0x630(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_10;      // 0x640(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_24;                        // 0x650(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  CallFunc_Array_Get_Item_25;                        // 0x658(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Main_Celestial_Color               CallFunc_GetDataTableRowFromName_OutRow_9;         // 0x660(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_9;    // 0x678(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64C7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DFA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Main_Celestial_Color               CallFunc_GetDataTableRowFromName_OutRow_10;        // 0x680(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_10;   // 0x698(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64C8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DFB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_26;                        // 0x69C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_1;             // 0x6AC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_7;                 // 0x6B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64C9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DFC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue;             // 0x6B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_4;                       // 0x6C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_11;      // 0x6C8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_27;                        // 0x6D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_11;        // 0x6E0(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_11;   // 0x708(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64CA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DFF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_28;                        // 0x70C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FColor                                CallFunc_Conv_LinearColorToColor_ReturnValue_1;    // 0x71C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_8;                 // 0x720(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64CB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E00[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_2;             // 0x724(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_3;             // 0x728(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_9;                 // 0x72C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_10;                // 0x72D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64CC[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E01[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_29;                        // 0x730(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_30;                        // 0x738(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_7;              // 0x740(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64CD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E02[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_5;                       // 0x748(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_31;                        // 0x750(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_32;                        // 0x758(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_33;                        // 0x760(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_34;                        // 0x768(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_8;              // 0x770(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64CE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E03[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_6;                       // 0x778(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_9;              // 0x780(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_4;             // 0x784(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_7;                       // 0x788(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_11;                // 0x790(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64CF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E06[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_FTrunc_ReturnValue_4;                     // 0x794(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_5;             // 0x798(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_12;                // 0x79C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_13;                // 0x79D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64D0[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E07[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_35;                        // 0x7A0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FColor                                CallFunc_Conv_LinearColorToColor_ReturnValue_2;    // 0x7B0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_6;             // 0x7B4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x7B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_14;                // 0x7B9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64D1[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E08[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x7C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x7C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64D2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E09[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x7D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetIntensity_NewIntensity_ImplicitCast;   // 0x7D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_VariableSet_ContactShadowLength_ImplicitCast; // 0x7DC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_1;      // 0x7E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64D3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E0B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_1;                // 0x7E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_2;      // 0x7F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_3;      // 0x7F4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2730,7 +2743,7 @@ public:
 	float                                        CallFunc_MakeRotator_Roll_ImplicitCast;            // 0x800(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_4;      // 0x804(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_5;      // 0x808(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64D4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E0D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_FTrunc_A_ImplicitCast_1;                  // 0x810(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast; // 0x818(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast_1; // 0x81C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2783,7 +2796,7 @@ public:
 	TArray<class UCurveFloat*>                   Sun_Intensity_Array_Full;                          // 0x90(0x10)(Edit, BlueprintVisible)
 	class UCurveFloat*                           Cloud_Shadow_Extent;                               // 0xA0(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         NewLocalVar_0;                                     // 0xA8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64D5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E12[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCurveFloat*                           Dynamic_Shadow_Cascade;                            // 0xB0(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           Dynamic_Shadow_Distance;                           // 0xB8(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FLinearColor>                  Selected_saturation_array;                         // 0xC0(0x10)(Edit, BlueprintVisible)
@@ -2803,16 +2816,16 @@ public:
 	bool                                         K2Node_SwitchInteger_CmpSuccess_6;                 // 0x116(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_7;                 // 0x117(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FColor                                CallFunc_Conv_LinearColorToColor_ReturnValue;      // 0x118(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64D6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E13[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<double>                               K2Node_MakeArray_Array;                            // 0x120(0x10)(ReferenceParm)
 	float                                        CallFunc_GetFloatValue_ReturnValue;                // 0x130(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0x134(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Conv_IntToBool_ReturnValue;               // 0x138(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64D7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E14[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetFloatValue_ReturnValue_1;              // 0x13C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue_1;                     // 0x140(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Conv_IntToBool_ReturnValue_1;             // 0x144(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64D8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E15[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UCurveFloat*>                   K2Node_MakeArray_Array_1;                          // 0x148(0x10)(ReferenceParm)
 	double                                       CallFunc_Array_Get_Item;                           // 0x158(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_1;                         // 0x160(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2820,46 +2833,46 @@ public:
 	double                                       CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x178(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames;         // 0x180(0x10)(ReferenceParm)
 	int32                                        CallFunc_FTrunc_ReturnValue_2;                     // 0x190(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64D9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E16[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<double>                               K2Node_MakeArray_Array_3;                          // 0x198(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_2;                         // 0x1A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow;           // 0x1B0(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x21C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64DA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E17[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<double>                               K2Node_MakeArray_Array_4;                          // 0x220(0x10)(ReferenceParm)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue;               // 0x230(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64DB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E18[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_1;       // 0x238(0x10)(ReferenceParm)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_8;                 // 0x248(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64DC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E19[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_3;                         // 0x24C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64DD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E1A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Atmosphere_Master                  CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x258(0x30)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x288(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64DE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E1B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<double>                               K2Node_MakeArray_Array_5;                          // 0x290(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_2;       // 0x2A0(0x10)(ReferenceParm)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_3;       // 0x2B0(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_4;                         // 0x2C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_2;         // 0x2C8(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_2;    // 0x2F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64DF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E1C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_5;                         // 0x2F4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E1D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<double>                               K2Node_MakeArray_Array_6;                          // 0x300(0x10)(ReferenceParm)
 	struct FS_Fog_Volumetric                     CallFunc_GetDataTableRowFromName_OutRow_3;         // 0x310(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_3;    // 0x328(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E1E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_6;                         // 0x330(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_2;              // 0x338(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E1F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_7;                         // 0x340(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue;                         // 0x348(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_1;             // 0x350(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E20[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<double>                               K2Node_MakeArray_Array_7;                          // 0x358(0x10)(ReferenceParm)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_9;                 // 0x368(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E21[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_4;       // 0x370(0x10)(ReferenceParm)
 	TArray<double>                               K2Node_MakeArray_Array_8;                          // 0x380(0x10)(ReferenceParm)
 	double                                       CallFunc_Array_Get_Item_8;                         // 0x390(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2871,7 +2884,7 @@ public:
 	class FName                                  CallFunc_Array_Get_Item_12;                        // 0x3BC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_VE_Preset_Master                   CallFunc_GetDataTableRowFromName_OutRow_4;         // 0x3C4(0x6C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_4;    // 0x430(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E22[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_13;                        // 0x438(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_14;                        // 0x440(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_15;                        // 0x448(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2879,57 +2892,57 @@ public:
 	class FName                                  CallFunc_Array_Get_Item_16;                        // 0x460(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fog_Day                            CallFunc_GetDataTableRowFromName_OutRow_5;         // 0x468(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_5;    // 0x490(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E23[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_6;       // 0x498(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_17;                        // 0x4A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Table_Master                 CallFunc_GetDataTableRowFromName_OutRow_6;         // 0x4B0(0x20)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_6;    // 0x4D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E24[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_2;             // 0x4D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_10;                // 0x4D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E25[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDataTable*                            CallFunc_Array_Get_Item_18;                        // 0x4E0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_7;       // 0x4E8(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_19;                        // 0x4F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_20;                        // 0x500(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Color_Master                       CallFunc_GetDataTableRowFromName_OutRow_7;         // 0x508(0x60)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_7;    // 0x568(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E26[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_21;                        // 0x570(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_3;              // 0x578(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64EA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E27[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_1;                       // 0x580(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_8;       // 0x588(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_22;                        // 0x598(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Fog_Volumetric                     CallFunc_GetDataTableRowFromName_OutRow_8;         // 0x5A0(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_8;    // 0x5B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64EB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E28[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_23;                        // 0x5C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_24;                        // 0x5C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_4;              // 0x5D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64EC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E29[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_2;                       // 0x5D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_9;       // 0x5E0(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_25;                        // 0x5F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Day_Brightness_and_Exposure        CallFunc_GetDataTableRowFromName_OutRow_9;         // 0x5F8(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_9;    // 0x610(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64ED[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E2A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_26;                        // 0x618(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_5;              // 0x620(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64EE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E2B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_27;                        // 0x628(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_3;                       // 0x630(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_10;      // 0x638(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_28;                        // 0x648(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Day_Brightness_and_Exposure        CallFunc_GetDataTableRowFromName_OutRow_10;        // 0x650(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_10;   // 0x668(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64EF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E2C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetFloatValue_ReturnValue_6;              // 0x66C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_11;      // 0x670(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_29;                        // 0x680(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Sun_Intensity                      CallFunc_GetDataTableRowFromName_OutRow_11;        // 0x688(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_11;   // 0x68C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E2D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_30;                        // 0x690(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_4;                       // 0x698(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_12;      // 0x6A0(0x10)(ReferenceParm)
@@ -2937,103 +2950,103 @@ public:
 	struct FS_Color_Saturations                  CallFunc_GetDataTableRowFromName_OutRow_12;        // 0x6B8(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_12;   // 0x6E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_11;                // 0x6E1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F1[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E2E[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_32;                        // 0x6E4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FColor                                CallFunc_Conv_LinearColorToColor_ReturnValue_1;    // 0x6F4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_3;             // 0x6F8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_12;                // 0x6FC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E2F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_33;                        // 0x700(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_34;                        // 0x708(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_7;              // 0x710(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E30[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_5;                       // 0x718(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_35;                        // 0x720(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_36;                        // 0x728(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_8;              // 0x730(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E31[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_6;                       // 0x738(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_37;                        // 0x740(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_38;                        // 0x748(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_9;              // 0x750(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E32[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_7;                       // 0x758(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_39;                        // 0x760(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_10;             // 0x768(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_11;             // 0x76C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Conv_IntToDouble_ReturnValue;             // 0x770(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue_4;                     // 0x778(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E33[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_8;                       // 0x780(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Conv_IntToBool_ReturnValue_2;             // 0x788(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E34[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_4;             // 0x78C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_5;             // 0x790(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_13;                // 0x794(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_14;                // 0x795(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F8[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E35[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_40;                        // 0x798(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_41;                        // 0x7A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_12;             // 0x7A8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E36[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_9;                       // 0x7B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_42;                        // 0x7B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_43;                        // 0x7C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_6;             // 0x7C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E37[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_13;      // 0x7D0(0x10)(ReferenceParm)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_15;                // 0x7E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E38[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  CallFunc_Array_Get_Item_44;                        // 0x7E4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E39[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_Day_Brightness_and_Exposure        CallFunc_GetDataTableRowFromName_OutRow_13;        // 0x7F0(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_13;   // 0x808(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E3A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_45;                        // 0x810(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Array_Get_Item_46;                        // 0x818(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_ReturnValue_13;             // 0x820(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E3B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_10;                      // 0x828(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_14;      // 0x830(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_47;                        // 0x840(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Day_Brightness_and_Exposure        CallFunc_GetDataTableRowFromName_OutRow_14;        // 0x848(0x18)(HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_14;   // 0x860(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E3C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetFloatValue_ReturnValue_14;             // 0x864(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                          CallFunc_GetDataTableRowNames_OutRowNames_15;      // 0x868(0x10)(ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_48;                        // 0x878(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_Sun_Intensity                      CallFunc_GetDataTableRowFromName_OutRow_15;        // 0x880(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue_15;   // 0x884(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6500[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E3D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetFloatValue_ReturnValue_15;             // 0x888(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6501[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E3E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_ReturnValue_11;                      // 0x890(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue_5;                     // 0x898(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6502[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E3F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Array_Get_Item_49;                        // 0x8A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_Lerp_ReturnValue_12;                      // 0x8A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_16;                // 0x8B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6503[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E40[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_Array_Get_Item_50;                        // 0x8B4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_7;             // 0x8C4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FColor                                CallFunc_Conv_LinearColorToColor_ReturnValue_2;    // 0x8C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_17;                // 0x8CC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6504[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E41[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Conv_BoolToInt_ReturnValue_8;             // 0x8D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess_18;                // 0x8D4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x8D5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6505[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E42[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x8D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_VariableSet_ContactShadowLength_ImplicitCast; // 0x8E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast;        // 0x8E4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       CallFunc_FTrunc_A_ImplicitCast;                    // 0x8E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_1;      // 0x8F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6506[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E43[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_FTrunc_A_ImplicitCast_1;                  // 0x8F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetCascadeTransitionFraction_NewValue_ImplicitCast; // 0x900(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetCascadeDistributionExponent_NewValue_ImplicitCast; // 0x904(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_2;      // 0x908(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6507[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E44[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x910(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast; // 0x918(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetDynamicShadowDistanceMovableLight_NewValue_ImplicitCast; // 0x91C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3044,7 +3057,7 @@ public:
 	float                                        CallFunc_SetCascadeDistributionExponent_NewValue_ImplicitCast_2; // 0x930(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast_1; // 0x934(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_3;      // 0x938(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6508[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E45[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_1;                // 0x940(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast_2; // 0x948(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_4;      // 0x94C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3052,7 +3065,7 @@ public:
 	float                                        CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast_3; // 0x958(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_VariableSet_ContactShadowLength_ImplicitCast_1; // 0x95C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_5;      // 0x960(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6509[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E46[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_3;                // 0x968(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetOcclusionMaskDarkness_NewValue_ImplicitCast; // 0x970(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_6;      // 0x974(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3077,7 +3090,7 @@ public:
 	float                                        CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast_6; // 0x9D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_13;     // 0x9DC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_14;     // 0x9E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_650A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E47[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_Lerp_Alpha_ImplicitCast_9;                // 0x9E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_SetOcclusionMaskDarkness_NewValue_ImplicitCast_2; // 0x9F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetFloatValue_InTime_ImplicitCast_15;     // 0x9F4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3122,7 +3135,7 @@ public:
 	class UStaticMeshComponent*                  Moon_Half_C_02;                                    // 0x80(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                  Moon_Half_D_03;                                    // 0x88(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                        Moon_Visibility;                                   // 0x90(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_650B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E65[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStaticMeshComponent*                  Moon_Atm_Crescent_A_01;                            // 0x98(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                  Moon_Atm_Crescent_A_02;                            // 0xA0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                  Moon_Atm_Crescent_B_01;                            // 0xA8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -3157,7 +3170,7 @@ public:
 	int32                                        Cloud_Index_D;                                     // 0x13C(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Cloud_Index_E;                                     // 0x140(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Shadow_Cascade_Override;                           // 0x144(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_650C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E68[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Shadow_Cascades_Sun;                               // 0x148(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Shadow_Cascades_Celestial;                         // 0x14C(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Dynamic_Shadow_Distance_;                          // 0x150(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3167,7 +3180,7 @@ public:
 	double                                       Contact_Shadow_Length;                             // 0x170(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Celestial_Color;                                   // 0x178(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Color_Category                  Color_Category;                                    // 0x17C(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_650D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E6A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UDataTable*>                    Color_Data_Table_Categories;                       // 0x180(0x10)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	int32                                        Color_Saturation;                                  // 0x190(0x4)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Color;                                             // 0x194(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3176,7 +3189,7 @@ public:
 	int32                                        Atmosphere_Level;                                  // 0x1A0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Exposure_WIP;                                      // 0x1A4(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_LUT_Category                    LUT_Category;                                      // 0x1A8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_650E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E6B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        LUT_WIP;                                           // 0x1AC(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        LUT_Saturation;                                    // 0x1B0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Fog_Falloff;                                       // 0x1B4(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3186,27 +3199,27 @@ public:
 	int32                                        Atmosphere_Minus_View_Distance;                    // 0x1C4(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Atmosphere_Minus_Falloff;                          // 0x1C8(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Sun_Color_Override_Minus_Adv;                      // 0x1CC(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_650F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E6D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Sun_Color_Minus_Adv;                               // 0x1D0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Sun_Saturation_Minus_Adv;                          // 0x1D4(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Main_Celestial_Color_Override_Minus_Adv;           // 0x1D8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6510[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E6E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Main_Celestial_Color_Saturation_Minus_Adv;         // 0x1DC(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Rayleigh_Color_Override_Minus_Adv;                 // 0x1E0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6511[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E6F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Rayleigh_Color_Minus_Adv;                          // 0x1E4(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Rayleigh_Saturation_Minus_Adv;                     // 0x1E8(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Mie_Color_Override_Minus_Adv;                      // 0x1EC(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6512[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E70[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Mie_Color_Minus_Adv;                               // 0x1F0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Mie_Saturation_Minus_Adv;                          // 0x1F4(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Sky_Luminance_Color_Override_Minus_Adv;            // 0x1F8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6513[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E71[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Sky_Luminance_Color_Minus_Adv;                     // 0x1FC(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Sky_Luminance_Saturation_Minus_Adv;                // 0x200(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Exposure_Minus_Night;                              // 0x204(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         HDR_Exposure_Override;                             // 0x208(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6514[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E72[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       HDR_Exposure_Compensation;                         // 0x210(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           HDR_Exposure_Compensation_Curve;                   // 0x218(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                              HDR_Exposure_Metering_Mask;                        // 0x220(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -3217,12 +3230,12 @@ public:
 	double                                       HDR_Histogram_Log_Min;                             // 0x248(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       HDR_Histogram_Log_Max;                             // 0x250(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Hdr;                                               // 0x258(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6515[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E73[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Slope;                                             // 0x260(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Toe;                                               // 0x268(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Shoulder;                                          // 0x270(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Exposure_Minus_DawnDusk;                           // 0x278(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6516[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E74[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector4                              HDR_Global_Minus_Saturation;                       // 0x280(0x20)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector4                              HDR_Global_Minus_Contrast;                         // 0x2A0(0x20)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector4                              HDR_Global_Minus_Gamma;                            // 0x2C0(0x20)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3231,7 +3244,7 @@ public:
 	double                                       HDR_Low_Percent_Day;                               // 0x320(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       HDR_High_Percent_Day;                              // 0x328(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Primary_Function_Override;                         // 0x330(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6517[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E75[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Realm_Color;                                       // 0x334(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Color_Saturation;                            // 0x338(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Day_Brightness_Exposure;                     // 0x33C(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3249,19 +3262,19 @@ public:
 	int32                                        Realm_Minus_Nebula_Brightness;                     // 0x36C(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Nebula_Type;                           // 0x370(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Visual_Environment_Preset_Override;                // 0x374(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6518[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E76[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Visual_Environment_Preset_;                        // 0x378(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Atm_Moon_Visibility;                   // 0x37C(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Cloud_Type;                            // 0x380(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6519[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E77[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Angle_A;                                           // 0x388(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Angle_B;                                           // 0x390(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Exposure_Comp;                                     // 0x398(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_651A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E78[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Low_Percent;                                       // 0x3A0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       High_Percent;                                      // 0x3A8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Exposure_Comp_Night;                               // 0x3B0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_651B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E79[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Exposure_Comp_Dusk;                                // 0x3B8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Exposure_Comp_Dawn;                                // 0x3C0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Fog_Minus_Volumetric;                              // 0x3C4(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3272,16 +3285,16 @@ public:
 	int32                                        Shadow_Cascade_Level;                              // 0x3D8(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Celestial_Intensity;                   // 0x3DC(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Atmosphere_Minus_Height_Fog_Cont__Minus_Night;     // 0x3E0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_651C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E7A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       White_Clip;                                        // 0x3E8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Temperature;                                       // 0x3F0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                  Lens_Flare_Sun;                                    // 0x3F8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         Fog_Dev_Override;                                  // 0x400(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_651D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E7B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Fog_Day;                                           // 0x404(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Fog_Night;                                         // 0x408(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Atmosphere_Dev_Override;                           // 0x40C(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_651E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E7C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        ScreenSpaceReflection;                             // 0x410(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Nebula_Color_3;                        // 0x414(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       Ring_Offset;                                       // 0x418(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3289,18 +3302,18 @@ public:
 	int32                                        Ring_Color_2;                                      // 0x428(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Ring_Color_3;                                      // 0x42C(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Ring_Override_Manual;                              // 0x430(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_651F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E7D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Bloom_Intensity_;                                  // 0x434(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Fae_Magic_Toggle;                      // 0x438(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Debug_Minus_HWRT;                                  // 0x43C(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Manual_Fog_Only_Override;                          // 0x440(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Manual_Secondary_moon_Color;                       // 0x441(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6520[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E7E[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Realm_Minus_SecondaryMoonType;                     // 0x444(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Angle_X;                               // 0x448(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Angle_X_Manual_Override;                           // 0x44C(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Color_Correction_Override;                         // 0x44D(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6521[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E7F[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Realm_Minus_Color_Master_Table;                    // 0x450(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Color_Select;                          // 0x454(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Atmosphere_Master;                     // 0x458(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3312,14 +3325,14 @@ public:
 	int32                                        Realm_Minus_Vault_Override;                        // 0x464(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Atmosphere_Minus_Height_Fog_Cont__Minus_Day;       // 0x468(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Cascade_Scalabilty_Override;                       // 0x46C(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6522[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E80[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Shadow_Quality;                                    // 0x470(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Exposure_Debug_Override;                           // 0x474(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Nightmare_Override;                                // 0x475(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6523[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E81[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Nightmare_Skylight;                                // 0x478(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Manual_Celestial_Override;                         // 0x480(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6524[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E82[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Realm_Minus_Celestial_Type;                        // 0x484(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Global_Illumination;                               // 0x488(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Realm_Minus_Fae_Magic_Alt_Toggle;                  // 0x48C(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3348,7 +3361,7 @@ struct UTimeofDay_Lighting_C_ExecuteUbergraph_TimeofDay_Lighting_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6525[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EE5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_CustomEvent_Adjusted_Time;                  // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDirectionalLightComponent*            K2Node_CustomEvent_Sun;                            // 0x10(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UDirectionalLightComponent*            K2Node_CustomEvent_Celestial;                      // 0x18(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -3368,7 +3381,7 @@ public:
 	class UStaticMeshComponent*                  K2Node_CustomEvent_Moon_Half_C_02;                 // 0x90(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                  K2Node_CustomEvent_Moon_Half_D_03;                 // 0x98(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Moon_Visibility;                // 0xA0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6526[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EE9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStaticMeshComponent*                  K2Node_CustomEvent_Moon_Atm_Crescent_A_01;         // 0xA8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                  K2Node_CustomEvent_Moon_Atm_Crescent_A_02;         // 0xB0(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                  K2Node_CustomEvent_Moon_Atm_Crescent_B_01;         // 0xB8(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -3403,7 +3416,7 @@ public:
 	int32                                        K2Node_CustomEvent_Cloud_Index_D;                  // 0x14C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Cloud_Index_E;                  // 0x150(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Shadow_Cascade_Override;        // 0x154(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6527[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EEA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Shadow_Cascades_Sun;            // 0x158(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Shadow_Cascades_Celestial;      // 0x15C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_CustomEvent_Dynamic_Shadow_Distance_;       // 0x160(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3413,7 +3426,7 @@ public:
 	double                                       K2Node_CustomEvent_Contact_Shadow_Length;          // 0x180(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Celestial_Color;                // 0x188(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Color_Category                  K2Node_CustomEvent_Color_Category;                 // 0x18C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6528[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EEB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UDataTable*>                    K2Node_CustomEvent_Color_Data_Table_Categories;    // 0x190(0x10)(ConstParm, ReferenceParm)
 	int32                                        K2Node_CustomEvent_Color_Saturation;               // 0x1A0(0x4)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Color;                          // 0x1A4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3422,7 +3435,7 @@ public:
 	int32                                        K2Node_CustomEvent_Atmosphere_Level;               // 0x1B0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Exposure_WIP;                   // 0x1B4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_LUT_Category                    K2Node_CustomEvent_LUT_Category;                   // 0x1B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6529[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EEC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_LUT_WIP;                        // 0x1BC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_LUT_Saturation;                 // 0x1C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Fog_Falloff;                    // 0x1C4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3432,27 +3445,27 @@ public:
 	int32                                        K2Node_CustomEvent_Atmosphere___View_Distance;     // 0x1D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Atmosphere___Falloff;           // 0x1D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Sun_Color_Override___Adv;       // 0x1DC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_652A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EED[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Sun_Color___Adv;                // 0x1E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Sun_Saturation___Adv;           // 0x1E4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Main_Celestial_Color_Override___Adv; // 0x1E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_652B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EEE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Main_Celestial_Color_Saturation___Adv; // 0x1EC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Rayleigh_Color_Override___Adv;  // 0x1F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_652C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EEF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Rayleigh_Color___Adv;           // 0x1F4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Rayleigh_Saturation___Adv;      // 0x1F8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Mie_Color_Override___Adv;       // 0x1FC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_652D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EF0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Mie_Color___Adv;                // 0x200(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Mie_Saturation___Adv;           // 0x204(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Sky_Luminance_Color_Override___Adv; // 0x208(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_652E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EF1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Sky_Luminance_Color___Adv;      // 0x20C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Sky_Luminance_Saturation___Adv; // 0x210(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Exposure___Night;               // 0x214(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_HDR_Exposure_Override;          // 0x218(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_652F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EF2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_CustomEvent_HDR_Exposure_Compensation;      // 0x220(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                           K2Node_CustomEvent_HDR_Exposure_Compensation_Curve; // 0x228(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                              K2Node_CustomEvent_HDR_Exposure_Metering_Mask;     // 0x230(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -3463,12 +3476,12 @@ public:
 	double                                       K2Node_CustomEvent_HDR_Histogram_Log_Min;          // 0x258(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_CustomEvent_HDR_Histogram_Log_Max;          // 0x260(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_HDR;                            // 0x268(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6530[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EF3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_CustomEvent_Slope;                          // 0x270(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_CustomEvent_Toe;                            // 0x278(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_CustomEvent_Shoulder;                       // 0x280(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Exposure___DawnDusk;            // 0x288(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6531[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EF4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector4                              K2Node_CustomEvent_HDR_Global___Saturation;        // 0x290(0x20)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector4                              K2Node_CustomEvent_HDR_Global___Contrast;          // 0x2B0(0x20)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector4                              K2Node_CustomEvent_HDR_Global___Gamma;             // 0x2D0(0x20)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3477,7 +3490,7 @@ public:
 	double                                       K2Node_CustomEvent_HDR_Low_Percent_Day;            // 0x330(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_CustomEvent_HDR_High_Percent_Day;           // 0x338(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Primary_Function_Override;      // 0x340(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6532[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EF5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Realm_Color;                    // 0x344(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm_Color_Saturation;         // 0x348(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm_Day_Brightness_Exposure;  // 0x34C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3495,19 +3508,19 @@ public:
 	int32                                        K2Node_CustomEvent_Realm___Nebula_Brightness;      // 0x37C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm___Nebula_Type;            // 0x380(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Visual_Environment_Preset_Override; // 0x384(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6533[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EF6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Visual_Environment_Preset_;     // 0x388(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm___Atm_Moon_Visibility;    // 0x38C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm___Cloud_Type;             // 0x390(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6534[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EF7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_CustomEvent_Angle_A;                        // 0x398(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_CustomEvent_Angle_B;                        // 0x3A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Exposure_Comp;                  // 0x3A8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6535[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EF8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_CustomEvent_Low_Percent;                    // 0x3B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_CustomEvent_High_Percent;                   // 0x3B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Exposure_Comp_Night;            // 0x3C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6536[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EF9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_CustomEvent_Exposure_Comp_Dusk;             // 0x3C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Exposure_Comp_Dawn;             // 0x3D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Fog___Volumetric;               // 0x3D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3518,16 +3531,16 @@ public:
 	int32                                        K2Node_CustomEvent_Shadow_Cascade_Level;           // 0x3E8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm___Celestial_Intensity;    // 0x3EC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Atmosphere___Height_Fog_Cont____Night; // 0x3F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6537[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EFB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_CustomEvent_White_Clip;                     // 0x3F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_CustomEvent_Temperature;                    // 0x400(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                  K2Node_CustomEvent_Lens_Flare_Sun;                 // 0x408(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Fog_Dev_Override;               // 0x410(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_653B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EFD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Fog_Day;                        // 0x414(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Fog_Night;                      // 0x418(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Atmosphere_Dev_Override;        // 0x41C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_653C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EFE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_ScreenSpaceReflection;          // 0x420(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm___Nebula_Color_3;         // 0x424(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_CustomEvent_Ring_Offset;                    // 0x428(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3535,18 +3548,18 @@ public:
 	int32                                        K2Node_CustomEvent_Ring_Color_2;                   // 0x438(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Ring_Color_3;                   // 0x43C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Ring_Override_Manual;           // 0x440(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_653D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F02[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Bloom_Intensity_;               // 0x444(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm___Fae_Magic_Toggle;       // 0x448(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Debug___HWRT;                   // 0x44C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Manual_Fog_Only_Override;       // 0x450(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Manual_Secondary_moon_Color;    // 0x451(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_653E[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F06[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Realm___SecondaryMoonType;      // 0x454(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm___Angle_X;                // 0x458(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Angle_X_Manual_Override;        // 0x45C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Color_Correction_Override;      // 0x45D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_653F[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F08[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Realm___Color_Master_Table;     // 0x460(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm___Color_Select;           // 0x464(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm___Atmosphere_Master;      // 0x468(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3558,14 +3571,14 @@ public:
 	int32                                        K2Node_CustomEvent_Realm___Vault_Override;         // 0x474(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Atmosphere___Height_Fog_Cont____Day; // 0x478(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Cascade_Scalabilty_Override;    // 0x47C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6540[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F0A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Shadow_Quality;                 // 0x480(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Exposure_Debug_Override;        // 0x484(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Nightmare_Override;             // 0x485(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6541[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F0B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_CustomEvent_Nightmare_Skylight;             // 0x488(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Manual_Celestial_Override;      // 0x490(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6542[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F0C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Realm___Celestial_Type;         // 0x494(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Global_Illumination;            // 0x498(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Realm___Fae_Magic_Alt_Toggle;   // 0x49C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3578,7 +3591,7 @@ public:
 	int32                                        K2Node_CustomEvent_Realm___Cloud;                  // 0x4BC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                  K2Node_CustomEvent_BM_Card;                        // 0x4C0(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_PPM_Debug;                      // 0x4C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6543[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F0E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CallFunc_GetToolLightIntentsity_Light_Intensity_Out; // 0x4D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_CustomEvent_AdjustedTime;                   // 0x4D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

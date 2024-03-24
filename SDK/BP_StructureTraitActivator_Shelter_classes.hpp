@@ -16,7 +16,7 @@ class UBP_StructureTraitActivator_Shelter_C : public UStructureTraitActivator
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x50(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                         OverriddenByArtisanCard;                           // 0x58(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A4CC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5CFE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStructureTraitAsset*                  ArtisanTrait;                                      // 0x60(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

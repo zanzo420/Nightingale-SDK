@@ -39,7 +39,7 @@ struct FDormantDiscovery
 {
 public:
 	struct FExperienceStateID                    PersistenceID;                                     // 0x0(0x4)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3590[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2899[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UDiscoveryDataAsset>    DiscoveryDataAsset;                                // 0x8(0x28)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 

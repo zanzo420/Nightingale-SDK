@@ -20,18 +20,18 @@ public:
 	class UStaticMeshComponent*                  StaticMesh;                                        // 0xA50(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        Timeline_GrowthCurve_D8036DCC4D568A6EAFB717A4E6AA0248; // 0xA58(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                Timeline__Direction_D8036DCC4D568A6EAFB717A4E6AA0248; // 0xA5C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9B67[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CCD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    Timeline;                                          // 0xA60(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                        GrowthTimeline_GrowthCurve_B9BF1FCB4E92E76849C9E79ADAC5E35C; // 0xA68(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                GrowthTimeline__Direction_B9BF1FCB4E92E76849C9E79ADAC5E35C; // 0xA6C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9B68[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CCE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    GrowthTimeline;                                    // 0xA70(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9B69[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CCF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInventoryEntry                       PlacedItem;                                        // 0xA80(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FInventoryEntry                       SpawnSpec;                                         // 0xD70(0x2F0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UScopedAkComponent*                    ScopedAk_Offering;                                 // 0x1060(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         OfferingAudioEnabled;                              // 0x1068(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_9B6A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9CD1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCharacteristicDataReference          PawnChr;                                           // 0x1070(0x90)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FCharacteristicDataReference          RookChr;                                           // 0x1100(0x90)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FCharacteristicDataReference          BishopChr;                                         // 0x1190(0x90)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)

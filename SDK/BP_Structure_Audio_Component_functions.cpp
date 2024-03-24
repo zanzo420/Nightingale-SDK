@@ -629,7 +629,7 @@ void UBP_Structure_Audio_Component_C::Generate_Piece_Id_List(class UStructureCom
 // Function BP_Structure_Audio_Component.BP_Structure_Audio_Component_C.Add Piece Id To Destroyed List
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                              Piece_ID                                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Piece_Id                                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Array_Contains_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_K2_IsValidTimerHandle_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -637,7 +637,7 @@ void UBP_Structure_Audio_Component_C::Generate_Piece_Id_List(class UStructureCom
 // struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Structure_Audio_Component_C::Add_Piece_Id_To_Destroyed_List(int32& Piece_ID, bool CallFunc_Array_Contains_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, int32 CallFunc_Array_Add_ReturnValue)
+void UBP_Structure_Audio_Component_C::Add_Piece_Id_To_Destroyed_List(int32& Piece_Id, bool CallFunc_Array_Contains_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, int32 CallFunc_Array_Add_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -646,7 +646,7 @@ void UBP_Structure_Audio_Component_C::Add_Piece_Id_To_Destroyed_List(int32& Piec
 
 	Params::UBP_Structure_Audio_Component_C_Add_Piece_Id_To_Destroyed_List_Params Parms{};
 
-	Parms.Piece_ID = Piece_ID;
+	Parms.Piece_Id = Piece_Id;
 	Parms.CallFunc_Array_Contains_ReturnValue = CallFunc_Array_Contains_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.CallFunc_K2_IsValidTimerHandle_ReturnValue = CallFunc_K2_IsValidTimerHandle_ReturnValue;
@@ -1165,7 +1165,7 @@ void UBP_Structure_Audio_Component_C::Handle_New_Piece(const struct FStructure_A
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UStructureCompositePiece*    Structure_Composite_Piece                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class FString                      Piece_ID                                                         (Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+// class FString                      Piece_Id                                                         (Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 // struct FVector                     World_Location                                                   (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     NewLocalVar                                                      (Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     CallFunc_GetPieceInfoFromStructureObject_OutOwner                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -1175,7 +1175,7 @@ void UBP_Structure_Audio_Component_C::Handle_New_Piece(const struct FStructure_A
 // class UAkSwitchValue*              CallFunc_Get_Destruction_Properties_Material_Switch              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FS_StructurePieceDestructionPropertiesK2Node_MakeStruct_S_StructurePieceDestructionProperties          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Structure_Audio_Component_C::CacheDestructionData(class UStructureCompositePiece* Structure_Composite_Piece, const class FString& Piece_ID, const struct FVector& World_Location, class UObject* NewLocalVar, class UObject* CallFunc_GetPieceInfoFromStructureObject_OutOwner, int32 CallFunc_GetPieceInfoFromStructureObject_OutPieceId, const struct FVector& CallFunc_Get_Structure_Composite_Piece_Location_Location, class UAkAudioEvent* CallFunc_Get_Destruction_Properties_Event_Override, class UAkSwitchValue* CallFunc_Get_Destruction_Properties_Material_Switch, const struct FS_StructurePieceDestructionProperties& K2Node_MakeStruct_S_StructurePieceDestructionProperties)
+void UBP_Structure_Audio_Component_C::CacheDestructionData(class UStructureCompositePiece* Structure_Composite_Piece, const class FString& Piece_Id, const struct FVector& World_Location, class UObject* NewLocalVar, class UObject* CallFunc_GetPieceInfoFromStructureObject_OutOwner, int32 CallFunc_GetPieceInfoFromStructureObject_OutPieceId, const struct FVector& CallFunc_Get_Structure_Composite_Piece_Location_Location, class UAkAudioEvent* CallFunc_Get_Destruction_Properties_Event_Override, class UAkSwitchValue* CallFunc_Get_Destruction_Properties_Material_Switch, const struct FS_StructurePieceDestructionProperties& K2Node_MakeStruct_S_StructurePieceDestructionProperties)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1185,7 +1185,7 @@ void UBP_Structure_Audio_Component_C::CacheDestructionData(class UStructureCompo
 	Params::UBP_Structure_Audio_Component_C_CacheDestructionData_Params Parms{};
 
 	Parms.Structure_Composite_Piece = Structure_Composite_Piece;
-	Parms.Piece_ID = Piece_ID;
+	Parms.Piece_Id = Piece_Id;
 	Parms.World_Location = World_Location;
 	Parms.NewLocalVar = NewLocalVar;
 	Parms.CallFunc_GetPieceInfoFromStructureObject_OutOwner = CallFunc_GetPieceInfoFromStructureObject_OutOwner;

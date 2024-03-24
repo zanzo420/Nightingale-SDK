@@ -24,7 +24,7 @@ public:
 	struct FUIGroupInfo                          GroupInfo;                                         // 0x390(0x20)(Edit, BlueprintVisible, ExposeOnSpawn)
 	TArray<class UNWXMenuDataEntry*>             AllEntriesInPanel;                                 // 0x3B0(0x10)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         ExpandedPanel;                                     // 0x3C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_8C05[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8DE3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            ListPanel_GroupCollapsedToggled;                   // 0x3C8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FVector2D                             ThumbnailSize;                                     // 0x3D8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             ThumbnailSizeGlossary;                             // 0x3E8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

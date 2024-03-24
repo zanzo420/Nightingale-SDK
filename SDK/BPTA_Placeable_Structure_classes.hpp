@@ -25,7 +25,7 @@ public:
 	int32                                        SnapPointIconCacheSize;                            // 0x690(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        SnapPointOptionOffset;                             // 0x694(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        PreviousSnapPointOptionOffset;                     // 0x698(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_7874[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B25[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructureAssetReference              PlaceableStructureRef;                             // 0x6A0(0x80)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TSet<class UObject*>                         CachedTraitObjects;                                // 0x720(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<class USplineComponent*, class USplineMeshComponent*> SplineToMeshesMap;                                 // 0x770(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)

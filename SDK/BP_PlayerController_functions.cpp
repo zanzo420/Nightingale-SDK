@@ -319,15 +319,15 @@ class UNWXLoadingScreenMoviePlayerWidget* ABP_PlayerController_C::ShowMovieUntil
 // Parameters:
 // bool                               Bool                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class ABP_CreatureBase_C*>  CallFunc_GetAllActorsOfClass_OutActors                           (ReferenceParm)
 // class ABP_CreatureBase_C*          CallFunc_Array_Get_Item                                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerController_C::ArachnophobiaModeSet(bool Bool, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_IsServer_ReturnValue, TArray<class ABP_CreatureBase_C*>& CallFunc_GetAllActorsOfClass_OutActors, class ABP_CreatureBase_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
+void ABP_PlayerController_C::ArachnophobiaModeSet(bool Bool, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsDedicatedServer_ReturnValue, int32 Temp_int_Loop_Counter_Variable, TArray<class ABP_CreatureBase_C*>& CallFunc_GetAllActorsOfClass_OutActors, class ABP_CreatureBase_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -338,13 +338,13 @@ void ABP_PlayerController_C::ArachnophobiaModeSet(bool Bool, int32 Temp_int_Arra
 
 	Parms.Bool = Bool;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
 	Parms.CallFunc_GetAllActorsOfClass_OutActors = CallFunc_GetAllActorsOfClass_OutActors;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1421,9 +1421,9 @@ void ABP_PlayerController_C::TraceForTargetToInteract(bool* Success, struct FInt
 // Function BP_PlayerController.BP_PlayerController_C.EnableOptimizations
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerController_C::EnableOptimizations(bool CallFunc_IsServer_ReturnValue)
+void ABP_PlayerController_C::EnableOptimizations(bool CallFunc_IsDedicatedServer_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1432,7 +1432,7 @@ void ABP_PlayerController_C::EnableOptimizations(bool CallFunc_IsServer_ReturnVa
 
 	Params::ABP_PlayerController_C_EnableOptimizations_Params Parms{};
 
-	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -4164,42 +4164,6 @@ void ABP_PlayerController_C::CustomEvent(class UEnvQueryInstanceBlueprintWrapper
 }
 
 
-// Function BP_PlayerController.BP_PlayerController_C.Server_MoveCharacterToBetterSpot
-// (Net, NetServer, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void ABP_PlayerController_C::Server_MoveCharacterToBetterSpot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_PlayerController_C", "Server_MoveCharacterToBetterSpot");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function BP_PlayerController.BP_PlayerController_C.Server_MoveCharacterToRespite
-// (Net, NetServer, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void ABP_PlayerController_C::Server_MoveCharacterToRespite()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_PlayerController_C", "Server_MoveCharacterToRespite");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function BP_PlayerController.BP_PlayerController_C.ShowGeneralNotification
 // (Net, NetClient, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -4244,24 +4208,6 @@ void ABP_PlayerController_C::ShowErrorNotification(class FText MainText, class F
 	Parms.BodyText = BodyText;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function BP_PlayerController.BP_PlayerController_C.ToggleHUDVisibility
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void ABP_PlayerController_C::ToggleHUDVisibility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_PlayerController_C", "ToggleHUDVisibility");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -4492,47 +4438,7 @@ void ABP_PlayerController_C::SetBuildingFeedbackMode(enum class EBuildModeContex
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                             Temp_real_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_ShowingHUD                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      K2Node_Event_ActorToMark_2                                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ACharacter*                  K2Node_Event_PlayerCharacter                                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UCameraComponent*            K2Node_Event_PlayerCamera                                        (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                K2Node_Event_Colour_1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                             K2Node_Event_IconDistance                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FDataTableRowHandle         K2Node_Event_Row                                                 (NoDestructor, HasGetValueTypeHash)
-// class AActor*                      K2Node_Event_ActorToMark_1                                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      K2Node_Event_ActorToMark                                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double                             K2Node_Event_MarkerPrecision                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_ParticlesVisible                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                K2Node_Event_ParticlesColor                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_bVisible_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_PlayFX                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                             K2Node_Event_DisplayTime_3                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FS_QuestNotificatorInfo     K2Node_Event_Quest_Notificator_Info                              (HasGetValueTypeHash)
-// bool                               K2Node_Event_DisplayToolTip                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     K2Node_Event_ToolTipIcon                                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Event_ToolTipText                                         (None)
-// bool                               K2Node_Event_ToolTipOnly                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                             K2Node_Event_DisplayTime_2                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FS_IngameTutorial           K2Node_Event_Row1_1                                              (HasGetValueTypeHash)
-// struct FS_IngameTutorial           K2Node_Event_Row2_1                                              (HasGetValueTypeHash)
-// struct FLinearColor                K2Node_Event_BackgroundColor                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class E_CrosshairTypes        K2Node_Event_Crosshair_Type                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_CrosshairVisibility                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                K2Node_Event_Crosshair_Color                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class E_HitIndicatorTypes     K2Node_Event_HitIndicator_Type                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_HitIndicatorVisibility                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                             K2Node_Event_IndicatorTime                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                K2Node_Event_IndicatorColor                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class E_HitType               K2Node_Event_Hit_Type                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_IsRecoil                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FS_BigLootNotificationInfo  K2Node_Event_Big_Loot_Notify_Info                                (HasGetValueTypeHash)
-// double                             K2Node_Event_DisplayTime_1                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FS_IngameTutorial           K2Node_Event_Row1                                                (HasGetValueTypeHash)
-// struct FS_IngameTutorial           K2Node_Event_Row2                                                (HasGetValueTypeHash)
-// double                             K2Node_Event_DisplayTime                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Event_TypeText                                            (None)
-// class FText                        K2Node_Event_HeadlineText                                        (None)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bVisible                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      K2Node_Event_ChatMessage                                         (ZeroConstructor, HasGetValueTypeHash)
 // struct FS_ChatMessage              K2Node_Event_ChatMessageS                                        (HasGetValueTypeHash)
@@ -4607,16 +4513,14 @@ void ABP_PlayerController_C::SetBuildingFeedbackMode(enum class EBuildModeContex
 // TScriptInterface<class IBPI_ControllerClientInteractable_C>K2Node_DynamicCast_AsBPI_Controller_Client_Interactable          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             K2Node_Event_DisplayTime                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        K2Node_Event_TypeText                                            (None)
+// class FText                        K2Node_Event_HeadlineText                                        (None)
 // enum class EInputActionTypes       K2Node_CustomEvent_InputActionType                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       CallFunc_K2_GetPawn_ReturnValue                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UBP_ActionComponent_C*       CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UInputAction*                K2Node_CustomEvent_Input_Action                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // enum class EInputActionTypes       K2Node_CustomEvent_ReleaseActionType                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       CallFunc_K2_GetPawn_ReturnValue_1                                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -4624,6 +4528,8 @@ void ABP_PlayerController_C::SetBuildingFeedbackMode(enum class EBuildModeContex
 // bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UBP_ActionComponent_C*       CallFunc_GetComponentByClass_ReturnValue_1                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_4                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                  Temp_struct_Variable_1                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // enum class EBuildModeContext       K2Node_Event_Mode_1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UBP_BuildModeFeedbackComponent_C*CallFunc_GetBuildModeFeedbackComponent_Component                 (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -4642,26 +4548,56 @@ void ABP_PlayerController_C::SetBuildingFeedbackMode(enum class EBuildModeContex
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue_2                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsBuilding_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FGameplayEffectCue>  Temp_struct_Variable_2                                           (ConstParm, ReferenceParm)
 // bool                               CallFunc_BooleanNOR_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Has_Been_Initd_Variable                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue_2                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_IsClosed_Variable                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTagValueContainer          Temp_struct_Variable_3                                           (ConstParm)
-// struct FHitResult                  Temp_struct_Variable_4                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue_3                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Not_PreBool_ReturnValue_3                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             K2Node_Event_DisplayTime_1                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FS_IngameTutorial           K2Node_Event_Row1                                                (HasGetValueTypeHash)
+// struct FS_IngameTutorial           K2Node_Event_Row2                                                (HasGetValueTypeHash)
+// struct FS_BigLootNotificationInfo  K2Node_Event_Big_Loot_Notify_Info                                (HasGetValueTypeHash)
+// bool                               K2Node_Event_IsRecoil                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             K2Node_Event_IndicatorTime                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_Event_IndicatorColor                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class E_HitType               K2Node_Event_Hit_Type                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class E_CrosshairTypes        K2Node_Event_Crosshair_Type                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_CrosshairVisibility                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_Event_Crosshair_Color                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class E_HitIndicatorTypes     K2Node_Event_HitIndicator_Type                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_HitIndicatorVisibility                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             K2Node_Event_DisplayTime_2                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FS_IngameTutorial           K2Node_Event_Row1_1                                              (HasGetValueTypeHash)
+// struct FS_IngameTutorial           K2Node_Event_Row2_1                                              (HasGetValueTypeHash)
+// struct FLinearColor                K2Node_Event_BackgroundColor                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             K2Node_Event_DisplayTime_3                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FS_QuestNotificatorInfo     K2Node_Event_Quest_Notificator_Info                              (HasGetValueTypeHash)
+// bool                               K2Node_Event_DisplayToolTip                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     K2Node_Event_ToolTipIcon                                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FText                        K2Node_Event_ToolTipText                                         (None)
+// bool                               K2Node_Event_ToolTipOnly                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_bVisible_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_PlayFX                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      K2Node_Event_ActorToMark                                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// double                             K2Node_Event_MarkerPrecision                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_ParticlesVisible                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_Event_ParticlesColor                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      K2Node_Event_ActorToMark_1                                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      K2Node_Event_ActorToMark_2                                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ACharacter*                  K2Node_Event_PlayerCharacter                                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UCameraComponent*            K2Node_Event_PlayerCamera                                        (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_Event_Colour_1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             K2Node_Event_IconDistance                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FDataTableRowHandle         K2Node_Event_Row                                                 (NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_ShowingHUD                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAuthority_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       CallFunc_K2_GetPawn_ReturnValue_2                                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FTagValueContainer          Temp_struct_Variable_5                                           (ConstParm)
+// struct FTagValueContainer          Temp_struct_Variable_2                                           (ConstParm)
 // bool                               CallFunc_IsValid_ReturnValue_7                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       CallFunc_K2_GetPawn_ReturnValue_3                                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_8                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       K2Node_Event_PossessedPawn                                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_8                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       CallFunc_K2_GetPawn_ReturnValue_4                                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FGameplayEffectCue>  Temp_struct_Variable_6                                           (ConstParm, ReferenceParm)
+// TArray<struct FGameplayEffectCue>  Temp_struct_Variable_3                                           (ConstParm, ReferenceParm)
 // int32                              K2Node_CustomEvent_Hour_1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_CustomEvent_Min_1                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_CustomEvent_Hour                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4685,40 +4621,39 @@ void ABP_PlayerController_C::SetBuildingFeedbackMode(enum class EBuildModeContex
 // TScriptInterface<class IDamageEventInterface>K2Node_DynamicCast_AsDamage_Event_Interface_1                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_3                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_11                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTextureRenderTarget2D*      CallFunc_CreateRenderTarget2D_ReturnValue                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       CallFunc_K2_GetPawn_ReturnValue_8                                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ABP_Character_C*             K2Node_DynamicCast_AsBP_Character                                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_4                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTagContainer       Temp_struct_Variable_4                                           (ConstParm)
 // bool                               CallFunc_K2_AttachToComponent_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue_4                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsServer_ReturnValue_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                  Temp_struct_Variable_5                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// struct FTagValueContainer          Temp_struct_Variable_6                                           (ConstParm)
+// TArray<struct FGameplayEffectCue>  Temp_struct_Variable_7                                           (ConstParm, ReferenceParm)
+// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTagValueContainer          Temp_struct_Variable_8                                           (ConstParm)
+// bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FPlayerLoadoutDataReference K2Node_CustomEvent_Loadout                                       (HasGetValueTypeHash)
-// bool                               CallFunc_IsServer_ReturnValue_2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       Temp_struct_Variable_7                                           (ConstParm)
+// bool                               CallFunc_Not_PreBool_ReturnValue_3                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetCurrentLevelName_ReturnValue                         (ZeroConstructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       Temp_struct_Variable_8                                           (ConstParm)
-// bool                               CallFunc_HasAuthority_ReturnValue_5                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                  Temp_struct_Variable_9                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool                               CallFunc_IsServer_ReturnValue_3                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FGameplayEffectCue>  Temp_struct_Variable_10                                          (ConstParm, ReferenceParm)
 // class APawn*                       CallFunc_K2_GetPawn_ReturnValue_9                                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       CallFunc_K2_GetPawn_ReturnValue_10                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       CallFunc_K2_GetPawn_ReturnValue_11                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_GodModeTag_GodModeTag                                   (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_GodModeTag_GodModeTag_1                                 (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_GodModeTag_GodModeTag_2                                 (NoDestructor, HasGetValueTypeHash)
-// struct FTagValueContainer          Temp_struct_Variable_10                                          (ConstParm)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_1                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UBP_MapTracker_C*            CallFunc_GetMapTracker_MapTrackerComponent                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ANWXPlayerState*             K2Node_DynamicCast_AsNWXPlayer_State                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_5                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Has_Been_Initd_Variable                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class ILocationTrackerInterface>CallFunc_Server_DebugShowAndUnlockAllMapPins_self_CastInput      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       CallFunc_K2_GetPawn_ReturnValue_12                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue_6                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ABP_Character_C*             K2Node_DynamicCast_AsBP_Character_1                              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_6                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_2                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4726,16 +4661,14 @@ void ABP_PlayerController_C::SetBuildingFeedbackMode(enum class EBuildModeContex
 // bool                               CallFunc_IsValid_ReturnValue_12                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_3                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       CallFunc_K2_GetPawn_ReturnValue_14                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_13                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FGameplayEffectCue>  Temp_struct_Variable_11                                          (ConstParm, ReferenceParm)
 // class ANWXActor*                   CallFunc_GetDamageSource_Debug_ReturnValue                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_13                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ANWXActor*                   CallFunc_GetDamageSource_Debug_ReturnValue_1                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FTagValueContainer          CallFunc_DamageActor_AggregatedDamageTags                        (None)
-// struct FTagValueContainer          CallFunc_DamageActor_AggregatedDamageTags_1                      (None)
-// bool                               CallFunc_CanUseSupportCommands_ReturnValue_4                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ANWXActor*                   CallFunc_GetDamageSource_Debug_ReturnValue_2                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class IDamageEventInterface>CallFunc_DamageActor_self_CastInput                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTagValueContainer          CallFunc_DamageActor_AggregatedDamageTags_2                      (None)
+// struct FTagValueContainer          CallFunc_DamageActor_AggregatedDamageTags_1                      (None)
+// bool                               CallFunc_CanUseSupportCommands_ReturnValue_4                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_5                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_6                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_7                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4743,58 +4676,43 @@ void ABP_PlayerController_C::SetBuildingFeedbackMode(enum class EBuildModeContex
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_9                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_10                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_11                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_IsClosed_Variable                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_12                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ULocalPlayer*                CallFunc_GetLocalPlayerFromController_ReturnValue                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UWBP_DebugMenuScreen_C*      CallFunc_CreateWidgetInstanceFromLayer_ReturnValue               (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UEnvQueryInstanceBlueprintWrapper*K2Node_CustomEvent_QueryInstance                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // enum class EEnvQueryStatus         K2Node_CustomEvent_QueryStatus                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_14                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APawn*                       CallFunc_K2_GetPawn_ReturnValue_15                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_GetCurrentRealmSettings_Success                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRealmSettings              CallFunc_GetCurrentRealmSettings_RealmSettings                   (None)
-// bool                               CallFunc_IsValid_ReturnValue_15                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasTag_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APawn*                       CallFunc_K2_GetPawn_ReturnValue_16                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_BooleanAND_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsServer_ReturnValue_4                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWBP_DebugThirdPersonCameraWidget_C*CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTagContainer       Temp_struct_Variable_11                                          (ConstParm)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue_2                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTagValueContainer          CallFunc_DamageActor_AggregatedDamageTags_2                      (None)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_13                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      CallFunc_GetRespitePoint_ReturnValue                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_16                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_14                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FInputActionValue           K2Node_EnhancedInputActionEvent_ActionValue                      (NoDestructor)
-// float                              K2Node_EnhancedInputActionEvent_ElapsedTime                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              K2Node_EnhancedInputActionEvent_TriggeredTime                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UInputAction*                K2Node_EnhancedInputActionEvent_SourceAction                     (ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double                             Temp_real_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Conv_InputActionValueToBool_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UInputAction*                Temp_object_Variable                                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double                             Temp_real_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                             Temp_real_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAuthority_ReturnValue_2                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_DebugThirdPersonCameraWidget_C*CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_CustomEvent_Header                                        (None)
 // class FText                        K2Node_CustomEvent_Body                                          (None)
 // double                             K2Node_CustomEvent_Duration                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class IBPI_HUD_Manager_C>CallFunc_Get_HUD_Manager_HUD_Manager                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FS_UpdaterNotificatorInfo   K2Node_MakeStruct_S_UpdaterNotificatorInfo                       (HasGetValueTypeHash)
 // struct FTransform                  Temp_struct_Variable_12                                          (ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AHUD*                        CallFunc_GetHUD_ReturnValue                                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USceneCaptureComponent2D*    CallFunc_AddComponent_ReturnValue                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AHUD_NWX_C*                  K2Node_DynamicCast_AsHUD_NWX                                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess_7                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_CustomEvent_MainText                                      (None)
 // class FText                        K2Node_CustomEvent_BodyText                                      (None)
+// class USceneCaptureComponent2D*    CallFunc_AddComponent_ReturnValue                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class IBPI_HUD_Manager_C>CallFunc_Get_HUD_Manager_HUD_Manager_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue_3                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TSubclassOf<class UNWXCommonWindowWidget>K2Node_Event_WidgetToOpen                                        (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 // float                              K2Node_Event_DeltaSeconds                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ULocalPlayer*                CallFunc_GetLocalPlayerFromController_ReturnValue_1              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     K2Node_CustomEvent_Location                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UNWXCommonWindowWidget*      CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1             (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class APawn*                       CallFunc_K2_GetPawn_ReturnValue_17                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                       CallFunc_K2_GetPawn_ReturnValue_15                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_K2_TeleportTo_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_17                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_15                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ABP_GameState_C*             K2Node_CustomEvent_GameState                                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FS_LevelFastTravelLocation  CallFunc_Array_Get_Item                                          (HasGetValueTypeHash)
@@ -4812,34 +4730,40 @@ void ABP_PlayerController_C::SetBuildingFeedbackMode(enum class EBuildModeContex
 // bool                               K2Node_CustomEvent_Success                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class IAwaitable> CallFunc_AwaitBP_Awaitable_CastInput                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 // struct FDelegateHandleBPWrapper    CallFunc_AwaitBP_Handle                                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue_18                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_16                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsInitialized_bInitialized                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FMapPinData                 K2Node_Event_MapPinData                                          (ConstParm)
 // struct FMapPinData                 K2Node_CustomEvent_MapPinData                                    (None)
-// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue_4                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsPlayInEditor_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetInitialInventoryReceived_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_3                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UEnvQuery*                   Temp_object_Variable_1                                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetFunctionName_ReturnValue                             (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EBuildModeContext       K2Node_Event_Mode                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsServer_ReturnValue_5                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EBuildModeContext       K2Node_Event_Mode                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UEnvQuery*                   Temp_object_Variable_2                                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UEnvQuery*                   K2Node_Select_Default                                            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_4                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_5                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             Temp_real_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_6                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_7                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CanUseSupportCommands_ReturnValue_15                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             Temp_real_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UInputAction*                Temp_object_Variable                                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FInputActionValue           K2Node_EnhancedInputActionEvent_ActionValue                      (NoDestructor)
+// float                              K2Node_EnhancedInputActionEvent_ElapsedTime                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              K2Node_EnhancedInputActionEvent_TriggeredTime                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UInputAction*                K2Node_EnhancedInputActionEvent_SourceAction                     (ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Conv_InputActionValueToBool_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             Temp_real_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                             Temp_real_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerController_C::ExecuteUbergraph_BP_PlayerController(int32 EntryPoint, double Temp_real_Variable, bool K2Node_Event_ShowingHUD, class AActor* K2Node_Event_ActorToMark_2, class ACharacter* K2Node_Event_PlayerCharacter, class UCameraComponent* K2Node_Event_PlayerCamera, const struct FLinearColor& K2Node_Event_Colour_1, double K2Node_Event_IconDistance, const struct FDataTableRowHandle& K2Node_Event_Row, class AActor* K2Node_Event_ActorToMark_1, class AActor* K2Node_Event_ActorToMark, double K2Node_Event_MarkerPrecision, bool K2Node_Event_ParticlesVisible, const struct FLinearColor& K2Node_Event_ParticlesColor, bool K2Node_Event_bVisible_1, bool K2Node_Event_PlayFX, double K2Node_Event_DisplayTime_3, const struct FS_QuestNotificatorInfo& K2Node_Event_Quest_Notificator_Info, bool K2Node_Event_DisplayToolTip, class UObject* K2Node_Event_ToolTipIcon, class FText K2Node_Event_ToolTipText, bool K2Node_Event_ToolTipOnly, double K2Node_Event_DisplayTime_2, const struct FS_IngameTutorial& K2Node_Event_Row1_1, const struct FS_IngameTutorial& K2Node_Event_Row2_1, const struct FLinearColor& K2Node_Event_BackgroundColor, enum class E_CrosshairTypes K2Node_Event_Crosshair_Type, bool K2Node_Event_CrosshairVisibility, const struct FLinearColor& K2Node_Event_Crosshair_Color, enum class E_HitIndicatorTypes K2Node_Event_HitIndicator_Type, bool K2Node_Event_HitIndicatorVisibility, double K2Node_Event_IndicatorTime, const struct FLinearColor& K2Node_Event_IndicatorColor, enum class E_HitType K2Node_Event_Hit_Type, bool K2Node_Event_IsRecoil, const struct FS_BigLootNotificationInfo& K2Node_Event_Big_Loot_Notify_Info, double K2Node_Event_DisplayTime_1, const struct FS_IngameTutorial& K2Node_Event_Row1, const struct FS_IngameTutorial& K2Node_Event_Row2, double K2Node_Event_DisplayTime, class FText K2Node_Event_TypeText, class FText K2Node_Event_HeadlineText, bool K2Node_Event_bVisible, const class FString& K2Node_Event_ChatMessage, const struct FS_ChatMessage& K2Node_Event_ChatMessageS, int32 K2Node_Event_ChannelID_1, int32 K2Node_Event_ChannelID, int32 K2Node_Event_PlayerID_1, const class FString& K2Node_Event_Message_4, int32 K2Node_Event_PlayerID, const class FString& K2Node_Event_Message_3, bool K2Node_Event_Away, const class FString& K2Node_Event_Message_2, const class FString& K2Node_Event_Message_1, const class FString& K2Node_Event_Message, bool K2Node_Event_Show, double K2Node_Event_Time, bool K2Node_Event_Show_, const struct FInteractionUIContext& K2Node_Event_InteractionContext, bool K2Node_Event_Display_, const class FString& K2Node_Event_Bar_Label_1, class FText K2Node_Event_Sub_Text__Status_Creature_Type_Whatever_, double K2Node_Event_Health, class FText K2Node_Event_Bar_Header_1, const struct FLinearColor& K2Node_Event_Progress_Bar_Tint, enum class EProgressBarFillType K2Node_Event_Progress_Bar_Direction, const class FString& K2Node_Event_Bar_Label, class FText K2Node_Event_Bar_Header, class FText K2Node_Event_Bar_Sub_Header, const class FString& K2Node_Event_Label_1, const struct FDamageEffectContextData& K2Node_Event_DamageContextData, double K2Node_Event_Time_to_Display_1, double K2Node_Event_Damage_Intensity__Amount_, const struct FLinearColor& K2Node_Event_Colour, bool K2Node_Event_Visible, double K2Node_Event_CurrentProgress, class FText K2Node_Event_Label, bool K2Node_Event_ShowImage, TSoftObjectPtr<class UTexture2D> K2Node_Event_Image, enum class E_UI_HUD_Modes K2Node_Event_HUD_Mode, TScriptInterface<class IEncounterUIDataInterface> K2Node_Event_EncounterData, const struct FNotificationEncounter& K2Node_Event_EncounterMessage, double K2Node_Event_RealmStartTime, double K2Node_Event_Spread, bool K2Node_Event_IsVisible, const struct FS_ContextualControlsData& K2Node_Event_ContextualControlsData, const struct FNotificationEncounter& K2Node_Event_Message_Content, double K2Node_Event_TimeToDisplay_1, const struct FNotificationEncounter& K2Node_Event_MessageContent, bool K2Node_Event_Pin_or_Unpin__Pin_true_will_add_, const struct FS_UpdaterNotificatorInfo& K2Node_Event_Content_1, bool K2Node_Event_Remove_Manually, double K2Node_Event_Time_to_Display, bool K2Node_Event_ManuallyRemove_, double K2Node_Event_TimeToDisplay, const struct FS_UpdaterNotificatorInfo& K2Node_Event_Content, const struct FVector& K2Node_Event_Location, enum class EItemQuality K2Node_Event_Quality, class FText K2Node_Event_MainText, class FText K2Node_Event_BodyText, double K2Node_Event_TimeToStayBlack, bool K2Node_Event_To_Black_true__From_Black__False, const struct FStructurePlacementFeedback_Collision& K2Node_Event_Feedback_1, const struct FStructurePlacementFeedback& K2Node_Event_Feedback, bool K2Node_Event_CanRotate, double K2Node_Event_CurrentRotation, bool K2Node_Event_CanAdjustHeight, double K2Node_Event_Height_Current, double K2Node_Event_Height_Max, double K2Node_Event_Height_Min, TScriptInterface<class IBPI_ControllerClientInteractable_C> K2Node_CustomEvent_InteractionObject_1, class UObject* K2Node_CustomEvent_InteractionObject, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, TScriptInterface<class IBPI_ControllerClientInteractable_C> K2Node_DynamicCast_AsBPI_Controller_Client_Interactable, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsServer_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, bool Temp_bool_Variable, bool CallFunc_Not_PreBool_ReturnValue, enum class EInputActionTypes K2Node_CustomEvent_InputActionType, class APawn* CallFunc_K2_GetPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UBP_ActionComponent_C* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_HasAuthority_ReturnValue_1, class UInputAction* K2Node_CustomEvent_Input_Action, enum class EInputActionTypes K2Node_CustomEvent_ReleaseActionType, class APawn* CallFunc_K2_GetPawn_ReturnValue_1, const struct FGameplayTagContainer& Temp_struct_Variable, bool CallFunc_IsValid_ReturnValue_3, class UBP_ActionComponent_C* CallFunc_GetComponentByClass_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_4, const struct FHitResult& Temp_struct_Variable_1, enum class EBuildModeContext K2Node_Event_Mode_1, class UBP_BuildModeFeedbackComponent_C* CallFunc_GetBuildModeFeedbackComponent_Component, enum class EBuildModeAction K2Node_Event_Action, bool K2Node_Event_Enabled, bool CallFunc_IsValid_ReturnValue_5, class UBP_BuildModeFeedbackComponent_C* CallFunc_GetBuildModeFeedbackComponent_Component_1, bool CallFunc_IsValid_ReturnValue_6, class UMenusComponent* CallFunc_GetMenusComponent_ReturnValue, TScriptInterface<class IBuildingInterface> CallFunc_CacheAndGetBuildingObject_ReturnValue, bool CallFunc_IsBuilding_ReturnValue, bool CallFunc_IsPlacing_ReturnValue, TScriptInterface<class IBuildingInterface> CallFunc_CacheAndGetBuildingObject_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_IsPlacing_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_IsBuilding_ReturnValue_1, TArray<struct FGameplayEffectCue>& Temp_struct_Variable_2, bool CallFunc_BooleanNOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool Temp_bool_Has_Been_Initd_Variable, bool CallFunc_HasAuthority_ReturnValue_2, bool Temp_bool_IsClosed_Variable, const struct FTagValueContainer& Temp_struct_Variable_3, const struct FHitResult& Temp_struct_Variable_4, bool Temp_bool_Variable_1, bool CallFunc_HasAuthority_ReturnValue_3, bool CallFunc_Not_PreBool_ReturnValue_3, class APawn* CallFunc_K2_GetPawn_ReturnValue_2, const struct FTagValueContainer& Temp_struct_Variable_5, bool CallFunc_IsValid_ReturnValue_7, class APawn* CallFunc_K2_GetPawn_ReturnValue_3, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsValid_ReturnValue_8, class APawn* K2Node_Event_PossessedPawn, class APawn* CallFunc_K2_GetPawn_ReturnValue_4, TArray<struct FGameplayEffectCue>& Temp_struct_Variable_6, int32 K2Node_CustomEvent_Hour_1, int32 K2Node_CustomEvent_Min_1, int32 K2Node_CustomEvent_Hour, int32 K2Node_CustomEvent_Min, class UNWXCheatManager* K2Node_DynamicCast_AsNWXCheat_Manager, bool K2Node_DynamicCast_bSuccess_1, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, class APawn* CallFunc_K2_GetPawn_ReturnValue_5, TScriptInterface<class IDamageEventInterface> K2Node_DynamicCast_AsDamage_Event_Interface, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue_9, const class FString& K2Node_CustomEvent_CreatureToSpawn, int32 K2Node_CustomEvent_HowMany_, bool K2Node_CustomEvent_Stationary_, bool K2Node_CustomEvent_Immortal_, const struct FVector& K2Node_CustomEvent_DestLocation, class APawn* CallFunc_K2_GetPawn_ReturnValue_6, bool CallFunc_K2_TeleportTo_ReturnValue, bool CallFunc_IsValid_ReturnValue_10, class APawn* CallFunc_K2_GetPawn_ReturnValue_7, TScriptInterface<class IDamageEventInterface> K2Node_DynamicCast_AsDamage_Event_Interface_1, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_IsValid_ReturnValue_11, int32 Temp_int_Loop_Counter_Variable, class UTextureRenderTarget2D* CallFunc_CreateRenderTarget2D_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class APawn* CallFunc_K2_GetPawn_ReturnValue_8, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class ABP_Character_C* K2Node_DynamicCast_AsBP_Character, bool K2Node_DynamicCast_bSuccess_4, bool CallFunc_K2_AttachToComponent_ReturnValue, bool CallFunc_HasAuthority_ReturnValue_4, bool CallFunc_IsServer_ReturnValue_1, const struct FPlayerLoadoutDataReference& K2Node_CustomEvent_Loadout, bool CallFunc_IsServer_ReturnValue_2, const struct FGameplayTagContainer& Temp_struct_Variable_7, const class FString& CallFunc_GetCurrentLevelName_ReturnValue, const struct FGameplayTagContainer& Temp_struct_Variable_8, bool CallFunc_HasAuthority_ReturnValue_5, const struct FHitResult& Temp_struct_Variable_9, bool CallFunc_IsServer_ReturnValue_3, class APawn* CallFunc_K2_GetPawn_ReturnValue_9, class APawn* CallFunc_K2_GetPawn_ReturnValue_10, class APawn* CallFunc_K2_GetPawn_ReturnValue_11, const struct FGameplayTag& CallFunc_GodModeTag_GodModeTag, const struct FGameplayTag& CallFunc_GodModeTag_GodModeTag_1, const struct FGameplayTag& CallFunc_GodModeTag_GodModeTag_2, const struct FTagValueContainer& Temp_struct_Variable_10, bool CallFunc_CanUseSupportCommands_ReturnValue, bool CallFunc_CanUseSupportCommands_ReturnValue_1, class UBP_MapTracker_C* CallFunc_GetMapTracker_MapTrackerComponent, class ANWXPlayerState* K2Node_DynamicCast_AsNWXPlayer_State, bool K2Node_DynamicCast_bSuccess_5, int32 CallFunc_Array_Length_ReturnValue, TScriptInterface<class ILocationTrackerInterface> CallFunc_Server_DebugShowAndUnlockAllMapPins_self_CastInput, class APawn* CallFunc_K2_GetPawn_ReturnValue_12, bool CallFunc_HasAuthority_ReturnValue_6, class ABP_Character_C* K2Node_DynamicCast_AsBP_Character_1, bool K2Node_DynamicCast_bSuccess_6, bool CallFunc_CanUseSupportCommands_ReturnValue_2, class APawn* CallFunc_K2_GetPawn_ReturnValue_13, bool CallFunc_IsValid_ReturnValue_12, bool CallFunc_CanUseSupportCommands_ReturnValue_3, class APawn* CallFunc_K2_GetPawn_ReturnValue_14, bool CallFunc_IsValid_ReturnValue_13, TArray<struct FGameplayEffectCue>& Temp_struct_Variable_11, class ANWXActor* CallFunc_GetDamageSource_Debug_ReturnValue, class ANWXActor* CallFunc_GetDamageSource_Debug_ReturnValue_1, const struct FTagValueContainer& CallFunc_DamageActor_AggregatedDamageTags, const struct FTagValueContainer& CallFunc_DamageActor_AggregatedDamageTags_1, bool CallFunc_CanUseSupportCommands_ReturnValue_4, class ANWXActor* CallFunc_GetDamageSource_Debug_ReturnValue_2, TScriptInterface<class IDamageEventInterface> CallFunc_DamageActor_self_CastInput, const struct FTagValueContainer& CallFunc_DamageActor_AggregatedDamageTags_2, bool CallFunc_CanUseSupportCommands_ReturnValue_5, bool CallFunc_CanUseSupportCommands_ReturnValue_6, bool CallFunc_CanUseSupportCommands_ReturnValue_7, bool CallFunc_CanUseSupportCommands_ReturnValue_8, bool CallFunc_CanUseSupportCommands_ReturnValue_9, bool CallFunc_CanUseSupportCommands_ReturnValue_10, bool CallFunc_CanUseSupportCommands_ReturnValue_11, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_CanUseSupportCommands_ReturnValue_12, class ULocalPlayer* CallFunc_GetLocalPlayerFromController_ReturnValue, class UWBP_DebugMenuScreen_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue, class UEnvQueryInstanceBlueprintWrapper* K2Node_CustomEvent_QueryInstance, enum class EEnvQueryStatus K2Node_CustomEvent_QueryStatus, bool CallFunc_IsValid_ReturnValue_14, class APawn* CallFunc_K2_GetPawn_ReturnValue_15, bool CallFunc_GetCurrentRealmSettings_Success, const struct FRealmSettings& CallFunc_GetCurrentRealmSettings_RealmSettings, bool CallFunc_IsValid_ReturnValue_15, bool CallFunc_HasTag_ReturnValue, class APawn* CallFunc_K2_GetPawn_ReturnValue_16, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_IsServer_ReturnValue_4, class UWBP_DebugThirdPersonCameraWidget_C* CallFunc_Create_ReturnValue, bool CallFunc_CanUseSupportCommands_ReturnValue_13, class AActor* CallFunc_GetRespitePoint_ReturnValue, bool CallFunc_IsValid_ReturnValue_16, bool CallFunc_CanUseSupportCommands_ReturnValue_14, const struct FInputActionValue& K2Node_EnhancedInputActionEvent_ActionValue, float K2Node_EnhancedInputActionEvent_ElapsedTime, float K2Node_EnhancedInputActionEvent_TriggeredTime, class UInputAction* K2Node_EnhancedInputActionEvent_SourceAction, double Temp_real_Variable, bool CallFunc_Conv_InputActionValueToBool_ReturnValue, class UInputAction* Temp_object_Variable, double Temp_real_Variable_1, double Temp_real_Variable_1, class FText K2Node_CustomEvent_Header, class FText K2Node_CustomEvent_Body, double K2Node_CustomEvent_Duration, TScriptInterface<class IBPI_HUD_Manager_C> CallFunc_Get_HUD_Manager_HUD_Manager, const struct FS_UpdaterNotificatorInfo& K2Node_MakeStruct_S_UpdaterNotificatorInfo, const struct FTransform& Temp_struct_Variable_12, class AHUD* CallFunc_GetHUD_ReturnValue, class USceneCaptureComponent2D* CallFunc_AddComponent_ReturnValue, class AHUD_NWX_C* K2Node_DynamicCast_AsHUD_NWX, bool K2Node_DynamicCast_bSuccess_7, class FText K2Node_CustomEvent_MainText, class FText K2Node_CustomEvent_BodyText, TScriptInterface<class IBPI_HUD_Manager_C> CallFunc_Get_HUD_Manager_HUD_Manager_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, TSubclassOf<class UNWXCommonWindowWidget> K2Node_Event_WidgetToOpen, float K2Node_Event_DeltaSeconds, class ULocalPlayer* CallFunc_GetLocalPlayerFromController_ReturnValue_1, const struct FVector& K2Node_CustomEvent_Location, class UNWXCommonWindowWidget* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1, class APawn* CallFunc_K2_GetPawn_ReturnValue_17, bool CallFunc_K2_TeleportTo_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_17, int32 Temp_int_Array_Index_Variable_1, class ABP_GameState_C* K2Node_CustomEvent_GameState, const struct FS_LevelFastTravelLocation& CallFunc_Array_Get_Item, const class FString& CallFunc_Break_LevelFastTravelLocation_Level_Name, TArray<struct FS_FastTravelInformation>& CallFunc_Break_LevelFastTravelLocation_Fast_Travel_Information, const struct FS_FastTravelInformation& CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, const struct FGuid& CallFunc_Break_FastTravelInformation_ID, enum class E_FastTravelLocationState CallFunc_Break_FastTravelInformation_Fast_Travel_Location_State, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Discover_Fast_Travel_Location_Success, bool CallFunc_EqualEqual_StrStr_ReturnValue, bool CallFunc_AreTestsRunning_AreTestsRunning, bool CallFunc_AreTestsRunning_AreTestsRunning_1, bool K2Node_CustomEvent_Success, TScriptInterface<class IAwaitable> CallFunc_AwaitBP_Awaitable_CastInput, const struct FDelegateHandleBPWrapper& CallFunc_AwaitBP_Handle, bool CallFunc_IsValid_ReturnValue_18, bool CallFunc_IsInitialized_bInitialized, const struct FMapPinData& K2Node_Event_MapPinData, const struct FMapPinData& K2Node_CustomEvent_MapPinData, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsPlayInEditor_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_GetInitialInventoryReceived_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UEnvQuery* Temp_object_Variable_1, const class FString& CallFunc_GetFunctionName_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_IsServer_ReturnValue_5, enum class EBuildModeContext K2Node_Event_Mode, class UEnvQuery* Temp_object_Variable_2, bool Temp_bool_Variable_2, class UEnvQuery* K2Node_Select_Default, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, bool CallFunc_CanUseSupportCommands_ReturnValue_15, bool Temp_bool_Variable_3)
+void ABP_PlayerController_C::ExecuteUbergraph_BP_PlayerController(int32 EntryPoint, bool CallFunc_IsDedicatedServer_ReturnValue, bool K2Node_Event_bVisible, const class FString& K2Node_Event_ChatMessage, const struct FS_ChatMessage& K2Node_Event_ChatMessageS, int32 K2Node_Event_ChannelID_1, int32 K2Node_Event_ChannelID, int32 K2Node_Event_PlayerID_1, const class FString& K2Node_Event_Message_4, int32 K2Node_Event_PlayerID, const class FString& K2Node_Event_Message_3, bool K2Node_Event_Away, const class FString& K2Node_Event_Message_2, const class FString& K2Node_Event_Message_1, const class FString& K2Node_Event_Message, bool K2Node_Event_Show, double K2Node_Event_Time, bool K2Node_Event_Show_, const struct FInteractionUIContext& K2Node_Event_InteractionContext, bool K2Node_Event_Display_, const class FString& K2Node_Event_Bar_Label_1, class FText K2Node_Event_Sub_Text__Status_Creature_Type_Whatever_, double K2Node_Event_Health, class FText K2Node_Event_Bar_Header_1, const struct FLinearColor& K2Node_Event_Progress_Bar_Tint, enum class EProgressBarFillType K2Node_Event_Progress_Bar_Direction, const class FString& K2Node_Event_Bar_Label, class FText K2Node_Event_Bar_Header, class FText K2Node_Event_Bar_Sub_Header, const class FString& K2Node_Event_Label_1, const struct FDamageEffectContextData& K2Node_Event_DamageContextData, double K2Node_Event_Time_to_Display_1, double K2Node_Event_Damage_Intensity__Amount_, const struct FLinearColor& K2Node_Event_Colour, bool K2Node_Event_Visible, double K2Node_Event_CurrentProgress, class FText K2Node_Event_Label, bool K2Node_Event_ShowImage, TSoftObjectPtr<class UTexture2D> K2Node_Event_Image, enum class E_UI_HUD_Modes K2Node_Event_HUD_Mode, TScriptInterface<class IEncounterUIDataInterface> K2Node_Event_EncounterData, const struct FNotificationEncounter& K2Node_Event_EncounterMessage, double K2Node_Event_RealmStartTime, double K2Node_Event_Spread, bool K2Node_Event_IsVisible, const struct FS_ContextualControlsData& K2Node_Event_ContextualControlsData, const struct FNotificationEncounter& K2Node_Event_Message_Content, double K2Node_Event_TimeToDisplay_1, const struct FNotificationEncounter& K2Node_Event_MessageContent, bool K2Node_Event_Pin_or_Unpin__Pin_true_will_add_, const struct FS_UpdaterNotificatorInfo& K2Node_Event_Content_1, bool K2Node_Event_Remove_Manually, double K2Node_Event_Time_to_Display, bool K2Node_Event_ManuallyRemove_, double K2Node_Event_TimeToDisplay, const struct FS_UpdaterNotificatorInfo& K2Node_Event_Content, const struct FVector& K2Node_Event_Location, enum class EItemQuality K2Node_Event_Quality, class FText K2Node_Event_MainText, class FText K2Node_Event_BodyText, double K2Node_Event_TimeToStayBlack, bool K2Node_Event_To_Black_true__From_Black__False, const struct FStructurePlacementFeedback_Collision& K2Node_Event_Feedback_1, const struct FStructurePlacementFeedback& K2Node_Event_Feedback, bool K2Node_Event_CanRotate, double K2Node_Event_CurrentRotation, bool K2Node_Event_CanAdjustHeight, double K2Node_Event_Height_Current, double K2Node_Event_Height_Max, double K2Node_Event_Height_Min, TScriptInterface<class IBPI_ControllerClientInteractable_C> K2Node_CustomEvent_InteractionObject_1, class UObject* K2Node_CustomEvent_InteractionObject, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, TScriptInterface<class IBPI_ControllerClientInteractable_C> K2Node_DynamicCast_AsBPI_Controller_Client_Interactable, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, double K2Node_Event_DisplayTime, class FText K2Node_Event_TypeText, class FText K2Node_Event_HeadlineText, enum class EInputActionTypes K2Node_CustomEvent_InputActionType, class APawn* CallFunc_K2_GetPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UBP_ActionComponent_C* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class UInputAction* K2Node_CustomEvent_Input_Action, enum class EInputActionTypes K2Node_CustomEvent_ReleaseActionType, class APawn* CallFunc_K2_GetPawn_ReturnValue_1, const struct FGameplayTagContainer& Temp_struct_Variable, bool CallFunc_IsValid_ReturnValue_3, class UBP_ActionComponent_C* CallFunc_GetComponentByClass_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_4, bool Temp_bool_Variable, bool CallFunc_Not_PreBool_ReturnValue, const struct FHitResult& Temp_struct_Variable_1, enum class EBuildModeContext K2Node_Event_Mode_1, class UBP_BuildModeFeedbackComponent_C* CallFunc_GetBuildModeFeedbackComponent_Component, enum class EBuildModeAction K2Node_Event_Action, bool K2Node_Event_Enabled, bool CallFunc_IsValid_ReturnValue_5, class UBP_BuildModeFeedbackComponent_C* CallFunc_GetBuildModeFeedbackComponent_Component_1, bool CallFunc_IsValid_ReturnValue_6, class UMenusComponent* CallFunc_GetMenusComponent_ReturnValue, TScriptInterface<class IBuildingInterface> CallFunc_CacheAndGetBuildingObject_ReturnValue, bool CallFunc_IsBuilding_ReturnValue, bool CallFunc_IsPlacing_ReturnValue, TScriptInterface<class IBuildingInterface> CallFunc_CacheAndGetBuildingObject_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_IsPlacing_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_IsBuilding_ReturnValue_1, bool CallFunc_BooleanNOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, double K2Node_Event_DisplayTime_1, const struct FS_IngameTutorial& K2Node_Event_Row1, const struct FS_IngameTutorial& K2Node_Event_Row2, const struct FS_BigLootNotificationInfo& K2Node_Event_Big_Loot_Notify_Info, bool K2Node_Event_IsRecoil, double K2Node_Event_IndicatorTime, const struct FLinearColor& K2Node_Event_IndicatorColor, enum class E_HitType K2Node_Event_Hit_Type, enum class E_CrosshairTypes K2Node_Event_Crosshair_Type, bool K2Node_Event_CrosshairVisibility, const struct FLinearColor& K2Node_Event_Crosshair_Color, enum class E_HitIndicatorTypes K2Node_Event_HitIndicator_Type, bool K2Node_Event_HitIndicatorVisibility, double K2Node_Event_DisplayTime_2, const struct FS_IngameTutorial& K2Node_Event_Row1_1, const struct FS_IngameTutorial& K2Node_Event_Row2_1, const struct FLinearColor& K2Node_Event_BackgroundColor, double K2Node_Event_DisplayTime_3, const struct FS_QuestNotificatorInfo& K2Node_Event_Quest_Notificator_Info, bool K2Node_Event_DisplayToolTip, class UObject* K2Node_Event_ToolTipIcon, class FText K2Node_Event_ToolTipText, bool K2Node_Event_ToolTipOnly, bool K2Node_Event_bVisible_1, bool K2Node_Event_PlayFX, class AActor* K2Node_Event_ActorToMark, double K2Node_Event_MarkerPrecision, bool K2Node_Event_ParticlesVisible, const struct FLinearColor& K2Node_Event_ParticlesColor, class AActor* K2Node_Event_ActorToMark_1, class AActor* K2Node_Event_ActorToMark_2, class ACharacter* K2Node_Event_PlayerCharacter, class UCameraComponent* K2Node_Event_PlayerCamera, const struct FLinearColor& K2Node_Event_Colour_1, double K2Node_Event_IconDistance, const struct FDataTableRowHandle& K2Node_Event_Row, bool K2Node_Event_ShowingHUD, bool CallFunc_IsDedicatedServer_ReturnValue_1, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_HasAuthority_ReturnValue_1, class APawn* CallFunc_K2_GetPawn_ReturnValue_2, const struct FTagValueContainer& Temp_struct_Variable_2, bool CallFunc_IsValid_ReturnValue_7, class APawn* CallFunc_K2_GetPawn_ReturnValue_3, class APawn* K2Node_Event_PossessedPawn, bool CallFunc_IsValid_ReturnValue_8, class APawn* CallFunc_K2_GetPawn_ReturnValue_4, TArray<struct FGameplayEffectCue>& Temp_struct_Variable_3, int32 K2Node_CustomEvent_Hour_1, int32 K2Node_CustomEvent_Min_1, int32 K2Node_CustomEvent_Hour, int32 K2Node_CustomEvent_Min, class UNWXCheatManager* K2Node_DynamicCast_AsNWXCheat_Manager, bool K2Node_DynamicCast_bSuccess_1, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, class APawn* CallFunc_K2_GetPawn_ReturnValue_5, TScriptInterface<class IDamageEventInterface> K2Node_DynamicCast_AsDamage_Event_Interface, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue_9, const class FString& K2Node_CustomEvent_CreatureToSpawn, int32 K2Node_CustomEvent_HowMany_, bool K2Node_CustomEvent_Stationary_, bool K2Node_CustomEvent_Immortal_, const struct FVector& K2Node_CustomEvent_DestLocation, class APawn* CallFunc_K2_GetPawn_ReturnValue_6, bool CallFunc_K2_TeleportTo_ReturnValue, bool CallFunc_IsValid_ReturnValue_10, class APawn* CallFunc_K2_GetPawn_ReturnValue_7, TScriptInterface<class IDamageEventInterface> K2Node_DynamicCast_AsDamage_Event_Interface_1, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_IsValid_ReturnValue_11, class UTextureRenderTarget2D* CallFunc_CreateRenderTarget2D_ReturnValue, class APawn* CallFunc_K2_GetPawn_ReturnValue_8, class ABP_Character_C* K2Node_DynamicCast_AsBP_Character, bool K2Node_DynamicCast_bSuccess_4, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, const struct FGameplayTagContainer& Temp_struct_Variable_4, bool CallFunc_K2_AttachToComponent_ReturnValue, const struct FHitResult& Temp_struct_Variable_5, const struct FTagValueContainer& Temp_struct_Variable_6, TArray<struct FGameplayEffectCue>& Temp_struct_Variable_7, int32 Temp_int_Array_Index_Variable, const struct FTagValueContainer& Temp_struct_Variable_8, bool Temp_bool_Variable_1, const struct FPlayerLoadoutDataReference& K2Node_CustomEvent_Loadout, bool CallFunc_Not_PreBool_ReturnValue_3, const class FString& CallFunc_GetCurrentLevelName_ReturnValue, const struct FHitResult& Temp_struct_Variable_9, TArray<struct FGameplayEffectCue>& Temp_struct_Variable_10, class APawn* CallFunc_K2_GetPawn_ReturnValue_9, class APawn* CallFunc_K2_GetPawn_ReturnValue_10, class APawn* CallFunc_K2_GetPawn_ReturnValue_11, const struct FGameplayTag& CallFunc_GodModeTag_GodModeTag, const struct FGameplayTag& CallFunc_GodModeTag_GodModeTag_1, const struct FGameplayTag& CallFunc_GodModeTag_GodModeTag_2, bool CallFunc_CanUseSupportCommands_ReturnValue, bool CallFunc_CanUseSupportCommands_ReturnValue_1, class UBP_MapTracker_C* CallFunc_GetMapTracker_MapTrackerComponent, int32 CallFunc_Array_Length_ReturnValue, class ANWXPlayerState* K2Node_DynamicCast_AsNWXPlayer_State, bool K2Node_DynamicCast_bSuccess_5, bool Temp_bool_Has_Been_Initd_Variable, TScriptInterface<class ILocationTrackerInterface> CallFunc_Server_DebugShowAndUnlockAllMapPins_self_CastInput, class APawn* CallFunc_K2_GetPawn_ReturnValue_12, class ABP_Character_C* K2Node_DynamicCast_AsBP_Character_1, bool K2Node_DynamicCast_bSuccess_6, bool CallFunc_CanUseSupportCommands_ReturnValue_2, class APawn* CallFunc_K2_GetPawn_ReturnValue_13, bool CallFunc_IsValid_ReturnValue_12, bool CallFunc_CanUseSupportCommands_ReturnValue_3, class APawn* CallFunc_K2_GetPawn_ReturnValue_14, class ANWXActor* CallFunc_GetDamageSource_Debug_ReturnValue, bool CallFunc_IsValid_ReturnValue_13, class ANWXActor* CallFunc_GetDamageSource_Debug_ReturnValue_1, const struct FTagValueContainer& CallFunc_DamageActor_AggregatedDamageTags, class ANWXActor* CallFunc_GetDamageSource_Debug_ReturnValue_2, TScriptInterface<class IDamageEventInterface> CallFunc_DamageActor_self_CastInput, const struct FTagValueContainer& CallFunc_DamageActor_AggregatedDamageTags_1, bool CallFunc_CanUseSupportCommands_ReturnValue_4, bool CallFunc_CanUseSupportCommands_ReturnValue_5, bool CallFunc_CanUseSupportCommands_ReturnValue_6, bool CallFunc_CanUseSupportCommands_ReturnValue_7, bool CallFunc_CanUseSupportCommands_ReturnValue_8, bool CallFunc_CanUseSupportCommands_ReturnValue_9, bool CallFunc_CanUseSupportCommands_ReturnValue_10, bool CallFunc_CanUseSupportCommands_ReturnValue_11, bool Temp_bool_IsClosed_Variable, int32 Temp_int_Loop_Counter_Variable, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_CanUseSupportCommands_ReturnValue_12, class ULocalPlayer* CallFunc_GetLocalPlayerFromController_ReturnValue, class UWBP_DebugMenuScreen_C* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue, class UEnvQueryInstanceBlueprintWrapper* K2Node_CustomEvent_QueryInstance, enum class EEnvQueryStatus K2Node_CustomEvent_QueryStatus, bool CallFunc_IsValid_ReturnValue_14, const struct FGameplayTagContainer& Temp_struct_Variable_11, bool CallFunc_IsDedicatedServer_ReturnValue_2, const struct FTagValueContainer& CallFunc_DamageActor_AggregatedDamageTags_2, bool CallFunc_CanUseSupportCommands_ReturnValue_13, bool CallFunc_CanUseSupportCommands_ReturnValue_14, bool CallFunc_HasAuthority_ReturnValue_2, class UWBP_DebugThirdPersonCameraWidget_C* CallFunc_Create_ReturnValue, class FText K2Node_CustomEvent_Header, class FText K2Node_CustomEvent_Body, double K2Node_CustomEvent_Duration, TScriptInterface<class IBPI_HUD_Manager_C> CallFunc_Get_HUD_Manager_HUD_Manager, const struct FS_UpdaterNotificatorInfo& K2Node_MakeStruct_S_UpdaterNotificatorInfo, const struct FTransform& Temp_struct_Variable_12, class FText K2Node_CustomEvent_MainText, class FText K2Node_CustomEvent_BodyText, class USceneCaptureComponent2D* CallFunc_AddComponent_ReturnValue, TScriptInterface<class IBPI_HUD_Manager_C> CallFunc_Get_HUD_Manager_HUD_Manager_1, bool CallFunc_IsDedicatedServer_ReturnValue_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, TSubclassOf<class UNWXCommonWindowWidget> K2Node_Event_WidgetToOpen, float K2Node_Event_DeltaSeconds, class ULocalPlayer* CallFunc_GetLocalPlayerFromController_ReturnValue_1, const struct FVector& K2Node_CustomEvent_Location, class UNWXCommonWindowWidget* CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1, class APawn* CallFunc_K2_GetPawn_ReturnValue_15, bool CallFunc_K2_TeleportTo_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_15, int32 Temp_int_Array_Index_Variable_1, class ABP_GameState_C* K2Node_CustomEvent_GameState, const struct FS_LevelFastTravelLocation& CallFunc_Array_Get_Item, const class FString& CallFunc_Break_LevelFastTravelLocation_Level_Name, TArray<struct FS_FastTravelInformation>& CallFunc_Break_LevelFastTravelLocation_Fast_Travel_Information, const struct FS_FastTravelInformation& CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, const struct FGuid& CallFunc_Break_FastTravelInformation_ID, enum class E_FastTravelLocationState CallFunc_Break_FastTravelInformation_Fast_Travel_Location_State, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Discover_Fast_Travel_Location_Success, bool CallFunc_EqualEqual_StrStr_ReturnValue, bool CallFunc_AreTestsRunning_AreTestsRunning, bool CallFunc_AreTestsRunning_AreTestsRunning_1, bool K2Node_CustomEvent_Success, TScriptInterface<class IAwaitable> CallFunc_AwaitBP_Awaitable_CastInput, const struct FDelegateHandleBPWrapper& CallFunc_AwaitBP_Handle, bool CallFunc_IsValid_ReturnValue_16, bool CallFunc_IsInitialized_bInitialized, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FMapPinData& K2Node_Event_MapPinData, const struct FMapPinData& K2Node_CustomEvent_MapPinData, bool CallFunc_IsDedicatedServer_ReturnValue_4, bool CallFunc_IsPlayInEditor_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_GetInitialInventoryReceived_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, const class FString& CallFunc_GetFunctionName_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, enum class EBuildModeContext K2Node_Event_Mode, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, bool Temp_bool_Variable_2, double Temp_real_Variable, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, bool CallFunc_CanUseSupportCommands_ReturnValue_15, double Temp_real_Variable_1, class UInputAction* Temp_object_Variable, const struct FInputActionValue& K2Node_EnhancedInputActionEvent_ActionValue, float K2Node_EnhancedInputActionEvent_ElapsedTime, float K2Node_EnhancedInputActionEvent_TriggeredTime, class UInputAction* K2Node_EnhancedInputActionEvent_SourceAction, bool CallFunc_Conv_InputActionValueToBool_ReturnValue, double Temp_real_Variable_1, double Temp_real_Variable)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4849,47 +4773,7 @@ void ABP_PlayerController_C::ExecuteUbergraph_BP_PlayerController(int32 EntryPoi
 	Params::ABP_PlayerController_C_ExecuteUbergraph_BP_PlayerController_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.Temp_real_Variable = Temp_real_Variable;
-	Parms.K2Node_Event_ShowingHUD = K2Node_Event_ShowingHUD;
-	Parms.K2Node_Event_ActorToMark_2 = K2Node_Event_ActorToMark_2;
-	Parms.K2Node_Event_PlayerCharacter = K2Node_Event_PlayerCharacter;
-	Parms.K2Node_Event_PlayerCamera = K2Node_Event_PlayerCamera;
-	Parms.K2Node_Event_Colour_1 = K2Node_Event_Colour_1;
-	Parms.K2Node_Event_IconDistance = K2Node_Event_IconDistance;
-	Parms.K2Node_Event_Row = K2Node_Event_Row;
-	Parms.K2Node_Event_ActorToMark_1 = K2Node_Event_ActorToMark_1;
-	Parms.K2Node_Event_ActorToMark = K2Node_Event_ActorToMark;
-	Parms.K2Node_Event_MarkerPrecision = K2Node_Event_MarkerPrecision;
-	Parms.K2Node_Event_ParticlesVisible = K2Node_Event_ParticlesVisible;
-	Parms.K2Node_Event_ParticlesColor = K2Node_Event_ParticlesColor;
-	Parms.K2Node_Event_bVisible_1 = K2Node_Event_bVisible_1;
-	Parms.K2Node_Event_PlayFX = K2Node_Event_PlayFX;
-	Parms.K2Node_Event_DisplayTime_3 = K2Node_Event_DisplayTime_3;
-	Parms.K2Node_Event_Quest_Notificator_Info = K2Node_Event_Quest_Notificator_Info;
-	Parms.K2Node_Event_DisplayToolTip = K2Node_Event_DisplayToolTip;
-	Parms.K2Node_Event_ToolTipIcon = K2Node_Event_ToolTipIcon;
-	Parms.K2Node_Event_ToolTipText = K2Node_Event_ToolTipText;
-	Parms.K2Node_Event_ToolTipOnly = K2Node_Event_ToolTipOnly;
-	Parms.K2Node_Event_DisplayTime_2 = K2Node_Event_DisplayTime_2;
-	Parms.K2Node_Event_Row1_1 = K2Node_Event_Row1_1;
-	Parms.K2Node_Event_Row2_1 = K2Node_Event_Row2_1;
-	Parms.K2Node_Event_BackgroundColor = K2Node_Event_BackgroundColor;
-	Parms.K2Node_Event_Crosshair_Type = K2Node_Event_Crosshair_Type;
-	Parms.K2Node_Event_CrosshairVisibility = K2Node_Event_CrosshairVisibility;
-	Parms.K2Node_Event_Crosshair_Color = K2Node_Event_Crosshair_Color;
-	Parms.K2Node_Event_HitIndicator_Type = K2Node_Event_HitIndicator_Type;
-	Parms.K2Node_Event_HitIndicatorVisibility = K2Node_Event_HitIndicatorVisibility;
-	Parms.K2Node_Event_IndicatorTime = K2Node_Event_IndicatorTime;
-	Parms.K2Node_Event_IndicatorColor = K2Node_Event_IndicatorColor;
-	Parms.K2Node_Event_Hit_Type = K2Node_Event_Hit_Type;
-	Parms.K2Node_Event_IsRecoil = K2Node_Event_IsRecoil;
-	Parms.K2Node_Event_Big_Loot_Notify_Info = K2Node_Event_Big_Loot_Notify_Info;
-	Parms.K2Node_Event_DisplayTime_1 = K2Node_Event_DisplayTime_1;
-	Parms.K2Node_Event_Row1 = K2Node_Event_Row1;
-	Parms.K2Node_Event_Row2 = K2Node_Event_Row2;
-	Parms.K2Node_Event_DisplayTime = K2Node_Event_DisplayTime;
-	Parms.K2Node_Event_TypeText = K2Node_Event_TypeText;
-	Parms.K2Node_Event_HeadlineText = K2Node_Event_HeadlineText;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 	Parms.K2Node_Event_bVisible = K2Node_Event_bVisible;
 	Parms.K2Node_Event_ChatMessage = K2Node_Event_ChatMessage;
 	Parms.K2Node_Event_ChatMessageS = K2Node_Event_ChatMessageS;
@@ -4964,16 +4848,14 @@ void ABP_PlayerController_C::ExecuteUbergraph_BP_PlayerController(int32 EntryPoi
 	Parms.K2Node_DynamicCast_AsBPI_Controller_Client_Interactable = K2Node_DynamicCast_AsBPI_Controller_Client_Interactable;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
-	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+	Parms.K2Node_Event_DisplayTime = K2Node_Event_DisplayTime;
+	Parms.K2Node_Event_TypeText = K2Node_Event_TypeText;
+	Parms.K2Node_Event_HeadlineText = K2Node_Event_HeadlineText;
 	Parms.K2Node_CustomEvent_InputActionType = K2Node_CustomEvent_InputActionType;
 	Parms.CallFunc_K2_GetPawn_ReturnValue = CallFunc_K2_GetPawn_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
-	Parms.CallFunc_HasAuthority_ReturnValue_1 = CallFunc_HasAuthority_ReturnValue_1;
 	Parms.K2Node_CustomEvent_Input_Action = K2Node_CustomEvent_Input_Action;
 	Parms.K2Node_CustomEvent_ReleaseActionType = K2Node_CustomEvent_ReleaseActionType;
 	Parms.CallFunc_K2_GetPawn_ReturnValue_1 = CallFunc_K2_GetPawn_ReturnValue_1;
@@ -4981,6 +4863,8 @@ void ABP_PlayerController_C::ExecuteUbergraph_BP_PlayerController(int32 EntryPoi
 	Parms.CallFunc_IsValid_ReturnValue_3 = CallFunc_IsValid_ReturnValue_3;
 	Parms.CallFunc_GetComponentByClass_ReturnValue_1 = CallFunc_GetComponentByClass_ReturnValue_1;
 	Parms.CallFunc_IsValid_ReturnValue_4 = CallFunc_IsValid_ReturnValue_4;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.Temp_struct_Variable_1 = Temp_struct_Variable_1;
 	Parms.K2Node_Event_Mode_1 = K2Node_Event_Mode_1;
 	Parms.CallFunc_GetBuildModeFeedbackComponent_Component = CallFunc_GetBuildModeFeedbackComponent_Component;
@@ -4999,26 +4883,56 @@ void ABP_PlayerController_C::ExecuteUbergraph_BP_PlayerController(int32 EntryPoi
 	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue_2 = CallFunc_Not_PreBool_ReturnValue_2;
 	Parms.CallFunc_IsBuilding_ReturnValue_1 = CallFunc_IsBuilding_ReturnValue_1;
-	Parms.Temp_struct_Variable_2 = Temp_struct_Variable_2;
 	Parms.CallFunc_BooleanNOR_ReturnValue = CallFunc_BooleanNOR_ReturnValue;
 	Parms.CallFunc_BooleanAND_ReturnValue_1 = CallFunc_BooleanAND_ReturnValue_1;
-	Parms.Temp_bool_Has_Been_Initd_Variable = Temp_bool_Has_Been_Initd_Variable;
-	Parms.CallFunc_HasAuthority_ReturnValue_2 = CallFunc_HasAuthority_ReturnValue_2;
-	Parms.Temp_bool_IsClosed_Variable = Temp_bool_IsClosed_Variable;
-	Parms.Temp_struct_Variable_3 = Temp_struct_Variable_3;
-	Parms.Temp_struct_Variable_4 = Temp_struct_Variable_4;
-	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
-	Parms.CallFunc_HasAuthority_ReturnValue_3 = CallFunc_HasAuthority_ReturnValue_3;
-	Parms.CallFunc_Not_PreBool_ReturnValue_3 = CallFunc_Not_PreBool_ReturnValue_3;
+	Parms.K2Node_Event_DisplayTime_1 = K2Node_Event_DisplayTime_1;
+	Parms.K2Node_Event_Row1 = K2Node_Event_Row1;
+	Parms.K2Node_Event_Row2 = K2Node_Event_Row2;
+	Parms.K2Node_Event_Big_Loot_Notify_Info = K2Node_Event_Big_Loot_Notify_Info;
+	Parms.K2Node_Event_IsRecoil = K2Node_Event_IsRecoil;
+	Parms.K2Node_Event_IndicatorTime = K2Node_Event_IndicatorTime;
+	Parms.K2Node_Event_IndicatorColor = K2Node_Event_IndicatorColor;
+	Parms.K2Node_Event_Hit_Type = K2Node_Event_Hit_Type;
+	Parms.K2Node_Event_Crosshair_Type = K2Node_Event_Crosshair_Type;
+	Parms.K2Node_Event_CrosshairVisibility = K2Node_Event_CrosshairVisibility;
+	Parms.K2Node_Event_Crosshair_Color = K2Node_Event_Crosshair_Color;
+	Parms.K2Node_Event_HitIndicator_Type = K2Node_Event_HitIndicator_Type;
+	Parms.K2Node_Event_HitIndicatorVisibility = K2Node_Event_HitIndicatorVisibility;
+	Parms.K2Node_Event_DisplayTime_2 = K2Node_Event_DisplayTime_2;
+	Parms.K2Node_Event_Row1_1 = K2Node_Event_Row1_1;
+	Parms.K2Node_Event_Row2_1 = K2Node_Event_Row2_1;
+	Parms.K2Node_Event_BackgroundColor = K2Node_Event_BackgroundColor;
+	Parms.K2Node_Event_DisplayTime_3 = K2Node_Event_DisplayTime_3;
+	Parms.K2Node_Event_Quest_Notificator_Info = K2Node_Event_Quest_Notificator_Info;
+	Parms.K2Node_Event_DisplayToolTip = K2Node_Event_DisplayToolTip;
+	Parms.K2Node_Event_ToolTipIcon = K2Node_Event_ToolTipIcon;
+	Parms.K2Node_Event_ToolTipText = K2Node_Event_ToolTipText;
+	Parms.K2Node_Event_ToolTipOnly = K2Node_Event_ToolTipOnly;
+	Parms.K2Node_Event_bVisible_1 = K2Node_Event_bVisible_1;
+	Parms.K2Node_Event_PlayFX = K2Node_Event_PlayFX;
+	Parms.K2Node_Event_ActorToMark = K2Node_Event_ActorToMark;
+	Parms.K2Node_Event_MarkerPrecision = K2Node_Event_MarkerPrecision;
+	Parms.K2Node_Event_ParticlesVisible = K2Node_Event_ParticlesVisible;
+	Parms.K2Node_Event_ParticlesColor = K2Node_Event_ParticlesColor;
+	Parms.K2Node_Event_ActorToMark_1 = K2Node_Event_ActorToMark_1;
+	Parms.K2Node_Event_ActorToMark_2 = K2Node_Event_ActorToMark_2;
+	Parms.K2Node_Event_PlayerCharacter = K2Node_Event_PlayerCharacter;
+	Parms.K2Node_Event_PlayerCamera = K2Node_Event_PlayerCamera;
+	Parms.K2Node_Event_Colour_1 = K2Node_Event_Colour_1;
+	Parms.K2Node_Event_IconDistance = K2Node_Event_IconDistance;
+	Parms.K2Node_Event_Row = K2Node_Event_Row;
+	Parms.K2Node_Event_ShowingHUD = K2Node_Event_ShowingHUD;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue_1 = CallFunc_IsDedicatedServer_ReturnValue_1;
+	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
+	Parms.CallFunc_HasAuthority_ReturnValue_1 = CallFunc_HasAuthority_ReturnValue_1;
 	Parms.CallFunc_K2_GetPawn_ReturnValue_2 = CallFunc_K2_GetPawn_ReturnValue_2;
-	Parms.Temp_struct_Variable_5 = Temp_struct_Variable_5;
+	Parms.Temp_struct_Variable_2 = Temp_struct_Variable_2;
 	Parms.CallFunc_IsValid_ReturnValue_7 = CallFunc_IsValid_ReturnValue_7;
 	Parms.CallFunc_K2_GetPawn_ReturnValue_3 = CallFunc_K2_GetPawn_ReturnValue_3;
-	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.CallFunc_IsValid_ReturnValue_8 = CallFunc_IsValid_ReturnValue_8;
 	Parms.K2Node_Event_PossessedPawn = K2Node_Event_PossessedPawn;
+	Parms.CallFunc_IsValid_ReturnValue_8 = CallFunc_IsValid_ReturnValue_8;
 	Parms.CallFunc_K2_GetPawn_ReturnValue_4 = CallFunc_K2_GetPawn_ReturnValue_4;
-	Parms.Temp_struct_Variable_6 = Temp_struct_Variable_6;
+	Parms.Temp_struct_Variable_3 = Temp_struct_Variable_3;
 	Parms.K2Node_CustomEvent_Hour_1 = K2Node_CustomEvent_Hour_1;
 	Parms.K2Node_CustomEvent_Min_1 = K2Node_CustomEvent_Min_1;
 	Parms.K2Node_CustomEvent_Hour = K2Node_CustomEvent_Hour;
@@ -5042,40 +4956,39 @@ void ABP_PlayerController_C::ExecuteUbergraph_BP_PlayerController(int32 EntryPoi
 	Parms.K2Node_DynamicCast_AsDamage_Event_Interface_1 = K2Node_DynamicCast_AsDamage_Event_Interface_1;
 	Parms.K2Node_DynamicCast_bSuccess_3 = K2Node_DynamicCast_bSuccess_3;
 	Parms.CallFunc_IsValid_ReturnValue_11 = CallFunc_IsValid_ReturnValue_11;
-	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_CreateRenderTarget2D_ReturnValue = CallFunc_CreateRenderTarget2D_ReturnValue;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.CallFunc_K2_GetPawn_ReturnValue_8 = CallFunc_K2_GetPawn_ReturnValue_8;
-	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 	Parms.K2Node_DynamicCast_AsBP_Character = K2Node_DynamicCast_AsBP_Character;
 	Parms.K2Node_DynamicCast_bSuccess_4 = K2Node_DynamicCast_bSuccess_4;
+	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
+	Parms.Temp_struct_Variable_4 = Temp_struct_Variable_4;
 	Parms.CallFunc_K2_AttachToComponent_ReturnValue = CallFunc_K2_AttachToComponent_ReturnValue;
-	Parms.CallFunc_HasAuthority_ReturnValue_4 = CallFunc_HasAuthority_ReturnValue_4;
-	Parms.CallFunc_IsServer_ReturnValue_1 = CallFunc_IsServer_ReturnValue_1;
-	Parms.K2Node_CustomEvent_Loadout = K2Node_CustomEvent_Loadout;
-	Parms.CallFunc_IsServer_ReturnValue_2 = CallFunc_IsServer_ReturnValue_2;
+	Parms.Temp_struct_Variable_5 = Temp_struct_Variable_5;
+	Parms.Temp_struct_Variable_6 = Temp_struct_Variable_6;
 	Parms.Temp_struct_Variable_7 = Temp_struct_Variable_7;
-	Parms.CallFunc_GetCurrentLevelName_ReturnValue = CallFunc_GetCurrentLevelName_ReturnValue;
+	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_struct_Variable_8 = Temp_struct_Variable_8;
-	Parms.CallFunc_HasAuthority_ReturnValue_5 = CallFunc_HasAuthority_ReturnValue_5;
+	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
+	Parms.K2Node_CustomEvent_Loadout = K2Node_CustomEvent_Loadout;
+	Parms.CallFunc_Not_PreBool_ReturnValue_3 = CallFunc_Not_PreBool_ReturnValue_3;
+	Parms.CallFunc_GetCurrentLevelName_ReturnValue = CallFunc_GetCurrentLevelName_ReturnValue;
 	Parms.Temp_struct_Variable_9 = Temp_struct_Variable_9;
-	Parms.CallFunc_IsServer_ReturnValue_3 = CallFunc_IsServer_ReturnValue_3;
+	Parms.Temp_struct_Variable_10 = Temp_struct_Variable_10;
 	Parms.CallFunc_K2_GetPawn_ReturnValue_9 = CallFunc_K2_GetPawn_ReturnValue_9;
 	Parms.CallFunc_K2_GetPawn_ReturnValue_10 = CallFunc_K2_GetPawn_ReturnValue_10;
 	Parms.CallFunc_K2_GetPawn_ReturnValue_11 = CallFunc_K2_GetPawn_ReturnValue_11;
 	Parms.CallFunc_GodModeTag_GodModeTag = CallFunc_GodModeTag_GodModeTag;
 	Parms.CallFunc_GodModeTag_GodModeTag_1 = CallFunc_GodModeTag_GodModeTag_1;
 	Parms.CallFunc_GodModeTag_GodModeTag_2 = CallFunc_GodModeTag_GodModeTag_2;
-	Parms.Temp_struct_Variable_10 = Temp_struct_Variable_10;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue = CallFunc_CanUseSupportCommands_ReturnValue;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_1 = CallFunc_CanUseSupportCommands_ReturnValue_1;
 	Parms.CallFunc_GetMapTracker_MapTrackerComponent = CallFunc_GetMapTracker_MapTrackerComponent;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.K2Node_DynamicCast_AsNWXPlayer_State = K2Node_DynamicCast_AsNWXPlayer_State;
 	Parms.K2Node_DynamicCast_bSuccess_5 = K2Node_DynamicCast_bSuccess_5;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.Temp_bool_Has_Been_Initd_Variable = Temp_bool_Has_Been_Initd_Variable;
 	Parms.CallFunc_Server_DebugShowAndUnlockAllMapPins_self_CastInput = CallFunc_Server_DebugShowAndUnlockAllMapPins_self_CastInput;
 	Parms.CallFunc_K2_GetPawn_ReturnValue_12 = CallFunc_K2_GetPawn_ReturnValue_12;
-	Parms.CallFunc_HasAuthority_ReturnValue_6 = CallFunc_HasAuthority_ReturnValue_6;
 	Parms.K2Node_DynamicCast_AsBP_Character_1 = K2Node_DynamicCast_AsBP_Character_1;
 	Parms.K2Node_DynamicCast_bSuccess_6 = K2Node_DynamicCast_bSuccess_6;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_2 = CallFunc_CanUseSupportCommands_ReturnValue_2;
@@ -5083,16 +4996,14 @@ void ABP_PlayerController_C::ExecuteUbergraph_BP_PlayerController(int32 EntryPoi
 	Parms.CallFunc_IsValid_ReturnValue_12 = CallFunc_IsValid_ReturnValue_12;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_3 = CallFunc_CanUseSupportCommands_ReturnValue_3;
 	Parms.CallFunc_K2_GetPawn_ReturnValue_14 = CallFunc_K2_GetPawn_ReturnValue_14;
-	Parms.CallFunc_IsValid_ReturnValue_13 = CallFunc_IsValid_ReturnValue_13;
-	Parms.Temp_struct_Variable_11 = Temp_struct_Variable_11;
 	Parms.CallFunc_GetDamageSource_Debug_ReturnValue = CallFunc_GetDamageSource_Debug_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_13 = CallFunc_IsValid_ReturnValue_13;
 	Parms.CallFunc_GetDamageSource_Debug_ReturnValue_1 = CallFunc_GetDamageSource_Debug_ReturnValue_1;
 	Parms.CallFunc_DamageActor_AggregatedDamageTags = CallFunc_DamageActor_AggregatedDamageTags;
-	Parms.CallFunc_DamageActor_AggregatedDamageTags_1 = CallFunc_DamageActor_AggregatedDamageTags_1;
-	Parms.CallFunc_CanUseSupportCommands_ReturnValue_4 = CallFunc_CanUseSupportCommands_ReturnValue_4;
 	Parms.CallFunc_GetDamageSource_Debug_ReturnValue_2 = CallFunc_GetDamageSource_Debug_ReturnValue_2;
 	Parms.CallFunc_DamageActor_self_CastInput = CallFunc_DamageActor_self_CastInput;
-	Parms.CallFunc_DamageActor_AggregatedDamageTags_2 = CallFunc_DamageActor_AggregatedDamageTags_2;
+	Parms.CallFunc_DamageActor_AggregatedDamageTags_1 = CallFunc_DamageActor_AggregatedDamageTags_1;
+	Parms.CallFunc_CanUseSupportCommands_ReturnValue_4 = CallFunc_CanUseSupportCommands_ReturnValue_4;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_5 = CallFunc_CanUseSupportCommands_ReturnValue_5;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_6 = CallFunc_CanUseSupportCommands_ReturnValue_6;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_7 = CallFunc_CanUseSupportCommands_ReturnValue_7;
@@ -5100,58 +5011,43 @@ void ABP_PlayerController_C::ExecuteUbergraph_BP_PlayerController(int32 EntryPoi
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_9 = CallFunc_CanUseSupportCommands_ReturnValue_9;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_10 = CallFunc_CanUseSupportCommands_ReturnValue_10;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_11 = CallFunc_CanUseSupportCommands_ReturnValue_11;
+	Parms.Temp_bool_IsClosed_Variable = Temp_bool_IsClosed_Variable;
+	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_12 = CallFunc_CanUseSupportCommands_ReturnValue_12;
 	Parms.CallFunc_GetLocalPlayerFromController_ReturnValue = CallFunc_GetLocalPlayerFromController_ReturnValue;
 	Parms.CallFunc_CreateWidgetInstanceFromLayer_ReturnValue = CallFunc_CreateWidgetInstanceFromLayer_ReturnValue;
 	Parms.K2Node_CustomEvent_QueryInstance = K2Node_CustomEvent_QueryInstance;
 	Parms.K2Node_CustomEvent_QueryStatus = K2Node_CustomEvent_QueryStatus;
 	Parms.CallFunc_IsValid_ReturnValue_14 = CallFunc_IsValid_ReturnValue_14;
-	Parms.CallFunc_K2_GetPawn_ReturnValue_15 = CallFunc_K2_GetPawn_ReturnValue_15;
-	Parms.CallFunc_GetCurrentRealmSettings_Success = CallFunc_GetCurrentRealmSettings_Success;
-	Parms.CallFunc_GetCurrentRealmSettings_RealmSettings = CallFunc_GetCurrentRealmSettings_RealmSettings;
-	Parms.CallFunc_IsValid_ReturnValue_15 = CallFunc_IsValid_ReturnValue_15;
-	Parms.CallFunc_HasTag_ReturnValue = CallFunc_HasTag_ReturnValue;
-	Parms.CallFunc_K2_GetPawn_ReturnValue_16 = CallFunc_K2_GetPawn_ReturnValue_16;
-	Parms.CallFunc_BooleanAND_ReturnValue_2 = CallFunc_BooleanAND_ReturnValue_2;
-	Parms.CallFunc_IsServer_ReturnValue_4 = CallFunc_IsServer_ReturnValue_4;
-	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
+	Parms.Temp_struct_Variable_11 = Temp_struct_Variable_11;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue_2 = CallFunc_IsDedicatedServer_ReturnValue_2;
+	Parms.CallFunc_DamageActor_AggregatedDamageTags_2 = CallFunc_DamageActor_AggregatedDamageTags_2;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_13 = CallFunc_CanUseSupportCommands_ReturnValue_13;
-	Parms.CallFunc_GetRespitePoint_ReturnValue = CallFunc_GetRespitePoint_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue_16 = CallFunc_IsValid_ReturnValue_16;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_14 = CallFunc_CanUseSupportCommands_ReturnValue_14;
-	Parms.K2Node_EnhancedInputActionEvent_ActionValue = K2Node_EnhancedInputActionEvent_ActionValue;
-	Parms.K2Node_EnhancedInputActionEvent_ElapsedTime = K2Node_EnhancedInputActionEvent_ElapsedTime;
-	Parms.K2Node_EnhancedInputActionEvent_TriggeredTime = K2Node_EnhancedInputActionEvent_TriggeredTime;
-	Parms.K2Node_EnhancedInputActionEvent_SourceAction = K2Node_EnhancedInputActionEvent_SourceAction;
-	Parms.Temp_real_Variable = Temp_real_Variable;
-	Parms.CallFunc_Conv_InputActionValueToBool_ReturnValue = CallFunc_Conv_InputActionValueToBool_ReturnValue;
-	Parms.Temp_object_Variable = Temp_object_Variable;
-	Parms.Temp_real_Variable_1 = Temp_real_Variable_1;
-	Parms.Temp_real_Variable_1 = Temp_real_Variable_1;
+	Parms.CallFunc_HasAuthority_ReturnValue_2 = CallFunc_HasAuthority_ReturnValue_2;
+	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
 	Parms.K2Node_CustomEvent_Header = K2Node_CustomEvent_Header;
 	Parms.K2Node_CustomEvent_Body = K2Node_CustomEvent_Body;
 	Parms.K2Node_CustomEvent_Duration = K2Node_CustomEvent_Duration;
 	Parms.CallFunc_Get_HUD_Manager_HUD_Manager = CallFunc_Get_HUD_Manager_HUD_Manager;
 	Parms.K2Node_MakeStruct_S_UpdaterNotificatorInfo = K2Node_MakeStruct_S_UpdaterNotificatorInfo;
 	Parms.Temp_struct_Variable_12 = Temp_struct_Variable_12;
-	Parms.CallFunc_GetHUD_ReturnValue = CallFunc_GetHUD_ReturnValue;
-	Parms.CallFunc_AddComponent_ReturnValue = CallFunc_AddComponent_ReturnValue;
-	Parms.K2Node_DynamicCast_AsHUD_NWX = K2Node_DynamicCast_AsHUD_NWX;
-	Parms.K2Node_DynamicCast_bSuccess_7 = K2Node_DynamicCast_bSuccess_7;
 	Parms.K2Node_CustomEvent_MainText = K2Node_CustomEvent_MainText;
 	Parms.K2Node_CustomEvent_BodyText = K2Node_CustomEvent_BodyText;
+	Parms.CallFunc_AddComponent_ReturnValue = CallFunc_AddComponent_ReturnValue;
 	Parms.CallFunc_Get_HUD_Manager_HUD_Manager_1 = CallFunc_Get_HUD_Manager_HUD_Manager_1;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue_3 = CallFunc_IsDedicatedServer_ReturnValue_3;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
-	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
 	Parms.K2Node_Event_WidgetToOpen = K2Node_Event_WidgetToOpen;
 	Parms.K2Node_Event_DeltaSeconds = K2Node_Event_DeltaSeconds;
 	Parms.CallFunc_GetLocalPlayerFromController_ReturnValue_1 = CallFunc_GetLocalPlayerFromController_ReturnValue_1;
 	Parms.K2Node_CustomEvent_Location = K2Node_CustomEvent_Location;
 	Parms.CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1 = CallFunc_CreateWidgetInstanceFromLayer_ReturnValue_1;
-	Parms.CallFunc_K2_GetPawn_ReturnValue_17 = CallFunc_K2_GetPawn_ReturnValue_17;
+	Parms.CallFunc_K2_GetPawn_ReturnValue_15 = CallFunc_K2_GetPawn_ReturnValue_15;
 	Parms.CallFunc_K2_TeleportTo_ReturnValue_1 = CallFunc_K2_TeleportTo_ReturnValue_1;
-	Parms.CallFunc_IsValid_ReturnValue_17 = CallFunc_IsValid_ReturnValue_17;
+	Parms.CallFunc_IsValid_ReturnValue_15 = CallFunc_IsValid_ReturnValue_15;
 	Parms.Temp_int_Array_Index_Variable_1 = Temp_int_Array_Index_Variable_1;
 	Parms.K2Node_CustomEvent_GameState = K2Node_CustomEvent_GameState;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -5169,32 +5065,38 @@ void ABP_PlayerController_C::ExecuteUbergraph_BP_PlayerController(int32 EntryPoi
 	Parms.K2Node_CustomEvent_Success = K2Node_CustomEvent_Success;
 	Parms.CallFunc_AwaitBP_Awaitable_CastInput = CallFunc_AwaitBP_Awaitable_CastInput;
 	Parms.CallFunc_AwaitBP_Handle = CallFunc_AwaitBP_Handle;
-	Parms.CallFunc_IsValid_ReturnValue_18 = CallFunc_IsValid_ReturnValue_18;
+	Parms.CallFunc_IsValid_ReturnValue_16 = CallFunc_IsValid_ReturnValue_16;
 	Parms.CallFunc_IsInitialized_bInitialized = CallFunc_IsInitialized_bInitialized;
+	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
 	Parms.K2Node_Event_MapPinData = K2Node_Event_MapPinData;
 	Parms.K2Node_CustomEvent_MapPinData = K2Node_CustomEvent_MapPinData;
-	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue_4 = CallFunc_IsDedicatedServer_ReturnValue_4;
 	Parms.CallFunc_IsPlayInEditor_ReturnValue = CallFunc_IsPlayInEditor_ReturnValue;
 	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
 	Parms.CallFunc_GetInitialInventoryReceived_ReturnValue = CallFunc_GetInitialInventoryReceived_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate_3 = K2Node_CreateDelegate_OutputDelegate_3;
-	Parms.Temp_object_Variable_1 = Temp_object_Variable_1;
 	Parms.CallFunc_GetFunctionName_ReturnValue = CallFunc_GetFunctionName_ReturnValue;
 	Parms.CallFunc_Concat_StrStr_ReturnValue = CallFunc_Concat_StrStr_ReturnValue;
 	Parms.Temp_int_Loop_Counter_Variable_1 = Temp_int_Loop_Counter_Variable_1;
+	Parms.K2Node_Event_Mode = K2Node_Event_Mode;
 	Parms.CallFunc_Less_IntInt_ReturnValue_1 = CallFunc_Less_IntInt_ReturnValue_1;
 	Parms.CallFunc_Add_IntInt_ReturnValue_1 = CallFunc_Add_IntInt_ReturnValue_1;
-	Parms.CallFunc_IsServer_ReturnValue_5 = CallFunc_IsServer_ReturnValue_5;
-	Parms.K2Node_Event_Mode = K2Node_Event_Mode;
-	Parms.Temp_object_Variable_2 = Temp_object_Variable_2;
-	Parms.Temp_bool_Variable_2 = Temp_bool_Variable_2;
-	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.K2Node_CreateDelegate_OutputDelegate_4 = K2Node_CreateDelegate_OutputDelegate_4;
 	Parms.K2Node_CreateDelegate_OutputDelegate_5 = K2Node_CreateDelegate_OutputDelegate_5;
+	Parms.Temp_bool_Variable_2 = Temp_bool_Variable_2;
+	Parms.Temp_real_Variable = Temp_real_Variable;
 	Parms.K2Node_CreateDelegate_OutputDelegate_6 = K2Node_CreateDelegate_OutputDelegate_6;
 	Parms.K2Node_CreateDelegate_OutputDelegate_7 = K2Node_CreateDelegate_OutputDelegate_7;
 	Parms.CallFunc_CanUseSupportCommands_ReturnValue_15 = CallFunc_CanUseSupportCommands_ReturnValue_15;
-	Parms.Temp_bool_Variable_3 = Temp_bool_Variable_3;
+	Parms.Temp_real_Variable_1 = Temp_real_Variable_1;
+	Parms.Temp_object_Variable = Temp_object_Variable;
+	Parms.K2Node_EnhancedInputActionEvent_ActionValue = K2Node_EnhancedInputActionEvent_ActionValue;
+	Parms.K2Node_EnhancedInputActionEvent_ElapsedTime = K2Node_EnhancedInputActionEvent_ElapsedTime;
+	Parms.K2Node_EnhancedInputActionEvent_TriggeredTime = K2Node_EnhancedInputActionEvent_TriggeredTime;
+	Parms.K2Node_EnhancedInputActionEvent_SourceAction = K2Node_EnhancedInputActionEvent_SourceAction;
+	Parms.CallFunc_Conv_InputActionValueToBool_ReturnValue = CallFunc_Conv_InputActionValueToBool_ReturnValue;
+	Parms.Temp_real_Variable_1 = Temp_real_Variable_1;
+	Parms.Temp_real_Variable = Temp_real_Variable;
 
 	UObject::ProcessEvent(Func, &Parms);
 

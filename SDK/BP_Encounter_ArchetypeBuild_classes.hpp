@@ -18,7 +18,7 @@ public:
 	class UBP_EncounterComponent_Spawners_C*     BP_EncounterComponent_Spawners;                    // 0x450(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class ABP_Creature_NPC_C*                    NPCLeader;                                         // 0x458(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        Number_of_NPCs;                                    // 0x460(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5902[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A6B7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<struct FGuid, struct FS_IntArray>       CompositeStructurePieceIds;                        // 0x468(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class ABP_Structure_Functional_Container_Instanced_C* Human_Reward_Chest;                                // 0x4B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 

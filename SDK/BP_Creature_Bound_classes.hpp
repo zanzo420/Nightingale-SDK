@@ -16,10 +16,10 @@ class ABP_Creature_Bound_C : public ABP_CreatureBase_C
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1608(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                         HasAuraEffect;                                     // 0x1610(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8191[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5424[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class USkeletalMeshComponent*>        AllSkeletalMeshes;                                 // 0x1618(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	bool                                         SupportMeshesVisible;                              // 0x1628(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_8192[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5426[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                AICBound;                                          // 0x1630(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                     DissolveCrustEffect_0;                             // 0x1638(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          DistanceCheckTimer;                                // 0x1640(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

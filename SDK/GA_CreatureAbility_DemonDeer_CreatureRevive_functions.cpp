@@ -165,19 +165,19 @@ void UGA_CreatureAbility_DemonDeer_CreatureRevive_C::ReviveCreature(class UClass
 }
 
 
-// Function GA_CreatureAbility_DemonDeer_CreatureRevive.GA_CreatureAbility_DemonDeer_CreatureRevive_C.CorpseCleanUp
+// Function GA_CreatureAbility_DemonDeer_CreatureRevive.GA_CreatureAbility_DemonDeer_CreatureRevive_C.CorpseCleanup
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABP_CreatureBase_C*          Creature                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UGA_CreatureAbility_DemonDeer_CreatureRevive_C::CorpseCleanUp(class ABP_CreatureBase_C* Creature)
+void UGA_CreatureAbility_DemonDeer_CreatureRevive_C::CorpseCleanup(class ABP_CreatureBase_C* Creature)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("GA_CreatureAbility_DemonDeer_CreatureRevive_C", "CorpseCleanUp");
+		Func = Class->GetFunction("GA_CreatureAbility_DemonDeer_CreatureRevive_C", "CorpseCleanup");
 
-	Params::UGA_CreatureAbility_DemonDeer_CreatureRevive_C_CorpseCleanUp_Params Parms{};
+	Params::UGA_CreatureAbility_DemonDeer_CreatureRevive_C_CorpseCleanup_Params Parms{};
 
 	Parms.Creature = Creature;
 

@@ -3451,19 +3451,19 @@ void ABP_CreatureBase_C::OnRep_DeathDissolve(bool CallFunc_K2_IsValidTimerHandle
 }
 
 
-// Function BP_CreatureBase.BP_CreatureBase_C.CorpseCleanUp
+// Function BP_CreatureBase.BP_CreatureBase_C.CorpseCleanup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGameplayTag                Temp_struct_Variable                                             (ConstParm, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CreatureBase_C::CorpseCleanUp(const struct FGameplayTag& Temp_struct_Variable)
+void ABP_CreatureBase_C::CorpseCleanup(const struct FGameplayTag& Temp_struct_Variable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_CreatureBase_C", "CorpseCleanUp");
+		Func = Class->GetFunction("BP_CreatureBase_C", "CorpseCleanup");
 
-	Params::ABP_CreatureBase_C_CorpseCleanUp_Params Parms{};
+	Params::ABP_CreatureBase_C_CorpseCleanup_Params Parms{};
 
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 

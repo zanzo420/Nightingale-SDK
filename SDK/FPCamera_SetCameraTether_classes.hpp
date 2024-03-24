@@ -15,9 +15,9 @@ class UFPCamera_SetCameraTether_C : public UAnimNotifyState
 {
 public:
 	enum class ECameraTetherType                 TetherType;                                        // 0x30(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6152[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_817B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  SocketName;                                        // 0x34(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6153[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_817D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              SocketRotationOffset;                              // 0x40(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	static class UClass* StaticClass();

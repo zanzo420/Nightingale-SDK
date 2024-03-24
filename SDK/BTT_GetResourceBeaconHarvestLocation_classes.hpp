@@ -23,11 +23,11 @@ public:
 	class ABP_Creature_NPC_C*                    Creature_NPC;                                      // 0x118(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class ABP_ResourceNode_IIM_C*                Resource_Node_IIM;                                 // 0x120(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         Resource_Available;                                // 0x128(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A871[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_226C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ABP_ResourceNodeIIMBase_C*             Resource_Node;                                     // 0x130(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               Resource_Location;                                 // 0x138(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Resource_Index;                                    // 0x150(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_A872[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_226D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UInstancedResourceNodeComponent*       Instanced_Resource_Node;                           // 0x158(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FIIMInstance                          Out_Instance;                                      // 0x160(0x170)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class ABP_Creature_NPC_Villager_C*           As_BP_Creature_NPC_Villager;                       // 0x2D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

@@ -14,7 +14,7 @@ namespace SDK
 class UConsoleProxyAchievements : public UGameInstanceSubsystem
 {
 public:
-	uint8                                        Pad_3548[0x148];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_250E[0x148];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UConsoleProxyAchievements* GetDefaultObj();
